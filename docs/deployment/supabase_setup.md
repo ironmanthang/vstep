@@ -1,15 +1,19 @@
 # Supabase Setup & Migration Guide
 
-## Project Credentials
+## Project Metadata & Credentials
+- **Project Name**: `vstep`
+- **Project ID**: `zglfrtbsogqvkgbqoiqu`
+- **Project Region**: `ap-northeast-1` (Northeast Asia - Tokyo)
 - **Project URL**: `https://zglfrtbsogqvkgbqoiqu.supabase.co`
 - **Publishable Key**: `sb_publishable_w3mIHIphKqSDeMsYoT6b1A_ufA1RjYc`
+- **Production App Domain**: `https://vstep.pages.dev`
 
 ## Database Schema Migration
 
 ### Option A: Automated CLI Migration (Recommended)
-Set `DIRECT_URL` in your `.env` (or pass via environment):
+Set `DIRECT_URL` in your `.env` (uses Supabase Session Pooler):
 ```env
-DIRECT_URL="postgresql://postgres:[PASSWORD]@db.zglfrtbsogqvkgbqoiqu.supabase.co:5432/postgres"
+DIRECT_URL="postgresql://postgres.zglfrtbsogqvkgbqoiqu:[PASSWORD]@aws-0-ap-northeast-1.pooler.supabase.com:5432/postgres"
 ```
 Then execute:
 ```powershell

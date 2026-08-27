@@ -28,17 +28,19 @@
 - **Root directory**: `/`
 
 ### 3. Set Environment Variables
-Under **Settings** -> **Environment variables** (or during the initial project creation form), add the following production variables:
+Under **Settings** -> **Environment variables**, the following production variables are configured:
 
-- `NODE_VERSION` = `20` (or higher)
+- `NODE_VERSION` = `20`
 - `VITE_SUPABASE_URL` = `https://zglfrtbsogqvkgbqoiqu.supabase.co`
 - `VITE_SUPABASE_ANON_KEY` = `sb_publishable_w3mIHIphKqSDeMsYoT6b1A_ufA1RjYc`
-- `VITE_OPENROUTER_API_KEYS` = *(Optional: comma-separated OpenRouter keys)*
-- `VITE_OLLAMA_API_KEYS` = *(Optional: comma-separated Ollama Cloud keys)*
+- `VITE_GEMINI_API_KEY` = *(Google AI Studio API key)*
+- `VITE_OPENROUTER_API_KEYS` = *(OpenRouter key pool)*
+- `VITE_OLLAMA_API_KEYS` = *(Ollama Cloud key pool)*
 
 ### 4. Deploy and Verify
-- Click **Save and Deploy**.
-- When the build finishes (~1 minute), test the generated `*.pages.dev` URL:
-  - Verify client-side route navigation (`/flashcard`, `/practice`, `/settings`).
-  - Verify hard-refreshing `/flashcard` does not return 404 (handled by `_redirects`).
-  - Verify PWA install prompt / Service Worker registration in DevTools.
+- **Live Production URL**: `https://vstep.pages.dev`
+- **Verification Checklist**:
+  - Client-side route navigation (`/flashcard`, `/practice`, `/settings`).
+  - Hard-refreshing `/flashcard` does not return 404 (handled by `_redirects`).
+  - Spaced Repetition (SRS) Flashcard review queue.
+  - User Authentication & Cloud Sync with Supabase.
