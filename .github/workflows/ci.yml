@@ -1,0 +1,53 @@
+name: CI / Automated Validation & Deploy
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+    inputs:
+      run_migration:
+        description: 'Run database migration against Supabase'
+        type: boolean
+        required: true
+        default: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Oxlint Static Analysis
+        run: pnpm lint
+
+      - name: Vitest Unit Tests
+        run: pnpm test
+
+      - name: Production Build Smoke Test
+        run: pnpm build
+
+      - name: Run Supabase DB Migration
+        if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main') && env.DIRECT_URL != ''
+        run: pnpm db:migrate
+        env:
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}

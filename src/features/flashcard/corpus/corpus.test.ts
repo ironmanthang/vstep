@@ -1,0 +1,63 @@
+import { describe, it, expect } from 'vitest';
+import {
+  VSTEP_CORPUS,
+  EDUCATION_FLASHCARDS,
+  WORK_FLASHCARDS,
+  HEALTH_FLASHCARDS,
+  ENVIRONMENT_FLASHCARDS,
+  TECHNOLOGY_FLASHCARDS,
+  TRAVEL_FLASHCARDS,
+  SOCIETY_FLASHCARDS,
+  MEDIA_FLASHCARDS
+} from './index';
+
+describe('VSTEP Flashcard Corpus Integrity', () => {
+  it('should contain exactly 1,500 cards in the master corpus', () => {
+    expect(VSTEP_CORPUS.length).toBe(1500);
+  });
+
+  it('should have exact expected word counts per topic file', () => {
+    expect(EDUCATION_FLASHCARDS.length).toBe(188);
+    expect(WORK_FLASHCARDS.length).toBe(188);
+    expect(HEALTH_FLASHCARDS.length).toBe(188);
+    expect(ENVIRONMENT_FLASHCARDS.length).toBe(188);
+    expect(TECHNOLOGY_FLASHCARDS.length).toBe(187);
+    expect(TRAVEL_FLASHCARDS.length).toBe(187);
+    expect(SOCIETY_FLASHCARDS.length).toBe(187);
+    expect(MEDIA_FLASHCARDS.length).toBe(187);
+  });
+
+  it('should have unique IDs across all 1,500 cards', () => {
+    const idSet = new Set(VSTEP_CORPUS.map((c) => c.id));
+    expect(idSet.size).toBe(1500);
+  });
+
+  it('should have unique words across all 1,500 cards', () => {
+    const wordSet = new Set(VSTEP_CORPUS.map((c) => c.word.toLowerCase().trim()));
+    expect(wordSet.size).toBe(1500);
+  });
+
+  it('should validate every card against the FlashcardItem schema requirements', () => {
+    const validLevels = new Set(['B1', 'B2', 'C1']);
+    const validPos = new Set(['noun', 'verb', 'adjective', 'adverb', 'phrase']);
+
+    for (const card of VSTEP_CORPUS) {
+      expect(card.id).toBeTruthy();
+      expect(card.topic).toBeTruthy();
+      expect(validLevels.has(card.level)).toBe(true);
+      expect(validPos.has(card.part_of_speech)).toBe(true);
+      expect(card.word.trim().length).toBeGreaterThan(0);
+      expect(card.phonetic.trim().length).toBeGreaterThan(0);
+      expect(card.definition_vi.trim().length).toBeGreaterThan(0);
+      expect(card.example_sentence_en.trim().length).toBeGreaterThan(0);
+      expect(card.example_sentence_vi.trim().length).toBeGreaterThan(0);
+      expect(Array.isArray(card.collocations)).toBe(true);
+      expect(card.collocations.length).toBeGreaterThanOrEqual(2);
+      expect(card.srs_metadata).toBeDefined();
+      expect(card.srs_metadata.repetition_count).toBe(0);
+      expect(card.srs_metadata.interval_days).toBe(0);
+      expect(card.srs_metadata.ease_factor).toBe(2.5);
+      expect(card.srs_metadata.status).toBe('new');
+    }
+  });
+});

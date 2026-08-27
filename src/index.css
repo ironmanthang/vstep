@@ -1,0 +1,335 @@
+/* ==========================================================================
+   VSTEP Master — Warm Cozy Campfire Design System Tokens
+   Source: Campfire Warm Ember Palette
+   Light: Warm Cream (#FAF8F5), Surface (#F0ECE3), Accent (#C68B59)
+   Dark: Warm Obsidian (#141210), Surface (#1C1917), Accent (#D4A373)
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* Color Palette - Light Mode (Warm Cream & Caramel Ember) */
+  --bg-app: #FAF8F5;
+  --bg-surface: #F0ECE3;
+  --bg-surface-hover: #E6DFD3;
+  --bg-surface-active: #DCD5C8;
+  --bg-subtle: #F7F3EB;
+  --bg-subtle-hover: #ECE4D6;
+  --bg-input: #FCFAF7;
+
+  /* Text Colors */
+  --text-primary: #201D1A;
+  --text-secondary: #6E685F;
+  --text-muted: #8E867B;
+  --text-inverse: #FAF8F5;
+
+  /* Borders & Dividers */
+  --border: #E6DFD3;
+  --border-strong: #D8CEBF;
+  --border-focus: #C68B59;
+
+  /* Brand Accent (Warm Caramel Gold) */
+  --primary: #C68B59;
+  --primary-hover: #B57A48;
+  --primary-active: #9E6738;
+  --primary-subtle: rgba(198, 139, 89, 0.15);
+  --primary-text: #8C5726;
+  --primary-contrast: #FAF8F5;
+
+  /* Deep Emerald (Mastered, SRS Easy, Streak) */
+  --emerald: #059669;
+  --emerald-hover: #047857;
+  --emerald-subtle: rgba(5, 150, 105, 0.15);
+  --emerald-text: #065F46;
+
+  /* Warm Coral / Red (Forgot, Urgent Alert) */
+  --coral: #DC2626;
+  --coral-hover: #B91C1C;
+  --coral-subtle: rgba(220, 38, 38, 0.15);
+  --coral-text: #991B1B;
+
+  /* Warm Gold / Ember (Remembered, B1-B2 Badges) */
+  --gold: #C68B59;
+  --gold-hover: #B57A48;
+  --gold-subtle: rgba(198, 139, 89, 0.15);
+  --gold-text: #8C5726;
+
+  /* Shadows (Natural & Warm) */
+  --shadow-sm: 0 1px 2px 0 rgba(32, 29, 26, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(32, 29, 26, 0.07), 0 2px 4px -2px rgba(32, 29, 26, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(32, 29, 26, 0.08), 0 4px 6px -4px rgba(32, 29, 26, 0.04);
+  --shadow-card: 0 1px 3px 0 rgba(32, 29, 26, 0.06), 0 1px 2px -1px rgba(32, 29, 26, 0.06);
+
+  /* Typography */
+  --font-sans: 'Outfit', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Outfit', var(--font-sans);
+
+  --fs-xs: 0.75rem;     /* 12px */
+  --fs-sm: 0.875rem;    /* 14px */
+  --fs-base: 1rem;      /* 16px */
+  --fs-md: 1.125rem;    /* 18px */
+  --fs-lg: 1.25rem;     /* 20px */
+  --fs-xl: 1.5rem;      /* 24px */
+  --fs-2xl: 1.875rem;   /* 30px */
+  --fs-3xl: 2.25rem;    /* 36px */
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout dimensions */
+  --sidebar-width: 250px;
+  --bottom-nav-height: 64px;
+}
+
+/* Dark Mode - Warm Obsidian & Warm Ember Amber (Campfire Signature) */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg-app: #141210;
+  --bg-surface: #1C1917;
+  --bg-surface-hover: #282420;
+  --bg-surface-active: #35302A;
+  --bg-subtle: #201C19;
+  --bg-subtle-hover: #2C2723;
+  --bg-input: #0B0A09;
+
+  --text-primary: #E6E1DC;
+  --text-secondary: #968F85;
+  --text-muted: #787167;
+  --text-inverse: #141210;
+
+  --border: #282420;
+  --border-strong: #38332D;
+  --border-focus: #D4A373;
+
+  /* Warm Ember Gold */
+  --primary: #D4A373;
+  --primary-hover: #C59261;
+  --primary-active: #B57E4E;
+  --primary-subtle: rgba(212, 163, 115, 0.15);
+  --primary-text: #D4A373;
+  --primary-contrast: #141210;
+
+  --emerald: #10B981;
+  --emerald-hover: #059669;
+  --emerald-subtle: rgba(16, 185, 129, 0.15);
+  --emerald-text: #6EE7B7;
+
+  --coral: #EF4444;
+  --coral-hover: #DC2626;
+  --coral-subtle: rgba(239, 68, 68, 0.15);
+  --coral-text: #FCA5A5;
+
+  --gold: #D4A373;
+  --gold-hover: #C59261;
+  --gold-subtle: rgba(212, 163, 115, 0.15);
+  --gold-text: #E6C5A5;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-app);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+/* Custom Scrollbar for warm themes */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-app);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Badge Utilities */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge-primary {
+  background-color: var(--primary-subtle);
+  color: var(--primary-text);
+  border: 1px solid rgba(212, 163, 115, 0.25);
+}
+
+.badge-emerald {
+  background-color: var(--emerald-subtle);
+  color: var(--emerald-text);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.badge-gold {
+  background-color: var(--gold-subtle);
+  color: var(--gold-text);
+  border: 1px solid rgba(212, 163, 115, 0.25);
+}
+
+.badge-coral {
+  background-color: var(--coral-subtle);
+  color: var(--coral-text);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+/* Card Surface Utility */
+.card-surface {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+/* Global Button Utilities */
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  background-color: var(--primary);
+  color: var(--primary-contrast);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  transition: all var(--transition-fast);
+}
+
+.primary-btn:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+  color: var(--primary-contrast);
+  transform: translateY(-1px);
+}
+
+.primary-btn:active:not(:disabled) {
+  background-color: var(--primary-active);
+  transform: translateY(0);
+}
+
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  padding: var(--space-2) var(--space-3);
+  background-color: var(--bg-subtle);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--fs-xs);
+  transition: all var(--transition-fast);
+}
+
+.secondary-btn:hover:not(:disabled) {
+  background-color: var(--bg-subtle-hover);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.secondary-btn.active {
+  background-color: var(--primary-subtle);
+  color: var(--primary-text);
+  border-color: var(--primary);
+  font-weight: 700;
+}
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
