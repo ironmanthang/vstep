@@ -3,9 +3,6 @@
 -- Run this migration in Supabase SQL Editor or via `pnpm db:migrate`
 -- ==============================================================================
 
--- Enable UUID extension
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
-
 -- 1. Table: user_profiles
 -- Tracks core user preferences and targets (1:1 with auth.users)
 CREATE TABLE IF NOT EXISTS public.user_profiles (

@@ -56,7 +56,9 @@ async function runMigration() {
 
   try {
     console.log('📦 Applying schema migration (supabase/schema.sql)...');
-    await sql.unsafe(sqlContent);
+    await sql.begin(async (tx) => {
+      await tx.unsafe(sqlContent);
+    });
 
     // Verify created tables
     const tables = await sql`
