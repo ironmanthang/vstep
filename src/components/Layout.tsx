@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, Outlet, useLocation } from 'react-router';
+import { NavLink, Outlet, useLocation, useNavigate } from 'react-router';
 import {
   HomeIcon,
   PracticeIcon,
@@ -12,16 +12,17 @@ import {
   FireIcon
 } from './Icons';
 import { useAuth } from '../services/supabase/authStore';
-import { AuthModal } from './auth/AuthModal';
+import { useUserStore } from '../services/user/userStore';
 import './Layout.css';
 
 export const Layout: React.FC = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     return (localStorage.getItem('vstep_theme') as 'light' | 'dark') || 'light';
   });
-  const [isAuthOpen, setIsAuthOpen] = useState(false);
-  const { user, isAuthenticated, signOut } = useAuth();
+  const { signOut } = useAuth();
+  const { userDisplayName, avatarInitial, avatarUrl, targetBand, streakDays, streakBadgeText, resetProfile } = useUserStore();
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -30,6 +31,22 @@ export const Layout: React.FC = () => {
 
   const toggleTheme = () => {
     setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+  };
+
+  const handleSignOut = async () => {
+    try {
+      resetProfile();
+      // Clean up flashcard local keys
+      if (typeof localStorage !== 'undefined') {
+        localStorage.removeItem('vstep_flashcard_deck_v2');
+        localStorage.removeItem('vstep_reviewed_today_count_v2');
+        localStorage.removeItem('vstep_last_review_date_v2');
+      }
+      await signOut();
+      navigate('/login', { replace: true });
+    } catch (err) {
+      console.error('Sign out error:', err);
+    }
   };
 
   const navItems = [
@@ -56,13 +73,8 @@ export const Layout: React.FC = () => {
     }
   };
 
-  const userDisplayName = user?.user_metadata?.full_name || user?.email?.split('@')[0] || 'Lan';
-
   return (
     <div className="app-shell">
-      {/* Authentication Modal */}
-      <AuthModal isOpen={isAuthOpen} onClose={() => setIsAuthOpen(false)} />
-
       {/* Desktop Sidebar Navigation */}
       <aside className="sidebar">
         <div className="sidebar-brand">
@@ -80,49 +92,61 @@ export const Layout: React.FC = () => {
 
         {/* User Target Card in Sidebar */}
         <div className="user-target-card">
-          <div className="user-info-row">
-            <span className="user-name">{userDisplayName}</span>
-            <span className="badge badge-emerald">
-              <FireIcon size={12} color="#059669" /> 5 ngày
-            </span>
-          </div>
-          <div className="target-pill">Mục tiêu: <strong>Bậc 3 (B1)</strong></div>
-          {isAuthenticated ? (
-            <div style={{ marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span style={{ fontSize: '0.75rem', color: '#10B981', fontWeight: 600 }}>● Đã đồng bộ Cloud</span>
-              <button
-                onClick={() => signOut()}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: '4px' }}>
+            {avatarUrl ? (
+              <img
+                src={avatarUrl}
+                alt={userDisplayName}
+                style={{ width: 28, height: 28, borderRadius: '50%', objectFit: 'cover' }}
+              />
+            ) : (
+              <div
                 style={{
-                  background: 'none',
-                  border: 'none',
-                  color: 'var(--text-muted)',
-                  fontSize: '0.75rem',
-                  cursor: 'pointer',
-                  textDecoration: 'underline'
+                  width: 28,
+                  height: 28,
+                  borderRadius: '50%',
+                  background: 'var(--primary-subtle)',
+                  color: 'var(--primary)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: 'var(--fs-xs)',
+                  fontWeight: 700,
                 }}
               >
-                Đăng xuất
-              </button>
+                {avatarInitial}
+              </div>
+            )}
+            <span className="user-name" style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+              {userDisplayName}
+            </span>
+          </div>
+
+          <div className="user-info-row" style={{ marginTop: 4 }}>
+            <div className="target-pill" style={{ margin: 0 }}>
+              Bậc <strong>{targetBand === 'B1' ? '3 (B1)' : targetBand === 'B2' ? '4 (B2)' : '5 (C1)'}</strong>
             </div>
-          ) : (
+            <span className={`badge ${streakDays > 0 ? 'badge-emerald' : 'badge-primary'}`}>
+              <FireIcon size={12} color={streakDays > 0 ? '#059669' : 'var(--text-muted)'} /> {streakBadgeText}
+            </span>
+          </div>
+
+          <div style={{ marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ fontSize: '0.75rem', color: '#10B981', fontWeight: 600 }}>● Đồng bộ Cloud</span>
             <button
-              onClick={() => setIsAuthOpen(true)}
+              onClick={handleSignOut}
               style={{
-                marginTop: '8px',
-                width: '100%',
-                padding: '6px 8px',
+                background: 'none',
+                border: 'none',
+                color: 'var(--text-muted)',
                 fontSize: '0.75rem',
-                fontWeight: 700,
-                borderRadius: '6px',
-                border: '1px solid var(--primary)',
-                background: 'var(--primary-subtle, rgba(212,163,115,0.15))',
-                color: 'var(--primary)',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                textDecoration: 'underline'
               }}
             >
-              ☁️ Đăng nhập để đồng bộ SRS
+              Đăng xuất
             </button>
-          )}
+          </div>
         </div>
 
         {/* Navigation Links */}
@@ -166,23 +190,32 @@ export const Layout: React.FC = () => {
             <h1 className="mobile-page-title">{getPageTitle(location.pathname)}</h1>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            {!isAuthenticated && (
-              <button
-                onClick={() => setIsAuthOpen(true)}
-                style={{
-                  padding: '4px 8px',
-                  fontSize: '0.75rem',
-                  fontWeight: 600,
-                  borderRadius: '6px',
-                  background: 'var(--primary)',
-                  color: '#fff',
-                  border: 'none',
-                  cursor: 'pointer'
-                }}
-              >
-                Đăng nhập
-              </button>
-            )}
+            <NavLink to="/profile" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+              {avatarUrl ? (
+                <img
+                  src={avatarUrl}
+                  alt={userDisplayName}
+                  style={{ width: 28, height: 28, borderRadius: '50%', objectFit: 'cover' }}
+                />
+              ) : (
+                <div
+                  style={{
+                    width: 28,
+                    height: 28,
+                    borderRadius: '50%',
+                    background: 'var(--primary-subtle)',
+                    color: 'var(--primary)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: 'var(--fs-xs)',
+                    fontWeight: 700,
+                  }}
+                >
+                  {avatarInitial}
+                </div>
+              )}
+            </NavLink>
             <button onClick={toggleTheme} className="mobile-theme-btn" aria-label="Đổi giao diện">
               {theme === 'light' ? <MoonIcon size={18} /> : <SunIcon size={18} />}
             </button>

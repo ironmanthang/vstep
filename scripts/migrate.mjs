@@ -63,7 +63,7 @@ async function runMigration() {
       SELECT table_name 
       FROM information_schema.tables 
       WHERE table_schema = 'public' 
-        AND table_name IN ('user_flashcard_reviews', 'user_daily_stats')
+        AND table_name IN ('user_profiles', 'user_study_logs', 'user_mock_test_results', 'user_flashcard_reviews', 'user_daily_stats')
       ORDER BY table_name;
     `;
 

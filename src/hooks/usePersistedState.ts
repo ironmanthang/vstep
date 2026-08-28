@@ -1,9 +1,5 @@
 import { useState, useEffect, type Dispatch, type SetStateAction } from 'react';
 
-/**
- * Reusable typed state hook synchronized with localStorage.
- * Ported from Campfire's usePersistedState.
- */
 export function usePersistedState<T>(
   key: string,
   defaultValue: T | (() => T)

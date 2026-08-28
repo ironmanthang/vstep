@@ -5,6 +5,7 @@ import type { SRSRating } from '../../types/schemas';
 import { CheckCircleIcon, RefreshIcon } from '../../components/Icons';
 import { useNotification } from '../../hooks/useNotification';
 import { Toast } from '../../components/common/Toast';
+import { useUserStore } from '../../services/user/userStore';
 import './FlashcardPage.css';
 
 export const FlashcardPage: React.FC = () => {
@@ -22,6 +23,7 @@ export const FlashcardPage: React.FC = () => {
     resetDeck,
   } = useFlashcardStore();
 
+  const { userDisplayName } = useUserStore();
   const { statusMessage, showNotification, clearNotification } = useNotification();
 
   const [activeTab, setActiveTab] = useState<'queue' | 'browse'>('queue');
@@ -213,7 +215,7 @@ export const FlashcardPage: React.FC = () => {
               <div className="empty-icon-circle">
                 <CheckCircleIcon size={44} color="#10B981" />
               </div>
-              <h2 className="empty-title">Tuyệt vời, Lan đã hoàn thành mục tiêu hôm nay!</h2>
+              <h2 className="empty-title">Tuyệt vời, {userDisplayName} đã hoàn thành mục tiêu hôm nay!</h2>
               <p className="empty-desc">
                 Không còn thẻ nào cần ôn trong hàng đợi của chủ đề này. Thuật toán SRS đã tự động lên lịch nhắc lại cho các ngày tiếp theo.
               </p>

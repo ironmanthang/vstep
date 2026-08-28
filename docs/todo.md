@@ -16,6 +16,14 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Thiết lập hệ thống điều hướng Routing (Home, Skill Practice, Flashcard, Mock Test, Settings, Profile)
 - [x] Xây dựng Layout Responsive (Desktop Sidebar / Mobile Bottom Navigation Bar)
 
+### Hệ thống Xác thực & Đồng bộ Đám mây (Login-First & Cross-Device Sync)
+- [x] Thiết lập Login-First Gate (`<ProtectedRoute>`) chặn truy cập unauthenticated và chuyển hướng về `/login`
+- [x] Xây dựng trang `/login` chuyên biệt chỉ sử dụng Google OAuth (loại bỏ biểu mẫu Email/Mật khẩu và modal cũ)
+- [x] Tạo Migration SQL cho Cơ sở dữ liệu chuẩn hóa (Option B: `user_profiles`, `user_study_logs`, `user_mock_test_results`, `user_flashcard_reviews`, `user_daily_stats`)
+- [x] Thiết lập trigger PostgreSQL `on_auth_user_created` tự động khởi tạo profile từ Google OAuth metadata
+- [x] Xây dựng tầng dịch vụ `profileSync.ts` và tích hợp vào `userStore.ts` để đồng bộ hồ sơ, streak và điểm thi giữa Mobile và Laptop
+- [x] Tích hợp cơ chế Optimistic UI và lưu trữ đệm tạm thời tại Client phòng ngừa mất kết nối ngắn hạn
+
 ### Cấu hình AI Provider Hub & Master Gateway
 - [x] Xây dựng Master AI Gateway hỗ trợ OpenRouter, Ollama Cloud và Google AI Studio với Key Pool rotation (xem [ai_gateway.md](file:///d:/program/vstep/docs/architecture/ai_gateway.md))
 - [x] Xây dựng Settings UI: Bảng chẩn đoán trạng thái AI Gateway, đo độ trễ Ping (ms), chế độ Override nâng cao cho Dev
@@ -25,14 +33,14 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 ### Cấu hình PWA & Quản lý Dữ liệu Client
 - [x] Cấu hình Web App Manifest (manifest.webmanifest) hỗ trợ Add to Home Screen (Standalone Mode)
 - [x] Cấu hình Service Worker cache tĩnh App Shell, font và static assets
-- [ ] Điều chỉnh thứ tự hiển thị kỹ năng toàn app: Nghe (Listening) → Đọc (Reading) → Viết (Writing) → Nói (Speaking)
+- [x] Điều chỉnh thứ tự hiển thị kỹ năng toàn app: Nghe (Listening) → Đọc (Reading) → Viết (Writing) → Nói (Speaking)
 
 ### Module Flashcard SRS Cốt lõi (Curated VSTEP SRS)
 - [x] Flashcard SRS: Thuật toán Spaced Repetition (1-3-7-14-30), hiệu ứng 3D Flip Card
 - [x] Tích hợp hệ thống Toast notifications phản hồi học tập
 - [x] Xây dựng bộ ngữ liệu 1.500 từ vựng cốt lõi trích xuất từ đề thi thật ULIS/HNUE theo 8 chủ đề VSTEP chuẩn (188 Edu, 188 Work, 188 Health, 188 Env, 187 Tech, 187 Travel, 187 Soc, 187 Media)
 - [x] Xây dựng Daily Review Queue hiển thị số thẻ cần ôn tập hôm nay và thống kê tiến độ học
-- [x] Tích hợp Supabase Cloud Sync & Auth Modal để đồng bộ thẻ và thống kê học tập thời gian thực qua tài khoản Google/Email
+- [x] Tích hợp Supabase Cloud Sync cho Flashcard SRS qua Google OAuth
 - [ ] Tăng số lượng từ lên 3000
 
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)
@@ -40,7 +48,9 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Thiết lập Pre-push pipeline tự động (scripts/prepush.mjs + .githooks/pre-push)
 - [x] Thiết lập CI/CD GitHub Actions workflow (.github/workflows/ci.yml)
 - [x] Thiết lập kịch bản tự động hóa database migration Supabase (scripts/migrate.mjs + pnpm db:migrate)
+- [x] Triển khai Production lên Cloudflare Pages (vstep.pages.dev) kèm SPA redirects và Google OAuth
 - [ ] Đạt điểm số Google Lighthouse > 90 (Performance, Accessibility, SEO) và tối ưu PWA Standalone
+
 
 ## SPRINT: LUYỆN NGHE CHỦ ĐỘNG (ASSISTED LISTENING STUDIO)
 

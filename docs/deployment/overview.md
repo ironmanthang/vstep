@@ -22,3 +22,9 @@ The VSTEP platform is deployed using a decoupled, edge-first serverless architec
 | SPA Web App | Cloudflare Pages | `dist/` (via `pnpm build`) | `_redirects`, Node.js $\ge 20$ |
 | User Auth & Database | Supabase | `supabase/schema.sql` | RLS Enabled, Google OAuth Client ID |
 | Environment Variables | Cloudflare Pages Settings | `.env.example` | `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY` |
+
+## Model Context Protocol Tooling
+The workspace configures agent tooling via `.agents/mcp_config.json`:
+- **`supabase`**: Local/remote management and GraphQL doc queries (`@supabase/mcp-server-supabase`).
+- **`cloudflare-docs`**: Zero-auth semantic search across Cloudflare documentation via `mcp-remote https://docs.mcp.cloudflare.com/mcp`.
+

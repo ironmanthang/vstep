@@ -9,6 +9,7 @@ import {
   fetchUserDailyReviewCount,
   incrementUserDailyCountInCloud
 } from '../../services/supabase/srsSync';
+import { recordStudyDateInStorage } from '../../services/user/userStore';
 
 const STORAGE_KEY = 'vstep_flashcard_deck_v2';
 const REVIEW_COUNT_KEY = 'vstep_reviewed_today_count_v2';
@@ -153,6 +154,7 @@ export function useFlashcardStore() {
   // Track daily count
   const incrementDailyCount = useCallback(() => {
     const today = getTodayString();
+    recordStudyDateInStorage(today);
     setReviewedToday((prev) => {
       const next = prev + 1;
       localStorage.setItem(LAST_REVIEW_DATE_KEY, today);

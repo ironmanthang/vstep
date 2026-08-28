@@ -33,20 +33,6 @@ export function useAuth() {
     };
   }, []);
 
-  const signInWithPassword = useCallback(async (email: string, password: string) => {
-    if (!isSupabaseConfigured()) throw new Error('Supabase is not configured.');
-    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
-    if (error) throw error;
-    return data;
-  }, []);
-
-  const signUpWithPassword = useCallback(async (email: string, password: string) => {
-    if (!isSupabaseConfigured()) throw new Error('Supabase is not configured.');
-    const { data, error } = await supabase.auth.signUp({ email, password });
-    if (error) throw error;
-    return data;
-  }, []);
-
   const signInWithGoogle = useCallback(async () => {
     if (!isSupabaseConfigured()) throw new Error('Supabase is not configured.');
     const { data, error } = await supabase.auth.signInWithOAuth({
@@ -70,9 +56,8 @@ export function useAuth() {
     session,
     loading,
     isAuthenticated: Boolean(user),
-    signInWithPassword,
-    signUpWithPassword,
     signInWithGoogle,
     signOut,
   };
 }
+

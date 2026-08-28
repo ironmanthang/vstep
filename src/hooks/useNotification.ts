@@ -5,10 +5,6 @@ export interface NotificationMessage {
   type: 'success' | 'error' | 'info';
 }
 
-/**
- * Lightweight notification hook for toast alerts and feedback.
- * Ported from Campfire's useNotification.
- */
 export function useNotification() {
   const [statusMessage, setStatusMessage] = useState<NotificationMessage | null>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);

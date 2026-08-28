@@ -14,6 +14,7 @@ import { testGoogleAIConnection, generateGoogleAICompletion, DEFAULT_GOOGLE_MODE
 
 export * from './types';
 export * from './masterKeys';
+export * from './quotaTracker';
 
 const DEV_OVERRIDE_STORAGE_KEY = 'vstep_ai_dev_override';
 

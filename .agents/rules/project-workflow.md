@@ -2,7 +2,7 @@
 trigger: always_on
 ---
 
-# Campfire Project & Monorepo Rules
+# Vstep Project & Monorepo Rules
 
 ## Refactor Audit & Dead Code Pruning
 - **Refactor feature audit:** When redesigning or refactoring a component, audit every existing feature against the new data model. Do NOT carry features forward by default — each one must justify itself against the new model from scratch. If a feature no longer fits cleanly (e.g., creates a second live representation of the same data, requires a lossy round-trip, or adds a special-case path), flag it for removal proactively, without waiting for the user to notice.
