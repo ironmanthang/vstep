@@ -1,6 +1,6 @@
 ---
 name: vstep-listening-ingestion
-description: End-to-end pipeline for slicing monolith VSTEP listening audio into 3 parts, generating transcripts via Gemini API, and merging into the exam bank TypeScript files. Activate when working on listening audio processing, transcript ingestion, or bank population.
+description: End-to-end pipeline and out-of-band scripting architecture for slicing audio, detecting boundaries, generating transcripts via Gemini API scripts in scripts/, and verifying listening exam banks with zero context token waste.
 ---
 
 # VSTEP Listening Audio Ingestion Pipeline
@@ -121,6 +121,23 @@ node scripts/ingest-listening.mjs "public/audio/listening/testN/vstep-test-N-par
   ]
 }
 ```
+
+---
+
+## Token Conservation & Out-of-Band Scripting Architecture
+
+When performing token-heavy workflows (e.g. verbatim transcription, boundary detection, millisecond timestamp verification, or bulk JSON translation):
+
+- **Zero Raw Data Bloat in Chat**: Never stream full audio buffers, multi-thousand-line word-level timestamp lists (`.txt`), or giant raw transcript JSONs directly into the conversational LLM context.
+- **Utilize Existing Scripts in `scripts/` First**:
+  - `scripts/detect-boundaries.mjs <audio_path>`: Uses `gemini-3.5-transcribe` with word-level granularity to write exact `[MM:SS.ms -> MM:SS.ms]` timestamps directly to a local `.txt` file next to the audio, consuming zero conversational tokens.
+  - `scripts/ingest-listening.mjs <audio_path>`: Two-stage automated pipeline that derives word boundaries from monoliths or Gemini transcribe, followed by bilingual translation with Gemini Flash models.
+- **Author New Task-Specific Scripts in `scripts/`**:
+  - When encountering specialized verification, sanity-checking, or batch transformation needs, write a dedicated standalone `.mjs` script (e.g. `scripts/verify-timestamps.mjs` or `scripts/check-alignment.mjs`).
+  - **Native Environment Loading**: Call `process.loadEnvFile()` natively (Node 20.6+) to load `VITE_GEMINI_API_KEY` or `GOOGLE_API_KEY` directly from `.env`.
+  - **Most Generous Model (`gemini-3.5-flash-lite`)**: For translation, text structuring, formatting, and high-volume tasks, prioritize `gemini-3.5-flash-lite` because it offers the most generous free-tier rate limits and quota allowances among all Gemini models.
+  - **Direct Tool & API Execution**: Execute Gemini model calls or system binaries (`ffmpeg`, `ffprobe`) out-of-band via Node.js fetch or child processes.
+  - **Disk Outputs & Minimal Terminal Summaries**: Save heavy outputs directly to disk (`.txt`, `.json`), and print only concise tabular status reports or boundary comparison tables to stdout for the agent to inspect via `run_command`.
 
 ---
 

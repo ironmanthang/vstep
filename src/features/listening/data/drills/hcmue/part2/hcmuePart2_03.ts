@@ -28,13 +28,13 @@ export const HCMUE_LISTENING_PART2_03: ListeningTest = {
     },
     {
         start_ms: 180349,
-        end_ms: 280999,
+        end_ms: 275644,
         text_en: "Announcer: Questions 13-16 refer to the following conversation.\nW: John, are you planning to go to Chicago to attend the big conference tomorrow? I heard it's going to be great.\nM: Well, I really want to, but I can't. I just came back from a business trip in Europe, so I have so much work piled up on my desk.\nW: I'm sorry to hear that. Tell you what... I'll take my video camera with me, and I will film the speeches you'd like to see.\nM: Oh, that would be great. Thanks, Susan.",
         text_vi: "Người đọc: Câu hỏi 13-16 đề cập đến đoạn hội thoại sau.\nNữ: John, anh có định đi Chicago để tham dự hội nghị lớn vào ngày mai không? Tôi nghe nói nó sẽ rất tuyệt.\nNam: Chà, tôi thực sự muốn đi, nhưng không thể. Tôi vừa trở về từ chuyến công tác ở Châu Âu, nên có quá nhiều việc chất đống trên bàn làm việc.\nNữ: Tôi rất tiếc khi nghe điều đó. Để tôi nói cho anh nghe... tôi sẽ mang máy quay video theo, và tôi sẽ quay lại các bài phát biểu mà anh muốn xem.\nNam: Ồ, thế thì tuyệt quá. Cảm ơn, Susan.",
         is_clue_for_question: "hcmue_q3_13,hcmue_q3_14,hcmue_q3_15,hcmue_q3_16"
     },
     {
-        start_ms: 280999,
+        start_ms: 275644,
         end_ms: 339329,
         text_en: "Announcer: Questions 17-20 refer to the following conversation.\nW: Have you sent out the shipment of computers to the electronics shop yet? The owner just called and said he needs them within the hour.\nM: The truck left ten minutes ago, so it should arrive at the store in the next fifteen minutes. Do you want me to check to see where the driver is now?\nW: That's okay. So long as it has left, it'll be fine. Now could you do me a favor and get those boxes loaded on to the truck parked over there?\nM: Okay, I will take care of that right away.",
         text_vi: "Người đọc: Câu hỏi 17-20 đề cập đến đoạn hội thoại sau.\nNữ: Anh đã gửi lô máy tính đến cửa hàng điện tử chưa? Chủ cửa hàng vừa gọi điện và nói anh ấy cần chúng trong vòng một giờ.\nNam: Xe tải đã rời đi mười phút trước rồi, nên nó sẽ đến cửa hàng trong vòng mười lăm phút tới. Chị có muốn tôi kiểm tra xem tài xế đang ở đâu không?\nNữ: Không sao đâu. Miễn là nó đã rời đi thì ổn rồi. Bây giờ anh có thể giúp tôi một việc là chất những thùng hàng đó lên chiếc xe tải đang đỗ ở đằng kia không?\nNam: Vâng, tôi sẽ lo việc đó ngay lập tức.",

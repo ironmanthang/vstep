@@ -105,7 +105,7 @@ export const VSTEP_LISTENING_MOCK_TEST_03: ListeningTest = {
     },
     {
       "start_ms": 795300,
-      "end_ms": 797600,
+      "end_ms": 797000,
       "text_en": "Announcer: That is the end of part two. Now turn...",
       "text_vi": "Người dẫn chương trình: Đó là kết thúc của phần hai. Bây giờ hãy chuyển sang..."
     },

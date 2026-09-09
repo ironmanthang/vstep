@@ -13,6 +13,8 @@
     "typecheck": "tsc --noEmit",
     "lint": "oxlint --deny-warnings",
     "ingest:listening": "node scripts/ingest-listening.mjs",
+    "verify:listening": "node --experimental-strip-types scripts/verify-all-listening.mjs",
+    "verify:timestamps": "node --experimental-strip-types scripts/verify-timestamps.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

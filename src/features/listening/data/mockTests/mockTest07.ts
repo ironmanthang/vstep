@@ -72,9 +72,9 @@ export const VSTEP_LISTENING_MOCK_TEST_07: ListeningTest = {
     },
     {
       "start_ms": 321000,
-      "end_ms": 1317050,
-      "text_en": "Announcer: That is the end of part one. Now turn to...\nLecturer: ...at our clinic we're beginning to realize the unique benefits of relaxation therapy. Other...",
-      "text_vi": "Người thông báo: Đây là phần kết thúc của phần một. Bây giờ hãy chuyển sang...\nGiảng viên: ...tại phòng khám của chúng tôi, chúng tôi đang bắt đầu nhận ra những lợi ích độc đáo của liệu pháp thư giãn. Những..."
+      "end_ms": 322900,
+      "text_en": "Announcer: That is the end of part one. Now turn to...",
+      "text_vi": "Người thông báo: Đây là phần kết thúc của phần một. Bây giờ hãy chuyển sang..."
     },
     {
       "start_ms": 322900,
@@ -105,7 +105,7 @@ export const VSTEP_LISTENING_MOCK_TEST_07: ListeningTest = {
     },
     {
       "start_ms": 827700,
-      "end_ms": 1317050,
+      "end_ms": 829400,
       "text_en": "Announcer: ...the end of part two. Now turn...",
       "text_vi": "Người thông báo: ...kết thúc phần hai. Bây giờ hãy chuyển sang..."
     },
