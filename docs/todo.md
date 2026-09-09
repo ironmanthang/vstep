@@ -89,6 +89,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 ### Transcript Song ngữ & Phân tích Manh mối
 - [x] Đồng bộ hiển thị chữ theo thời gian phát audio
 - [x] Tự động gạch chân câu chứa đáp án (Key Clue) và phân tích lý do các phương án sai (Distractor Breakdown)
+- [x] Run audit codebase check sau khi hoàn thành kỹ năng Nghe (Listening)
 
 ## SPRINT: NGÂN HÀNG ĐỀ THI THẬT & MOCK TEST (AUTHENTIC EXAM BANKS)
 - [x] Trích xuất và cấu trúc hóa Đề thi Đọc Set 11 (FME Sourced: 4 bài đọc, 40 câu hỏi, giải thích tiếng Việt) vào `src/features/reading/data/fmeDe11.ts`
@@ -114,6 +115,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [ ] Tự động highlight câu văn gốc chứa dẫn chứng trong bài đọc tương ứng với câu hỏi đang chọn
 - [ ] Bảng phân tích hiện tượng Paraphrase giữa bài đọc và đáp án đúng
 - [ ] Chế độ áp lực thời gian (Time Pressure Mode): Đếm ngược 15 phút/bài đọc (~500 từ, 10 câu)
+- [ ] Run audit codebase check sau khi hoàn thành kỹ năng Đọc (Reading)
 
 ## SPRINT: LUYỆN VIẾT VỚI GIÀN GIÁO (SCAFFOLDED WRITING & VIETLISH AI)
 
@@ -135,6 +137,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [ ] Sinh bài mẫu viết lại (Revised Essay) nâng band từ ý tưởng gốc của học viên
 - [ ] Unit Test bộ đếm từ và kiểm tra tỷ lệ n-gram sao chép đề bài
 - [ ] Unit Test bộ parser phản hồi AI Strict JSON Schema
+- [ ] Run audit codebase check sau khi hoàn thành kỹ năng Viết (Writing)
 
 ## SPRINT: LUYỆN NÓI TƯƠNG TÁC (INTERACTIVE SPEAKING STUDIO)
 
@@ -153,6 +156,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [ ] Phonetic Highlighting: Bôi đỏ từ phát âm sai / thiếu phụ âm cuối kèm phát âm mẫu IPA
 - [ ] Gợi ý dàn ý mở rộng P-E-E-R và bài nói mẫu nâng band B2/C1
 - [ ] Tối ưu Lazy loading audio processor và module Speaking
+- [ ] Run audit codebase check sau khi hoàn thành kỹ năng Nói (Speaking)
 
 ## SPRINT: THI THỬ THỰC CHIẾN (FULL MOCK TEST & EXAM ORCHESTRATOR)
 
@@ -169,3 +173,4 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [ ] Chế độ Review chi tiết: Xem lại từng câu trắc nghiệm sai kèm dẫn chứng và toàn bộ nhận xét AI
 - [ ] Unit Test thuật toán tính điểm và quy tắc làm tròn 0.5 VSTEP
 - [ ] Tối ưu Lazy loading Mock Test & Chart components
+- [ ] Run audit codebase check sau khi hoàn thành Full Mock Test
