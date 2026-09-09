@@ -4,7 +4,7 @@ Tài liệu này xác định các giai đoạn phát triển, nguyên tắc ưu
 
 ## Nguyên tắc Ưu tiên & Kiến trúc Cốt lõi
 - **P1 (Foundation & Curated SRS)**: App Shell PWA, Master AI Gateway (Google AI, OpenRouter, Ollama Cloud) với Key Pool rotation, Flashcard SRS 1.500 từ cốt lõi trích xuất từ đề thi thật ULIS/HNUE theo 8 chủ đề VSTEP.
-- **P2 (Assisted Listening Studio)**: Unified Listening Runner (`mode: 'practice' | 'exam'`), Custom Audio Player có tua ±5s, Dictation Mode và Transcript song ngữ gạch chân Key Clues.
+- **P2 (Assisted Listening Studio)**: Unified Listening Runner (`mode: 'practice' | 'exam'`), Custom Audio Player có tua ±5s, phân đoạn nhóm bài nghe (Passage Headers), Scratchpad ghi chú nháp và Transcript song ngữ gạch chân Key Clues.
 - **P3 (Assisted Reading Studio)**: Unified Reading Runner (`mode: 'practice' | 'exam'`), Split-Pane cuộn độc lập, 1-Tap Dictionary (tooltip tra từ tức thì, không lưu rác vào SRS), phân tích 5 dạng câu hỏi đọc hiểu và Highlight dẫn chứng.
 - **P4 (Scaffolded Writing & Vietlish AI)**: Unified Writing Runner (`mode: 'practice' | 'exam'`), Editor đếm từ và auto-save bản nháp 5s, Outline Generator, thư viện mẫu câu, Pipeline chấm 2 tầng và Vietlish Engine 3 nhóm lỗi.
 - **P5 (Interactive Speaking Studio)**: Unified Speaking Runner (`mode: 'practice' | 'exam'`), phòng thu đếm ngược kèm âm báo BEEP chuẩn Bộ GD&ĐT, Web Audio API acoustic metrics và Gemini 3.5 Flash Lite Native Audio pipeline chấm 5 tiêu chí MOET.
@@ -31,11 +31,11 @@ Chất lượng, hiệu năng và kiểm thử không tổ chức thành giai đ
   - Thuật toán Spaced Repetition (1-3-7-14-30) và Daily Review Queue hoạt động chính xác kèm unit tests xác thực.
 
 ### Giai đoạn: Luyện Nghe Chủ động (Assisted Listening Studio)
-- **Trọng tâm**: Xây dựng Unified Listening Runner (`mode: 'practice' | 'exam'`), Custom Audio Player tua ±5s, chỉnh tốc độ (0.75x–1.25x), luyện theo 3 Part chuyên biệt, Dictation Mode (chép chính tả) và Transcript song ngữ gạch chân Key Clues.
+- **Trọng tâm**: Xây dựng Unified Listening Runner (`mode: 'practice' | 'exam'`), Custom Audio Player tua ±5s, chỉnh tốc độ (0.5x–2.0x), luồng câu hỏi đơn trang (Single-Page Stream), phân đoạn hội thoại/bài giảng (PassageGroupHeader), Scratchpad ghi chú nháp và Transcript song ngữ mở rộng.
 - **Tiêu chuẩn hoàn thành (Definition of Done)**:
-  - Audio Player chuyển câu và tua lùi tức thì, hoạt động ổn định trên cả Mobile và Desktop.
-  - Dictation Mode so khớp ký tự trực quan (xanh/đỏ/vàng) theo thời gian thực.
-  - Transcript đồng bộ audio hiển thị rõ Key Clues và phân tích phương án nhiễu.
+  - Audio Player chuyển câu, tua ±5s tức thì, ổn định trên cả Mobile và Desktop.
+  - Phân đoạn bài nghe tự động nhận diện ranh giới hội thoại/bài giảng kèm nút phát nhanh.
+  - Khung ghi chú nháp và transcript mở rộng tại chỗ dưới mỗi câu hỏi, hiển thị rõ Key Clues và bản dịch song ngữ.
 
 ### Giai đoạn: Luyện Đọc có Hỗ trợ (Assisted Reading Studio)
 - **Trọng tâm**: Xây dựng Unified Reading Runner (`mode: 'practice' | 'exam'`), Split-Pane (bài đọc trái, câu hỏi phải), 1-Tap Dictionary (tooltip tra nghĩa tức thì hỗ trợ offline), 5 dạng câu hỏi đọc hiểu và Time Pressure Mode (15p/bài).
@@ -70,7 +70,7 @@ Chất lượng, hiệu năng và kiểm thử không tổ chức thành giai đ
 | Milestone | Trọng tâm | Trạng thái |
 | :--- | :--- | :--- |
 | **M1: Foundation & Curated SRS** | App Shell PWA, AI Master Gateway & Key Pool, Flashcard SRS 1.500 từ | Đã hoàn thành |
-| **M2: Assisted Listening Studio** | Unified Listening Runner (`practice` \| `exam`), Audio Player ±5s, Dictation, Transcript | Đã hoàn thành |
+| **M2: Assisted Listening Studio** | Unified Listening Runner (`practice` \| `exam`), Audio Player ±5s, Scratchpad, Inline Transcript | Đã hoàn thành |
 | **M3: Assisted Reading Studio** | Unified Reading Runner (`practice` \| `exam`), Split-Pane, 1-Tap Dict Tooltip, Highlights | Sắp tới |
 | **M4: Scaffolded Writing & Vietlish AI** | Unified Writing Runner (`practice` \| `exam`), Editor auto-save, Pipeline chấm 2 tầng, Vietlish | Sắp tới |
 | **M5: Interactive Speaking Studio** | Unified Speaking Runner (`practice` \| `exam`), Countdown BEEP, Web Audio, Gemini 3.5 Flash Lite Native Audio | Sắp tới |

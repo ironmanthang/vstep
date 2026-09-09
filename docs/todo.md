@@ -45,8 +45,8 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Modal xác nhận đặt lại Deck 2 bước chống xóa nhầm (ConfirmResetModal) responsive trên Mobile & Desktop
 - [x] Xóa sạch dữ liệu đồng bộ đám mây (user_flashcard_reviews & user_daily_stats) khi người dùng xác nhận đặt lại Deck
 - [x] Cơ chế Decoupled Corpus Hydration: Giữ nguyên 100% tiến độ học khi mở rộng kho từ vựng từ 1.500 lên 3.000 từ trong tương lai
-- [ ] Tăng số lượng từ lên 3000
-- [ ] question: what is the logic of this The Spaced Repetition (SRS) system in this project?? how does the system decide when to show which words??the priority order is??is it good? 
+- [ ] Tăng số lượng từ lên 3000, lấy từ các đề trong 4 skills
+- [ ] question: what is the algorithms logic of the Spaced Repetition (SRS) system in this project?? how does the system decide when to show which words??the priority order is??is it good? 
 - [ ] add noti to show the srs
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)
 - [x] Unit Test thuật toán Spaced Repetition (SRS algorithm) qua Vitest
@@ -82,14 +82,13 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] OCR và trích xuất trọn bộ câu hỏi 35 câu (tổng 245 câu, 4 lựa chọn, đáp án chuẩn, lời giải tiếng Việt) cho toàn bộ 7 đề từ sách "7 VSTEP Tests"
 - [x] Khởi tạo các module đề thi thử độc lập `mockTest01.ts` đến `mockTest07.ts` trong `src/features/listening/data/mockTests/` và export qua `src/features/listening/data/index.ts`
 
-### Chế độ Dictation (Nghe chép chính tả)
-- [x] Cắt audio thành từng câu 3–7s với giao diện nhập liệu trực quan
-- [x] Bộ so khớp ký tự Client-side hiển thị màu: xanh (đúng), đỏ (sai chính tả/âm đuôi), vàng (thiếu từ nối/mạo từ)
-
-### Transcript Song ngữ & Phân tích Manh mối
-- [x] Đồng bộ hiển thị chữ theo thời gian phát audio
-- [x] Tự động gạch chân câu chứa đáp án (Key Clue) và phân tích lý do các phương án sai (Distractor Breakdown)
-- [x] Run audit codebase check sau khi hoàn thành kỹ năng Nghe (Listening)
+### Tinh giản Luồng Luyện Nghe & Ghi chú Nháp (Streamlined Question Stream & Scratchpad)
+- [x] Tinh giản `ListeningRunner`: Loại bỏ tab-switcher (questions/dictation/transcript) và cơ chế dictation diff, hợp nhất toàn bộ trải nghiệm vào luồng câu hỏi đơn trang
+- [x] Xây dựng `PassageGroupHeader` tự động nhận diện ranh giới bài nghe Part 2 (Hội thoại) và Part 3 (Bài giảng) kèm nút phát audio phân đoạn
+- [x] Nút nhảy audio trực tiếp tại badge từng câu hỏi (`▶ [mm:ss]`) trong chế độ Practice
+- [x] Khung ghi chú nháp từ khóa (Scratchpad) auto-expanding dưới mỗi câu hỏi (chỉ bật trong Practice Mode)
+- [x] Khung mở rộng lời thoại & manh mối (Inline Collapsible Transcript) song ngữ và bôi sáng manh mối trực tiếp dưới mỗi câu hỏi
+- [x] Kiểm thử toàn diện: Unit tests `listening.test.ts` (10 tests), lint và typecheck pass 100%
 
 ## SPRINT: NGÂN HÀNG ĐỀ THI THẬT & MOCK TEST (AUTHENTIC EXAM BANKS)
 - [x] Trích xuất và cấu trúc hóa Đề thi Đọc Set 11 (FME Sourced: 4 bài đọc, 40 câu hỏi, giải thích tiếng Việt) vào `src/features/reading/data/fmeDe11.ts`

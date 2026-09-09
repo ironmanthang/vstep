@@ -65,7 +65,7 @@ export const ListeningStudioPage: React.FC = () => {
       count: '35 Câu hỏi (Trọn Bộ)',
       time: '~40 phút',
       difficulty: 'B1–C1',
-      desc: '7 Bộ đề thi thử chuẩn ĐHQGHN với audio phòng thi gốc, chữa đề và chép chính tả 35 câu.',
+      desc: '7 Bộ đề thi thử chuẩn ĐHQGHN với audio phòng thi gốc, chữa đề, ghi chú nháp và xem manh mối 35 câu.',
       badgeColor: 'badge-purple',
     },
   ];
@@ -80,7 +80,7 @@ export const ListeningStudioPage: React.FC = () => {
               Phòng Luyện Nghe Chủ Động (Listening Studio)
             </h1>
             <p style={{ fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)', marginTop: 4 }}>
-              Audio player thông minh tua ±5s, chỉnh tốc độ, chép chính tả và phụ đề song ngữ gạch chân manh mối.
+              Audio player thông minh tua ±5s, chỉnh tốc độ, ghi chú nháp và xem lời thoại manh mối theo từng câu.
             </p>
           </div>
 

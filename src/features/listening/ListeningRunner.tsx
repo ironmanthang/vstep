@@ -1,9 +1,8 @@
 import React, { useState, useRef } from 'react';
-import type { ListeningTest, ListeningMode, ActivePracticeTab, ListeningScoreResult } from './types';
+import type { ListeningTest, ListeningMode, ListeningScoreResult } from './types';
 import { useAudioPlayer } from './useAudioPlayer';
 import { CustomAudioPlayer } from './components/CustomAudioPlayer';
-import { DictationPanel } from './components/DictationPanel';
-import { TranscriptPanel } from './components/TranscriptPanel';
+import { PassageGroupHeader } from './components/PassageGroupHeader';
 import { useUserStore } from '../../services/user/userStore';
 import './ListeningRunner.css';
 
@@ -11,6 +10,13 @@ interface ListeningRunnerProps {
   test: ListeningTest;
   mode?: ListeningMode;
   onComplete?: (result: ListeningScoreResult) => void;
+}
+
+function formatTimestamp(ms: number): string {
+  const totalSecs = Math.floor(ms / 1000);
+  const mins = Math.floor(totalSecs / 60);
+  const secs = totalSecs % 60;
+  return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
 export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
@@ -21,11 +27,17 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
   const isExam = mode === 'exam';
   const { recordStudyActivity, incrementExercisesCompleted } = useUserStore();
 
-  const [activeTab, setActiveTab] = useState<ActivePracticeTab>('questions');
   const [answers, setAnswers] = useState<Record<string, 'A' | 'B' | 'C' | 'D'>>({});
   const [flaggedQuestions, setFlaggedQuestions] = useState<Set<string>>(new Set());
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const [scoreResult, setScoreResult] = useState<ListeningScoreResult | null>(null);
+
+  // Scratchpad notes per question (practice mode only)
+  const [notes, setNotes] = useState<Record<string, string>>({});
+
+  // Inline collapsible transcript states per question
+  const [expandedTranscripts, setExpandedTranscripts] = useState<Set<string>>(new Set());
+  const [showVietnamese, setShowVietnamese] = useState<Record<string, boolean>>({});
 
   const questionRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
@@ -34,12 +46,10 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
     currentTime,
     duration,
     playbackRate,
-    activeSubtitleIndex,
     togglePlay,
     seekBy,
     seekTo,
     setPlaybackRate,
-    playSegment,
   } = useAudioPlayer({
     test,
     mode,
@@ -68,8 +78,26 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
     });
   };
 
+  const handleToggleTranscript = (questionId: string) => {
+    setExpandedTranscripts(prev => {
+      const next = new Set(prev);
+      if (next.has(questionId)) {
+        next.delete(questionId);
+      } else {
+        next.add(questionId);
+      }
+      return next;
+    });
+  };
+
+  const handleToggleVietnamese = (questionId: string) => {
+    setShowVietnamese(prev => ({
+      ...prev,
+      [questionId]: prev[questionId] === undefined ? false : !prev[questionId],
+    }));
+  };
+
   const scrollToQuestion = (questionId: string) => {
-    setActiveTab('questions');
     const el = questionRefs.current[questionId];
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -110,10 +138,56 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
     setFlaggedQuestions(new Set());
     setIsSubmitted(false);
     setScoreResult(null);
+    setNotes({});
+    setExpandedTranscripts(new Set());
     seekTo(0);
   };
 
   const answeredCount = Object.keys(answers).length;
+
+  // Helper to find transcript segment and group context for any question
+  const getQuestionTranscriptContext = (questionId: string) => {
+    const segment = test.transcript.find(t => {
+      if (!t.is_clue_for_question) return false;
+      const ids = t.is_clue_for_question.split(',').map(s => s.trim());
+      return ids.includes(questionId);
+    });
+
+    if (!segment) {
+      return { segment: null, isFirstInGroup: false, groupTitle: '', groupQuestionIds: [] };
+    }
+
+    const groupQuestionIds = segment.is_clue_for_question
+      ? segment.is_clue_for_question.split(',').map(s => s.trim())
+      : [];
+
+    const isGroup = groupQuestionIds.length > 1;
+    const isFirstInGroup = isGroup && groupQuestionIds[0] === questionId;
+
+    let groupTitle = '';
+    if (isFirstInGroup) {
+      const firstQIndex = test.questions.findIndex(q => q.id === groupQuestionIds[0]) + 1;
+      const lastQIndex = test.questions.findIndex(q => q.id === groupQuestionIds[groupQuestionIds.length - 1]) + 1;
+
+      const textLower = segment.text_en.toLowerCase();
+      if (textLower.includes('conversation') || (firstQIndex >= 9 && lastQIndex <= 20)) {
+        const convIndex = Math.ceil((firstQIndex - 8) / 4);
+        groupTitle = `Đoạn Hội Thoại ${convIndex > 0 ? convIndex : ''} (Câu ${firstQIndex} – ${lastQIndex})`;
+      } else if (textLower.includes('lecture') || textLower.includes('talk') || firstQIndex >= 21) {
+        const lecIndex = Math.ceil((firstQIndex - 20) / 5);
+        groupTitle = `Bài Giảng Học Thuật ${lecIndex > 0 ? lecIndex : ''} (Câu ${firstQIndex} – ${lastQIndex})`;
+      } else {
+        groupTitle = `Đoạn Nghe (Câu ${firstQIndex} – ${lastQIndex})`;
+      }
+    }
+
+    return {
+      segment,
+      isFirstInGroup,
+      groupTitle,
+      groupQuestionIds,
+    };
+  };
 
   return (
     <div className="listening-runner">
@@ -158,22 +232,14 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
           <p style={{ margin: 0, fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)' }}>
             Đúng <strong>{scoreResult.correctCount}</strong> trên tổng số <strong>{scoreResult.totalQuestions}</strong> câu hỏi.
           </p>
-          <div style={{ display: 'flex', gap: 'var(--space-2)', marginTop: 'var(--space-2)' }}>
-            <button
-              className="primary-btn"
-              onClick={() => setActiveTab('transcript')}
-            >
-              Xem Lời Thoại & Manh Mối 🎯
-            </button>
-          </div>
         </div>
       )}
 
       {/* Main Content Workspace */}
       <div className="runner-workspace-grid">
-        {/* Left Column: Player + Tabs + Questions / Dictation / Transcript */}
+        {/* Left Column: Player + Unified Questions Stream */}
         <div className="main-question-area">
-          {/* Sticky Custom Audio Player (Scoped to Left Column so Palette on right is never occluded) */}
+          {/* Sticky Custom Audio Player */}
           <CustomAudioPlayer
             isPlaying={isPlaying}
             currentTime={currentTime}
@@ -186,47 +252,57 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
             onSetRate={setPlaybackRate}
           />
 
-          {/* Practice Scaffolding Tabs (Practice mode only) */}
-          {!isExam && (
-            <div className="runner-tab-bar">
-              <button
-                className={`runner-tab-btn ${activeTab === 'questions' ? 'active' : ''}`}
-                onClick={() => setActiveTab('questions')}
-              >
-                📋 Câu Hỏi Trắc Nghiệm ({test.questions.length})
-              </button>
-              <button
-                className={`runner-tab-btn ${activeTab === 'dictation' ? 'active' : ''}`}
-                onClick={() => setActiveTab('dictation')}
-              >
-                ✍️ Chép Chính Tả (Dictation)
-              </button>
-              <button
-                className={`runner-tab-btn ${activeTab === 'transcript' ? 'active' : ''}`}
-                onClick={() => setActiveTab('transcript')}
-              >
-                📜 Lời Thoại & Manh Mối {isSubmitted && '🎯'}
-              </button>
-            </div>
-          )}
+          {/* Unified Question List */}
+          <div className="questions-stream-container">
+            {test.questions.map((q, idx) => {
+              const selectedKey = answers[q.id];
+              const isFlagged = flaggedQuestions.has(q.id);
+              const isCorrect = selectedKey === q.correct_key;
+              const { segment, isFirstInGroup, groupTitle } = getQuestionTranscriptContext(q.id);
+              const isTranscriptOpen = expandedTranscripts.has(q.id);
+              const isViOpen = showVietnamese[q.id] !== false; // Default true
 
-          {activeTab === 'questions' && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
-              {test.questions.map((q, idx) => {
-                const selectedKey = answers[q.id];
-                const isFlagged = flaggedQuestions.has(q.id);
-                const isCorrect = selectedKey === q.correct_key;
+              return (
+                <React.Fragment key={q.id}>
+                  {/* Passage Group Header for Multi-Question Conversations/Lectures */}
+                  {isFirstInGroup && segment && (
+                    <PassageGroupHeader
+                      title={groupTitle}
+                      startMs={segment.start_ms}
+                      endMs={segment.end_ms}
+                      isExam={isExam}
+                      onPlayPassage={() => seekTo(segment.start_ms / 1000)}
+                      onScrollToFirst={() => scrollToQuestion(q.id)}
+                    />
+                  )}
 
-                return (
                   <div
-                    key={q.id}
                     ref={(el) => { questionRefs.current[q.id] = el; }}
                     className="question-card"
                   >
+                    {/* Card Header with Question Badge and Jump Button */}
                     <div className="question-card-header">
-                      <span className="question-number-badge">Câu {idx + 1}</span>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <span className="question-number-badge">Câu {idx + 1}</span>
+
+                        {/* Audio Jump Button on Question Badge in Practice Mode */}
+                        {!isExam && segment && (
+                          <button
+                            type="button"
+                            className="question-audio-jump-btn"
+                            onClick={() => seekTo(segment.start_ms / 1000)}
+                            title={`Nhảy tới đoạn nghe câu này [${formatTimestamp(segment.start_ms)}]`}
+                            aria-label={`Nghe đoạn audio câu ${idx + 1}`}
+                          >
+                            <span className="play-triangle-small">▶</span>
+                            <span>{formatTimestamp(segment.start_ms)}</span>
+                          </button>
+                        )}
+                      </div>
+
                       {!isSubmitted && (
                         <button
+                          type="button"
                           onClick={() => handleToggleFlag(q.id)}
                           style={{
                             background: 'none',
@@ -242,6 +318,7 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
                       )}
                     </div>
 
+                    {/* Question Prompt */}
                     <p className="question-prompt-text">{q.question_text}</p>
 
                     {/* Options */}
@@ -284,28 +361,88 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
                         </p>
                       </div>
                     )}
+
+                    {/* Scratchpad Note-Taking (Practice Mode Only) */}
+                    {!isExam && (
+                      <div className="question-scratchpad-wrap">
+                        <textarea
+                          className="question-scratchpad-input"
+                          placeholder="📝 Ghi chú nháp từ khóa... (Enter để xuống dòng)"
+                          rows={1}
+                          value={notes[q.id] || ''}
+                          onChange={(e) => {
+                            const val = e.target.value;
+                            setNotes(prev => ({ ...prev, [q.id]: val }));
+                            // Dynamic auto-expansion
+                            e.target.style.height = 'auto';
+                            e.target.style.height = `${Math.min(e.target.scrollHeight, 220)}px`;
+                          }}
+                          aria-label={`Ghi chú cho câu ${idx + 1}`}
+                        />
+                      </div>
+                    )}
+
+                    {/* Inline Collapsible Transcript & Clue (Practice Mode Only) */}
+                    {!isExam && segment && (
+                      <div className="inline-transcript-container">
+                        <button
+                          type="button"
+                          className="inline-transcript-toggle-btn"
+                          onClick={() => handleToggleTranscript(q.id)}
+                          aria-expanded={isTranscriptOpen}
+                        >
+                          <span className="toggle-chevron">{isTranscriptOpen ? '▲' : '▼'}</span>
+                          <span>{isTranscriptOpen ? 'Ẩn Lời Thoại & Manh Mối' : 'Xem Lời Thoại & Manh Mối'}</span>
+                          {isSubmitted && <span className="clue-tag-subtle">🎯 Xem giải thích</span>}
+                        </button>
+
+                        {isTranscriptOpen && (
+                          <div className="inline-transcript-box">
+                            <div className="inline-transcript-toolbar">
+                              <span className="transcript-time-pill">
+                                [{formatTimestamp(segment.start_ms)} – {formatTimestamp(segment.end_ms)}]
+                              </span>
+                              <div style={{ display: 'flex', gap: '8px' }}>
+                                <button
+                                  type="button"
+                                  className="secondary-btn"
+                                  onClick={() => seekTo(segment.start_ms / 1000)}
+                                  style={{ padding: '4px 10px', fontSize: 'var(--fs-xs)', fontWeight: 600 }}
+                                >
+                                  ▶ Nghe đoạn này
+                                </button>
+                                <button
+                                  type="button"
+                                  className="secondary-btn"
+                                  onClick={() => handleToggleVietnamese(q.id)}
+                                  style={{ padding: '4px 10px', fontSize: 'var(--fs-xs)', fontWeight: 600 }}
+                                >
+                                  {isViOpen ? 'Ẩn Bản Dịch' : 'Hiện Bản Dịch'}
+                                </button>
+                              </div>
+                            </div>
+
+                            <div className="inline-transcript-text-body">
+                              <p className="transcript-body-en">{segment.text_en}</p>
+                              {isViOpen && segment.text_vi && (
+                                <p className="transcript-body-vi">{segment.text_vi}</p>
+                              )}
+                            </div>
+
+                            {/* Question Clue Highlight Box */}
+                            <div className="inline-clue-highlight">
+                              <span className="clue-highlight-title">🎯 Manh mối Câu {idx + 1}:</span>
+                              <span className="clue-highlight-content">{q.explanation_vi}</span>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
-                );
-              })}
-            </div>
-          )}
-
-          {activeTab === 'dictation' && (
-            <DictationPanel
-              test={test}
-              currentSubtitleIndex={activeSubtitleIndex}
-              onPlaySegment={playSegment}
-            />
-          )}
-
-          {activeTab === 'transcript' && (
-            <TranscriptPanel
-              test={test}
-              activeSubtitleIndex={activeSubtitleIndex}
-              showClues={isSubmitted || !isExam}
-              onPlaySegment={playSegment}
-            />
-          )}
+                </React.Fragment>
+              );
+            })}
+          </div>
         </div>
 
         {/* Right Column: Question Palette Sidebar */}

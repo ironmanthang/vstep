@@ -5,7 +5,7 @@ Dự án là nền tảng web học tiếng Anh và luyện thi VSTEP thế hệ
 
 ## Sự khác biệt Cốt lõi
 - **Chế độ Luyện tập Thân thiện (Skill Building Mode - Trọng tâm)**:
-  - Cho phép tua lại ±5s, chỉnh tốc độ nghe, nghe chép chính tả (Dictation) và tra từ nhanh qua tooltip.
+  - Cho phép tua lại ±5s, chỉnh tốc độ nghe, ghi chú nháp từ khóa và xem lời thoại manh mối trực tiếp.
   - Cung cấp giàn giáo hỗ trợ (Scaffolding): Gợi ý dàn ý, mẫu câu ăn điểm, kho bài mẫu giải phẫu 5 màu.
   - Trợ lý AI chỉ ra lỗi tư duy tiếng Việt (Vietlish), phản hồi tích cực và ghi nhận điểm sáng.
   - Học vi mô (Micro-learning): Flashcard SRS 1.500 từ cốt lõi duy trì thói quen học mỗi ngày trên điện thoại.
@@ -47,7 +47,7 @@ Dự án là nền tảng web học tiếng Anh và luyện thi VSTEP thế hệ
 
 ### Đặc tả Tính năng (`docs/features/`)
 - [foundation_drills.md](file:///d:/program/vstep/docs/features/foundation_drills.md): Flashcard SRS 1.500 từ trích xuất đề thi thật ULIS/HNUE theo 8 chủ đề.
-- [listening.md](file:///d:/program/vstep/docs/features/listening.md): Unified Listening Runner, smart player ±5s, dictation và transcript song ngữ.
+- [listening.md](file:///d:/program/vstep/docs/features/listening.md): Unified Listening Runner, smart player ±5s, khung ghi chú nháp và lời thoại manh mối theo câu.
 - [reading.md](file:///d:/program/vstep/docs/features/reading.md): Unified Reading Runner, 1-Tap Dictionary tooltip, split-pane và highlight dẫn chứng.
 - [writing.md](file:///d:/program/vstep/docs/features/writing.md): Unified Writing Runner, giàn giáo hỗ trợ, Vietlish engine và quy ước bôi màu nhận xét.
 - [speaking.md](file:///d:/program/vstep/docs/features/speaking.md): Unified Speaking Runner, phòng thu đếm ngược BEEP, radar chart và Gemini 3.5 Flash Lite Native Audio.
