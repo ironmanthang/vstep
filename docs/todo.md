@@ -70,6 +70,8 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Tải và tích hợp file audio MP3 thi thật từ nguồn chính thức (7 đề thi VSTEP chuẩn ĐHQGHN)
 - [x] Cắt tách file audio lossless 21 file cho 7 đề × 3 Part (`public/audio/listening/test{1..7}/vstep-test-{1..7}-part{1..3}.mp3`)
 - [x] Ingestion tự động hóa 21 bộ transcript song ngữ kèm mốc thời gian chính xác sub-second (`scripts/ingest-listening.mjs`)
+- [x] Cấu hình luồng phân phối âm thanh Production qua Cloudflare Pages `public/_redirects` chuyển hướng 302 sang Google Drive CDN direct links (hỗ trợ HTTP 206 Partial Content, Range headers, CORS `*` và tua tức thì)
+- [x] Lập danh mục nguồn gốc âm thanh toàn diện (`docs/sources/listening/README.md`) lập chỉ mục 22 file audio với mã định danh Google Drive ID, URL stream trực tiếp và tài liệu tham chiếu sách gốc
 
 ### Ngân hàng Đề Luyện Tập Đa Dạng (Multi-Test Banks)
 - [x] Tách biệt kiến trúc ngân hàng nghe: Purge các slice trùng lặp khỏi `part1Bank.ts`, `part2Bank.ts`, `part3Bank.ts`, xuất mảng rỗng sẵn sàng cho đề discrete độc lập

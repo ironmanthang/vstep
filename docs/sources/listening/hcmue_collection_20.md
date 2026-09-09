@@ -8,6 +8,28 @@
 - **Google Drive Master Repository**: [Google Drive Folder](https://drive.google.com/drive/folders/13xKgef4qGVEL3mt_Pagy1bmbq6mVZfjt)
 - **Master PDF Asset**: `scripts/vstep-collection-20-mock-tests.pdf` (199 pages, complete test papers, tapescripts, and answer keys)
 - **Master Audio Archive**: 60 isolated, high-bitrate stereo MP3 files (20 tests x 3 parts) in 256kbps audio format (`T1-PART1.mp3` through `T20-PART3.mp3`)
+- **Cloudflare Pages Production Streaming**: Requests to `/audio/listening/drills/hcmue...` are redirected via HTTP 302 in `public/_redirects` to direct Google Drive CDN stream URLs (`https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t`), supporting byte-range requests and CORS headers across all browsers.
+- **Local Dev Cache**: Stored on disk under `public/audio/listening/drills/hcmue{1..5}/` (ignored in `.gitignore`).
+
+### Audio Assets & Streaming Registry (Tests 01–05)
+
+| Drill ID | Route on vstep.pages.dev | Master File | Google Drive ID | Direct Production CDN Stream URL | Specs |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `hcmue_lis_p1_01` | `/audio/listening/drills/hcmue1/hcmue-test-1-part1.mp3` | `T1-PART1.mp3` | `1YshyTAf-5p9wDP72IK-vFdMvgZ7zkowV` | `https://drive.usercontent.google.com/download?id=1YshyTAf-5p9wDP72IK-vFdMvgZ7zkowV&export=download&confirm=t` | 08m 46s (16.07 MB) |
+| `hcmue_lis_p2_01` | `/audio/listening/drills/hcmue1/hcmue-test-1-part2.mp3` | `T1-PART2.mp3` | `1SbmhYrKc1B3zwNB03HQWs02R3gYpJ-3R` | `https://drive.usercontent.google.com/download?id=1SbmhYrKc1B3zwNB03HQWs02R3gYpJ-3R&export=download&confirm=t` | 05m 40s (10.40 MB) |
+| `hcmue_lis_p3_01` | `/audio/listening/drills/hcmue1/hcmue-test-1-part3.mp3` | `T1-PART3.mp3` | `1QJRZ_0WSLJAc3HrD9lV1o9nrwnrWF9oJ` | `https://drive.usercontent.google.com/download?id=1QJRZ_0WSLJAc3HrD9lV1o9nrwnrWF9oJ&export=download&confirm=t` | 12m 08s (22.25 MB) |
+| `hcmue_lis_p1_02` | `/audio/listening/drills/hcmue2/hcmue-test-2-part1.mp3` | `T2-PART1.mp3` | `1PyAvQiKmKRIB3ytRMPktRKB04cOR2bQH` | `https://drive.usercontent.google.com/download?id=1PyAvQiKmKRIB3ytRMPktRKB04cOR2bQH&export=download&confirm=t` | 06m 26s (11.79 MB) |
+| `hcmue_lis_p2_02` | `/audio/listening/drills/hcmue2/hcmue-test-2-part2.mp3` | `T2-PART2.mp3` | `1UnZ_2ERI8pL-lxP2kWsMujbT6ek2VMiO` | `https://drive.usercontent.google.com/download?id=1UnZ_2ERI8pL-lxP2kWsMujbT6ek2VMiO&export=download&confirm=t` | 06m 07s (11.23 MB) |
+| `hcmue_lis_p3_02` | `/audio/listening/drills/hcmue2/hcmue-test-2-part3.mp3` | `T2-PART3.mp3` | `1XoQw4c7dXv65g4YoUSx9fRkmLiK9CNTc` | `https://drive.usercontent.google.com/download?id=1XoQw4c7dXv65g4YoUSx9fRkmLiK9CNTc&export=download&confirm=t` | 13m 48s (25.29 MB) |
+| `hcmue_lis_p1_03` | `/audio/listening/drills/hcmue3/hcmue-test-3-part1.mp3` | `T3-PART1.mp3` | `1CPbgz0QnmjoAmsVh-jkpH72xAbEvL_GH` | `https://drive.usercontent.google.com/download?id=1CPbgz0QnmjoAmsVh-jkpH72xAbEvL_GH&export=download&confirm=t` | 06m 56s (12.72 MB) |
+| `hcmue_lis_p2_03` | `/audio/listening/drills/hcmue3/hcmue-test-3-part2.mp3` | `T3-PART2.mp3` | `1Mu5msUTxCqM8m_6FX5y2ZqoLgws1HmOf` | `https://drive.usercontent.google.com/download?id=1Mu5msUTxCqM8m_6FX5y2ZqoLgws1HmOf&export=download&confirm=t` | 06m 17s (11.53 MB) |
+| `hcmue_lis_p3_03` | `/audio/listening/drills/hcmue3/hcmue-test-3-part3.mp3` | `T3-PART3.mp3` | `1FHBjxIiXimBHajcJManonnABjz2xm8DN` | `https://drive.usercontent.google.com/download?id=1FHBjxIiXimBHajcJManonnABjz2xm8DN&export=download&confirm=t` | 13m 37s (24.94 MB) |
+| `hcmue_lis_p1_04` | `/audio/listening/drills/hcmue4/hcmue-test-4-part1.mp3` | `T4-PART1.mp3` | `1UPToxRFrRCk01jxsCWcRKd-qbKhmDHda` | `https://drive.usercontent.google.com/download?id=1UPToxRFrRCk01jxsCWcRKd-qbKhmDHda&export=download&confirm=t` | 06m 02s (11.08 MB) |
+| `hcmue_lis_p2_04` | `/audio/listening/drills/hcmue4/hcmue-test-4-part2.mp3` | `T4-PART2.mp3` | `1JnFxylLsDIyJWm8lUuoboVCB4D0_lzFG` | `https://drive.usercontent.google.com/download?id=1JnFxylLsDIyJWm8lUuoboVCB4D0_lzFG&export=download&confirm=t` | 06m 16s (11.51 MB) |
+| `hcmue_lis_p3_04` | `/audio/listening/drills/hcmue4/hcmue-test-4-part3.mp3` | `T4-PART3.mp3` | `1YTl0SVUKPurK7CuXZgINhVQFIKOmhAk-` | `https://drive.usercontent.google.com/download?id=1YTl0SVUKPurK7CuXZgINhVQFIKOmhAk-&export=download&confirm=t` | 14m 14s (26.08 MB) |
+| `hcmue_lis_p1_05` | `/audio/listening/drills/hcmue5/hcmue-test-5-part1.mp3` | `T5-PART1.mp3` | `1KLqsTziZTAcco0k89P3RKThoUgY56_sg` | `https://drive.usercontent.google.com/download?id=1KLqsTziZTAcco0k89P3RKThoUgY56_sg&export=download&confirm=t` | 07m 05s (13.00 MB) |
+| `hcmue_lis_p2_05` | `/audio/listening/drills/hcmue5/hcmue-test-5-part2.mp3` | `T5-PART2.mp3` | `1h6R5MREeKMBdnTjQBKFzSKge2WKcQNpG` | `https://drive.usercontent.google.com/download?id=1h6R5MREeKMBdnTjQBKFzSKge2WKcQNpG&export=download&confirm=t` | 06m 14s (11.45 MB) |
+| `hcmue_lis_p3_05` | `/audio/listening/drills/hcmue5/hcmue-test-5-part3.mp3` | `T5-PART3.mp3` | `12Kr5BrKl9ER3uSnZurK5tanQmZ2LpYJg` | `https://drive.usercontent.google.com/download?id=12Kr5BrKl9ER3uSnZurK5tanQmZ2LpYJg&export=download&confirm=t` | 15m 03s (27.57 MB) |
 
 ## Ingested Standalone Practice Drill Sets
 

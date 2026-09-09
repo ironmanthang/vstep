@@ -1,23 +1,96 @@
-# VSTEP Listening Sources Registry
+# VSTEP Listening Sources & Master Audio Registry
 
-## Overview
-Stores authenticated source citations, transcripts, audio origins, and answer keys for VSTEP Listening tests (35 questions: Part 1 Announcements, Part 2 Conversations, Part 3 Lectures).
+## Production Streaming Architecture
+The VSTEP platform delivers listening audio using a dual-mode edge-first architecture:
 
-## Active Test Sets
+- **Production Streaming (`https://vstep.pages.dev/`)**:
+  - Cloudflare Pages routes all `/audio/listening/...` requests via [`public/_redirects`](file:///d:/program/vstep/public/_redirects) using HTTP 302 redirects to direct Google Drive CDN stream URLs (`https://drive.usercontent.google.com/download?id=<FILE_ID>&export=download&confirm=t`).
+  - Google Drive CDN responds with `HTTP 200/206 Partial Content`, `Accept-Ranges: bytes`, and `Access-Control-Allow-Origin: *`, enabling client-side audio scrubbing (±5s seek) and Web Audio API integration across desktop and mobile browsers.
+  - Keeps the Git repository lightweight (< 3 MB total), prevents upload timeouts on slow home internet connections, and circumvents Cloudflare Pages 25 MiB asset upload limit (`hcmue-test-5-part3.mp3` is 27.57 MB).
+- **Local Development (`http://localhost:5173`)**:
+  - Audio files reside locally at [`public/audio/listening/`](file:///d:/program/vstep/public/audio/listening) (gitignored via `.gitignore`).
+  - Vite dev server serves local audio files directly with zero external network overhead.
+- **Offline Synchronization Scripts**:
+  - [`scripts/download-mock-assets.ps1`](file:///d:/program/vstep/scripts/download-mock-assets.ps1): Downloads the 7 continuous mock test MP3s and the master 160-page PDF.
+  - [`scripts/download-hcmue-drills.ps1`](file:///d:/program/vstep/scripts/download-hcmue-drills.ps1): Downloads the 15 authentic HCMUE drill slices (Tests 01–05, Parts 1–3).
+  - [`scripts/download_hcmue_drills.py`](file:///d:/program/vstep/scripts/download_hcmue_drills.py): Cross-platform Python sync runner for HCMUE audio assets.
+  - [`scripts/sync-all-assets.ps1`](file:///d:/program/vstep/scripts/sync-all-assets.ps1): Multi-threaded automated sync script with byte-level size validation and resume capability.
 
-| Set ID | Institution / Publisher | Exam Session / Publication | Document | Audio Assets |
-| :--- | :--- | :--- | :--- | :--- |
-| `vstep_listening_test1` | NXB ĐHQGHN (2019) | 7 Vstep Tests B1-B2-C1 (With Answers) - Test 1 | [vstep_test_01.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_01.md) | `test1/vstep-test-1.mp3`, `test1/vstep-test-1-part1..3.mp3` |
-| `vstep_listening_test2` | NXB ĐHQGHN (2019) | 7 Vstep Tests B1-B2-C1 (With Answers) - Test 2 | [vstep_test_02.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_02.md) | `test2/vstep-test-2.mp3`, `test2/vstep-test-2-part1..3.mp3` |
-| `vstep_listening_test3` | NXB ĐHQGHN (2019) | 7 Vstep Tests B1-B2-C1 (With Answers) - Test 3 | [vstep_test_03.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_03.md) | `test3/vstep-test-3.mp3`, `test3/vstep-test-3-part1..3.mp3` |
-| `vstep_listening_test4` | NXB ĐHQGHN (2019) | 7 Vstep Tests B1-B2-C1 (With Answers) - Test 4 | [vstep_test_04.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_04.md) | `test4/vstep-test-4.mp3`, `test4/vstep-test-4-part1..3.mp3` |
-| `vstep_listening_test5` | NXB ĐHQGHN (2019) | 7 Vstep Tests B1-B2-C1 (With Answers) - Test 5 | [vstep_test_05.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_05.md) | `test5/vstep-test-5.mp3`, `test5/vstep-test-5-part1..3.mp3` |
-| `vstep_listening_test6` | NXB ĐHQGHN (2019) | 7 Vstep Tests B1-B2-C1 (With Answers) - Test 6 | [vstep_test_06.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_06.md) | `test6/vstep-test-6.mp3`, `test6/vstep-test-6-part1..3.mp3` |
-| `vstep_listening_test7` | NXB ĐHQGHN (2019) | 7 Vstep Tests B1-B2-C1 (With Answers) - Test 7 | [vstep_test_07.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_07.md) | `test7/vstep-test-7.mp3`, `test7/vstep-test-7-part1..3.mp3` |
-| `hcmue_listening_drills` | NXB ĐHSP TP.HCM (2017) | VSTEP Collection: 20 Mock Tests (Tests 01–05) | [hcmue_collection_20.md](file:///d:/program/vstep/docs/sources/listening/hcmue_collection_20.md) | `drills/hcmue{1..5}/hcmue-test-{1..5}-part1..3.mp3` |
+---
 
-## Discrete Practice Drill Banks
-- **Part 1 Bank (`part1Bank.ts`)**: `hcmue_lis_p1_01` through `hcmue_lis_p1_05` (5 test editions, 40 questions total)
-- **Part 2 Bank (`part2Bank.ts`)**: `hcmue_lis_p2_01` through `hcmue_lis_p2_05` (5 test editions, 60 questions total across 15 conversations)
-- **Part 3 Bank (`part3Bank.ts`)**: `hcmue_lis_p3_01` through `hcmue_lis_p3_05` (5 test editions, 75 questions total across 15 academic lectures)
+## Authentic Sourcing Provenance
 
+### ULIS 7 VSTEP Tests Collection
+- **Institution**: Đại học Quốc gia Hà Nội (ĐHQGHN)
+- **Publication**: 7 Vstep Tests B1-B2-C1 (With Answers)
+- **Publisher**: NXB Đại học Quốc gia Hà Nội (2019)
+- **Master PDF Asset**: `scripts/7-Vstep-Tests-B1-B2-C1-Full-Key.pdf` (160 pages, complete exam papers, tapescripts, and keys)
+- **Format**: 7 Continuous 35-Question Mock Exams (Part 1: 8Q, Part 2: 12Q, Part 3: 15Q)
+
+### HCMUE VSTEP Collection 20 Mock Tests
+- **Institution**: Trường Đại học Sư phạm TP. Hồ Chí Minh (HCMUE)
+- **Publication**: VSTEP Collection: 20 Mock Tests
+- **Publisher**: NXB Đại học Sư phạm TP.HCM (2017)
+- **ISBN**: 978-604-947-764-5
+- **Master PDF Asset**: `scripts/vstep-collection-20-mock-tests.pdf` (199 pages)
+- **Google Drive Master Folder**: [HCMUE Audio Repository](https://drive.google.com/drive/folders/13xKgef4qGVEL3mt_Pagy1bmbq6mVZfjt)
+- **Format**: 60 isolated, studio-recorded stereo MP3 files (20 tests x 3 parts) in 256kbps audio quality
+
+---
+
+## Active Audio Assets Registry (22 Production Tracks)
+
+### Full Continuous Mock Tests (7 Exams, 245 Questions Total)
+
+| Test ID | Route on vstep.pages.dev | Google Drive File ID | Direct Production CDN Stream URL | Specs | Source Doc | Code Module |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `mock_test_01` | `/audio/listening/test1/vstep-test-1.mp3` | `1fuExNy339T0oQ4t4WHmSD0DrNcCuwgkv` | `https://drive.usercontent.google.com/download?id=1fuExNy339T0oQ4t4WHmSD0DrNcCuwgkv&export=download&confirm=t` | 23m 14s (21.28 MB, 128kbps) | [vstep_test_01.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_01.md) | [mockTest01.ts](file:///d:/program/vstep/src/features/listening/data/mockTests/mockTest01.ts) |
+| `mock_test_02` | `/audio/listening/test2/vstep-test-2.mp3` | `1jNwkONs0oyHwGigZzYUQkmctkAentkUP` | `https://drive.usercontent.google.com/download?id=1jNwkONs0oyHwGigZzYUQkmctkAentkUP&export=download&confirm=t` | 21m 32s (19.73 MB, 128kbps) | [vstep_test_02.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_02.md) | [mockTest02.ts](file:///d:/program/vstep/src/features/listening/data/mockTests/mockTest02.ts) |
+| `mock_test_03` | `/audio/listening/test3/vstep-test-3.mp3` | `1JryyGxLhsPsfP5XwVAAfYtNV1fUjqblt` | `https://drive.usercontent.google.com/download?id=1JryyGxLhsPsfP5XwVAAfYtNV1fUjqblt&export=download&confirm=t` | 22m 48s (20.89 MB, 128kbps) | [vstep_test_03.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_03.md) | [mockTest03.ts](file:///d:/program/vstep/src/features/listening/data/mockTests/mockTest03.ts) |
+| `mock_test_04` | `/audio/listening/test4/vstep-test-4.mp3` | `19l96eQ9gHex1SG6HEemB2kDCYIHKYRDS` | `https://drive.usercontent.google.com/download?id=19l96eQ9gHex1SG6HEemB2kDCYIHKYRDS&export=download&confirm=t` | 20m 07s (18.43 MB, 128kbps) | [vstep_test_04.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_04.md) | [mockTest04.ts](file:///d:/program/vstep/src/features/listening/data/mockTests/mockTest04.ts) |
+| `mock_test_05` | `/audio/listening/test5/vstep-test-5.mp3` | `1jqiV-oTJTx8eLvGjgQ42k-sRYGQFkkQs` | `https://drive.usercontent.google.com/download?id=1jqiV-oTJTx8eLvGjgQ42k-sRYGQFkkQs&export=download&confirm=t` | 22m 28s (20.57 MB, 128kbps) | [vstep_test_05.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_05.md) | [mockTest05.ts](file:///d:/program/vstep/src/features/listening/data/mockTests/mockTest05.ts) |
+| `mock_test_06` | `/audio/listening/test6/vstep-test-6.mp3` | `1t0zmB3fVKFSwWr1lDskABUbJaxIrxZ71` | `https://drive.usercontent.google.com/download?id=1t0zmB3fVKFSwWr1lDskABUbJaxIrxZ71&export=download&confirm=t` | 24m 41s (22.61 MB, 128kbps) | [vstep_test_06.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_06.md) | [mockTest06.ts](file:///d:/program/vstep/src/features/listening/data/mockTests/mockTest06.ts) |
+| `mock_test_07` | `/audio/listening/test7/vstep-test-7.mp3` | `1Qbh_37bO48s5K5lcHo_ZG-XDsS_C-nz9` | `https://drive.usercontent.google.com/download?id=1Qbh_37bO48s5K5lcHo_ZG-XDsS_C-nz9&export=download&confirm=t` | 23m 48s (21.80 MB, 128kbps) | [vstep_test_07.md](file:///d:/program/vstep/docs/sources/listening/vstep_test_07.md) | [mockTest07.ts](file:///d:/program/vstep/src/features/listening/data/mockTests/mockTest07.ts) |
+
+---
+
+### HCMUE Discrete Drill Sets: Part 1 Announcements (5 Editions, 40 Questions Total)
+
+| Drill ID | Route on vstep.pages.dev | Master Original File | Google Drive File ID | Direct Production CDN Stream URL | Specs | Code Module |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `hcmue_lis_p1_01` | `/audio/listening/drills/hcmue1/hcmue-test-1-part1.mp3` | `T1-PART1.mp3` | `1YshyTAf-5p9wDP72IK-vFdMvgZ7zkowV` | `https://drive.usercontent.google.com/download?id=1YshyTAf-5p9wDP72IK-vFdMvgZ7zkowV&export=download&confirm=t` | 08m 46s (16.07 MB, 256kbps) | [hcmuePart1_01.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part1/hcmuePart1_01.ts) |
+| `hcmue_lis_p1_02` | `/audio/listening/drills/hcmue2/hcmue-test-2-part1.mp3` | `T2-PART1.mp3` | `1PyAvQiKmKRIB3ytRMPktRKB04cOR2bQH` | `https://drive.usercontent.google.com/download?id=1PyAvQiKmKRIB3ytRMPktRKB04cOR2bQH&export=download&confirm=t` | 06m 26s (11.79 MB, 256kbps) | [hcmuePart1_02.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part1/hcmuePart1_02.ts) |
+| `hcmue_lis_p1_03` | `/audio/listening/drills/hcmue3/hcmue-test-3-part1.mp3` | `T3-PART1.mp3` | `1CPbgz0QnmjoAmsVh-jkpH72xAbEvL_GH` | `https://drive.usercontent.google.com/download?id=1CPbgz0QnmjoAmsVh-jkpH72xAbEvL_GH&export=download&confirm=t` | 06m 56s (12.72 MB, 256kbps) | [hcmuePart1_03.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part1/hcmuePart1_03.ts) |
+| `hcmue_lis_p1_04` | `/audio/listening/drills/hcmue4/hcmue-test-4-part1.mp3` | `T4-PART1.mp3` | `1UPToxRFrRCk01jxsCWcRKd-qbKhmDHda` | `https://drive.usercontent.google.com/download?id=1UPToxRFrRCk01jxsCWcRKd-qbKhmDHda&export=download&confirm=t` | 06m 02s (11.08 MB, 256kbps) | [hcmuePart1_04.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part1/hcmuePart1_04.ts) |
+| `hcmue_lis_p1_05` | `/audio/listening/drills/hcmue5/hcmue-test-5-part1.mp3` | `T5-PART1.mp3` | `1KLqsTziZTAcco0k89P3RKThoUgY56_sg` | `https://drive.usercontent.google.com/download?id=1KLqsTziZTAcco0k89P3RKThoUgY56_sg&export=download&confirm=t` | 07m 05s (13.00 MB, 256kbps) | [hcmuePart1_05.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part1/hcmuePart1_05.ts) |
+
+---
+
+### HCMUE Discrete Drill Sets: Part 2 Conversations (5 Editions, 60 Questions Total)
+
+| Drill ID | Route on vstep.pages.dev | Master Original File | Google Drive File ID | Direct Production CDN Stream URL | Specs | Code Module |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `hcmue_lis_p2_01` | `/audio/listening/drills/hcmue1/hcmue-test-1-part2.mp3` | `T1-PART2.mp3` | `1SbmhYrKc1B3zwNB03HQWs02R3gYpJ-3R` | `https://drive.usercontent.google.com/download?id=1SbmhYrKc1B3zwNB03HQWs02R3gYpJ-3R&export=download&confirm=t` | 05m 40s (10.40 MB, 256kbps) | [hcmuePart2_01.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part2/hcmuePart2_01.ts) |
+| `hcmue_lis_p2_02` | `/audio/listening/drills/hcmue2/hcmue-test-2-part2.mp3` | `T2-PART2.mp3` | `1UnZ_2ERI8pL-lxP2kWsMujbT6ek2VMiO` | `https://drive.usercontent.google.com/download?id=1UnZ_2ERI8pL-lxP2kWsMujbT6ek2VMiO&export=download&confirm=t` | 06m 07s (11.23 MB, 256kbps) | [hcmuePart2_02.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part2/hcmuePart2_02.ts) |
+| `hcmue_lis_p2_03` | `/audio/listening/drills/hcmue3/hcmue-test-3-part2.mp3` | `T3-PART2.mp3` | `1Mu5msUTxCqM8m_6FX5y2ZqoLgws1HmOf` | `https://drive.usercontent.google.com/download?id=1Mu5msUTxCqM8m_6FX5y2ZqoLgws1HmOf&export=download&confirm=t` | 06m 17s (11.53 MB, 256kbps) | [hcmuePart2_03.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part2/hcmuePart2_03.ts) |
+| `hcmue_lis_p2_04` | `/audio/listening/drills/hcmue4/hcmue-test-4-part2.mp3` | `T4-PART2.mp3` | `1JnFxylLsDIyJWm8lUuoboVCB4D0_lzFG` | `https://drive.usercontent.google.com/download?id=1JnFxylLsDIyJWm8lUuoboVCB4D0_lzFG&export=download&confirm=t` | 06m 16s (11.51 MB, 256kbps) | [hcmuePart2_04.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part2/hcmuePart2_04.ts) |
+| `hcmue_lis_p2_05` | `/audio/listening/drills/hcmue5/hcmue-test-5-part2.mp3` | `T5-PART2.mp3` | `1h6R5MREeKMBdnTjQBKFzSKge2WKcQNpG` | `https://drive.usercontent.google.com/download?id=1h6R5MREeKMBdnTjQBKFzSKge2WKcQNpG&export=download&confirm=t` | 06m 14s (11.45 MB, 256kbps) | [hcmuePart2_05.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part2/hcmuePart2_05.ts) |
+
+---
+
+### HCMUE Discrete Drill Sets: Part 3 Academic Talks & Lectures (5 Editions, 75 Questions Total)
+
+| Drill ID | Route on vstep.pages.dev | Master Original File | Google Drive File ID | Direct Production CDN Stream URL | Specs | Code Module |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `hcmue_lis_p3_01` | `/audio/listening/drills/hcmue1/hcmue-test-1-part3.mp3` | `T1-PART3.mp3` | `1QJRZ_0WSLJAc3HrD9lV1o9nrwnrWF9oJ` | `https://drive.usercontent.google.com/download?id=1QJRZ_0WSLJAc3HrD9lV1o9nrwnrWF9oJ&export=download&confirm=t` | 12m 08s (22.25 MB, 256kbps) | [hcmuePart3_01.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part3/hcmuePart3_01.ts) |
+| `hcmue_lis_p3_02` | `/audio/listening/drills/hcmue2/hcmue-test-2-part3.mp3` | `T2-PART3.mp3` | `1XoQw4c7dXv65g4YoUSx9fRkmLiK9CNTc` | `https://drive.usercontent.google.com/download?id=1XoQw4c7dXv65g4YoUSx9fRkmLiK9CNTc&export=download&confirm=t` | 13m 48s (25.29 MB, 256kbps) | [hcmuePart3_02.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part3/hcmuePart3_02.ts) |
+| `hcmue_lis_p3_03` | `/audio/listening/drills/hcmue3/hcmue-test-3-part3.mp3` | `T3-PART3.mp3` | `1FHBjxIiXimBHajcJManonnABjz2xm8DN` | `https://drive.usercontent.google.com/download?id=1FHBjxIiXimBHajcJManonnABjz2xm8DN&export=download&confirm=t` | 13m 37s (24.94 MB, 256kbps) | [hcmuePart3_03.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part3/hcmuePart3_03.ts) |
+| `hcmue_lis_p3_04` | `/audio/listening/drills/hcmue4/hcmue-test-4-part3.mp3` | `T4-PART3.mp3` | `1YTl0SVUKPurK7CuXZgINhVQFIKOmhAk-` | `https://drive.usercontent.google.com/download?id=1YTl0SVUKPurK7CuXZgINhVQFIKOmhAk-&export=download&confirm=t` | 14m 14s (26.08 MB, 256kbps) | [hcmuePart3_04.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part3/hcmuePart3_04.ts) |
+| `hcmue_lis_p3_05` | `/audio/listening/drills/hcmue5/hcmue-test-5-part3.mp3` | `T5-PART3.mp3` | `12Kr5BrKl9ER3uSnZurK5tanQmZ2LpYJg` | `https://drive.usercontent.google.com/download?id=12Kr5BrKl9ER3uSnZurK5tanQmZ2LpYJg&export=download&confirm=t` | 15m 03s (27.57 MB, 256kbps) | [hcmuePart3_05.ts](file:///d:/program/vstep/src/features/listening/data/drills/hcmue/part3/hcmuePart3_05.ts) |
+
+---
+
+## Direct Code & Routing Invariants
+- **Dynamic Route Dispatching**: All components (`ListeningRunner.tsx`, `CustomAudioPlayer.tsx`, `useAudioPlayer.ts`) load the audio file path specified in `test.audio_url`.
+- **Zero Schema Pollution**: TypeScript data models store clean client-side routes (e.g., `audio_url: '/audio/listening/drills/hcmue1/hcmue-test-1-part1.mp3'`). Neither Google Drive URLs nor third-party metadata are hardcoded inside TypeScript data arrays.
+- **Production Resolution**: On production, the request is transparently handled by the Cloudflare Pages edge redirect engine via [`public/_redirects`](file:///d:/program/vstep/public/_redirects).

@@ -3,7 +3,11 @@
 ## Provenance Information
 - **Publication**: 7 VSTEP Tests B1-B2-C1 (With Answers), NXB Đại học Quốc gia Hà Nội (2019)
 - **Master PDF**: `scripts/7-Vstep-Tests-B1-B2-C1-Full-Key.pdf` (Pages 48–51 questions, 111–114 tapescripts, 141 key)
-- **Master Exam Audio**: `public/audio/listening/test4/vstep-test-4.mp3` (20m 07s / 1207s)
+- **Master Exam Audio**: `public/audio/listening/test4/vstep-test-4.mp3` (20m 07s / 1207s, 18.43 MB)
+- **Google Drive File ID**: `19l96eQ9gHex1SG6HEemB2kDCYIHKYRDS`
+- **Direct Production CDN Stream URL**: `https://drive.usercontent.google.com/download?id=19l96eQ9gHex1SG6HEemB2kDCYIHKYRDS&export=download&confirm=t`
+- **Production Route on vstep.pages.dev**: `/audio/listening/test4/vstep-test-4.mp3` (HTTP 302 redirect configured in `public/_redirects`)
+- **Code Binding**: `src/features/listening/data/mockTests/mockTest04.ts`
 - **Studio Part Audio Tracks**:
   - Part 1: `public/audio/listening/test4/vstep-test-4-part1.mp3` (04m 59s / 299s)
   - Part 2: `public/audio/listening/test4/vstep-test-4-part2.mp3` (07m 08s / 428s)
