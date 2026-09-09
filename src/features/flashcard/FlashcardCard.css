@@ -247,6 +247,14 @@
   min-height: 48px;
 }
 
+.srs-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+  pointer-events: none;
+}
+
 .srs-btn-label {
   font-size: var(--fs-sm);
   font-weight: 700;

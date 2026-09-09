@@ -2,7 +2,7 @@
 import type { AIProviderConfig, AICompletionRequest, AICompletionResponse, AITestConnectionResult } from '../types';
 import { masterKeyPool } from '../masterKeys';
 
-export const DEFAULT_GOOGLE_MODEL = 'gemini-2.0-flash';
+export const DEFAULT_GOOGLE_MODEL = 'gemini-3.5-flash-lite';
 const GOOGLE_API_BASE = 'https://generativelanguage.googleapis.com/v1beta';
 
 /**

@@ -51,8 +51,8 @@ export async function fetchUserCardReviews(userId: string): Promise<Record<strin
 /**
  * Persist a card review to Supabase.
  */
-export async function syncCardReviewToCloud(userId: string, card: FlashcardItem): Promise<void> {
-  if (!isSupabaseConfigured() || !userId) return;
+export async function syncCardReviewToCloud(userId: string, card: FlashcardItem): Promise<{ success: boolean; error?: string }> {
+  if (!isSupabaseConfigured() || !userId) return { success: true };
 
   try {
     const payload = {
@@ -73,9 +73,13 @@ export async function syncCardReviewToCloud(userId: string, card: FlashcardItem)
 
     if (error) {
       console.warn('Failed to sync card review to Supabase:', error.message);
+      return { success: false, error: error.message };
     }
+
+    return { success: true };
   } catch (err) {
     console.error('Error syncing card review to Supabase:', err);
+    return { success: false, error: err instanceof Error ? err.message : 'Unknown error' };
   }
 }
 
@@ -91,7 +95,7 @@ export async function fetchUserDailyReviewCount(userId: string, dateStr: string)
       .select('reviewed_count')
       .eq('user_id', userId)
       .eq('review_date', dateStr)
-      .single();
+      .maybeSingle();
 
     if (error || !data) return 0;
     return data.reviewed_count || 0;
@@ -119,5 +123,34 @@ export async function incrementUserDailyCountInCloud(userId: string, dateStr: st
       .upsert(payload, { onConflict: 'user_id,review_date' });
   } catch (err) {
     console.error('Error updating daily stats in Supabase:', err);
+  }
+}
+
+/**
+ * Reset all user card reviews and today's daily count in Supabase.
+ */
+export async function resetUserDeckInCloud(userId: string, dateStr: string): Promise<{ success: boolean; error?: string }> {
+  if (!isSupabaseConfigured() || !userId) {
+    return { success: true };
+  }
+
+  try {
+    const [reviewsRes, statsRes] = await Promise.all([
+      supabase.from('user_flashcard_reviews').delete().eq('user_id', userId),
+      supabase.from('user_daily_stats').delete().eq('user_id', userId).eq('review_date', dateStr),
+    ]);
+
+    if (reviewsRes.error) {
+      console.warn('Failed to delete user flashcard reviews in cloud:', reviewsRes.error.message);
+      return { success: false, error: reviewsRes.error.message };
+    }
+    if (statsRes.error) {
+      console.warn('Failed to reset user daily stats in cloud:', statsRes.error.message);
+    }
+
+    return { success: true };
+  } catch (err) {
+    console.error('Error resetting user deck in cloud:', err);
+    return { success: false, error: err instanceof Error ? err.message : 'Unknown error' };
   }
 }

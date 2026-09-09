@@ -7,7 +7,7 @@ Tài liệu này xác định các giai đoạn phát triển, nguyên tắc ưu
 - **P2 (Assisted Listening Studio)**: Unified Listening Runner (`mode: 'practice' | 'exam'`), Custom Audio Player có tua ±5s, Dictation Mode và Transcript song ngữ gạch chân Key Clues.
 - **P3 (Assisted Reading Studio)**: Unified Reading Runner (`mode: 'practice' | 'exam'`), Split-Pane cuộn độc lập, 1-Tap Dictionary (tooltip tra từ tức thì, không lưu rác vào SRS), phân tích 5 dạng câu hỏi đọc hiểu và Highlight dẫn chứng.
 - **P4 (Scaffolded Writing & Vietlish AI)**: Unified Writing Runner (`mode: 'practice' | 'exam'`), Editor đếm từ và auto-save bản nháp 5s, Outline Generator, thư viện mẫu câu, Pipeline chấm 2 tầng và Vietlish Engine 3 nhóm lỗi.
-- **P5 (Interactive Speaking Studio)**: Unified Speaking Runner (`mode: 'practice' | 'exam'`), phòng thu đếm ngược kèm âm báo BEEP chuẩn Bộ GD&ĐT, Web Audio API acoustic metrics và Gemini Native Audio pipeline chấm 5 tiêu chí MOET.
+- **P5 (Interactive Speaking Studio)**: Unified Speaking Runner (`mode: 'practice' | 'exam'`), phòng thu đếm ngược kèm âm báo BEEP chuẩn Bộ GD&ĐT, Web Audio API acoustic metrics và Gemini 3.5 Flash Lite Native Audio pipeline chấm 5 tiêu chí MOET.
 - **P6 (Full Mock Test & Exam Orchestrator)**: Mock Exam Orchestrator điều phối 4 Skill Runner liên hoàn 180 phút (`mode: 'exam'`), Question Palette 40 câu kèm Flag, khóa toàn bộ công cụ hỗ trợ và công thức làm tròn 0.5 MOET.
 
 ## Quy chuẩn Hoàn thành Toàn diện (Continuous Definition of Done)
@@ -52,10 +52,10 @@ Chất lượng, hiệu năng và kiểm thử không tổ chức thành giai đ
   - Tự động lưu bản nháp mỗi 5 giây chống mất dữ liệu khi mất kết nối.
 
 ### Giai đoạn: Luyện Nói Tương tác (Interactive Speaking Studio)
-- **Trọng tâm**: Xây dựng Unified Speaking Runner (`mode: 'practice' | 'exam'`), Phòng thu đếm ngược 1p/2p kèm âm báo BEEP chuẩn Bộ GD&ĐT, Web Audio API acoustic metrics (WPM, khoảng lặng) và Gemini Native Audio pipeline chấm 5 tiêu chí MOET.
+- **Trọng tâm**: Xây dựng Unified Speaking Runner (`mode: 'practice' | 'exam'`), Phòng thu đếm ngược 1p/2p kèm âm báo BEEP chuẩn Bộ GD&ĐT, Web Audio API acoustic metrics (WPM, khoảng lặng) và Gemini 3.5 Flash Lite Native Audio pipeline chấm 5 tiêu chí MOET.
 - **Tiêu chuẩn hoàn thành (Definition of Done)**:
   - Ghi âm trình duyệt ổn định qua MediaRecorder trên các trình duyệt, xuất biểu đồ sóng âm thời gian thực.
-  - AI phản hồi kết quả chấm Speaking dưới 10 giây trực tiếp từ audio blob.
+  - AI phản hồi kết quả chấm Speaking dưới 10 giây trực tiếp từ audio blob qua `gemini-3.5-flash-lite`.
   - Xuất Radar Chart 5 trục, phonetic highlights từ phát âm sai và bài nói mẫu nâng band B2/C1.
 
 ### Giai đoạn: Thi thử Thực chiến & Điều phối Phòng thi (Full Mock Test & Exam Orchestrator)
@@ -69,9 +69,9 @@ Chất lượng, hiệu năng và kiểm thử không tổ chức thành giai đ
 
 | Milestone | Trọng tâm | Trạng thái |
 | :--- | :--- | :--- |
-| **M1: Foundation & Curated SRS** | App Shell PWA, AI Master Gateway & Key Pool, Flashcard SRS 1.500 từ | Đang triển khai |
-| **M2: Assisted Listening Studio** | Unified Listening Runner (`practice` \| `exam`), Audio Player ±5s, Dictation, Transcript | Sắp tới |
+| **M1: Foundation & Curated SRS** | App Shell PWA, AI Master Gateway & Key Pool, Flashcard SRS 1.500 từ | Đã hoàn thành |
+| **M2: Assisted Listening Studio** | Unified Listening Runner (`practice` \| `exam`), Audio Player ±5s, Dictation, Transcript | Đã hoàn thành |
 | **M3: Assisted Reading Studio** | Unified Reading Runner (`practice` \| `exam`), Split-Pane, 1-Tap Dict Tooltip, Highlights | Sắp tới |
 | **M4: Scaffolded Writing & Vietlish AI** | Unified Writing Runner (`practice` \| `exam`), Editor auto-save, Pipeline chấm 2 tầng, Vietlish | Sắp tới |
-| **M5: Interactive Speaking Studio** | Unified Speaking Runner (`practice` \| `exam`), Countdown BEEP, Web Audio, Gemini Native Audio | Sắp tới |
+| **M5: Interactive Speaking Studio** | Unified Speaking Runner (`practice` \| `exam`), Countdown BEEP, Web Audio, Gemini 3.5 Flash Lite Native Audio | Sắp tới |
 | **M6: Full Mock Test & Exam Orchestrator** | Mock Orchestrator 180p, Question Palette, Barem 0.5 MOET, Radar Chart | Sắp tới |

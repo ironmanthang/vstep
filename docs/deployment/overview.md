@@ -9,7 +9,7 @@ The VSTEP platform is deployed using a decoupled, edge-first serverless architec
   - Offline-first caching powered by Workbox Service Worker (`generateSW`).
   - Total gzipped static bundle size: ~350 kB.
 - **Backend & Cloud Persistence**: Hosted on **Supabase** (PostgreSQL + Auth + Edge Network).
-  - Stores user account profiles and authentication state (Email/Password & Google OAuth).
+  - Stores user account profiles and authentication state (Exclusive Google OAuth).
   - Persists per-user Spaced Repetition (SRS) card review metadata in `user_flashcard_reviews`.
   - Persists per-user daily study stats in `user_daily_stats`.
   - Protected with Postgres Row Level Security (RLS) policies.

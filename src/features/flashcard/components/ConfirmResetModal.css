@@ -1,0 +1,204 @@
+/* ==========================================================================
+   ConfirmResetModal — Responsive High-Friction Danger Modal
+   ========================================================================== */
+
+.reset-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 13, 11, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: var(--space-4);
+  animation: fadeIn 150ms ease-out;
+}
+
+.reset-modal-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg), 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 440px;
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: relative;
+  animation: modalScaleUp 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reset-modal-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-full);
+  background-color: var(--coral-subtle);
+  color: var(--coral);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-modal-title {
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.reset-modal-desc {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.reset-modal-desc strong {
+  color: var(--text-primary);
+}
+
+.reset-modal-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  background-color: rgba(220, 38, 38, 0.08);
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--fs-xs);
+  color: var(--coral-text);
+  line-height: 1.4;
+}
+
+.reset-modal-alert-tag {
+  background-color: var(--coral);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+.reset-modal-actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.reset-modal-btn {
+  flex: 1;
+  padding: 10px 16px;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  font-family: inherit;
+}
+
+.reset-modal-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Cancel is focused by default, high clarity */
+.reset-modal-btn-cancel {
+  background-color: var(--bg-surface-hover);
+  color: var(--text-primary);
+  border: 1px solid var(--border-strong);
+}
+
+.reset-modal-btn-cancel:hover:not(:disabled) {
+  background-color: var(--bg-surface-active);
+  border-color: var(--text-secondary);
+}
+
+.reset-modal-btn-cancel:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Danger Confirm Button */
+.reset-modal-btn-danger {
+  background-color: var(--coral);
+  color: #ffffff;
+}
+
+.reset-modal-btn-danger:hover:not(:disabled) {
+  background-color: var(--coral-hover);
+}
+
+.reset-modal-btn-danger:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 2px;
+}
+
+/* Mobile Responsiveness: Bottom Sheet on small screens */
+@media (max-width: 640px) {
+  .reset-modal-backdrop {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .reset-modal-card {
+    max-width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: var(--space-5) var(--space-4) calc(var(--space-6) + env(safe-area-inset-bottom, 0px));
+    animation: sheetSlideUp 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reset-modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .reset-modal-btn {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: var(--fs-base);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes sheetSlideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

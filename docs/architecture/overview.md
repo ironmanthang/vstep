@@ -20,14 +20,14 @@
 | **Static Hosting & Edge** | Cloudflare Pages + Cloudflare Workers | Triển khai tĩnh toàn cầu, edge proxy bảo mật nếu cần |
 | **Media Storage** | Cloudflare R2 | Lưu trữ file audio bài nghe và file ghi âm bài nói |
 | **Compute Backend (Tùy chọn)** | Google Cloud Run | Serverless container khi cần xử lý background jobs nặng |
-| **AI Provider 1** | Google AI Studio (Gemini 2.0 Flash / Pro) | Luyện tập hàng ngày, xử lý native audio Speaking + Writing tức thì (<1s) |
-| **AI Provider 2** | OpenRouter (Claude 3.5 Sonnet / GPT-4o) | Chấm Mock Test chính thức chuẩn Barem Bộ GD&ĐT với Strict JSON Schema |
-| **AI Provider 3** | Ollama Cloud / Local Endpoint | Hỗ trợ endpoint riêng hoặc cloud models qua OLLAMA_API_KEY |
+| **AI Provider 1 (Primary)** | Google AI Studio (Gemini 3.5 Flash Lite) | Mô hình hạt nhân thống nhất cho cả Writing và Speaking (Native Audio), 500 RPD, 15 RPM, phản hồi ~6s |
+| **AI Provider 2 (Fallback)** | OpenRouter (Claude 3.5 Sonnet / GPT-4o) | Dự phòng khi Google AI gặp Rate Limit hoặc sự cố |
+| **AI Provider 3 (Fallback)** | Ollama Cloud / Local Endpoint | Endpoint dự phòng mã nguồn mở qua OLLAMA_API_KEY |
 
 ## Các Tầng Kiến trúc
-- **Client Layer (PWA / Browser)**: Giao diện Desktop Split-pane (bài đọc/nghe/viết bên trái, câu hỏi/công cụ bên phải) và Mobile micro-learning (vuốt Flashcard, Quick Quiz). Được bảo vệ bởi Login-First Gate (`<ProtectedRoute>`). Tích hợp Service Worker cache tĩnh App Shell, thực hiện tính toán SM-2 và làm tròn điểm trên Client (0ms), hỗ trợ optimistic UI và bộ đệm Auto-save lưu bản nháp mỗi 5s.
+- **Client Layer (PWA / Browser)**: Giao diện Desktop Split-pane (bài đọc/nghe/viết bên trái, câu hỏi/công cụ bên phải) và Mobile micro-learning (vuốt Flashcard, Quick Quiz). Được bảo vệ bởi Login-First Gate (`<ProtectedRoute>`). Tích hợp Service Worker cache tĩnh App Shell, thực hiện tính toán SM-2 và làm tròn điểm trên Client (0ms), hỗ trợ optimistic UI và bộ đệm Auto-save lưu bản nháp mỗi 5s. Toàn bộ bài thi Nghe và Đọc được chấm tiền định 100% tại Client (Zero-AI Runtime).
 - **Backend & Cloud Layer (Supabase & Cloudflare)**: Supabase quản lý xác thực Google OAuth và cơ sở dữ liệu quan hệ chuẩn hóa (Option B Normalized Schema: `user_profiles`, `user_study_logs`, `user_mock_test_results`, `user_flashcard_reviews`, `user_daily_stats`) kèm Row Level Security và trigger tự khởi tạo hồ sơ `handle_new_user()`. Tầng dịch vụ `profileSync.ts` và `srsSync.ts` đồng bộ hai chiều giữa client và Supabase. Static assets phục vụ qua Cloudflare Pages.
-- **AI Gateway Layer**: Master API Key Gateway (OpenRouter, Ollama Cloud, Google AI) với cơ chế xoay vòng key (Key Pool Rotation) và tự động fallback. Chi tiết tại [ai_gateway.md](file:///d:/program/vstep/docs/architecture/ai_gateway.md).
+- **AI Gateway Layer**: Master API Key Gateway chuẩn hóa trên mô hình hạt nhân `gemini-3.5-flash-lite` với cơ chế xoay vòng key (Key Pool Rotation) và tự động fallback sang OpenRouter / Ollama Cloud. Chi tiết tại [ai_gateway.md](file:///d:/program/vstep/docs/architecture/ai_gateway.md).
 
 ## Chiến lược Responsive
 - **Desktop (>= 1024px) - Luyện sâu & Thi thử**: Giao diện chia đôi màn hình (Split-pane) độc lập cuộn, hỗ trợ phím tắt (`Space` điều khiển audio, `Alt+Left` tua 5s, `Ctrl+Enter` nộp bài).
@@ -42,20 +42,21 @@
 | **Hồ sơ & Mục tiêu (`user_profiles`)** | Supabase PostgreSQL | Tự khởi tạo khi đăng nhập Google, đồng bộ đa thiết bị |
 | **Nhật ký học & Streak (`user_study_logs`)** | Supabase PostgreSQL | Bảng chuẩn hóa lưu các ngày học, tránh phình to row profile |
 | **Lịch sử Thi thử (`user_mock_test_results`)** | Supabase PostgreSQL | Lưu trữ kết quả thi có cấu trúc theo từng lần nộp bài |
-| **Tiến độ SRS (`user_flashcard_reviews`)** | Supabase PostgreSQL | Lưu trạng thái thẻ theo thuật toán SM-2 |
+| **Tiến độ SRS (`user_flashcard_reviews` & `user_daily_stats`)** | Supabase PostgreSQL | Lưu trạng thái thẻ theo thuật toán SM-2 và bộ đếm ngày, kiến trúc Online-First |
 | **Bản nháp Writing & Optimistic Queue** | `localStorage` (Client Buffer) | Auto-save mỗi 5 giây chống mất dữ liệu khi mất kết nối tạm thời |
 | **Chấm bài AI (Viết/Nói)** | Master API Gateway (Client/Edge → AI API) | Phản hồi JSON có cấu trúc trực tiếp hiển thị lên UI |
 
 ## Ranh giới Xử lý
 - **Phía Client (Trình duyệt)**:
-  - Tính toán thuật toán Spaced Repetition (SRS) cho Flashcard và chuyển đổi điểm VSTEP (0ms).
+  - Tính toán thuật toán Spaced Repetition (SRS) cho Flashcard và chuyển đổi điểm VSTEP (0ms), hàng rào ngoại tuyến dừng ôn tập khi mất kết nối mạng.
   - Chấm tự động trắc nghiệm Listening & Reading tức thì theo khóa đáp án có sẵn.
   - Bộ đếm từ, lọc lỗi chính tả thô, kiểm tra n-gram sao chép đề bài.
   - Thu âm bằng `MediaRecorder`, trích xuất chỉ số âm học qua Web Audio API.
   - Quản lý Auto-save bản nháp bài viết và optimistic state khi offline tạm thời.
 - **Phía Supabase Cloud**:
   - Xác thực Google OAuth và bảo vệ dữ liệu bằng Row-Level Security.
-  - Đồng bộ trạng thái học tập giữa Desktop và Mobile.
+  - Đồng bộ trạng thái học tập giữa Desktop và Mobile (hồ sơ, streak, kết quả thi thử, tiến độ SRS).
+  - Xóa sạch dữ liệu đám mây (`user_flashcard_reviews` và `user_daily_stats`) khi người dùng xác nhận đặt lại Deck.
 - **Phía AI Gateway (Master Key Cloud)**:
   - Nhận payload từ Client, gọi LLM / Native Audio API với Barem VSTEP.
   - Xuất kết quả phân tích theo Strict JSON Schema để render UI.

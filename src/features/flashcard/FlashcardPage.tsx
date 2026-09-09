@@ -6,6 +6,7 @@ import { CheckCircleIcon, RefreshIcon } from '../../components/Icons';
 import { useNotification } from '../../hooks/useNotification';
 import { Toast } from '../../components/common/Toast';
 import { useUserStore } from '../../services/user/userStore';
+import { ConfirmResetModal } from './components/ConfirmResetModal';
 import './FlashcardPage.css';
 
 export const FlashcardPage: React.FC = () => {
@@ -19,6 +20,7 @@ export const FlashcardPage: React.FC = () => {
     setSelectedTopic,
     reviewedToday,
     isCloudSyncing,
+    isOnline,
     submitReview,
     resetDeck,
   } = useFlashcardStore();
@@ -29,12 +31,24 @@ export const FlashcardPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'queue' | 'browse'>('queue');
   const [currentQueueIndex, setCurrentQueueIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [isResetModalOpen, setIsResetModalOpen] = useState(false);
+  const [isResetting, setIsResetting] = useState(false);
 
   // Active card in queue
   const currentCard = reviewQueue[currentQueueIndex] || null;
 
-  const handleReview = (cardId: string, rating: SRSRating) => {
-    submitReview(cardId, rating);
+  const handleReview = async (cardId: string, rating: SRSRating) => {
+    if (!isOnline) {
+      showNotification('Mất kết nối Internet — Tạm dừng ôn tập để bảo đảm tiến độ được lưu vào tài khoản đám mây.', 'error');
+      return;
+    }
+
+    const res = await submitReview(cardId, rating);
+    if (!res.success) {
+      showNotification(res.error || 'Lỗi kết nối — Không thể lưu thẻ lên máy chủ.', 'error');
+      return;
+    }
+
     setIsFlipped(false);
 
     if (reviewQueue.length <= 1) {
@@ -47,11 +61,19 @@ export const FlashcardPage: React.FC = () => {
     }
   };
 
-  const handleReset = () => {
-    resetDeck();
-    setCurrentQueueIndex(0);
-    setIsFlipped(false);
-    showNotification('✓ Đã đặt lại toàn bộ thẻ về trạng thái ban đầu.', 'info');
+  const handleConfirmReset = async () => {
+    setIsResetting(true);
+    const res = await resetDeck();
+    setIsResetting(false);
+    setIsResetModalOpen(false);
+
+    if (res.success) {
+      setCurrentQueueIndex(0);
+      setIsFlipped(false);
+      showNotification('✓ Đã đặt lại toàn bộ thẻ và số thẻ đã ôn hôm nay về 0.', 'info');
+    } else {
+      showNotification(res.error || 'Không thể đặt lại tiến độ trên đám mây. Vui lòng thử lại.', 'error');
+    }
   };
 
   const handleNextCard = () => {
@@ -75,6 +97,16 @@ export const FlashcardPage: React.FC = () => {
       {/* Toast Notification Container */}
       <Toast message={statusMessage} onClose={clearNotification} />
 
+      {/* Offline Alert Banner */}
+      {!isOnline && (
+        <div className="offline-alert-banner" role="alert">
+          <div className="offline-alert-content">
+            <span className="offline-alert-badge">Ngoại tuyến</span>
+            <span>Bạn đang ngoại tuyến. Hệ thống tạm dừng ghi nhận ôn tập để bảo đảm toàn bộ từ vựng được lưu vĩnh viễn trên tài khoản đám mây của bạn.</span>
+          </div>
+        </div>
+      )}
+
       {/* Page Header */}
       <div className="page-header-row">
         <div>
@@ -93,8 +125,9 @@ export const FlashcardPage: React.FC = () => {
         <div className="header-actions">
           <button
             className="secondary-btn"
-            onClick={handleReset}
-            title="Đặt lại tiến độ thẻ về ban đầu để kiểm thử"
+            onClick={() => setIsResetModalOpen(true)}
+            title="Đặt lại toàn bộ tiến độ học của Deck"
+            disabled={isResetting}
           >
             <RefreshIcon size={16} /> Đặt lại Deck
           </button>
@@ -189,6 +222,7 @@ export const FlashcardPage: React.FC = () => {
                 onReview={handleReview}
                 isFlipped={isFlipped}
                 onFlip={() => setIsFlipped(prev => !prev)}
+                disabled={!isOnline || isCloudSyncing || isResetting}
               />
 
               {/* Navigation arrows for convenience */}
@@ -231,7 +265,8 @@ export const FlashcardPage: React.FC = () => {
                 </button>
                 <button
                   className="secondary-btn"
-                  onClick={handleReset}
+                  onClick={() => setIsResetModalOpen(true)}
+                  disabled={isResetting}
                 >
                   <RefreshIcon size={16} /> Ôn tập lại từ đầu (Reset)
                 </button>
@@ -277,6 +312,16 @@ export const FlashcardPage: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Strict Confirmation Modal for Deck Reset */}
+      <ConfirmResetModal
+        isOpen={isResetModalOpen}
+        onClose={() => {
+          if (!isResetting) setIsResetModalOpen(false);
+        }}
+        onConfirm={handleConfirmReset}
+        isLoading={isResetting}
+      />
     </div>
   );
 };

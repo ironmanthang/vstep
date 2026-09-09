@@ -1,13 +1,14 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import type { FlashcardItem, SRSRating } from '../../types/schemas';
-import { INITIAL_FLASHCARD_SEED } from './seed-data';
+import { VSTEP_CORPUS } from './corpus';
 import { getReviewQueue, reviewCard as applySRS, getSRSDeckStats } from './srs';
 import { useAuth } from '../../services/supabase/authStore';
 import {
   fetchUserCardReviews,
   syncCardReviewToCloud,
   fetchUserDailyReviewCount,
-  incrementUserDailyCountInCloud
+  incrementUserDailyCountInCloud,
+  resetUserDeckInCloud
 } from '../../services/supabase/srsSync';
 import { recordStudyDateInStorage } from '../../services/user/userStore';
 
@@ -26,32 +27,50 @@ function getTodayString(): string {
 export function useFlashcardStore() {
   const { user, isAuthenticated } = useAuth();
   const [isCloudSyncing, setIsCloudSyncing] = useState<boolean>(false);
+  const [isOnline, setIsOnline] = useState<boolean>(() => {
+    return typeof navigator !== 'undefined' ? navigator.onLine : true;
+  });
 
-  // Initialize cards: combine seed with local storage if available
+  // Track network connectivity changes
+  useEffect(() => {
+    const handleOnline = () => setIsOnline(true);
+    const handleOffline = () => setIsOnline(false);
+
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
+
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+    };
+  }, []);
+
+  // Initialize cards: canonical VSTEP_CORPUS combined with saved SRS metadata
   const [cards, setCards] = useState<FlashcardItem[]>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          // If stored cards count is smaller than current seed (e.g. old 15 vs 1500), merge reviews
-          if (parsed.length < INITIAL_FLASHCARD_SEED.length) {
-            const reviewMap = new Map(parsed.map((c: FlashcardItem) => [c.id, c.srs_metadata]));
-            return INITIAL_FLASHCARD_SEED.map((seedCard) => {
-              const savedMeta = reviewMap.get(seedCard.id);
-              if (savedMeta) {
-                return { ...seedCard, srs_metadata: savedMeta };
-              }
-              return seedCard;
-            });
-          }
-          return parsed;
+          const reviewMap = new Map(
+            parsed
+              .filter((c): c is FlashcardItem => Boolean(c && c.id && c.srs_metadata))
+              .map((c: FlashcardItem) => [c.id, c.srs_metadata])
+          );
+
+          return VSTEP_CORPUS.map((seedCard) => {
+            const savedMeta = reviewMap.get(seedCard.id);
+            if (savedMeta) {
+              return { ...seedCard, srs_metadata: savedMeta };
+            }
+            return seedCard;
+          });
         }
       }
     } catch (e) {
       console.warn('Failed to parse saved flashcards, using default seed:', e);
     }
-    return INITIAL_FLASHCARD_SEED;
+    return VSTEP_CORPUS;
   });
 
   const [selectedTopic, setSelectedTopic] = useState<string>('Tất cả');
@@ -189,7 +208,11 @@ export function useFlashcardStore() {
   }, [cards]);
 
   // Action: Review a card
-  const submitReview = useCallback((cardId: string, rating: SRSRating) => {
+  const submitReview = useCallback(async (cardId: string, rating: SRSRating): Promise<{ success: boolean; error?: string }> => {
+    if (typeof navigator !== 'undefined' && !navigator.onLine) {
+      return { success: false, error: 'Mất kết nối Internet' };
+    }
+
     let updatedCard: FlashcardItem | null = null;
 
     setCards((prevCards) => {
@@ -206,15 +229,38 @@ export function useFlashcardStore() {
     incrementDailyCount();
 
     if (user?.id && updatedCard) {
-      syncCardReviewToCloud(user.id, updatedCard);
+      const syncRes = await syncCardReviewToCloud(user.id, updatedCard);
+      if (!syncRes.success) {
+        return syncRes;
+      }
     }
+
+    return { success: true };
   }, [incrementDailyCount, user]);
 
-  // Action: Reset deck for demo/practice
-  const resetDeck = useCallback(() => {
-    setCards(INITIAL_FLASHCARD_SEED);
-    localStorage.removeItem(STORAGE_KEY);
-  }, []);
+  // Action: Reset deck for user
+  const resetDeck = useCallback(async (): Promise<{ success: boolean; error?: string }> => {
+    const today = getTodayString();
+
+    if (user?.id) {
+      const cloudRes = await resetUserDeckInCloud(user.id, today);
+      if (!cloudRes.success) {
+        return cloudRes;
+      }
+    }
+
+    setCards(VSTEP_CORPUS);
+    setReviewedToday(0);
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+      localStorage.removeItem(REVIEW_COUNT_KEY);
+      localStorage.removeItem(LAST_REVIEW_DATE_KEY);
+    } catch {
+      // Ignore local storage error
+    }
+
+    return { success: true };
+  }, [user]);
 
   return {
     cards,
@@ -226,6 +272,7 @@ export function useFlashcardStore() {
     setSelectedTopic,
     reviewedToday,
     isCloudSyncing,
+    isOnline,
     submitReview,
     resetDeck,
   };

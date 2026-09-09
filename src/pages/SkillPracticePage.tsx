@@ -8,28 +8,32 @@ export const SkillPracticePage: React.FC = () => {
       desc: '3 Part chuyên biệt với audio player tua ±5s, chỉnh tốc độ và nghe chép chính tả Dictation.',
       badge: 'Part 1 • 2 • 3',
       badgeColor: 'badge-primary',
-      status: 'Sprint 1',
+      status: 'Sẵn Sàng Luyện',
+      link: '/practice/listening',
     },
     {
       title: 'Luyện Đọc (Reading)',
       desc: 'Giao diện Split-Pane chia đôi màn hình, tra từ 1 chạm và phân tích Paraphrase dẫn chứng.',
       badge: '4 Bài Đọc B1-B2',
       badgeColor: 'badge-primary',
-      status: 'Sprint 1',
+      status: 'Sprint 2',
+      link: undefined,
     },
     {
       title: 'Luyện Viết (Writing)',
       desc: 'Bộ gợi ý dàn ý, thư viện mẫu câu, kho bài mẫu 5 màu và AI phân tích lỗi tư duy Vietlish.',
       badge: 'Task 1 & Task 2',
       badgeColor: 'badge-gold',
-      status: 'Sprint 2',
+      status: 'Sprint 3',
+      link: undefined,
     },
     {
       title: 'Phòng Thu Nói (Speaking)',
       desc: 'Thu âm trình duyệt, đếm ngược BEEP chuẩn phòng thi, AI đánh giá phát âm và tốc độ nói WPM.',
       badge: '3 Phần Thu Âm',
       badgeColor: 'badge-emerald',
-      status: 'Sprint 2',
+      status: 'Sprint 3',
+      link: undefined,
     },
   ];
 
@@ -43,21 +47,39 @@ export const SkillPracticePage: React.FC = () => {
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--space-4)' }}>
-        {skills.map((skill, i) => (
-          <div key={i} className="card-surface" style={{ padding: 'var(--space-5)', display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span className={`badge ${skill.badgeColor}`}>{skill.badge}</span>
-              <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)', fontWeight: 600 }}>{skill.status}</span>
-            </div>
-            <h3 style={{ fontSize: 'var(--fs-md)', fontWeight: 700 }}>{skill.title}</h3>
-            <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', lineHeight: 1.5 }}>{skill.desc}</p>
-            <div style={{ marginTop: 'auto', paddingTop: 'var(--space-3)', borderTop: '1px solid var(--border)' }}>
-              <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--primary)', fontWeight: 700 }}>
-                Đang hoàn thiện module →
-              </span>
-            </div>
-          </div>
-        ))}
+        {skills.map((skill, i) => {
+          const CardElement = skill.link ? Link : 'div';
+          return (
+            <CardElement
+              key={i}
+              to={skill.link as string}
+              className="card-surface"
+              style={{
+                padding: 'var(--space-5)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 'var(--space-3)',
+                textDecoration: 'none',
+                color: 'inherit',
+                cursor: skill.link ? 'pointer' : 'default',
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <span className={`badge ${skill.badgeColor}`}>{skill.badge}</span>
+                <span className={`badge ${skill.link ? 'badge-emerald' : 'badge-primary'}`} style={{ fontSize: 'var(--fs-xs)', fontWeight: 600 }}>
+                  {skill.status}
+                </span>
+              </div>
+              <h3 style={{ fontSize: 'var(--fs-md)', fontWeight: 700, margin: 0 }}>{skill.title}</h3>
+              <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', lineHeight: 1.5, margin: 0 }}>{skill.desc}</p>
+              <div style={{ marginTop: 'auto', paddingTop: 'var(--space-3)', borderTop: '1px solid var(--border)' }}>
+                <span style={{ fontSize: 'var(--fs-xs)', color: skill.link ? 'var(--primary)' : 'var(--text-muted)', fontWeight: 700 }}>
+                  {skill.link ? 'Vào phòng luyện nghe →' : 'Đang hoàn thiện module →'}
+                </span>
+              </div>
+            </CardElement>
+          );
+        })}
       </div>
 
       <div className="card-surface" style={{ padding: 'var(--space-5)', background: 'var(--bg-subtle)' }}>

@@ -12,6 +12,7 @@
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "lint": "oxlint --deny-warnings",
+    "ingest:listening": "node scripts/ingest-listening.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -40,9 +40,14 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Tích hợp hệ thống Toast notifications phản hồi học tập
 - [x] Xây dựng bộ ngữ liệu 1.500 từ vựng cốt lõi trích xuất từ đề thi thật ULIS/HNUE theo 8 chủ đề VSTEP chuẩn (188 Edu, 188 Work, 188 Health, 188 Env, 187 Tech, 187 Travel, 187 Soc, 187 Media)
 - [x] Xây dựng Daily Review Queue hiển thị số thẻ cần ôn tập hôm nay và thống kê tiến độ học
-- [x] Tích hợp Supabase Cloud Sync cho Flashcard SRS qua Google OAuth
+- [x] Tích hợp Supabase Cloud Sync cho Flashcard SRS qua Google OAuth (user_flashcard_reviews & user_daily_stats)
+- [x] Kiến trúc Online-First: Chặn ghi nhận ôn tập khi mất kết nối mạng và hiển thị banner cảnh báo ngoại tuyến
+- [x] Modal xác nhận đặt lại Deck 2 bước chống xóa nhầm (ConfirmResetModal) responsive trên Mobile & Desktop
+- [x] Xóa sạch dữ liệu đồng bộ đám mây (user_flashcard_reviews & user_daily_stats) khi người dùng xác nhận đặt lại Deck
+- [x] Cơ chế Decoupled Corpus Hydration: Giữ nguyên 100% tiến độ học khi mở rộng kho từ vựng từ 1.500 lên 3.000 từ trong tương lai
 - [ ] Tăng số lượng từ lên 3000
-
+- [ ] question: what is the logic of this The Spaced Repetition (SRS) system in this project?? how does the system decide when to show which words??the priority order is??is it good? 
+- [ ] add noti to show the srs
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)
 - [x] Unit Test thuật toán Spaced Repetition (SRS algorithm) qua Vitest
 - [x] Thiết lập Pre-push pipeline tự động (scripts/prepush.mjs + .githooks/pre-push)
@@ -55,25 +60,41 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 ## SPRINT: LUYỆN NGHE CHỦ ĐỘNG (ASSISTED LISTENING STUDIO)
 
 ### Kiến trúc Unified Listening Runner
-- [ ] Xây dựng `ListeningRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (bật tua/dictation/manh mối) và `mode: 'exam'` (chỉ phát audio chuẩn, khóa phụ đề và manh mối)
-- [ ] Tích hợp Question Palette cho 35 câu trắc nghiệm 3 Part
+- [x] Xây dựng `ListeningRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (bật tua/dictation/manh mối) và `mode: 'exam'` (chỉ phát audio chuẩn, khóa phụ đề và manh mối)
+- [x] Tích hợp Question Palette cho 35 câu trắc nghiệm 3 Part
+- [x] Tích hợp chế độ "Mock Test 01: Sửa Đề & Luyện Sâu" cho phép chữa đề chi tiết 35 câu với đầy đủ công cụ phân tích
 
 ### Custom Audio Player & Điều khiển Nghe
-- [ ] Xây dựng Custom Audio Player: Nút tua ±5s, thanh chỉnh tốc độ (0.75x, 1.0x, 1.25x), thanh tiến trình scrub
-- [ ] Tích hợp phím tắt điều khiển bàn phím (`Space` Play/Pause, `Alt+Left` / `Alt+Right` tua 5s)
+- [x] Xây dựng Custom Audio Player Sticky: Tự động ghim khi cuộn, nút tua ±5s, chọn 5 mức tốc độ (0.5x, 0.75x, 1.0x, 1.5x, 2.0x), thanh scrub tiến trình
+- [x] Tích hợp phím tắt điều khiển bàn phím (`Space` Play/Pause, `←` / `→` tua ±5s) kèm input guard cho `INPUT`, `TEXTAREA`, `SELECT`
+- [x] Tải và tích hợp file audio MP3 thi thật từ nguồn chính thức (7 đề thi VSTEP chuẩn ĐHQGHN)
+- [x] Cắt tách file audio lossless 21 file cho 7 đề × 3 Part (`public/audio/listening/test{1..7}/vstep-test-{1..7}-part{1..3}.mp3`)
+- [x] Ingestion tự động hóa 21 bộ transcript song ngữ kèm mốc thời gian chính xác sub-second (`scripts/ingest-listening.mjs`)
 
-### Luyện tập theo 3 Part Chuyên biệt
-- [ ] Part 1 Drill: 8 đoạn ngắn, nhận diện bẫy số liệu và thay đổi thông tin phút chót
-- [ ] Part 2 Drill: 3 đoạn hội thoại, bắt Topic Sentence và từ khóa chuyển ý
-- [ ] Part 3 Drill: 3 bài giảng học thuật, cung cấp Summary Outline đối chiếu ghi chú
+### Ngân hàng Đề Luyện Tập Đa Dạng (Multi-Test Banks)
+- [x] Tách biệt kiến trúc ngân hàng nghe: Purge các slice trùng lặp khỏi `part1Bank.ts`, `part2Bank.ts`, `part3Bank.ts`, xuất mảng rỗng sẵn sàng cho đề discrete độc lập
+- [x] Tích hợp ngân hàng luyện tập riêng biệt Part 1, 2, 3 từ nguồn chuẩn NXB ĐH Sư Phạm TP.HCM (HCMUE 20 Mock Tests, Đề 01–05, 15 bộ đề độc lập, 175 câu hỏi) với audio riêng 256kbps stereo, transcript song ngữ, mốc thời gian sub-second, đáp án chính thức và giải thích chi tiết
+- [x] Giao diện Listening Studio: Mặc định chọn Mock Test (Card 4), hỗ trợ luyện tập độc lập các Part 1, 2, 3 (Cards 1–3) với bộ chọn đề 5 kỳ thi (`[Đề 1]` đến `[Đề 5]`)
+- [x] Ghi chú nguồn gốc xuất xứ (Provenance) chi tiết trong code cho từng audio track (Google Drive ID, số trang sách, tài liệu docs/sources/)
+- [x] Tích hợp 21 bộ transcript song ngữ kèm mốc thời gian sub-second vào cấu trúc modular mock tests
+- [x] OCR và trích xuất trọn bộ câu hỏi 35 câu (tổng 245 câu, 4 lựa chọn, đáp án chuẩn, lời giải tiếng Việt) cho toàn bộ 7 đề từ sách "7 VSTEP Tests"
+- [x] Khởi tạo các module đề thi thử độc lập `mockTest01.ts` đến `mockTest07.ts` trong `src/features/listening/data/mockTests/` và export qua `src/features/listening/data/index.ts`
 
 ### Chế độ Dictation (Nghe chép chính tả)
-- [ ] Cắt audio thành từng câu 3–7s với giao diện nhập liệu trực quan
-- [ ] Bộ so khớp ký tự Client-side hiển thị màu: xanh (đúng), đỏ (sai chính tả/âm đuôi), vàng (thiếu từ nối/mạo từ)
+- [x] Cắt audio thành từng câu 3–7s với giao diện nhập liệu trực quan
+- [x] Bộ so khớp ký tự Client-side hiển thị màu: xanh (đúng), đỏ (sai chính tả/âm đuôi), vàng (thiếu từ nối/mạo từ)
 
 ### Transcript Song ngữ & Phân tích Manh mối
-- [ ] Đồng bộ hiển thị chữ theo thời gian phát audio
-- [ ] Tự động gạch chân câu chứa đáp án (Key Clue) và phân tích lý do các phương án sai (Distractor Breakdown)
+- [x] Đồng bộ hiển thị chữ theo thời gian phát audio
+- [x] Tự động gạch chân câu chứa đáp án (Key Clue) và phân tích lý do các phương án sai (Distractor Breakdown)
+
+## SPRINT: NGÂN HÀNG ĐỀ THI THẬT & MOCK TEST (AUTHENTIC EXAM BANKS)
+- [x] Trích xuất và cấu trúc hóa Đề thi Đọc Set 11 (FME Sourced: 4 bài đọc, 40 câu hỏi, giải thích tiếng Việt) vào `src/features/reading/data/fmeDe11.ts`
+- [x] Trích xuất và cấu trúc hóa 5 kỳ thi Nói tháng 5 vào `src/features/speaking/data/speakingBank.ts` (Part 1, 2, 3)
+- [x] Cấu trúc hóa ngân hàng đề Viết vào `src/features/writing/data/writingBank.ts` (Task 1: 3 Thư, Task 2: 2 Bài luận kèm bài mẫu B2/C1)
+- [x] Điều phối đề thi thử liên hoàn 180 phút Mock Test 01 tại `src/data/mock-tests/mockTest01.ts`
+- [x] Tách biệt kiến trúc Listening Studio: Card 4 Mock Test sở hữu trọn bộ 7 Đề (35 câu/đề, continuous audio) tại `src/features/listening/data/mockTests/`; Cards 1-3 dành riêng cho discrete part drills
+
 
 ## SPRINT: LUYỆN ĐỌC CÓ HỖ TRỢ (ASSISTED READING STUDIO)
 
@@ -106,7 +127,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 
 ### Pipeline Chấm Writing 2 Tầng & Vietlish Engine
 - [ ] Tầng 1: Local rule-based pre-filter (<50ms, đếm từ, phát hiện lỗi bề mặt)
-- [ ] Tầng 2: LLM Evaluator chấm 4 tiêu chí MOET theo Strict JSON Schema (xem [writing_pipeline.md](file:///d:/program/vstep/docs/architecture/writing_pipeline.md))
+- [ ] Tầng 2: LLM Evaluator (`gemini-3.5-flash-lite`, 500 RPD) chấm 4 tiêu chí MOET theo Strict JSON Schema (xem [writing_pipeline.md](file:///d:/program/vstep/docs/architecture/writing_pipeline.md))
 - [ ] Vietlish Engine nhận diện 3 nhóm lỗi tư duy tiếng Việt (Dịch thô, Thiếu chủ ngữ, Sai collocation)
 - [ ] Giao diện bôi màu nhận xét: Đỏ (Ngữ pháp), Tím (Vietlish), Vàng (Từ vựng), Xanh lá (Khen ngợi)
 - [ ] Sinh bài mẫu viết lại (Revised Essay) nâng band từ ý tưởng gốc của học viên
@@ -124,8 +145,8 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [ ] Ghi âm trình duyệt qua `MediaRecorder`, trực quan hóa sóng âm thời gian thực, nén file `audio/webm`
 - [ ] Client Acoustic Metrics qua Web Audio API: Đo WPM (chuẩn 110–150 WPM), đo thời lượng nói và khoảng lặng (>2s)
 
-### Pipeline Chấm Speaking qua Gemini Native Audio
-- [ ] Gửi trực tiếp audio blob lên Gemini Native Audio API để đánh giá 5 tiêu chí MOET (xem [speaking_pipeline.md](file:///d:/program/vstep/docs/architecture/speaking_pipeline.md))
+### Pipeline Chấm Speaking qua Gemini 3.5 Flash Lite Native Audio
+- [ ] Single-shot Multimodal Evaluation: Gửi trực tiếp audio blob lên `gemini-3.5-flash-lite` Native Audio API để chấm 5 tiêu chí MOET và phát hiện lỗi âm vị (xem [speaking_pipeline.md](file:///d:/program/vstep/docs/architecture/speaking_pipeline.md))
 - [ ] Xuất Radar Chart 5 trục trực quan hóa điểm mạnh/yếu
 - [ ] Phonetic Highlighting: Bôi đỏ từ phát âm sai / thiếu phụ âm cuối kèm phát âm mẫu IPA
 - [ ] Gợi ý dàn ý mở rộng P-E-E-R và bài nói mẫu nâng band B2/C1

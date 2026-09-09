@@ -4,9 +4,9 @@
 - **Tầng 1: Local Rule-Based Pre-filter (< 50ms, 0đ)**:
   - Kiểm tra độ dài: Đếm từ thực tế, tính tỷ lệ thiếu hụt so với chuẩn (120 từ Task 1 / 250 từ Task 2).
   - Lọc lỗi bề mặt qua regex & từ điển: Viết hoa đầu câu, khoảng trắng thừa, dấu câu kép, lặp từ thô, cặp liên từ sai (*Although... but...*, *Because... so...*).
-- **Tầng 2: AI LLM Evaluator (Strict JSON Schema, Temperature = 0.1)**:
+- **Tầng 2: AI LLM Evaluator (gemini-3.5-flash-lite, Strict JSON Schema, Temperature = 0.1)**:
   - Phân tích 4 tiêu chí MOET: Task Fulfillment, Organization, Vocabulary (kèm phát hiện lỗi Vietlish), Grammar Range & Accuracy (xem chi tiết tiêu chí tại [exam_format.md](file:///d:/program/vstep/docs/exam_format.md)).
-  - Phân tầng mô hình: `gemini-2.0-flash` cho luyện tập hàng ngày (<1s); `claude-3-5-sonnet` hoặc `gpt-4o` cho bài thi thử Mock Test chính thức.
+  - Chuẩn hóa toàn diện trên mô hình **`gemini-3.5-flash-lite`** (500 RPD, 15 RPM, phản hồi < 6s) cho cả luyện tập hàng ngày và bài thi thử Mock Test chính thức, tối ưu chi phí và hạn ngạch tối đa.
 
 ## System Prompt Writing
 

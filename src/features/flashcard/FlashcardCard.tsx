@@ -8,6 +8,7 @@ interface FlashcardCardProps {
   onReview: (cardId: string, rating: SRSRating) => void;
   isFlipped: boolean;
   onFlip: () => void;
+  disabled?: boolean;
 }
 
 export const FlashcardCard: React.FC<FlashcardCardProps> = ({
@@ -15,6 +16,7 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
   onReview,
   isFlipped,
   onFlip,
+  disabled = false,
 }) => {
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
 
@@ -115,7 +117,8 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
             <button
               className="srs-btn srs-btn-forgot"
               onClick={(e) => handleRating('forgot', e)}
-              title="Cần ôn lại trong ngày mai (1 ngày)"
+              disabled={disabled}
+              title={disabled ? 'Vui lòng kết nối Internet để tiếp tục ôn tập' : 'Cần ôn lại trong ngày mai (1 ngày)'}
             >
               <span className="srs-btn-label">Quên</span>
               <span className="srs-btn-interval">1 ngày</span>
@@ -124,7 +127,8 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
             <button
               className="srs-btn srs-btn-remembered"
               onClick={(e) => handleRating('remembered', e)}
-              title="Nhớ được từ, ôn lại sau vài ngày"
+              disabled={disabled}
+              title={disabled ? 'Vui lòng kết nối Internet để tiếp tục ôn tập' : 'Nhớ được từ, ôn lại sau vài ngày'}
             >
               <span className="srs-btn-label">Nhớ</span>
               <span className="srs-btn-interval">3–7 ngày</span>
@@ -133,7 +137,8 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
             <button
               className="srs-btn srs-btn-easy"
               onClick={(e) => handleRating('easy', e)}
-              title="Từ rất dễ / Đã nắm chắc, giãn lịch ôn dài"
+              disabled={disabled}
+              title={disabled ? 'Vui lòng kết nối Internet để tiếp tục ôn tập' : 'Từ rất dễ / Đã nắm chắc, giãn lịch ôn dài'}
             >
               <span className="srs-btn-label">Rất dễ</span>
               <span className="srs-btn-interval">14–30 ngày</span>

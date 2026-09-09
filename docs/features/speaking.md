@@ -11,7 +11,7 @@ Mô-đun được đóng gói thành một `SpeakingRunner` duy nhất tiếp nh
   - Luyện tập từng Part riêng lẻ, cho phép chuẩn bị linh hoạt và ghi âm thử nhiều lần.
   - Nghe lại bản ghi âm trước khi nộp chấm điểm AI.
   - Xem gợi ý dàn ý P-E-E-R và mẫu câu phản biện cho Part 2 & Part 3.
-  - Chấm điểm AI qua Gemini Native Audio trả về kết quả dưới 10 giây kèm Radar Chart 5 trục và bài nói mẫu nâng band.
+  - Chấm điểm AI qua `gemini-3.5-flash-lite` Native Audio trả về kết quả trong ~6 giây kèm Radar Chart 5 trục, phát hiện lỗi phát âm IPA và bài nói mẫu nâng band.
 - **Exam Mode (`mode: 'exam'`)**:
   - Chạy liên tục 3 Part theo đúng trình tự và thời gian nghiêm ngặt của phòng thi Bộ GD&ĐT.
   - Tự động phát âm báo BEEP chuẩn phòng thi khi bắt đầu và kết thúc thời gian nói.

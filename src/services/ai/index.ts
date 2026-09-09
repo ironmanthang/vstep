@@ -39,11 +39,11 @@ export const PRESET_MODELS: AIModelOption[] = [
     description: 'Mô hình đa phương thức hàng đầu OpenAI',
   },
   {
-    id: 'gemini-2.0-flash',
-    name: 'Gemini 2.0 Flash (Direct)',
+    id: 'gemini-3.5-flash-lite',
+    name: 'Gemini 3.5 Flash Lite (Direct)',
     provider: 'google_ai_studio',
-    description: 'Chấm trực tiếp từ Google AI Studio, hỗ trợ audio native',
-    badge: 'Native Audio',
+    description: 'Chấm trực tiếp từ Google AI Studio, hỗ trợ audio native, 500 RPD tối ưu chi phí',
+    badge: 'Khuyên Dùng',
   },
   {
     id: 'gemini-1.5-pro',

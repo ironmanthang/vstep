@@ -115,7 +115,7 @@ export const DeveloperOverrideSection: React.FC<DeveloperOverrideSectionProps> =
                   onClick={() => {
                     setDevProvider(p);
                     if (p === 'openrouter') setDevModel('anthropic/claude-3.5-sonnet');
-                    if (p === 'google_ai_studio') setDevModel('gemini-2.0-flash');
+                    if (p === 'google_ai_studio') setDevModel('gemini-3.5-flash-lite');
                     if (p === 'ollama_cloud' || p === 'ollama_local') setDevModel('qwen2.5');
                   }}
                 >

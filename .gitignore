@@ -28,3 +28,27 @@ supabase/.temp
 *.sln
 *.sw?
 .agents/mcp_config.json
+
+# Test coverage & dev artifacts
+coverage/
+implementation_plan.md
+scratch/
+
+# Listening ingestion intermediate files & large audio assets (streamed via _redirects on production)
+public/audio/**/*.mp3
+public/audio/**/*.wav
+*.mp3
+public/audio/listening/**/*.json
+public/audio/listening/**/*.txt
+public/audio/listening/**/cmds.txt
+
+# Dev reference documents & PDFs (downloadable via scripts/download-mock-assets.ps1)
+scripts/*.pdf
+*.pdf
+
+# Large binary archives
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+

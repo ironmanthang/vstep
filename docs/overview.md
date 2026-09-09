@@ -36,20 +36,21 @@ Dự án là nền tảng web học tiếng Anh và luyện thi VSTEP thế hệ
 - [todo.md](file:///d:/program/vstep/docs/todo.md): Danh sách đầu việc thực thi theo Sprint.
 - [exam_format.md](file:///d:/program/vstep/docs/exam_format.md): Căn cứ pháp lý, định dạng đề thi, công thức tính điểm và barem MOET.
 - [api.md](file:///d:/program/vstep/docs/api.md): Danh sách API key tham chiếu.
+- [sources/](file:///d:/program/vstep/docs/sources/README.md): Kho ngữ liệu đề thi chuẩn và nguồn trích dẫn 4 kỹ năng (ULIS/HNUE/HCMUE).
 - [schemas.ts](file:///d:/program/vstep/src/types/schemas.ts): TypeScript Data Schemas toàn hệ thống (Single Source of Truth).
 
 ### Kiến trúc Kỹ thuật (`docs/architecture/`)
 - [overview.md](file:///d:/program/vstep/docs/architecture/overview.md): Tổng quan kiến trúc hệ thống, danh mục công nghệ và ranh giới xử lý.
 - [ai_gateway.md](file:///d:/program/vstep/docs/architecture/ai_gateway.md): AI Master Gateway, cơ chế Key Pool rotation, health check và fallback.
 - [writing_pipeline.md](file:///d:/program/vstep/docs/architecture/writing_pipeline.md): Pipeline chấm Writing 2 tầng, System prompt và Vietlish AI guardrails.
-- [speaking_pipeline.md](file:///d:/program/vstep/docs/architecture/speaking_pipeline.md): Pipeline chấm Speaking qua Google Gemini Native Audio API và Web Audio acoustic metrics.
+- [speaking_pipeline.md](file:///d:/program/vstep/docs/architecture/speaking_pipeline.md): Pipeline chấm Speaking qua Gemini 3.5 Flash Lite Native Audio và Web Audio acoustic metrics.
 
 ### Đặc tả Tính năng (`docs/features/`)
 - [foundation_drills.md](file:///d:/program/vstep/docs/features/foundation_drills.md): Flashcard SRS 1.500 từ trích xuất đề thi thật ULIS/HNUE theo 8 chủ đề.
 - [listening.md](file:///d:/program/vstep/docs/features/listening.md): Unified Listening Runner, smart player ±5s, dictation và transcript song ngữ.
 - [reading.md](file:///d:/program/vstep/docs/features/reading.md): Unified Reading Runner, 1-Tap Dictionary tooltip, split-pane và highlight dẫn chứng.
 - [writing.md](file:///d:/program/vstep/docs/features/writing.md): Unified Writing Runner, giàn giáo hỗ trợ, Vietlish engine và quy ước bôi màu nhận xét.
-- [speaking.md](file:///d:/program/vstep/docs/features/speaking.md): Unified Speaking Runner, phòng thu đếm ngược BEEP, radar chart và Gemini Native Audio.
+- [speaking.md](file:///d:/program/vstep/docs/features/speaking.md): Unified Speaking Runner, phòng thu đếm ngược BEEP, radar chart và Gemini 3.5 Flash Lite Native Audio.
 - [mock_test.md](file:///d:/program/vstep/docs/features/mock_test.md): Mock Exam Orchestrator 180 phút và báo cáo kết quả chuẩn 0.5.
 
 ### Hướng dẫn Triển khai (`docs/deployment/`)

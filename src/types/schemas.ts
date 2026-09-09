@@ -200,6 +200,76 @@ export interface SpeakingEvaluationResult {
     detected_error: string;
     severity: "low" | "medium" | "critical";
   }[];
-  sample_improved_speech: string;  // Bài nói mẫu nâng cấp band B2+/C1
+  sample_improved_speech: string;
+}
+
+export interface SpeakingTest {
+  id: string;
+  exam_date?: string;
+  title: string;
+  part1: {
+    title: string;
+    duration_minutes: number;
+    topics: {
+      topic_name: string;
+      topic_name_vi?: string;
+      questions: string[];
+    }[];
+  };
+  part2: {
+    title: string;
+    duration_minutes: number;
+    situation: string;
+    options: {
+      key: string;
+      title: string;
+      description?: string;
+    }[];
+  };
+  part3: {
+    title: string;
+    duration_minutes: number;
+    topic: string;
+    mindmap_ideas: string[];
+    follow_up_questions: string[];
+  };
+}
+
+export interface WritingPrompt {
+  id: string;
+  task_type: "task1_letter" | "task2_essay";
+  title: string;
+  time_allowed_minutes: number;
+  min_words: number;
+  prompt_text: string;
+  context_info?: string;
+  sample_response?: {
+    band: "B1" | "B2" | "C1";
+    text: string;
+    analysis_vi?: string;
+  };
+}
+
+export interface ReadingTest {
+  id: string;
+  title: string;
+  duration_minutes: number;
+  difficulty: "B1" | "B2" | "C1";
+  passages: ReadingPassage[];
+}
+
+export interface MockTest {
+  id: string;
+  test_number: number;
+  title: string;
+  institution: string;
+  total_duration_minutes: number;
+  listening: ListeningTest;
+  reading: ReadingTest;
+  writing: {
+    task1: WritingPrompt;
+    task2: WritingPrompt;
+  };
+  speaking: SpeakingTest;
 }
 

@@ -26,3 +26,8 @@ Apply Elon Musk's First Principles thinking and 5-Step Engineering Algorithm to 
 ## Fast Feedback & Inner Loop Velocity
 - **Accelerate Cycle Time:** Prioritize short iteration loops (fast local typechecking, instant test feedback, deterministic diagnostics). Fast feedback exposes wrong assumptions before they calcify into tech debt.
 - **Automate Only Stable Ground:** Do not automate flaky, unverified, or rapidly shifting manual flows. Automation scales the underlying process; automating a broken flow merely scales errors faster.
+
+## Anti-Tunnel Vision & Global System Thinking
+- **End-to-End System Horizon (No Local Maximums):** Never fall into feature tunnel vision where making a local sub-component compile or pass tests is mistaken for completing the feature. Always zoom out to inspect horizontal consistency across sibling modules, real-world user scale, and full pedagogical workflows (e.g., enabling users to "debug" and learn from errors rather than just outputting a score).
+- **Scale by Default (Reject the N=1 Trap):** Never build monolithic or hardcoded single-instance data models when the domain inherently requires a collection. When designing practice studios, always structure the data contracts and UI for multiple test editions (`Đề 1`, `Đề 2`, `Đề 3`...) with dedicated switchers from the outset.
+- **Architectural Parity Invariant:** When introducing a cleaner pattern or directory structure to one module (e.g., `src/features/<skill>/data/`), immediately audit and refactor existing sibling modules to maintain uniform structural parity. Never leave legacy monolithic files stranded behind.

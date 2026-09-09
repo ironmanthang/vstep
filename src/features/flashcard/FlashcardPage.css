@@ -6,6 +6,37 @@
   gap: var(--space-6);
 }
 
+.offline-alert-banner {
+  background-color: rgba(220, 38, 38, 0.12);
+  border: 1px solid rgba(220, 38, 38, 0.35);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  box-shadow: var(--shadow-sm);
+  animation: fadeIn 150ms ease-out;
+}
+
+.offline-alert-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--fs-sm);
+  color: var(--coral-text);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.offline-alert-badge {
+  background-color: var(--coral);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
 .page-header-row {
   display: flex;
   justify-content: space-between;

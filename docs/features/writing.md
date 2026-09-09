@@ -9,7 +9,7 @@ Mô-đun được đóng gói thành một `WritingRunner` duy nhất tiếp nh�
 - **Practice Mode (`mode: 'practice'`)**:
   - Tích hợp bộ tạo dàn ý (Outline Generator) và thư viện mẫu câu (Sentence Starters).
   - Kho bài mẫu phân tích 5 màu và chế độ so sánh song song Side-by-Side.
-  - Chấm điểm AI 2 tầng tức thì (<10s) hiển thị nhận xét bôi màu 4 nhóm và bài mẫu viết lại nâng band B2/C1.
+  - Chấm điểm AI 2 tầng qua `gemini-3.5-flash-lite` tức thì (<6s) hiển thị nhận xét bôi màu 4 nhóm và bài mẫu viết lại nâng band B2/C1.
 - **Exam Mode (`mode: 'exam'`)**:
   - Trình soạn thảo văn bản nghiêm ngặt chuẩn Bộ GD&ĐT (chỉ có bộ đếm từ và đồng hồ đếm ngược 60 phút).
   - Khóa toàn bộ tính năng gợi ý dàn ý, bài mẫu và chấm điểm tức thì.
