@@ -1,33 +1,5 @@
-# Authentic VSTEP Listening Audio Streams (Google Drive CDN Streaming)
-# Mock Tests 01 - 07 (Full Authentic Monolith Audio)
-/audio/listening/test1/vstep-test-1.mp3 https://drive.usercontent.google.com/download?id=1fuExNy339T0oQ4t4WHmSD0DrNcCuwgkv&export=download&confirm=t 302
-/audio/listening/test2/vstep-test-2.mp3 https://drive.usercontent.google.com/download?id=1jNwkONs0oyHwGigZzYUQkmctkAentkUP&export=download&confirm=t 302
-/audio/listening/test3/vstep-test-3.mp3 https://drive.usercontent.google.com/download?id=1JryyGxLhsPsfP5XwVAAfYtNV1fUjqblt&export=download&confirm=t 302
-/audio/listening/test4/vstep-test-4.mp3 https://drive.usercontent.google.com/download?id=19l96eQ9gHex1SG6HEemB2kDCYIHKYRDS&export=download&confirm=t 302
-/audio/listening/test5/vstep-test-5.mp3 https://drive.usercontent.google.com/download?id=1jqiV-oTJTx8eLvGjgQ42k-sRYGQFkkQs&export=download&confirm=t 302
-/audio/listening/test6/vstep-test-6.mp3 https://drive.usercontent.google.com/download?id=1t0zmB3fVKFSwWr1lDskABUbJaxIrxZ71&export=download&confirm=t 302
-/audio/listening/test7/vstep-test-7.mp3 https://drive.usercontent.google.com/download?id=1Qbh_37bO48s5K5lcHo_ZG-XDsS_C-nz9&export=download&confirm=t 302
-
-# HCMUE Drill Sets (Tests 01 - 05, Parts 1 - 3)
-/audio/listening/drills/hcmue1/hcmue-test-1-part1.mp3 https://drive.usercontent.google.com/download?id=1YshyTAf-5p9wDP72IK-vFdMvgZ7zkowV&export=download&confirm=t 302
-/audio/listening/drills/hcmue1/hcmue-test-1-part2.mp3 https://drive.usercontent.google.com/download?id=1SbmhYrKc1B3zwNB03HQWs02R3gYpJ-3R&export=download&confirm=t 302
-/audio/listening/drills/hcmue1/hcmue-test-1-part3.mp3 https://drive.usercontent.google.com/download?id=1QJRZ_0WSLJAc3HrD9lV1o9nrwnrWF9oJ&export=download&confirm=t 302
-
-/audio/listening/drills/hcmue2/hcmue-test-2-part1.mp3 https://drive.usercontent.google.com/download?id=1PyAvQiKmKRIB3ytRMPktRKB04cOR2bQH&export=download&confirm=t 302
-/audio/listening/drills/hcmue2/hcmue-test-2-part2.mp3 https://drive.usercontent.google.com/download?id=1UnZ_2ERI8pL-lxP2kWsMujbT6ek2VMiO&export=download&confirm=t 302
-/audio/listening/drills/hcmue2/hcmue-test-2-part3.mp3 https://drive.usercontent.google.com/download?id=1XoQw4c7dXv65g4YoUSx9fRkmLiK9CNTc&export=download&confirm=t 302
-
-/audio/listening/drills/hcmue3/hcmue-test-3-part1.mp3 https://drive.usercontent.google.com/download?id=1CPbgz0QnmjoAmsVh-jkpH72xAbEvL_GH&export=download&confirm=t 302
-/audio/listening/drills/hcmue3/hcmue-test-3-part2.mp3 https://drive.usercontent.google.com/download?id=1Mu5msUTxCqM8m_6FX5y2ZqoLgws1HmOf&export=download&confirm=t 302
-/audio/listening/drills/hcmue3/hcmue-test-3-part3.mp3 https://drive.usercontent.google.com/download?id=1FHBjxIiXimBHajcJManonnABjz2xm8DN&export=download&confirm=t 302
-
-/audio/listening/drills/hcmue4/hcmue-test-4-part1.mp3 https://drive.usercontent.google.com/download?id=1UPToxRFrRCk01jxsCWcRKd-qbKhmDHda&export=download&confirm=t 302
-/audio/listening/drills/hcmue4/hcmue-test-4-part2.mp3 https://drive.usercontent.google.com/download?id=1JnFxylLsDIyJWm8lUuoboVCB4D0_lzFG&export=download&confirm=t 302
-/audio/listening/drills/hcmue4/hcmue-test-4-part3.mp3 https://drive.usercontent.google.com/download?id=1YTl0SVUKPurK7CuXZgINhVQFIKOmhAk-&export=download&confirm=t 302
-
-/audio/listening/drills/hcmue5/hcmue-test-5-part1.mp3 https://drive.usercontent.google.com/download?id=1KLqsTziZTAcco0k89P3RKThoUgY56_sg&export=download&confirm=t 302
-/audio/listening/drills/hcmue5/hcmue-test-5-part2.mp3 https://drive.usercontent.google.com/download?id=1h6R5MREeKMBdnTjQBKFzSKge2WKcQNpG&export=download&confirm=t 302
-/audio/listening/drills/hcmue5/hcmue-test-5-part3.mp3 https://drive.usercontent.google.com/download?id=12Kr5BrKl9ER3uSnZurK5tanQmZ2LpYJg&export=download&confirm=t 302
+# Authentic VSTEP Listening Audio Streams (Cloudflare R2 CDN)
+/audio/listening/* https://pub-340e82df980d40da8d3710c3e37e34e5.r2.dev/:splat 302
 
 # SPA Catch-All
 /* /index.html 200
