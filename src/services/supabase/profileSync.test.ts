@@ -7,22 +7,28 @@ import {
   fetchLatestMockTest,
   recordMockTestInCloud,
 } from './profileSync';
+import * as clientModule from './client';
 import { supabase } from './client';
 
 describe('profileSync service tests', () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.spyOn(clientModule, 'isSupabaseConfigured').mockReturnValue(true);
   });
 
   it('returns null if userId is empty or Supabase is unconfigured', async () => {
-    const profile = await fetchUserProfile('');
+    vi.spyOn(clientModule, 'isSupabaseConfigured').mockReturnValue(false);
+    const profile = await fetchUserProfile('mock-user-123');
     expect(profile).toBeNull();
 
-    const studyLogs = await fetchUserStudyLogs('');
+    const studyLogs = await fetchUserStudyLogs('mock-user-123');
     expect(studyLogs).toEqual([]);
 
-    const latestTest = await fetchLatestMockTest('');
+    const latestTest = await fetchLatestMockTest('mock-user-123');
     expect(latestTest).toBeNull();
+
+    vi.spyOn(clientModule, 'isSupabaseConfigured').mockReturnValue(true);
+    expect(await fetchUserProfile('')).toBeNull();
   });
 
   it('gracefully handles missing profile without throwing', async () => {
