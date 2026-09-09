@@ -5,13 +5,32 @@
 - A Cloudflare account with access to **Workers & Pages**.
 
 ## Repository Preparation
-- Verify `public/_redirects` exists with SPA catch-all rule:
+- Verify [`public/_redirects`](file:///d:/program/vstep/public/_redirects) routes audio to Cloudflare R2 and handles SPA routing:
   ```text
+  # Authentic VSTEP Listening Audio Streams (Cloudflare R2 CDN)
+  /audio/listening/* https://pub-340e82df980d40da8d3710c3e37e34e5.r2.dev/:splat 302
+
+  # SPA Catch-All
   /* /index.html 200
   ```
 - Run the local verification pipeline before pushing:
   ```powershell
   pnpm prepush
+  ```
+
+## Cloudflare R2 Audio CDN Setup
+- **Bucket**: `vstep-audio` on account `ec77a861c96a52ddb24b94a6492f7c80`.
+- **Public Domain**: `https://pub-340e82df980d40da8d3710c3e37e34e5.r2.dev` (enabled via bucket **Settings** > **Public Access**).
+- **CORS Policy**: Configured to allow cross-origin audio streaming with Range requests:
+  ```json
+  [
+    {
+      "AllowedOrigins": ["*"],
+      "AllowedMethods": ["GET", "HEAD"],
+      "AllowedHeaders": ["*"],
+      "ExposeHeaders": ["ETag", "Content-Range", "Accept-Ranges", "Content-Length"]
+    }
+  ]
   ```
 
 ## Cloudflare Pages Setup
