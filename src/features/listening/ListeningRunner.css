@@ -54,6 +54,13 @@
   border-left: 4px solid var(--primary);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.passage-group-card:hover {
+  background: linear-gradient(90deg, rgba(224, 90, 43, 0.18) 0%, rgba(20, 18, 16, 0.5) 100%);
+  border-color: rgba(224, 90, 43, 0.5);
 }
 
 .passage-group-content {
@@ -69,6 +76,14 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  padding: 2px 6px;
+  margin: -2px -6px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.passage-group-title-wrap:hover {
+  background: rgba(224, 90, 43, 0.15);
 }
 
 .passage-group-title-wrap:hover .passage-group-title {
@@ -97,28 +112,24 @@
   border-radius: var(--radius-full);
 }
 
-.passage-group-play-btn {
-  display: flex;
+.passage-group-collapse-cue {
+  display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 5px 12px;
   font-size: var(--fs-xs);
   font-weight: 700;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--primary);
-  background: var(--primary);
-  color: #141210;
-  cursor: pointer;
-  transition: all var(--transition-fast);
+  color: var(--text-secondary);
+  user-select: none;
+  transition: color var(--transition-fast);
 }
 
-.passage-group-play-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(224, 90, 43, 0.3);
+.passage-group-card:hover .passage-group-collapse-cue {
+  color: var(--primary);
 }
 
-.play-triangle {
-  font-size: 10px;
+.passage-toggle-chevron {
+  font-size: 11px;
+  color: var(--primary);
 }
 
 /* Question Card */
@@ -139,10 +150,46 @@
   border-color: var(--primary);
 }
 
+.question-card.question-card-collapsed {
+  padding: var(--space-4) var(--space-5);
+  gap: var(--space-2);
+}
+
 .question-card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity var(--transition-fast);
+}
+
+.question-card-header:hover {
+  opacity: 0.9;
+}
+
+.question-collapse-icon {
+  font-size: 10px;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+}
+
+.question-card-header:hover .question-collapse-icon {
+  color: var(--primary);
+}
+
+.collapsed-selected-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary-text);
+  background: var(--primary-subtle);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-full);
+  padding: 1px 8px;
 }
 
 .question-number-badge {
@@ -265,18 +312,25 @@
 /* Scratchpad Note-Taking Input */
 .question-scratchpad-wrap {
   margin-top: var(--space-2);
-  background: rgba(198, 139, 89, 0.05);
-  border: 1px dashed rgba(198, 139, 89, 0.45);
-  border-left: 4px solid var(--primary);
+  background: var(--note-subtle);
+  border: 1px dashed var(--note-border);
+  border-left: 4px solid var(--note-accent);
   border-radius: var(--radius-md);
   padding: 8px 12px;
   transition: all var(--transition-fast);
 }
 
+.question-scratchpad-wrap:hover {
+  background: var(--note-subtle-hover);
+  border-color: var(--note-border);
+  border-left-color: var(--note-accent-hover);
+}
+
 .question-scratchpad-wrap:focus-within {
-  border-color: var(--primary);
-  background: rgba(198, 139, 89, 0.08);
-  box-shadow: 0 0 0 1px var(--primary-subtle);
+  border-color: var(--note-border-focus);
+  border-left-color: var(--note-border-focus);
+  background: var(--note-subtle-hover);
+  box-shadow: 0 0 0 1px var(--note-border);
 }
 
 .question-scratchpad-input {
@@ -496,9 +550,10 @@
 .palette-btn.flagged::after {
   content: '🚩';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  font-size: 8px;
+  top: -6px;
+  right: -5px;
+  font-size: 13px;
+  line-height: 1;
 }
 
 .palette-btn.score-correct {

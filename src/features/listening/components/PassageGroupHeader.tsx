@@ -5,8 +5,9 @@ interface PassageGroupHeaderProps {
   startMs: number;
   endMs: number;
   isExam: boolean;
+  isCollapsed?: boolean;
   onPlayPassage?: () => void;
-  onScrollToFirst?: () => void;
+  onToggleCollapse?: () => void;
 }
 
 function formatTime(ms: number): string {
@@ -21,24 +22,45 @@ export const PassageGroupHeader: React.FC<PassageGroupHeaderProps> = ({
   startMs,
   endMs,
   isExam,
+  isCollapsed = false,
   onPlayPassage,
-  onScrollToFirst,
+  onToggleCollapse,
 }) => {
   return (
-    <div className="passage-group-card">
+    <div
+      className="passage-group-card"
+      onClick={onToggleCollapse}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onToggleCollapse?.();
+        }
+      }}
+      title={isCollapsed ? 'Nhấn để mở rộng nhóm câu hỏi' : 'Nhấn để thu gọn nhóm câu hỏi'}
+    >
       <div className="passage-group-content">
         <div
           className="passage-group-title-wrap"
-          onClick={onScrollToFirst}
+          onClick={(e) => {
+            e.stopPropagation();
+            if (!isExam) {
+              onPlayPassage?.();
+            }
+          }}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => {
             if (e.key === 'Enter' || e.key === ' ') {
               e.preventDefault();
-              onScrollToFirst?.();
+              e.stopPropagation();
+              if (!isExam) {
+                onPlayPassage?.();
+              }
             }
           }}
-          title="Nhấn để cuộn đến câu đầu tiên của đoạn"
+          title={!isExam ? `Nhấn để nghe đoạn này [${formatTime(startMs)} – ${formatTime(endMs)}]` : undefined}
         >
           <span className="passage-badge-icon">🎧</span>
           <span className="passage-group-title">{title}</span>
@@ -49,20 +71,10 @@ export const PassageGroupHeader: React.FC<PassageGroupHeaderProps> = ({
           )}
         </div>
 
-        {!isExam && onPlayPassage && (
-          <button
-            type="button"
-            className="passage-group-play-btn"
-            onClick={(e) => {
-              e.stopPropagation();
-              onPlayPassage();
-            }}
-            aria-label={`Phát audio ${title}`}
-          >
-            <span className="play-triangle">▶</span>
-            <span>Nghe đoạn này</span>
-          </button>
-        )}
+        <div className="passage-group-collapse-cue">
+          <span className="passage-toggle-chevron">{isCollapsed ? '▶' : '▼'}</span>
+          <span className="passage-toggle-text">{isCollapsed ? 'Mở rộng' : 'Thu gọn'}</span>
+        </div>
       </div>
     </div>
   );

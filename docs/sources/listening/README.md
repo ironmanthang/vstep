@@ -15,7 +15,6 @@ The VSTEP platform delivers listening audio using a high-performance edge-first 
 - **Asset Synchronization Scripts**:
   - [`scripts/download-mock-assets.ps1`](file:///d:/program/vstep/scripts/download-mock-assets.ps1): Downloads the 7 continuous mock test MP3s and the master 160-page PDF.
   - [`scripts/download-hcmue-drills.ps1`](file:///d:/program/vstep/scripts/download-hcmue-drills.ps1): Downloads the 15 authentic HCMUE drill slices (Tests 01–05, Parts 1–3).
-  - [`scripts/sync-all-assets.ps1`](file:///d:/program/vstep/scripts/sync-all-assets.ps1): Multi-threaded automated sync script with byte-level size validation and resume capability.
 
 ---
 
@@ -95,3 +94,10 @@ The VSTEP platform delivers listening audio using a high-performance edge-first 
 - **Dynamic Route Dispatching**: All components (`ListeningRunner.tsx`, `CustomAudioPlayer.tsx`, `useAudioPlayer.ts`) load the audio file path specified in `test.audio_url`.
 - **Zero Schema Pollution**: TypeScript data models store clean client-side routes (e.g., `audio_url: '/audio/listening/drills/hcmue1/hcmue-test-1-part1.mp3'`). Neither Google Drive URLs nor third-party metadata are hardcoded inside TypeScript data arrays.
 - **Production Resolution**: On production, the request is transparently handled by the Cloudflare Pages edge redirect engine via [`public/_redirects`](file:///d:/program/vstep/public/_redirects).
+
+---
+
+## Acoustic Validation & Timestamp Synchronization
+- **Verification Suite (`scripts/verify-all-listening.mjs`)**: Verifies 100% of all 22 listening tests against physical MP3 audio files. Validates duration limits, sequential non-overlapping timestamps (`start_ms`, `end_ms`), question clue mappings, and Part 1 example-trap guards (`pnpm run verify:listening`).
+- **CLI Deep Inspection & Sync Tool (`scripts/verify-timestamps.mjs`)**: Supports single-test inspection, part-by-part verification (`--part 1|2|3`), or full-bank auditing (`pnpm run verify:timestamps`).
+- **Out-of-Band Extraction (`scripts/detect-boundaries.mjs`)**: Standalone Node.js script using Gemini API (`gemini-3.5-transcribe`) to extract audio timestamps.

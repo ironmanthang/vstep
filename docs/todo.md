@@ -89,6 +89,8 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Khung ghi chú nháp từ khóa (Scratchpad) auto-expanding dưới mỗi câu hỏi (chỉ bật trong Practice Mode)
 - [x] Khung mở rộng lời thoại & manh mối (Inline Collapsible Transcript) song ngữ và bôi sáng manh mối trực tiếp dưới mỗi câu hỏi
 - [x] Kiểm thử toàn diện: Unit tests `listening.test.ts` (10 tests), lint và typecheck pass 100%
+- [x] Kiểm thử tự động hóa đồng bộ âm thanh & mốc thời gian (`scripts/verify-all-listening.mjs` / `pnpm run verify:listening`): Kiểm tra 100% 22 bộ đề (15 HCMUE discrete drills + 7 Full Mock Tests), xác thực sự tồn tại của file audio vật lý, độ lệch thời lượng < 3s, thứ tự mốc thời gian tuần tự không chồng chéo, đầy đủ manh mối câu hỏi và loại bỏ bẫy đọc đề thi mẫu (example-trap)
+- [x] Công cụ đối soát & trích xuất mốc thời gian ngoài luồng (`scripts/verify-timestamps.mjs` / `pnpm run verify:timestamps`, `scripts/detect-with-gemini.mjs`): Hỗ trợ đối soát chi tiết CLI và trích xuất bằng acoustic silence detection / Gemini Flash Lite
 
 ## SPRINT: NGÂN HÀNG ĐỀ THI THẬT & MOCK TEST (AUTHENTIC EXAM BANKS)
 - [x] Trích xuất và cấu trúc hóa Đề thi Đọc Set 11 (FME Sourced: 4 bài đọc, 40 câu hỏi, giải thích tiếng Việt) vào `src/features/reading/data/fmeDe11.ts`

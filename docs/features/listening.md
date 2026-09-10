@@ -49,4 +49,15 @@ Mô-đun được triển khai tập trung tại [`src/features/listening/`](fil
 - **Kiến trúc Phân phối & Truyền phát Âm thanh (Streaming CDN & Local Cache)**:
   - **Production (`https://vstep.pages.dev/`)**: 22 luồng âm thanh chính thức (7 đề thi thử toàn diện + 15 bộ bài tập discrete) được phân phối qua Cloudflare Pages [`public/_redirects`](file:///d:/program/vstep/public/_redirects). Mọi endpoint `/audio/listening/*` được chuyển hướng HTTP 302 sang Cloudflare R2 CDN bucket, hỗ trợ `206 Partial Content`, `Accept-Ranges: bytes` và `Access-Control-Allow-Origin: *` cho phép tua và phát lại mượt mà với chi phí băng thông $0 (zero egress).
   - **Local Development**: File audio vật lý nằm tại [`public/audio/listening/`](file:///d:/program/vstep/public/audio/listening) (được bỏ qua trong `.gitignore`), giúp Vite dev server phục vụ offline lập tức mà không làm phình Git repository (< 3 MB).
-- **Unit Tests ([`listening.test.ts`](file:///d:/program/vstep/src/features/listening/listening.test.ts))**: Bộ bài kiểm thử tự động xác thực tính toàn vẹn 100% câu hỏi (245 câu mock tests + 175 câu discrete drills = 420 câu hỏi chuẩn hóa), official answer keys, tính tăng dần của timestamp và tính nhất quán của metadata.
+- **Hạ tầng Tự động hóa Kiểm thử & Đồng bộ Mốc thời gian (Timestamp Alignment & Verification)**:
+  - **Kịch bản kiểm thử toàn diện (`scripts/verify-all-listening.mjs` / `pnpm run verify:listening`)**:
+    - Quét toàn bộ 22 bộ đề thi (15 đề discrete HCMUE Part 1-3 + 7 Full Mock Tests 35 câu).
+    - Xác thực sự tồn tại của file audio vật lý và đối soát độ lệch thời lượng với `ffprobe` (ngưỡng cho phép < 3s).
+    - Kiểm tra tính tuần tự nghiêm ngặt của `start_ms` và `end_ms`, triệt tiêu hoàn toàn phân đoạn âm hoặc chồng chéo (`start_ms < prev_end_ms`).
+    - Kiểm tra độ bao phủ manh mối câu hỏi (`is_clue_for_question` phủ đủ 100% câu hỏi).
+    - Bảo vệ chống bẫy bài đọc mẫu Part 1 (Example Trap Guard): Đảm bảo Câu 1 luôn bắt đầu sau đoạn đọc hướng dẫn (~120.000ms), không bị gán nhầm vào 00:00.
+  - **Công cụ đối soát chuyên sâu (`scripts/verify-timestamps.mjs` / `pnpm run verify:timestamps`)**:
+    - CLI hỗ trợ kiểm tra chi tiết theo từng file, theo Part (`--part 1|2|3`), hoặc toàn bộ (`--all`), tích hợp tính năng tự động cập nhật mốc thời gian chuẩn (`--fix`).
+  - **Trích xuất mốc thời gian ngoài luồng (`scripts/detect-with-gemini.mjs`)**:
+    - Script thực thi độc lập qua Node.js tận dụng mô hình `gemini-3.5-flash-lite` để phân tích mốc thời gian từ file âm thanh mà không làm tiêu tốn context token của phiên làm việc chính.
+- **Unit Tests (`listening.test.ts`)**: Bộ bài kiểm thử tự động xác thực tính toàn vẹn 100% câu hỏi (245 câu mock tests + 175 câu discrete drills = 420 câu hỏi chuẩn hóa), official answer keys, tính tăng dần của timestamp và tính nhất quán của metadata.
