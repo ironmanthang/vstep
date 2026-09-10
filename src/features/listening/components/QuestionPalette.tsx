@@ -7,6 +7,9 @@ export interface QuestionPaletteProps {
   flaggedQuestions: Set<string>;
   isSubmitted: boolean;
   onSelectQuestion: (questionId: string) => void;
+  onSubmit: () => void;
+  onReset: () => void;
+  isExam?: boolean;
 }
 
 export const QuestionPalette: React.FC<QuestionPaletteProps> = ({
@@ -15,6 +18,9 @@ export const QuestionPalette: React.FC<QuestionPaletteProps> = ({
   flaggedQuestions,
   isSubmitted,
   onSelectQuestion,
+  onSubmit,
+  onReset,
+  isExam = false,
 }) => {
   const answeredCount = Object.keys(answers).length;
 
@@ -61,6 +67,30 @@ export const QuestionPalette: React.FC<QuestionPaletteProps> = ({
             <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--gold)' }} />
             <span>Đã cắm cờ xem lại</span>
           </div>
+        </div>
+
+        {/* Action Button: Sticky Submit or Retake */}
+        <div style={{ borderTop: '1px solid var(--border)', paddingTop: 'var(--space-2)' }}>
+          {isSubmitted ? (
+            <button
+              type="button"
+              className="secondary-btn"
+              onClick={onReset}
+              style={{ width: '100%', justifyContent: 'center', fontWeight: 700, fontSize: 'var(--fs-xs)' }}
+            >
+              🔄 Làm Lại Bài Này
+            </button>
+          ) : (
+            <button
+              type="button"
+              className="primary-btn"
+              onClick={onSubmit}
+              disabled={answeredCount === 0 && !isExam}
+              style={{ width: '100%', justifyContent: 'center', fontWeight: 700, fontSize: 'var(--fs-xs)' }}
+            >
+              Nộp Bài ({answeredCount}/{questions.length})
+            </button>
+          )}
         </div>
       </div>
     </aside>

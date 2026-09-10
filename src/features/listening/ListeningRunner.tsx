@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import type { ListeningTest, ListeningMode, ListeningScoreResult } from './types';
 import { useAudioPlayer } from './useAudioPlayer';
 import { CustomAudioPlayer } from './components/CustomAudioPlayer';
@@ -7,6 +7,7 @@ import { QuestionCard } from './components/QuestionCard';
 import { QuestionPalette } from './components/QuestionPalette';
 import { useUserStore } from '../../services/user/userStore';
 import { getQuestionTranscriptContext } from './transcriptContext';
+import { loadListeningSession, saveListeningSession, clearListeningSession } from './listeningStorage';
 import './ListeningRunner.css';
 
 function toggleInSet(set: Set<string>, item: string): Set<string> {
@@ -30,16 +31,37 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
   const isExam = mode === 'exam';
   const { recordStudyActivity, incrementExercisesCompleted } = useUserStore();
 
-  const [answers, setAnswers] = useState<Record<string, 'A' | 'B' | 'C' | 'D'>>({});
-  const [flaggedQuestions, setFlaggedQuestions] = useState<Set<string>>(new Set());
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [scoreResult, setScoreResult] = useState<ListeningScoreResult | null>(null);
-  const [notes, setNotes] = useState<Record<string, string>>({});
+  const [initialSession] = useState(() => loadListeningSession(test.id, mode));
+  const [answers, setAnswers] = useState<Record<string, 'A' | 'B' | 'C' | 'D'>>(
+    () => initialSession?.answers ?? {}
+  );
+  const [flaggedQuestions, setFlaggedQuestions] = useState<Set<string>>(
+    () => new Set(initialSession?.flaggedQuestions ?? [])
+  );
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(
+    () => initialSession?.isSubmitted ?? false
+  );
+  const [scoreResult, setScoreResult] = useState<ListeningScoreResult | null>(
+    () => initialSession?.scoreResult ?? null
+  );
+  const [notes, setNotes] = useState<Record<string, string>>(
+    () => initialSession?.notes ?? {}
+  );
   const [expandedTranscripts, setExpandedTranscripts] = useState<Set<string>>(new Set());
   const [showVietnamese, setShowVietnamese] = useState<Record<string, boolean>>({});
   const [collapsedPassages, setCollapsedPassages] = useState<Set<string>>(new Set());
   const [collapsedQuestions, setCollapsedQuestions] = useState<Set<string>>(new Set());
   const questionRefs = useRef<Record<string, HTMLDivElement | null>>({});
+
+  useEffect(() => {
+    saveListeningSession(test.id, mode, {
+      answers,
+      flaggedQuestions: Array.from(flaggedQuestions),
+      notes,
+      isSubmitted,
+      scoreResult,
+    });
+  }, [test.id, mode, answers, flaggedQuestions, notes, isSubmitted, scoreResult]);
 
   const {
     isPlaying,
@@ -109,6 +131,7 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
   };
 
   const handleReset = () => {
+    clearListeningSession(test.id, mode);
     setAnswers({});
     setFlaggedQuestions(new Set());
     setIsSubmitted(false);
@@ -119,8 +142,6 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
     setCollapsedQuestions(new Set());
     seekTo(0);
   };
-
-  const answeredCount = Object.keys(answers).length;
 
   return (
     <div className="listening-runner">
@@ -136,22 +157,6 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
           <h2 style={{ fontSize: 'var(--fs-xl)', fontWeight: 800, margin: '4px 0 0 0' }}>
             {test.title}
           </h2>
-        </div>
-
-        <div style={{ display: 'flex', gap: 'var(--space-2)' }}>
-          {isSubmitted ? (
-            <button className="secondary-btn" onClick={handleReset}>
-              🔄 Làm Lại Bài Này
-            </button>
-          ) : (
-            <button
-              className="primary-btn"
-              onClick={handleSubmit}
-              disabled={answeredCount === 0 && !isExam}
-            >
-              Nộp Bài & Chấm Điểm ({answeredCount}/{test.questions.length})
-            </button>
-          )}
         </div>
       </div>
 
@@ -242,6 +247,9 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
           flaggedQuestions={flaggedQuestions}
           isSubmitted={isSubmitted}
           onSelectQuestion={scrollToQuestion}
+          onSubmit={handleSubmit}
+          onReset={handleReset}
+          isExam={isExam}
         />
       </div>
     </div>

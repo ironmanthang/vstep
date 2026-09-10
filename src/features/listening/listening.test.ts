@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import {
   ALL_LISTENING_PART1_TESTS,
   ALL_LISTENING_PART2_TESTS,
@@ -6,6 +6,11 @@ import {
   ALL_VSTEP_LISTENING_MOCK_TESTS,
 } from './data';
 import { getQuestionTranscriptContext } from './transcriptContext';
+import {
+  saveListeningSession,
+  loadListeningSession,
+  clearListeningSession,
+} from './listeningStorage';
 
 function calculateVStepScore(correct: number, total: number): number {
   if (total === 0 || correct === 0) return 0.0;
@@ -212,5 +217,64 @@ describe('VSTEP Listening Studio Data Integrity & Specifications', () => {
     expect(unknownContext.segment).toBeNull();
     expect(unknownContext.isFirstInGroup).toBe(false);
     expect(unknownContext.groupTitle).toBe('');
+  });
+
+  describe('Listening Session Storage Persistence', () => {
+    const memoryStore = new Map<string, string>();
+
+    beforeEach(() => {
+      memoryStore.clear();
+      const mockStorage = {
+        getItem: (key: string) => memoryStore.get(key) ?? null,
+        setItem: (key: string, val: string) => { memoryStore.set(key, String(val)); },
+        removeItem: (key: string) => { memoryStore.delete(key); },
+        clear: () => { memoryStore.clear(); },
+      };
+      Object.defineProperty(globalThis, 'localStorage', {
+        value: mockStorage,
+        writable: true,
+        configurable: true,
+      });
+    });
+
+    it('persists and restores listening drafts and results cleanly', () => {
+      const testId = 'vstep_mock01_lis';
+      saveListeningSession(testId, 'practice', {
+        answers: { q1: 'B', q2: 'C' },
+        flaggedQuestions: ['q1'],
+        notes: { q1: 'speaker mentioned Tuesday' },
+        isSubmitted: false,
+        scoreResult: null,
+      });
+
+      const loaded = loadListeningSession(testId, 'practice');
+      expect(loaded).not.toBeNull();
+      expect(loaded?.answers).toEqual({ q1: 'B', q2: 'C' });
+      expect(loaded?.flaggedQuestions).toEqual(['q1']);
+      expect(loaded?.notes).toEqual({ q1: 'speaker mentioned Tuesday' });
+      expect(loaded?.isSubmitted).toBe(false);
+      expect(loaded?.savedAt).toBeGreaterThan(0);
+    });
+
+    it('clears listening session cleanly on test reset', () => {
+      const testId = 'vstep_mock01_lis';
+      saveListeningSession(testId, 'practice', {
+        answers: { q1: 'B' },
+        flaggedQuestions: [],
+        notes: {},
+        isSubmitted: true,
+        scoreResult: {
+          totalQuestions: 35,
+          correctCount: 28,
+          scoreOutOf10: 8.0,
+          timeSpentSeconds: 1200,
+          completedAt: 123456789,
+        },
+      });
+
+      expect(loadListeningSession(testId, 'practice')).not.toBeNull();
+      clearListeningSession(testId, 'practice');
+      expect(loadListeningSession(testId, 'practice')).toBeNull();
+    });
   });
 });
