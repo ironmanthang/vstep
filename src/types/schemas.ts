@@ -273,3 +273,23 @@ export interface MockTest {
   speaking: SpeakingTest;
 }
 
+export type TestSkill = 'listening' | 'reading' | 'writing' | 'speaking' | 'mock_test';
+export type TestMode = 'practice' | 'exam';
+
+export interface DbTestSubmission {
+  id?: string;
+  user_id: string;
+  test_id: string;
+  skill: TestSkill;
+  mode: TestMode;
+  score: number;
+  correct_count: number;
+  total_questions: number;
+  time_spent_seconds: number;
+  answers: Record<string, string>;
+  notes: Record<string, string>;
+  flagged_questions: string[];
+  completed_at?: string;
+  created_at?: string;
+}
+

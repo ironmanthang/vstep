@@ -65,12 +65,33 @@ CREATE TABLE IF NOT EXISTS public.user_daily_stats (
     CONSTRAINT user_date_unique UNIQUE (user_id, review_date)
 );
 
+-- 6. Table: user_test_submissions
+-- Tracks completed test and drill submissions across all skills (Local Draft, Cloud on Commit)
+CREATE TABLE IF NOT EXISTS public.user_test_submissions (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+    test_id TEXT NOT NULL,
+    skill TEXT NOT NULL CHECK (skill IN ('listening', 'reading', 'writing', 'speaking', 'mock_test')),
+    mode TEXT NOT NULL DEFAULT 'practice' CHECK (mode IN ('practice', 'exam')),
+    score NUMERIC(4, 1) NOT NULL DEFAULT 0.0,
+    correct_count INTEGER NOT NULL DEFAULT 0,
+    total_questions INTEGER NOT NULL DEFAULT 0,
+    time_spent_seconds INTEGER NOT NULL DEFAULT 0,
+    answers JSONB NOT NULL DEFAULT '{}'::jsonb,
+    notes JSONB NOT NULL DEFAULT '{}'::jsonb,
+    flagged_questions JSONB NOT NULL DEFAULT '[]'::jsonb,
+    completed_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    CONSTRAINT user_test_mode_unique UNIQUE (user_id, test_id, mode)
+);
+
 -- Performance Indexes
 CREATE INDEX IF NOT EXISTS idx_study_logs_user ON public.user_study_logs (user_id, study_date DESC);
 CREATE INDEX IF NOT EXISTS idx_mock_tests_user ON public.user_mock_test_results (user_id, completed_at DESC);
 CREATE INDEX IF NOT EXISTS idx_reviews_user_queue ON public.user_flashcard_reviews (user_id, next_review_timestamp);
 CREATE INDEX IF NOT EXISTS idx_reviews_user_status ON public.user_flashcard_reviews (user_id, status);
 CREATE INDEX IF NOT EXISTS idx_daily_stats_user ON public.user_daily_stats (user_id, review_date DESC);
+CREATE INDEX IF NOT EXISTS idx_test_submissions_user ON public.user_test_submissions (user_id, test_id, mode);
 
 -- Enable Row Level Security (RLS)
 ALTER TABLE public.user_profiles ENABLE ROW LEVEL SECURITY;
@@ -78,6 +99,7 @@ ALTER TABLE public.user_study_logs ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.user_mock_test_results ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.user_flashcard_reviews ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.user_daily_stats ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.user_test_submissions ENABLE ROW LEVEL SECURITY;
 
 -- RLS Policies
 DROP POLICY IF EXISTS "Users can manage own profile" ON public.user_profiles;
@@ -98,6 +120,10 @@ CREATE POLICY "Users can manage own flashcards" ON public.user_flashcard_reviews
 
 DROP POLICY IF EXISTS "Users can manage own daily stats" ON public.user_daily_stats;
 CREATE POLICY "Users can manage own daily stats" ON public.user_daily_stats
+    FOR ALL USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
+
+DROP POLICY IF EXISTS "Users can manage own test submissions" ON public.user_test_submissions;
+CREATE POLICY "Users can manage own test submissions" ON public.user_test_submissions
     FOR ALL USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
 
 -- Auto-provision profile trigger on Google OAuth sign-up

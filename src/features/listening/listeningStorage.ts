@@ -54,3 +54,52 @@ export function clearListeningSession(testId: string, mode: ListeningMode): void
     // Ignore
   }
 }
+
+export interface CloudListeningPayload {
+  answers: Record<string, string>;
+  notes: Record<string, string>;
+  flagged_questions: string[];
+  score: number;
+  correct_count: number;
+  total_questions: number;
+  time_spent_seconds: number;
+  completed_at?: string;
+}
+
+export function hydrateListeningSessionFromCloud(
+  testId: string,
+  mode: ListeningMode,
+  cloudData: CloudListeningPayload
+): StoredListeningSession {
+  const completedTimestamp = cloudData.completed_at
+    ? new Date(cloudData.completed_at).getTime()
+    : Date.now();
+
+  const scoreResult: ListeningScoreResult = {
+    totalQuestions: cloudData.total_questions,
+    correctCount: cloudData.correct_count,
+    scoreOutOf10: cloudData.score,
+    timeSpentSeconds: cloudData.time_spent_seconds,
+    completedAt: completedTimestamp,
+  };
+
+  const session: StoredListeningSession = {
+    answers: cloudData.answers as Record<string, 'A' | 'B' | 'C' | 'D'>,
+    flaggedQuestions: Array.isArray(cloudData.flagged_questions) ? cloudData.flagged_questions : [],
+    notes: cloudData.notes || {},
+    isSubmitted: true,
+    scoreResult,
+    savedAt: completedTimestamp,
+  };
+
+  try {
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem(getListeningStorageKey(testId, mode), JSON.stringify(session));
+    }
+  } catch {
+    // Ignore storage quota errors
+  }
+
+  return session;
+}
+

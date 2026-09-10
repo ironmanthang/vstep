@@ -6,8 +6,15 @@ import { PassageGroupHeader } from './components/PassageGroupHeader';
 import { QuestionCard } from './components/QuestionCard';
 import { QuestionPalette } from './components/QuestionPalette';
 import { useUserStore } from '../../services/user/userStore';
+import { useAuth } from '../../services/supabase/authStore';
+import { fetchTestSubmission, upsertTestSubmission } from '../../services/supabase/testSubmissionSync';
 import { getQuestionTranscriptContext } from './transcriptContext';
-import { loadListeningSession, saveListeningSession, clearListeningSession } from './listeningStorage';
+import {
+  loadListeningSession,
+  saveListeningSession,
+  clearListeningSession,
+  hydrateListeningSessionFromCloud,
+} from './listeningStorage';
 import './ListeningRunner.css';
 
 function toggleInSet(set: Set<string>, item: string): Set<string> {
@@ -29,6 +36,7 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
   onComplete,
 }) => {
   const isExam = mode === 'exam';
+  const { user } = useAuth();
   const { recordStudyActivity, incrementExercisesCompleted } = useUserStore();
 
   const [initialSession] = useState(() => loadListeningSession(test.id, mode));
@@ -47,6 +55,7 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
   const [notes, setNotes] = useState<Record<string, string>>(
     () => initialSession?.notes ?? {}
   );
+  const [syncWarning, setSyncWarning] = useState<string | null>(null);
   const [expandedTranscripts, setExpandedTranscripts] = useState<Set<string>>(new Set());
   const [showVietnamese, setShowVietnamese] = useState<Record<string, boolean>>({});
   const [collapsedPassages, setCollapsedPassages] = useState<Set<string>>(new Set());
@@ -62,6 +71,41 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
       scoreResult,
     });
   }, [test.id, mode, answers, flaggedQuestions, notes, isSubmitted, scoreResult]);
+
+  // Cross-device hydration: Completed Cloud submission trumps local unsubmitted draft
+  useEffect(() => {
+    if (!user?.id) return;
+    let isCancelled = false;
+
+    async function syncFromCloud() {
+      if (!user?.id) return;
+      try {
+        const cloudData = await fetchTestSubmission(user.id, test.id, mode);
+        if (isCancelled || !cloudData) return;
+
+        const cloudCompletedAt = cloudData.completed_at ? new Date(cloudData.completed_at).getTime() : 0;
+        const currentSavedAt = initialSession?.savedAt ?? 0;
+
+        if (!initialSession?.isSubmitted || cloudCompletedAt > currentSavedAt) {
+          const hydrated = hydrateListeningSessionFromCloud(test.id, mode, cloudData);
+          if (isCancelled) return;
+          setAnswers(hydrated.answers);
+          setFlaggedQuestions(new Set(hydrated.flaggedQuestions));
+          setNotes(hydrated.notes);
+          setIsSubmitted(true);
+          setScoreResult(hydrated.scoreResult);
+        }
+      } catch (err) {
+        console.warn('Failed to sync test submission from cloud:', err);
+      }
+    }
+
+    syncFromCloud();
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [user?.id, test.id, mode, initialSession?.isSubmitted, initialSession?.savedAt]);
 
   const {
     isPlaying,
@@ -111,23 +155,47 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
     }, 60);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const total = test.questions.length;
     const correct = test.questions.filter((q) => answers[q.id] === q.correct_key).length;
     const scoreOutOf10 = total > 0 ? Number(((correct / total) * 10).toFixed(1)) : 0;
+    const timeSpent = Math.round(currentTime);
     const result: ListeningScoreResult = {
       totalQuestions: total,
       correctCount: correct,
       scoreOutOf10,
-      timeSpentSeconds: Math.round(currentTime),
+      timeSpentSeconds: timeSpent,
       completedAt: Date.now(),
     };
 
     setIsSubmitted(true);
     setScoreResult(result);
+    setSyncWarning(null);
     recordStudyActivity();
     incrementExercisesCompleted(1);
     onComplete?.(result);
+
+    // Cloud on Commit: upsert submission snapshot to Supabase
+    if (user?.id) {
+      const res = await upsertTestSubmission({
+        user_id: user.id,
+        test_id: test.id,
+        skill: 'listening',
+        mode,
+        score: scoreOutOf10,
+        correct_count: correct,
+        total_questions: total,
+        time_spent_seconds: timeSpent,
+        answers,
+        notes,
+        flagged_questions: Array.from(flaggedQuestions),
+        completed_at: new Date(result.completedAt).toISOString(),
+      });
+
+      if (!res.success) {
+        setSyncWarning('Không thể đồng bộ lên đám mây (đã lưu kết quả an toàn trên thiết bị này).');
+      }
+    }
   };
 
   const handleReset = () => {
@@ -137,6 +205,7 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
     setIsSubmitted(false);
     setScoreResult(null);
     setNotes({});
+    setSyncWarning(null);
     setExpandedTranscripts(new Set());
     setCollapsedPassages(new Set());
     setCollapsedQuestions(new Set());
@@ -159,6 +228,23 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
           </h2>
         </div>
       </div>
+
+      {/* Non-blocking sync warning if network failed */}
+      {syncWarning && (
+        <div
+          style={{
+            padding: '8px 14px',
+            background: 'var(--bg-subtle)',
+            borderLeft: '3px solid var(--gold)',
+            borderRadius: 'var(--radius-sm)',
+            fontSize: 'var(--fs-xs)',
+            color: 'var(--text-secondary)',
+            marginBottom: 'var(--space-3)',
+          }}
+        >
+          {syncWarning}
+        </div>
+      )}
 
       {/* Score Result Banner if submitted */}
       {isSubmitted && scoreResult && (

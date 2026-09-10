@@ -10,6 +10,7 @@ import {
   saveListeningSession,
   loadListeningSession,
   clearListeningSession,
+  hydrateListeningSessionFromCloud,
 } from './listeningStorage';
 
 function calculateVStepScore(correct: number, total: number): number {
@@ -275,6 +276,42 @@ describe('VSTEP Listening Studio Data Integrity & Specifications', () => {
       expect(loadListeningSession(testId, 'practice')).not.toBeNull();
       clearListeningSession(testId, 'practice');
       expect(loadListeningSession(testId, 'practice')).toBeNull();
+    });
+
+    it('hydrates listening session from cloud snapshot and sets isSubmitted true', () => {
+      const testId = 'vstep_mock01_lis';
+      // Simulate existing incomplete local draft
+      saveListeningSession(testId, 'practice', {
+        answers: { q1: 'A' },
+        flaggedQuestions: [],
+        notes: {},
+        isSubmitted: false,
+        scoreResult: null,
+      });
+
+      // Hydrate completed cloud submission
+      const session = hydrateListeningSessionFromCloud(testId, 'practice', {
+        answers: { q1: 'B', q2: 'C' },
+        notes: { q1: 'confirmed' },
+        flagged_questions: ['q2'],
+        score: 9.0,
+        correct_count: 32,
+        total_questions: 35,
+        time_spent_seconds: 1500,
+        completed_at: '2026-09-10T12:00:00.000Z',
+      });
+
+      expect(session.isSubmitted).toBe(true);
+      expect(session.answers).toEqual({ q1: 'B', q2: 'C' });
+      expect(session.notes).toEqual({ q1: 'confirmed' });
+      expect(session.flaggedQuestions).toEqual(['q2']);
+      expect(session.scoreResult?.scoreOutOf10).toBe(9.0);
+
+      // Verify saved in localStorage
+      const loaded = loadListeningSession(testId, 'practice');
+      expect(loaded?.isSubmitted).toBe(true);
+      expect(loaded?.answers).toEqual({ q1: 'B', q2: 'C' });
+      expect(loaded?.scoreResult?.correctCount).toBe(32);
     });
   });
 });
