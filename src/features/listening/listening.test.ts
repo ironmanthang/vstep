@@ -5,6 +5,7 @@ import {
   ALL_LISTENING_PART3_TESTS,
   ALL_VSTEP_LISTENING_MOCK_TESTS,
 } from './data';
+import { getQuestionTranscriptContext } from './transcriptContext';
 
 function calculateVStepScore(correct: number, total: number): number {
   if (total === 0 || correct === 0) return 0.0;
@@ -190,5 +191,26 @@ describe('VSTEP Listening Studio Data Integrity & Specifications', () => {
     expect(calculateVStepScore(18, 35)).toBe(5.1);
     expect(calculateVStepScore(5, 8)).toBe(6.3);
     expect(calculateVStepScore(0, 35)).toBe(0.0);
+  });
+
+  it('should resolve question transcript context and group headers accurately', () => {
+    const mock1 = ALL_VSTEP_LISTENING_MOCK_TESTS[0];
+
+    // Part 1: Question 1 is a single question (not a group)
+    const q1Context = getQuestionTranscriptContext(mock1, mock1.questions[0].id);
+    expect(q1Context.segment).not.toBeNull();
+    expect(q1Context.isFirstInGroup).toBe(false);
+
+    // Part 2: Question 9 is first in conversation group
+    const q9Context = getQuestionTranscriptContext(mock1, mock1.questions[8].id);
+    expect(q9Context.isFirstInGroup).toBe(true);
+    expect(q9Context.groupTitle).toContain('Đoạn Hội Thoại 1');
+    expect(q9Context.groupId).toBe(mock1.questions[8].id);
+
+    // Non-existent question returns empty context
+    const unknownContext = getQuestionTranscriptContext(mock1, 'non_existent_id');
+    expect(unknownContext.segment).toBeNull();
+    expect(unknownContext.isFirstInGroup).toBe(false);
+    expect(unknownContext.groupTitle).toBe('');
   });
 });
