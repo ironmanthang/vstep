@@ -12,9 +12,11 @@
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "lint": "oxlint --deny-warnings",
-    "ingest:listening": "node scripts/ingest-listening.mjs",
+    "audit:listening": "python scripts/master_listening_audit.py",
+    "export:listening": "node --experimental-strip-types scripts/export_all_listening.mjs",
     "verify:listening": "node --experimental-strip-types scripts/verify-all-listening.mjs",
-    "verify:timestamps": "node --experimental-strip-types scripts/verify-timestamps.mjs",
+    "transcribe:listening": "python scripts/transcribe_listening.py",
+    "enrich:listening": "node scripts/enrich_listening.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

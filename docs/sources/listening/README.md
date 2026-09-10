@@ -12,9 +12,8 @@ The VSTEP platform delivers listening audio using a high-performance edge-first 
 - **Local Development (`http://localhost:5173`)**:
   - Audio files reside locally at [`public/audio/listening/`](file:///d:/program/vstep/public/audio/listening) (gitignored via `.gitignore`).
   - Vite dev server serves local audio files directly with zero network latency.
-- **Asset Synchronization Scripts**:
-  - [`scripts/download-mock-assets.ps1`](file:///d:/program/vstep/scripts/download-mock-assets.ps1): Downloads the 7 continuous mock test MP3s and the master 160-page PDF.
-  - [`scripts/download-hcmue-drills.ps1`](file:///d:/program/vstep/scripts/download-hcmue-drills.ps1): Downloads the 15 authentic HCMUE drill slices (Tests 01–05, Parts 1–3).
+- **Asset Synchronization Script**:
+  - [`scripts/download-assets.ps1`](file:///d:/program/vstep/scripts/download-assets.ps1): Unified utility to download mock test MP3s, HCMUE drill slices, and PDF answer keys (`-Target all|hcmue|mock|pdf`).
 
 ---
 
@@ -100,4 +99,6 @@ The VSTEP platform delivers listening audio using a high-performance edge-first 
 ## Acoustic Validation & Timestamp Synchronization
 - **Acoustic Speech Alignment (`scripts/master_listening_audit.py`)**: End-to-end audio-to-transcript verification engine using local `faster-whisper` (CTranslate2) and cross-segment similarity matrices. Validates 100% of the 168 dialogue and lecture segments across all 22 listening tests directly against physical MP3 waveforms.
 - **Structural Integrity Suite (`scripts/verify-all-listening.mjs`)**: Verifies 100% of all 22 listening tests against physical MP3 audio files. Validates duration limits, sequential non-overlapping timestamps (`start_ms`, `end_ms`), question clue mappings, and Part 1 example-trap guards (`pnpm run verify:listening`).
-- **Legacy Extraction & Inspection (`scripts/detect-boundaries.mjs`, `scripts/verify-timestamps.mjs`)**: Legacy scripts previously used for Gemini-based boundary extraction and basic text verification (scheduled for refactoring/modernization).
+- **Modern Two-Stage Ingestion Pipeline**:
+  - **Stage 1 Transcription (`scripts/transcribe_listening.py`)**: Dual-engine audio transcriber prioritizing Groq Cloud Whisper (`whisper-large-v3-turbo`) with automatic offline fallback to local `faster-whisper`.
+  - **Stage 2 Bilingual Enrichment (`scripts/enrich_listening.mjs`)**: Lightweight text-only Gemini Flash pipeline for Vietnamese translation and speaker attribution.

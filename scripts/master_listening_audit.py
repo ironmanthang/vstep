@@ -1,12 +1,39 @@
-import os, sys, re, json, io, subprocess
+#!/usr/bin/env python3
+"""
+VSTEP Master Listening Acoustic Auditor
+Uses faster-whisper to transcribe audio slices at clue timestamps and performs
+cross-segment similarity matrix analysis to catch question inversions, audio drift, or missing audio.
+
+Usage:
+  python scripts/master_listening_audit.py [filter] [options]
+
+Examples:
+  python scripts/master_listening_audit.py hcmue_lis_p1_01
+  python scripts/master_listening_audit.py mock01 --model base.en
+  python scripts/master_listening_audit.py --all
+"""
+
+import os
+import sys
+import re
+import json
+import io
+import subprocess
+import argparse
 from faster_whisper import WhisperModel
 
 if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8')
 
-print("Loading Whisper model (tiny, int8)...")
-model = WhisperModel('tiny', device='cpu', compute_type='int8')
-print("Model ready.\n")
+_model_instance = None
+
+def get_whisper_model(model_name="tiny"):
+    global _model_instance
+    if _model_instance is None:
+        print(f"Loading faster-whisper model ({model_name}, int8 CPU)...")
+        _model_instance = WhisperModel(model_name, device='cpu', compute_type='int8')
+        print("Model ready.\n")
+    return _model_instance
 
 def get_audio_slice(audio_path, start_sec, duration_sec=18):
     cmd = [
@@ -16,14 +43,13 @@ def get_audio_slice(audio_path, start_sec, duration_sec=18):
     proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
     return proc.stdout
 
-def transcribe(audio_bytes):
+def transcribe(audio_bytes, model):
     if not audio_bytes:
         return ""
     segments, _ = model.transcribe(io.BytesIO(audio_bytes))
     return ' '.join([s.text.strip() for s in segments])
 
 def clean_speech_text(text):
-    # Remove speaker prefixes and question announcements to focus on core content
     text = re.sub(r'^(Announcer|Speaker|Man|Woman|Professor|Girl|Boy):\s*', '', text, flags=re.IGNORECASE)
     text = re.sub(r'^Questions?\s+\d+.*?(refer to|look through|choose).*?(\n|\.)', '', text, flags=re.IGNORECASE)
     return text
@@ -47,7 +73,7 @@ def compute_overlap(text1, text2):
     inter = t1.intersection(t2)
     return len(inter) / min(len(t1), len(t2))
 
-def audit_test(test):
+def audit_test(test, model, threshold=0.25):
     audio_rel = test['audio_url'].lstrip('/')
     audio_abs = os.path.join(os.getcwd(), 'public', audio_rel)
 
@@ -66,19 +92,17 @@ def audit_test(test):
             'details': f"Audio file not found at {audio_abs}"
         }]
 
-    # Filter clue segments
     clue_segments = []
     for idx, seg in enumerate(test['transcript']):
         if seg['is_clue_for_question']:
             clue_segments.append((idx, seg))
 
-    # Transcribe speech for each clue segment
     audio_transcripts = []
     for idx, seg in clue_segments:
         start_sec = seg['start_ms'] / 1000.0
         dur_sec = min(22, max(12, (seg['end_ms'] - seg['start_ms']) / 1000.0))
         audio_slice = get_audio_slice(audio_abs, start_sec, dur_sec)
-        spoken = transcribe(audio_slice)
+        spoken = transcribe(audio_slice, model)
         audio_transcripts.append({
             'seg_idx': idx,
             'clue': seg['is_clue_for_question'],
@@ -87,7 +111,6 @@ def audit_test(test):
             'code_text': seg['text_en']
         })
 
-    # Build similarity matrix: len(clue_segments) x len(clue_segments)
     N = len(audio_transcripts)
     sim_matrix = [[0.0 for _ in range(N)] for _ in range(N)]
     for i in range(N):
@@ -98,8 +121,6 @@ def audit_test(test):
     for i in range(N):
         code_item = audio_transcripts[i]
         diag_overlap = sim_matrix[i][i]
-        
-        # Find best audio match for this code segment
         best_j = max(range(N), key=lambda j: sim_matrix[i][j])
         best_overlap = sim_matrix[i][best_j]
 
@@ -111,7 +132,6 @@ def audit_test(test):
         print(f"  Audio: {audio_preview}...")
 
         if best_j != i and best_overlap >= 0.35 and best_overlap > diag_overlap + 0.15:
-            # Clear swap detected!
             swapped_with = audio_transcripts[best_j]
             err_msg = (
                 f"SWAPPED SEGMENT: Segment {code_item['seg_idx']} (Clue: {code_item['clue']}) code text "
@@ -133,7 +153,7 @@ def audit_test(test):
                 'audio_heard_here': code_item['spoken'],
                 'audio_heard_there': swapped_with['spoken']
             })
-        elif diag_overlap < 0.25:
+        elif diag_overlap < threshold:
             err_msg = (
                 f"LOW OVERLAP: Segment {code_item['seg_idx']} (Clue: {code_item['clue']}) "
                 f"audio does not match code text (overlap {diag_overlap*100:.1f}%, best other: {best_overlap*100:.1f}%)"
@@ -155,26 +175,45 @@ def audit_test(test):
 
     return results
 
-def main():
-    data_path = "scripts/all_listening_data.json"
+def ensure_data_file(data_path="scripts/all_listening_data.json"):
     if not os.path.exists(data_path):
-        print(f"Error: {data_path} not found. Run scripts/export_all_listening.mjs first.")
-        sys.exit(1)
+        print(f"[Audit] {data_path} not found. Running export_all_listening.mjs...")
+        subprocess.run(["node", "--experimental-strip-types", "scripts/export_all_listening.mjs"], check=True)
+
+def main():
+    parser = argparse.ArgumentParser(description="VSTEP Master Listening Acoustic Auditor")
+    parser.add_argument("filter", nargs="?", help="Optional filter by test ID or file path")
+    parser.add_argument("--model", default="tiny", help="faster-whisper model (default: tiny, options: tiny, base.en, small.en, large-v3-turbo)")
+    parser.add_argument("--threshold", type=float, default=0.25, help="Minimum overlap threshold (default: 0.25)")
+    parser.add_argument("--export", action="store_true", help="Force re-export of all listening tests before auditing")
+    args = parser.parse_args()
+
+    data_path = "scripts/all_listening_data.json"
+    if args.export:
+        subprocess.run(["node", "--experimental-strip-types", "scripts/export_all_listening.mjs"], check=True)
+    else:
+        ensure_data_file(data_path)
 
     with open(data_path, "r", encoding="utf-8") as f:
         all_tests = json.load(f)
 
-    filter_arg = sys.argv[1] if len(sys.argv) > 1 else None
-    if filter_arg:
-        tests_to_run = [t for t in all_tests if filter_arg.lower() in t['id'].lower() or filter_arg.lower() in t['relPath'].lower()]
+    if args.filter and args.filter != "--all":
+        filt = args.filter.lower()
+        tests_to_run = [t for t in all_tests if filt in t['id'].lower() or filt in t['relPath'].lower()]
     else:
         tests_to_run = all_tests
+
+    if not tests_to_run:
+        print(f"No tests matched filter: {args.filter}")
+        sys.exit(0)
+
+    model = get_whisper_model(args.model)
 
     all_defects = []
     print(f"Auditing {len(tests_to_run)} listening tests...")
 
     for t in tests_to_run:
-        defects = audit_test(t)
+        defects = audit_test(t, model, threshold=args.threshold)
         if defects:
             all_defects.extend(defects)
 

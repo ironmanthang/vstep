@@ -15,8 +15,8 @@ Apply these rules to all Git operations, version bumps, release commits, and rep
   - Step 3: Propose comprehensive release commit (`git commit -m "release vX.Y.Z: <scope>: <summary>"`) and push.
 
 ## Git Command Guardrails
-- **Autonomous Command Boundary**: Only run non-destructive, read-only diagnostic Git commands autonomously (e.g., `git status`, `git log`, `git diff`).
-- **Never Run Commit or Push**: Never autonomously execute `git commit` or `git push`. Always propose the exact formatted command for the user to review and run.
+- **Autonomous Command Boundary**: Only run non-deploy, diagnostic Git commands (e.g., `git status`, `git log`, `git diff` `git commit`).
+- **Never Push**: Never execute `git push`.
 - **Destructive Command Ban**: Never run destructive Git commands (`git reset --hard`, `git clean -fd`, `git checkout .`, `git restore .`) without explicit user instruction.
 
 ## File Moving & History Preservation

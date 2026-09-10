@@ -45,6 +45,8 @@ public/audio/listening/**/cmds.txt
 # Dev reference documents & PDFs (downloadable via scripts/download-mock-assets.ps1)
 scripts/*.pdf
 *.pdf
+scripts/all_listening_data.json
+scripts/listening_audit_report.json
 
 # Large binary archives
 *.zip

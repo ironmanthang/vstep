@@ -2,17 +2,20 @@
 /**
  * Comprehensive Listening Timestamp & Audio Alignment Verifier
  * 
- * Verifies all 22 Listening Tests across:
- * - Part 1 (HCMUE Drills 01 to 05)
- * - Part 2 (HCMUE Drills 01 to 05)
- * - Part 3 (HCMUE Drills 01 to 05)
- * - Mock Tests (Full Mock Tests 01 to 07)
+ * Dynamically discovers and verifies all Listening Tests across:
+ * - Part 1 (HCMUE Drills)
+ * - Part 2 (HCMUE Drills)
+ * - Part 3 (HCMUE Drills)
+ * - Mock Tests (Full Mock Tests)
+ * 
+ * Usage:
+ *   node --experimental-strip-types scripts/verify-all-listening.mjs
  */
 
-import fs from 'fs';
-import path from 'path';
-import { execSync } from 'child_process';
-import { pathToFileURL } from 'url';
+import fs from 'node:fs';
+import path from 'node:path';
+import { execSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
 
 function msToTime(ms) {
   if (typeof ms !== 'number' || isNaN(ms)) return '--:--';
@@ -34,53 +37,36 @@ function getAudioDuration(audioPath) {
   }
 }
 
+function listTsFiles(dir) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir)
+    .filter(f => f.endsWith('.ts') && !f.endsWith('.test.ts') && f !== 'index.ts')
+    .sort()
+    .map(f => path.join(dir, f).replace(/\\/g, '/'));
+}
+
 async function verifyAll() {
   console.log('================================================================================');
   console.log('       VSTEP LISTENING AUDIO & TIMESTAMP VERIFICATION SUITE');
   console.log('================================================================================\n');
 
+  const cwd = process.cwd();
   const groups = [
     {
       name: 'PART 1: HCMUE Drills (Short Announcements & Instructions)',
-      files: [
-        'src/features/listening/data/drills/hcmue/part1/hcmuePart1_01.ts',
-        'src/features/listening/data/drills/hcmue/part1/hcmuePart1_02.ts',
-        'src/features/listening/data/drills/hcmue/part1/hcmuePart1_03.ts',
-        'src/features/listening/data/drills/hcmue/part1/hcmuePart1_04.ts',
-        'src/features/listening/data/drills/hcmue/part1/hcmuePart1_05.ts',
-      ]
+      files: listTsFiles(path.join(cwd, 'src/features/listening/data/drills/hcmue/part1'))
     },
     {
       name: 'PART 2: HCMUE Drills (Conversations)',
-      files: [
-        'src/features/listening/data/drills/hcmue/part2/hcmuePart2_01.ts',
-        'src/features/listening/data/drills/hcmue/part2/hcmuePart2_02.ts',
-        'src/features/listening/data/drills/hcmue/part2/hcmuePart2_03.ts',
-        'src/features/listening/data/drills/hcmue/part2/hcmuePart2_04.ts',
-        'src/features/listening/data/drills/hcmue/part2/hcmuePart2_05.ts',
-      ]
+      files: listTsFiles(path.join(cwd, 'src/features/listening/data/drills/hcmue/part2'))
     },
     {
       name: 'PART 3: HCMUE Drills (Lectures & Talks)',
-      files: [
-        'src/features/listening/data/drills/hcmue/part3/hcmuePart3_01.ts',
-        'src/features/listening/data/drills/hcmue/part3/hcmuePart3_02.ts',
-        'src/features/listening/data/drills/hcmue/part3/hcmuePart3_03.ts',
-        'src/features/listening/data/drills/hcmue/part3/hcmuePart3_04.ts',
-        'src/features/listening/data/drills/hcmue/part3/hcmuePart3_05.ts',
-      ]
+      files: listTsFiles(path.join(cwd, 'src/features/listening/data/drills/hcmue/part3'))
     },
     {
       name: 'MOCK TESTS: Full 35-Question Exams (Part 1 + Part 2 + Part 3)',
-      files: [
-        'src/features/listening/data/mockTests/mockTest01.ts',
-        'src/features/listening/data/mockTests/mockTest02.ts',
-        'src/features/listening/data/mockTests/mockTest03.ts',
-        'src/features/listening/data/mockTests/mockTest04.ts',
-        'src/features/listening/data/mockTests/mockTest05.ts',
-        'src/features/listening/data/mockTests/mockTest06.ts',
-        'src/features/listening/data/mockTests/mockTest07.ts',
-      ]
+      files: listTsFiles(path.join(cwd, 'src/features/listening/data/mockTests'))
     }
   ];
 
@@ -89,19 +75,19 @@ async function verifyAll() {
   let failedTests = 0;
 
   for (const group of groups) {
-    console.log(`\n--- ${group.name} ---`);
+    console.log(`\n--- ${group.name} (${group.files.length} tests) ---`);
 
-    for (const relPath of group.files) {
+    for (const fullPath of group.files) {
       totalTests++;
-      const absPath = path.resolve(process.cwd(), relPath);
+      const relPath = path.relative(cwd, fullPath).replace(/\\/g, '/');
 
-      if (!fs.existsSync(absPath)) {
+      if (!fs.existsSync(fullPath)) {
         console.error(`  ❌ [MISSING FILE] ${relPath}`);
         failedTests++;
         continue;
       }
 
-      const fileUrl = pathToFileURL(absPath).href;
+      const fileUrl = pathToFileURL(fullPath).href;
       const mod = await import(fileUrl);
       const test = Object.values(mod).find(v => v && typeof v === 'object' && v.audio_url && v.transcript);
 
@@ -112,7 +98,7 @@ async function verifyAll() {
       }
 
       // 1. Audio file check
-      const localAudioPath = path.join(process.cwd(), 'public', test.audio_url.replace(/^\//, ''));
+      const localAudioPath = path.join(cwd, 'public', test.audio_url.replace(/^\//, ''));
       if (!fs.existsSync(localAudioPath)) {
         console.error(`  ❌ [MISSING AUDIO] ${relPath} -> ${test.audio_url}`);
         failedTests++;
@@ -178,22 +164,27 @@ async function verifyAll() {
         passedTests++;
         const qCount = test.questions.length;
         const segCount = test.transcript.length;
-        const durStr = `${msToTime(test.duration_seconds * 1000)} (${test.duration_seconds}s)`;
-        console.log(`  ✔ [PASS] ${test.id.padEnd(20)} | ${qCount.toString().padStart(2)}Q | ${segCount.toString().padStart(2)} segs | ${durStr.padEnd(16)} | ${path.basename(relPath)}`);
+        const durStr = msToTime(test.duration_seconds * 1000);
+        console.log(`  ✔ [PASS] ${test.id.padEnd(18)} | ${test.title.padEnd(52)} | ${durStr} | ${segCount.toString().padStart(2)} segs | ${qCount.toString().padStart(2)} Qs`);
       } else {
         failedTests++;
+        console.error(`  ✖ [FAIL] ${test.id} (${relPath})`);
       }
     }
   }
 
   console.log('\n================================================================================');
-  console.log(`FINAL RESULTS: ${passedTests} / ${totalTests} PASSED. (${failedTests} failed)`);
-  console.log('================================================================================\n');
-
-  process.exit(failedTests === 0 ? 0 : 1);
+  console.log(`VERIFICATION SUMMARY: ${passedTests}/${totalTests} tests PASSED cleanly.`);
+  if (failedTests > 0) {
+    console.error(`❌ ${failedTests} tests failed verification checks! Review output above.`);
+    process.exit(1);
+  } else {
+    console.log('🎉 100% of listening audio assets & timestamps are strictly validated.');
+    console.log('================================================================================\n');
+  }
 }
 
 verifyAll().catch(err => {
-  console.error('[FATAL]', err);
+  console.error('[Verification Error]', err);
   process.exit(1);
 });

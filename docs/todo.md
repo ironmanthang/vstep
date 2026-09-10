@@ -81,7 +81,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Tích hợp 21 bộ transcript song ngữ kèm mốc thời gian sub-second vào cấu trúc modular mock tests
 - [x] OCR và trích xuất trọn bộ câu hỏi 35 câu (tổng 245 câu, 4 lựa chọn, đáp án chuẩn, lời giải tiếng Việt) cho toàn bộ 7 đề từ sách "7 VSTEP Tests"
 - [x] Khởi tạo các module đề thi thử độc lập `mockTest01.ts` đến `mockTest07.ts` trong `src/features/listening/data/mockTests/` và export qua `src/features/listening/data/index.ts`
-
+- [ ] download ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q4_K_M  ollama run hf.co/XHToken/Spark-X2.5-4B-GGUF:Q4_K_M
 ### Tinh giản Luồng Luyện Nghe & Ghi chú Nháp (Streamlined Question Stream & Scratchpad)
 - [x] Tinh giản `ListeningRunner`: Loại bỏ tab-switcher (questions/dictation/transcript) và cơ chế dictation diff, hợp nhất toàn bộ trải nghiệm vào luồng câu hỏi đơn trang
 - [x] Xây dựng `PassageGroupHeader` tự động nhận diện ranh giới bài nghe Part 2 (Hội thoại) và Part 3 (Bài giảng) kèm nút phát audio phân đoạn
