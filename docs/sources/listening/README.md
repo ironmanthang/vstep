@@ -98,6 +98,6 @@ The VSTEP platform delivers listening audio using a high-performance edge-first 
 ---
 
 ## Acoustic Validation & Timestamp Synchronization
-- **Verification Suite (`scripts/verify-all-listening.mjs`)**: Verifies 100% of all 22 listening tests against physical MP3 audio files. Validates duration limits, sequential non-overlapping timestamps (`start_ms`, `end_ms`), question clue mappings, and Part 1 example-trap guards (`pnpm run verify:listening`).
-- **CLI Deep Inspection & Sync Tool (`scripts/verify-timestamps.mjs`)**: Supports single-test inspection, part-by-part verification (`--part 1|2|3`), or full-bank auditing (`pnpm run verify:timestamps`).
-- **Out-of-Band Extraction (`scripts/detect-boundaries.mjs`)**: Standalone Node.js script using Gemini API (`gemini-3.5-transcribe`) to extract audio timestamps.
+- **Acoustic Speech Alignment (`scripts/master_listening_audit.py`)**: End-to-end audio-to-transcript verification engine using local `faster-whisper` (CTranslate2) and cross-segment similarity matrices. Validates 100% of the 168 dialogue and lecture segments across all 22 listening tests directly against physical MP3 waveforms.
+- **Structural Integrity Suite (`scripts/verify-all-listening.mjs`)**: Verifies 100% of all 22 listening tests against physical MP3 audio files. Validates duration limits, sequential non-overlapping timestamps (`start_ms`, `end_ms`), question clue mappings, and Part 1 example-trap guards (`pnpm run verify:listening`).
+- **Legacy Extraction & Inspection (`scripts/detect-boundaries.mjs`, `scripts/verify-timestamps.mjs`)**: Legacy scripts previously used for Gemini-based boundary extraction and basic text verification (scheduled for refactoring/modernization).

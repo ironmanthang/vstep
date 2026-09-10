@@ -19,6 +19,7 @@ Think through and share these, unprompted if needed:
 - **Parity audit:** Never edit in isolation — proactively scan related contexts (other platforms, views, input methods, state handlers, parallel implementations) for behavior mismatches, missing handlers, or parity gaps, and flag them.
 - **No hypotheticals in plans:** Deep-scan the codebase before writing any plan. State exact, verified facts — no hand-wavy phrasing like "if X exists..." — and deliver deterministic recommendations only.
 - **Mandatory Complete File Reading:** If the user tags files (`@[filepath]`) or instructs you to read/study files, you MUST read them completely from line 1 to the final line (paginating/chunking across the whole file). Never inspect only the first few lines and claim or imply a full read. Never falsify or exaggerate read coverage.
+- **Unconstrained Solution Space:** Never artificially constrain architecture, model selection, or tooling recommendations to the existing state of the user's laptop or pre-installed packages. The user can and will download or install whatever provides the best engineering outcome. Always suggest the objectively superior solution (e.g., modern models, specialized alignment tools, external runtimes) rather than settling for an inferior compromise just because it is already local.
 
 ## When to Flag vs. Proceed
 If any check above raises a concern — including "this works but there's a cleaner way" — stop, flag it, and wait for my answer before editing. Only proceed straight to planning/code if the task is clear, safe, and risk-free.

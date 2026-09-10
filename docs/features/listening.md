@@ -56,8 +56,8 @@ Mô-đun được triển khai tập trung tại [`src/features/listening/`](fil
     - Kiểm tra tính tuần tự nghiêm ngặt của `start_ms` và `end_ms`, triệt tiêu hoàn toàn phân đoạn âm hoặc chồng chéo (`start_ms < prev_end_ms`).
     - Kiểm tra độ bao phủ manh mối câu hỏi (`is_clue_for_question` phủ đủ 100% câu hỏi).
     - Bảo vệ chống bẫy bài đọc mẫu Part 1 (Example Trap Guard): Đảm bảo Câu 1 luôn bắt đầu sau đoạn đọc hướng dẫn (~120.000ms), không bị gán nhầm vào 00:00.
-  - **Công cụ đối soát chuyên sâu (`scripts/verify-timestamps.mjs` / `pnpm run verify:timestamps`)**:
-    - CLI hỗ trợ kiểm tra chi tiết theo từng file, theo Part (`--part 1|2|3`), hoặc toàn bộ (`--all`), tích hợp tính năng tự động cập nhật mốc thời gian chuẩn (`--fix`).
-  - **Trích xuất mốc thời gian ngoài luồng (`scripts/detect-with-gemini.mjs`)**:
-    - Script thực thi độc lập qua Node.js tận dụng mô hình `gemini-3.5-flash-lite` để phân tích mốc thời gian từ file âm thanh mà không làm tiêu tốn context token của phiên làm việc chính.
+  - **Kiểm định âm học chuyên sâu bằng AI (`scripts/master_listening_audit.py`)**:
+    - Sử dụng mô hình nhận diện giọng nói cục bộ (`faster-whisper` CTranslate2) và thuật toán ma trận tương đồng phân đoạn (cross-segment token similarity) để đối soát trực tiếp nội dung âm thanh vật lý với transcript.
+    - Phát hiện và hiệu chỉnh hoàn toàn các sai lệch âm học: đảo vị trí câu hỏi 6/7 trong HCMUE Part 1 Đề 01, loại bỏ khoảng lặng đọc đề trong HCMUE Part 2 Đề 01, khôi phục đoạn bài giảng bị khuyết và hiệu chỉnh lệch mốc thời gian 100s trong HCMUE Part 3 Đề 04 (*Watership Down*) và Đề 05 (*Federal Arts Project*).
+    - Đạt tỷ lệ đồng bộ âm học 100% trên toàn bộ 168 phân đoạn lời thoại của 22 bộ đề.
 - **Unit Tests (`listening.test.ts`)**: Bộ bài kiểm thử tự động xác thực tính toàn vẹn 100% câu hỏi (245 câu mock tests + 175 câu discrete drills = 420 câu hỏi chuẩn hóa), official answer keys, tính tăng dần của timestamp và tính nhất quán của metadata.

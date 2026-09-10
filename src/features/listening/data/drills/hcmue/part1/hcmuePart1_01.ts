@@ -52,15 +52,15 @@ export const HCMUE_LISTENING_PART1_01: ListeningTest = {
     {
       start_ms: 370700,
       end_ms: 415370,
-      text_en: "Announcer: Question 6. What is this message about?\nMan: Thank you for calling the Tower Place security department. This office will be closing at 11:00 a.m. Wednesday morning as we relocate to the 10th floor. All security officers will be on duty during this time. The 10th floor office will be open at 9 a.m. Thursday. Please contact the security officer on duty, Roy Williams, at 555-7251 if you need to speak with security personnel after 11 on Wednesday. Thank you.",
-      text_vi: "Người đọc: Câu hỏi 6. Tin nhắn này nói về nội dung gì?\nNam: Cảm ơn bạn đã gọi đến phòng an ninh Tower Place. Văn phòng này sẽ đóng cửa lúc 11 giờ sáng thứ Tư để chúng tôi chuyển địa điểm lên tầng 10. Tất cả nhân viên an ninh vẫn sẽ túc trực làm nhiệm vụ trong thời gian này. Văn phòng tầng 10 sẽ mở cửa lúc 9 giờ sáng thứ Năm. Xin vui lòng liên hệ nhân viên an ninh trực ca, Roy Williams, theo số 555-7251 nếu bạn cần trao đổi với nhân viên an ninh sau 11 giờ trưa thứ Tư. Xin cảm ơn.",
+      text_en: "Announcer: Question 6. What is the purpose of the message?\nMan: Hello, Mr. Nakamura. This is Eric Parkman, manager of the personnel department for Linderman Enterprises. We received your resume last week for the accounting position in our shipping department. I was very impressed with your experience and education. I would like to schedule an interview at our office on Friday, April 29 at 10 o'clock. Please give me a call and let me know if that time is good for you. Thank you.",
+      text_vi: "Người đọc: Câu hỏi 6. Mục đích của tin nhắn này là gì?\nNam: Xin chào ông Nakamura. Tôi là Eric Parkman, trưởng phòng nhân sự của Doanh nghiệp Linderman. Chúng tôi đã nhận được hồ sơ xin việc của ông vào tuần trước cho vị trí kế toán tại bộ phận vận chuyển của chúng tôi. Tôi rất ấn tượng với kinh nghiệm và học vấn của ông. Tôi muốn lên lịch một buổi phỏng vấn tại văn phòng chúng tôi vào thứ Sáu, ngày 29 tháng 4 lúc 10 giờ. Xin vui lòng gọi lại cho tôi và cho tôi biết liệu thời gian đó có thuận tiện cho ông hay không. Xin cảm ơn.",
       is_clue_for_question: 'hcmue_q1_6',
     },
     {
       start_ms: 415370,
       end_ms: 469060,
-      text_en: "Announcer: Question 7. What is the purpose of the message?\nMan: Hello, Mr. Nakamura. This is Eric Parkman, manager of the personnel department for Linderman Enterprises. We received your resume last week for the accounting position in our shipping department. I was very impressed with your experience and education. I would like to schedule an interview at our office on Friday, April 29 at 10 o'clock. Please give me a call and let me know if that time is good for you. Thank you.",
-      text_vi: "Người đọc: Câu hỏi 7. Mục đích của tin nhắn này là gì?\nNam: Xin chào ông Nakamura. Tôi là Eric Parkman, trưởng phòng nhân sự của Doanh nghiệp Linderman. Chúng tôi đã nhận được hồ sơ xin việc của ông vào tuần trước cho vị trí kế toán tại bộ phận vận chuyển của chúng tôi. Tôi rất ấn tượng với kinh nghiệm và học vấn của ông. Tôi muốn lên lịch một buổi phỏng vấn tại văn phòng chúng tôi vào thứ Sáu, ngày 29 tháng 4 lúc 10 giờ. Xin vui lòng gọi lại cho tôi và cho tôi biết liệu thời gian đó có thuận tiện cho ông hay không. Xin cảm ơn.",
+      text_en: "Announcer: Question 7. What is this message about?\nMan: Thank you for calling the Tower Place security department. This office will be closing at 11:00 a.m. Wednesday morning as we relocate to the 10th floor. All security officers will be on duty during this time. The 10th floor office will be open at 9 a.m. Thursday. Please contact the security officer on duty, Roy Williams, at 555-7251 if you need to speak with security personnel after 11 on Wednesday. Thank you.",
+      text_vi: "Người đọc: Câu hỏi 7. Tin nhắn này nói về nội dung gì?\nNam: Cảm ơn bạn đã gọi đến phòng an ninh Tower Place. Văn phòng này sẽ đóng cửa lúc 11 giờ sáng thứ Tư để chúng tôi chuyển địa điểm lên tầng 10. Tất cả nhân viên an ninh vẫn sẽ túc trực làm nhiệm vụ trong thời gian này. Văn phòng tầng 10 sẽ mở cửa lúc 9 giờ sáng thứ Năm. Xin vui lòng liên hệ nhân viên an ninh trực ca, Roy Williams, theo số 555-7251 nếu bạn cần trao đổi với nhân viên an ninh sau 11 giờ trưa thứ Tư. Xin cảm ơn.",
       is_clue_for_question: 'hcmue_q1_7',
     },
     {
@@ -134,18 +134,6 @@ export const HCMUE_LISTENING_PART1_01: ListeningTest = {
     },
     {
       id: 'hcmue_q1_6',
-      question_text: 'What is this message about?',
-      options: [
-        { key: 'A', text: 'A new security policy' },
-        { key: 'B', text: 'The business hours' },
-        { key: 'C', text: 'An office relocation' },
-        { key: 'D', text: 'A permanent closure' },
-      ],
-      correct_key: 'C',
-      explanation_vi: 'Thông báo của phòng an ninh Tower Place về việc văn phòng sẽ chuyển địa điểm lên tầng 10 ("This office will be closing at 11:00 a.m. Wednesday morning as we relocate to the 10th floor").',
-    },
-    {
-      id: 'hcmue_q1_7',
       question_text: 'What is the purpose of the message?',
       options: [
         { key: 'A', text: 'To make an appointment' },
@@ -155,6 +143,18 @@ export const HCMUE_LISTENING_PART1_01: ListeningTest = {
       ],
       correct_key: 'A',
       explanation_vi: 'Eric Parkman gọi để sắp xếp một buổi phỏng vấn (cuộc hẹn) vào thứ Sáu ngày 29 tháng 4 lúc 10 giờ cho vị trí kế toán ("I would like to schedule an interview at our office on Friday, April 29 at 10 o\'clock").',
+    },
+    {
+      id: 'hcmue_q1_7',
+      question_text: 'What is this message about?',
+      options: [
+        { key: 'A', text: 'A new security policy' },
+        { key: 'B', text: 'The business hours' },
+        { key: 'C', text: 'An office relocation' },
+        { key: 'D', text: 'A permanent closure' },
+      ],
+      correct_key: 'C',
+      explanation_vi: 'Thông báo của phòng an ninh Tower Place về việc văn phòng sẽ chuyển địa điểm lên tầng 10 ("This office will be closing at 11:00 a.m. Wednesday morning as we relocate to the 10th floor").',
     },
     {
       id: 'hcmue_q1_8',

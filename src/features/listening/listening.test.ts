@@ -27,7 +27,7 @@ describe('VSTEP Listening Studio Data Integrity & Specifications', () => {
     // Validate HCMUE Part 1 drills (8 questions each, Tests 01-05)
     expect(ALL_LISTENING_PART1_TESTS.length).toBe(5);
     const p1Keys = [
-      ['C', 'B', 'D', 'A', 'C', 'C', 'A', 'B'], // Test 01
+      ['C', 'B', 'D', 'A', 'C', 'A', 'C', 'B'], // Test 01 (Q6/Q7 aligned with studio audio)
       ['B', 'A', 'B', 'B', 'B', 'C', 'C', 'B'], // Test 02
       ['D', 'B', 'B', 'A', 'D', 'C', 'D', 'B'], // Test 03
       ['A', 'D', 'B', 'A', 'A', 'A', 'C', 'A'], // Test 04
