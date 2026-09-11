@@ -16,3 +16,8 @@ When creating or editing any Markdown (`.md`) file, plan, note, or document:
 - **No Emojis / Decorative Icons:** Avoid decorative emojis or icons (e.g., ✅, ❌, 🔴, ⚠️). Use clean plain text labels instead (e.g., `Good:`, `Bad:`, `Warning:`, `Note:`).
 - **Hierarchy Via Headers:** Use clean Markdown header levels (`#`, `##`, `###`) to establish logical structure.
 - **Bold Prefixes & Action-Oriented:** Start bullet points with bold prefixes (e.g., `- **Category / Key Point**: ...`) and keep items concise and action-oriented.
+
+## User-Owned Content & Task Invariants
+- **Zero Deletion of User Tasks & Notes:** User-authored checklist items (`- [ ]`), commands, experimental notes, backlog ideas, or scratchpad entries in documentation files (e.g., `docs/todo.md`) are strictly user-owned. NEVER delete, overwrite, "sanitize", or remove them unilaterally.
+- **Proactive Alerts Over Silent Pruning:** If a user note or pending task appears superseded, completed, or requires clarification, alert the user directly in chat and ask what they want to do with it instead of modifying or deleting it on your own.
+- **Scope of Doc Synchronization:** Synchronizing documentation (e.g., via `/sync-docs`) is strictly limited to updating architectural descriptions, APIs, and completed feature statuses to reflect real code changes. It NEVER grants authority to prune or delete pending user tasks or exploratory notes without explicit user confirmation.
