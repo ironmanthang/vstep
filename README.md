@@ -10,6 +10,9 @@ Nền tảng web học tiếng Anh và luyện thi VSTEP thế hệ mới (Onlin
 - **Kiểm tra Linting**: `pnpm lint`
 - **Typecheck**: `pnpm exec tsc --noEmit`
 - **Build production**: `pnpm build`
+- **Kiểm định âm học đề nghe (AI Whisper)**: `pnpm run audit:listening`
+- **Kiểm tra tính toàn vẹn đề nghe (Duration & Clues)**: `pnpm run verify:listening`
+- **Xuất toàn bộ dữ liệu đề nghe (JSON Export)**: `pnpm run export:listening`
 - **Chạy toàn bộ Pre-push Pipeline**: `pnpm run prepush`
 
 ## Bản đồ Tài liệu Hệ thống

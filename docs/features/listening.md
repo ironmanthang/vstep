@@ -50,14 +50,20 @@ Mô-đun được triển khai tập trung tại [`src/features/listening/`](fil
   - **Production (`https://vstep.pages.dev/`)**: 22 luồng âm thanh chính thức (7 đề thi thử toàn diện + 15 bộ bài tập discrete) được phân phối qua Cloudflare Pages [`public/_redirects`](file:///d:/program/vstep/public/_redirects). Mọi endpoint `/audio/listening/*` được chuyển hướng HTTP 302 sang Cloudflare R2 CDN bucket, hỗ trợ `206 Partial Content`, `Accept-Ranges: bytes` và `Access-Control-Allow-Origin: *` cho phép tua và phát lại mượt mà với chi phí băng thông $0 (zero egress).
   - **Local Development**: File audio vật lý nằm tại [`public/audio/listening/`](file:///d:/program/vstep/public/audio/listening) (được bỏ qua trong `.gitignore`), giúp Vite dev server phục vụ offline lập tức mà không làm phình Git repository (< 3 MB).
 - **Hạ tầng Tự động hóa Kiểm thử & Đồng bộ Mốc thời gian (Timestamp Alignment & Verification)**:
+  - **Hạ tầng Ingestion 2 giai đoạn (`scripts/transcribe_listening.py` & `scripts/enrich_listening.mjs`)**:
+    - **Stage 1 Transcription (`transcribe_listening.py`)**: Ưu tiên Groq Cloud Whisper (`whisper-large-v3-turbo`) xử lý 25 phút audio chỉ trong ~2.5 giây, tự động fallback sang `faster-whisper` (CTranslate2 `int8` trên 8 CPU cores) khi offline hoặc truyền cờ `--local`.
+    - **Stage 2 Bilingual Enrichment (`enrich_listening.mjs`)**: Sử dụng Gemini Flash thế hệ mới với prompt văn bản thuần (<500 tokens) để định dạng lượt đối thoại (`Man/Woman`) và dịch tiếng Việt tự nhiên mà không tốn quota upload file hay gặp lỗi 429.
+    - **Tải tài nguyên mẫu tập trung (`scripts/download-assets.ps1`)**: Hỗ trợ tải idempotent mock tests, HCMUE drills và PDF answer keys với cờ `-Target all|hcmue|mock|pdf`.
   - **Kịch bản kiểm thử toàn diện (`scripts/verify-all-listening.mjs` / `pnpm run verify:listening`)**:
-    - Quét toàn bộ 22 bộ đề thi (15 đề discrete HCMUE Part 1-3 + 7 Full Mock Tests 35 câu).
+    - Tự động quét (Dynamic Discovery) toàn bộ 22 bộ đề thi (15 đề discrete HCMUE Part 1-3 + 7 Full Mock Tests 35 câu).
     - Xác thực sự tồn tại của file audio vật lý và đối soát độ lệch thời lượng với `ffprobe` (ngưỡng cho phép < 3s).
     - Kiểm tra tính tuần tự nghiêm ngặt của `start_ms` và `end_ms`, triệt tiêu hoàn toàn phân đoạn âm hoặc chồng chéo (`start_ms < prev_end_ms`).
     - Kiểm tra độ bao phủ manh mối câu hỏi (`is_clue_for_question` phủ đủ 100% câu hỏi).
     - Bảo vệ chống bẫy bài đọc mẫu Part 1 (Example Trap Guard): Đảm bảo Câu 1 luôn bắt đầu sau đoạn đọc hướng dẫn (~120.000ms), không bị gán nhầm vào 00:00.
-  - **Kiểm định âm học chuyên sâu bằng AI (`scripts/master_listening_audit.py`)**:
+  - **Kiểm định âm học chuyên sâu bằng AI (`scripts/master_listening_audit.py` / `pnpm run audit:listening`)**:
     - Sử dụng mô hình nhận diện giọng nói cục bộ (`faster-whisper` CTranslate2) và thuật toán ma trận tương đồng phân đoạn (cross-segment token similarity) để đối soát trực tiếp nội dung âm thanh vật lý với transcript.
     - Phát hiện và hiệu chỉnh hoàn toàn các sai lệch âm học: đảo vị trí câu hỏi 6/7 trong HCMUE Part 1 Đề 01, loại bỏ khoảng lặng đọc đề trong HCMUE Part 2 Đề 01, khôi phục đoạn bài giảng bị khuyết và hiệu chỉnh lệch mốc thời gian 100s trong HCMUE Part 3 Đề 04 (*Watership Down*) và Đề 05 (*Federal Arts Project*).
     - Đạt tỷ lệ đồng bộ âm học 100% trên toàn bộ 168 phân đoạn lời thoại của 22 bộ đề.
+  - **Xuất dữ liệu tự động (`scripts/export_all_listening.mjs` / `pnpm run export:listening`)**:
+    - Tự động trích xuất toàn bộ dữ liệu 22 đề thành file JSON `scripts/all_listening_data.json` phục vụ các kịch bản kiểm toán offline.
 - **Unit Tests (`listening.test.ts`)**: Bộ bài kiểm thử tự động xác thực tính toàn vẹn 100% câu hỏi (245 câu mock tests + 175 câu discrete drills = 420 câu hỏi chuẩn hóa), official answer keys, tính tăng dần của timestamp và tính nhất quán của metadata.

@@ -69,7 +69,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Tích hợp phím tắt điều khiển bàn phím (`Space` Play/Pause, `←` / `→` tua ±5s) kèm input guard cho `INPUT`, `TEXTAREA`, `SELECT`
 - [x] Tải và tích hợp file audio MP3 thi thật từ nguồn chính thức (7 đề thi VSTEP chuẩn ĐHQGHN)
 - [x] Cắt tách file audio lossless 21 file cho 7 đề × 3 Part (`public/audio/listening/test{1..7}/vstep-test-{1..7}-part{1..3}.mp3`)
-- [x] Ingestion tự động hóa 21 bộ transcript song ngữ kèm mốc thời gian chính xác sub-second (`scripts/ingest-listening.mjs`)
+- [x] Ingestion tự động hóa 21 bộ transcript song ngữ kèm mốc thời gian chính xác sub-second qua pipeline 2 giai đoạn: Stage 1 Groq Cloud Whisper / local faster-whisper fallback (`scripts/transcribe_listening.py`) + Stage 2 Gemini Flash bilingual enrichment (`scripts/enrich_listening.mjs`)
 - [x] Cấu hình luồng phân phối âm thanh Production qua Cloudflare Pages `public/_redirects` chuyển hướng 302 sang Cloudflare R2 CDN bucket (hỗ trợ HTTP 206 Partial Content, Range headers, CORS `*`, $0 egress và tua tức thì)
 - [x] Lập danh mục nguồn gốc âm thanh toàn diện (`docs/sources/listening/README.md`) lập chỉ mục 22 file audio với mã định danh lưu trữ Google Drive, URL stream Cloudflare R2 và tài liệu tham chiếu sách gốc
 
@@ -81,7 +81,12 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Tích hợp 21 bộ transcript song ngữ kèm mốc thời gian sub-second vào cấu trúc modular mock tests
 - [x] OCR và trích xuất trọn bộ câu hỏi 35 câu (tổng 245 câu, 4 lựa chọn, đáp án chuẩn, lời giải tiếng Việt) cho toàn bộ 7 đề từ sách "7 VSTEP Tests"
 - [x] Khởi tạo các module đề thi thử độc lập `mockTest01.ts` đến `mockTest07.ts` trong `src/features/listening/data/mockTests/` và export qua `src/features/listening/data/index.ts`
-- [ ] download ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q4_K_M  ollama run hf.co/XHToken/Spark-X2.5-4B-GGUF:Q4_K_M
+- [x] Hiện đại hóa và tái cấu trúc thư mục `scripts/`:
+  - Loại bỏ hoàn toàn 5 file script cũ và 13.000 dòng mã thừa/dữ liệu trùng lặp (`ingest-listening.mjs`, `detect-boundaries.mjs`, `verify-timestamps.mjs`, `download-hcmue-drills.ps1`, `download-mock-assets.ps1`).
+  - Xây dựng Stage 1 Audio Transcriber (`scripts/transcribe_listening.py`): Ưu tiên Groq Cloud Whisper (`whisper-large-v3-turbo`) xử lý 25 phút audio trong ~2.5s, tự động fallback sang `faster-whisper` (CTranslate2 int8 trên 8 CPU cores) khi offline.
+  - Xây dựng Stage 2 Bilingual Enrichment (`scripts/enrich_listening.mjs`): Gọi Gemini Flash cascade thuần văn bản (<500 tokens), triệt tiêu lỗi 429 và phí upload file.
+  - Tích hợp Dynamic Discovery: `scripts/export_all_listening.mjs` và `scripts/verify-all-listening.mjs` tự động quét toàn bộ đề thi trong `drills/` và `mockTests/`.
+  - Hợp nhất kịch bản tải tài nguyên `scripts/download-assets.ps1` hỗ trợ `-Target all|hcmue|mock|pdf`.
 ### Tinh giản Luồng Luyện Nghe & Ghi chú Nháp (Streamlined Question Stream & Scratchpad)
 - [x] Tinh giản `ListeningRunner`: Loại bỏ tab-switcher (questions/dictation/transcript) và cơ chế dictation diff, hợp nhất toàn bộ trải nghiệm vào luồng câu hỏi đơn trang
 - [x] Xây dựng `PassageGroupHeader` tự động nhận diện ranh giới bài nghe Part 2 (Hội thoại) và Part 3 (Bài giảng) kèm nút phát audio phân đoạn
