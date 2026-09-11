@@ -73,7 +73,7 @@ def compute_overlap(text1, text2):
     inter = t1.intersection(t2)
     return len(inter) / min(len(t1), len(t2))
 
-def audit_test(test, model, threshold=0.25):
+def audit_test(test, model, threshold=0.25, part=None):
     audio_rel = test['audio_url'].lstrip('/')
     audio_abs = os.path.join(os.getcwd(), 'public', audio_rel)
 
@@ -94,8 +94,41 @@ def audit_test(test, model, threshold=0.25):
 
     clue_segments = []
     for idx, seg in enumerate(test['transcript']):
-        if seg['is_clue_for_question']:
-            clue_segments.append((idx, seg))
+        clue = seg.get('is_clue_for_question', '')
+        if not clue:
+            continue
+        if part == 1:
+            if 'part1' in test.get('relPath', '').lower() or (test.get('part') == 1 and 'hcmue' in test.get('id', '')):
+                # In discrete HCMUE Part 1 tests, all clues belong to Part 1
+                pass
+            else:
+                # In continuous mock tests, Part 1 is questions 1 to 8
+                clue_tokens = [c.strip() for c in clue.split(',')]
+                if not any(re.search(r'q\d+_[1-8]$', tok) for tok in clue_tokens):
+                    continue
+        elif part == 2:
+            if 'part2' in test.get('relPath', '').lower() or (test.get('part') == 2 and 'hcmue' in test.get('id', '')):
+                # In discrete HCMUE Part 2 tests, all clues belong to Part 2
+                pass
+            else:
+                # In continuous mock tests, Part 2 is questions 9 to 20
+                clue_tokens = [c.strip() for c in clue.split(',')]
+                if not any(re.search(r'q\d+_(?:9|1[0-9]|20)$', tok) for tok in clue_tokens):
+                    continue
+        elif part == 3:
+            if 'part3' in test.get('relPath', '').lower() or (test.get('part') == 3 and 'hcmue' in test.get('id', '')):
+                # In discrete HCMUE Part 3 tests, all clues belong to Part 3
+                pass
+            else:
+                # In continuous mock tests, Part 3 is questions 21 to 35
+                clue_tokens = [c.strip() for c in clue.split(',')]
+                if not any(re.search(r'q\d+_(?:2[1-9]|3[0-5])$', tok) for tok in clue_tokens):
+                    continue
+        clue_segments.append((idx, seg))
+
+    if not clue_segments:
+        print(f"  ℹ️ No clue segments found matching part={part}.")
+        return []
 
     audio_transcripts = []
     for idx, seg in clue_segments:
@@ -185,6 +218,7 @@ def main():
     parser.add_argument("filter", nargs="?", help="Optional filter by test ID or file path")
     parser.add_argument("--model", default="tiny", help="faster-whisper model (default: tiny, options: tiny, base.en, small.en, large-v3-turbo)")
     parser.add_argument("--threshold", type=float, default=0.25, help="Minimum overlap threshold (default: 0.25)")
+    parser.add_argument("--part", type=int, choices=[1, 2, 3], help="Filter by section part (e.g. 1 for Part 1 announcements)")
     parser.add_argument("--export", action="store_true", help="Force re-export of all listening tests before auditing")
     args = parser.parse_args()
 
@@ -203,6 +237,9 @@ def main():
     else:
         tests_to_run = all_tests
 
+    if args.part:
+        tests_to_run = [t for t in tests_to_run if t.get('part') == args.part or 'mock' in t.get('id', '')]
+
     if not tests_to_run:
         print(f"No tests matched filter: {args.filter}")
         sys.exit(0)
@@ -210,10 +247,10 @@ def main():
     model = get_whisper_model(args.model)
 
     all_defects = []
-    print(f"Auditing {len(tests_to_run)} listening tests...")
+    print(f"Auditing {len(tests_to_run)} listening tests (part filter: {args.part or 'all'})...")
 
     for t in tests_to_run:
-        defects = audit_test(t, model, threshold=args.threshold)
+        defects = audit_test(t, model, threshold=args.threshold, part=args.part)
         if defects:
             all_defects.extend(defects)
 
