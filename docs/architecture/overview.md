@@ -29,9 +29,12 @@
 - **Backend & Cloud Layer (Supabase & Cloudflare)**: Supabase quản lý xác thực Google OAuth và cơ sở dữ liệu quan hệ chuẩn hóa (Option B Normalized Schema: `user_profiles`, `user_study_logs`, `user_mock_test_results`, `user_flashcard_reviews`, `user_daily_stats`) kèm Row Level Security và trigger tự khởi tạo hồ sơ `handle_new_user()`. Tầng dịch vụ `profileSync.ts` và `srsSync.ts` đồng bộ hai chiều giữa client và Supabase. Static assets phục vụ qua Cloudflare Pages.
 - **AI Gateway Layer**: Master API Key Gateway chuẩn hóa trên mô hình hạt nhân `gemini-3.5-flash-lite` với cơ chế xoay vòng key (Key Pool Rotation) và tự động fallback sang OpenRouter / Ollama Cloud. Chi tiết tại [ai_gateway.md](file:///d:/program/vstep/docs/architecture/ai_gateway.md).
 
-## Chiến lược Responsive
+## Chiến lược Responsive & PWA Standalone
 - **Desktop (>= 1024px) - Luyện sâu & Thi thử**: Sidebar điều hướng cố định kèm thẻ mục tiêu cá nhân, giao diện chia đôi màn hình (Split-pane) độc lập cuộn, hỗ trợ phím tắt (`Space` điều khiển audio, `Alt+Left` tua 5s, `Ctrl+Enter` nộp bài).
-- **Mobile (<= 1023px / <= 640px) - Micro-Learning & App Shell**: Sidebar tự động chuyển thành thanh điều hướng dưới đáy (Mobile Bottom Nav). Đầu trang tích hợp Mobile Header dính (Sticky) chứa thương hiệu, tiêu đề trang, avatar, nút đổi giao diện sáng/tối và nút Đăng xuất một chạm. Giao diện Flashcard SRS tối ưu lưới 2x2, nút "Làm Lại Bài Này" của bài nghe bố trí ngay dưới bảng điểm chấm tránh cuộn dài. Hỗ trợ chạy Standalone PWA toàn màn hình.
+- **Mobile (<= 1023px / <= 640px) - Micro-Learning & App Shell**: Sidebar tự động chuyển thành thanh điều hướng dưới đáy (Mobile Bottom Nav). Đầu trang tích hợp Mobile Header dính (Sticky) tự động căn khoảng cách tai thỏ (`safe-area-inset-top`), chứa thương hiệu, tiêu đề trang, avatar, nút đổi giao diện sáng/tối và nút Đăng xuất một chạm.
+- **Flexbox Containment & Bounded Width**: Áp dụng `min-width: 0`, `max-width: 100%`, và `overflow-x: hidden` trên toàn bộ chuỗi App Shell (`.main-wrapper`, `.content-container`, `.flashcard-page`) triệt tiêu lỗi tràn khung ngang do các hàng nút dài (`white-space: nowrap`) trên di động.
+- **PWA Standalone Toàn Màn Hình (Zero-URL Bar)**: Hỗ trợ WebAPK trên Android và Web App Standalone trên iOS. Tích hợp trọn bộ icon PNG (`pwa-192x192.png`, `pwa-512x512.png`, `pwa-maskable-512x512.png`, `apple-touch-icon.png`), viewport `interactive-widget=resizes-content` chống xô lệch bàn phím ảo, và tệp cấu hình Cloudflare Pages `public/_headers` đảm bảo không bị cache Service Worker / Manifest cũ.
+- **Tối ưu Chạm (Touch Ergonomics)**: Vùng chạm thanh tua âm thanh (audio scrub track) mở rộng 28px, phím đánh giá SRS đạt chuẩn tối thiểu 44px, loại bỏ lỗi sticky-hover trên màn hình cảm ứng qua `@media (hover: hover) and (pointer: fine)`.
 
 ## Quản lý Dữ liệu
 

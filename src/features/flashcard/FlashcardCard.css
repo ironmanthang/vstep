@@ -6,6 +6,7 @@
   height: 440px;
   perspective: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .flashcard-inner {
@@ -93,10 +94,12 @@
   transition: all var(--transition-fast);
 }
 
-.audio-btn:hover {
-  background-color: var(--primary);
-  color: var(--primary-contrast);
-  transform: scale(1.05);
+@media (hover: hover) and (pointer: fine) {
+  .audio-btn:hover {
+    background-color: var(--primary);
+    color: var(--primary-contrast);
+    transform: scale(1.05);
+  }
 }
 
 .audio-btn.playing {
@@ -259,8 +262,7 @@
   font-size: var(--fs-sm);
   font-weight: 700;
 }
-
-.srs-btn-interval {
+.srs-btn-interval {
   font-size: 0.6875rem;
   opacity: 0.85;
 }
@@ -272,22 +274,10 @@
   border-color: rgba(239, 68, 68, 0.3);
 }
 
-.srs-btn-forgot:hover {
-  background-color: var(--coral);
-  color: #ffffff;
-  transform: translateY(-1px);
-}
-
 .srs-btn-remembered {
   background-color: var(--gold-subtle);
   color: var(--gold-text);
   border-color: rgba(212, 163, 115, 0.3);
-}
-
-.srs-btn-remembered:hover {
-  background-color: var(--gold);
-  color: var(--primary-contrast);
-  transform: translateY(-1px);
 }
 
 .srs-btn-easy {
@@ -296,20 +286,42 @@
   border-color: rgba(16, 185, 129, 0.3);
 }
 
-.srs-btn-easy:hover {
-  background-color: var(--emerald);
-  color: #ffffff;
-  transform: translateY(-1px);
+@media (hover: hover) and (pointer: fine) {
+  .srs-btn-forgot:hover {
+    background-color: var(--coral);
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+
+  .srs-btn-remembered:hover {
+    background-color: var(--gold);
+    color: var(--primary-contrast);
+    transform: translateY(-1px);
+  }
+
+  .srs-btn-easy:hover {
+    background-color: var(--emerald);
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .flashcard-container {
     height: 420px;
+    max-width: 100%;
   }
   .word-text {
     font-size: var(--fs-2xl);
   }
   .card-face {
     padding: var(--space-4);
+  }
+  .srs-btn {
+    min-height: 44px;
+    padding: var(--space-2) 4px;
+  }
+  .srs-btn-label {
+    font-size: var(--fs-xs);
   }
 }

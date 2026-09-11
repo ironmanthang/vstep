@@ -43,6 +43,9 @@
   cursor: pointer;
   overflow: hidden;
   touch-action: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  background-clip: padding-box;
 }
 
 .custom-audio-player.exam-locked .audio-progress-track {
