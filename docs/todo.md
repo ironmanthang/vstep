@@ -15,6 +15,8 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Thiết lập hệ thống biến CSS Design Tokens (Dark/Light mode, typography Outfit/Inter, Campfire warm amber & obsidian palette)
 - [x] Thiết lập hệ thống điều hướng Routing (Home, Skill Practice, Flashcard, Mock Test, Settings, Profile)
 - [x] Xây dựng Layout Responsive (Desktop Sidebar / Mobile Bottom Navigation Bar)
+- [x] Bổ sung nút Đăng xuất trực tiếp trên Mobile Sticky Header
+- [x] Chuẩn hóa Modal xác nhận 2 bước dùng chung (`src/components/common/ConfirmModal.tsx`) cho toàn hệ thống
 
 ### Hệ thống Xác thực & Đồng bộ Đám mây (Login-First & Cross-Device Sync)
 - [x] Thiết lập Login-First Gate (`<ProtectedRoute>`) chặn truy cập unauthenticated và chuyển hướng về `/login`
@@ -42,7 +44,8 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Xây dựng Daily Review Queue hiển thị số thẻ cần ôn tập hôm nay và thống kê tiến độ học
 - [x] Tích hợp Supabase Cloud Sync cho Flashcard SRS qua Google OAuth (user_flashcard_reviews & user_daily_stats)
 - [x] Kiến trúc Online-First: Chặn ghi nhận ôn tập khi mất kết nối mạng và hiển thị banner cảnh báo ngoại tuyến
-- [x] Modal xác nhận đặt lại Deck 2 bước chống xóa nhầm (ConfirmResetModal) responsive trên Mobile & Desktop
+- [x] Modal xác nhận đặt lại Deck 2 bước chống xóa nhầm (ConfirmModal) responsive trên Mobile (Bottom Sheet) & Desktop
+- [x] Tối ưu giao diện Mobile cho FlashcardPage (@media max-width 640px: lưới thống kê 2x2, tabs và thẻ ôn tập trải rộng 100%)
 - [x] Xóa sạch dữ liệu đồng bộ đám mây (user_flashcard_reviews & user_daily_stats) khi người dùng xác nhận đặt lại Deck
 - [x] Cơ chế Decoupled Corpus Hydration: Giữ nguyên 100% tiến độ học khi mở rộng kho từ vựng từ 1.500 lên 3.000 từ trong tương lai
 - [ ] Tăng số lượng từ lên 3000, lấy từ các đề trong 4 skills
@@ -97,6 +100,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Kiểm thử toàn diện: Unit tests `listening.test.ts` (10 tests), lint và typecheck pass 100%
 - [x] Kiểm thử tự động hóa đồng bộ âm thanh & mốc thời gian (`scripts/verify-all-listening.mjs` / `pnpm run verify:listening`): Kiểm tra 100% 22 bộ đề (15 HCMUE discrete drills + 7 Full Mock Tests), xác thực sự tồn tại của file audio vật lý, độ lệch thời lượng < 3s, thứ tự mốc thời gian tuần tự không chồng chéo, đầy đủ manh mối câu hỏi và loại bỏ bẫy đọc đề thi mẫu (example-trap)
 - [x] Kiểm định âm học AI chuyên sâu (`scripts/master_listening_audit.py`): Hoàn tất rà soát 168 phân đoạn audio thực tế qua `faster-whisper`. Đã khắc phục 100% các sai lệch: đảo thứ tự Q6/Q7 (HCMUE P1 Đề 01), khoảng lặng tiền âm thoại (HCMUE P2 Đề 01), khôi phục bài giảng khuyết và mốc thời gian 100s (HCMUE P3 Đề 04 & Đề 05)
+- [x] Tối ưu luồng Làm lại bài Nghe: Bố trí nút inline ngay dưới thẻ kết quả chấm điểm, tích hợp ConfirmModal xác nhận và gọi deleteTestSubmission xóa dữ liệu nộp bài trên Supabase Cloud chống nạp đè dữ liệu cũ khi reload
 
 ## SPRINT: NGÂN HÀNG ĐỀ THI THẬT & MOCK TEST (AUTHENTIC EXAM BANKS)
 - [x] Trích xuất và cấu trúc hóa Đề thi Đọc Set 11 (FME Sourced: 4 bài đọc, 40 câu hỏi, giải thích tiếng Việt) vào `src/features/reading/data/fmeDe11.ts`

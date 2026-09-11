@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { fetchTestSubmission, upsertTestSubmission } from './testSubmissionSync';
+import { fetchTestSubmission, upsertTestSubmission, deleteTestSubmission } from './testSubmissionSync';
 import * as clientModule from './client';
 import { supabase } from './client';
 
@@ -121,5 +121,32 @@ describe('testSubmissionSync service tests', () => {
 
     expect(result.success).toBe(false);
     expect(result.error).toBe('DB connection error');
+  });
+
+  it('deletes test submission row for (user_id, test_id, mode)', async () => {
+    const eqModeMock = vi.fn().mockResolvedValue({ error: null });
+    const eqTestMock = vi.fn().mockReturnValue({ eq: eqModeMock });
+    const eqUserMock = vi.fn().mockReturnValue({ eq: eqTestMock });
+    const deleteMock = vi.fn().mockReturnValue({ eq: eqUserMock });
+    vi.spyOn(supabase, 'from').mockReturnValue({ delete: deleteMock } as any);
+
+    const result = await deleteTestSubmission('user-1', 'listening-p1-01', 'practice');
+
+    expect(result.success).toBe(true);
+    expect(supabase.from).toHaveBeenCalledWith('user_test_submissions');
+    expect(deleteMock).toHaveBeenCalled();
+    expect(eqUserMock).toHaveBeenCalledWith('user_id', 'user-1');
+    expect(eqTestMock).toHaveBeenCalledWith('test_id', 'listening-p1-01');
+    expect(eqModeMock).toHaveBeenCalledWith('mode', 'practice');
+  });
+
+  it('returns failure when deleting unconfigured or missing params', async () => {
+    vi.spyOn(clientModule, 'isSupabaseConfigured').mockReturnValue(false);
+    const unconfigured = await deleteTestSubmission('user-1', 'test-1', 'practice');
+    expect(unconfigured.success).toBe(false);
+
+    vi.spyOn(clientModule, 'isSupabaseConfigured').mockReturnValue(true);
+    const missingUser = await deleteTestSubmission('', 'test-1', 'practice');
+    expect(missingUser.success).toBe(false);
   });
 });

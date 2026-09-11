@@ -9,7 +9,8 @@ import {
   UserIcon,
   SunIcon,
   MoonIcon,
-  FireIcon
+  FireIcon,
+  LogoutIcon
 } from './Icons';
 import { useAuth } from '../services/supabase/authStore';
 import { useUserStore } from '../services/user/userStore';
@@ -218,6 +219,9 @@ export const Layout: React.FC = () => {
             </NavLink>
             <button onClick={toggleTheme} className="mobile-theme-btn" aria-label="Đổi giao diện">
               {theme === 'light' ? <MoonIcon size={18} /> : <SunIcon size={18} />}
+            </button>
+            <button onClick={handleSignOut} className="mobile-logout-btn" aria-label="Đăng xuất" title="Đăng xuất">
+              <LogoutIcon size={18} />
             </button>
           </div>
         </header>

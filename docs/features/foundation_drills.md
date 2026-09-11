@@ -12,13 +12,14 @@
   - Dữ liệu ôn tập lưu trữ trực tiếp trên Supabase PostgreSQL (`user_flashcard_reviews` & `user_daily_stats`).
   - Hàng rào ngoại tuyến (Offline Barrier): Tự động phát hiện khi mất kết nối Internet, hiển thị banner cảnh báo và vô hiệu hóa các nút đánh giá để chống phát sinh tiến độ ma không được lưu.
   - Decoupled Corpus Hydration: Tách biệt nội dung từ điển tĩnh (`VSTEP_CORPUS`) và siêu dữ liệu ôn tập (`srs_metadata`). Đảm bảo khi mở rộng kho từ 1.500 lên 3.000 từ, toàn bộ từ vựng người dùng đã học vẫn được bảo toàn 100%.
-- **An toàn Dữ liệu & Đặt lại Deck (ConfirmResetModal)**:
-  - Nút đặt lại Deck được bảo vệ bằng Modal cảnh báo 2 bước chống bấm nhầm (ConfirmResetModal), tự động căn giữa trên Desktop và chuyển thành Bottom Sheet trên Mobile.
+- **An toàn Dữ liệu & Đặt lại Deck (ConfirmModal)**:
+  - Nút đặt lại Deck được bảo vệ bằng Modal xác nhận cảnh báo 2 bước chống bấm nhầm (`src/components/common/ConfirmModal.tsx`), tự động căn giữa trên Desktop và chuyển thành Bottom Sheet trên Mobile.
   - Nút Hủy bỏ được focus mặc định để tránh xác nhận ngoài ý muốn.
   - Khi xác nhận đặt lại: Xóa sạch dữ liệu trên Supabase Cloud (`user_flashcard_reviews` và `user_daily_stats`), đưa số thẻ đã ôn hôm nay về 0 và đưa Deck về trạng thái ban đầu.
-- **Trải nghiệm Học tương tác**:
+- **Trải nghiệm Học tương tác & Tối ưu Mobile PWA**:
   - Hiệu ứng 3D Flip Card trực quan, hỗ trợ vuốt chạm trên Mobile và phím tắt (`Space` lật thẻ, `1`/`2`/`3` chọn mức độ nhớ).
   - Thống kê tiến độ trực tiếp: Đếm số thẻ đã làm chủ, đang ghi nhớ và số thẻ đã ôn hôm nay.
+  - Tối ưu giao diện Mobile (`@media (max-width: 640px)`): Lưới thống kê 2x2 gọn gàng, thanh chuyển tab và thẻ ôn tập trải rộng 100% màn hình, các nút thao tác đầu trang tự động xếp dọc.
 
 ## Lộ trình Mở rộng Bổ trợ (Post-MVP Horizons)
 - **Grammar Drills Thực chiến**: Ngân hàng bài tập ngữ pháp 4 dạng (Error Correction, Sentence Combining, Fill in the blank, Word Form) kèm giải thích tức thì 100% Client-side.

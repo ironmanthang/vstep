@@ -30,8 +30,8 @@
 - **AI Gateway Layer**: Master API Key Gateway chuẩn hóa trên mô hình hạt nhân `gemini-3.5-flash-lite` với cơ chế xoay vòng key (Key Pool Rotation) và tự động fallback sang OpenRouter / Ollama Cloud. Chi tiết tại [ai_gateway.md](file:///d:/program/vstep/docs/architecture/ai_gateway.md).
 
 ## Chiến lược Responsive
-- **Desktop (>= 1024px) - Luyện sâu & Thi thử**: Giao diện chia đôi màn hình (Split-pane) độc lập cuộn, hỗ trợ phím tắt (`Space` điều khiển audio, `Alt+Left` tua 5s, `Ctrl+Enter` nộp bài).
-- **Mobile (<= 768px) - Micro-Learning**: Tối ưu hóa dạng vuốt thẻ Flashcard, trắc nghiệm 1 chạm và thu âm nhanh, hỗ trợ chạy Standalone PWA toàn màn hình.
+- **Desktop (>= 1024px) - Luyện sâu & Thi thử**: Sidebar điều hướng cố định kèm thẻ mục tiêu cá nhân, giao diện chia đôi màn hình (Split-pane) độc lập cuộn, hỗ trợ phím tắt (`Space` điều khiển audio, `Alt+Left` tua 5s, `Ctrl+Enter` nộp bài).
+- **Mobile (<= 1023px / <= 640px) - Micro-Learning & App Shell**: Sidebar tự động chuyển thành thanh điều hướng dưới đáy (Mobile Bottom Nav). Đầu trang tích hợp Mobile Header dính (Sticky) chứa thương hiệu, tiêu đề trang, avatar, nút đổi giao diện sáng/tối và nút Đăng xuất một chạm. Giao diện Flashcard SRS tối ưu lưới 2x2, nút "Làm Lại Bài Này" của bài nghe bố trí ngay dưới bảng điểm chấm tránh cuộn dài. Hỗ trợ chạy Standalone PWA toàn màn hình.
 
 ## Quản lý Dữ liệu
 
@@ -41,7 +41,8 @@
 | **Kho Đề thi & Bài học** | Static TypeScript/JSON Modules | Đóng gói sẵn ở client, tải tức thì, 0 băng thông |
 | **Hồ sơ & Mục tiêu (`user_profiles`)** | Supabase PostgreSQL | Tự khởi tạo khi đăng nhập Google, đồng bộ đa thiết bị |
 | **Nhật ký học & Streak (`user_study_logs`)** | Supabase PostgreSQL | Bảng chuẩn hóa lưu các ngày học, tránh phình to row profile |
-| **Lịch sử Thi thử (`user_mock_test_results`)** | Supabase PostgreSQL | Lưu trữ kết quả thi có cấu trúc theo từng lần nộp bài |
+| **Kết quả Bài nộp (`user_test_submissions`)** | Supabase PostgreSQL | Lưu trữ điểm số, câu trả lời, cờ đánh dấu theo `(user_id, test_id, mode)`. Tự động xóa khi người dùng bấm làm lại |
+| **Lịch sử Thi thử (`user_mock_test_results`)** | Supabase PostgreSQL | Lưu trữ kết quả thi có cấu trúc theo từng lần nộp bài 180 phút |
 | **Tiến độ SRS (`user_flashcard_reviews` & `user_daily_stats`)** | Supabase PostgreSQL | Lưu trạng thái thẻ theo thuật toán SM-2 và bộ đếm ngày, kiến trúc Online-First |
 | **Bản nháp Writing & Optimistic Queue** | `localStorage` (Client Buffer) | Auto-save mỗi 5 giây chống mất dữ liệu khi mất kết nối tạm thời |
 | **Chấm bài AI (Viết/Nói)** | Master API Gateway (Client/Edge → AI API) | Phản hồi JSON có cấu trúc trực tiếp hiển thị lên UI |
@@ -50,13 +51,14 @@
 - **Phía Client (Trình duyệt)**:
   - Tính toán thuật toán Spaced Repetition (SRS) cho Flashcard và chuyển đổi điểm VSTEP (0ms), hàng rào ngoại tuyến dừng ôn tập khi mất kết nối mạng.
   - Chấm tự động trắc nghiệm Listening & Reading tức thì theo khóa đáp án có sẵn.
+  - Hộp thoại xác nhận chung (`src/components/common/ConfirmModal.tsx`) ngăn ngừa xóa nhầm tiến độ học tập và bài thi.
   - Bộ đếm từ, lọc lỗi chính tả thô, kiểm tra n-gram sao chép đề bài.
   - Thu âm bằng `MediaRecorder`, trích xuất chỉ số âm học qua Web Audio API.
   - Quản lý Auto-save bản nháp bài viết và optimistic state khi offline tạm thời.
 - **Phía Supabase Cloud**:
   - Xác thực Google OAuth và bảo vệ dữ liệu bằng Row-Level Security.
-  - Đồng bộ trạng thái học tập giữa Desktop và Mobile (hồ sơ, streak, kết quả thi thử, tiến độ SRS).
-  - Xóa sạch dữ liệu đám mây (`user_flashcard_reviews` và `user_daily_stats`) khi người dùng xác nhận đặt lại Deck.
+  - Đồng bộ trạng thái học tập giữa Desktop và Mobile (hồ sơ, streak, kết quả bài nộp, tiến độ SRS).
+  - Xóa sạch dữ liệu đám mây (`user_flashcard_reviews` & `user_daily_stats` khi người dùng đặt lại Deck; `user_test_submissions` khi người dùng chọn làm lại bài) chống hiện tượng nạp đè dữ liệu cũ.
 - **Phía AI Gateway (Master Key Cloud)**:
   - Nhận payload từ Client, gọi LLM / Native Audio API với Barem VSTEP.
   - Xuất kết quả phân tích theo Strict JSON Schema để render UI.

@@ -6,7 +6,7 @@ import { CheckCircleIcon, RefreshIcon } from '../../components/Icons';
 import { useNotification } from '../../hooks/useNotification';
 import { Toast } from '../../components/common/Toast';
 import { useUserStore } from '../../services/user/userStore';
-import { ConfirmResetModal } from './components/ConfirmResetModal';
+import { ConfirmModal } from '../../components/common/ConfirmModal';
 import './FlashcardPage.css';
 
 export const FlashcardPage: React.FC = () => {
@@ -314,13 +314,22 @@ export const FlashcardPage: React.FC = () => {
       )}
 
       {/* Strict Confirmation Modal for Deck Reset */}
-      <ConfirmResetModal
+      <ConfirmModal
         isOpen={isResetModalOpen}
         onClose={() => {
           if (!isResetting) setIsResetModalOpen(false);
         }}
         onConfirm={handleConfirmReset}
         isLoading={isResetting}
+        title="Đặt lại toàn bộ Deck từ vựng?"
+        description={
+          <>
+            Hành động này sẽ <strong>xóa vĩnh viễn</strong> toàn bộ tiến độ Spaced Repetition (SRS) của <strong>1.500 từ vựng</strong> và đưa bộ đếm ôn tập hôm nay về <strong>0 thẻ</strong> trên cả thiết bị này và tài khoản đám mây của bạn.
+          </>
+        }
+        warningText="Dữ liệu đã xóa không thể khôi phục lại. Bạn sẽ cần bắt đầu học lại từ đầu."
+        confirmLabel="Xác nhận xóa & Đặt lại"
+        cancelLabel="Hủy bỏ (Giữ tiến độ)"
       />
     </div>
   );

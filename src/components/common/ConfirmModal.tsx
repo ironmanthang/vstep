@@ -1,18 +1,30 @@
 import React, { useEffect, useRef } from 'react';
-import './ConfirmResetModal.css';
+import './ConfirmModal.css';
 
-interface ConfirmResetModalProps {
+export interface ConfirmModalProps {
   isOpen: boolean;
   onClose: () => void;
   onConfirm: () => void;
   isLoading?: boolean;
+  title: string;
+  description: React.ReactNode;
+  warningText?: React.ReactNode;
+  confirmLabel?: string;
+  cancelLabel?: string;
+  loadingLabel?: string;
 }
 
-export const ConfirmResetModal: React.FC<ConfirmResetModalProps> = ({
+export const ConfirmModal: React.FC<ConfirmModalProps> = ({
   isOpen,
   onClose,
   onConfirm,
   isLoading = false,
+  title,
+  description,
+  warningText,
+  confirmLabel = 'Xác nhận xóa & Đặt lại',
+  cancelLabel = 'Hủy bỏ',
+  loadingLabel = 'Đang xóa...',
 }) => {
   const cancelBtnRef = useRef<HTMLButtonElement>(null);
 
@@ -49,7 +61,7 @@ export const ConfirmResetModal: React.FC<ConfirmResetModalProps> = ({
       }}
       role="dialog"
       aria-modal="true"
-      aria-labelledby="reset-modal-title"
+      aria-labelledby="confirm-modal-title"
     >
       <div className="reset-modal-card">
         {/* Warning Icon Badge */}
@@ -62,18 +74,20 @@ export const ConfirmResetModal: React.FC<ConfirmResetModalProps> = ({
         </div>
 
         {/* Content */}
-        <h2 id="reset-modal-title" className="reset-modal-title">
-          Đặt lại toàn bộ Deck từ vựng?
+        <h2 id="confirm-modal-title" className="reset-modal-title">
+          {title}
         </h2>
 
-        <p className="reset-modal-desc">
-          Hành động này sẽ <strong>xóa vĩnh viễn</strong> toàn bộ tiến độ Spaced Repetition (SRS) của <strong>1.500 từ vựng</strong> và đưa bộ đếm ôn tập hôm nay về <strong>0 thẻ</strong> trên cả thiết bị này và tài khoản đám mây của bạn.
-        </p>
-
-        <div className="reset-modal-alert">
-          <span className="reset-modal-alert-tag">Cảnh báo</span>
-          <span>Dữ liệu đã xóa không thể khôi phục lại. Bạn sẽ cần bắt đầu học lại từ đầu.</span>
+        <div className="reset-modal-desc">
+          {description}
         </div>
+
+        {warningText && (
+          <div className="reset-modal-alert">
+            <span className="reset-modal-alert-tag">Cảnh báo</span>
+            <span>{warningText}</span>
+          </div>
+        )}
 
         {/* Two-step Buttons: Cancel is default / high emphasis */}
         <div className="reset-modal-actions">
@@ -84,7 +98,7 @@ export const ConfirmResetModal: React.FC<ConfirmResetModalProps> = ({
             onClick={onClose}
             disabled={isLoading}
           >
-            Hủy bỏ (Giữ tiến độ)
+            {cancelLabel}
           </button>
           <button
             type="button"
@@ -92,7 +106,7 @@ export const ConfirmResetModal: React.FC<ConfirmResetModalProps> = ({
             onClick={onConfirm}
             disabled={isLoading}
           >
-            {isLoading ? 'Đang xóa...' : 'Xác nhận xóa & Đặt lại'}
+            {isLoading ? loadingLabel : confirmLabel}
           </button>
         </div>
       </div>

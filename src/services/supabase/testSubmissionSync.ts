@@ -94,3 +94,38 @@ export async function upsertTestSubmission(
     return { success: false, error: message };
   }
 }
+
+/**
+ * Delete a test submission from public.user_test_submissions.
+ * Called when a user resets/retakes a test so reload doesn't re-hydrate old submissions.
+ */
+export async function deleteTestSubmission(
+  userId: string,
+  testId: string,
+  mode: TestMode
+): Promise<{ success: boolean; error?: string }> {
+  if (!isSupabaseConfigured() || !userId || !testId) {
+    return { success: false, error: 'Supabase unconfigured or missing params' };
+  }
+
+  try {
+    const { error } = await supabase
+      .from('user_test_submissions')
+      .delete()
+      .eq('user_id', userId)
+      .eq('test_id', testId)
+      .eq('mode', mode);
+
+    if (error) {
+      console.warn('Failed to delete test submission from Supabase:', error.message);
+      return { success: false, error: error.message };
+    }
+
+    return { success: true };
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.error('Error deleting test submission from Supabase:', err);
+    return { success: false, error: message };
+  }
+}
+

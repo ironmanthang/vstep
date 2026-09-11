@@ -7,7 +7,8 @@ import { QuestionCard } from './components/QuestionCard';
 import { QuestionPalette } from './components/QuestionPalette';
 import { useUserStore } from '../../services/user/userStore';
 import { useAuth } from '../../services/supabase/authStore';
-import { fetchTestSubmission, upsertTestSubmission } from '../../services/supabase/testSubmissionSync';
+import { fetchTestSubmission, upsertTestSubmission, deleteTestSubmission } from '../../services/supabase/testSubmissionSync';
+import { ConfirmModal } from '../../components/common/ConfirmModal';
 import { getQuestionTranscriptContext } from './transcriptContext';
 import {
   loadListeningSession,
@@ -60,6 +61,8 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
   const [showVietnamese, setShowVietnamese] = useState<Record<string, boolean>>({});
   const [collapsedPassages, setCollapsedPassages] = useState<Set<string>>(new Set());
   const [collapsedQuestions, setCollapsedQuestions] = useState<Set<string>>(new Set());
+  const [isResetModalOpen, setIsResetModalOpen] = useState<boolean>(false);
+  const [isResetting, setIsResetting] = useState<boolean>(false);
   const questionRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   useEffect(() => {
@@ -198,18 +201,29 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
     }
   };
 
-  const handleReset = () => {
-    clearListeningSession(test.id, mode);
-    setAnswers({});
-    setFlaggedQuestions(new Set());
-    setIsSubmitted(false);
-    setScoreResult(null);
-    setNotes({});
-    setSyncWarning(null);
-    setExpandedTranscripts(new Set());
-    setCollapsedPassages(new Set());
-    setCollapsedQuestions(new Set());
-    seekTo(0);
+  const handleConfirmReset = async () => {
+    setIsResetting(true);
+    try {
+      if (user?.id) {
+        await deleteTestSubmission(user.id, test.id, mode);
+      }
+      clearListeningSession(test.id, mode);
+      setAnswers({});
+      setFlaggedQuestions(new Set());
+      setIsSubmitted(false);
+      setScoreResult(null);
+      setNotes({});
+      setSyncWarning(null);
+      setExpandedTranscripts(new Set());
+      setCollapsedPassages(new Set());
+      setCollapsedQuestions(new Set());
+      seekTo(0);
+      setIsResetModalOpen(false);
+    } catch (err) {
+      console.error('Failed to reset listening test:', err);
+    } finally {
+      setIsResetting(false);
+    }
   };
 
   return (
@@ -256,6 +270,15 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
           <p style={{ margin: 0, fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)' }}>
             Đúng <strong>{scoreResult.correctCount}</strong> trên tổng số <strong>{scoreResult.totalQuestions}</strong> câu hỏi.
           </p>
+          <div className="score-actions-inline">
+            <button
+              type="button"
+              className="secondary-btn score-reset-btn"
+              onClick={() => setIsResetModalOpen(true)}
+            >
+              🔄 Làm Lại Bài Này
+            </button>
+          </div>
         </div>
       )}
 
@@ -334,10 +357,29 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
           isSubmitted={isSubmitted}
           onSelectQuestion={scrollToQuestion}
           onSubmit={handleSubmit}
-          onReset={handleReset}
+          onReset={() => setIsResetModalOpen(true)}
           isExam={isExam}
         />
       </div>
+
+      {/* Strict Confirmation Modal for Test Reset */}
+      <ConfirmModal
+        isOpen={isResetModalOpen}
+        onClose={() => {
+          if (!isResetting) setIsResetModalOpen(false);
+        }}
+        onConfirm={handleConfirmReset}
+        isLoading={isResetting}
+        title="Làm lại bài thi Listening này?"
+        description={
+          <>
+            Hành động này sẽ <strong>xóa toàn bộ câu trả lời, ghi chú và kết quả</strong> của bài thi này trên cả thiết bị và tài khoản đám mây để bạn bắt đầu lại từ đầu.
+          </>
+        }
+        warningText="Kết quả đã nộp trước đó sẽ bị xóa vĩnh viễn khỏi lịch sử làm bài."
+        confirmLabel="Xác nhận làm lại"
+        cancelLabel="Giữ kết quả hiện tại"
+      />
     </div>
   );
 };

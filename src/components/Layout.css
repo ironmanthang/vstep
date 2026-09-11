@@ -190,6 +190,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-logout-btn {
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.mobile-logout-btn:hover,
+.mobile-logout-btn:active {
+  color: var(--coral);
 }
 
 /* Content Container */

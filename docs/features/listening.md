@@ -18,6 +18,10 @@ Mô-đun được triển khai tập trung tại [`src/features/listening/`](fil
   - Khóa toàn bộ các nút tua/pause (audio phát 1 lần liên tục theo đúng tiến trình phòng thi Bộ GD&ĐT).
   - Khóa toàn bộ khung ghi chú nháp, nút nhảy audio phân đoạn, lời thoại và manh mối giải thích.
   - Tự động nộp bài và khóa màn hình khi hết thời lượng audio; sau khi nộp chỉ hiển thị bảng điểm tổng kết và kết quả đúng/sai từng câu.
+- **Luồng Làm Lại Bài & Xóa Dữ liệu Đám mây (Retake Flow & Cloud Purge)**:
+  - Nút "Làm Lại Bài Này" được bố trí ngay trong thẻ kết quả chấm điểm (Score Result Banner) và trong thanh bên Question Palette, giúp người học thao tác tức thì mà không cần cuộn qua danh sách câu hỏi trên Mobile.
+  - Được bảo vệ bằng modal xác nhận cảnh báo 2 bước (`src/components/common/ConfirmModal.tsx`).
+  - Khi xác nhận: Gọi `deleteTestSubmission(user.id, test.id, mode)` xóa bản ghi khỏi Supabase `user_test_submissions`, xóa sạch bộ nhớ tạm local và đưa trạng thái về ban đầu, triệt tiêu hoàn toàn hiện tượng nạp đè dữ liệu cũ khi tải lại trang.
 
 ## Bộ Công cụ Hỗ trợ Luyện Sâu (Scaffolding Tools)
 - **Sticky Custom Audio Player ([`CustomAudioPlayer.tsx`](file:///d:/program/vstep/src/features/listening/components/CustomAudioPlayer.tsx), [`useAudioPlayer.ts`](file:///d:/program/vstep/src/features/listening/useAudioPlayer.ts))**:
