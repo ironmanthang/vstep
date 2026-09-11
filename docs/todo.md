@@ -81,7 +81,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Tích hợp 21 bộ transcript song ngữ kèm mốc thời gian sub-second vào cấu trúc modular mock tests
 - [x] OCR và trích xuất trọn bộ câu hỏi 35 câu (tổng 245 câu, 4 lựa chọn, đáp án chuẩn, lời giải tiếng Việt) cho toàn bộ 7 đề từ sách "7 VSTEP Tests"
 - [x] Khởi tạo các module đề thi thử độc lập `mockTest01.ts` đến `mockTest07.ts` trong `src/features/listening/data/mockTests/` và export qua `src/features/listening/data/index.ts`
-- [ ] Tải và chạy thử nghiệm mô hình local qua Ollama: `ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q4_K_M` và `ollama run hf.co/XHToken/Spark-X2.5-4B-GGUF:Q4_K_M`
+- [ ] Tải và chạy thử nghiệm mô hình local qua Ollama: `ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q4_K_M` và `ollama run hf.co/XHToken/Spark-X2.5-4B-GGUF:Q4_K_M` and python -c "from faster_whisper import WhisperModel; WhisperModel('large-v3-turbo', device='cpu', compute_type='int8')"
 - [x] Hiện đại hóa và tái cấu trúc thư mục `scripts/`:
   - Loại bỏ hoàn toàn 5 file script cũ và 13.000 dòng mã thừa/dữ liệu trùng lặp (`ingest-listening.mjs`, `detect-boundaries.mjs`, `verify-timestamps.mjs`, `download-hcmue-drills.ps1`, `download-mock-assets.ps1`).
   - Xây dựng Stage 1 Audio Transcriber (`scripts/transcribe_listening.py`): Ưu tiên Groq Cloud Whisper (`whisper-large-v3-turbo`) xử lý 25 phút audio trong ~2.5s, tự động fallback sang `faster-whisper` (CTranslate2 int8 trên 8 CPU cores) khi offline.
