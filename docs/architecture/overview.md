@@ -35,6 +35,7 @@
 - **Flexbox Containment & Bounded Width**: Áp dụng `min-width: 0`, `max-width: 100%`, và `overflow-x: hidden` trên toàn bộ chuỗi App Shell (`.main-wrapper`, `.content-container`, `.flashcard-page`) triệt tiêu lỗi tràn khung ngang do các hàng nút dài (`white-space: nowrap`) trên di động.
 - **PWA Standalone Toàn Màn Hình (Zero-URL Bar)**: Hỗ trợ WebAPK trên Android và Web App Standalone trên iOS. Tích hợp trọn bộ icon PNG (`pwa-192x192.png`, `pwa-512x512.png`, `pwa-maskable-512x512.png`, `apple-touch-icon.png`), viewport `interactive-widget=resizes-content` chống xô lệch bàn phím ảo, và tệp cấu hình Cloudflare Pages `public/_headers` đảm bảo không bị cache Service Worker / Manifest cũ.
 - **Tối ưu Chạm (Touch Ergonomics)**: Vùng chạm thanh tua âm thanh (audio scrub track) mở rộng 28px, phím đánh giá SRS đạt chuẩn tối thiểu 44px, loại bỏ lỗi sticky-hover trên màn hình cảm ứng qua `@media (hover: hover) and (pointer: fine)`.
+- **PWA App Badging & Hệ thống Thông báo SRS**: Tự động đồng bộ số lượng thẻ cần ôn lên huy hiệu icon ứng dụng (`navigator.setAppBadge`) trên Android Chrome và Desktop. Tích hợp Workbox extension `public/sw-custom.js` xử lý `notificationclick` (tự động focus/mở tab `/flashcards`) và `periodicsync` phục vụ kiểm tra và gửi thông báo chạy ngầm.
 
 ## Quản lý Dữ liệu
 

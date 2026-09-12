@@ -8,6 +8,7 @@ import { useNotification } from '../../hooks/useNotification';
 import { Toast } from '../../components/common/Toast';
 import { useUserStore } from '../../services/user/userStore';
 import { ConfirmModal } from '../../components/common/ConfirmModal';
+import { ReminderSettingsModal } from './components/ReminderSettingsModal';
 import './FlashcardPage.css';
 
 export const FlashcardPage: React.FC = () => {
@@ -15,6 +16,7 @@ export const FlashcardPage: React.FC = () => {
     cards,
     filteredCards,
     reviewQueue,
+    totalDueCount,
     stats,
     topics,
     selectedTopic,
@@ -35,6 +37,7 @@ export const FlashcardPage: React.FC = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isResetModalOpen, setIsResetModalOpen] = useState(false);
   const [isResetting, setIsResetting] = useState(false);
+  const [isReminderModalOpen, setIsReminderModalOpen] = useState(false);
 
   // Active card in queue
   const currentCard = reviewQueue[currentQueueIndex] || null;
@@ -129,6 +132,18 @@ export const FlashcardPage: React.FC = () => {
           </p>
         </div>
         <div className="header-actions">
+          <button
+            className="secondary-btn"
+            onClick={() => setIsReminderModalOpen(true)}
+            title="Cài đặt thông báo nhắc nhở ôn tập SRS"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+              <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+            </svg>
+            Nhắc nhở SRS
+          </button>
           <button
             className="secondary-btn"
             onClick={() => setIsResetModalOpen(true)}
@@ -338,6 +353,14 @@ export const FlashcardPage: React.FC = () => {
         warningText="Dữ liệu đã xóa không thể khôi phục lại. Bạn sẽ cần bắt đầu học lại từ đầu."
         confirmLabel="Xác nhận xóa & Đặt lại"
         cancelLabel="Hủy bỏ (Giữ tiến độ)"
+      />
+
+      {/* SRS Reminder Notification Settings Modal */}
+      <ReminderSettingsModal
+        isOpen={isReminderModalOpen}
+        onClose={() => setIsReminderModalOpen(false)}
+        dueCount={totalDueCount}
+        onNotify={showNotification}
       />
     </div>
   );

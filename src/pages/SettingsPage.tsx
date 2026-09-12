@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNotification } from '../hooks/useNotification';
 import { Toast } from '../components/common/Toast';
 import { GatewayStatusCard } from './settings/GatewayStatusCard';
 import { QuotaUsageCard } from './settings/QuotaUsageCard';
 import { DeveloperOverrideSection } from './settings/DeveloperOverrideSection';
+import { ReminderSettingsModal } from '../features/flashcard/components/ReminderSettingsModal';
 
 export const SettingsPage: React.FC = () => {
   const { statusMessage, showNotification, clearNotification } = useNotification();
+  const [isReminderModalOpen, setIsReminderModalOpen] = useState<boolean>(false);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6)', maxWidth: 720 }}>
@@ -30,6 +32,25 @@ export const SettingsPage: React.FC = () => {
       {/* Developer / Admin Custom Override Section */}
       <DeveloperOverrideSection onNotify={showNotification} />
 
+      {/* SRS Flashcard Notification & PWA Badging */}
+      <div className="card-surface" style={{ padding: 'var(--space-5)', display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-4)', flexWrap: 'wrap' }}>
+          <div>
+            <h4 style={{ fontSize: 'var(--fs-sm)', fontWeight: 700 }}>Nhắc Nhở Ôn Tập Flashcard SRS & App Badging</h4>
+            <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', marginTop: 2 }}>
+              Tự động cập nhật số thẻ cần ôn lên icon ứng dụng PWA và hẹn giờ nhắc nhở hàng ngày trên Android &amp; Desktop.
+            </p>
+          </div>
+          <button
+            className="secondary-btn"
+            style={{ fontSize: 'var(--fs-xs)', padding: '6px 14px', whiteSpace: 'nowrap' }}
+            onClick={() => setIsReminderModalOpen(true)}
+          >
+            Cài đặt nhắc nhở
+          </button>
+        </div>
+      </div>
+
       {/* PWA & Storage Status */}
       <div className="card-surface" style={{ padding: 'var(--space-5)', display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
         <h4 style={{ fontSize: 'var(--fs-sm)', fontWeight: 700 }}>Trạng Thái Ứng Dụng PWA & Bộ Nhớ</h4>
@@ -37,6 +58,13 @@ export const SettingsPage: React.FC = () => {
           Hệ thống lưu trữ bản nháp Writing cục bộ mỗi 5s chống rớt mạng. Hỗ trợ cài đặt PWA Standalone trên iOS, Android và Desktop.
         </p>
       </div>
+
+      {/* Reminder Settings Modal */}
+      <ReminderSettingsModal
+        isOpen={isReminderModalOpen}
+        onClose={() => setIsReminderModalOpen(false)}
+        onNotify={showNotification}
+      />
     </div>
   );
 };

@@ -11,6 +11,8 @@ import {
   resetUserDeckInCloud
 } from '../../services/supabase/srsSync';
 import { recordStudyDateInStorage } from '../../services/user/userStore';
+import { setBadge, clearBadge } from '../../services/notification/badgeService';
+import { checkAndTriggerDueReminder } from '../../services/notification/srsReminderService';
 
 const STORAGE_KEY = 'vstep_flashcard_deck_v3';
 const REVIEW_COUNT_KEY = 'vstep_reviewed_today_count_v3';
@@ -262,6 +264,37 @@ export function useFlashcardStore() {
     return getReviewQueue(filteredCards, undefined, newCardsRemaining);
   }, [filteredCards, newCardsRemaining]);
 
+  // Total due cards across the entire deck (for app badging & notifications)
+  const totalDueCount = useMemo(() => {
+    return getReviewQueue(cards, undefined, newCardsRemaining).length;
+  }, [cards, newCardsRemaining]);
+
+  // Synchronize PWA App Badge with total due cards
+  useEffect(() => {
+    setBadge(totalDueCount);
+  }, [totalDueCount]);
+
+  // Periodic heartbeat for scheduled review reminders
+  useEffect(() => {
+    checkAndTriggerDueReminder(totalDueCount);
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        checkAndTriggerDueReminder(totalDueCount);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    const intervalId = setInterval(() => {
+      checkAndTriggerDueReminder(totalDueCount);
+    }, 5 * 60 * 1000);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      clearInterval(intervalId);
+    };
+  }, [totalDueCount]);
+
   // Deck statistics
   const stats = useMemo(() => {
     return getSRSDeckStats(cards);
@@ -329,6 +362,7 @@ export function useFlashcardStore() {
     setCards(VSTEP_CORPUS);
     setReviewedToday(0);
     setNewCardsToday(0);
+    clearBadge();
     try {
       localStorage.removeItem(STORAGE_KEY);
       localStorage.removeItem(REVIEW_COUNT_KEY);
@@ -349,6 +383,7 @@ export function useFlashcardStore() {
     cards,
     filteredCards,
     reviewQueue,
+    totalDueCount,
     stats,
     topics,
     selectedTopic,

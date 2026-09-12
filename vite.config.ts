@@ -11,6 +11,7 @@ export default defineConfig({
       includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'pwa-192x192.png', 'pwa-512x512.png', 'pwa-maskable-512x512.png'],
       workbox: {
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        importScripts: ['/sw-custom.js'],
       },
       manifest: {
         name: 'VSTEP Master — Luyện thi VSTEP B1-B2 Thông minh',

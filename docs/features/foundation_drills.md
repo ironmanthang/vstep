@@ -28,6 +28,11 @@
   - Hiệu ứng 3D Flip Card trực quan, hỗ trợ vuốt chạm trên Mobile và phím tắt (`Space` lật thẻ, `1` = Sai, `2` / `Space` = Đúng).
   - Thống kê tiến độ trực tiếp: Đếm số thẻ đã làm chủ, đang ghi nhớ, số thẻ đã ôn hôm nay, tiến độ từ mới hôm nay (`X/20`) và số thẻ leech.
   - Tối ưu giao diện Mobile (`@media (max-width: 640px)`): Lưới thống kê 2x2 gọn gàng, thanh chuyển tab và thẻ ôn tập trải rộng 100% màn hình, các nút thao tác đầu trang tự động xếp dọc.
+- **Thông báo PWA & App Badging Nhắc nhở Ôn tập SRS**:
+  - **PWA App Badging API**: Tự động đồng bộ số thẻ cần ôn (`totalDueCount`) trực tiếp lên huy hiệu icon ứng dụng trên màn hình chính (`navigator.setAppBadge` / `navigator.clearAppBadge`) trên Android Chrome PWA và Chromium Desktop. Tự động xóa huy hiệu khi hoàn thành ôn tập hoặc đặt lại Deck.
+  - **Động cơ Nhắc nhở Ôn tập Hàng ngày (`src/services/notification/srsReminderService.ts`)**: Lưu trữ cài đặt hẹn giờ trong `localStorage` (`enabled`, `reminderTime`, `lastNotifiedDate`). Hàm kiểm tra thuần túy `isReminderDue` đảm bảo chỉ phát thông báo một lần duy nhất trong ngày khi có từ cần ôn và thời gian hiện tại vượt mốc hẹn.
+  - **Custom Service Worker Extensions (`public/sw-custom.js` & `vite.config.ts`)**: Tích hợp `importScripts: ['/sw-custom.js']` vào Workbox PWA. Xử lý `notificationclick` để đóng thông báo và focus hoặc mở tab `/flashcards`. Hỗ trợ `periodicsync` phục vụ kiểm tra và thông báo ngầm trên Android Chromium PWA.
+  - **Giao diện Cài đặt Nhắc nhở Responsive (`src/features/flashcard/components/ReminderSettingsModal.tsx`)**: Modal responsive trên Desktop và Bottom Sheet trên Mobile. Cho phép bật/tắt nhắc nhở, chọn mốc giờ nhanh (08:00, 12:30, 20:00) hoặc giờ tùy chỉnh, xem trạng thái quyền trình duyệt và gửi thông báo thử nghiệm kèm rung xúc giác (`[100, 50, 100]`). Tích hợp nút mở tại thanh thao tác `FlashcardPage` và trang `SettingsPage`.
 
 ## Lộ trình Mở rộng Bổ trợ (Post-MVP Horizons)
 - **Grammar Drills Thực chiến**: Ngân hàng bài tập ngữ pháp 4 dạng (Error Correction, Sentence Combining, Fill in the blank, Word Form) kèm giải thích tức thì 100% Client-side.
