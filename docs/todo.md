@@ -71,7 +71,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Đề 4 (ULIS Test 4): PDF trang 50–55, đáp án trang 145 kèm 100% dẫn chứng verbatim chuẩn xác (`ulisReadingTest04.ts`)
 - [x] Đề 5 (ULIS Test 5): PDF trang 62–68, đáp án trang 149 kèm 100% dẫn chứng verbatim chuẩn xác (`ulisReadingTest05.ts`)
 - [x] Đề 6 (ULIS Test 6): PDF trang 75–82, đáp án trang 154 kèm 100% dẫn chứng verbatim chuẩn xác (`ulisReadingTest06.ts`)
-- [ ] Đề 7 (ULIS Test 7): PDF trang 92–99, đáp án trang 160
+- [x] Đề 7 (ULIS Test 7): PDF trang 89–95, đáp án trang 159 kèm 100% dẫn chứng verbatim chuẩn xác (`ulisReadingTest07.ts`)
 - [ ] 5 Đề Luyện Tập HCMUE (Drills 01–05): Trích xuất từ sách "20 Mock Tests" (NXB ĐH Sư Phạm TP.HCM) đồng bộ với 15 bài Listening Drills
 - [x] Run audit codebase check sau khi hoàn thành kỹ năng Đọc (Reading)
 

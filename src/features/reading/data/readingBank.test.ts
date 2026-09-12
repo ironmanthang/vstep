@@ -5,6 +5,7 @@ import { ULIS_READING_TEST_03 } from './mockTests/ulisReadingTest03';
 import { ULIS_READING_TEST_04 } from './mockTests/ulisReadingTest04';
 import { ULIS_READING_TEST_05 } from './mockTests/ulisReadingTest05';
 import { ULIS_READING_TEST_06 } from './mockTests/ulisReadingTest06';
+import { ULIS_READING_TEST_07 } from './mockTests/ulisReadingTest07';
 
 const TEST1_OFFICIAL_KEYS = [
   'B', 'A', 'B', 'B', 'B', 'B', 'C', 'D', 'C', 'B', // 1-10
@@ -46,6 +47,13 @@ const TEST6_OFFICIAL_KEYS = [
   'B', 'D', 'D', 'B', 'A', 'B', 'A', 'D', 'C', 'D', // 11-20
   'A', 'C', 'C', 'A', 'A', 'C', 'D', 'C', 'A', 'D', // 21-30
   'D', 'C', 'A', 'A', 'B', 'C', 'A', 'D', 'D', 'D', // 31-40
+];
+
+const TEST7_OFFICIAL_KEYS = [
+  'D', 'B', 'C', 'D', 'B', 'C', 'B', 'C', 'D', 'A', // 1-10
+  'D', 'D', 'B', 'C', 'A', 'D', 'A', 'A', 'C', 'A', // 11-20
+  'C', 'A', 'A', 'D', 'A', 'B', 'C', 'C', 'A', 'D', // 21-30
+  'D', 'B', 'A', 'B', 'C', 'C', 'D', 'A', 'D', 'B', // 31-40
 ];
 
 describe('Authentic ULIS Reading Test 1 Integrity', () => {
@@ -276,6 +284,40 @@ describe('Authentic ULIS Reading Test 6 Integrity', () => {
   });
 });
 
+describe('Authentic ULIS Reading Test 7 Integrity', () => {
+  it('should have exactly 4 passages totaling 40 questions', () => {
+    expect(ULIS_READING_TEST_07.passages.length).toBe(4);
+    const totalQ = ULIS_READING_TEST_07.passages.reduce((acc, p) => acc + p.questions.length, 0);
+    expect(totalQ).toBe(40);
+  });
 
+  it('each question should have 4 choices, valid key and non-empty explanation', () => {
+    ULIS_READING_TEST_07.passages.forEach((p) => {
+      expect(p.content_paragraphs.length).toBeGreaterThan(1);
+      expect(p.questions.length).toBe(10);
+      p.questions.forEach((q) => {
+        expect(q.options.length).toBe(4);
+        expect(['A', 'B', 'C', 'D']).toContain(q.correct_key);
+        expect(q.explanation_vi).toBeTruthy();
+      });
+    });
+  });
 
+  it('all 40 questions must match the official answer key from PDF page 159', () => {
+    const allQuestions = ULIS_READING_TEST_07.passages.flatMap((p) => p.questions);
+    allQuestions.forEach((q, idx) => {
+      expect(q.correct_key).toBe(TEST7_OFFICIAL_KEYS[idx]);
+    });
+  });
 
+  it('every clue_sentence must be an exact verbatim substring of its paragraph', () => {
+    ULIS_READING_TEST_07.passages.forEach((p) => {
+      p.questions.forEach((q) => {
+        const paragraph = p.content_paragraphs[q.clue_paragraph_index];
+        expect(paragraph).toBeDefined();
+        expect(q.clue_sentence.length).toBeGreaterThan(5);
+        expect(paragraph.includes(q.clue_sentence)).toBe(true);
+      });
+    });
+  });
+});

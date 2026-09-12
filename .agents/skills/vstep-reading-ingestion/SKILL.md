@@ -52,7 +52,7 @@ src/features/reading/data/
 - Test 4 Reading: PDF pages 50–55 | Answer key on PDF page 145
 - Test 5 Reading: PDF pages 62–68 | Answer key on PDF page 149 (Book page 145)
 - Test 6 Reading: PDF pages 75–82 | Answer key on PDF page 154 (Book page 150)
-- **Test 7 Reading**: PDF pages 92–99 | Answer key on PDF page 160
+- **Test 7 Reading**: PDF pages 89–95 (Book pages 85–91) | Answer key on PDF page 159 (Book page 155)
 
 ### HCMUE 20 Tests Book (`scripts/vstep-collection-20-mock-tests.pdf`)
 - **Publisher**: NXB ĐH Sư Phạm TP.HCM

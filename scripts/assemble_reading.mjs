@@ -122,13 +122,18 @@ export const TEST_REGISTRY = {
     id: 'ulis_read_test_07',
     exportName: 'ULIS_READING_TEST_07',
     title: 'VSTEP Reading Mock Test 7 (Chuẩn ĐHNN - ĐHQGHN)',
-    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 92–99, Key page 160',
-    officialKeys: [],
+    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 85–91 (PDF Pages 89–95), Key page 155 (PDF Page 159)',
+    officialKeys: [
+      'D', 'B', 'C', 'D', 'B', 'C', 'B', 'C', 'D', 'A', // 1-10
+      'D', 'D', 'B', 'C', 'A', 'D', 'A', 'A', 'C', 'A', // 11-20
+      'C', 'A', 'A', 'D', 'A', 'B', 'C', 'C', 'A', 'D', // 21-30
+      'D', 'B', 'A', 'B', 'C', 'C', 'D', 'A', 'D', 'B', // 31-40
+    ],
     passageConfigs: [
-      { num: 1, pageKeys: ['92', '93'], startQ: 1, endQ: 10, difficulty: 'B1' },
-      { num: 2, pageKeys: ['94', '95'], startQ: 11, endQ: 20, difficulty: 'B2' },
-      { num: 3, pageKeys: ['96', '97'], startQ: 21, endQ: 30, difficulty: 'B2' },
-      { num: 4, pageKeys: ['98', '99'], startQ: 31, endQ: 40, difficulty: 'C1' },
+      { num: 1, pageKeys: ['89', '90'], startQ: 1, endQ: 10, difficulty: 'B1' },
+      { num: 2, pageKeys: ['91', '92'], startQ: 11, endQ: 20, difficulty: 'B2' },
+      { num: 3, pageKeys: ['92', '93', '94'], startQ: 21, endQ: 30, difficulty: 'B2' },
+      { num: 4, pageKeys: ['94', '95'], startQ: 31, endQ: 40, difficulty: 'C1' },
     ],
   },
 };
@@ -315,6 +320,18 @@ export async function assembleReadingTest(rawPagesJsonPath, outTsPath, testNum =
         pageText = rawPages['78'].slice(p78_p3) + '\n\n' + rawPages['79'] + '\n\n' + rawPages['80'].slice(0, p80_p4);
       } else if (cfg.num === 4) {
         pageText = rawPages['80'].slice(p80_p4) + '\n\n' + rawPages['81'] + '\n\n' + (rawPages['82'] || '');
+      }
+    } else if (testNum === 7) {
+      const p92_p3 = rawPages['92'].search(/PASSAGE\s*3/i);
+      const p94_p4 = rawPages['94'].search(/PASSAGE\s*4/i);
+      if (cfg.num === 1) {
+        pageText = rawPages['89'] + '\n\n' + rawPages['90'];
+      } else if (cfg.num === 2) {
+        pageText = rawPages['91'] + '\n\n' + rawPages['92'].slice(0, p92_p3);
+      } else if (cfg.num === 3) {
+        pageText = rawPages['92'].slice(p92_p3) + '\n\n' + rawPages['93'] + '\n\n' + rawPages['94'].slice(0, p94_p4);
+      } else if (cfg.num === 4) {
+        pageText = rawPages['94'].slice(p94_p4) + '\n\n' + rawPages['95'];
       }
     } else {
       pageText = cfg.pageKeys

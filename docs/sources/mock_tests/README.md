@@ -13,4 +13,5 @@ Full Mock Tests (180 minutes) do not duplicate content. Instead, each Mock Test 
 | `mock_test_04` | Đề Thi Thử Toàn Diện VSTEP B1–B2 (Set 04 - ULIS) | [mock_test_04.md](file:///d:/program/vstep/docs/sources/mock_tests/mock_test_04.md) | B1–B2–C1 |
 | `mock_test_05` | Đề Thi Thử Toàn Diện VSTEP B1–B2 (Set 05 - ULIS) | [mock_test_05.md](file:///d:/program/vstep/docs/sources/mock_tests/mock_test_05.md) | B1–B2–C1 |
 | `mock_test_06` | Đề Thi Thử Toàn Diện VSTEP B1–B2 (Set 06 - ULIS) | [mock_test_06.md](file:///d:/program/vstep/docs/sources/mock_tests/mock_test_06.md) | B1–B2–C1 |
+| `mock_test_07` | Đề Thi Thử Toàn Diện VSTEP B1–B2 (Set 07 - ULIS) | [mock_test_07.md](file:///d:/program/vstep/docs/sources/mock_tests/mock_test_07.md) | B1–B2–C1 |
 
