@@ -17,6 +17,7 @@
     "verify:listening": "node --experimental-strip-types scripts/verify-all-listening.mjs",
     "transcribe:listening": "python scripts/transcribe_listening.py",
     "enrich:listening": "node scripts/enrich_listening.mjs",
+    "mine:vocab": "node scripts/mine_listening_vocab.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

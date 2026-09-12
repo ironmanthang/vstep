@@ -47,6 +47,7 @@ scripts/*.pdf
 *.pdf
 scripts/all_listening_data.json
 scripts/listening_audit_report.json
+scripts/mined_listening_cards.json
 
 # Large binary archives
 *.zip

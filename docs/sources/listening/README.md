@@ -99,6 +99,7 @@ The VSTEP platform delivers listening audio using a high-performance edge-first 
 ## Acoustic Validation & Timestamp Synchronization
 - **Acoustic Speech Alignment (`scripts/master_listening_audit.py`)**: End-to-end audio-to-transcript verification engine using local `faster-whisper` (CTranslate2) and cross-segment similarity matrices. Validates 100% of the 168 dialogue and lecture segments across all 22 listening tests directly against physical MP3 waveforms.
 - **Structural Integrity Suite (`scripts/verify-all-listening.mjs`)**: Verifies 100% of all 22 listening tests against physical MP3 audio files. Validates duration limits, sequential non-overlapping timestamps (`start_ms`, `end_ms`), question clue mappings, and Part 1 example-trap guards (`pnpm run verify:listening`).
-- **Modern Two-Stage Ingestion Pipeline**:
+- **Modern Ingestion & Mining Pipeline**:
   - **Stage 1 Transcription (`scripts/transcribe_listening.py`)**: Dual-engine audio transcriber prioritizing Groq Cloud Whisper (`whisper-large-v3-turbo`) with automatic offline fallback to local `faster-whisper`.
   - **Stage 2 Bilingual Enrichment (`scripts/enrich_listening.mjs`)**: Lightweight text-only Gemini Flash pipeline for Vietnamese translation and speaker attribution.
+  - **Vocabulary Mining Engine (`scripts/mine_listening_vocab.mjs`)**: Mines high-yield VSTEP B1–C1 vocabulary items from all 22 listening test transcripts and questions. Enriches candidates via Gemini Flash model cascade (`gemini-3.8-flash` -> `3.7` -> `3.6` -> `3.5-flash-lite` -> `2.5` -> `1.5`) to expand the Master Flashcard Corpus (+500 cards, 1,500 -> 2,000 cards) with 100% authentic exam-context examples.

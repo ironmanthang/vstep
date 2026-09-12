@@ -49,6 +49,9 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Xóa sạch dữ liệu đồng bộ đám mây (user_flashcard_reviews & user_daily_stats) khi người dùng xác nhận đặt lại Deck
 - [x] Cơ chế Decoupled Corpus Hydration: Giữ nguyên 100% tiến độ học khi mở rộng kho từ vựng từ 1.500 lên 3.000 từ trong tương lai
 - [ ] Tăng số lượng từ lên 3000, lấy từ các đề trong 4 skills
+  - [x] Đợt 1 (Listening): Mở rộng từ 1.500 lên 2.000 từ (+500 từ) từ 7 Authentic Mock Tests & 15 HCMUE Drills (scripts/mine_listening_vocab.mjs)
+  - [ ] Đợt 2 (Reading): Mở rộng từ 2.000 lên 2.500 từ (+500 từ) từ ngân hàng bài đọc VSTEP Reading
+  - [ ] Đợt 3 (Writing & Speaking): Mở rộng từ 2.500 lên 3.000 từ (+500 từ)
 - [x] Chuẩn hóa thuật toán Spaced Repetition sang FSRS v6 nhị phân: Hàng đợi ưu tiên re-learning -> due reviews (overdue sort) -> new cards (cap 20/ngày), trần 365 ngày
 - [x] Thông báo PWA & App Badging nhắc nhở ôn tập SRS: Tự động cập nhật huy hiệu icon, hẹn giờ nhắc nhở hàng ngày và hỗ trợ Android/Desktop
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)
