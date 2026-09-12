@@ -6,6 +6,13 @@ import { ULIS_READING_TEST_04 } from './mockTests/ulisReadingTest04';
 import { ULIS_READING_TEST_05 } from './mockTests/ulisReadingTest05';
 import { ULIS_READING_TEST_06 } from './mockTests/ulisReadingTest06';
 import { ULIS_READING_TEST_07 } from './mockTests/ulisReadingTest07';
+import {
+  HCMUE_READING_TEST_01,
+  HCMUE_READING_TEST_02,
+  HCMUE_READING_TEST_03,
+  HCMUE_READING_TEST_04,
+  HCMUE_READING_TEST_05,
+} from './drills/hcmue';
 
 const TEST1_OFFICIAL_KEYS = [
   'B', 'A', 'B', 'B', 'B', 'B', 'C', 'D', 'C', 'B', // 1-10
@@ -54,6 +61,41 @@ const TEST7_OFFICIAL_KEYS = [
   'D', 'D', 'B', 'C', 'A', 'D', 'A', 'A', 'C', 'A', // 11-20
   'C', 'A', 'A', 'D', 'A', 'B', 'C', 'C', 'A', 'D', // 21-30
   'D', 'B', 'A', 'B', 'C', 'C', 'D', 'A', 'D', 'B', // 31-40
+];
+
+const HCMUE_TEST1_OFFICIAL_KEYS = [
+  'A', 'B', 'B', 'C', 'C', 'A', 'D', 'C', 'C', 'A', // 1-10
+  'B', 'D', 'B', 'B', 'B', 'D', 'D', 'B', 'C', 'C', // 11-20
+  'B', 'C', 'C', 'B', 'A', 'C', 'C', 'C', 'D', 'D', // 21-30
+  'A', 'B', 'A', 'B', 'C', 'C', 'B', 'A', 'C', 'A', // 31-40
+];
+
+const HCMUE_TEST2_OFFICIAL_KEYS = [
+  'A', 'C', 'A', 'D', 'B', 'A', 'C', 'D', 'D', 'A', // 1-10
+  'D', 'A', 'B', 'A', 'A', 'C', 'C', 'B', 'C', 'B', // 11-20
+  'B', 'A', 'B', 'C', 'A', 'B', 'C', 'A', 'C', 'D', // 21-30
+  'C', 'C', 'B', 'A', 'B', 'B', 'C', 'A', 'C', 'D', // 31-40
+];
+
+const HCMUE_TEST3_OFFICIAL_KEYS = [
+  'A', 'B', 'D', 'C', 'B', 'A', 'A', 'C', 'A', 'B', // 1-10
+  'A', 'C', 'A', 'B', 'C', 'A', 'C', 'B', 'A', 'A', // 11-20
+  'D', 'A', 'C', 'C', 'A', 'D', 'C', 'C', 'A', 'B', // 21-30
+  'C', 'A', 'D', 'B', 'D', 'C', 'D', 'C', 'B', 'B', // 31-40
+];
+
+const HCMUE_TEST4_OFFICIAL_KEYS = [
+  'A', 'D', 'A', 'A', 'B', 'C', 'A', 'B', 'D', 'C', // 1-10
+  'C', 'B', 'B', 'A', 'C', 'D', 'A', 'A', 'C', 'B', // 11-20
+  'D', 'D', 'B', 'A', 'B', 'C', 'C', 'A', 'B', 'C', // 21-30
+  'C', 'C', 'A', 'D', 'C', 'C', 'D', 'D', 'A', 'C', // 31-40
+];
+
+const HCMUE_TEST5_OFFICIAL_KEYS = [
+  'C', 'D', 'A', 'C', 'C', 'B', 'B', 'B', 'D', 'A', // 1-10
+  'B', 'A', 'C', 'A', 'B', 'A', 'B', 'C', 'D', 'C', // 11-20
+  'B', 'D', 'B', 'A', 'C', 'B', 'C', 'A', 'D', 'D', // 21-30
+  'A', 'B', 'C', 'B', 'C', 'D', 'A', 'C', 'D', 'A', // 31-40
 ];
 
 describe('Authentic ULIS Reading Test 1 Integrity', () => {
@@ -321,3 +363,194 @@ describe('Authentic ULIS Reading Test 7 Integrity', () => {
     });
   });
 });
+
+describe('Authentic HCMUE Reading Drill 1 Integrity', () => {
+  it('should have exactly 4 passages totaling 40 questions', () => {
+    expect(HCMUE_READING_TEST_01.passages.length).toBe(4);
+    const totalQ = HCMUE_READING_TEST_01.passages.reduce((acc, p) => acc + p.questions.length, 0);
+    expect(totalQ).toBe(40);
+  });
+
+  it('each question should have 4 choices, valid key and non-empty explanation', () => {
+    HCMUE_READING_TEST_01.passages.forEach((p) => {
+      expect(p.content_paragraphs.length).toBeGreaterThan(1);
+      expect(p.questions.length).toBe(10);
+      p.questions.forEach((q) => {
+        expect(q.options.length).toBe(4);
+        expect(['A', 'B', 'C', 'D']).toContain(q.correct_key);
+        expect(q.explanation_vi).toBeTruthy();
+      });
+    });
+  });
+
+  it('all 40 questions must match the official answer key from PDF page 145', () => {
+    const allQuestions = HCMUE_READING_TEST_01.passages.flatMap((p) => p.questions);
+    allQuestions.forEach((q, idx) => {
+      expect(q.correct_key).toBe(HCMUE_TEST1_OFFICIAL_KEYS[idx]);
+    });
+  });
+
+  it('every clue_sentence must be an exact verbatim substring of its paragraph', () => {
+    HCMUE_READING_TEST_01.passages.forEach((p) => {
+      p.questions.forEach((q) => {
+        const paragraph = p.content_paragraphs[q.clue_paragraph_index];
+        expect(paragraph).toBeDefined();
+        expect(q.clue_sentence.length).toBeGreaterThan(5);
+        expect(paragraph.includes(q.clue_sentence)).toBe(true);
+      });
+    });
+  });
+});
+
+describe('Authentic HCMUE Reading Drill 2 Integrity', () => {
+  it('should have exactly 4 passages totaling 40 questions', () => {
+    expect(HCMUE_READING_TEST_02.passages.length).toBe(4);
+    const totalQ = HCMUE_READING_TEST_02.passages.reduce((acc, p) => acc + p.questions.length, 0);
+    expect(totalQ).toBe(40);
+  });
+
+  it('each question should have 4 choices, valid key and non-empty explanation', () => {
+    HCMUE_READING_TEST_02.passages.forEach((p) => {
+      expect(p.content_paragraphs.length).toBeGreaterThan(1);
+      expect(p.questions.length).toBe(10);
+      p.questions.forEach((q) => {
+        expect(q.options.length).toBe(4);
+        expect(['A', 'B', 'C', 'D']).toContain(q.correct_key);
+        expect(q.explanation_vi).toBeTruthy();
+      });
+    });
+  });
+
+  it('all 40 questions must match the official answer key from PDF page 157', () => {
+    const allQuestions = HCMUE_READING_TEST_02.passages.flatMap((p) => p.questions);
+    allQuestions.forEach((q, idx) => {
+      expect(q.correct_key).toBe(HCMUE_TEST2_OFFICIAL_KEYS[idx]);
+    });
+  });
+
+  it('every clue_sentence must be an exact verbatim substring of its paragraph', () => {
+    HCMUE_READING_TEST_02.passages.forEach((p) => {
+      p.questions.forEach((q) => {
+        const paragraph = p.content_paragraphs[q.clue_paragraph_index];
+        expect(paragraph).toBeDefined();
+        expect(q.clue_sentence.length).toBeGreaterThan(5);
+        expect(paragraph.includes(q.clue_sentence)).toBe(true);
+      });
+    });
+  });
+});
+
+describe('Authentic HCMUE Reading Drill 3 Integrity', () => {
+  it('should have exactly 4 passages totaling 40 questions', () => {
+    expect(HCMUE_READING_TEST_03.passages.length).toBe(4);
+    const totalQ = HCMUE_READING_TEST_03.passages.reduce((acc, p) => acc + p.questions.length, 0);
+    expect(totalQ).toBe(40);
+  });
+
+  it('each question should have 4 choices, valid key and non-empty explanation', () => {
+    HCMUE_READING_TEST_03.passages.forEach((p) => {
+      expect(p.content_paragraphs.length).toBeGreaterThanOrEqual(1);
+      expect(p.questions.length).toBe(10);
+      p.questions.forEach((q) => {
+        expect(q.options.length).toBe(4);
+        expect(['A', 'B', 'C', 'D']).toContain(q.correct_key);
+        expect(q.explanation_vi).toBeTruthy();
+      });
+    });
+  });
+
+  it('all 40 questions must match the official answer key from PDF page 167', () => {
+    const allQuestions = HCMUE_READING_TEST_03.passages.flatMap((p) => p.questions);
+    allQuestions.forEach((q, idx) => {
+      expect(q.correct_key).toBe(HCMUE_TEST3_OFFICIAL_KEYS[idx]);
+    });
+  });
+
+  it('every clue_sentence must be an exact verbatim substring of its paragraph', () => {
+    HCMUE_READING_TEST_03.passages.forEach((p) => {
+      p.questions.forEach((q) => {
+        const paragraph = p.content_paragraphs[q.clue_paragraph_index];
+        expect(paragraph).toBeDefined();
+        expect(q.clue_sentence.length).toBeGreaterThan(5);
+        expect(paragraph.includes(q.clue_sentence)).toBe(true);
+      });
+    });
+  });
+});
+
+describe('Authentic HCMUE Reading Drill 4 Integrity', () => {
+  it('should have exactly 4 passages totaling 40 questions', () => {
+    expect(HCMUE_READING_TEST_04.passages.length).toBe(4);
+    const totalQ = HCMUE_READING_TEST_04.passages.reduce((acc, p) => acc + p.questions.length, 0);
+    expect(totalQ).toBe(40);
+  });
+
+  it('each question should have 4 choices, valid key and non-empty explanation', () => {
+    HCMUE_READING_TEST_04.passages.forEach((p) => {
+      expect(p.content_paragraphs.length).toBeGreaterThan(1);
+      expect(p.questions.length).toBe(10);
+      p.questions.forEach((q) => {
+        expect(q.options.length).toBe(4);
+        expect(['A', 'B', 'C', 'D']).toContain(q.correct_key);
+        expect(q.explanation_vi).toBeTruthy();
+      });
+    });
+  });
+
+  it('all 40 questions must match the official answer key from PDF page 177', () => {
+    const allQuestions = HCMUE_READING_TEST_04.passages.flatMap((p) => p.questions);
+    allQuestions.forEach((q, idx) => {
+      expect(q.correct_key).toBe(HCMUE_TEST4_OFFICIAL_KEYS[idx]);
+    });
+  });
+
+  it('every clue_sentence must be an exact verbatim substring of its paragraph', () => {
+    HCMUE_READING_TEST_04.passages.forEach((p) => {
+      p.questions.forEach((q) => {
+        const paragraph = p.content_paragraphs[q.clue_paragraph_index];
+        expect(paragraph).toBeDefined();
+        expect(q.clue_sentence.length).toBeGreaterThan(5);
+        expect(paragraph.includes(q.clue_sentence)).toBe(true);
+      });
+    });
+  });
+});
+
+describe('Authentic HCMUE Reading Drill 5 Integrity', () => {
+  it('should have exactly 4 passages totaling 40 questions', () => {
+    expect(HCMUE_READING_TEST_05.passages.length).toBe(4);
+    const totalQ = HCMUE_READING_TEST_05.passages.reduce((acc, p) => acc + p.questions.length, 0);
+    expect(totalQ).toBe(40);
+  });
+
+  it('each question should have 4 choices, valid key and non-empty explanation', () => {
+    HCMUE_READING_TEST_05.passages.forEach((p) => {
+      expect(p.content_paragraphs.length).toBeGreaterThan(1);
+      expect(p.questions.length).toBe(10);
+      p.questions.forEach((q) => {
+        expect(q.options.length).toBe(4);
+        expect(['A', 'B', 'C', 'D']).toContain(q.correct_key);
+        expect(q.explanation_vi).toBeTruthy();
+      });
+    });
+  });
+
+  it('all 40 questions must match the official answer key from PDF page 191', () => {
+    const allQuestions = HCMUE_READING_TEST_05.passages.flatMap((p) => p.questions);
+    allQuestions.forEach((q, idx) => {
+      expect(q.correct_key).toBe(HCMUE_TEST5_OFFICIAL_KEYS[idx]);
+    });
+  });
+
+  it('every clue_sentence must be an exact verbatim substring of its paragraph', () => {
+    HCMUE_READING_TEST_05.passages.forEach((p) => {
+      p.questions.forEach((q) => {
+        const paragraph = p.content_paragraphs[q.clue_paragraph_index];
+        expect(paragraph).toBeDefined();
+        expect(q.clue_sentence.length).toBeGreaterThan(5);
+        expect(paragraph.includes(q.clue_sentence)).toBe(true);
+      });
+    });
+  });
+});
+

@@ -14,5 +14,6 @@ Stores authenticated source citations, original articles, word counts, questions
 | `ulis_reading_set5` | Trường ĐH Ngoại ngữ – ĐHQGHN (ULIS) | Sách 7 Vstep Tests (NXB ĐHQGHN) – Đề 5 | [ulis_reading_set5.md](file:///d:/program/vstep/docs/sources/reading/ulis_reading_set5.md) |
 | `ulis_reading_set6` | Trường ĐH Ngoại ngữ – ĐHQGHN (ULIS) | Sách 7 Vstep Tests (NXB ĐHQGHN) – Đề 6 | [ulis_reading_set6.md](file:///d:/program/vstep/docs/sources/reading/ulis_reading_set6.md) |
 | `ulis_reading_set7` | Trường ĐH Ngoại ngữ – ĐHQGHN (ULIS) | Sách 7 Vstep Tests (NXB ĐHQGHN) – Đề 7 | [ulis_reading_set7.md](file:///d:/program/vstep/docs/sources/reading/ulis_reading_set7.md) |
+| `hcmue_reading_drills` | Trường ĐH Sư phạm TP.HCM (HCMUE) | Sách 20 Mock Tests (NXB ĐH Sư Phạm TP.HCM) – Đề 1–5 | [hcmue_reading_drills.md](file:///d:/program/vstep/docs/sources/reading/hcmue_reading_drills.md) |
 
 

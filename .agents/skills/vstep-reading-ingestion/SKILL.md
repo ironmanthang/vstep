@@ -55,8 +55,14 @@ src/features/reading/data/
 - **Test 7 Reading**: PDF pages 89–95 (Book pages 85–91) | Answer key on PDF page 159 (Book page 155)
 
 ### HCMUE 20 Tests Book (`scripts/vstep-collection-20-mock-tests.pdf`)
-- **Publisher**: NXB ĐH Sư Phạm TP.HCM
-- **Tests 1 to 5**: Ingested as Practice Drills to pair with HCMUE Listening drills.
+- **Publisher**: NXB ĐH Sư Phạm TP.HCM (2017)
+- **Author Group**: ThS. Nguyễn Thị Tú, ThS. Bùi Thị Phương Thảo, ThS. Hoàng Thị Phong Linh, ThS. Trần Quang Nam, ThS. Lê Thùy Trang
+- **Test 1 Reading**: PDF pages 11–24 (Book pp. 12–25) | Answer key on PDF page 145 (Book p. 146)
+- **Test 2 Reading**: PDF pages 39–51 (Book pp. 40–52) | Answer key on PDF page 157 (Book p. 158)
+- **Test 3 Reading**: PDF pages 65–77 (Book pp. 66–78) | Answer key on PDF page 167 (Book p. 168)
+- **Test 4 Reading**: PDF pages 91–104 (Book pp. 92–105) | Answer key on PDF page 177 (Book p. 178)
+- **Test 5 Reading**: PDF pages 119–132 (Book pp. 120–133) | Answer key on PDF page 191 (Book p. 192)
+- **Status**: 5 Drills ingested under `src/features/reading/data/drills/hcmue/` (`hcmueReadingTest01.ts` through `05.ts`).
 
 ---
 
@@ -72,6 +78,13 @@ python scripts/extract_pdf_pages.py "scripts/7-Vstep-Tests-B1-B2-C1-Full-Key.pdf
 Structures raw text into typed TypeScript module and verifies exact substrings:
 ```powershell
 node scripts/assemble_reading.mjs "scripts/ulis_reading_test_02_raw.json" "src/features/reading/data/mockTests/ulisReadingTest02.ts" 2
+```
+
+### HCMUE Batch Engine (`scripts/extract_hcmue_reading_pages.py` & `scripts/assemble_hcmue_drills.mjs`)
+Batch extracts and structures HCMUE Drills 01–05 with per-passage disk caching:
+```powershell
+python scripts/extract_hcmue_reading_pages.py 1 2 3 4 5
+node scripts/assemble_hcmue_drills.mjs 1 2 3 4 5
 ```
 
 

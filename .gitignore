@@ -49,9 +49,13 @@ scripts/all_listening_data.json
 scripts/listening_audit_report.json
 scripts/mined_listening_cards.json
 
+# Reading ingestion intermediate caches
+scripts/.hcmue_pages_cache/
+scripts/.hcmue_cache_*.json
+scripts/.test_*_passages_cache.json
+
 # Large binary archives
 *.zip
 *.tar.gz
 *.tgz
 *.rar
-
