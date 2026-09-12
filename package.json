@@ -10,7 +10,7 @@
     "db:migrate": "node scripts/migrate.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc -b --noEmit",
     "lint": "oxlint --deny-warnings",
     "audit:listening": "python scripts/master_listening_audit.py",
     "export:listening": "node --experimental-strip-types scripts/export_all_listening.mjs",

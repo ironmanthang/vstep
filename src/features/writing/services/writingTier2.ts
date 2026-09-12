@@ -98,12 +98,10 @@ Provide the complete diagnostic evaluation in valid JSON.`;
 
   try {
     const aiResponse = await generateAICompletion({
-      messages: [
-        { role: 'system', content: SYSTEM_EVALUATOR_PROMPT },
-        { role: 'user', content: userPrompt }
-      ],
+      systemPrompt: SYSTEM_EVALUATOR_PROMPT,
+      userPrompt,
       temperature: 0.1,
-      responseFormat: 'json_object'
+      responseSchema: { type: 'object' }
     });
 
     const parsed = parseAIJsonOutput(aiResponse.content);
