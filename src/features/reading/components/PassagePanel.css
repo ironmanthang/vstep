@@ -1,0 +1,225 @@
+/* Passage Panel & Reader Themes */
+.passage-panel-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: var(--radius-lg, 12px);
+  border: 1px solid var(--reader-border, var(--border));
+  background: var(--reader-bg, var(--bg-surface));
+  color: var(--reader-text, var(--text-primary));
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: background 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+
+/* 3 Curated Reader Themes */
+.theme-warm-sepia {
+  --reader-bg: #f6eedf;
+  --reader-text: #2f2720;
+  --reader-border: #e0d4c0;
+  --reader-subtle: #ebdcc8;
+}
+
+.theme-obsidian-dark {
+  --reader-bg: #141210;
+  --reader-text: #e6e1da;
+  --reader-border: #2c2824;
+  --reader-subtle: #1e1b18;
+}
+
+.theme-cream-light {
+  --reader-bg: #faf8f5;
+  --reader-text: #1a1816;
+  --reader-border: #e5e0d8;
+  --reader-subtle: #ede7dd;
+}
+
+/* Toolbar */
+.reader-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--reader-subtle, var(--bg-subtle));
+  border-bottom: 1px solid var(--reader-border, var(--border));
+  user-select: none;
+}
+
+.reader-meta-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reader-word-count {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted, #888);
+}
+
+.reader-controls-cluster {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.reader-btn-group {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--reader-border, var(--border));
+  border-radius: var(--radius-sm, 6px);
+  padding: 2px;
+}
+
+.theme-obsidian-dark .reader-btn-group {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.reader-tool-btn {
+  background: transparent;
+  border: none;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 120ms ease;
+  line-height: 1;
+}
+
+.reader-tool-btn:hover:not(:disabled) {
+  background: rgba(224, 90, 43, 0.15);
+  color: var(--primary, #e05a2b);
+}
+
+.reader-tool-btn.active {
+  background: var(--primary, #e05a2b);
+  color: #141210;
+}
+
+.reader-tool-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.reader-val-indicator {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0 4px;
+  min-width: 32px;
+  text-align: center;
+}
+
+.reader-dictionary-hint {
+  padding: 4px 16px;
+  font-size: 11px;
+  color: var(--text-muted, #777);
+  background: rgba(224, 90, 43, 0.05);
+  border-bottom: 1px dashed var(--reader-border, var(--border));
+  user-select: none;
+}
+
+/* Passage Content Area */
+.passage-content-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 28px;
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: 0.01em;
+}
+
+.passage-main-title {
+  font-size: 1.3em;
+  font-weight: 800;
+  margin: 0 0 6px 0;
+  color: var(--reader-text);
+  font-family: inherit;
+  line-height: 1.3;
+}
+
+.passage-topic-tag {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: var(--primary, #e05a2b);
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+.passage-paragraphs-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.passage-paragraph-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.paragraph-order-pill {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: monospace;
+  color: var(--text-muted, #888);
+  user-select: none;
+  padding-top: 4px;
+  min-width: 22px;
+}
+
+.passage-paragraph-text {
+  margin: 0;
+  flex: 1;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Evidence Highlighting */
+.clue-evidence-highlight {
+  background: rgba(230, 160, 40, 0.28);
+  color: inherit;
+  padding: 2px 4px;
+  border-radius: 4px;
+  border-bottom: 2px solid #e09820;
+  font-weight: 600;
+  animation: evidence-pulse 1.8s ease infinite alternate;
+}
+
+@keyframes evidence-pulse {
+  from {
+    background: rgba(230, 160, 40, 0.22);
+  }
+  to {
+    background: rgba(230, 160, 40, 0.42);
+  }
+}
+
+/* Sentence Insertion Points [A], [B], [C], [D] */
+.insertion-point-marker {
+  display: inline-block;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.85em;
+  font-weight: 800;
+  padding: 1px 6px;
+  margin: 0 4px;
+  border-radius: 4px;
+  background: rgba(224, 90, 43, 0.18);
+  color: var(--primary, #e05a2b);
+  border: 1px solid rgba(224, 90, 43, 0.4);
+  vertical-align: baseline;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .passage-content-container {
+    padding: 16px;
+  }
+  .reader-toolbar {
+    padding: 8px 12px;
+  }
+}

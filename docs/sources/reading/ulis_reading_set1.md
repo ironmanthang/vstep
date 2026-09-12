@@ -2,32 +2,35 @@
 
 ## Source Information
 - **Institution**: Trung tâm Khảo thí, Trường Đại học Ngoại ngữ – Đại học Quốc gia Hà Nội (ULIS – VNU).
-- **Exam Title**: Đề thi minh họa Đánh giá Năng lực Ngoại ngữ VSTEP.3–5.
-- **Official Portal**: [vstep.vnu.edu.vn](http://vstep.vnu.edu.vn)
-- **Time Allowed**: 60 minutes.
-- **Format**: 4 Reading Passages (1,900–2,500 words total) / 40 Multiple-choice Questions.
-- **Target Difficulty**: Passage 1 (B1), Passage 2 (B1–B2), Passage 3 (B2), Passage 4 (B2–C1).
+- **Publication**: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019, Trang 10–17).
+- **Answer Key**: Trang 131 của sách gốc (PDF page 131).
+- **Format**: 4 Reading Passages (1,780 words total) / 40 Multiple-choice Questions (60 phút).
+- **Target Difficulty**: B1–C1.
 
 ---
 
 ## Passages Breakdown
 
-### Passage 1: The Evolution of Modern Remote Work (Q1–Q10)
-- **Topic**: Social & Workplace Dynamics.
-- **Word Count**: ~460 words.
-- **Focus**: Factual recall, vocabulary in context, pronoun reference, and main idea.
+### Passage 1: Smoking Epidemic in China (Q1–Q10)
+- **Topic**: Health & Medicine
+- **Word Count**: ~365 words
+- **Difficulty**: B1
+- **Focus**: Factual details, consequence inference, vocabulary in context, author implication.
 
-### Passage 2: The Agricultural History of the Coffee Bean (Q11–Q20)
-- **Topic**: History, Geography & Global Trade.
-- **Word Count**: ~480 words.
-- **Focus**: Chronological details, author's purpose, paraphrase recognition, and inference.
+### Passage 2: Global Warming Solutions (Q11–Q20)
+- **Topic**: Environment
+- **Word Count**: ~445 words
+- **Difficulty**: B2
+- **Focus**: Pronoun reference, scientific detail, cause and effect, author purpose, technology drawbacks.
 
-### Passage 3: Urban Biodiversity and Pollinator Corridors (Q21–Q30)
-- **Topic**: Environmental Ecology & Urban Planning.
-- **Word Count**: ~510 words.
-- **Focus**: Scientific cause-and-effect, negative factual detail ("NOT mentioned"), vocabulary context.
+### Passage 3: The Appreciation of Art (Q21–Q30)
+- **Topic**: Art & History
+- **Word Count**: ~410 words
+- **Difficulty**: B2
+- **Focus**: Process understanding, art history context, artist motivations, author's perspective on personal meaning.
 
-### Passage 4: Artificial Intelligence and Natural Language Processing (Q31–Q40)
-- **Topic**: Advanced Computing & Cognitive Science.
-- **Word Count**: ~540 words.
-- **Focus**: Complex argumentation, underlying assumptions, inference, and tone detection.
+### Passage 4: Antibiotics and Drug-Resistant Bacteria (Q31–Q40)
+- **Topic**: Health & Medicine
+- **Word Count**: ~563 words
+- **Difficulty**: C1
+- **Focus**: Biological mechanism, historical timeline, evolutionary resistance, pharmaceutical research gap.

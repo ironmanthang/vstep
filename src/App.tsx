@@ -6,6 +6,7 @@ import { LoginPage } from './pages/LoginPage';
 import { HomePage } from './pages/HomePage';
 import { SkillPracticePage } from './pages/SkillPracticePage';
 import { ListeningStudioPage } from './features/listening/ListeningStudioPage';
+import { ReadingStudioPage } from './features/reading/ReadingStudioPage';
 import { FlashcardPage } from './features/flashcard/FlashcardPage';
 import { MockTestPage } from './pages/MockTestPage';
 import { SettingsPage } from './pages/SettingsPage';
@@ -20,6 +21,7 @@ export const App: React.FC = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/practice" element={<SkillPracticePage />} />
           <Route path="/practice/listening" element={<ListeningStudioPage />} />
+          <Route path="/practice/reading" element={<ReadingStudioPage />} />
           <Route path="/flashcard" element={<FlashcardPage />} />
           <Route path="/mock-test" element={<MockTestPage />} />
           <Route path="/settings" element={<SettingsPage />} />

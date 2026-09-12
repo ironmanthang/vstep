@@ -1,0 +1,211 @@
+import { useState, forwardRef } from 'react';
+import type { ReadingPassage } from '../types';
+import './ReadingQuestionCard.css';
+
+type QuestionItem = ReadingPassage['questions'][0];
+
+interface ReadingQuestionCardProps {
+  question: QuestionItem;
+  questionIndex: number; // 0 to 39
+  selectedKey?: 'A' | 'B' | 'C' | 'D';
+  isFlagged: boolean;
+  isSubmitted: boolean;
+  isExam: boolean;
+  isActive: boolean;
+  onSelectOption: (key: 'A' | 'B' | 'C' | 'D') => void;
+  onToggleFlag: () => void;
+  onFocusQuestion: () => void;
+  note: string;
+  onChangeNote: (note: string) => void;
+}
+
+const QUESTION_TYPE_LABELS: Record<QuestionItem['type'], { label: string; badgeClass: string }> = {
+  main_idea: { label: 'Ý chính', badgeClass: 'badge-primary' },
+  vocab_in_context: { label: 'Từ vựng ngữ cảnh', badgeClass: 'badge-emerald' },
+  factual_detail: { label: 'Chi tiết bài đọc', badgeClass: 'badge-purple' },
+  negative_fact: { label: 'Thông tin không đúng (NOT/EXCEPT)', badgeClass: 'badge-gold' },
+  inference: { label: 'Suy luận', badgeClass: 'badge-primary' },
+  author_attitude: { label: 'Thái độ tác giả', badgeClass: 'badge-gold' },
+  sentence_insertion: { label: 'Chèn câu [A]-[D]', badgeClass: 'badge-emerald' },
+};
+
+export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCardProps>(
+  (
+    {
+      question,
+      questionIndex,
+      selectedKey,
+      isFlagged,
+      isSubmitted,
+      isExam,
+      isActive,
+      onSelectOption,
+      onToggleFlag,
+      onFocusQuestion,
+      note,
+      onChangeNote,
+    },
+    ref
+  ) => {
+    const [isNoteOpen, setIsNoteOpen] = useState<boolean>(Boolean(note));
+
+    const typeMeta = QUESTION_TYPE_LABELS[question.type] || {
+      label: 'Câu hỏi đọc hiểu',
+      badgeClass: 'badge-primary',
+    };
+
+    const isCorrect = isSubmitted && selectedKey === question.correct_key;
+    const isWrong = isSubmitted && selectedKey && selectedKey !== question.correct_key;
+
+    return (
+      <div
+        ref={ref}
+        id={`reading-question-${question.id}`}
+        className={`reading-question-card ${isActive ? 'card-active' : ''} ${
+          isSubmitted ? (isCorrect ? 'result-correct' : isWrong ? 'result-wrong' : 'result-unanswered') : ''
+        }`}
+        onClick={onFocusQuestion}
+      >
+        {/* Card Header */}
+        <div className="rq-header">
+          <div className="rq-header-left">
+            <span className="rq-number">Câu {questionIndex + 1}</span>
+            <span className={`badge ${typeMeta.badgeClass} rq-type-badge`}>
+              {typeMeta.label}
+            </span>
+          </div>
+
+          <div className="rq-header-actions">
+            {/* Clue button: Jump to clue in passage */}
+            {question.clue_sentence && (
+              <button
+                type="button"
+                className={`rq-clue-btn ${isActive ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onFocusQuestion();
+                }}
+                title="Xem dẫn chứng tương ứng trong bài đọc"
+              >
+                🔍 Xem dẫn chứng
+              </button>
+            )}
+
+            {/* Flag Button */}
+            {!isSubmitted && (
+              <button
+                type="button"
+                className={`rq-flag-btn ${isFlagged ? 'flagged' : ''}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onToggleFlag();
+                }}
+                title={isFlagged ? 'Bỏ cắm cờ xem lại' : 'Cắm cờ xem lại'}
+                aria-label="Cắm cờ xem lại"
+              >
+                🚩
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* Question Prompt */}
+        <div className="rq-prompt">{question.question_text}</div>
+
+        {/* 4 Multiple Choice Options */}
+        <div className="rq-options-list">
+          {question.options.map((opt) => {
+            const isSelected = selectedKey === opt.key;
+            const isThisCorrect = isSubmitted && opt.key === question.correct_key;
+            const isThisWrongSelected = isSubmitted && isSelected && !isThisCorrect;
+
+            let optionClass = '';
+            if (isSelected) optionClass += ' selected';
+            if (isThisCorrect) optionClass += ' option-correct';
+            if (isThisWrongSelected) optionClass += ' option-wrong';
+
+            return (
+              <button
+                key={opt.key}
+                type="button"
+                className={`rq-option-row ${optionClass}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (!isSubmitted) onSelectOption(opt.key);
+                }}
+                disabled={isSubmitted}
+              >
+                <span className="rq-option-key">{opt.key}</span>
+                <span className="rq-option-text">{opt.text}</span>
+                {isThisCorrect && <span className="rq-feedback-mark">✓</span>}
+                {isThisWrongSelected && <span className="rq-feedback-mark">✗</span>}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Submitted Explanations & Paraphrase Analysis */}
+        {isSubmitted && (
+          <div className="rq-explanation-box">
+            <div className="rq-explanation-title">
+              💡 Giải Thích Đáp Án: <strong>{question.correct_key}</strong>
+            </div>
+            <div className="rq-explanation-content">{question.explanation_vi}</div>
+
+            {/* Paraphrase Mapping */}
+            {question.paraphrase_analysis && (
+              <div className="rq-paraphrase-card">
+                <div className="rq-paraphrase-header">Phân Tích Paraphrase (Đối chiếu từ vựng):</div>
+                <div className="rq-paraphrase-grid">
+                  <div className="rq-paraphrase-col">
+                    <span className="rq-col-label">Trong câu hỏi:</span>
+                    <span className="rq-col-val">{question.paraphrase_analysis.question_phrase}</span>
+                  </div>
+                  <div className="rq-paraphrase-arrow">⇄</div>
+                  <div className="rq-paraphrase-col">
+                    <span className="rq-col-label">Trong bài đọc:</span>
+                    <span className="rq-col-val">{question.paraphrase_analysis.passage_phrase}</span>
+                  </div>
+                </div>
+                {question.paraphrase_analysis.explanation && (
+                  <p className="rq-paraphrase-note">{question.paraphrase_analysis.explanation}</p>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* User Scratchpad Note */}
+        {!isExam && (
+          <div className="rq-notes-wrapper">
+            {!isNoteOpen && !note ? (
+              <button
+                type="button"
+                className="rq-open-note-btn"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsNoteOpen(true);
+                }}
+              >
+                ✏️ Thêm ghi chú nháp
+              </button>
+            ) : (
+              <div className="rq-note-input-wrap">
+                <textarea
+                  className="rq-note-textarea"
+                  placeholder="Ghi chú suy luận hoặc từ vựng cần lưu ý..."
+                  value={note}
+                  onChange={(e) => onChangeNote(e.target.value)}
+                  rows={2}
+                  onClick={(e) => e.stopPropagation()}
+                />
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    );
+  }
+);
+
+ReadingQuestionCard.displayName = 'ReadingQuestionCard';

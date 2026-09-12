@@ -1,0 +1,97 @@
+.dictionary-tooltip-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.dictionary-tooltip-card {
+  position: absolute;
+  pointer-events: auto;
+  min-width: 200px;
+  max-width: 300px;
+  background: var(--bg-surface, #1e1b18);
+  border: 1px solid var(--border-strong, rgba(224, 90, 43, 0.4));
+  border-radius: var(--radius-md, 8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 12px rgba(224, 90, 43, 0.15);
+  padding: 10px 14px;
+  font-family: inherit;
+  z-index: 1001;
+  animation: tooltip-fade-in 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(-100%);
+  margin-top: -8px;
+}
+
+@keyframes tooltip-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-90%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-100%) scale(1);
+  }
+}
+
+.dict-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  gap: 8px;
+}
+
+.dict-word-title {
+  font-size: var(--fs-sm, 13px);
+  font-weight: 700;
+  color: var(--primary, #e05a2b);
+  letter-spacing: 0.3px;
+  text-transform: lowercase;
+}
+
+.dict-source-badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: var(--radius-full, 9999px);
+  background: var(--bg-subtle, rgba(255, 255, 255, 0.06));
+  color: var(--text-muted, #a8a095);
+  white-space: nowrap;
+}
+
+.dict-source-badge.vstep {
+  background: rgba(224, 90, 43, 0.15);
+  color: var(--primary, #e05a2b);
+}
+
+.dict-definition-body {
+  font-size: var(--fs-xs, 12px);
+  line-height: 1.5;
+  color: var(--text-primary, #f5f0eb);
+  word-break: break-word;
+}
+
+.dict-loading-state {
+  font-size: var(--fs-xs, 12px);
+  color: var(--text-muted, #a8a095);
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dict-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted, #a8a095);
+  cursor: pointer;
+  padding: 2px 4px;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 4px;
+}
+
+.dict-close-btn:hover {
+  color: var(--text-primary, #f5f0eb);
+  background: rgba(255, 255, 255, 0.1);
+}

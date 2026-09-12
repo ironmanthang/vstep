@@ -76,7 +76,7 @@ export interface ReadingPassage {
   content_paragraphs: string[];
   questions: {
     id: string;
-    type: "main_idea" | "vocab_in_context" | "factual_detail" | "negative_fact" | "inference" | "author_attitude";
+    type: "main_idea" | "vocab_in_context" | "factual_detail" | "negative_fact" | "inference" | "author_attitude" | "sentence_insertion";
     question_text: string;
     options: { key: "A" | "B" | "C" | "D"; text: string }[];
     correct_key: "A" | "B" | "C" | "D";

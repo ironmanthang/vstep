@@ -1,1 +1,2 @@
-export * from './readingBank';
+export * from './mockTests';
+export * from './dictionaryVi';

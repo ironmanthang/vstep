@@ -1,0 +1,83 @@
+/* Reading Studio Page */
+.reading-studio-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5, 20px);
+  width: 100%;
+}
+
+.reading-studio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3, 12px);
+}
+
+.reading-studio-mode-toggle {
+  display: flex;
+  background: var(--bg-subtle, rgba(255, 255, 255, 0.04));
+  padding: 3px;
+  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+}
+
+.reading-mode-btn {
+  padding: 6px 14px;
+  font-size: var(--fs-xs, 12px);
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary, #c2b8ae);
+  border-radius: var(--radius-sm, 6px);
+  cursor: pointer;
+  transition: all 120ms ease;
+}
+
+.reading-mode-btn.active.practice {
+  background: var(--primary, #e05a2b);
+  color: #141210;
+}
+
+.reading-mode-btn.active.exam {
+  background: var(--gold, #f59e0b);
+  color: #141210;
+}
+
+.reading-edition-selector-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  flex-wrap: wrap;
+}
+
+.reading-edition-label {
+  font-size: var(--fs-xs, 12px);
+  font-weight: 700;
+  color: var(--text-secondary, #c2b8ae);
+}
+
+.reading-edition-btn {
+  padding: 6px 14px;
+  font-size: var(--fs-xs, 12px);
+  font-weight: 700;
+  border-radius: var(--radius-full, 9999px);
+  background: var(--bg-subtle, rgba(255, 255, 255, 0.04));
+  color: var(--text-secondary, #c2b8ae);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  cursor: pointer;
+  transition: all 120ms ease;
+}
+
+.reading-edition-btn:hover {
+  background: rgba(224, 90, 43, 0.1);
+  color: var(--primary, #e05a2b);
+}
+
+.reading-edition-btn.active {
+  background: var(--primary, #e05a2b);
+  color: #141210;
+  border-color: var(--primary, #e05a2b);
+  box-shadow: 0 2px 8px rgba(224, 90, 43, 0.25);
+}

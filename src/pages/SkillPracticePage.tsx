@@ -10,14 +10,16 @@ export const SkillPracticePage: React.FC = () => {
       badgeColor: 'badge-primary',
       status: 'Sẵn Sàng Luyện',
       link: '/practice/listening',
+      cta: 'Vào phòng luyện nghe →',
     },
     {
       title: 'Luyện Đọc (Reading)',
       desc: 'Giao diện Split-Pane chia đôi màn hình, tra từ 1 chạm và phân tích Paraphrase dẫn chứng.',
-      badge: '4 Bài Đọc B1-B2',
-      badgeColor: 'badge-primary',
-      status: 'Sprint 2',
-      link: undefined,
+      badge: '4 Bài Đọc B1-C1',
+      badgeColor: 'badge-emerald',
+      status: 'Sẵn Sàng Luyện',
+      link: '/practice/reading',
+      cta: 'Vào phòng luyện đọc →',
     },
     {
       title: 'Luyện Viết (Writing)',
@@ -26,6 +28,7 @@ export const SkillPracticePage: React.FC = () => {
       badgeColor: 'badge-gold',
       status: 'Sprint 3',
       link: undefined,
+      cta: 'Đang hoàn thiện module →',
     },
     {
       title: 'Phòng Thu Nói (Speaking)',
@@ -34,6 +37,7 @@ export const SkillPracticePage: React.FC = () => {
       badgeColor: 'badge-emerald',
       status: 'Sprint 3',
       link: undefined,
+      cta: 'Đang hoàn thiện module →',
     },
   ];
 
@@ -74,7 +78,7 @@ export const SkillPracticePage: React.FC = () => {
               <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', lineHeight: 1.5, margin: 0 }}>{skill.desc}</p>
               <div style={{ marginTop: 'auto', paddingTop: 'var(--space-3)', borderTop: '1px solid var(--border)' }}>
                 <span style={{ fontSize: 'var(--fs-xs)', color: skill.link ? 'var(--primary)' : 'var(--text-muted)', fontWeight: 700 }}>
-                  {skill.link ? 'Vào phòng luyện nghe →' : 'Đang hoàn thiện module →'}
+                  {skill.cta}
                 </span>
               </div>
             </CardElement>

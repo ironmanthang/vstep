@@ -27,7 +27,6 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)
 - [x] Hạ tầng Kiểm thử & Triển khai: Unit tests Vitest, Pre-push pipeline tự động (`scripts/prepush.mjs`), CI/CD GitHub Actions (`.github/workflows/ci.yml`), kịch bản tự động hóa database migration (`scripts/migrate.mjs`), và triển khai Production Cloudflare Pages (`vstep.pages.dev`).
-- [ ] Đạt điểm số Google Lighthouse > 90 (Performance, Accessibility, SEO) và tối ưu PWA Standalone
 
 
 ## SPRINT: LUYỆN NGHE CHỦ ĐỘNG (ASSISTED LISTENING STUDIO)
@@ -37,7 +36,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 
 ### Ngân hàng Đề Luyện Tập Đa Dạng & Công cụ Xử lý
 - [x] Ngân hàng Đề thi & Tái cấu trúc Scripts: 15 đề rời Part 1–3 từ NXB ĐH Sư Phạm TP.HCM (HCMUE 01–05, 175 câu) kèm giải thích chi tiết, 7 đề Full Mock Test 35 câu từ sách "7 VSTEP Tests" (`mockTest01.ts` – `mockTest07.ts`), hiện đại hóa thư viện `scripts/` (loại bỏ 13.000 dòng mã thừa, `transcribe_listening.py` Groq/faster-whisper, `enrich_listening.mjs`, dynamic discovery scripts, và `download-assets.ps1`).
-- [ ] Tải và chạy thử nghiệm mô hình local qua Ollama: `ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q4_K_M` và `ollama run hf.co/XHToken/Spark-X2.5-4B-GGUF:Q4_K_M` and python -c "from faster_whisper import WhisperModel; WhisperModel('large-v3-turbo', device='cpu', compute_type='int8')"
+
 
 ### Tinh giản Luồng Luyện Nghe & Ghi chú Nháp
 - [x] Trải nghiệm Câu hỏi Đơn trang & Kiểm định Âm học: Tinh giản luồng câu hỏi loại bỏ tab-switcher, `PassageGroupHeader` phân đoạn hội thoại/bài giảng, nút nhảy audio inline `▶ [mm:ss]`, Scratchpad ghi chú nháp auto-expanding, Inline Collapsible Transcript song ngữ gạch chân Key Clues, kiểm định tự động 22 bộ đề (`pnpm run verify:listening`), rà soát âm học AI 168 phân đoạn (`master_listening_audit.py`) khắc phục 100% sai lệch mốc thời gian, và luồng Làm lại bài tích hợp xóa submission trên Supabase.
@@ -50,20 +49,31 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 ## SPRINT: LUYỆN ĐỌC CÓ HỖ TRỢ (ASSISTED READING STUDIO)
 
 ### Kiến trúc Unified Reading Runner & Giao diện Split-Pane
-- [ ] Xây dựng `ReadingRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (bật tra từ/dẫn chứng/paraphrase) và `mode: 'exam'` (giao diện chuẩn phòng thi, khóa tra từ)
-- [ ] Bố cục Split-Pane chia đôi màn hình: Bài đọc bên trái cuộn độc lập, bảng 40 câu hỏi bên phải
-- [ ] Tùy chỉnh hiển thị: Chỉnh cỡ chữ, giãn dòng và chế độ nền (Sepia/Dark/Light)
+- [x] Xây dựng `ReadingRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (bật tra từ/dẫn chứng/ghi chú nháp/15p passage timer) và `mode: 'exam'` (60 phút countdown tự nộp, giao diện chuẩn phòng thi)
+- [x] Bố cục Split-Pane chia đôi màn hình: Bài đọc bên trái cuộn độc lập, bảng 40 câu hỏi ở giữa, bảng Question Palette sticky bên phải; trên mobile (<768px) hỗ trợ tab toggle ghi nhớ vị trí cuộn
+- [x] Tùy chỉnh hiển thị: Chỉnh cỡ chữ (14px–22px), giãn dòng (1.5x, 1.8x, 2.0x), và 3 chế độ nền (Warm Sepia, Obsidian Dark, Cream Light) lưu trữ theo tài khoản
 
 ### Tra từ Nhanh (1-Tap Dictionary Tooltip)
-- [ ] Nhấn/chạm vào từ tiếng Anh trong bài đọc hiển thị tooltip tra nghĩa tức thì trong 0ms
-- [ ] Hỗ trợ tra từ offline qua từ điển JSON đóng gói sẵn kèm tra cứu nâng cao qua Free Dictionary API (không ghi rác vào hàng đợi SRS)
+- [x] Nhấn/chạm đúp vào từ tiếng Anh trong bài đọc hiển thị tooltip tra nghĩa tiếng Việt tức thì
+- [x] Hỗ trợ tra từ 2 tầng: Tầng 1 offline tra tức thì 2.000 từ VSTEP Core (`dictionaryVi.ts`) + Tầng 2 fallback qua MyMemory API hiển thị nghĩa tiếng Việt (không ghi rác vào hàng đợi SRS)
 
-### Phân loại 5 Dạng Câu hỏi & Highlight Dẫn chứng
-- [ ] Phân loại 5 dạng câu hỏi đọc hiểu: Main Idea, Vocab in Context, Factual Details, Inference, Author Attitude
-- [ ] Tự động highlight câu văn gốc chứa dẫn chứng trong bài đọc tương ứng với câu hỏi đang chọn
-- [ ] Bảng phân tích hiện tượng Paraphrase giữa bài đọc và đáp án đúng
-- [ ] Chế độ áp lực thời gian (Time Pressure Mode): Đếm ngược 15 phút/bài đọc (~500 từ, 10 câu)
-- [ ] Run audit codebase check sau khi hoàn thành kỹ năng Đọc (Reading)
+### Phân loại Dạng Câu hỏi, Highlight Dẫn chứng & Cấu trúc Dữ liệu
+- [x] Phân loại các dạng câu hỏi đọc hiểu: Main Idea, Vocab in Context, Factual Details, Negative Fact, Inference, Author Attitude, Sentence Insertion (`[A]-[D]`)
+- [x] Tự động highlight câu văn gốc chứa dẫn chứng (`clue_sentence`) trong bài đọc với hiệu ứng pulse và tự cuộn đến vị trí dẫn chứng
+- [x] Bảng phân tích hiện tượng Paraphrase giữa bài đọc và đáp án đúng
+- [x] Xóa sạch dữ liệu FME orphaned scrape cũ (`readingBank.ts`), liên kết lại `mockTest01.ts` với đề thi chuẩn ULIS Test 1 (`ULIS_READING_TEST_01`)
+- [x] Tạo tài liệu hướng dẫn kỹ năng trích xuất đề đọc chuẩn hóa: `.agents/skills/vstep-reading-ingestion/SKILL.md`
+
+### Ngân hàng Đề Luyện Đọc Toàn Diện (Lộ trình các phiên tiếp theo)
+- [x] Đề 1 (ULIS Test 1): 4 bài đọc, 40 câu hỏi từ sách "7 Vstep Tests" (NXB ĐHQGHN, 2019) kèm 100% dẫn chứng verbatim chuẩn xác (`ulisReadingTest01.ts`)
+- [ ] Đề 2 (ULIS Test 2): PDF trang 24–31, đáp án trang 136
+- [ ] Đề 3 (ULIS Test 3): PDF trang 36–43, đáp án trang 140
+- [ ] Đề 4 (ULIS Test 4): PDF trang 50–57, đáp án trang 145
+- [ ] Đề 5 (ULIS Test 5): PDF trang 64–71, đáp án trang 150
+- [ ] Đề 6 (ULIS Test 6): PDF trang 78–85, đáp án trang 155
+- [ ] Đề 7 (ULIS Test 7): PDF trang 92–99, đáp án trang 160
+- [ ] 5 Đề Luyện Tập HCMUE (Drills 01–05): Trích xuất từ sách "20 Mock Tests" (NXB ĐH Sư Phạm TP.HCM) đồng bộ với 15 bài Listening Drills
+- [x] Run audit codebase check sau khi hoàn thành kỹ năng Đọc (Reading)
 
 ## SPRINT: LUYỆN VIẾT VỚI GIÀN GIÁO (SCAFFOLDED WRITING & VIETLISH AI)
 
