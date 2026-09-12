@@ -22,6 +22,8 @@ Mô-đun được triển khai tập trung tại [`src/features/listening/`](fil
   - Nút "Làm Lại Bài Này" được bố trí ngay trong thẻ kết quả chấm điểm (Score Result Banner) và trong thanh bên Question Palette, giúp người học thao tác tức thì mà không cần cuộn qua danh sách câu hỏi trên Mobile.
   - Được bảo vệ bằng modal xác nhận cảnh báo 2 bước (`src/components/common/ConfirmModal.tsx`).
   - Khi xác nhận: Gọi `deleteTestSubmission(user.id, test.id, mode)` xóa bản ghi khỏi Supabase `user_test_submissions`, xóa sạch bộ nhớ tạm local và đưa trạng thái về ban đầu, triệt tiêu hoàn toàn hiện tượng nạp đè dữ liệu cũ khi tải lại trang.
+  - **Cô lập Phiên làm bài Đa tài khoản (Multi-Account Tenant Isolation)**: Quản lý phiên làm bài cục bộ qua [`listeningStorage.ts`](file:///d:/program/vstep/src/features/listening/listeningStorage.ts) với khóa lưu trữ phân vùng theo User ID (`vstep_${userId}_listening_session_${testId}_${mode}`). Dữ liệu phiên được tự động xóa sạch khi người dùng đăng xuất.
+  - **Đồng bộ Làm lại Đa thiết bị (Remote Reset Reconciliation)**: Khi người dùng bấm "Làm lại bài này" trên Thiết bị 1 (xóa submission trên Supabase), Thiết bị 2 khi mở lại bài thi phát hiện `cloudData === null` trong khi local cache vẫn ghi nhận đã nộp (`hasSubmitted: true`) sẽ tự động làm mới bộ nhớ tạm cục bộ, xóa sạch câu trả lời cũ và khôi phục trạng thái chưa làm bài.
 
 ## Bộ Công cụ Hỗ trợ Luyện Sâu (Scaffolding Tools)
 - **Sticky Custom Audio Player ([`CustomAudioPlayer.tsx`](file:///d:/program/vstep/src/features/listening/components/CustomAudioPlayer.tsx), [`useAudioPlayer.ts`](file:///d:/program/vstep/src/features/listening/useAudioPlayer.ts))**:
@@ -70,4 +72,4 @@ Mô-đun được triển khai tập trung tại [`src/features/listening/`](fil
     - Đạt tỷ lệ đồng bộ âm học 100% trên toàn bộ 168 phân đoạn lời thoại của 22 bộ đề.
   - **Xuất dữ liệu tự động (`scripts/export_all_listening.mjs` / `pnpm run export:listening`)**:
     - Tự động trích xuất toàn bộ dữ liệu 22 đề thành file JSON `scripts/all_listening_data.json` phục vụ các kịch bản kiểm toán offline.
-- **Unit Tests (`listening.test.ts`)**: Bộ bài kiểm thử tự động xác thực tính toàn vẹn 100% câu hỏi (245 câu mock tests + 175 câu discrete drills = 420 câu hỏi chuẩn hóa), official answer keys, tính tăng dần của timestamp và tính nhất quán của metadata.
+- **Unit Tests (`listening.test.ts`)**: Bộ bài kiểm thử tự động xác thực tính toàn vẹn 100% câu hỏi (245 câu mock tests + 175 câu discrete drills = 420 câu hỏi chuẩn hóa), official answer keys, tính tăng dần của timestamp, tính nhất quán của metadata và tính cô lập dữ liệu phiên làm bài giữa các tài khoản (Tenant Isolation).

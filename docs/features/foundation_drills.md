@@ -13,23 +13,25 @@
   - Hàng đợi ôn tập 3 cấp ưu tiên (`getReviewQueue`):
     - **Thẻ học lại trong phiên (Re-learning)**: Thẻ vừa trả lời Sai được đưa lên đầu hàng đợi để củng cố ngay.
     - **Thẻ đến hạn ôn tập (Due Reviews)**: Sắp xếp theo thứ tự thẻ quá hạn nhiều nhất lên trước (`next_review_timestamp` tăng dần).
-    - **Từ mới (New Cards)**: Giới hạn tối đa 20 từ mới mỗi ngày (`NEW_CARDS_PER_DAY = 20`) để tránh quá tải khi người dùng nghỉ học nhiều ngày.
+    - **Từ mới (New Cards)**: Không giới hạn trần cứng (Uncapped Queue), liên tục phục vụ từ mới chưa học theo thứ tự chủ đề khi hết thẻ ôn tập đến hạn, loại bỏ hoàn toàn gánh nặng mục tiêu ngày.
   - Cơ chế nhận diện thẻ khó nhớ (Leech Detection): Cảnh báo trực quan đối với thẻ có `lapses >= 8` để học viên tập trung ghi nhớ.
 - **Kiến trúc Online-First & Đồng bộ Đám mây (Supabase SSOT)**:
+  - Tầng lưu trữ phân vùng theo tài khoản (`userStorage.ts`): Toàn bộ cache tiến độ flashcard cục bộ được phân vùng theo `userId` (`vstep_${userId}_flashcard_deck_v3`), dọn dẹp sạch sẽ khi đăng xuất chống rò rỉ dữ liệu giữa các tài khoản.
+  - Cơ chế Uniform Cloud Projection: Chiếu trực tiếp các bản ghi ôn tập từ đám mây (`cloudReviews`) lên danh mục tĩnh chuẩn (`VSTEP_CORPUS`) để khởi tạo deck, triệt tiêu hoàn toàn lỗi pha trộn thẻ giữa các tài khoản (Frankenstein hybrid deck).
+  - Đồng bộ hóa Đặt lại Đa thiết bị (Remote Reset Reconciliation): Khi đám mây trả về deck rỗng (`{}`) do người dùng đã đặt lại trên thiết bị khác, client tự động reset local cache về `VSTEP_CORPUS` ban đầu thay vì nạp đè dữ liệu cũ.
   - Dữ liệu ôn tập lưu trữ trên Supabase PostgreSQL (`user_flashcard_reviews` & `user_daily_stats`), hỗ trợ tương thích ngược kép (chọn đồng thời cột mới `stability, difficulty, reps, lapses, state` và cột cũ `repetition_count, interval_days, ease_factor, status`).
-  - Tự động di chuyển dữ liệu Client (v2 → v3 Migration): Phát hiện và chuyển đổi định dạng `localStorage` cũ sang schema FSRS v3 khi khởi động ứng dụng.
   - Hàng rào ngoại tuyến (Offline Barrier): Tự động phát hiện khi mất kết nối Internet, hiển thị banner cảnh báo và vô hiệu hóa các nút đánh giá để chống phát sinh tiến độ ma không được lưu.
   - Decoupled Corpus Hydration: Tách biệt nội dung từ điển tĩnh (`VSTEP_CORPUS`) và siêu dữ liệu ôn tập (`srs_metadata`). Đảm bảo khi mở rộng kho từ 1.500 lên 2.000 và tiến tới 3.000 từ, toàn bộ từ vựng người dùng đã học vẫn được bảo toàn 100%.
 - **An toàn Dữ liệu & Đặt lại Deck (ConfirmModal)**:
   - Nút đặt lại Deck được bảo vệ bằng Modal xác nhận cảnh báo 2 bước chống bấm nhầm (`src/components/common/ConfirmModal.tsx`), tự động căn giữa trên Desktop và chuyển thành Bottom Sheet trên Mobile.
   - Nút Hủy bỏ được focus mặc định để tránh xác nhận ngoài ý muốn.
-  - Khi xác nhận đặt lại: Xóa sạch dữ liệu trên Supabase Cloud (`user_flashcard_reviews` và `user_daily_stats`), reset `newCardsToday` và đưa số thẻ đã ôn hôm nay về 0.
+  - Khi xác nhận đặt lại: Xóa sạch dữ liệu trên Supabase Cloud (`user_flashcard_reviews` và `user_daily_stats`), reset toàn bộ thẻ về trạng thái từ mới ban đầu và đưa số thẻ đã ôn hôm nay về 0.
 - **Trải nghiệm Học tương tác & Tối ưu Mobile PWA**:
   - **Cử chỉ vuốt chạm tỷ lệ thực (Proportional Touch Swipe)**: Kéo thẻ di chuyển ngang và nghiêng góc tự nhiên theo ngón tay, hiển thị tem phản hồi trực quan (Sai góc trên phải / Đúng góc trên trái). Ngưỡng nhả 90px kích hoạt chấm điểm và trượt thẻ khỏi màn hình; nhả trước ngưỡng tự động đàn hồi về tâm. Chạm nhẹ (<8px) lật thẻ. Cơ chế so sánh deltaY/deltaX tức thì bảo vệ cuộn dọc trang mượt mà.
   - **Triệt tiêu lỗi lộ nghĩa (Spoiled Definition Prevention)**: Đóng băng dữ liệu thẻ cũ trong suốt hiệu ứng thoát thẻ 180ms và tự động lật về mặt trước tiếng Anh trước khi thẻ mới xuất hiện, bảo toàn 100% tính bất ngờ cho active recall.
   - **Mặt sau tinh giản & căn giữa quang học**: Loại bỏ nhãn "Định nghĩa tiếng Việt", huy hiệu chủ đề và tiêu đề tiếng Anh trùng lặp. Căn giữa định nghĩa tiếng Việt đồng trục thị giác với từ vựng mặt trước, bố trí collocations và ví dụ VSTEP ngay bên dưới.
   - **Phím tắt Desktop/Laptop**: Phím mũi tên trái (`←`) chấm Sai, mũi tên phải (`→`) chấm Đúng, phím cách (`Space`) hoặc mũi tên lên/xuống (`↑`/`↓`) lật thẻ, phím `A`/`P` phát âm thanh bản xứ.
-  - **Nâng thẻ lên vùng Above-the-Fold trên Mobile**: Thu gọn tiêu đề, mô tả và lưới 4 thẻ thống kê tĩnh thành thanh trạng thái 1 dòng siêu gọn (`X cần ôn • Y/20 mới • ✓ Z đã ôn`) khi đang ôn tập hàng đợi. Thẻ Flashcard (cao 385px) và các nút chấm điểm hiển thị trọn vẹn ở trung tâm màn hình mà không cần cuộn.
+  - **Nâng thẻ lên vùng Above-the-Fold trên Mobile**: Thu gọn tiêu đề, mô tả và lưới 4 thẻ thống kê tĩnh thành thanh trạng thái 1 dòng siêu gọn (`X cần ôn • Y đang học • ✓ Z đã ôn`) khi đang ôn tập hàng đợi. Thẻ Flashcard (cao 385px) và các nút chấm điểm hiển thị trọn vẹn ở trung tâm màn hình mà không cần cuộn.
   - **Đồng bộ màu thanh trạng thái hệ thống**: Cấu hình `theme-color` đồng bộ động theo giao diện, hiển thị màu Dark Obsidian (`#141210`) trong Dark Mode, loại bỏ dải màu vàng lệch tông trên Android PWA và mobile browser.
   - **Chỉ báo cuộn ngang danh sách chủ đề**: Áp dụng hiệu ứng mặt nạ mờ (gradient mask) mép phải báo hiệu vùng cuộn các chủ đề tiếp theo.
 - **Thông báo PWA & App Badging Nhắc nhở Ôn tập SRS**:

@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { User, Session } from '@supabase/supabase-js';
 import { supabase, isSupabaseConfigured } from './client';
+import { purgeAllUserData, purgeLegacyGlobalKeys } from '../storage/userStorage';
 
 export function useAuth() {
   const [user, setUser] = useState<User | null>(null);
@@ -22,7 +23,10 @@ export function useAuth() {
     // Listen for auth state changes
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, newSession) => {
+    } = supabase.auth.onAuthStateChange((event, newSession) => {
+      if (event === 'SIGNED_OUT' && user?.id) {
+        purgeAllUserData(user.id);
+      }
       setSession(newSession);
       setUser(newSession?.user ?? null);
       setLoading(false);
@@ -31,7 +35,7 @@ export function useAuth() {
     return () => {
       subscription.unsubscribe();
     };
-  }, []);
+  }, [user?.id]);
 
   const signInWithGoogle = useCallback(async () => {
     if (!isSupabaseConfigured()) throw new Error('Supabase is not configured.');
@@ -47,9 +51,13 @@ export function useAuth() {
 
   const signOut = useCallback(async () => {
     if (!isSupabaseConfigured()) return;
+    if (user?.id) {
+      purgeAllUserData(user.id);
+    }
+    purgeLegacyGlobalKeys();
     const { error } = await supabase.auth.signOut();
     if (error) throw error;
-  }, []);
+  }, [user]);
 
   return {
     user,

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useFlashcardStore } from './useFlashcardStore';
 import { FlashcardCard } from './FlashcardCard';
 import type { SRSRating } from '../../types/schemas';
-import { NEW_CARDS_PER_DAY } from './srs';
 import { CheckCircleIcon, RefreshIcon } from '../../components/Icons';
 import { useNotification } from '../../hooks/useNotification';
 import { Toast } from '../../components/common/Toast';
@@ -22,7 +21,6 @@ export const FlashcardPage: React.FC = () => {
     selectedTopic,
     setSelectedTopic,
     reviewedToday,
-    newCardsToday,
     isCloudSyncing,
     isOnline,
     submitReview,
@@ -161,12 +159,12 @@ export const FlashcardPage: React.FC = () => {
             <span className="stat-val stat-primary">{reviewQueue.length} thẻ</span>
           </div>
           <div className="stat-card">
-            <span className="stat-label">Đã làm chủ</span>
-            <span className="stat-val stat-emerald">{stats.mastered} từ ({stats.masteryPercentage}%)</span>
+            <span className="stat-label">Đang học</span>
+            <span className="stat-val stat-gold">{stats.learning} từ</span>
           </div>
           <div className="stat-card">
-            <span className="stat-label">Từ mới hôm nay</span>
-            <span className="stat-val stat-gold">{newCardsToday}/{NEW_CARDS_PER_DAY}</span>
+            <span className="stat-label">Đã làm chủ</span>
+            <span className="stat-val stat-emerald">{stats.mastered} từ ({stats.masteryPercentage}%)</span>
           </div>
           <div className="stat-card">
             <span className="stat-label">Hôm nay đã ôn</span>
@@ -184,7 +182,7 @@ export const FlashcardPage: React.FC = () => {
             <strong>{reviewQueue.length}</strong> cần ôn
           </span>
           <span className="mobile-stat-pill stat-gold">
-            <strong>{newCardsToday}/{NEW_CARDS_PER_DAY}</strong> mới
+            <strong>{stats.learning}</strong> đang học
           </span>
           <span className="mobile-stat-pill stat-emerald">
             ✓ <strong>{reviewedToday}</strong> đã ôn

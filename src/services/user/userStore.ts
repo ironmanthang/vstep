@@ -38,6 +38,12 @@ export const DEFAULT_PROFILE: UserLearningProfile = {
   study_dates: [],
 };
 
+import {
+  loadUserItem,
+  saveUserItem,
+  removeUserItem,
+} from '../storage/userStorage';
+
 function safeGetItem(key: string): string | null {
   try {
     if (typeof localStorage !== 'undefined') {
@@ -60,10 +66,26 @@ function safeSetItem(key: string, value: string): void {
 }
 
 /**
- * Direct standalone helper to append a study date to localStorage profile.
+ * Direct standalone helper to append a study date to user-scoped storage profile.
  */
-export function recordStudyDateInStorage(dateStr: string = formatDateToLocalISO(new Date())): void {
+export function recordStudyDateInStorage(
+  dateStr: string = formatDateToLocalISO(new Date()),
+  userId?: string
+): void {
   try {
+    if (userId) {
+      const profile = loadUserItem<UserLearningProfile>(userId, 'user_learning_profile_v2', DEFAULT_PROFILE);
+      const dates = Array.isArray(profile.study_dates) ? profile.study_dates : [];
+      if (!dates.includes(dateStr)) {
+        saveUserItem(userId, 'user_learning_profile_v2', {
+          ...profile,
+          study_dates: [...dates, dateStr],
+        });
+      }
+      return;
+    }
+
+    // Fallback for un-scoped callers
     const raw = safeGetItem(USER_PROFILE_STORAGE_KEY);
     const profile: UserLearningProfile = raw ? JSON.parse(raw) : DEFAULT_PROFILE;
     const dates = Array.isArray(profile.study_dates) ? profile.study_dates : [];
@@ -83,25 +105,15 @@ export function useUserStore() {
   const userId = user?.id;
 
   const [profile, setProfile] = useState<UserLearningProfile>(() => {
-    try {
-      const raw = safeGetItem(USER_PROFILE_STORAGE_KEY);
-      if (raw) {
-        const parsed = JSON.parse(raw);
-        return {
-          ...DEFAULT_PROFILE,
-          ...parsed,
-          study_dates: Array.isArray(parsed.study_dates) ? parsed.study_dates : [],
-        };
-      }
-    } catch {
-      // Fall through to default
+    if (userId) {
+      return loadUserItem<UserLearningProfile>(userId, 'user_learning_profile_v2', DEFAULT_PROFILE);
     }
     return DEFAULT_PROFILE;
   });
 
   const syncedUserIdRef = useRef<string | null>(null);
 
-  // Synchronize profile from Supabase when user logs in
+  // Synchronize profile from Supabase when user logs in or switches
   useEffect(() => {
     if (!isAuthenticated || !userId) {
       syncedUserIdRef.current = null;
@@ -112,6 +124,7 @@ export function useUserStore() {
       return;
     }
 
+    syncedUserIdRef.current = userId;
     let isMounted = true;
 
     async function hydrateFromCloud() {
@@ -126,26 +139,25 @@ export function useUserStore() {
 
         if (!isMounted) return;
 
-        syncedUserIdRef.current = userId;
+        const googleFullName = user?.user_metadata?.full_name || user?.user_metadata?.name || '';
+        const name = cloudProfile?.display_name || googleFullName || 'Học viên';
+        const band = cloudProfile?.target_band || 'B1';
+        const examDate = cloudProfile?.target_exam_date || null;
+        const completedCount = cloudProfile?.completed_exercises_count ?? 0;
+        const studyDates = cloudStudyLogs; // Always use cloud records directly — zero cross-account fallthrough
+        const latestTest = cloudMockTest || null;
 
-        setProfile((prev) => {
-          const googleFullName = user?.user_metadata?.full_name || user?.user_metadata?.name || '';
-          const name = cloudProfile?.display_name || prev.user_name || googleFullName;
-          const band = cloudProfile?.target_band || prev.target_band || 'B1';
-          const examDate = cloudProfile?.target_exam_date !== undefined ? cloudProfile.target_exam_date : prev.target_exam_date;
-          const completedCount = cloudProfile?.completed_exercises_count !== undefined ? cloudProfile.completed_exercises_count : prev.completed_exercises_count;
-          const studyDates = cloudStudyLogs.length > 0 ? cloudStudyLogs : prev.study_dates;
-          const latestTest = cloudMockTest || prev.latest_mock_test;
+        const updatedProfile: UserLearningProfile = {
+          user_name: name,
+          target_band: band,
+          target_exam_date: examDate,
+          completed_exercises_count: completedCount,
+          latest_mock_test: latestTest,
+          study_dates: studyDates,
+        };
 
-          return {
-            user_name: name,
-            target_band: band,
-            target_exam_date: examDate,
-            completed_exercises_count: completedCount,
-            latest_mock_test: latestTest,
-            study_dates: studyDates,
-          };
-        });
+        setProfile(updatedProfile);
+        saveUserItem(userId, 'user_learning_profile_v2', updatedProfile);
       } catch (err) {
         console.error('Failed to hydrate user profile from cloud:', err);
       }
@@ -158,10 +170,12 @@ export function useUserStore() {
     };
   }, [isAuthenticated, userId, user]);
 
-  // Save to localStorage on state changes
+  // Save to user-scoped localStorage on state changes
   useEffect(() => {
-    safeSetItem(USER_PROFILE_STORAGE_KEY, JSON.stringify(profile));
-  }, [profile]);
+    if (userId) {
+      saveUserItem(userId, 'user_learning_profile_v2', profile);
+    }
+  }, [profile, userId]);
 
   // Compute effective display name
   const userDisplayName = useMemo(() => {
@@ -273,10 +287,13 @@ export function useUserStore() {
   const resetProfile = useCallback(() => {
     syncedUserIdRef.current = null;
     setProfile(DEFAULT_PROFILE);
+    if (userId) {
+      removeUserItem(userId, 'user_learning_profile_v2');
+    }
     if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
       localStorage.removeItem(USER_PROFILE_STORAGE_KEY);
     }
-  }, []);
+  }, [userId]);
 
   return {
     profile,

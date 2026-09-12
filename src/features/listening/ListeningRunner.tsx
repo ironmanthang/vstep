@@ -38,9 +38,10 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
 }) => {
   const isExam = mode === 'exam';
   const { user } = useAuth();
+  const userId = user?.id;
   const { recordStudyActivity, incrementExercisesCompleted } = useUserStore();
 
-  const [initialSession] = useState(() => loadListeningSession(test.id, mode));
+  const [initialSession] = useState(() => loadListeningSession(test.id, mode, userId));
   const [answers, setAnswers] = useState<Record<string, 'A' | 'B' | 'C' | 'D'>>(
     () => initialSession?.answers ?? {}
   );
@@ -66,37 +67,51 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
   const questionRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   useEffect(() => {
-    saveListeningSession(test.id, mode, {
-      answers,
-      flaggedQuestions: Array.from(flaggedQuestions),
-      notes,
-      isSubmitted,
-      scoreResult,
-    });
-  }, [test.id, mode, answers, flaggedQuestions, notes, isSubmitted, scoreResult]);
+    if (!userId) return;
+    saveListeningSession(
+      test.id,
+      mode,
+      {
+        answers,
+        flaggedQuestions: Array.from(flaggedQuestions),
+        notes,
+        isSubmitted,
+        scoreResult,
+      },
+      userId
+    );
+  }, [test.id, mode, answers, flaggedQuestions, notes, isSubmitted, scoreResult, userId]);
 
-  // Cross-device hydration: Completed Cloud submission trumps local unsubmitted draft
+  // Cross-device hydration and remote reset reconciliation
   useEffect(() => {
-    if (!user?.id) return;
+    if (!userId) return;
     let isCancelled = false;
 
     async function syncFromCloud() {
-      if (!user?.id) return;
+      if (!userId) return;
       try {
-        const cloudData = await fetchTestSubmission(user.id, test.id, mode);
-        if (isCancelled || !cloudData) return;
+        const cloudData = await fetchTestSubmission(userId, test.id, mode);
+        if (isCancelled) return;
 
-        const cloudCompletedAt = cloudData.completed_at ? new Date(cloudData.completed_at).getTime() : 0;
-        const currentSavedAt = initialSession?.savedAt ?? 0;
-
-        if (!initialSession?.isSubmitted || cloudCompletedAt > currentSavedAt) {
-          const hydrated = hydrateListeningSessionFromCloud(test.id, mode, cloudData);
+        if (cloudData) {
+          const hydrated = hydrateListeningSessionFromCloud(test.id, mode, cloudData, userId);
           if (isCancelled) return;
           setAnswers(hydrated.answers);
           setFlaggedQuestions(new Set(hydrated.flaggedQuestions));
           setNotes(hydrated.notes);
           setIsSubmitted(true);
           setScoreResult(hydrated.scoreResult);
+        } else {
+          // If cloud submission was deleted/reset on another device, reset local state too
+          if (initialSession?.isSubmitted) {
+            clearListeningSession(test.id, mode, userId);
+            if (isCancelled) return;
+            setAnswers({});
+            setFlaggedQuestions(new Set());
+            setNotes({});
+            setIsSubmitted(false);
+            setScoreResult(null);
+          }
         }
       } catch (err) {
         console.warn('Failed to sync test submission from cloud:', err);
@@ -108,7 +123,7 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
     return () => {
       isCancelled = true;
     };
-  }, [user?.id, test.id, mode, initialSession?.isSubmitted, initialSession?.savedAt]);
+  }, [userId, test.id, mode, initialSession?.isSubmitted]);
 
   const {
     isPlaying,
@@ -204,10 +219,12 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
   const handleConfirmReset = async () => {
     setIsResetting(true);
     try {
-      if (user?.id) {
-        await deleteTestSubmission(user.id, test.id, mode);
+      if (userId) {
+        await deleteTestSubmission(userId, test.id, mode);
+        clearListeningSession(test.id, mode, userId);
+      } else {
+        clearListeningSession(test.id, mode);
       }
-      clearListeningSession(test.id, mode);
       setAnswers({});
       setFlaggedQuestions(new Set());
       setIsSubmitted(false);

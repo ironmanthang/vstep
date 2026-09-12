@@ -1,4 +1,5 @@
 import type { ListeningMode, ListeningScoreResult } from './types';
+import { getUserStorageKey } from '../../services/storage/userStorage';
 
 export interface StoredListeningSession {
   answers: Record<string, 'A' | 'B' | 'C' | 'D'>;
@@ -9,17 +10,21 @@ export interface StoredListeningSession {
   savedAt: number;
 }
 
-export function getListeningStorageKey(testId: string, mode: ListeningMode): string {
+export function getListeningStorageKey(testId: string, mode: ListeningMode, userId?: string): string {
+  if (userId) {
+    return getUserStorageKey(userId, `listening_session_${testId}_${mode}`);
+  }
   return `vstep_listening_session_${testId}_${mode}`;
 }
 
 export function loadListeningSession(
   testId: string,
-  mode: ListeningMode
+  mode: ListeningMode,
+  userId?: string
 ): StoredListeningSession | null {
   try {
     if (typeof localStorage === 'undefined') return null;
-    const raw = localStorage.getItem(getListeningStorageKey(testId, mode));
+    const raw = localStorage.getItem(getListeningStorageKey(testId, mode, userId));
     if (!raw) return null;
     const parsed = JSON.parse(raw) as StoredListeningSession;
     if (!parsed || typeof parsed !== 'object') return null;
@@ -32,7 +37,8 @@ export function loadListeningSession(
 export function saveListeningSession(
   testId: string,
   mode: ListeningMode,
-  session: Omit<StoredListeningSession, 'savedAt'>
+  session: Omit<StoredListeningSession, 'savedAt'>,
+  userId?: string
 ): void {
   try {
     if (typeof localStorage === 'undefined') return;
@@ -40,16 +46,16 @@ export function saveListeningSession(
       ...session,
       savedAt: Date.now(),
     };
-    localStorage.setItem(getListeningStorageKey(testId, mode), JSON.stringify(payload));
+    localStorage.setItem(getListeningStorageKey(testId, mode, userId), JSON.stringify(payload));
   } catch {
     // Ignore storage quota or access errors
   }
 }
 
-export function clearListeningSession(testId: string, mode: ListeningMode): void {
+export function clearListeningSession(testId: string, mode: ListeningMode, userId?: string): void {
   try {
     if (typeof localStorage === 'undefined') return;
-    localStorage.removeItem(getListeningStorageKey(testId, mode));
+    localStorage.removeItem(getListeningStorageKey(testId, mode, userId));
   } catch {
     // Ignore
   }
@@ -69,7 +75,8 @@ export interface CloudListeningPayload {
 export function hydrateListeningSessionFromCloud(
   testId: string,
   mode: ListeningMode,
-  cloudData: CloudListeningPayload
+  cloudData: CloudListeningPayload,
+  userId?: string
 ): StoredListeningSession {
   const completedTimestamp = cloudData.completed_at
     ? new Date(cloudData.completed_at).getTime()
@@ -94,7 +101,7 @@ export function hydrateListeningSessionFromCloud(
 
   try {
     if (typeof localStorage !== 'undefined') {
-      localStorage.setItem(getListeningStorageKey(testId, mode), JSON.stringify(session));
+      localStorage.setItem(getListeningStorageKey(testId, mode, userId), JSON.stringify(session));
     }
   } catch {
     // Ignore storage quota errors
@@ -102,4 +109,3 @@ export function hydrateListeningSessionFromCloud(
 
   return session;
 }
-

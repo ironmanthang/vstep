@@ -41,12 +41,6 @@ export const Layout: React.FC = () => {
   const handleSignOut = async () => {
     try {
       resetProfile();
-      // Clean up flashcard local keys
-      if (typeof localStorage !== 'undefined') {
-        localStorage.removeItem('vstep_flashcard_deck_v2');
-        localStorage.removeItem('vstep_reviewed_today_count_v2');
-        localStorage.removeItem('vstep_last_review_date_v2');
-      }
       await signOut();
       navigate('/login', { replace: true });
     } catch (err) {

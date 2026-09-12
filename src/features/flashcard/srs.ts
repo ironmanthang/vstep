@@ -68,12 +68,12 @@ function ratingToFSRS(rating: SRSRating): Grade {
  * Build the review queue with correct priority ordering:
  *  1. Re-learning cards (answered wrong in session, re-queued)
  *  2. Due review cards (overdue, sorted by most overdue first)
- *  3. New cards (never seen, capped at newCardsRemaining)
+ *  3. New cards (never seen, uncapped by default for continuous learning)
  */
 export function getReviewQueue(
   cards: FlashcardItem[],
   now?: number,
-  newCardsRemaining: number = NEW_CARDS_PER_DAY,
+  newCardsRemaining?: number,
 ): FlashcardItem[] {
   const currentTime = now ?? Date.now();
   const relearning: FlashcardItem[] = [];
@@ -107,10 +107,12 @@ export function getReviewQueue(
     a.srs_metadata.next_review_timestamp - b.srs_metadata.next_review_timestamp
   );
 
-  // Cap new cards at daily limit
-  const cappedNewCards = newCards.slice(0, Math.max(0, newCardsRemaining));
+  // If newCardsRemaining is specified, cap new cards; otherwise serve all new cards uncapped
+  const eligibleNewCards = typeof newCardsRemaining === 'number'
+    ? newCards.slice(0, Math.max(0, newCardsRemaining))
+    : newCards;
 
-  return [...relearning, ...dueReviews, ...cappedNewCards];
+  return [...relearning, ...dueReviews, ...eligibleNewCards];
 }
 
 /**

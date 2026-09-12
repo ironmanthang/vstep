@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { getDailyAIQuotaStatus } from '../../services/ai';
+import { useAuth } from '../../services/supabase/authStore';
 
 interface QuotaUsageCardProps {
   onNotify: (message: string, type?: 'info' | 'success' | 'error') => void;
 }
 
 export const QuotaUsageCard: React.FC<QuotaUsageCardProps> = ({ onNotify }) => {
-  const [quota] = useState(() => getDailyAIQuotaStatus());
+  const { user } = useAuth();
+  const [quota] = useState(() => getDailyAIQuotaStatus(user?.id));
 
   return (
     <div className="card-surface" style={{ padding: 'var(--space-6)', display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}>

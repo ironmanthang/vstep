@@ -313,5 +313,38 @@ describe('VSTEP Listening Studio Data Integrity & Specifications', () => {
       expect(loaded?.answers).toEqual({ q1: 'B', q2: 'C' });
       expect(loaded?.scoreResult?.correctCount).toBe(32);
     });
+
+    it('strictly isolates listening sessions between different user IDs on the same browser', () => {
+      const testId = 'vstep_mock01_lis';
+      // User A saves submitted exam with answers
+      saveListeningSession(
+        testId,
+        'exam',
+        {
+          answers: { q1: 'A', q2: 'D' },
+          flaggedQuestions: ['q1'],
+          notes: { q1: 'note A' },
+          isSubmitted: true,
+          scoreResult: {
+            totalQuestions: 35,
+            correctCount: 30,
+            scoreOutOf10: 8.6,
+            timeSpentSeconds: 1500,
+            completedAt: Date.now(),
+          },
+        },
+        'user_A'
+      );
+
+      // User B opens the same test on the same browser
+      const userBSession = loadListeningSession(testId, 'exam', 'user_B');
+      expect(userBSession).toBeNull();
+
+      // User A still sees their own session
+      const userASession = loadListeningSession(testId, 'exam', 'user_A');
+      expect(userASession).not.toBeNull();
+      expect(userASession?.answers).toEqual({ q1: 'A', q2: 'D' });
+      expect(userASession?.isSubmitted).toBe(true);
+    });
   });
 });

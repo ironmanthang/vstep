@@ -49,11 +49,14 @@
 | **Kết quả Bài nộp (`user_test_submissions`)** | Supabase PostgreSQL | Lưu trữ điểm số, câu trả lời, cờ đánh dấu theo `(user_id, test_id, mode)`. Tự động xóa khi người dùng bấm làm lại |
 | **Lịch sử Thi thử (`user_mock_test_results`)** | Supabase PostgreSQL | Lưu trữ kết quả thi có cấu trúc theo từng lần nộp bài 180 phút |
 | **Tiến độ SRS (`user_flashcard_reviews` & `user_daily_stats`)** | Supabase PostgreSQL | Lưu trạng thái thẻ theo thuật toán FSRS v6 (stability, difficulty, reps, lapses, state) và bộ đếm ngày, kiến trúc Online-First |
-| **Bản nháp Writing & Optimistic Queue** | `localStorage` (Client Buffer) | Auto-save mỗi 5 giây chống mất dữ liệu khi mất kết nối tạm thời |
+| **Bộ đệm Client & Cô lập Tài khoản** | LocalStorage (`userStorage.ts`) | Phân vùng theo User ID (`vstep_${userId}_*`), tự động xóa sạch khi đăng xuất; lưu bản nháp Auto-save, cached deck, phiên làm bài nghe và hạn mức AI |
 | **Chấm bài AI (Viết/Nói)** | Master API Gateway (Client/Edge → AI API) | Phản hồi JSON có cấu trúc trực tiếp hiển thị lên UI |
 
 ## Ranh giới Xử lý
 - **Phía Client (Trình duyệt)**:
+  - Tầng lưu trữ `userStorage.ts` cô lập triệt để dữ liệu theo `userId` (`vstep_${userId}_*`), tự động xóa sạch khi đăng xuất chống rò rỉ dữ liệu giữa các tài khoản trên cùng thiết bị.
+  - Cơ chế Uniform Cloud Projection chiếu trực tiếp bản ghi đám mây lên danh mục tĩnh, triệt tiêu hoàn toàn lỗi ghép thẻ Frankenstein.
+  - Cơ chế Remote Reset Reconciliation tự động phát hiện và đồng bộ hóa trạng thái reset/retake từ thiết bị khác (xóa local cache khi cloud trả về rỗng).
   - Tính toán thuật toán Spaced Repetition (SRS) cho Flashcard và chuyển đổi điểm VSTEP (0ms), hàng rào ngoại tuyến dừng ôn tập khi mất kết nối mạng.
   - Chấm tự động trắc nghiệm Listening & Reading tức thì theo khóa đáp án có sẵn.
   - Hộp thoại xác nhận chung (`src/components/common/ConfirmModal.tsx`) ngăn ngừa xóa nhầm tiến độ học tập và bài thi.
