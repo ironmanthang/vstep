@@ -38,8 +38,11 @@ Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mo
 - **Ngân hàng Đề Đọc Đã Xác Thực**:
   - `ULIS_READING_TEST_01` (Đề 1): 4 bài đọc, 40 câu hỏi, khớp 100% đáp án gốc trang 131 và dẫn chứng verbatim (`ulisReadingTest01.ts`).
   - `ULIS_READING_TEST_02` (Đề 2): 4 bài đọc, 40 câu hỏi, khớp 100% đáp án gốc trang 136 và dẫn chứng verbatim (`ulisReadingTest02.ts`).
+  - `ULIS_READING_TEST_03` (Đề 3): 4 bài đọc, 40 câu hỏi, khớp 100% đáp án gốc trang 140 và dẫn chứng verbatim (`ulisReadingTest03.ts`).
   - Bộ chọn đề thi (`reading-edition-selector-bar`) tại `ReadingStudioPage` tự động hiển thị danh sách toàn bộ đề thi trong `ALL_VSTEP_READING_MOCK_TESTS`.
 - **Tích hợp Thi Thử 4 Kỹ Năng (Full Mock Tests)**:
   - `VSTEP_MOCK_TEST_01`: Kết hợp Nghe Đề 1, Đọc Đề 1, Viết Task 1/2, Nói May 30 (`mockTest01.ts`).
   - `VSTEP_MOCK_TEST_02`: Kết hợp Nghe Đề 2, Đọc Đề 2, Viết Task 1/2, Nói May 05 (`mockTest02.ts`).
+  - `VSTEP_MOCK_TEST_03`: Kết hợp Nghe Đề 3, Đọc Đề 3, Viết Task 1/2, Nói May 20 (`mockTest03.ts`).
+
 

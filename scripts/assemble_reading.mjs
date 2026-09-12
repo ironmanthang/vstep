@@ -55,11 +55,16 @@ export const TEST_REGISTRY = {
     exportName: 'ULIS_READING_TEST_03',
     title: 'VSTEP Reading Mock Test 3 (Chuẩn ĐHNN - ĐHQGHN)',
     sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 36–43, Key page 140',
-    officialKeys: [],
+    officialKeys: [
+      'B', 'C', 'D', 'C', 'B', 'B', 'C', 'D', 'C', 'A', // 1-10
+      'D', 'C', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', // 11-20
+      'C', 'B', 'C', 'A', 'C', 'A', 'D', 'D', 'C', 'D', // 21-30
+      'B', 'B', 'D', 'D', 'A', 'B', 'A', 'A', 'D', 'C', // 31-40
+    ],
     passageConfigs: [
-      { num: 1, pageKeys: ['36', '37'], startQ: 1, endQ: 10, difficulty: 'B1' },
-      { num: 2, pageKeys: ['38', '39'], startQ: 11, endQ: 20, difficulty: 'B2' },
-      { num: 3, pageKeys: ['40', '41'], startQ: 21, endQ: 30, difficulty: 'B2' },
+      { num: 1, pageKeys: ['38', '39'], startQ: 1, endQ: 10, difficulty: 'B1' },
+      { num: 2, pageKeys: ['39', '40'], startQ: 11, endQ: 20, difficulty: 'B2' },
+      { num: 3, pageKeys: ['41', '42'], startQ: 21, endQ: 30, difficulty: 'B2' },
       { num: 4, pageKeys: ['42', '43'], startQ: 31, endQ: 40, difficulty: 'C1' },
     ],
   },
@@ -305,6 +310,9 @@ Return valid JSON with keys: "title", "topic", "word_count", "difficulty", "cont
       const par = structured.content_paragraphs[q.clue_paragraph_index];
       if (!par.includes(q.clue_sentence)) {
         console.error(`FATAL: Clue for ${q.id} is still not a substring!`);
+      }
+      if (q.paraphrase_analysis === null) {
+        delete q.paraphrase_analysis;
       }
     }
 

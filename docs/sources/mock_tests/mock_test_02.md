@@ -1,7 +1,7 @@
-# VSTEP Full Mock Test 01 (ULIS Composition)
+# VSTEP Full Mock Test 02 (ULIS Composition)
 
 ## Metadata
-- **Exam Title**: Đề Thi Thử Toàn Diện VSTEP Bậc 3–5 (Bộ 01)
+- **Exam Title**: Đề Thi Thử Toàn Diện VSTEP Bậc 3–5 (Bộ 02)
 - **Primary Source**: Trung tâm Khảo thí, Trường ĐH Ngoại ngữ – ĐHQGHN (ULIS)
 - **Total Duration**: 180 Minutes (Sequential Continuous Simulation)
 - **Mode**: `mode: 'exam'` (Strict timers, locked hints, locked transcripts, locked dictionary)
@@ -9,32 +9,32 @@
 ---
 
 ## Orchestrated Skill Modules
-- **Listening (40 min)**: [ulis_listening_set1.md](../listening/ulis_listening_set1.md)
-- **Reading (60 min)**: [ulis_reading_set1.md](../reading/ulis_reading_set1.md)
-- **Writing (60 min)**: [ulis_writing_set1.md](../writing/ulis_writing_set1.md)
-- **Speaking (12 min)**: [ulis_speaking_set1.md](../speaking/ulis_speaking_set1.md)
+- **Listening (40 min)**: [vstep_listening_mock_02](../listening/README.md)
+- **Reading (60 min)**: [ulis_reading_set2.md](../reading/ulis_reading_set2.md)
+- **Writing (60 min)**: [writingBank.ts](../../../src/features/writing/data/writingBank.ts)
+- **Speaking (12 min)**: [speakingBank.ts](../../../src/features/speaking/data/speakingBank.ts)
 
 ### Listening Module (40 min / 35 Questions)
-- **Source**: [`docs/sources/listening/ulis_listening_set1.md`](file:///d:/program/vstep/docs/sources/listening/ulis_listening_set1.md)
-- **Runtime Code**: `src/features/listening/data/mockTests/mockTest01.ts` (`vstep-test-1.mp3`)
+- **Source**: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Test 2
+- **Runtime Code**: `src/features/listening/data/mockTests/mockTest02.ts` (`vstep-test-2.mp3`)
 - **Questions**: 35 multiple-choice questions (Part 1: 8, Part 2: 12, Part 3: 15).
 - **Constraints**: Audio plays once continuously; seeking and playback speed toggles disabled.
 
 ### Reading Module (60 min / 40 Questions)
-- **Source**: [`docs/sources/reading/ulis_reading_set1.md`](file:///d:/program/vstep/docs/sources/reading/ulis_reading_set1.md)
-- **Runtime Code**: `src/features/reading/data/mockTests/ulisReadingTest01.ts`
+- **Source**: [`docs/sources/reading/ulis_reading_set2.md`](file:///d:/program/vstep/docs/sources/reading/ulis_reading_set2.md)
+- **Runtime Code**: `src/features/reading/data/mockTests/ulisReadingTest02.ts`
 - **Questions**: 40 multiple-choice questions across 4 passages.
 - **Constraints**: 1-Tap Dictionary tooltip and paraphrase highlight helpers disabled.
 
 ### Writing Module (60 min / 2 Tasks)
-- **Source**: [`docs/sources/writing/ulis_writing_set1.md`](file:///d:/program/vstep/docs/sources/writing/ulis_writing_set1.md)
-- **Runtime Code**: `src/features/writing/data/writingBank.ts`
+- **Source**: Task 1 Letter (Sports Assistant Application) + Task 2 Essay (Educational Video Games in School)
+- **Runtime Code**: `src/features/writing/data/writingBank.ts` (`WRITING_TASK1_BANK[1]`, `WRITING_TASK2_BANK[1]`)
 - **Tasks**: Task 1 (Letter, $\ge 120$ words) + Task 2 (Essay, $\ge 250$ words).
 - **Constraints**: Outline suggestions, template phrase bank, and Vietlish AI assistant disabled during exam timer.
 
 ### Speaking Module (12 min / 3 Parts)
-- **Source**: [`docs/sources/speaking/ulis_speaking_set1.md`](file:///d:/program/vstep/docs/sources/speaking/ulis_speaking_set1.md)
-- **Runtime Code**: `src/features/speaking/data/speakingBank.ts`
+- **Source**: Authentic Exam Session (May 05)
+- **Runtime Code**: `src/features/speaking/data/speakingBank.ts` (`SPEAKING_EXAM_MAY_05`)
 - **Parts**: Part 1 (Social), Part 2 (Solution), Part 3 (Topic).
 - **Constraints**: Strict preparation/recording countdowns with official MOET BEEP chimes.
 

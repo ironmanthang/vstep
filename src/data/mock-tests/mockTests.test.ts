@@ -2,8 +2,8 @@ import { describe, it, expect } from 'vitest';
 import { ALL_MOCK_TESTS } from './index';
 
 describe('VSTEP Full Mock Tests Integrity', () => {
-  it('should export valid ALL_MOCK_TESTS array containing Test 1 and Test 2', () => {
-    expect(ALL_MOCK_TESTS.length).toBeGreaterThanOrEqual(2);
+  it('should export valid ALL_MOCK_TESTS array containing Tests 1 to 3', () => {
+    expect(ALL_MOCK_TESTS.length).toBeGreaterThanOrEqual(3);
   });
 
   it.each(ALL_MOCK_TESTS)('Mock Test $test_number ($id) should satisfy all 4 skill requirements', (test) => {
