@@ -79,22 +79,26 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 
 ### Kiến trúc Unified Writing Runner & Trình soạn thảo
 - [ ] Xây dựng `WritingRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (bật outline/mẫu câu/chấm AI tức thì) và `mode: 'exam'` (khóa gợi ý, auto-save, thu bài khi hết giờ)
-- [ ] Trình soạn thảo 2 task (Task 1: Thư 120 từ / Task 2: Luận 250 từ) kèm bộ đếm từ thời gian thực
+- [ ] Đồng hồ đếm ngược 60 phút hợp nhất chuẩn phòng thi ĐH Văn Lang & Bộ GD&ĐT kèm cảnh báo nhịp độ (Pacing Alert phút 20 nhắc chuyển Task 2 để bảo vệ 67% điểm số)
+- [ ] Trình soạn thảo 2 task (Task 1: Thư 120 từ / Task 2: Luận 250 từ) kèm bộ đếm từ thời gian thực và nút Lưu bài độc lập
 - [ ] Cơ chế Auto-save tự động lưu bản nháp mỗi 5 giây vào LocalStorage
+- [ ] Ngân hàng đề thi Viết thực chiến (`src/features/writing/data/writingBank.ts`): Trích xuất và cấu trúc hóa đề Task 1 & Task 2 từ 7 đề thi ULIS và 5 đề HCMUE
 
 ### Giàn giáo Hỗ trợ & Thư viện Mẫu câu
 - [ ] Outline Generator: Gợi ý dàn ý 3 phần cho Task 1 và 2 hướng lập luận cho Task 2
 - [ ] Thư viện Sentence Starters phân theo mục đích mở bài, chuyển đoạn, kết bài
 - [ ] Kho bài mẫu Annotated 5 màu kèm chế độ so sánh song song Side-by-Side
+- [ ] Iterative Revision Studio: Chu trình học tập Draft 1 (chấm điểm & highlight lỗi) -> Soạn thảo Draft 2 -> Tái đánh giá và hiển thị mức độ tiến bộ (Band Delta)
 
-### Pipeline Chấm Writing 2 Tầng & Vietlish Engine
-- [ ] Tầng 1: Local rule-based pre-filter (<50ms, đếm từ, phát hiện lỗi bề mặt)
-- [ ] Tầng 2: LLM Evaluator (`gemini-3.5-flash-lite`, 500 RPD) chấm 4 tiêu chí MOET theo Strict JSON Schema (xem [writing_pipeline.md](file:///d:/program/vstep/docs/architecture/writing_pipeline.md))
-- [ ] Vietlish Engine nhận diện 3 nhóm lỗi tư duy tiếng Việt (Dịch thô, Thiếu chủ ngữ, Sai collocation)
+### Pipeline Chấm Writing 3 Tầng & Vietlish Engine
+- [ ] Tầng 1 (Client-side): Local rule-based pre-filter & pre-calculation (<50ms, regex đếm từ, n-gram chống chép đề, lọc lỗi liên từ kép *Although... but...*, *Because... so...*)
+- [ ] Tầng 2 (AI Evaluator): Evidence-First LLM Evaluator (`gemini-3.5-flash-lite`, 500 RPD) nhận dữ liệu đếm từ inject sẵn, xuất toàn bộ bằng chứng & phân tích lỗi trước khi kết luận điểm số theo Strict JSON Schema (xem [writing_pipeline.md](file:///d:/program/vstep/docs/architecture/writing_pipeline.md))
+- [ ] Tầng 3 (TypeScript Engine): Deterministic Composite Scoring tính điểm theo công thức Bộ GD&ĐT `(Task 1 + Task 2 * 2) / 3` và quy tắc làm tròn 0.5 chính thức
+- [ ] Vietlish Engine nhận diện 3 nhóm lỗi tư duy tiếng Việt chuẩn ngôn ngữ học (Cú pháp khuyết chủ ngữ giả / liên từ kép, Hình thái thiếu mạo từ / biến tố thời thể, Kết hợp từ dịch thô / sai giới từ)
 - [ ] Giao diện bôi màu nhận xét: Đỏ (Ngữ pháp), Tím (Vietlish), Vàng (Từ vựng), Xanh lá (Khen ngợi)
 - [ ] Sinh bài mẫu viết lại (Revised Essay) nâng band từ ý tưởng gốc của học viên
-- [ ] Unit Test bộ đếm từ và kiểm tra tỷ lệ n-gram sao chép đề bài
-- [ ] Unit Test bộ parser phản hồi AI Strict JSON Schema
+- [ ] Unit Test bộ đếm từ, tỷ lệ n-gram sao chép đề bài và công thức làm tròn 0.5
+- [ ] Unit Test bộ parser phản hồi AI Strict JSON Schema và schema evidence-first ordering
 - [ ] Run audit codebase check sau khi hoàn thành kỹ năng Viết (Writing)
 
 ## SPRINT: LUYỆN NÓI TƯƠNG TÁC (INTERACTIVE SPEAKING STUDIO)
