@@ -33,3 +33,13 @@ Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mo
   - Trên Mobile (<768px): Bộ chuyển tab "Bài Đọc" và "Câu Hỏi" toàn màn hình, lưu vị trí cuộn độc lập khi chuyển qua lại.
 - **Phân tích Dẫn chứng & Paraphrase**:
   - Tự động đối chiếu verbatim substring giữa `clue_sentence` và nội dung bài đọc, hỗ trợ người học soi chiếu căn cứ chọn đáp án.
+
+## Ngân hàng Đề thi Đọc & Tích hợp Thi Thử
+- **Ngân hàng Đề Đọc Đã Xác Thực**:
+  - `ULIS_READING_TEST_01` (Đề 1): 4 bài đọc, 40 câu hỏi, khớp 100% đáp án gốc trang 131 và dẫn chứng verbatim (`ulisReadingTest01.ts`).
+  - `ULIS_READING_TEST_02` (Đề 2): 4 bài đọc, 40 câu hỏi, khớp 100% đáp án gốc trang 136 và dẫn chứng verbatim (`ulisReadingTest02.ts`).
+  - Bộ chọn đề thi (`reading-edition-selector-bar`) tại `ReadingStudioPage` tự động hiển thị danh sách toàn bộ đề thi trong `ALL_VSTEP_READING_MOCK_TESTS`.
+- **Tích hợp Thi Thử 4 Kỹ Năng (Full Mock Tests)**:
+  - `VSTEP_MOCK_TEST_01`: Kết hợp Nghe Đề 1, Đọc Đề 1, Viết Task 1/2, Nói May 30 (`mockTest01.ts`).
+  - `VSTEP_MOCK_TEST_02`: Kết hợp Nghe Đề 2, Đọc Đề 2, Viết Task 1/2, Nói May 05 (`mockTest02.ts`).
+

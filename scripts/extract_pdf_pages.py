@@ -17,12 +17,11 @@ if not api_key:
     sys.exit(1)
 
 MODELS = [
-    'gemini-3.5-flash',
-    'gemini-flash-latest',
+    'gemini-3.8-flash',
     'gemini-3.7-flash',
     'gemini-3.6-flash',
+    'gemini-3.5-flash',
     'gemini-3.5-flash-lite',
-    'gemini-2.5-flash',
 ]
 
 def call_gemini(b64_pdf, prompt):
@@ -49,11 +48,15 @@ def call_gemini(b64_pdf, prompt):
                 with urllib.request.urlopen(req, timeout=45) as resp:
                     data = json.loads(resp.read().decode('utf-8'))
                     text = data['candidates'][0]['content']['parts'][0]['text']
+                    print(f"  [Model: {model}]", flush=True)
                     return text
             except Exception as e:
                 err_str = str(e)
+                if '429' in err_str and ('RESOURCE_EXHAUSTED' in err_str or 'Quota exceeded' in err_str):
+                    print(f"  [QUOTA EXHAUSTED] {model} daily limit. Skipping...", file=sys.stderr, flush=True)
+                    break
                 wait_sec = (attempt + 1) * 3
-                print(f"[RETRY {attempt+1}] {model}: {err_str}. Waiting {wait_sec}s...", file=sys.stderr, flush=True)
+                print(f"  [RETRY {attempt+1}] {model}: {err_str}. Waiting {wait_sec}s...", file=sys.stderr, flush=True)
                 time.sleep(wait_sec)
     raise RuntimeError("All models and retries exhausted.")
 

@@ -8,8 +8,8 @@ description: End-to-end pipeline, scripts, institutional source alignment, schem
 ## Pipeline Overview
 
 - **Goal**: Ingest authentic VSTEP Reading tests (4 passages, 40 questions, 60 minutes) from official institutional source books into verified TypeScript `ReadingTest` modules with 100% character accuracy, verified official answer keys, and verbatim clue sentences.
-- **Stage 1 PDF Extraction**: Run `python scripts/extract_pdf_pages.py <pdf_path> <start_page> <end_page> <out_json>` using Google Gemini Flash model cascade (`gemini-3.5-flash -> gemini-flash-latest -> gemini-3.7-flash -> gemini-3.6-flash -> gemini-2.5-flash`) to extract verbatim text and options directly from scanned TIFF pages without OCR errors.
-- **Stage 2 Structured Assembly**: Run `node scripts/assemble_reading.mjs <raw_pages_json> <out_ts_file>` with official answer keys cross-referenced against the book's back-matter answer key section.
+- **Stage 1 PDF Extraction**: Run `python scripts/extract_pdf_pages.py <pdf_path> <start_page> <end_page> <out_json>` using Google Gemini Flash model cascade (`gemini-3.8-flash -> gemini-3.7-flash -> gemini-3.6-flash -> gemini-3.5-flash -> gemini-3.5-flash-lite`) to extract verbatim text and options directly from scanned TIFF pages without OCR errors.
+- **Stage 2 Structured Assembly**: Run `node scripts/assemble_reading.mjs <raw_pages_json> <out_ts_file> <test_num>` with official answer keys cross-referenced against the book's back-matter answer key section.
 - **Stage 3 Verbatim Clue Verification**: Every question's `clue_sentence` must be validated as an exact, verbatim substring within `content_paragraphs[clue_paragraph_index]`. No ellipses (`...`), approximations, or hallucinations are allowed.
 - **Sentence Insertion Questions**: Questions asking where a sentence best fits (`[A]`, `[B]`, `[C]`, `[D]`) must have `type: 'sentence_insertion'`, enabling the renderer to highlight inline badge markers in the passage text.
 
@@ -26,6 +26,7 @@ src/features/reading/data/
       ...through hcmueReadingTest05.ts
   mockTests/
     ulisReadingTest01.ts
+    ulisReadingTest02.ts
     ...through ulisReadingTest07.ts
     index.ts
   dictionaryVi.ts        (2,000-word local offline dictionary)
@@ -70,8 +71,9 @@ python scripts/extract_pdf_pages.py "scripts/7-Vstep-Tests-B1-B2-C1-Full-Key.pdf
 ### Stage 2: Assembly & Clue Validation (`scripts/assemble_reading.mjs`)
 Structures raw text into typed TypeScript module and verifies exact substrings:
 ```powershell
-node scripts/assemble_reading.mjs "scripts/ulis_reading_test_01_raw.json" "src/features/reading/data/mockTests/ulisReadingTest01.ts"
+node scripts/assemble_reading.mjs "scripts/ulis_reading_test_02_raw.json" "src/features/reading/data/mockTests/ulisReadingTest02.ts" 2
 ```
+
 
 ### Dictionary Extractor (`scripts/build_dictionary.mjs`)
 Extracts ~2,000 flashcard words into offline dictionary:

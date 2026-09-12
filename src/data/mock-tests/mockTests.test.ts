@@ -1,19 +1,16 @@
 import { describe, it, expect } from 'vitest';
-import { ALL_MOCK_TESTS, VSTEP_MOCK_TEST_01 } from './index';
+import { ALL_MOCK_TESTS } from './index';
 
 describe('VSTEP Full Mock Tests Integrity', () => {
-  it('should export valid ALL_MOCK_TESTS array', () => {
-    expect(ALL_MOCK_TESTS.length).toBeGreaterThanOrEqual(1);
+  it('should export valid ALL_MOCK_TESTS array containing Test 1 and Test 2', () => {
+    expect(ALL_MOCK_TESTS.length).toBeGreaterThanOrEqual(2);
   });
 
-  it('VSTEP_MOCK_TEST_01 should satisfy all 4 skill requirements', () => {
-    const test = VSTEP_MOCK_TEST_01;
-    expect(test.id).toBe('vstep_mock_test_01');
+  it.each(ALL_MOCK_TESTS)('Mock Test $test_number ($id) should satisfy all 4 skill requirements', (test) => {
     expect(test.total_duration_minutes).toBe(180);
 
     // Listening (35 questions)
     expect(test.listening.questions.length).toBe(35);
-    expect(test.listening.audio_url).toBe('/audio/listening/test1/vstep-test-1.mp3');
     test.listening.questions.forEach((q) => {
       expect(q.options.length).toBe(4);
       expect(['A', 'B', 'C', 'D']).toContain(q.correct_key);

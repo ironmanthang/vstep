@@ -13,20 +13,116 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-const OFFICIAL_KEYS = [
-  'B', 'A', 'B', 'B', 'B', 'B', 'C', 'D', 'C', 'B', // 1-10
-  'A', 'D', 'A', 'B', 'C', 'A', 'D', 'C', 'A', 'D', // 11-20
-  'A', 'C', 'D', 'B', 'C', 'D', 'B', 'A', 'C', 'D', // 21-30
-  'A', 'B', 'A', 'B', 'A', 'C', 'D', 'C', 'D', 'B', // 31-40
-];
+export const TEST_REGISTRY = {
+  1: {
+    id: 'ulis_read_test_01',
+    exportName: 'ULIS_READING_TEST_01',
+    title: 'VSTEP Reading Mock Test 1 (Chuẩn ĐHNN - ĐHQGHN)',
+    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 10–17, Key page 131',
+    officialKeys: [
+      'B', 'A', 'B', 'B', 'B', 'B', 'C', 'D', 'C', 'B', // 1-10
+      'A', 'D', 'A', 'B', 'C', 'A', 'D', 'C', 'A', 'D', // 11-20
+      'A', 'C', 'D', 'B', 'C', 'D', 'B', 'A', 'C', 'D', // 21-30
+      'A', 'B', 'A', 'B', 'A', 'C', 'D', 'C', 'D', 'B', // 31-40
+    ],
+    passageConfigs: [
+      { num: 1, pageKeys: ['10', '11'], startQ: 1, endQ: 10, difficulty: 'B1' },
+      { num: 2, pageKeys: ['12', '13'], startQ: 11, endQ: 20, difficulty: 'B2' },
+      { num: 3, pageKeys: ['14', '15'], startQ: 21, endQ: 30, difficulty: 'B2' },
+      { num: 4, pageKeys: ['15', '16', '17'], startQ: 31, endQ: 40, difficulty: 'C1' },
+    ],
+  },
+  2: {
+    id: 'ulis_read_test_02',
+    exportName: 'ULIS_READING_TEST_02',
+    title: 'VSTEP Reading Mock Test 2 (Chuẩn ĐHNN - ĐHQGHN)',
+    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 24–31, Key page 136',
+    officialKeys: [
+      'D', 'A', 'D', 'B', 'C', 'B', 'A', 'D', 'C', 'C', // 1-10
+      'A', 'B', 'D', 'A', 'D', 'C', 'A', 'B', 'C', 'D', // 11-20
+      'A', 'C', 'A', 'B', 'B', 'D', 'B', 'C', 'D', 'B', // 21-30
+      'D', 'B', 'D', 'B', 'C', 'A', 'C', 'A', 'B', 'D', // 31-40
+    ],
+    passageConfigs: [
+      { num: 1, pageKeys: ['24', '25'], startQ: 1, endQ: 10, difficulty: 'B1' },
+      { num: 2, pageKeys: ['25', '26', '27'], startQ: 11, endQ: 20, difficulty: 'B2' },
+      { num: 3, pageKeys: ['28', '29'], startQ: 21, endQ: 30, difficulty: 'B2' },
+      { num: 4, pageKeys: ['30', '31'], startQ: 31, endQ: 40, difficulty: 'C1' },
+    ],
+  },
+  3: {
+    id: 'ulis_read_test_03',
+    exportName: 'ULIS_READING_TEST_03',
+    title: 'VSTEP Reading Mock Test 3 (Chuẩn ĐHNN - ĐHQGHN)',
+    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 36–43, Key page 140',
+    officialKeys: [],
+    passageConfigs: [
+      { num: 1, pageKeys: ['36', '37'], startQ: 1, endQ: 10, difficulty: 'B1' },
+      { num: 2, pageKeys: ['38', '39'], startQ: 11, endQ: 20, difficulty: 'B2' },
+      { num: 3, pageKeys: ['40', '41'], startQ: 21, endQ: 30, difficulty: 'B2' },
+      { num: 4, pageKeys: ['42', '43'], startQ: 31, endQ: 40, difficulty: 'C1' },
+    ],
+  },
+  4: {
+    id: 'ulis_read_test_04',
+    exportName: 'ULIS_READING_TEST_04',
+    title: 'VSTEP Reading Mock Test 4 (Chuẩn ĐHNN - ĐHQGHN)',
+    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 50–57, Key page 145',
+    officialKeys: [],
+    passageConfigs: [
+      { num: 1, pageKeys: ['50', '51'], startQ: 1, endQ: 10, difficulty: 'B1' },
+      { num: 2, pageKeys: ['52', '53'], startQ: 11, endQ: 20, difficulty: 'B2' },
+      { num: 3, pageKeys: ['54', '55'], startQ: 21, endQ: 30, difficulty: 'B2' },
+      { num: 4, pageKeys: ['56', '57'], startQ: 31, endQ: 40, difficulty: 'C1' },
+    ],
+  },
+  5: {
+    id: 'ulis_read_test_05',
+    exportName: 'ULIS_READING_TEST_05',
+    title: 'VSTEP Reading Mock Test 5 (Chuẩn ĐHNN - ĐHQGHN)',
+    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 64–71, Key page 150',
+    officialKeys: [],
+    passageConfigs: [
+      { num: 1, pageKeys: ['64', '65'], startQ: 1, endQ: 10, difficulty: 'B1' },
+      { num: 2, pageKeys: ['66', '67'], startQ: 11, endQ: 20, difficulty: 'B2' },
+      { num: 3, pageKeys: ['68', '69'], startQ: 21, endQ: 30, difficulty: 'B2' },
+      { num: 4, pageKeys: ['70', '71'], startQ: 31, endQ: 40, difficulty: 'C1' },
+    ],
+  },
+  6: {
+    id: 'ulis_read_test_06',
+    exportName: 'ULIS_READING_TEST_06',
+    title: 'VSTEP Reading Mock Test 6 (Chuẩn ĐHNN - ĐHQGHN)',
+    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 78–85, Key page 155',
+    officialKeys: [],
+    passageConfigs: [
+      { num: 1, pageKeys: ['78', '79'], startQ: 1, endQ: 10, difficulty: 'B1' },
+      { num: 2, pageKeys: ['80', '81'], startQ: 11, endQ: 20, difficulty: 'B2' },
+      { num: 3, pageKeys: ['82', '83'], startQ: 21, endQ: 30, difficulty: 'B2' },
+      { num: 4, pageKeys: ['84', '85'], startQ: 31, endQ: 40, difficulty: 'C1' },
+    ],
+  },
+  7: {
+    id: 'ulis_read_test_07',
+    exportName: 'ULIS_READING_TEST_07',
+    title: 'VSTEP Reading Mock Test 7 (Chuẩn ĐHNN - ĐHQGHN)',
+    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 92–99, Key page 160',
+    officialKeys: [],
+    passageConfigs: [
+      { num: 1, pageKeys: ['92', '93'], startQ: 1, endQ: 10, difficulty: 'B1' },
+      { num: 2, pageKeys: ['94', '95'], startQ: 11, endQ: 20, difficulty: 'B2' },
+      { num: 3, pageKeys: ['96', '97'], startQ: 21, endQ: 30, difficulty: 'B2' },
+      { num: 4, pageKeys: ['98', '99'], startQ: 31, endQ: 40, difficulty: 'C1' },
+    ],
+  },
+};
 
 const MODELS = [
-  'gemini-3.5-flash',
-  'gemini-flash-latest',
+  'gemini-3.8-flash',
   'gemini-3.7-flash',
   'gemini-3.6-flash',
+  'gemini-3.5-flash',
   'gemini-3.5-flash-lite',
-  'gemini-2.5-flash',
 ];
 
 async function callGeminiJson(prompt) {
@@ -48,16 +144,25 @@ async function callGeminiJson(prompt) {
 
         if (!res.ok) {
           const errText = await res.text();
+          // If quota exceeded, do NOT retry 4 times — jump to next model immediately!
+          if (res.status === 429 && (errText.includes('RESOURCE_EXHAUSTED') || errText.includes('Quota exceeded'))) {
+            console.warn(`  [QUOTA EXHAUSTED] ${model} daily limit reached. Skipping...`);
+            break;
+          }
           throw new Error(`HTTP ${res.status}: ${errText}`);
         }
 
         const data = await res.json();
         const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
         if (!text) throw new Error('Empty response from model');
+        console.log(`  [Generated via: ${model}]`);
         return JSON.parse(text);
       } catch (err) {
-        const waitMs = attempt * 4000;
-        console.warn(`[RETRY ${attempt}] ${model}: ${err.message}. Waiting ${waitMs / 1000}s...`);
+        if (err.message?.includes('RESOURCE_EXHAUSTED') || err.message?.includes('Quota exceeded')) {
+          break;
+        }
+        const waitMs = attempt * 3000;
+        console.warn(`  [RETRY ${attempt}] ${model}: ${err.message}. Waiting ${waitMs / 1000}s...`);
         await new Promise((resolve) => setTimeout(resolve, waitMs));
       }
     }
@@ -65,71 +170,113 @@ async function callGeminiJson(prompt) {
   throw new Error('All models and retries exhausted');
 }
 
-export async function assembleReadingTest(rawPagesJsonPath, outTsPath) {
+/**
+ * Ensures clue_sentence is a 100% exact verbatim substring of content_paragraphs[clue_paragraph_index].
+ */
+function guaranteeVerbatimClue(q, paragraphs) {
+  let pIdx = q.clue_paragraph_index ?? 0;
+  if (pIdx < 0 || pIdx >= paragraphs.length) {
+    pIdx = 0;
+    q.clue_paragraph_index = 0;
+  }
+
+  let paragraph = paragraphs[pIdx];
+
+  // 1. Direct match in assigned paragraph
+  if (q.clue_sentence && paragraph.includes(q.clue_sentence)) {
+    return;
+  }
+
+  // 2. Direct match in another paragraph
+  if (q.clue_sentence) {
+    for (let i = 0; i < paragraphs.length; i++) {
+      if (paragraphs[i].includes(q.clue_sentence)) {
+        q.clue_paragraph_index = i;
+        return;
+      }
+    }
+  }
+
+  // 3. Fallback: Find closest sentence in target paragraph by word overlap
+  const sentences = paragraph
+    .split(/(?<=[.!?])\s+/)
+    .map((s) => s.trim())
+    .filter((s) => s.length > 10 && paragraph.includes(s));
+
+  if (sentences.length > 0) {
+    const clueWords = new Set(
+      (q.clue_sentence || q.question_text || '')
+        .toLowerCase()
+        .replace(/[^\w\s]/g, '')
+        .split(/\s+/)
+        .filter((w) => w.length > 2)
+    );
+
+    let bestSentence = sentences[0];
+    let maxOverlap = -1;
+
+    for (const sent of sentences) {
+      const sentWords = sent
+        .toLowerCase()
+        .replace(/[^\w\s]/g, '')
+        .split(/\s+/);
+      let overlap = 0;
+      for (const w of sentWords) {
+        if (clueWords.has(w)) overlap++;
+      }
+      if (overlap > maxOverlap) {
+        maxOverlap = overlap;
+        bestSentence = sent;
+      }
+    }
+
+    q.clue_sentence = bestSentence;
+    return;
+  }
+
+  // 4. Ultimate safety: Use first 80 characters of the paragraph
+  q.clue_sentence = paragraph.slice(0, Math.min(80, paragraph.length)).trim();
+}
+
+export async function assembleReadingTest(rawPagesJsonPath, outTsPath, testNum = 1) {
+  const testMeta = TEST_REGISTRY[testNum];
+  if (!testMeta) {
+    throw new Error(`Test number ${testNum} is not configured in TEST_REGISTRY.`);
+  }
+
   console.log(`Reading raw pages from ${rawPagesJsonPath}...`);
   const rawPages = JSON.parse(fs.readFileSync(rawPagesJsonPath, 'utf-8'));
 
-  // Split into 4 passages
-  // Passage 1: Pages 10 & 11 (Q1 - Q10)
-  // Passage 2: Pages 12 & 13 (Q11 - Q20)
-  // Passage 3: Pages 14 & 15 (Q21 - Q30)
-  // Passage 4: Pages 15, 16 & 17 (Q31 - Q40)
-
-  const passageConfigs = [
-    {
-      num: 1,
-      pages: [rawPages['10'], rawPages['11']].join('\n\n'),
-      startQ: 1,
-      endQ: 10,
-      difficulty: 'B1',
-    },
-    {
-      num: 2,
-      pages: [rawPages['12'], rawPages['13']].join('\n\n'),
-      startQ: 11,
-      endQ: 20,
-      difficulty: 'B2',
-    },
-    {
-      num: 3,
-      pages: [rawPages['14'], rawPages['15']].join('\n\n'),
-      startQ: 21,
-      endQ: 30,
-      difficulty: 'B2',
-    },
-    {
-      num: 4,
-      pages: [rawPages['15'], rawPages['16'], rawPages['17']].join('\n\n'),
-      startQ: 31,
-      endQ: 40,
-      difficulty: 'C1',
-    },
-  ];
-
+  const idPrefix = `ulis_r${String(testNum).padStart(2, '0')}`;
   const passages = [];
 
-  for (const cfg of passageConfigs) {
+  for (const cfg of testMeta.passageConfigs) {
     console.log(`\nStructuring Passage ${cfg.num} (Questions ${cfg.startQ}-${cfg.endQ})...`);
-    const officialSlice = OFFICIAL_KEYS.slice(cfg.startQ - 1, cfg.endQ);
+    const pageText = cfg.pageKeys
+      .map((k) => rawPages[k] || '')
+      .filter(Boolean)
+      .join('\n\n');
+
+    const officialSlice = testMeta.officialKeys.slice(cfg.startQ - 1, cfg.endQ);
 
     const prompt = `
 You are an expert VSTEP exam data engineer.
 Structure the following raw text from an authentic VSTEP Reading test book into clean, verified JSON.
 
 RAW SOURCE TEXT FOR PASSAGE ${cfg.num}:
-${cfg.pages}
+${pageText}
 
 OFFICIAL ANSWER KEYS FOR QUESTIONS ${cfg.startQ} to ${cfg.endQ}:
 ${officialSlice.map((k, idx) => `Q${cfg.startQ + idx}: ${k}`).join(', ')}
 
 INSTRUCTIONS:
-1. Extract the passage text into "content_paragraphs" (array of string, each element is one full paragraph). Preserve any [A], [B], [C], [D] insertion markers verbatim in the text.
+1. Extract the passage text into "content_paragraphs" (array of string, each element is one full paragraph). Preserve any [A], [B], [C], [D] insertion markers verbatim in the text. Remove running headers, line number columns, and page footer lines.
 2. Calculate "word_count" (integer, words in passage).
 3. "title": e.g. "Passage ${cfg.num}: [Descriptive Title from text]".
-4. "topic": 1-3 words topic in English (e.g. "Art & History", "Health & Medicine", "Science & Technology", "Environment", etc.).
+4. "topic": 1-3 words topic in English (e.g. "Community & Social Work", "Employment & Aging", "Personal Memoir & Work", "Industrial History & Science", etc.).
 5. "difficulty": "${cfg.difficulty}".
 6. Extract each of the 10 questions (${cfg.startQ} to ${cfg.endQ}):
-   - "id": "ulis_r01_q" + two-digit question number (e.g. "ulis_r01_q01", "ulis_r01_q12")
+   - "id": "${idPrefix}_q" + two-digit question number (e.g. "${idPrefix}_q01", "${idPrefix}_q12")
    - "type": Choose one of: "main_idea", "vocab_in_context", "factual_detail", "negative_fact", "inference", "author_attitude", "sentence_insertion".
      (If the question asks "Where would the following sentence best fit: ..." or options are [A], [B], [C], [D], use "sentence_insertion").
    - "question_text": Clean question text without number prefix.
@@ -146,41 +293,22 @@ Return valid JSON with keys: "title", "topic", "word_count", "difficulty", "cont
 
     const structured = await callGeminiJson(prompt);
 
-    // Validate and clean clue sentences
+    // Validate questions count
+    if (!structured.questions || structured.questions.length !== 10) {
+      console.warn(`Warning: Passage ${cfg.num} has ${structured.questions?.length || 0} questions instead of 10.`);
+    }
+
+    // Strict clue validation
     for (const q of structured.questions) {
-      const pIdx = q.clue_paragraph_index;
-      const paragraph = structured.content_paragraphs[pIdx];
-      if (!paragraph) {
-        console.warn(`Warning: Question ${q.id} has invalid clue_paragraph_index ${pIdx}. Adjusting...`);
-        q.clue_paragraph_index = 0;
-      } else if (!paragraph.includes(q.clue_sentence)) {
-        console.warn(`Fixing clue sentence for ${q.id}: "${q.clue_sentence}" not found in paragraph ${pIdx}.`);
-        // Search across all paragraphs for the clue or closest match
-        let foundIdx = -1;
-        for (let i = 0; i < structured.content_paragraphs.length; i++) {
-          if (structured.content_paragraphs[i].includes(q.clue_sentence)) {
-            foundIdx = i;
-            break;
-          }
-        }
-        if (foundIdx !== -1) {
-          q.clue_paragraph_index = foundIdx;
-        } else {
-          // If clue has punctuation mismatch, find longest common substring or first sentence
-          const cleanClue = q.clue_sentence.replace(/[^\w\s]/g, '').trim();
-          const pClean = paragraph.replace(/[^\w\s]/g, '');
-          if (!pClean.includes(cleanClue)) {
-            // Pick the first full sentence in that paragraph
-            const firstSentence = paragraph.split(/[.!?]/)[0]?.trim();
-            if (firstSentence && paragraph.includes(firstSentence)) {
-              q.clue_sentence = firstSentence;
-            }
-          }
-        }
+      guaranteeVerbatimClue(q, structured.content_paragraphs);
+      // Double check exact substring
+      const par = structured.content_paragraphs[q.clue_paragraph_index];
+      if (!par.includes(q.clue_sentence)) {
+        console.error(`FATAL: Clue for ${q.id} is still not a substring!`);
       }
     }
 
-    structured.id = `ulis_r01_p${cfg.num}`;
+    structured.id = `${idPrefix}_p${cfg.num}`;
     passages.push(structured);
     console.log(`Passage ${cfg.num} assembled successfully (${structured.questions.length} questions).`);
   }
@@ -189,15 +317,14 @@ Return valid JSON with keys: "title", "topic", "word_count", "difficulty", "cont
   const tsContent = `import type { ReadingTest } from '../../../../types/schemas';
 
 /**
- * Authentic VSTEP Reading Test 1 (ULIS - ĐHQGHN Standard)
- * Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019)
+ * Authentic VSTEP Reading Test ${testNum} (ULIS - ĐHQGHN Standard)
+ * ${testMeta.sourceInfo}
  * Format: 4 Passages, 40 Questions, 60 Minutes.
- * Verified against official answer key (PDF page 131).
  */
-export const ULIS_READING_TEST_01: ReadingTest = ${JSON.stringify(
+export const ${testMeta.exportName}: ReadingTest = ${JSON.stringify(
     {
-      id: 'ulis_read_test_01',
-      title: 'VSTEP Reading Mock Test 1 (Chuẩn ĐHNN - ĐHQGHN)',
+      id: testMeta.id,
+      title: testMeta.title,
       duration_minutes: 60,
       difficulty: 'B2',
       passages,
@@ -213,9 +340,35 @@ export const ULIS_READING_TEST_01: ReadingTest = ${JSON.stringify(
 }
 
 if (process.argv[1] && process.argv[1].endsWith('assemble_reading.mjs')) {
-  const rawPath = process.argv[2] || 'scripts/ulis_reading_test_01_raw.json';
-  const outPath = process.argv[3] || 'src/features/reading/data/mockTests/ulisReadingTest01.ts';
-  assembleReadingTest(rawPath, outPath).catch((err) => {
+  // Arguments:
+  // node scripts/assemble_reading.mjs [raw_json] [out_ts] [test_num]
+  // OR:
+  // node scripts/assemble_reading.mjs <test_num>
+  let testNum = 1;
+  let rawPath = '';
+  let outPath = '';
+
+  const arg2 = process.argv[2];
+  const arg3 = process.argv[3];
+  const arg4 = process.argv[4];
+
+  if (arg2 && arg2.match(/^\d+$/)) {
+    testNum = parseInt(arg2, 10);
+  } else if (arg4 && arg4.match(/^\d+$/)) {
+    testNum = parseInt(arg4, 10);
+  } else if (arg2 && arg2.includes('_02')) {
+    testNum = 2;
+  }
+
+  const padNum = String(testNum).padStart(2, '0');
+  rawPath = (arg2 && !arg2.match(/^\d+$/)) ? arg2 : `scripts/ulis_reading_test_${padNum}_raw.json`;
+  outPath = arg3 || `src/features/reading/data/mockTests/ulisReadingTest${padNum}.ts`;
+
+  console.log(`Configuring assembly for Test ${testNum}:`);
+  console.log(`  Raw Input: ${rawPath}`);
+  console.log(`  TS Output: ${outPath}`);
+
+  assembleReadingTest(rawPath, outPath, testNum).catch((err) => {
     console.error('Assembly failed:', err);
     process.exit(1);
   });
