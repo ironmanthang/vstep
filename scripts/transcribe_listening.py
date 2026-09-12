@@ -35,7 +35,7 @@ def load_env_file(env_path=".env"):
             key, val = line.split("=", 1)
             key = key.strip()
             val = val.strip().strip("'\"")
-            if key and key not in os.environ:
+            if key:
                 os.environ[key] = val
 
 def transcribe_groq(audio_path, api_key):

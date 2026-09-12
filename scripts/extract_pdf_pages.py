@@ -9,7 +9,7 @@ import pypdf
 from dotenv import load_dotenv
 
 sys.stdout.reconfigure(encoding='utf-8')
-load_dotenv()
+load_dotenv(override=True)
 
 api_key = os.getenv('GOOGLE_API_KEY') or os.getenv('VITE_GEMINI_API_KEY')
 if not api_key:

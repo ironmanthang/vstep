@@ -9,7 +9,7 @@ import time
 from dotenv import load_dotenv
 
 sys.stdout.reconfigure(encoding='utf-8')
-load_dotenv()
+load_dotenv(override=True)
 api_key = os.getenv('GOOGLE_API_KEY') or os.getenv('VITE_GEMINI_API_KEY')
 
 reader = pypdf.PdfReader('scripts/7-Vstep-Tests-B1-B2-C1-Full-Key.pdf')
