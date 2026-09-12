@@ -86,13 +86,18 @@ export const TEST_REGISTRY = {
     id: 'ulis_read_test_05',
     exportName: 'ULIS_READING_TEST_05',
     title: 'VSTEP Reading Mock Test 5 (Chuẩn ĐHNN - ĐHQGHN)',
-    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 64–71, Key page 150',
-    officialKeys: [],
+    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 62–68, Key page 149',
+    officialKeys: [
+      'B', 'C', 'A', 'C', 'B', 'D', 'A', 'C', 'C', 'B', // 1-10
+      'C', 'C', 'C', 'B', 'C', 'C', 'B', 'C', 'D', 'A', // 11-20
+      'D', 'C', 'B', 'B', 'A', 'D', 'C', 'A', 'B', 'D', // 21-30
+      'B', 'C', 'B', 'B', 'C', 'A', 'D', 'A', 'D', 'B', // 31-40
+    ],
     passageConfigs: [
-      { num: 1, pageKeys: ['64', '65'], startQ: 1, endQ: 10, difficulty: 'B1' },
-      { num: 2, pageKeys: ['66', '67'], startQ: 11, endQ: 20, difficulty: 'B2' },
-      { num: 3, pageKeys: ['68', '69'], startQ: 21, endQ: 30, difficulty: 'B2' },
-      { num: 4, pageKeys: ['70', '71'], startQ: 31, endQ: 40, difficulty: 'C1' },
+      { num: 1, pageKeys: ['62', '63'], startQ: 1, endQ: 10, difficulty: 'B1' },
+      { num: 2, pageKeys: ['63', '64', '65'], startQ: 11, endQ: 20, difficulty: 'B2' },
+      { num: 3, pageKeys: ['65', '66'], startQ: 21, endQ: 30, difficulty: 'B2' },
+      { num: 4, pageKeys: ['66', '67', '68'], startQ: 31, endQ: 40, difficulty: 'C1' },
     ],
   },
   6: {
@@ -282,6 +287,16 @@ export async function assembleReadingTest(rawPagesJsonPath, outTsPath, testNum =
         pageText = rawPages['53'].slice(rawPages['53'].indexOf('PASSAGE 3')) + '\n\n' + rawPages['54'].slice(0, rawPages['54'].indexOf('PASSAGE 4'));
       } else if (cfg.num === 4) {
         pageText = rawPages['54'].slice(rawPages['54'].indexOf('PASSAGE 4')) + '\n\n' + rawPages['55'];
+      }
+    } else if (testNum === 5) {
+      if (cfg.num === 1) {
+        pageText = rawPages['62'] + '\n\n' + rawPages['63'].slice(0, rawPages['63'].indexOf('PASSAGE 2'));
+      } else if (cfg.num === 2) {
+        pageText = rawPages['63'].slice(rawPages['63'].indexOf('PASSAGE 2')) + '\n\n' + rawPages['64'] + '\n\n' + rawPages['65'].slice(0, rawPages['65'].indexOf('PASSAGE 3'));
+      } else if (cfg.num === 3) {
+        pageText = rawPages['65'].slice(rawPages['65'].indexOf('PASSAGE 3')) + '\n\n' + rawPages['66'].slice(0, rawPages['66'].indexOf('PASSAGE 4'));
+      } else if (cfg.num === 4) {
+        pageText = rawPages['66'].slice(rawPages['66'].indexOf('PASSAGE 4')) + '\n\n' + rawPages['67'] + '\n\n' + rawPages['68'];
       }
     } else {
       pageText = cfg.pageKeys

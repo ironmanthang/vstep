@@ -52,8 +52,8 @@ def call_gemini(b64_pdf, prompt):
                     return text
             except Exception as e:
                 err_str = str(e)
-                if '429' in err_str and ('RESOURCE_EXHAUSTED' in err_str or 'Quota exceeded' in err_str):
-                    print(f"  [QUOTA EXHAUSTED] {model} daily limit. Skipping...", file=sys.stderr, flush=True)
+                if '429' in err_str:
+                    print(f"  [RATE LIMIT / QUOTA 429] {model}. Skipping to next model...", file=sys.stderr, flush=True)
                     break
                 wait_sec = (attempt + 1) * 3
                 print(f"  [RETRY {attempt+1}] {model}: {err_str}. Waiting {wait_sec}s...", file=sys.stderr, flush=True)
