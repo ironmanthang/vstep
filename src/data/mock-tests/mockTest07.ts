@@ -1,7 +1,7 @@
 import type { MockTest } from '../../types/schemas';
 import { VSTEP_LISTENING_MOCK_TEST_07 } from '../../features/listening/data';
 import { ULIS_READING_TEST_07 } from '../../features/reading/data';
-import { WRITING_TASK1_BANK, WRITING_TASK2_BANK } from '../../features/writing/data';
+import { ULIS_WRITING_TEST_07_TASK1, ULIS_WRITING_TEST_07_TASK2 } from '../../features/writing/data';
 import { SPEAKING_EXAM_MAY_24 } from '../../features/speaking/data';
 
 export const VSTEP_MOCK_TEST_07: MockTest = {
@@ -13,8 +13,8 @@ export const VSTEP_MOCK_TEST_07: MockTest = {
   listening: VSTEP_LISTENING_MOCK_TEST_07,
   reading: ULIS_READING_TEST_07,
   writing: {
-    task1: WRITING_TASK1_BANK[0],
-    task2: WRITING_TASK2_BANK[1],
+    task1: ULIS_WRITING_TEST_07_TASK1,
+    task2: ULIS_WRITING_TEST_07_TASK2,
   },
   speaking: SPEAKING_EXAM_MAY_24,
 };

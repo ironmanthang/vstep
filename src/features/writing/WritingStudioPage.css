@@ -1,0 +1,84 @@
+/* Writing Studio Page Styles */
+
+.writing-studio-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.writing-studio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+}
+
+.writing-studio-mode-toggle {
+  display: flex;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+}
+
+.writing-mode-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary, #a8a29e);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.writing-mode-btn.active {
+  background: #f59e0b;
+  color: #000;
+}
+
+.writing-edition-selector-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 4px 0;
+}
+
+.writing-edition-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text-secondary, #a8a29e);
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+
+.writing-edition-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: var(--bg-surface, #181512);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  color: var(--text-secondary, #a8a29e);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.writing-edition-btn:hover {
+  border-color: rgba(245, 158, 11, 0.4);
+  color: var(--text-primary, #f5f0eb);
+}
+
+.writing-edition-btn.active {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: #f59e0b;
+  color: #fbbf24;
+}

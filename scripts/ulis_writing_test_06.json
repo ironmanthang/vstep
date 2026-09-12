@@ -1,0 +1,31 @@
+{
+  "test_number": 6,
+  "task1": {
+    "id": "ulis_writing_test_06_t1",
+    "task_type": "task1_letter",
+    "title": "Training Course Request Letter",
+    "time_allowed_minutes": 20,
+    "min_words": 120,
+    "prompt_text": "TASK 1\nYou should spend about 20 minutes on this task.\n\nWrite a letter to your manager asking for a training course, which you would like to attend. In your letter explain\n• What the course is\n• Why it is required for your job\n• How you will manage work while the course\n\nYou should write at least 120 words. Your response will be evaluated in terms of Task fulfillment, Organization, Vocabulary and Grammar.",
+    "context_info": "Formal Letter",
+    "sample_response": {
+      "band": "B1",
+      "text": "Dear Mr. John,\n\nI am the receptionist, James Smith, who is working under your supervision. I am writing this letter regarding my requirement of a training course to learn the 'French' language for the improvement in job performance. I am going to tell you about my necessity for the knowledge of this non-native language.\n\nFrom the last two months, the number of customers from the 'Quebec', which is the provenience of Canada, and 'France', are gradually increasing day by day in our restaurant. Also, they do not have good skills in the English language and my level of this foreign language is not appropriate for better communication with them. So, I need to brush up my expertise in this overseas way of communication. Thus, this is the reason the tuition is required for me in this subject.\n\nFinally, I would like to join the classes at the weekend because it will not put any kind of impact on my work and the duties will be performed with the same efficiency as now. Therefore, I would be greatly appreciated if you could arrange this education at end of the week. Moreover, there are many tutors available in the market for this curriculum.\n\nI am looking forward to hearing from you.",
+      "analysis_vi": "Bài viết đạt mức B1 vì hoàn thành đầy đủ các yêu cầu của đề bài (giới thiệu khóa học, lý do cần thiết và cách quản lý công việc), cấu trúc câu mạch lạc nhưng đôi khi còn dùng từ chưa tự nhiên hoặc mắc lỗi ngữ pháp nhỏ."
+    }
+  },
+  "task2": {
+    "id": "ulis_writing_test_06_t2",
+    "task_type": "task2_essay",
+    "title": "Impact of Computer Games on Children",
+    "time_allowed_minutes": 40,
+    "min_words": 250,
+    "prompt_text": "TASK 2\nYou should spend about 40 minutes on this task\n\nWrite about the following topic:\n\nNowadays many people have access to computers on a wide basis and a large number of children play computer games. What are the positive and negative impacts of playing computer games and what can be done to minimize the bad effects?\n\nGive reasons for your answer and include any relevant examples from your own experience or knowledge. Your response will be evaluated in terms of Task fulfillment, Organization, Vocabulary and Grammar.",
+    "context_info": "Discussion and Solution Essay",
+    "sample_response": {
+      "band": "B1",
+      "text": "It is the fact that more and more children play computer games. There are both good and bad things of playing games.\n\nOn the one hand, when playing computer games, children can learn a lot of things. They learn computer skills and English. Their hands and eyes become quicker.\n\nOn the other hand, however, playing games too much is not good for children's health. Because they have to sit and look at the screen for long hours, their eyes and back will hurt. Some children do not even eat anything when they play games because they do not want to stop.\n\nTo minimize the bad effects, parents should advise their children what games they can play and how long they should play.\n\nTo sum up, playing computer games has both good and bad effects. However, we can limit the bad effects if we want.",
+      "analysis_vi": "Bài viết đạt mức B1 nhờ bố cục rõ ràng với các đoạn mở bài, thân bài (mặt lợi/hại), giải pháp và kết bài. Từ vựng và ngữ pháp tương đối đơn giản nhưng chính xác, đáp ứng yêu cầu của đề bài."
+    }
+  }
+}

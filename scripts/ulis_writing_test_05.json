@@ -1,0 +1,31 @@
+{
+  "test_number": 5,
+  "task1": {
+    "id": "ulis_writing_test_05_t1",
+    "task_type": "task1_letter",
+    "title": "Invitation to a Friend",
+    "time_allowed_minutes": 20,
+    "min_words": 120,
+    "prompt_text": "TASK 1\nYou should spend about 20 minutes on this task.\nYou recently received an email from your English-speaking friend, Pat, he said that he is going to have a holiday.\nWrite a letter to Pat, and invite him to your city and stay with you during his holiday\nYou should write at least 120 words. Your response will be evaluated in terms of Task fulfillment, Organization, Vocabulary and Grammar.",
+    "context_info": "Email to a Friend",
+    "sample_response": {
+      "band": "B1",
+      "text": "Dear Pat,\n\nI hope you are well. Are you looking forward to the summer holiday? Thank you for your previous letter, it's always great to hear the news from back home.\n\nI'm writing to you because I want to invite you to come to my city during the holiday season. We could visit the art and history museums or spend days at the park or wander around the shopping center if the weather is bad. My friends would love to spend more time with you too, we could hang out with them in that cafe you like or go on a day trip to the beach. What do you think?\n\nI think it would be amazing to spend a couple of weeks with you here in the city! We would have so much fun! I know how much you love the city and it wouldn’t be expensive as you can stay with me in the apartment.\n\nLet me know what you think. If you decide to come, we can start planning what we will do while you're here.\n\nI'm looking forward to hearing from you and hopefully I'll see you soon!\nKind regards,",
+      "analysis_vi": "Bài viết đạt chuẩn B1 nhờ sử dụng từ vựng phong phú, cấu trúc câu đa dạng (như câu điều kiện và câu phức) và hoàn thành tốt yêu cầu mời bạn bè đến thăm thành phố."
+    }
+  },
+  "task2": {
+    "id": "ulis_writing_test_05_t2",
+    "task_type": "task2_essay",
+    "title": "Smoking Ban in Public Places",
+    "time_allowed_minutes": 40,
+    "min_words": 250,
+    "prompt_text": "TASK 2\nYou should spend about 40 minutes on this task\nWrite about the following topic:\nSmoking not only harms the smoker, but also those who are nearby. Therefore, smoking should be banned in public places. To what extent, do you agree or disagree?\nGive reasons for your answer and include any relevant examples from your own experience or knowledge. Your response will be evaluated in terms of Task fulfillment, Organization, Vocabulary and Grammar.",
+    "context_info": "Opinion Essay",
+    "sample_response": {
+      "band": "B1",
+      "text": "We cannot deny that smoking is not good for our health. Some people say that smoking should be banned in public places. I strongly agree with this idea.\n\nFirstly, smoking is the main cause of many diseases. Every year, thousands of people die because they smoke. People can get lung cancer or other diseases. Smoking can affect both smokers and non-smokers.\n\nSecondly, people spend too much money on smoking because cigarette is expensive.\n\nFinally, smoking can make the air dirty. Smokers give out dirty and smelly smoke into the air.\n\nTo sum up, we should ban smoking in public places.",
+      "analysis_vi": "Bài viết sử dụng từ vựng đơn giản, cấu trúc câu rõ ràng với các từ nối cơ bản (Firstly, Secondly, Finally, To sum up) và bày tỏ quan điểm cá nhân trực tiếp, phù hợp với trình độ B1."
+    }
+  }
+}

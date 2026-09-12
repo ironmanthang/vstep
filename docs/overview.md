@@ -42,7 +42,7 @@ Dự án là nền tảng web học tiếng Anh và luyện thi VSTEP thế hệ
 ### Kiến trúc Kỹ thuật (`docs/architecture/`)
 - [overview.md](file:///d:/program/vstep/docs/architecture/overview.md): Tổng quan kiến trúc hệ thống, danh mục công nghệ và ranh giới xử lý.
 - [ai_gateway.md](file:///d:/program/vstep/docs/architecture/ai_gateway.md): AI Master Gateway, cơ chế Key Pool rotation, health check và fallback.
-- [writing_pipeline.md](file:///d:/program/vstep/docs/architecture/writing_pipeline.md): Pipeline chấm Writing 2 tầng, System prompt và Vietlish AI guardrails.
+- [writing_pipeline.md](file:///d:/program/vstep/docs/architecture/writing_pipeline.md): Pipeline chấm Writing 3 tầng, chuẩn hóa mốc B1 và Vietlish AI guardrails.
 - [speaking_pipeline.md](file:///d:/program/vstep/docs/architecture/speaking_pipeline.md): Pipeline chấm Speaking qua Gemini 3.5 Flash Lite Native Audio và Web Audio acoustic metrics.
 
 ### Đặc tả Tính năng (`docs/features/`)

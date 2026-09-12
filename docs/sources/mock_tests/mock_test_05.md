@@ -11,7 +11,7 @@
 ## Orchestrated Skill Modules
 - **Listening (40 min)**: [vstep_listening_mock_05](../listening/README.md)
 - **Reading (60 min)**: [ulis_reading_set5.md](../reading/ulis_reading_set5.md)
-- **Writing (60 min)**: [writingBank.ts](../../../src/features/writing/data/writingBank.ts)
+- **Writing (60 min)**: [ulis_writing_tests.md](../writing/ulis_writing_tests.md#test-05)
 - **Speaking (12 min)**: [speakingBank.ts](../../../src/features/speaking/data/speakingBank.ts)
 
 ### Listening Module (40 min / 35 Questions)
@@ -27,9 +27,9 @@
 - **Constraints**: 1-Tap Dictionary tooltip and paraphrase highlight helpers disabled.
 
 ### Writing Module (60 min / 2 Tasks)
-- **Source**: Task 1 Letter (Course Evaluation & Center Manager Feedback) + Task 2 Essay (Educational Video Games in School Curricula)
-- **Runtime Code**: `src/features/writing/data/writingBank.ts` (`WRITING_TASK1_BANK[0]`, `WRITING_TASK2_BANK[1]`)
-- **Tasks**: Task 1 (Letter, $\ge 120$ words) + Task 2 (Essay, $\ge 250$ words).
+- **Source**: [`docs/sources/writing/ulis_writing_tests.md#test-05`](file:///d:/program/vstep/docs/sources/writing/ulis_writing_tests.md)
+- **Runtime Code**: `src/features/writing/data/mockTests/ulisWritingTest05.ts` (`ULIS_WRITING_TEST_05_TASK1`, `ULIS_WRITING_TEST_05_TASK2`)
+- **Tasks**: Task 1 (Letter: Event invitation to friend, $\ge 120$ words) + Task 2 (Essay: Public smoking ban, $\ge 250$ words).
 - **Constraints**: Outline suggestions, template phrase bank, and Vietlish AI assistant disabled during exam timer.
 
 ### Speaking Module (12 min / 3 Parts)

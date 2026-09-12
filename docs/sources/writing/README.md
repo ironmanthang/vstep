@@ -8,5 +8,6 @@ Stores authenticated source citations, original prompt cards, word count limits,
 | Set ID | Institution / Publisher | Exam Session / Publication | Document |
 | :--- | :--- | :--- | :--- |
 | `ulis_writing_set1` | Trường ĐH Ngoại ngữ – ĐHQGHN (ULIS) | Đề thi mẫu Định dạng Đánh giá Năng lực Ngoại ngữ VSTEP B1–B2–C1 | [ulis_writing_set1.md](file:///d:/program/vstep/docs/sources/writing/ulis_writing_set1.md) |
+| `ulis_writing_tests_01_07` | Trường ĐH Ngoại ngữ – ĐHQGHN (ULIS) | "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019) Đề 01–07 | [ulis_writing_tests.md](file:///d:/program/vstep/docs/sources/writing/ulis_writing_tests.md) |
 | `vstep_writing_bank` | MOET VSTEP Authentic Exam Archive | Ngân hàng Đề Viết Thực chiến (Task 1 Thư & Task 2 Bài luận) | [vstep_writing_bank.md](file:///d:/program/vstep/docs/sources/writing/vstep_writing_bank.md) |
 

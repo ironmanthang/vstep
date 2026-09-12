@@ -1,0 +1,326 @@
+/* Writing Runner Styles - Authentic VLU Computer Exam Simulation */
+
+.writing-runner {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  min-height: 600px;
+  gap: 12px;
+  color: var(--text-primary, #f5f0eb);
+}
+
+/* Header */
+.writing-runner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 10px 16px;
+  background: var(--bg-surface, #181512);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 12px;
+}
+
+.writing-header-title-box h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.writing-header-subtitle {
+  font-size: 12px;
+  color: var(--text-secondary, #a8a29e);
+  margin-top: 2px;
+}
+
+.writing-header-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Timer Widget */
+.writing-timer-widget {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.writing-timer-widget.urgent {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: #ef4444;
+  color: #ef4444;
+  animation: pulse-urgent 1.5s infinite alternate;
+}
+
+@keyframes pulse-urgent {
+  from { box-shadow: 0 0 4px rgba(239, 68, 68, 0.3); }
+  to { box-shadow: 0 0 12px rgba(239, 68, 68, 0.6); }
+}
+
+.writing-timer-digits {
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 800;
+  color: #f59e0b;
+}
+
+.writing-timer-widget.urgent .writing-timer-digits {
+  color: #ef4444;
+}
+
+/* Pacing Banner */
+.writing-pacing-banner {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 12px;
+  color: #fbbf24;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.writing-pacing-btn {
+  background: #f59e0b;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-weight: 700;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/* Task Switcher Nav */
+.writing-nav-bar {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  padding-bottom: 4px;
+}
+
+.writing-nav-tab {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary, #a8a29e);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s;
+}
+
+.writing-nav-tab.active {
+  background: #f59e0b;
+  color: #000;
+  border-color: #f59e0b;
+}
+
+.writing-nav-word-pill {
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.writing-nav-tab.active .writing-nav-word-pill {
+  background: rgba(0, 0, 0, 0.25);
+  color: #000;
+}
+
+/* Split Screen Layout */
+.writing-split-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 16px;
+  flex: 1;
+  min-height: 0;
+}
+
+@media (max-width: 860px) {
+  .writing-split-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+/* Left Panel: Prompt */
+.writing-prompt-panel {
+  background: var(--bg-surface, #181512);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 12px;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.writing-prompt-badge-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.writing-prompt-badge {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+}
+
+.writing-prompt-text {
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  color: var(--text-primary, #f5f0eb);
+}
+
+/* Scaffolding Box in Practice Mode */
+.writing-scaffold-box {
+  background: rgba(59, 130, 246, 0.06);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: auto;
+}
+
+.writing-scaffold-title {
+  font-size: 12px;
+  font-weight: 800;
+  color: #60a5fa;
+  margin: 0 0 6px 0;
+}
+
+.writing-scaffold-content {
+  font-size: 12px;
+  color: var(--text-secondary, #a8a29e);
+  line-height: 1.5;
+}
+
+/* Right Panel: Editor */
+.writing-editor-panel {
+  background: var(--bg-surface, #181512);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.writing-editor-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.06));
+}
+
+.writing-word-counter {
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.writing-word-counter.met {
+  color: #34d399;
+}
+
+.writing-word-counter.unmet {
+  color: #fbbf24;
+}
+
+.writing-save-status {
+  font-size: 11px;
+  color: var(--text-secondary, #78716c);
+}
+
+.writing-textarea {
+  flex: 1;
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  color: var(--text-primary, #f5f0eb);
+  font-size: 15px;
+  line-height: 1.7;
+  font-family: inherit;
+}
+
+.writing-textarea::placeholder {
+  color: var(--text-secondary, #57534e);
+}
+
+/* Editor Action Bar */
+.writing-editor-actions {
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid var(--border, rgba(255, 255, 255, 0.06));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.writing-save-btn {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--text-primary, #f5f0eb);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.writing-save-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.writing-submit-btn {
+  padding: 9px 20px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+  transition: all 0.15s;
+}
+
+.writing-submit-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(245, 158, 11, 0.4);
+}
+
+.writing-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

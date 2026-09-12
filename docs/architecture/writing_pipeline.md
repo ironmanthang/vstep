@@ -3,23 +3,30 @@
 ## Kiến trúc Pipeline Chấm 3 Tầng (3-Tier Hybrid Architecture)
 
 ### Tầng 1: Local Deterministic Pre-calculation & Hygiene Check (< 50ms, Client-side)
-- **Đếm từ thời gian thực**: Sử dụng regex đếm từ chuẩn `\b\w+\b`, so sánh trực tiếp với ngưỡng tối thiểu (Task 1: 120 từ, Task 2: 250 từ).
-- **Phát hiện sao chép đề (Anti-Prompt-Copying)**: Thuật toán n-gram matching (tri-gram) đo tỷ lệ trùng lặp giữa bài làm và đề bài. Nếu tỷ lệ trùng lặp > 30%, gán cờ cảnh báo và trừ điểm Task Fulfillment.
+- **Đếm từ thời gian thực**: Sử dụng regex `\b[a-zA-Z0-9'-]+\b`, đồng bộ chính xác với phần mềm thi máy tính Đại học Văn Lang (VLU) và Bộ GD&ĐT (Task 1: 120 từ, Task 2: 250 từ).
+- **Phát hiện sao chép đề lọc từ dừng (Stop-Word & Epistolary-Aware Anti-Copying)**: 
+  - Lọc bỏ danh sách từ phụ/từ dừng (*the, a, an, in, on, at, to, for, and, is, are*) và các cụm từ mở/kết thư quy ước (*"Dear...", "I am writing this letter to...", "Best regards"*) trước khi bóc tách tri-gram.
+  - Đo tỷ lệ trùng lặp thực chất giữa bài làm và đề bài. Chỉ cảnh báo trừ điểm khi thí sinh chép nguyên vẹn các câu hướng dẫn nội dung của đề bài (> 30%).
 - **Lọc lỗi cú pháp bề mặt**: Regex phát hiện nhanh các mẫu sai cơ bản:
-  - Cặp liên từ thừa do tư duy tiếng Việt (*Although... but...*, *Because... so...*).
-  - Lỗi hình thức: Viết hoa đầu câu, khoảng trắng kép, dấu câu dính liền hoặc khoảng trắng trước dấu phẩy/chấm.
-- **Inject dữ liệu tiền tính toán**: Đưa trực tiếp kết quả đếm từ và tỷ lệ trùng lặp vào payload gửi lên LLM để mô hình không phải ước lượng số từ.
+  - Cặp liên từ thừa do tư duy tiếng Việt (*Although... but...*, *Because... so...*, *If... then...*).
+  - Khuyết chủ ngữ giả (*In [Location] have many...*).
+- **Inject dữ liệu tiền tính toán**: Đưa trực tiếp số từ và các mẫu phát hiện bề mặt vào payload gửi lên LLM để mô hình không phải ước lượng số từ.
 
 ### Tầng 2: Evidence-First LLM Evaluation (`gemini-3.5-flash-lite`, Strict JSON Schema)
-- **Mô hình**: Chuẩn hóa trên `gemini-3.5-flash-lite` (500 RPD, 15 RPM, độ trễ < 6s), `temperature = 0.1` để đảm bảo tính tái lập.
-- **Quy tắc sinh bằng chứng trước điểm số (Evidence-First Output Ordering)**: Bắt buộc mô hình xuất toàn bộ bằng chứng, trích dẫn lỗi và lập luận trước khi đưa ra điểm số số học. Thứ tự token trong JSON Schema:
+- **Mô hình & Cấu hình**: Chuẩn hóa trên `gemini-3.5-flash-lite` (500 RPD, 15 RPM, độ trễ < 6s), `temperature = 0.1` đảm bảo tính tái lập.
+- **Chuẩn hóa Bậc 3 (B1 Pass Gate)**: Đánh giá theo barem B1 Quyết định 729/QĐ-BGDĐT:
+  - Task 1: Đáp ứng đủ 3 ý gợi ý, có lời chào và kết thư phù hợp, đạt $\ge$ 120 từ.
+  - Task 2: Có bố cục 4 đoạn rõ ràng, nêu rõ quan điểm cá nhân, tối thiểu 2 luận điểm kèm ví dụ, đạt $\ge$ 250 từ.
+  - Chấp nhận câu văn đơn/ghép ngắn và lỗi từ vựng/ngữ pháp nhỏ không làm gián đoạn việc truyền tải thông tin.
+- **Quy tắc sinh bằng chứng trước điểm số (Evidence-First Output Ordering)**: Bắt buộc mô hình xuất toàn bộ bằng chứng, trích dẫn lỗi và lập luận trước khi đưa ra điểm số:
   - `prompt_points_analysis`: Liệt kê từng yêu cầu của đề bài và trích dẫn câu văn của thí sinh trả lời yêu cầu đó.
-  - `thesis_statement`: Trích xuất câu chủ đề/luận điểm chính của bài viết (Task 2) hoặc ghi nhận nếu thiếu.
-  - `error_catalog`: Mảng chi tiết các lỗi gồm loại lỗi (`grammar`, `vietlish`, `vocabulary`, `spelling`), vị trí trích dẫn, giải thích nguyên nhân và câu sửa mẫu.
-  - `vietlish_breakdown`: Phân tích chuyên sâu các lỗi do chuyển di ngôn ngữ mẹ đẻ (L1 transfer).
-  - `praise_highlights`: Ghi nhận những cấu trúc câu phức hoặc từ vựng dùng tốt để khích lệ người học.
-  - `criteria_justifications`: Nhận xét định tính cho 4 tiêu chí MOET (Task Fulfillment, Organization, Vocabulary, Grammar).
-  - `raw_criteria_scores`: Điểm số cuối cùng cho từng tiêu chí trên thang 0.0 - 10.0.
+  - `thesis_statement`: Trích xuất câu chủ đề/luận điểm chính của bài viết (Task 2).
+  - `priority_action_items`: 2 đến 3 trọng tâm hành động thực tế bằng tiếng Việt giúp học viên vượt ngưỡng điểm B1.
+  - `error_catalog`: Mảng chi tiết các lỗi gồm loại lỗi (`grammar`, `vietlish`, `vocabulary`, `spelling`), vị trí trích dẫn, câu sửa mẫu và giải thích nguyên nhân.
+  - `praise_highlights`: Ghi nhận điểm sáng của bài viết.
+  - `justifications`: Nhận xét định tính cho 4 tiêu chí MOET (Task Fulfillment, Organization, Vocabulary, Grammar).
+  - `criteria_scores`: Điểm số cuối cùng cho từng tiêu chí trên thang 0.0 - 10.0.
+  - `ai_fixed_b1_essay`: Viết lại bài của thí sinh thành phiên bản chuẩn B1 từ chính ý tưởng gốc, sửa sạch lỗi ngữ pháp và Vietlish, dùng cấu trúc câu tự nhiên, dễ học.
 
 ### Tầng 3: Deterministic Composite Scoring & Persistence (TypeScript Runtime)
 - **Công thức trọng số chuẩn MOET**:
@@ -27,13 +34,11 @@
   - `Task 2`: Chiếm 2/3 tổng điểm (66.7%).
   - Điểm tổng Writing trước làm tròn: `(Task 1 + Task 2 * 2) / 3`.
 - **Làm tròn chuẩn 0.5**: Áp dụng thuật toán làm tròn chính thức của Bộ GD&ĐT (phần thập phân < 0.25 làm tròn xuống .0, từ 0.25 đến < 0.75 làm tròn thành .5, >= 0.75 làm tròn lên 1.0).
-- **Lưu trữ**: Đồng bộ kết quả vào Supabase (`writing_submissions`) và bản nháp dự phòng LocalStorage mỗi 5 giây.
+- **Lưu trữ**: Bản nháp lưu tự động mỗi 5 giây vào LocalStorage (`vstep_writing_session_${testId}_${mode}`) và đồng bộ đám mây.
 
 ---
 
 ## Hệ Thống Phân Loại Lỗi Vietlish (Empirical L1 Transfer Taxonomy)
-
-Hệ thống nhận diện 3 nhóm lỗi tư duy tiếng Việt dựa trên nghiên cứu đối chiếu ngôn ngữ học Anh - Việt:
 
 ### Nhóm Lỗi Cú Pháp (Syntactic Transfer)
 - **Khuyết từ nối giả (Missing Existential "There is/are")**: Tiếng Việt dùng động từ "có" ở đầu câu hoặc sau trạng ngữ chỉ nơi chốn.
@@ -73,24 +78,22 @@ Hệ thống nhận diện 3 nhóm lỗi tư duy tiếng Việt dựa trên nghi
 
 ## Mốc Điểm Tham Chiếu (Anchor Benchmarks)
 
-### Mốc B1 (Thang 4.0 - 5.5)
-- **Đặc trưng**: Hoàn thành được các ý cơ bản của đề bài nhưng phát triển còn sơ sài. Câu văn chủ yếu là câu đơn và câu ghép ngắn nối bằng *and, but, so*.
-- **Từ vựng & Ngữ pháp**: Vốn từ quen thuộc đời sống, lặp từ nhiều. Còn nhiều lỗi chia động từ, thiếu mạo từ và xuất hiện lỗi Vietlish cấu trúc cơ bản, nhưng người đọc vẫn nắm được thông điệp chính.
+### Mốc B1 (Thang 4.0 - 5.5) - Mục Tiêu Trọng Tâm Tốt Nghiệp
+- **Đặc trưng**: Hoàn thành được các ý cơ bản của đề bài. Câu văn chủ yếu là câu đơn và câu ghép nối bằng *and, but, so, because*. Bố cục 4 đoạn rõ ràng.
+- **Từ vựng & Ngữ pháp**: Vốn từ quen thuộc đời sống. Còn một số lỗi mạo từ, chia thì hoặc Vietlish cơ bản nhưng người đọc vẫn nắm được thông điệp chính.
 
-### Mốc B2 (Thang 6.0 - 8.0) - Mục Tiêu Trọng Tâm Đại Học Văn Lang
+### Mốc B2 (Thang 6.0 - 8.0)
 - **Đặc trưng**: Đáp ứng đầy đủ các yêu cầu của đề bài. Task 2 có Thesis Statement rõ ràng ở mở bài và bố cục 4 đoạn mạch lạc.
-- **Từ vựng & Ngữ pháp**: Sử dụng được các câu phức với mệnh đề quan hệ, mệnh đề nhượng bộ (*Although/Even though*), câu điều kiện hoặc thể bị động. Vốn từ theo chủ đề phong phú, ít lỗi ngữ pháp cơ bản, không có lỗi Vietlish nghiêm trọng làm sai lệch nghĩa.
+- **Từ vựng & Ngữ pháp**: Sử dụng được các câu phức với mệnh đề quan hệ, mệnh đề nhượng bộ (*Although/Even though*), thể bị động. Vốn từ chủ đề phong phú, ít lỗi ngữ pháp cơ bản.
 
 ### Mốc C1 (Thang 8.5 - 10.0)
-- **Đặc trưng**: Luận điểm sâu sắc, đa chiều, văn phong học thuật tự nhiên. Bố cục chặt chẽ với các phương tiện liên kết tinh tế, không máy móc.
-- **Từ vựng & Ngữ pháp**: Sử dụng chính xác các cấu trúc ngữ pháp phức tạp và vốn từ học thuật cao cấp (C1/C2 collocations). Độ chính xác ngữ pháp và chính tả gần như tuyệt đối.
+- **Đặc trưng**: Luận điểm sâu sắc, đa chiều, văn phong học thuật tự nhiên. Bố cục chặt chẽ với các phương tiện liên kết tinh tế.
+- **Từ vựng & Ngữ pháp**: Sử dụng chính xác các cấu trúc phức tạp và vốn từ học thuật cao cấp (C1 collocations). Độ chính xác ngữ pháp và chính tả gần như tuyệt đối.
 
 ---
 
 ## Mô Hình Quản Lý Thời Gian Thi Máy Tính (VLU Unified 60-Minute Pacing)
-
-Theo định dạng phòng thi Đại học Văn Lang và Bộ GD&ĐT:
-- **Bộ đếm thời gian thống nhất**: Đồng hồ 60:00 đếm ngược dùng chung cho cả 2 Task, thí sinh chủ động phân bổ thời gian và chuyển đổi qua lại giữa Task 1 và Task 2.
+- **Bộ đếm thời gian thống nhất**: Đồng hồ 60:00 đếm ngược dùng chung cho cả 2 Task, thí sinh chủ động chuyển đổi qua lại giữa Task 1 và Task 2.
 - **Khuyến nghị phân bổ thời gian**:
   - Phút 0 - 20: Tập trung hoàn thành Task 1 (Thư/Email $\ge$ 120 từ, chiếm 1/3 điểm).
   - Phút 20 - 55: Viết bài luận Task 2 ($\ge$ 250 từ, chiếm 2/3 điểm).

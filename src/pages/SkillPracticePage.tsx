@@ -26,9 +26,9 @@ export const SkillPracticePage: React.FC = () => {
       desc: 'Bộ gợi ý dàn ý, thư viện mẫu câu, kho bài mẫu 5 màu và AI phân tích lỗi tư duy Vietlish.',
       badge: 'Task 1 & Task 2',
       badgeColor: 'badge-gold',
-      status: 'Sprint 3',
-      link: undefined,
-      cta: 'Đang hoàn thiện module →',
+      status: 'Sẵn Sàng Luyện',
+      link: '/practice/writing',
+      cta: 'Vào phòng luyện viết →',
     },
     {
       title: 'Phòng Thu Nói (Speaking)',

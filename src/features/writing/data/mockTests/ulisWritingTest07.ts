@@ -1,0 +1,46 @@
+import type { WritingPrompt } from '../../../../types/schemas';
+
+/**
+ * Authentic ULIS VSTEP Writing Test 07
+ * Sourced from "7 Vstep Tests B1-B2-C1 Full Key" (ULIS - ĐHQGHN, 2019)
+ */
+
+export const ULIS_WRITING_TEST_07_TASK1: WritingPrompt = {
+  "id": "ulis_writing_test_07_t1",
+  "task_type": "task1_letter",
+  "title": "Letter of Complaint to a Restaurant Manager",
+  "time_allowed_minutes": 20,
+  "min_words": 120,
+  "prompt_text": "You recently went to eat in a restaurant and you were not satisfied with the food as well as the service there.\nWrite a letter to the manager of the restaurant to complain about what you have experienced.\nYou should write at least 120 words. Your response will be evaluated in terms of Task fulfillment, Organization, Vocabulary and Grammar.",
+  "context_info": "Formal Letter",
+  "sample_response": {
+    "band": "B1",
+    "text": "Dear Sir/Madam,\n\nI am writing to complain about a meal we had in your restaurant yesterday. We had booked a table for six but when we arrived there were no free tables and we had to wait for more than 45 minutes to sit down.\n\nFrom the menu of 12 dishes, only four were available and their quality was poor. The fish, in particular, tasted awful and the waiter was rude when we told him about this.\nWe have eaten in your restaurant several times in the past but this is the first time we have receive such bad treatment. I am not asking for a refund but I would like you to improve the quality of your dishes and service.\n\nYours faithfully,",
+    "analysis_vi": "Bài viết đạt mức B1/B2 nhờ sử dụng từ vựng và ngữ pháp đa dạng (quá khứ đơn, câu phức), diễn đạt rõ ràng phàn nàn và đưa ra yêu cầu cải thiện dịch vụ một cách lịch sự."
+  }
+};
+
+export const ULIS_WRITING_TEST_07_TASK2: WritingPrompt = {
+  "id": "ulis_writing_test_07_t2",
+  "task_type": "task2_essay",
+  "title": "Effects of Tourism on Remote Communities and Environment",
+  "time_allowed_minutes": 40,
+  "min_words": 250,
+  "prompt_text": "Organized tours to remote community and other countries are increasingly popular. Is it a positive or negative development for local people and the local environment?\nWrite an essay to an educated reader to discuss the effects of tourism. Include reasons and any relevant examples to support your answer.\nYou should write at least 250 words. Your response will be evaluated in terms of Task fulfillment, Organization, Vocabulary and Grammar.",
+  "context_info": "Opinion Essay",
+  "sample_response": {
+    "band": "B1",
+    "text": "We cannot deny that tourism plays an important part in our life. However, it can have both good and bad effects on local communities.\n\nOn the one hand, the development is good for local people. People can get good jobs and so they can make more money and improve their life. They can also improve the traffic. People build and widen more roads.\n\nOn the other hand, however, tourism is not good for the environment. When more people come to the place, they throw a lot of things everywhere and make the air and water become dirty and smelly. This can badly affect people's health.\n\nTo sum up, tourism is good and bad for the local communities. I myself think that tourism is more beneficial.",
+    "analysis_vi": "Bài viết đạt mức B1 nhờ sử dụng các cấu trúc ngữ pháp cơ bản chính xác, từ vựng vừa phải (beneficial, environment, community) và bố cục rõ ràng với các cụm từ nối quen thuộc (On the one hand, On the other hand, To sum up)."
+  }
+};
+
+export const ULIS_WRITING_TEST_07 = {
+  id: 'ulis_writing_test_07',
+  test_number: 7,
+  title: 'ULIS Authentic VSTEP Writing Test 07',
+  institution: 'ULIS - ĐHQGHN',
+  total_duration_minutes: 60,
+  task1: ULIS_WRITING_TEST_07_TASK1,
+  task2: ULIS_WRITING_TEST_07_TASK2,
+};

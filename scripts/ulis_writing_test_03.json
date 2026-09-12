@@ -1,0 +1,31 @@
+{
+  "test_number": 3,
+  "task1": {
+    "id": "ulis_writing_test_03_t1",
+    "task_type": "task1_letter",
+    "title": "Letter about a holiday",
+    "time_allowed_minutes": 20,
+    "min_words": 120,
+    "prompt_text": "You should spend about 20 minutes on this task.\nWrite a letter to one of your friends to tell her/him about the holiday you are having. In your letter you should say:\n- Where you are going\n- Why you want to go there\n- The people you are going with\nYou should write at least 120 words. Your response will be evaluated in terms of Task fulfillment, Organization, Vocabulary and Grammar.",
+    "context_info": "Informal Letter",
+    "sample_response": {
+      "band": "B1",
+      "text": "Dear Claire, Thank you a lot for your last letter. It was a nice surprise to hear from you. I'm sorry I haven't written to you earlier but I had to organize some things concerning my trip. As you probably remember I've always wanted to visit some unusual places. And now, at last, off I went! But you'd never guess where I've chosen to spend my holiday. It's Antarctica! You would never think of it, would you? I'm so excited about the whole event! The people I travel with are incredible. It's their fourteenth expedition there. They know every path in the snow by heart and they are very helpful. They share their knowledge and experience with me. Would you believe that here everything is different? You even need to set your tent in a special way. It's all very challenging. Tomorrow we plan to move further North so I may not be able to stay in touch for a while. Anyway, I'd like to meet you when I get back. Hope you are enjoying your holiday. Do write back soon. Love,",
+      "analysis_vi": "Bài viết hoàn thành tốt các yêu cầu của đề bài (nơi đi, lý do chọn, người đi cùng), sử dụng từ vựng đa dạng và cấu trúc câu phong phú ở mức độ B1."
+    }
+  },
+  "task2": {
+    "id": "ulis_writing_test_03_t2",
+    "task_type": "task2_essay",
+    "title": "Traveling with a companion vs. traveling alone",
+    "time_allowed_minutes": 40,
+    "min_words": 250,
+    "prompt_text": "You should spend 40 minutes on this task.\nSome people like to travel with a companion. Other people prefer to travel alone. Which do you prefer? Use specific reasons and examples to support your choice.\nWrite an essay to an educated reader to show your opinion. You should write at least 250 words. Your response will be evaluated in terms of Task fulfillment, Organization, Vocabulary and Grammar.",
+    "context_info": "Opinion Essay",
+    "sample_response": {
+      "band": "B1",
+      "text": "It is the fact that more and more people are becoming interested in travelling. Some people want to travel alone while others want to travel with a partner. Personally, I often travel with my family or friends.\n\nFirstly, people can save a lot of money. If people go in groups, they often get lower price for the trip. People can share the room, the food, and the tickets.\n\nSecondly, people feel happier when they are with family or friends. They can do a lot of things together. They can talk about many new things, new places, and new people.\n\nFinally, people can help each other when they go with other people. If you are ill or tired, your friend can help you bring things or buy medicine for you. Or if you fall from the rock, your friend can take you to the hospital.\n\nTo sum up, travelling with a companion is much better.",
+      "analysis_vi": "Bài viết đạt mức B1 nhờ sử dụng các từ nối rõ ràng (Firstly, Secondly, Finally, To sum up), cấu trúc ngữ pháp cơ bản chính xác và từ vựng quen thuộc nhưng đủ để diễn đạt ý kiến mạch lạc."
+    }
+  }
+}

@@ -11,7 +11,7 @@
 ## Orchestrated Skill Modules
 - **Listening (40 min)**: [ulis_listening_set1.md](../listening/ulis_listening_set1.md)
 - **Reading (60 min)**: [ulis_reading_set1.md](../reading/ulis_reading_set1.md)
-- **Writing (60 min)**: [ulis_writing_set1.md](../writing/ulis_writing_set1.md)
+- **Writing (60 min)**: [ulis_writing_tests.md](../writing/ulis_writing_tests.md#test-01)
 - **Speaking (12 min)**: [ulis_speaking_set1.md](../speaking/ulis_speaking_set1.md)
 
 ### Listening Module (40 min / 35 Questions)
@@ -27,9 +27,9 @@
 - **Constraints**: 1-Tap Dictionary tooltip and paraphrase highlight helpers disabled.
 
 ### Writing Module (60 min / 2 Tasks)
-- **Source**: [`docs/sources/writing/ulis_writing_set1.md`](file:///d:/program/vstep/docs/sources/writing/ulis_writing_set1.md)
-- **Runtime Code**: `src/features/writing/data/writingBank.ts`
-- **Tasks**: Task 1 (Letter, $\ge 120$ words) + Task 2 (Essay, $\ge 250$ words).
+- **Source**: [`docs/sources/writing/ulis_writing_tests.md#test-01`](file:///d:/program/vstep/docs/sources/writing/ulis_writing_tests.md)
+- **Runtime Code**: `src/features/writing/data/mockTests/ulisWritingTest01.ts` (`ULIS_WRITING_TEST_01_TASK1`, `ULIS_WRITING_TEST_01_TASK2`)
+- **Tasks**: Task 1 (Letter: Cancelling a meeting, $\ge 120$ words) + Task 2 (Essay: Big city life pros & cons, $\ge 250$ words).
 - **Constraints**: Outline suggestions, template phrase bank, and Vietlish AI assistant disabled during exam timer.
 
 ### Speaking Module (12 min / 3 Parts)
