@@ -28,6 +28,10 @@ export const Layout: React.FC = () => {
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('vstep_theme', theme);
+    const themeColorMeta = document.querySelector('meta[name="theme-color"]:not([media])');
+    if (themeColorMeta) {
+      themeColorMeta.setAttribute('content', theme === 'dark' ? '#141210' : '#FAF8F5');
+    }
   }, [theme]);
 
   const toggleTheme = () => {

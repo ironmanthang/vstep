@@ -17,7 +17,7 @@ export default defineConfig({
         name: 'VSTEP Master — Luyện thi VSTEP B1-B2 Thông minh',
         short_name: 'VSTEP Master',
         description: 'Nền tảng luyện thi VSTEP thế hệ mới với Flashcard SRS, hỗ trợ tra từ và luyện 4 kỹ năng.',
-        theme_color: '#D4A373',
+        theme_color: '#141210',
         background_color: '#141210',
         display: 'standalone',
         orientation: 'portrait-primary',

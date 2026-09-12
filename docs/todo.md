@@ -54,6 +54,13 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
   - [ ] Đợt 3 (Writing & Speaking): Mở rộng từ 2.500 lên 3.000 từ (+500 từ)
 - [x] Chuẩn hóa thuật toán Spaced Repetition sang FSRS v6 nhị phân: Hàng đợi ưu tiên re-learning -> due reviews (overdue sort) -> new cards (cap 20/ngày), trần 365 ngày
 - [x] Thông báo PWA & App Badging nhắc nhở ôn tập SRS: Tự động cập nhật huy hiệu icon, hẹn giờ nhắc nhở hàng ngày và hỗ trợ Android/Desktop
+- [x] Tinh giản trải nghiệm Mobile SRS & Nâng thẻ lên vùng Above-the-Fold: Thanh trạng thái 1 dòng siêu gọn, thu gọn tiêu đề và 4 thẻ thống kê tĩnh khi ôn tập hàng đợi
+- [x] Cử chỉ vuốt chạm tỷ lệ thực (Proportional Touch Swipe) trên Mobile: Thẻ xoay nghiêng theo lực kéo, tem phản hồi trực quan (Sai / Đúng), ngưỡng nhả 90px kích hoạt chấm điểm, bảo vệ cuộn dọc
+- [x] Triệt tiêu lỗi lộ nghĩa (Spoiled Definition Glitch): Đóng băng thẻ cũ trong hiệu ứng thoát 180ms và tự động unflip về mặt trước tiếng Anh trước khi hiển thị thẻ kế tiếp
+- [x] Tinh giản mặt sau tiếng Việt: Căn giữa định nghĩa tiếng Việt đồng trục thị giác với mặt trước, bỏ nhãn thừa và huy hiệu trùng lặp
+- [x] Hệ thống phím tắt Laptop/Desktop: `←` Sai, `→` Đúng, `Space`/`↑`/`↓` Lật thẻ, `A`/`P` Phát âm kèm badge phím tắt trực quan
+- [x] Đồng bộ màu thanh trạng thái hệ thống (`theme-color`): Khắc phục dải màu vàng lệch tông, đồng bộ động sang `#141210` Dark Obsidian
+- [x] Mặt nạ mờ (gradient mask) mép phải thanh chọn chủ đề báo hiệu vùng cuộn ngang
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)
 - [x] Unit Test thuật toán Spaced Repetition (SRS algorithm) qua Vitest
 - [x] Thiết lập Pre-push pipeline tự động (scripts/prepush.mjs + .githooks/pre-push)

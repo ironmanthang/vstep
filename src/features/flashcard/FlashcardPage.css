@@ -67,6 +67,16 @@
   gap: var(--space-2);
 }
 
+.header-stats-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.mobile-study-bar {
+  display: none;
+}
+
 /* Stats Grid */
 .stats-grid {
   display: grid;
@@ -155,6 +165,8 @@
   min-width: 0;
   max-width: 100%;
   width: 100%;
+  mask-image: linear-gradient(to right, black 86%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 86%, transparent 100%);
 }
 
 .topic-pills-wrapper::-webkit-scrollbar {
@@ -405,7 +417,74 @@
 /* Mobile Responsiveness */
 @media (max-width: 640px) {
   .flashcard-page {
-    gap: var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .header-stats-wrapper.compact-mobile {
+    display: none;
+  }
+
+  /* Compact 1-line Study Bar on Mobile */
+  .mobile-study-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-2) var(--space-3);
+    gap: var(--space-2);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .mobile-study-stats {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    font-size: var(--fs-xs);
+  }
+
+  .mobile-stat-pill {
+    font-weight: 500;
+    color: var(--text-secondary);
+    white-space: nowrap;
+  }
+
+  .mobile-stat-pill strong {
+    font-weight: 700;
+  }
+
+  .mobile-study-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    flex-shrink: 0;
+  }
+
+  .mobile-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-md);
+    background-color: var(--bg-subtle);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+
+  .mobile-icon-btn:hover:not(:disabled) {
+    color: var(--text-primary);
+    border-color: var(--primary);
+  }
+
+  .mobile-icon-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 
   .page-header-row {
@@ -445,6 +524,11 @@
     text-overflow: ellipsis;
   }
 
+  .controls-row {
+    gap: var(--space-2);
+    padding-bottom: var(--space-1);
+  }
+
   .tab-group {
     width: 100%;
     display: flex;
@@ -468,6 +552,7 @@
     max-width: 100%;
     min-width: 0;
     margin: 0;
+    gap: var(--space-2);
     box-sizing: border-box;
   }
 

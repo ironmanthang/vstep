@@ -25,9 +25,13 @@
   - Nút Hủy bỏ được focus mặc định để tránh xác nhận ngoài ý muốn.
   - Khi xác nhận đặt lại: Xóa sạch dữ liệu trên Supabase Cloud (`user_flashcard_reviews` và `user_daily_stats`), reset `newCardsToday` và đưa số thẻ đã ôn hôm nay về 0.
 - **Trải nghiệm Học tương tác & Tối ưu Mobile PWA**:
-  - Hiệu ứng 3D Flip Card trực quan, hỗ trợ vuốt chạm trên Mobile và phím tắt (`Space` lật thẻ, `1` = Sai, `2` / `Space` = Đúng).
-  - Thống kê tiến độ trực tiếp: Đếm số thẻ đã làm chủ, đang ghi nhớ, số thẻ đã ôn hôm nay, tiến độ từ mới hôm nay (`X/20`) và số thẻ leech.
-  - Tối ưu giao diện Mobile (`@media (max-width: 640px)`): Lưới thống kê 2x2 gọn gàng, thanh chuyển tab và thẻ ôn tập trải rộng 100% màn hình, các nút thao tác đầu trang tự động xếp dọc.
+  - **Cử chỉ vuốt chạm tỷ lệ thực (Proportional Touch Swipe)**: Kéo thẻ di chuyển ngang và nghiêng góc tự nhiên theo ngón tay, hiển thị tem phản hồi trực quan (Sai góc trên phải / Đúng góc trên trái). Ngưỡng nhả 90px kích hoạt chấm điểm và trượt thẻ khỏi màn hình; nhả trước ngưỡng tự động đàn hồi về tâm. Chạm nhẹ (<8px) lật thẻ. Cơ chế so sánh deltaY/deltaX tức thì bảo vệ cuộn dọc trang mượt mà.
+  - **Triệt tiêu lỗi lộ nghĩa (Spoiled Definition Prevention)**: Đóng băng dữ liệu thẻ cũ trong suốt hiệu ứng thoát thẻ 180ms và tự động lật về mặt trước tiếng Anh trước khi thẻ mới xuất hiện, bảo toàn 100% tính bất ngờ cho active recall.
+  - **Mặt sau tinh giản & căn giữa quang học**: Loại bỏ nhãn "Định nghĩa tiếng Việt", huy hiệu chủ đề và tiêu đề tiếng Anh trùng lặp. Căn giữa định nghĩa tiếng Việt đồng trục thị giác với từ vựng mặt trước, bố trí collocations và ví dụ VSTEP ngay bên dưới.
+  - **Phím tắt Desktop/Laptop**: Phím mũi tên trái (`←`) chấm Sai, mũi tên phải (`→`) chấm Đúng, phím cách (`Space`) hoặc mũi tên lên/xuống (`↑`/`↓`) lật thẻ, phím `A`/`P` phát âm thanh bản xứ.
+  - **Nâng thẻ lên vùng Above-the-Fold trên Mobile**: Thu gọn tiêu đề, mô tả và lưới 4 thẻ thống kê tĩnh thành thanh trạng thái 1 dòng siêu gọn (`X cần ôn • Y/20 mới • ✓ Z đã ôn`) khi đang ôn tập hàng đợi. Thẻ Flashcard (cao 385px) và các nút chấm điểm hiển thị trọn vẹn ở trung tâm màn hình mà không cần cuộn.
+  - **Đồng bộ màu thanh trạng thái hệ thống**: Cấu hình `theme-color` đồng bộ động theo giao diện, hiển thị màu Dark Obsidian (`#141210`) trong Dark Mode, loại bỏ dải màu vàng lệch tông trên Android PWA và mobile browser.
+  - **Chỉ báo cuộn ngang danh sách chủ đề**: Áp dụng hiệu ứng mặt nạ mờ (gradient mask) mép phải báo hiệu vùng cuộn các chủ đề tiếp theo.
 - **Thông báo PWA & App Badging Nhắc nhở Ôn tập SRS**:
   - **PWA App Badging API**: Tự động đồng bộ số thẻ cần ôn (`totalDueCount`) trực tiếp lên huy hiệu icon ứng dụng trên màn hình chính (`navigator.setAppBadge` / `navigator.clearAppBadge`) trên Android Chrome PWA và Chromium Desktop. Tự động xóa huy hiệu khi hoàn thành ôn tập hoặc đặt lại Deck.
   - **Động cơ Nhắc nhở Ôn tập Hàng ngày (`src/services/notification/srsReminderService.ts`)**: Lưu trữ cài đặt hẹn giờ trong `localStorage` (`enabled`, `reminderTime`, `lastNotifiedDate`). Hàm kiểm tra thuần túy `isReminderDue` đảm bảo chỉ phát thông báo một lần duy nhất trong ngày khi có từ cần ôn và thời gian hiện tại vượt mốc hẹn.

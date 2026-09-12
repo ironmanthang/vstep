@@ -48,16 +48,13 @@ export const FlashcardPage: React.FC = () => {
       return;
     }
 
+    // Immediately unflip so incoming card enters from front face
+    setIsFlipped(false);
+
     const res = await submitReview(cardId, rating);
     if (!res.success) {
       showNotification(res.error || 'Lỗi kết nối — Không thể lưu thẻ lên máy chủ.', 'error');
       return;
-    }
-
-    setIsFlipped(false);
-
-    if (rating === 'wrong') {
-      showNotification('Sẽ ôn lại từ này sau ít phút.', 'info');
     }
 
     if (reviewQueue.length <= 1 && rating === 'correct') {
@@ -116,64 +113,104 @@ export const FlashcardPage: React.FC = () => {
         </div>
       )}
 
-      {/* Page Header */}
-      <div className="page-header-row">
-        <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <h1 className="page-title">Từ Vựng VSTEP SRS</h1>
-            {isCloudSyncing && (
-              <span className="badge badge-gold" style={{ fontSize: '0.75rem', animation: 'pulse 1.5s infinite' }}>
-                🔄 Đang đồng bộ Cloud...
-              </span>
-            )}
+      {/* Header & Stats Dashboard (Collapses on Mobile during Review Queue to lift card above the fold) */}
+      <div className={`header-stats-wrapper ${activeTab === 'queue' ? 'compact-mobile' : ''}`}>
+        {/* Page Header */}
+        <div className="page-header-row">
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <h1 className="page-title">Từ Vựng VSTEP SRS</h1>
+              {isCloudSyncing && (
+                <span className="badge badge-gold" style={{ fontSize: '0.75rem', animation: 'pulse 1.5s infinite' }}>
+                  🔄 Đang đồng bộ Cloud...
+                </span>
+              )}
+            </div>
+            <p className="page-subtitle">
+              Kho 2.000 từ vựng học thuật Spaced Repetition (SRS) bám sát 8 chủ đề đề thi VSTEP B1–B2–C1.
+            </p>
           </div>
-          <p className="page-subtitle">
-            Kho 1.500 từ vựng học thuật Spaced Repetition (SRS) bám sát 8 chủ đề đề thi VSTEP B1–B2–C1.
-          </p>
+          <div className="header-actions">
+            <button
+              className="secondary-btn"
+              onClick={() => setIsReminderModalOpen(true)}
+              title="Cài đặt thông báo nhắc nhở ôn tập SRS"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+              </svg>
+              Nhắc nhở SRS
+            </button>
+            <button
+              className="secondary-btn"
+              onClick={() => setIsResetModalOpen(true)}
+              title="Đặt lại toàn bộ tiến độ học của Deck"
+              disabled={isResetting}
+            >
+              <RefreshIcon size={16} /> Đặt lại Deck
+            </button>
+          </div>
         </div>
-        <div className="header-actions">
-          <button
-            className="secondary-btn"
-            onClick={() => setIsReminderModalOpen(true)}
-            title="Cài đặt thông báo nhắc nhở ôn tập SRS"
-            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
-          >
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
-              <path d="M13.73 21a2 2 0 0 1-3.46 0" />
-            </svg>
-            Nhắc nhở SRS
-          </button>
-          <button
-            className="secondary-btn"
-            onClick={() => setIsResetModalOpen(true)}
-            title="Đặt lại toàn bộ tiến độ học của Deck"
-            disabled={isResetting}
-          >
-            <RefreshIcon size={16} /> Đặt lại Deck
-          </button>
+
+        {/* Stats Summary Bar */}
+        <div className="stats-grid">
+          <div className="stat-card">
+            <span className="stat-label">Cần ôn hôm nay</span>
+            <span className="stat-val stat-primary">{reviewQueue.length} thẻ</span>
+          </div>
+          <div className="stat-card">
+            <span className="stat-label">Đã làm chủ</span>
+            <span className="stat-val stat-emerald">{stats.mastered} từ ({stats.masteryPercentage}%)</span>
+          </div>
+          <div className="stat-card">
+            <span className="stat-label">Từ mới hôm nay</span>
+            <span className="stat-val stat-gold">{newCardsToday}/{NEW_CARDS_PER_DAY}</span>
+          </div>
+          <div className="stat-card">
+            <span className="stat-label">Hôm nay đã ôn</span>
+            <span className="stat-val stat-emerald">
+              {reviewedToday} thẻ
+            </span>
+          </div>
         </div>
       </div>
 
-      {/* Stats Summary Bar */}
-      <div className="stats-grid">
-        <div className="stat-card">
-          <span className="stat-label">Cần ôn hôm nay</span>
-          <span className="stat-val stat-primary">{reviewQueue.length} thẻ</span>
-        </div>
-        <div className="stat-card">
-          <span className="stat-label">Đã làm chủ</span>
-          <span className="stat-val stat-emerald">{stats.mastered} từ ({stats.masteryPercentage}%)</span>
-        </div>
-        <div className="stat-card">
-          <span className="stat-label">Từ mới hôm nay</span>
-          <span className="stat-val stat-gold">{newCardsToday}/{NEW_CARDS_PER_DAY}</span>
-        </div>
-        <div className="stat-card">
-          <span className="stat-label">Hôm nay đã ôn</span>
-          <span className="stat-val stat-emerald">
-            {reviewedToday} thẻ
+      {/* Mobile Compact Study Bar (Visible only on mobile in queue mode) */}
+      <div className="mobile-study-bar">
+        <div className="mobile-study-stats">
+          <span className="mobile-stat-pill stat-primary">
+            <strong>{reviewQueue.length}</strong> cần ôn
           </span>
+          <span className="mobile-stat-pill stat-gold">
+            <strong>{newCardsToday}/{NEW_CARDS_PER_DAY}</strong> mới
+          </span>
+          <span className="mobile-stat-pill stat-emerald">
+            ✓ <strong>{reviewedToday}</strong> đã ôn
+          </span>
+        </div>
+        <div className="mobile-study-actions">
+          <button
+            className="mobile-icon-btn"
+            onClick={() => setIsReminderModalOpen(true)}
+            title="Cài đặt thông báo nhắc nhở SRS"
+            aria-label="Cài đặt nhắc nhở SRS"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+              <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+            </svg>
+          </button>
+          <button
+            className="mobile-icon-btn"
+            onClick={() => setIsResetModalOpen(true)}
+            title="Đặt lại Deck"
+            aria-label="Đặt lại Deck"
+            disabled={isResetting}
+          >
+            <RefreshIcon size={16} />
+          </button>
         </div>
       </div>
 
@@ -347,7 +384,7 @@ export const FlashcardPage: React.FC = () => {
         title="Đặt lại toàn bộ Deck từ vựng?"
         description={
           <>
-            Hành động này sẽ <strong>xóa vĩnh viễn</strong> toàn bộ tiến độ Spaced Repetition (SRS) của <strong>1.500 từ vựng</strong> và đưa bộ đếm ôn tập hôm nay về <strong>0 thẻ</strong> trên cả thiết bị này và tài khoản đám mây của bạn.
+            Hành động này sẽ <strong>xóa vĩnh viễn</strong> toàn bộ tiến độ Spaced Repetition (SRS) của <strong>2.000 từ vựng</strong> và đưa bộ đếm ôn tập hôm nay về <strong>0 thẻ</strong> trên cả thiết bị này và tài khoản đám mây của bạn.
           </>
         }
         warningText="Dữ liệu đã xóa không thể khôi phục lại. Bạn sẽ cần bắt đầu học lại từ đầu."
