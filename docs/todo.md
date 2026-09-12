@@ -68,7 +68,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Đề 1 (ULIS Test 1): 4 bài đọc, 40 câu hỏi từ sách "7 Vstep Tests" (NXB ĐHQGHN, 2019) kèm 100% dẫn chứng verbatim chuẩn xác (`ulisReadingTest01.ts`)
 - [x] Đề 2 (ULIS Test 2): PDF trang 24–31, đáp án trang 136 kèm 100% dẫn chứng verbatim chuẩn xác (`ulisReadingTest02.ts`)
 - [x] Đề 3 (ULIS Test 3): PDF trang 36–43, đáp án trang 140 kèm 100% dẫn chứng verbatim chuẩn xác (`ulisReadingTest03.ts`)
-- [ ] Đề 4 (ULIS Test 4): PDF trang 50–57, đáp án trang 145
+- [x] Đề 4 (ULIS Test 4): PDF trang 50–55, đáp án trang 145 kèm 100% dẫn chứng verbatim chuẩn xác (`ulisReadingTest04.ts`)
 - [ ] Đề 5 (ULIS Test 5): PDF trang 64–71, đáp án trang 150
 - [ ] Đề 6 (ULIS Test 6): PDF trang 78–85, đáp án trang 155
 - [ ] Đề 7 (ULIS Test 7): PDF trang 92–99, đáp án trang 160

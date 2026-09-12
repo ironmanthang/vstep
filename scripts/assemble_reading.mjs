@@ -72,13 +72,18 @@ export const TEST_REGISTRY = {
     id: 'ulis_read_test_04',
     exportName: 'ULIS_READING_TEST_04',
     title: 'VSTEP Reading Mock Test 4 (Chuẩn ĐHNN - ĐHQGHN)',
-    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 50–57, Key page 145',
-    officialKeys: [],
+    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 50–55, Key page 145',
+    officialKeys: [
+      'B', 'C', 'A', 'A', 'D', 'D', 'C', 'D', 'B', 'A', // 1-10
+      'D', 'A', 'B', 'C', 'D', 'A', 'C', 'B', 'D', 'D', // 11-20
+      'C', 'A', 'D', 'C', 'C', 'B', 'D', 'B', 'D', 'A', // 21-30
+      'B', 'B', 'B', 'C', 'C', 'A', 'D', 'D', 'A', 'D', // 31-40
+    ],
     passageConfigs: [
       { num: 1, pageKeys: ['50', '51'], startQ: 1, endQ: 10, difficulty: 'B1' },
-      { num: 2, pageKeys: ['52', '53'], startQ: 11, endQ: 20, difficulty: 'B2' },
-      { num: 3, pageKeys: ['54', '55'], startQ: 21, endQ: 30, difficulty: 'B2' },
-      { num: 4, pageKeys: ['56', '57'], startQ: 31, endQ: 40, difficulty: 'C1' },
+      { num: 2, pageKeys: ['51', '52', '53'], startQ: 11, endQ: 20, difficulty: 'B2' },
+      { num: 3, pageKeys: ['53', '54'], startQ: 21, endQ: 30, difficulty: 'B2' },
+      { num: 4, pageKeys: ['54', '55'], startQ: 31, endQ: 40, difficulty: 'C1' },
     ],
   },
   5: {
@@ -149,9 +154,9 @@ async function callGeminiJson(prompt) {
 
         if (!res.ok) {
           const errText = await res.text();
-          // If quota exceeded, do NOT retry 4 times — jump to next model immediately!
-          if (res.status === 429 && (errText.includes('RESOURCE_EXHAUSTED') || errText.includes('Quota exceeded'))) {
-            console.warn(`  [QUOTA EXHAUSTED] ${model} daily limit reached. Skipping...`);
+          // If quota exceeded or rate limited, do NOT retry 4 times — jump to next model immediately!
+          if (res.status === 429) {
+            console.warn(`  [QUOTA / RATE LIMIT] ${model} reached 429. Skipping to next model...`);
             break;
           }
           throw new Error(`HTTP ${res.status}: ${errText}`);
@@ -163,7 +168,7 @@ async function callGeminiJson(prompt) {
         console.log(`  [Generated via: ${model}]`);
         return JSON.parse(text);
       } catch (err) {
-        if (err.message?.includes('RESOURCE_EXHAUSTED') || err.message?.includes('Quota exceeded')) {
+        if (err.message?.includes('429') || err.message?.includes('RESOURCE_EXHAUSTED') || err.message?.includes('Quota exceeded')) {
           break;
         }
         const waitMs = attempt * 3000;
@@ -255,12 +260,39 @@ export async function assembleReadingTest(rawPagesJsonPath, outTsPath, testNum =
   const idPrefix = `ulis_r${String(testNum).padStart(2, '0')}`;
   const passages = [];
 
+  const cacheFile = `scripts/.test_${testNum}_passages_cache.json`;
+  let passageCache = {};
+  if (fs.existsSync(cacheFile)) {
+    try {
+      passageCache = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'));
+    } catch {}
+  }
+
   for (const cfg of testMeta.passageConfigs) {
+    if (passageCache[cfg.num] && passageCache[cfg.num].questions?.length === 10) {
+      console.log(`\nReusing cached Passage ${cfg.num} (${passageCache[cfg.num].questions.length} questions)...`);
+      passages.push(passageCache[cfg.num]);
+      continue;
+    }
+
     console.log(`\nStructuring Passage ${cfg.num} (Questions ${cfg.startQ}-${cfg.endQ})...`);
-    const pageText = cfg.pageKeys
-      .map((k) => rawPages[k] || '')
-      .filter(Boolean)
-      .join('\n\n');
+    let pageText = '';
+    if (testNum === 4) {
+      if (cfg.num === 1) {
+        pageText = rawPages['50'] + '\n\n' + rawPages['51'].slice(0, rawPages['51'].indexOf('PASSAGE 2'));
+      } else if (cfg.num === 2) {
+        pageText = rawPages['51'].slice(rawPages['51'].indexOf('PASSAGE 2')) + '\n\n' + rawPages['52'] + '\n\n' + rawPages['53'].slice(0, rawPages['53'].indexOf('PASSAGE 3'));
+      } else if (cfg.num === 3) {
+        pageText = rawPages['53'].slice(rawPages['53'].indexOf('PASSAGE 3')) + '\n\n' + rawPages['54'].slice(0, rawPages['54'].indexOf('PASSAGE 4'));
+      } else if (cfg.num === 4) {
+        pageText = rawPages['54'].slice(rawPages['54'].indexOf('PASSAGE 4')) + '\n\n' + rawPages['55'];
+      }
+    } else {
+      pageText = cfg.pageKeys
+        .map((k) => rawPages[k] || '')
+        .filter(Boolean)
+        .join('\n\n');
+    }
 
     const officialSlice = testMeta.officialKeys.slice(cfg.startQ - 1, cfg.endQ);
 
@@ -296,15 +328,49 @@ INSTRUCTIONS:
 Return valid JSON with keys: "title", "topic", "word_count", "difficulty", "content_paragraphs", "questions".
 `;
 
-    const structured = await callGeminiJson(prompt);
+    let structured = await callGeminiJson(prompt);
+    if (Array.isArray(structured) && structured[0]?.questions) structured = structured[0];
+    if (!structured.questions) {
+      for (const k of Object.keys(structured)) {
+        if (structured[k]?.questions && Array.isArray(structured[k].questions)) {
+          structured = structured[k];
+          break;
+        }
+      }
+    }
+    if (!structured.questions && structured.passage) structured = structured.passage;
+    if (!structured.questions && structured[`passage_${cfg.num}`]) structured = structured[`passage_${cfg.num}`];
+    if (!structured.questions && structured.data) structured = structured.data;
 
     // Validate questions count
-    if (!structured.questions || structured.questions.length !== 10) {
-      console.warn(`Warning: Passage ${cfg.num} has ${structured.questions?.length || 0} questions instead of 10.`);
+    if (!structured.questions || !Array.isArray(structured.questions)) {
+      console.error(`ERROR: Passage ${cfg.num} questions missing or invalid. Top keys:`, Object.keys(structured));
+      throw new Error(`Passage ${cfg.num} questions missing in model output`);
     }
 
     // Strict clue validation
     for (const q of structured.questions) {
+      // Special handling for Test 4 Question 6 (Architectural Lot Diagram)
+      if (q.id === 'ulis_r04_q06') {
+        q.type = 'inference';
+        q.question_text = "It can be inferred that the typical New York building lot of the 1870's and 1880's looked MOST like which of the following?";
+        q.options = [
+          { key: 'A', text: 'An L-shaped lot wrapping around a street corner' },
+          { key: 'B', text: 'A small square lot along the street' },
+          { key: 'C', text: 'A wide rectangular lot running horizontally along the street' },
+          { key: 'D', text: 'A tall, narrow rectangular lot extending 100 feet deep from a 25-foot street frontage' },
+        ];
+        q.correct_key = 'D';
+        q.clue_paragraph_index = 1;
+        q.clue_sentence = 'That lot was a rectangular area 25 feet wide by 100 feet deep - a shape perfectly suited for a row house.';
+        q.explanation_vi = 'Đoạn 2 nêu rõ lô đất xây dựng điển hình ở New York thời kỳ đó có dạng hình chữ nhật rộng 25 feet và sâu 100 feet ("25 feet wide by 100 feet deep"). Trong hình vẽ, ô (D) mô tả chính xác một lô đất hẹp về bề ngang mặt đường (25 feet) nhưng kéo rất sâu vào bên trong (100 feet). Do đó, đáp án đúng là D.';
+        q.paraphrase_analysis = {
+          question_phrase: 'typical New York building lot looked MOST like',
+          passage_phrase: 'That lot was a rectangular area 25 feet wide by 100 feet deep',
+          explanation: 'Lô đất chữ nhật 25x100 feet tương ứng với hình chữ nhật hẹp và sâu theo phương thẳng đứng (D).'
+        };
+      }
+
       guaranteeVerbatimClue(q, structured.content_paragraphs);
       // Double check exact substring
       const par = structured.content_paragraphs[q.clue_paragraph_index];
@@ -318,6 +384,8 @@ Return valid JSON with keys: "title", "topic", "word_count", "difficulty", "cont
 
     structured.id = `${idPrefix}_p${cfg.num}`;
     passages.push(structured);
+    passageCache[cfg.num] = structured;
+    fs.writeFileSync(cacheFile, JSON.stringify(passageCache, null, 2), 'utf-8');
     console.log(`Passage ${cfg.num} assembled successfully (${structured.questions.length} questions).`);
   }
 
