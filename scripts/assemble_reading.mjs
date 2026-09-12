@@ -104,13 +104,18 @@ export const TEST_REGISTRY = {
     id: 'ulis_read_test_06',
     exportName: 'ULIS_READING_TEST_06',
     title: 'VSTEP Reading Mock Test 6 (Chuẩn ĐHNN - ĐHQGHN)',
-    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 78–85, Key page 155',
-    officialKeys: [],
+    sourceInfo: 'Source: "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019), Pages 71–78 (PDF Pages 75–82), Key page 150 (PDF Page 154)',
+    officialKeys: [
+      'C', 'D', 'A', 'A', 'B', 'A', 'C', 'D', 'C', 'B', // 1-10
+      'B', 'D', 'D', 'B', 'A', 'B', 'A', 'D', 'C', 'D', // 11-20
+      'A', 'C', 'C', 'A', 'A', 'C', 'D', 'C', 'A', 'D', // 21-30
+      'D', 'C', 'A', 'A', 'B', 'C', 'A', 'D', 'D', 'D', // 31-40
+    ],
     passageConfigs: [
-      { num: 1, pageKeys: ['78', '79'], startQ: 1, endQ: 10, difficulty: 'B1' },
-      { num: 2, pageKeys: ['80', '81'], startQ: 11, endQ: 20, difficulty: 'B2' },
-      { num: 3, pageKeys: ['82', '83'], startQ: 21, endQ: 30, difficulty: 'B2' },
-      { num: 4, pageKeys: ['84', '85'], startQ: 31, endQ: 40, difficulty: 'C1' },
+      { num: 1, pageKeys: ['75', '76'], startQ: 1, endQ: 10, difficulty: 'B1' },
+      { num: 2, pageKeys: ['76', '77', '78'], startQ: 11, endQ: 20, difficulty: 'B2' },
+      { num: 3, pageKeys: ['78', '79', '80'], startQ: 21, endQ: 30, difficulty: 'B2' },
+      { num: 4, pageKeys: ['80', '81', '82'], startQ: 31, endQ: 40, difficulty: 'C1' },
     ],
   },
   7: {
@@ -298,6 +303,19 @@ export async function assembleReadingTest(rawPagesJsonPath, outTsPath, testNum =
       } else if (cfg.num === 4) {
         pageText = rawPages['66'].slice(rawPages['66'].indexOf('PASSAGE 4')) + '\n\n' + rawPages['67'] + '\n\n' + rawPages['68'];
       }
+    } else if (testNum === 6) {
+      const p76_p2 = rawPages['76'].search(/PASSAGE\s*2/i);
+      const p78_p3 = rawPages['78'].search(/PASSAGE\s*3/i);
+      const p80_p4 = rawPages['80'].search(/PASSAGE\s*4/i);
+      if (cfg.num === 1) {
+        pageText = rawPages['75'] + '\n\n' + rawPages['76'].slice(0, p76_p2);
+      } else if (cfg.num === 2) {
+        pageText = rawPages['76'].slice(p76_p2) + '\n\n' + rawPages['77'] + '\n\n' + rawPages['78'].slice(0, p78_p3);
+      } else if (cfg.num === 3) {
+        pageText = rawPages['78'].slice(p78_p3) + '\n\n' + rawPages['79'] + '\n\n' + rawPages['80'].slice(0, p80_p4);
+      } else if (cfg.num === 4) {
+        pageText = rawPages['80'].slice(p80_p4) + '\n\n' + rawPages['81'] + '\n\n' + (rawPages['82'] || '');
+      }
     } else {
       pageText = cfg.pageKeys
         .map((k) => rawPages[k] || '')
@@ -380,6 +398,16 @@ Return valid JSON with keys: "title", "topic", "word_count", "difficulty", "cont
           passage_phrase: 'That lot was a rectangular area 25 feet wide by 100 feet deep',
           explanation: 'Lô đất chữ nhật 25x100 feet tương ứng với hình chữ nhật hẹp và sâu theo phương thẳng đứng (D).'
         };
+      }
+
+      if (q.type === 'sentence_insertion' || /in which space/i.test(q.question_text)) {
+        q.type = 'sentence_insertion';
+        q.options = [
+          { key: 'A', text: '[A]' },
+          { key: 'B', text: '[B]' },
+          { key: 'C', text: '[C]' },
+          { key: 'D', text: '[D]' },
+        ];
       }
 
       guaranteeVerbatimClue(q, structured.content_paragraphs);

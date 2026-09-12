@@ -41,6 +41,7 @@ Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mo
   - `ULIS_READING_TEST_03` (Đề 3): 4 bài đọc, 40 câu hỏi, khớp 100% đáp án gốc trang 140 và dẫn chứng verbatim (`ulisReadingTest03.ts`).
   - `ULIS_READING_TEST_04` (Đề 4): 4 bài đọc, 40 câu hỏi, khớp 100% đáp án gốc trang 145 và dẫn chứng verbatim (`ulisReadingTest04.ts`).
   - `ULIS_READING_TEST_05` (Đề 5): 4 bài đọc, 40 câu hỏi, khớp 100% đáp án gốc trang 149 và dẫn chứng verbatim (`ulisReadingTest05.ts`).
+  - `ULIS_READING_TEST_06` (Đề 6): 4 bài đọc, 40 câu hỏi, khớp 100% đáp án gốc trang 154 và dẫn chứng verbatim (`ulisReadingTest06.ts`).
   - Bộ chọn đề thi (`reading-edition-selector-bar`) tại `ReadingStudioPage` tự động hiển thị danh sách toàn bộ đề thi trong `ALL_VSTEP_READING_MOCK_TESTS`.
 - **Tích hợp Thi Thử 4 Kỹ Năng (Full Mock Tests)**:
   - `VSTEP_MOCK_TEST_01`: Kết hợp Nghe Đề 1, Đọc Đề 1, Viết Task 1/2, Nói May 30 (`mockTest01.ts`).
@@ -48,5 +49,6 @@ Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mo
   - `VSTEP_MOCK_TEST_03`: Kết hợp Nghe Đề 3, Đọc Đề 3, Viết Task 1/2, Nói May 20 (`mockTest03.ts`).
   - `VSTEP_MOCK_TEST_04`: Kết hợp Nghe Đề 4, Đọc Đề 4, Viết Task 1/2, Nói May 24 (`mockTest04.ts`).
   - `VSTEP_MOCK_TEST_05`: Kết hợp Nghe Đề 5, Đọc Đề 5, Viết Task 1/2, Nói May 24 (`mockTest05.ts`).
+  - `VSTEP_MOCK_TEST_06`: Kết hợp Nghe Đề 6, Đọc Đề 6, Viết Task 1/2, Nói May 24 (`mockTest06.ts`).
 
 

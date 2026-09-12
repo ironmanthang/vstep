@@ -51,7 +51,7 @@ src/features/reading/data/
 - **Test 3 Reading**: PDF pages 36–43 | Answer key on PDF page 140
 - Test 4 Reading: PDF pages 50–55 | Answer key on PDF page 145
 - Test 5 Reading: PDF pages 62–68 | Answer key on PDF page 149 (Book page 145)
-- Test 6 Reading: PDF pages 78–85 | Answer key on PDF page 155
+- Test 6 Reading: PDF pages 75–82 | Answer key on PDF page 154 (Book page 150)
 - **Test 7 Reading**: PDF pages 92–99 | Answer key on PDF page 160
 
 ### HCMUE 20 Tests Book (`scripts/vstep-collection-20-mock-tests.pdf`)
