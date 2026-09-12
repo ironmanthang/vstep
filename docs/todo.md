@@ -10,114 +10,41 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 
 ## SPRINT: KHUNG NỀN TẢNG & FLASHCARD SRS (FOUNDATION & CURATED SRS)
 
-### Khởi tạo Dự án & Design System (App Shell)
-- [x] Khởi tạo dự án Web (Vite + React 19 + TypeScript + Vanilla CSS Tokens)
-- [x] Thiết lập hệ thống biến CSS Design Tokens (Dark/Light mode, typography Outfit/Inter, Campfire warm amber & obsidian palette)
-- [x] Thiết lập hệ thống điều hướng Routing (Home, Skill Practice, Flashcard, Mock Test, Settings, Profile)
-- [x] Xây dựng Layout Responsive (Desktop Sidebar / Mobile Bottom Navigation Bar)
-- [x] Bổ sung nút Đăng xuất trực tiếp trên Mobile Sticky Header
-- [x] Chuẩn hóa Modal xác nhận 2 bước dùng chung (`src/components/common/ConfirmModal.tsx`) cho toàn hệ thống
-
-### Hệ thống Xác thực & Đồng bộ Đám mây (Login-First & Cross-Device Sync)
-- [x] Thiết lập Login-First Gate (`<ProtectedRoute>`) chặn truy cập unauthenticated và chuyển hướng về `/login`
-- [x] Xây dựng trang `/login` chuyên biệt chỉ sử dụng Google OAuth (loại bỏ biểu mẫu Email/Mật khẩu và modal cũ)
-- [x] Tạo Migration SQL cho Cơ sở dữ liệu chuẩn hóa (Option B: `user_profiles`, `user_study_logs`, `user_mock_test_results`, `user_flashcard_reviews`, `user_daily_stats`)
-- [x] Thiết lập trigger PostgreSQL `on_auth_user_created` tự động khởi tạo profile từ Google OAuth metadata
-- [x] Xây dựng tầng dịch vụ `profileSync.ts` và tích hợp vào `userStore.ts` để đồng bộ hồ sơ, streak và điểm thi giữa Mobile và Laptop
-- [x] Tích hợp cơ chế Optimistic UI và lưu trữ đệm tạm thời tại Client phòng ngừa mất kết nối ngắn hạn
-
-### Cấu hình AI Provider Hub & Master Gateway
-- [x] Xây dựng Master AI Gateway hỗ trợ OpenRouter, Ollama Cloud và Google AI Studio với Key Pool rotation (xem [ai_gateway.md](file:///d:/program/vstep/docs/architecture/ai_gateway.md))
-- [x] Xây dựng Settings UI: Bảng chẩn đoán trạng thái AI Gateway, đo độ trễ Ping (ms), chế độ Override nâng cao cho Dev
-- [x] Xây dựng tính năng Kiểm tra kết nối (Test Connection / Health Check) cho Master Gateway và từng provider
-- [x] Xây dựng lớp dịch vụ `AIServiceAdapter` chuẩn hóa request/response và xử lý fallback tự động
-
-### Cấu hình PWA & Quản lý Dữ liệu Client
-- [x] Cấu hình Web App Manifest (manifest.webmanifest) hỗ trợ Add to Home Screen (Standalone Mode)
-- [x] Cấu hình Service Worker cache tĩnh App Shell, font và static assets
-- [x] Điều chỉnh thứ tự hiển thị kỹ năng toàn app: Nghe (Listening) → Đọc (Reading) → Viết (Writing) → Nói (Speaking)
+### Khung Nền tảng & App Shell
+- [x] App Shell & Design System: Dự án Vite + React 19 + TypeScript, CSS tokens Dark/Light (Campfire warm amber & obsidian), điều hướng đa trang (Home, Skills, Flashcard, Mock Test, Settings, Profile), Layout responsive (Desktop Sidebar / Mobile Bottom Nav), nút Đăng xuất sticky mobile header, và ConfirmModal 2 bước dùng chung.
+- [x] Xác thực & Đồng bộ Đám mây: Login-First Gate (`<ProtectedRoute>`), trang `/login` chuyên biệt Google OAuth, migration Supabase normalized tables (`user_profiles`, `user_study_logs`, `user_mock_test_results`, `user_flashcard_reviews`, `user_daily_stats`), trigger PostgreSQL `on_auth_user_created`, `profileSync.ts` đồng bộ hồ sơ/streak/điểm thi, và Client optimistic UI buffer.
+- [x] Master AI Gateway: Tích hợp OpenRouter, Ollama Cloud và Google AI Studio với Key Pool rotation, Settings UI chẩn đoán độ trễ Ping (ms) & Dev override, tính năng Test Connection health check, và `AIServiceAdapter` xử lý fallback.
+- [x] Cấu hình PWA: Web App Manifest (Standalone Mode), Service Worker cache tĩnh App Shell/font/assets, và chuẩn hóa thứ tự kỹ năng toàn app (Listening → Reading → Writing → Speaking).
 
 ### Module Flashcard SRS Cốt lõi (Curated VSTEP SRS)
-- [x] Flashcard SRS: Thuật toán Spaced Repetition FSRS v6 nhị phân (Sai / Đúng), hàng đợi 3 cấp ưu tiên, trần 365 ngày, giới hạn 20 từ mới/ngày, hiệu ứng 3D Flip Card
-- [x] Tích hợp hệ thống Toast notifications phản hồi học tập
-- [x] Xây dựng bộ ngữ liệu 1.500 từ vựng cốt lõi trích xuất từ đề thi thật ULIS/HNUE theo 8 chủ đề VSTEP chuẩn (188 Edu, 188 Work, 188 Health, 188 Env, 187 Tech, 187 Travel, 187 Soc, 187 Media)
-- [x] Xây dựng Daily Review Queue hiển thị số thẻ cần ôn tập hôm nay và thống kê tiến độ học
-- [x] Tích hợp Supabase Cloud Sync cho Flashcard SRS qua Google OAuth (user_flashcard_reviews & user_daily_stats)
-- [x] Kiến trúc Online-First: Chặn ghi nhận ôn tập khi mất kết nối mạng và hiển thị banner cảnh báo ngoại tuyến
-- [x] Modal xác nhận đặt lại Deck 2 bước chống xóa nhầm (ConfirmModal) responsive trên Mobile (Bottom Sheet) & Desktop
-- [x] Tối ưu giao diện Mobile cho FlashcardPage (@media max-width 640px: lưới thống kê 2x2, tabs và thẻ ôn tập trải rộng 100%)
-- [x] Xóa sạch dữ liệu đồng bộ đám mây (user_flashcard_reviews & user_daily_stats) khi người dùng xác nhận đặt lại Deck
-- [x] Cơ chế Decoupled Corpus Hydration: Giữ nguyên 100% tiến độ học khi mở rộng kho từ vựng từ 1.500 lên 3.000 từ trong tương lai
+- [x] Thuật toán FSRS v6 & Đồng bộ Đám mây: Spaced Repetition nhị phân (Sai / Đúng), hàng đợi 3 cấp ưu tiên (re-learning → due reviews → new cards cap 20/ngày), trần 365 ngày, Supabase Cloud Sync (`user_flashcard_reviews` & `user_daily_stats`), hàng rào ngoại tuyến, ConfirmModal đặt lại deck xóa sạch cloud data, và decoupled hydration bảo toàn tiến độ khi mở rộng kho từ.
+- [x] Trải nghiệm Mobile Flashcard & Cử chỉ: Thẻ Above-the-Fold (thanh trạng thái 1 dòng, thu gọn header khi ôn tập), cử chỉ kéo vuốt tỷ lệ thực (Proportional Touch Swipe) với tem phản hồi ✗ Sai / ✓ Đúng và ngưỡng nhả 90px, triệt tiêu lỗi lộ nghĩa (Spoiled Definition Glitch), mặt sau căn giữa quang học, phím tắt laptop (`←` / `→` / `Space` / `A` / `P`), đồng bộ `theme-color` `#141210` Dark Obsidian, và gradient mask thanh chọn chủ đề.
+- [x] Thông báo PWA & App Badging: Tự động đồng bộ số thẻ cần ôn lên huy hiệu icon (`navigator.setAppBadge`), hẹn giờ nhắc nhở hàng ngày (`srsReminderService.ts`), Service Worker custom extension (`sw-custom.js`), và `ReminderSettingsModal` responsive.
 - [ ] Tăng số lượng từ lên 3000, lấy từ các đề trong 4 skills
-  - [x] Đợt 1 (Listening): Mở rộng từ 1.500 lên 2.000 từ (+500 từ) từ 7 Authentic Mock Tests & 15 HCMUE Drills (scripts/mine_listening_vocab.mjs)
+  - [x] Đợt 1 (Listening): Mở rộng từ 1.500 lên 2.000 từ (+500 từ) từ 7 Authentic Mock Tests & 15 HCMUE Drills (`scripts/mine_listening_vocab.mjs`)
   - [ ] Đợt 2 (Reading): Mở rộng từ 2.000 lên 2.500 từ (+500 từ) từ ngân hàng bài đọc VSTEP Reading
   - [ ] Đợt 3 (Writing & Speaking): Mở rộng từ 2.500 lên 3.000 từ (+500 từ)
-- [x] Chuẩn hóa thuật toán Spaced Repetition sang FSRS v6 nhị phân: Hàng đợi ưu tiên re-learning -> due reviews (overdue sort) -> new cards (cap 20/ngày), trần 365 ngày
-- [x] Thông báo PWA & App Badging nhắc nhở ôn tập SRS: Tự động cập nhật huy hiệu icon, hẹn giờ nhắc nhở hàng ngày và hỗ trợ Android/Desktop
-- [x] Tinh giản trải nghiệm Mobile SRS & Nâng thẻ lên vùng Above-the-Fold: Thanh trạng thái 1 dòng siêu gọn, thu gọn tiêu đề và 4 thẻ thống kê tĩnh khi ôn tập hàng đợi
-- [x] Cử chỉ vuốt chạm tỷ lệ thực (Proportional Touch Swipe) trên Mobile: Thẻ xoay nghiêng theo lực kéo, tem phản hồi trực quan (Sai / Đúng), ngưỡng nhả 90px kích hoạt chấm điểm, bảo vệ cuộn dọc
-- [x] Triệt tiêu lỗi lộ nghĩa (Spoiled Definition Glitch): Đóng băng thẻ cũ trong hiệu ứng thoát 180ms và tự động unflip về mặt trước tiếng Anh trước khi hiển thị thẻ kế tiếp
-- [x] Tinh giản mặt sau tiếng Việt: Căn giữa định nghĩa tiếng Việt đồng trục thị giác với mặt trước, bỏ nhãn thừa và huy hiệu trùng lặp
-- [x] Hệ thống phím tắt Laptop/Desktop: `←` Sai, `→` Đúng, `Space`/`↑`/`↓` Lật thẻ, `A`/`P` Phát âm kèm badge phím tắt trực quan
-- [x] Đồng bộ màu thanh trạng thái hệ thống (`theme-color`): Khắc phục dải màu vàng lệch tông, đồng bộ động sang `#141210` Dark Obsidian
-- [x] Mặt nạ mờ (gradient mask) mép phải thanh chọn chủ đề báo hiệu vùng cuộn ngang
+
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)
-- [x] Unit Test thuật toán Spaced Repetition (SRS algorithm) qua Vitest
-- [x] Thiết lập Pre-push pipeline tự động (scripts/prepush.mjs + .githooks/pre-push)
-- [x] Thiết lập CI/CD GitHub Actions workflow (.github/workflows/ci.yml)
-- [x] Thiết lập kịch bản tự động hóa database migration Supabase (scripts/migrate.mjs + pnpm db:migrate)
-- [x] Triển khai Production lên Cloudflare Pages (vstep.pages.dev) kèm SPA redirects và Google OAuth
+- [x] Hạ tầng Kiểm thử & Triển khai: Unit tests Vitest, Pre-push pipeline tự động (`scripts/prepush.mjs`), CI/CD GitHub Actions (`.github/workflows/ci.yml`), kịch bản tự động hóa database migration (`scripts/migrate.mjs`), và triển khai Production Cloudflare Pages (`vstep.pages.dev`).
 - [ ] Đạt điểm số Google Lighthouse > 90 (Performance, Accessibility, SEO) và tối ưu PWA Standalone
 
 
 ## SPRINT: LUYỆN NGHE CHỦ ĐỘNG (ASSISTED LISTENING STUDIO)
 
-### Kiến trúc Unified Listening Runner
-- [x] Xây dựng `ListeningRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (bật tua/dictation/manh mối) và `mode: 'exam'` (chỉ phát audio chuẩn, khóa phụ đề và manh mối)
-- [x] Tích hợp Question Palette cho 35 câu trắc nghiệm 3 Part
-- [x] Tích hợp chế độ "Mock Test 01: Sửa Đề & Luyện Sâu" cho phép chữa đề chi tiết 35 câu với đầy đủ công cụ phân tích
+### Unified Listening Runner & Smart Player
+- [x] Unified Listening Runner & Smart Audio Player: Runner 2 chế độ (`mode: 'practice' | 'exam'`), Question Palette 35 câu 3 Part, Mock Test 01 chữa đề sâu, Custom Audio Player Sticky (tua ±5s, 5 tốc độ 0.5x–2.0x, scrub bar, phím tắt `Space` / `←` / `→` kèm input guard), 21 audio tracks thi thật chuẩn ĐHQGHN, pipeline transcription 2 giai đoạn (Groq Whisper / faster-whisper + Gemini Flash bilingual enrichment), phân phối streaming Cloudflare R2 qua HTTP 206 Partial Content, và danh mục nguồn gốc `docs/sources/listening/README.md`.
 
-### Custom Audio Player & Điều khiển Nghe
-- [x] Xây dựng Custom Audio Player Sticky: Tự động ghim khi cuộn, nút tua ±5s, chọn 5 mức tốc độ (0.5x, 0.75x, 1.0x, 1.5x, 2.0x), thanh scrub tiến trình
-- [x] Tích hợp phím tắt điều khiển bàn phím (`Space` Play/Pause, `←` / `→` tua ±5s) kèm input guard cho `INPUT`, `TEXTAREA`, `SELECT`
-- [x] Tải và tích hợp file audio MP3 thi thật từ nguồn chính thức (7 đề thi VSTEP chuẩn ĐHQGHN)
-- [x] Cắt tách file audio lossless 21 file cho 7 đề × 3 Part (`public/audio/listening/test{1..7}/vstep-test-{1..7}-part{1..3}.mp3`)
-- [x] Ingestion tự động hóa 21 bộ transcript song ngữ kèm mốc thời gian chính xác sub-second qua pipeline 2 giai đoạn: Stage 1 Groq Cloud Whisper / local faster-whisper fallback (`scripts/transcribe_listening.py`) + Stage 2 Gemini Flash bilingual enrichment (`scripts/enrich_listening.mjs`)
-- [x] Cấu hình luồng phân phối âm thanh Production qua Cloudflare Pages `public/_redirects` chuyển hướng 302 sang Cloudflare R2 CDN bucket (hỗ trợ HTTP 206 Partial Content, Range headers, CORS `*`, $0 egress và tua tức thì)
-- [x] Lập danh mục nguồn gốc âm thanh toàn diện (`docs/sources/listening/README.md`) lập chỉ mục 22 file audio với mã định danh lưu trữ Google Drive, URL stream Cloudflare R2 và tài liệu tham chiếu sách gốc
-
-### Ngân hàng Đề Luyện Tập Đa Dạng (Multi-Test Banks)
-- [x] Tách biệt kiến trúc ngân hàng nghe: Purge các slice trùng lặp khỏi `part1Bank.ts`, `part2Bank.ts`, `part3Bank.ts`, xuất mảng rỗng sẵn sàng cho đề discrete độc lập
-- [x] Tích hợp ngân hàng luyện tập riêng biệt Part 1, 2, 3 từ nguồn chuẩn NXB ĐH Sư Phạm TP.HCM (HCMUE 20 Mock Tests, Đề 01–05, 15 bộ đề độc lập, 175 câu hỏi) với audio riêng 256kbps stereo, transcript song ngữ, mốc thời gian sub-second, đáp án chính thức và giải thích chi tiết
-- [x] Giao diện Listening Studio: Mặc định chọn Mock Test (Card 4), hỗ trợ luyện tập độc lập các Part 1, 2, 3 (Cards 1–3) với bộ chọn đề 5 kỳ thi (`[Đề 1]` đến `[Đề 5]`)
-- [x] Ghi chú nguồn gốc xuất xứ (Provenance) chi tiết trong code cho từng audio track (Google Drive ID, số trang sách, tài liệu docs/sources/)
-- [x] Tích hợp 21 bộ transcript song ngữ kèm mốc thời gian sub-second vào cấu trúc modular mock tests
-- [x] OCR và trích xuất trọn bộ câu hỏi 35 câu (tổng 245 câu, 4 lựa chọn, đáp án chuẩn, lời giải tiếng Việt) cho toàn bộ 7 đề từ sách "7 VSTEP Tests"
-- [x] Khởi tạo các module đề thi thử độc lập `mockTest01.ts` đến `mockTest07.ts` trong `src/features/listening/data/mockTests/` và export qua `src/features/listening/data/index.ts`
+### Ngân hàng Đề Luyện Tập Đa Dạng & Công cụ Xử lý
+- [x] Ngân hàng Đề thi & Tái cấu trúc Scripts: 15 đề rời Part 1–3 từ NXB ĐH Sư Phạm TP.HCM (HCMUE 01–05, 175 câu) kèm giải thích chi tiết, 7 đề Full Mock Test 35 câu từ sách "7 VSTEP Tests" (`mockTest01.ts` – `mockTest07.ts`), hiện đại hóa thư viện `scripts/` (loại bỏ 13.000 dòng mã thừa, `transcribe_listening.py` Groq/faster-whisper, `enrich_listening.mjs`, dynamic discovery scripts, và `download-assets.ps1`).
 - [ ] Tải và chạy thử nghiệm mô hình local qua Ollama: `ollama run hf.co/openbmb/MiniCPM5-2B-GGUF:Q4_K_M` và `ollama run hf.co/XHToken/Spark-X2.5-4B-GGUF:Q4_K_M` and python -c "from faster_whisper import WhisperModel; WhisperModel('large-v3-turbo', device='cpu', compute_type='int8')"
-- [x] Hiện đại hóa và tái cấu trúc thư mục `scripts/`:
-  - Loại bỏ hoàn toàn 5 file script cũ và 13.000 dòng mã thừa/dữ liệu trùng lặp (`ingest-listening.mjs`, `detect-boundaries.mjs`, `verify-timestamps.mjs`, `download-hcmue-drills.ps1`, `download-mock-assets.ps1`).
-  - Xây dựng Stage 1 Audio Transcriber (`scripts/transcribe_listening.py`): Ưu tiên Groq Cloud Whisper (`whisper-large-v3-turbo`) xử lý 25 phút audio trong ~2.5s, tự động fallback sang `faster-whisper` (CTranslate2 int8 trên 8 CPU cores) khi offline.
-  - Xây dựng Stage 2 Bilingual Enrichment (`scripts/enrich_listening.mjs`): Gọi Gemini Flash cascade thuần văn bản (<500 tokens), triệt tiêu lỗi 429 và phí upload file.
-  - Tích hợp Dynamic Discovery: `scripts/export_all_listening.mjs` và `scripts/verify-all-listening.mjs` tự động quét toàn bộ đề thi trong `drills/` và `mockTests/`.
-  - Hợp nhất kịch bản tải tài nguyên `scripts/download-assets.ps1` hỗ trợ `-Target all|hcmue|mock|pdf`.
-### Tinh giản Luồng Luyện Nghe & Ghi chú Nháp (Streamlined Question Stream & Scratchpad)
-- [x] Tinh giản `ListeningRunner`: Loại bỏ tab-switcher (questions/dictation/transcript) và cơ chế dictation diff, hợp nhất toàn bộ trải nghiệm vào luồng câu hỏi đơn trang
-- [x] Xây dựng `PassageGroupHeader` tự động nhận diện ranh giới bài nghe Part 2 (Hội thoại) và Part 3 (Bài giảng) kèm nút phát audio phân đoạn
-- [x] Nút nhảy audio trực tiếp tại badge từng câu hỏi (`▶ [mm:ss]`) trong chế độ Practice
-- [x] Khung ghi chú nháp từ khóa (Scratchpad) auto-expanding dưới mỗi câu hỏi (chỉ bật trong Practice Mode)
-- [x] Khung mở rộng lời thoại & manh mối (Inline Collapsible Transcript) song ngữ và bôi sáng manh mối trực tiếp dưới mỗi câu hỏi
-- [x] Kiểm thử toàn diện: Unit tests `listening.test.ts` (10 tests), lint và typecheck pass 100%
-- [x] Kiểm thử tự động hóa đồng bộ âm thanh & mốc thời gian (`scripts/verify-all-listening.mjs` / `pnpm run verify:listening`): Kiểm tra 100% 22 bộ đề (15 HCMUE discrete drills + 7 Full Mock Tests), xác thực sự tồn tại của file audio vật lý, độ lệch thời lượng < 3s, thứ tự mốc thời gian tuần tự không chồng chéo, đầy đủ manh mối câu hỏi và loại bỏ bẫy đọc đề thi mẫu (example-trap)
-- [x] Kiểm định âm học AI chuyên sâu (`scripts/master_listening_audit.py`): Hoàn tất rà soát 168 phân đoạn audio thực tế qua `faster-whisper`. Đã khắc phục 100% các sai lệch: đảo thứ tự Q6/Q7 (HCMUE P1 Đề 01), khoảng lặng tiền âm thoại (HCMUE P2 Đề 01), khôi phục bài giảng khuyết và mốc thời gian 100s (HCMUE P3 Đề 04 & Đề 05)
-- [x] Tối ưu luồng Làm lại bài Nghe: Bố trí nút inline ngay dưới thẻ kết quả chấm điểm, tích hợp ConfirmModal xác nhận và gọi deleteTestSubmission xóa dữ liệu nộp bài trên Supabase Cloud chống nạp đè dữ liệu cũ khi reload
+
+### Tinh giản Luồng Luyện Nghe & Ghi chú Nháp
+- [x] Trải nghiệm Câu hỏi Đơn trang & Kiểm định Âm học: Tinh giản luồng câu hỏi loại bỏ tab-switcher, `PassageGroupHeader` phân đoạn hội thoại/bài giảng, nút nhảy audio inline `▶ [mm:ss]`, Scratchpad ghi chú nháp auto-expanding, Inline Collapsible Transcript song ngữ gạch chân Key Clues, kiểm định tự động 22 bộ đề (`pnpm run verify:listening`), rà soát âm học AI 168 phân đoạn (`master_listening_audit.py`) khắc phục 100% sai lệch mốc thời gian, và luồng Làm lại bài tích hợp xóa submission trên Supabase.
+
 
 ## SPRINT: NGÂN HÀNG ĐỀ THI THẬT & MOCK TEST (AUTHENTIC EXAM BANKS)
-- [x] Trích xuất và cấu trúc hóa Đề thi Đọc Set 11 (FME Sourced: 4 bài đọc, 40 câu hỏi, giải thích tiếng Việt) vào `src/features/reading/data/fmeDe11.ts`
-- [x] Trích xuất và cấu trúc hóa 5 kỳ thi Nói tháng 5 vào `src/features/speaking/data/speakingBank.ts` (Part 1, 2, 3)
-- [x] Cấu trúc hóa ngân hàng đề Viết vào `src/features/writing/data/writingBank.ts` (Task 1: 3 Thư, Task 2: 2 Bài luận kèm bài mẫu B2/C1)
-- [x] Điều phối đề thi thử liên hoàn 180 phút Mock Test 01 tại `src/data/mock-tests/mockTest01.ts`
-- [x] Tách biệt kiến trúc Listening Studio: Card 4 Mock Test sở hữu trọn bộ 7 Đề (35 câu/đề, continuous audio) tại `src/features/listening/data/mockTests/`; Cards 1-3 dành riêng cho discrete part drills
+- [x] Ngân hàng Đề Thi Thật 4 Kỹ Năng: Trích xuất và cấu trúc hóa Đề thi Đọc Set 11 (FME Sourced: 4 bài đọc, 40 câu hỏi) vào `fmeDe11.ts`, 5 kỳ thi Nói tháng 5 vào `speakingBank.ts`, đề Viết Task 1–2 kèm bài mẫu B2/C1 vào `writingBank.ts`, Mock Test 01 liên hoàn 180 phút tại `mockTest01.ts`, và tách biệt kiến trúc Card 4 Mock Test 7 đề.
 
 
 ## SPRINT: LUYỆN ĐỌC CÓ HỖ TRỢ (ASSISTED READING STUDIO)
