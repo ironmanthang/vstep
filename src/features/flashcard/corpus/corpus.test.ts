@@ -54,10 +54,11 @@ describe('VSTEP Flashcard Corpus Integrity', () => {
       expect(Array.isArray(card.collocations)).toBe(true);
       expect(card.collocations.length).toBeGreaterThanOrEqual(2);
       expect(card.srs_metadata).toBeDefined();
-      expect(card.srs_metadata.repetition_count).toBe(0);
-      expect(card.srs_metadata.interval_days).toBe(0);
-      expect(card.srs_metadata.ease_factor).toBe(2.5);
-      expect(card.srs_metadata.status).toBe('new');
+      expect(card.srs_metadata.stability).toBe(0);
+      expect(card.srs_metadata.difficulty).toBe(0);
+      expect(card.srs_metadata.reps).toBe(0);
+      expect(card.srs_metadata.lapses).toBe(0);
+      expect(card.srs_metadata.state).toBe(0);
     }
   });
 });

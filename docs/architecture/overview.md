@@ -25,7 +25,7 @@
 | **AI Provider 3 (Fallback)** | Ollama Cloud / Local Endpoint | Endpoint dự phòng mã nguồn mở qua OLLAMA_API_KEY |
 
 ## Các Tầng Kiến trúc
-- **Client Layer (PWA / Browser)**: Giao diện Desktop Split-pane (bài đọc/nghe/viết bên trái, câu hỏi/công cụ bên phải) và Mobile micro-learning (vuốt Flashcard, Quick Quiz). Được bảo vệ bởi Login-First Gate (`<ProtectedRoute>`). Tích hợp Service Worker cache tĩnh App Shell, thực hiện tính toán SM-2 và làm tròn điểm trên Client (0ms), hỗ trợ optimistic UI và bộ đệm Auto-save lưu bản nháp mỗi 5s. Toàn bộ bài thi Nghe và Đọc được chấm tiền định 100% tại Client (Zero-AI Runtime).
+- **Client Layer (PWA / Browser)**: Giao diện Desktop Split-pane (bài đọc/nghe/viết bên trái, câu hỏi/công cụ bên phải) và Mobile micro-learning (vuốt Flashcard, Quick Quiz). Được bảo vệ bởi Login-First Gate (`<ProtectedRoute>`). Tích hợp Service Worker cache tĩnh App Shell, thực hiện tính toán FSRS v6 và làm tròn điểm trên Client (0ms), hỗ trợ optimistic UI và bộ đệm Auto-save lưu bản nháp mỗi 5s. Toàn bộ bài thi Nghe và Đọc được chấm tiền định 100% tại Client (Zero-AI Runtime).
 - **Backend & Cloud Layer (Supabase & Cloudflare)**: Supabase quản lý xác thực Google OAuth và cơ sở dữ liệu quan hệ chuẩn hóa (Option B Normalized Schema: `user_profiles`, `user_study_logs`, `user_mock_test_results`, `user_flashcard_reviews`, `user_daily_stats`) kèm Row Level Security và trigger tự khởi tạo hồ sơ `handle_new_user()`. Tầng dịch vụ `profileSync.ts` và `srsSync.ts` đồng bộ hai chiều giữa client và Supabase. Static assets phục vụ qua Cloudflare Pages.
 - **AI Gateway Layer**: Master API Key Gateway chuẩn hóa trên mô hình hạt nhân `gemini-3.5-flash-lite` với cơ chế xoay vòng key (Key Pool Rotation) và tự động fallback sang OpenRouter / Ollama Cloud. Chi tiết tại [ai_gateway.md](file:///d:/program/vstep/docs/architecture/ai_gateway.md).
 
@@ -46,7 +46,7 @@
 | **Nhật ký học & Streak (`user_study_logs`)** | Supabase PostgreSQL | Bảng chuẩn hóa lưu các ngày học, tránh phình to row profile |
 | **Kết quả Bài nộp (`user_test_submissions`)** | Supabase PostgreSQL | Lưu trữ điểm số, câu trả lời, cờ đánh dấu theo `(user_id, test_id, mode)`. Tự động xóa khi người dùng bấm làm lại |
 | **Lịch sử Thi thử (`user_mock_test_results`)** | Supabase PostgreSQL | Lưu trữ kết quả thi có cấu trúc theo từng lần nộp bài 180 phút |
-| **Tiến độ SRS (`user_flashcard_reviews` & `user_daily_stats`)** | Supabase PostgreSQL | Lưu trạng thái thẻ theo thuật toán SM-2 và bộ đếm ngày, kiến trúc Online-First |
+| **Tiến độ SRS (`user_flashcard_reviews` & `user_daily_stats`)** | Supabase PostgreSQL | Lưu trạng thái thẻ theo thuật toán FSRS v6 (stability, difficulty, reps, lapses, state) và bộ đếm ngày, kiến trúc Online-First |
 | **Bản nháp Writing & Optimistic Queue** | `localStorage` (Client Buffer) | Auto-save mỗi 5 giây chống mất dữ liệu khi mất kết nối tạm thời |
 | **Chấm bài AI (Viết/Nói)** | Master API Gateway (Client/Edge → AI API) | Phản hồi JSON có cấu trúc trực tiếp hiển thị lên UI |
 

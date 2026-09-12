@@ -14,12 +14,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tôi đã thảo luận báo cáo quý với các đồng nghiệp trong nhóm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -35,12 +36,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trưởng phòng nhân sự đã phỏng vấn năm ứng viên trong danh sách rút gọn hôm nay.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -56,12 +58,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự cống hiến cho dự án đã giúp cô nhận được sự thăng chức hoàn toàn xứng đáng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -77,12 +80,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những nhân viên làm thêm giờ được hưởng tiền thù lao theo giờ bổ sung.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -98,12 +102,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công ty cung cấp mức lương cạnh tranh và các chế độ bảo hiểm sức khỏe.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -119,12 +124,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiều nhà thiết kế đồ họa thích hợp đồng tự do vì giờ làm việc linh hoạt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -140,12 +146,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hoàn thành kỳ thực tập mùa hè mang lại kinh nghiệm thực tế trong ngành.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -161,12 +168,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hãy đảm bảo sơ yếu lý lịch của bạn làm nổi bật các thành tích chuyên môn liên quan.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -182,12 +190,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhân viên mới trải qua ba tháng thử việc trước khi ký hợp đồng chính thức.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -203,12 +212,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cải thiện văn hóa nơi làm việc giúp giảm tỷ lệ luân chuyển nhân viên cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -224,12 +234,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hãy báo cáo ngay bất kỳ sự cố an toàn nào cho người giám sát trực tiếp của bạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -245,12 +256,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Làm việc trong ngành quảng cáo đòi hỏi phải thích nghi tốt trong môi trường gấp gáp, chịu áp lực hạn chót.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -266,12 +278,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người có thành tích xuất sắc nhất sẽ nhận được tiền thưởng hiệu suất hàng năm vào tháng Mười Hai.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -287,12 +300,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nội thất công thái học thúc đẩy sức khỏe và sự thoải mái tại nơi làm việc hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -308,12 +322,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đóng góp vào quỹ hưu trí doanh nghiệp đảm bảo an toàn tài chính dài hạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -329,12 +344,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các công việc từ xa thường cho phép giờ giấc linh hoạt để thuận tiện chăm sóc gia đình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -350,12 +366,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giảng dạy được coi là một nghề nghiệp cao quý và nhiều đòi hỏi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -371,12 +388,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chuyên viên tư vấn tiếp thị đã lên lịch thuyết trình cho các khách hàng tiềm năng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -392,12 +410,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đúng giờ trong các cuộc họp thể hiện sự chuyên nghiệp và tôn trọng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -413,12 +432,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cả hai bên đã đồng ý các điều khoản trước khi ký hợp đồng lao động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -434,12 +454,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ăn mặc lịch sự tạo ấn tượng ban đầu tích cực trong buổi phỏng vấn xin việc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -455,12 +476,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ông dự định nghỉ hưu sau ba mươi năm cống hiến tận tụy.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -476,12 +498,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công ty đã đăng tuyển ba vị trí còn trống trong phòng kế toán.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -497,12 +520,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhân viên y tế thường luân phiên giữa các ca ngày và ca đêm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -518,12 +542,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hơn hai trăm người đã nộp đơn ứng tuyển cho vị trí hành chính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -539,12 +564,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kinh nghiệm làm việc phù hợp là một lợi thế khi ứng tuyển các vị trí cấp cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -560,12 +586,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phòng nhân sự phụ trách việc tiếp nhận nhân viên mới và bảng lương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -581,12 +608,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người quản lý dự án đã điều phối công việc giữa ba nhóm kỹ thuật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -602,12 +630,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ứng viên nên tự tin thương lượng mức lương dựa trên mặt bằng ngành.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -623,12 +652,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Anh ấy quyết định từ chức để theo đuổi chương trình học sau đại học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -644,12 +674,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bản mô tả công việc phác thảo rõ ràng các nhiệm vụ chính của vị trí này.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -665,12 +696,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chính phủ đã tăng mức lương tối thiểu quốc gia để hỗ trợ người thu nhập thấp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -686,12 +718,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhóm nghiên cứu đã làm việc chặt chẽ với các cộng tác viên quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -707,12 +740,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô đã hoàn thành bản thiết kế dù lịch trình sản xuất rất gấp gáp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -728,12 +762,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công ty khởi nghiệp dự định tuyển dụng hai mươi kỹ sư phần mềm vào quý tới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -749,12 +784,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một nhân viên không thể bị sa thải mà không có văn bản cảnh cáo thích đáng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -770,12 +806,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tất cả nhân viên phải tuân thủ nghiêm ngặt các quy tắc an toàn của công ty.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -791,12 +828,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bảo hiểm y tế và thẻ thành viên phòng gym là những phúc lợi nhân viên hấp dẫn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -812,12 +850,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chia nhỏ các nhiệm vụ phức tạp thành từng mốc giúp tăng năng suất tổng thể.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -833,12 +872,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kỹ năng giao tiếp tốt là điều thiết yếu đối với các vị trí tiếp xúc khách hàng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -854,12 +894,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một người lãnh đạo hiệu quả luôn lắng nghe thấu cảm những trăn trở của cấp dưới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -875,12 +916,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô đã vạch ra một lộ trình sự nghiệp năm năm rõ ràng trong lĩnh vực tư vấn số.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -896,12 +938,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bộ phận bán hàng đã vượt chỉ tiêu doanh thu hàng năm mười phần trăm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -917,12 +960,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một không gian làm việc được sắp xếp khoa học giúp giảm bớt sự mệt mỏi tinh thần hàng ngày.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -938,12 +982,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhân viên mới tham gia hai tuần đào tạo nghiệp vụ chuyên sâu tại chỗ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -959,12 +1004,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các buổi hội thảo tỉnh thức giúp nhân viên quản lý căng thẳng công việc hiệu quả.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -980,12 +1026,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hành vi đạo đức bảo vệ uy tín doanh nghiệp toàn cầu của công ty.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1001,12 +1048,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giao tiếp rõ ràng giúp các nhóm liên chức năng đạt được các mục tiêu chiến lược.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1022,12 +1070,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người học việc đã làm việc bên cạnh các nghệ nhân bậc thầy để học nghề.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1043,12 +1092,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự tin tưởng lẫn nhau và tình đồng nghiệp ấm áp giúp những giờ làm dự án kéo dài trở nên thú vị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1064,12 +1114,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc tự động hóa các hóa đơn định kỳ đã tạo nên một quy trình làm việc rất hiệu quả.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1085,12 +1136,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà tuyển dụng rất đánh giá cao những công nhân đáng tin cậy bàn giao sản phẩm chất lượng đúng hạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1106,12 +1158,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đảm nhận trách nhiệm dự án lớn hơn thường dẫn đến cơ hội thăng tiến nhanh hơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1127,12 +1180,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thương vụ sáp nhập quốc tế đã mở ra những cơ hội nghề nghiệp thú vị ở nước ngoài.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1148,12 +1202,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bàn giao dự án thành công phụ thuộc vào sự hợp tác chặt chẽ giữa các phòng ban.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1169,12 +1224,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một người quản lý biết hỗ trợ là yếu tố đóng góp chính cho sự hài lòng cao trong công việc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1190,12 +1246,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đánh giá hiệu suất hàng năm thẩm định các đóng góp cá nhân vào mục tiêu công ty.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1211,12 +1268,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô đã nộp đơn ứng tuyển vào một vị trí kỹ sư cao cấp tại công ty công nghệ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1232,12 +1290,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học cách quản lý các nhóm đa dạng là điều thiết yếu đối với các giám đốc cấp cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1253,12 +1312,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà lãnh đạo phải truyền đạt kỳ vọng chiến lược rõ ràng để tránh nhầm lẫn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1274,12 +1334,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mọi thành viên trong nhóm đều được khuyến khích đóng góp ý tưởng sáng tạo trong các buổi động não.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1295,12 +1356,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trung tâm logistics khu vực sử dụng hơn ba nghìn lao động địa phương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1316,12 +1378,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cần năm năm kinh nghiệm chuyên môn để đủ điều kiện ứng tuyển vị trí này.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1337,12 +1400,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự hỗ trợ đầy đủ từ cấp quản lý giúp giảm thiểu tình trạng kiệt sức và lo âu nơi làm việc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1358,12 +1422,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các bộ phận kỹ thuật và tiếp thị phải hợp tác chặt chẽ trong các đợt ra mắt sản phẩm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1379,12 +1444,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhân viên tham gia các buổi hội thảo hàng quý để phát triển các năng lực số nâng cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1400,12 +1466,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà máy đã nâng cấp dây chuyền lắp ráp tự động để tạo ra sản lượng cao hơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1421,12 +1488,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tham dự các hội nghị thương mại là một cách tuyệt vời để mở rộng mạng lưới quan hệ công việc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1442,12 +1510,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công tác xã hội đòi hỏi nhiều cảm xúc nhưng mang lại cảm giác thỏa mãn sâu sắc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1463,12 +1532,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người quản lý phải phân chia nhiệm vụ công bằng để duy trì khối lượng công việc vừa sức.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1484,12 +1554,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vui lòng ghi rõ họ tên và nghề nghiệp hiện tại trên đơn xin thị thực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1505,12 +1576,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Gói đãi ngộ cho cấp điều hành bao gồm lương cơ bản, quyền chọn cổ phiếu và thù lao theo hiệu suất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1526,12 +1598,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đại dịch đã thúc đẩy các doanh nghiệp áp dụng rộng rãi việc làm việc từ xa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1547,12 +1620,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc thăng chức trong công ty được điều chỉnh nghiêm ngặt bởi tài năng và chế độ trọng dụng nhân tài.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1568,12 +1642,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tái cơ cấu doanh nghiệp không may đã dẫn đến một số đợt tinh giản biên chế tự nguyện.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1589,12 +1664,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các công ty ưu tiên cân bằng công việc - cuộc sống ghi nhận tỷ lệ giữ chân nhân viên cao hơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1610,12 +1686,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các vườn ươm cung cấp vốn hạt giống để thúc đẩy tinh thần khởi nghiệp công nghệ cao trong sinh viên tốt nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1631,12 +1708,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thủ tục hành chính quan liêu thái quá bóp nghẹt việc ra quyết định linh hoạt và đổi mới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1652,12 +1730,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trong kỳ thẩm định hiệu suất hàng năm, các mục tiêu cho năm tới được thiết lập.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1673,12 +1752,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà điều hành hiệu quả biết cách ủy quyền các nhiệm vụ vận hành cho cấp phó có năng lực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1694,12 +1774,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kỹ thuật trí tuệ nhân tạo đã nổi lên như một nghề nghiệp đặc biệt sinh lợi cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1715,12 +1796,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô được một đối thủ đa quốc gia săn đón cho vị trí giám đốc tài chính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1736,12 +1818,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Làm thêm giờ triền miên không kiểm soát là nguyên nhân hàng đầu dẫn đến tình trạng kiệt sức nghề nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1757,12 +1840,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đối mặt với doanh thu sụt giảm, hội đồng quản trị đã công bố chính sách tinh giản nhân sự.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1778,12 +1862,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Liên doanh nhằm tạo ra sự cộng hưởng vận hành giữa các mảng công nghệ và bán lẻ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1799,12 +1884,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nền kinh tế việc làm tự do mang lại quyền tự chủ cho người làm việc tự do nhưng mất đi các phúc lợi theo luật định.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1820,12 +1906,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những nhân viên rời công ty nhận được ba tháng trợ cấp thôi việc cùng bảo hiểm y tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1841,12 +1928,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phần mềm tự động giúp hợp lý hóa các quy trình mua sắm và phê duyệt hóa đơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1862,12 +1950,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giờ làm việc linh hoạt và chỗ ngồi công thái học đã góp phần nâng cao năng suất lao động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1883,12 +1972,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ chế báo cáo minh bạch đảm bảo trách nhiệm giải trình tài chính theo chuẩn mực đạo đức.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1904,12 +1994,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hoạt động đối sánh cạnh tranh cho thấy tốc độ giao hàng của chúng tôi tụt hậu so với các đối thủ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1925,12 +2016,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tiền thưởng hiệu suất mang lại đòn bẩy tài chính mạnh mẽ cho lực lượng bán hàng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1946,12 +2038,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc thu hẹp quy mô doanh nghiệp buộc các nhân viên ở lại phải gánh vác các vai trò vận hành rộng hơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1967,12 +2060,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc tái cấu trúc phòng ban đã nhóm các đơn vị tiếp thị khu vực dưới sự chỉ đạo của một trưởng nhóm duy nhất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1988,12 +2082,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phân tích dữ liệu đã trở thành một năng lực cốt lõi không thể thiếu trên mọi lĩnh vực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2009,12 +2104,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ngân hàng đã quyết định thuê ngoài dịch vụ tổng đài khách hàng để giảm chi phí vận hành.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2030,12 +2126,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chương trình luân chuyển công việc được áp dụng để giảm bớt sự đơn điệu của dây chuyền lắp ráp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2051,12 +2148,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các kỹ sư đã tiến hành một nghiên cứu tính khả thi toàn diện trước khi khởi công.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2072,12 +2170,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tham khảo ý kiến các bên liên quan chủ chốt từ sớm giúp ngăn ngừa những bất đồng tốn kém sau này trong quá trình phát triển.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2093,12 +2192,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đầu tư vào việc nâng cao kỹ năng cho nhân viên giúp tăng cường năng lực cạnh tranh toàn cầu dài hạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2114,12 +2214,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà quản lý tiến bộ trao quyền cho nhân viên tuyến đầu tự chủ giải quyết khiếu nại của khách hàng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2135,12 +2236,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ủy ban điều hành sẽ trưng cầu ý kiến phản hồi từ các giám đốc chi nhánh khu vực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2156,12 +2258,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đa dạng hóa nguồn thu giúp bảo vệ doanh nghiệp khỏi những đợt suy thoái đột ngột của từng ngành.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2177,12 +2280,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thương vụ mua lại đã giúp doanh nghiệp củng cố thị phần tại Đông Nam Á.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2198,12 +2302,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Áp dụng phương pháp chủ động trong quản trị rủi ro giúp ngăn ngừa tổn thất tài chính nghiêm trọng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2219,12 +2324,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ngân sách dự án đã phân bổ quỹ dự phòng mười phần trăm cho các sự cố gián đoạn nguồn cung.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2240,12 +2346,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự biến đổi cơ cấu nhân khẩu học lực lượng lao động đòi hỏi các chính sách hưu trí linh hoạt hơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2261,12 +2368,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kiến trúc phần mềm chuyên sâu mang lại công việc có thù lao rất hậu hĩnh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2282,12 +2390,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Văn hóa nơi làm việc tích cực nuôi dưỡng sự an toàn tâm lý và tính sáng tạo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2303,12 +2412,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chính phủ đầu tư vào các sáng kiến đào tạo lại kỹ năng để chuẩn bị cho công nhân nhà máy trước làn sóng tự động hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2324,12 +2434,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chuyên gia giữa sự nghiệp thường tìm kiếm các chứng chỉ để nâng cao kỹ năng nhằm thăng tiến lên cấp quản lý.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2345,12 +2456,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà phân tích cấp dưới làm việc dưới sự giám sát chặt chẽ trong sáu tháng đầu tiên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2366,12 +2478,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công ty đã chọn hình thức hao hụt nhân sự tự nhiên thay vì sa thải bắt buộc để giảm số lượng nhân viên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2387,12 +2500,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chương trình hội nhập có cấu trúc giúp đẩy nhanh thời gian bắt nhịp công việc của nhân viên mới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2408,12 +2522,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tổng đãi ngộ bao gồm lương cơ bản, bảo hiểm y tế và cổ phần theo hiệu suất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2429,12 +2544,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chuyên viên pháp chế đảm bảo sự tuân thủ nghiêm ngặt của doanh nghiệp đối với các quy định lao động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2450,12 +2566,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chuyên gia tư vấn tận dụng dữ liệu doanh nghiệp để tối ưu hóa quản lý hàng tồn kho.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2471,12 +2588,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cuộc đàm phán hợp đồng kéo dài đã kết thúc bằng một thỏa thuận đối tác đôi bên cùng có lợi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2492,12 +2610,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tranh chấp về thỏa ước công đoàn đã được đệ trình lên hội đồng trọng tài độc lập.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2513,12 +2632,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Quản trị doanh nghiệp vững chắc bảo vệ các cổ đông thiểu số khỏi sự lạm quyền nội bộ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2534,12 +2654,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ủy ban kiểm toán thực hiện sự giám sát độc lập đối với các công bố thông tin tài chính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2555,12 +2676,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hãng hàng không đã tái cấu trúc hoạt động bay để khôi phục khả năng sinh lời.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2576,12 +2698,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đầu tư vào công thái học nơi làm việc đã làm giảm đáng kể tình trạng vắng mặt do đau lưng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2597,12 +2720,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tối ưu hóa mức độ khai thác tài nguyên đám mây đã giảm chi tiêu điện toán hai mươi phần trăm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2618,12 +2742,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chính sách mua sắm bền vững đòi hỏi mọi nhà cung cấp phải tuân thủ các thông lệ lao động công bằng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2639,12 +2764,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đạo đức làm việc bền bỉ và sự chính xác tỉ mỉ của cô đã nhận được sự ngưỡng mộ của cả nhóm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2660,12 +2786,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tư duy kinh doanh nhạy bén giúp nhân viên nhận diện những cơ hội thị trường mới lạ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2681,12 +2808,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cơ quan chống độc quyền đã can thiệp để ngăn tập đoàn độc chiếm các dịch vụ đám mây.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2702,12 +2830,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hội đồng quản trị đã bỏ phiếu tái căn chỉnh các ưu tiên của doanh nghiệp hướng tới các dự án năng lượng tái tạo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2723,12 +2852,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bản cáo bạch đầu tư nêu chi tiết lợi nhuận lịch sử và các rủi ro mở rộng dự kiến.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2744,12 +2874,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự hợp tác liên chức năng đã tạo ra những cải tiến cộng hưởng trên tất cả các nhóm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2765,12 +2896,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các giám đốc công ty có trách nhiệm ủy thác không lay chuyển đối với các cổ đông của công ty.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2786,12 +2918,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ban quản lý đã quyết định đóng băng số lượng nhân sự cho đến khi các dự báo kinh tế ổn định.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2807,12 +2940,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kiến trúc đám mây đảm bảo khả năng mở rộng phần mềm nhanh chóng mà không cần nâng cấp máy chủ ồ ạt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2828,12 +2962,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Để tránh nguy cơ vỡ nợ, công ty buộc phải cắt giảm quy mô nhà máy sản xuất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2849,12 +2984,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc chuyển giao các trung tâm hỗ trợ kỹ thuật ra nước ngoài đã tạo ra những biến dịch lớn về việc làm trên phạm vi quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2870,12 +3006,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các quy định bảo vệ theo luật định che chở người tố giác tiêu cực khỏi sự trả đũa của người sử dụng lao động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2891,12 +3028,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Quản lý dòng tiền kém đã đẩy nhà cung cấp dịch vụ logistics vào tình trạng mất khả năng thanh toán kỹ thuật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2912,12 +3050,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chương trình tư nhân hóa nhằm thổi luồng sinh khí thương mại năng động vào các tiện ích nhà nước.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2933,12 +3072,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các khoản trợ cấp chính phủ cho startup công nghệ sạch đã khơi dậy sự tạo việc làm nhanh chóng trong khu vực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2954,12 +3094,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ban quản lý cáo buộc công đoàn duy trì nhân sự dư thừa khi đòi hỏi các vị trí kíp lái không cần thiết.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2975,12 +3116,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiều thập kỷ hà tiện ngân sách đã khiến cơ sở hạ tầng giao thông đô thị rơi vào tình trạng xuống cấp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2996,12 +3138,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cuộc kiểm toán độc lập đã phơi bày thói bè phái tràn lan trong việc trao các hợp đồng mua sắm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3017,12 +3160,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc thăng chức cho người con trai thiếu năng lực của người sáng lập bị các cổ đông coi là sự gia đình trị trắng trợn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3038,12 +3182,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xe đưa đón có tài xế riêng và thẻ hội viên câu lạc bộ là những bổng lộc tiêu chuẩn của cấp điều hành.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3059,12 +3204,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự theo đuổi kiếm lợi cá nhân thiếu kiểm soát đã khiến các nhà giao dịch mù quáng trước các lỗ hổng thị trường mang tính hệ thống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3080,12 +3226,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà báo điều tra đã vạch trần một số người nhận lương nhà nước nhưng không hề đi làm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3101,12 +3248,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tòa án nhân quyền đấu tranh xóa bỏ chế độ nô lệ vì nợ nần thời hiện đại tại các lò gạch chui.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3122,12 +3270,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tập đoàn ngầm đã tìm cách mua chuộc các viên chức giám sát để làm ngơ cho các lô hàng lậu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3143,12 +3292,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những kẻ cho vay nặng lãi chụp giật đã bị truy tố theo các đạo luật cấm cho vay cắt cổ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3164,12 +3314,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trưởng ngân quỹ đã bị kết án vì tội biển thủ quy mô lớn từ quỹ dự phòng hưu trí đô thị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3185,12 +3336,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà xã hội học chính trị lập luận rằng các khoản tài trợ tranh cử không được kiểm soát sẽ nuôi dưỡng một chế độ tài phiệt đầu sỏ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3206,12 +3358,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vị lãnh đạo tự cao tự đại của công ty đã gạt bỏ phản hồi của tuyến đầu bằng sự kiêu ngạo thường thấy.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3227,12 +3380,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cổ đông đã tập hợp để chỉ trích gay gắt vị tổng giám đốc vì những khoản lỗ thảm khốc trong quý.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3248,12 +3402,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phản ứng hèn nhát của hội đồng quản trị trước sai phạm của cấp điều hành đã gây ra làn sóng phẫn nộ trong dư luận.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3269,12 +3424,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các kỹ sư tuyến đầu bực bội trước sự can thiệp hách dịch của các thanh tra tuân thủ cấp trung.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3290,12 +3446,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà phê bình lên án cách tiếp cận vụ lợi của chuyên gia tư vấn khi coi nhẹ sinh kế của cộng đồng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3311,12 +3468,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giám đốc điều hành đã bị sa thải ngay lập tức sau những tiết lộ về hành vi suy đồi đạo đức.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3332,12 +3490,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những nhà lãnh đạo thiếu tự tin thường vây quanh mình những cấp dưới xu nịnh thay vì những người có tư duy phản biện.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3353,12 +3512,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhân viên đã bị sa thải sau khi camera an ninh nội bộ chứng minh anh ta đã giả bệnh trốn việc trong các ca cao điểm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3374,12 +3534,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Doanh nghiệp đã phải loại bỏ máy móc lỗi thời để duy trì tính cạnh tranh với các đối thủ nước ngoài.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3395,12 +3556,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà hoạt động lao động đã lên án kịch liệt các điều kiện làm việc không an toàn và mang tính bóc lột của nhà máy.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3416,12 +3578,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thông qua các mưu mô xảo quyệt trong phòng họp hội đồng, vị phó chủ tịch đã hất cẳng người thầy lâu năm của mình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3437,12 +3600,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xung đột nội bộ giữa các nhà sáng lập đã làm tê liệt đà gọi vốn của công ty khởi nghiệp công nghệ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3458,12 +3622,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công đoàn đã bác bỏ báo cáo kiểm toán đầy tính thiên vị của chuyên gia tư vấn như một nỗ lực để hợp thức hóa việc sa thải hàng loạt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3479,12 +3644,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công ty đã chấm dứt hợp đồng với các nhà thầu ngoan cố bất tuân các tiêu chuẩn an toàn môi trường.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3500,12 +3666,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cổ đông đã giận dữ lên án những chuyến nghỉ dưỡng xa hoa lãng phí do ngân quỹ công ty chi trả.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3521,12 +3688,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thanh tra hám lợi đã nhận các khoản lại quả bất chính để chứng nhận vật liệu xây dựng kém chất lượng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3542,12 +3710,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các công tố viên đã truy tố luật sư công ty vì hành vi tìm cách mua chuộc các nhân chứng kiểm toán then chốt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3563,12 +3732,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ quan quản lý đã hạn chế các chiến lược định giá tham lam vô độ của các nhà cung cấp tiện ích chụp giật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3584,12 +3754,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cuộc kiểm toán công bằng lương đã được bắt buộc trong khu vực công để xóa bỏ chênh lệch thù lao dựa trên giới tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3605,12 +3776,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc đưa ra những so sánh gây hiềm khích giữa các thành viên trong nhóm sẽ phá hủy sự an toàn tâm lý.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3626,12 +3798,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tính độc đoán hách dịch trong quản lý của ông đã khiến một số kỹ sư phần mềm hàng đầu rời khỏi bộ phận.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3647,12 +3820,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ngân sách keo kiệt của công ty cho việc đào tạo đã kìm hãm sự đổi mới của nhân viên cấp dưới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3668,12 +3842,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một bè phái giám đốc điều hành cấp cao quyền lực đã mưu đồ ngầm để ngăn chặn thương vụ sáp nhập quốc tế được đề xuất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3689,12 +3864,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vị giám đốc độc hại thường xuyên dọa nạt cấp dưới trong các cuộc họp mở chỉ vì những sự chậm trễ nhỏ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3710,12 +3886,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà điều tra đã phát hiện một sự đổi chác bất chính liên kết tiền tài trợ tranh cử với các gói thầu chính phủ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3731,12 +3908,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tập đoàn đã chuyển trụ sở chính toàn cầu đến một công viên công nghệ hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3752,12 +3930,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiều kỹ sư phần mềm làm việc từ xa toàn thời gian từ các thị trấn ven biển.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3773,12 +3952,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà thầu chính đã giao thầu phụ phần lắp đặt điện nước cho các chuyên gia có chứng chỉ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3794,12 +3974,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhân viên mới phải hoàn thành xuất sắc thời gian thử việc ba tháng trước khi được bổ nhiệm chính thức.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3815,12 +3996,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Văn phòng theo không gian mở có các góc làm việc theo mô-đun với các vách ngăn tiêu âm chống ồn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3836,12 +4018,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà hoạch định chính sách phải giải quyết tình trạng thiếu việc làm của sinh viên mới tốt nghiệp ngành nhân văn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3857,12 +4040,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trong cuộc phỏng vấn hiệu suất, nhân viên được đánh giá đã thảo luận về những thành tích chuyên môn hàng năm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3878,12 +4062,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trong thời kỳ suy thoái của ngành hàng không, phi hành đoàn đã được cho tạm nghỉ việc không lương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3899,12 +4084,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người đình công của công đoàn đã lên án ban quản lý nhà máy vì thuê những kẻ phá hoại đình công.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3920,12 +4106,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hội đồng liêm chính doanh nghiệp đã cấm các hành vi tuyển dụng gia đình trị thiên vị trong các vị trí quản lý.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3941,12 +4128,13 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiều người làm thêm buổi tối kiếm thêm thu nhập từ công việc ban ngày qua thiết kế tự do.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   }
 ];

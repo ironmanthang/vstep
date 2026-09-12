@@ -12,17 +12,34 @@ export interface FlashcardItem {
   example_sentence_en: string;
   example_sentence_vi: string;
   audio_url: string;
-  srs_metadata: {
-    repetition_count: number;      // Số lần đã ôn tập
-    interval_days: number;         // Khoảng cách ngày đến lần ôn tiếp theo (1, 3, 7, 14, 30)
-    ease_factor: number;           // Hệ số độ khó (mặc định 2.5)
-    last_reviewed_at: number | null; // Unix timestamp
-    next_review_timestamp: number; // Unix timestamp
-    status: "new" | "learning" | "mastered";
-  };
+  srs_metadata: SRSMetadata;
 }
 
-export type SRSRating = "forgot" | "remembered" | "easy";
+/** FSRS-compatible SRS metadata stored per card */
+export interface SRSMetadata {
+  stability: number;               // FSRS stability: days until retrievability drops to 90%
+  difficulty: number;              // FSRS difficulty: 1–10 scale (0 for new cards)
+  reps: number;                    // Total successful reviews (correct answers)
+  lapses: number;                  // Total times answered wrong (lifetime)
+  last_reviewed_at: number | null; // Unix timestamp ms
+  next_review_timestamp: number;   // Unix timestamp ms (0 = new/never scheduled)
+  state: 0 | 1 | 2 | 3;          // 0=New, 1=Learning, 2=Review, 3=Relearning
+}
+
+/** Binary user rating: correct or wrong */
+export type SRSRating = "wrong" | "correct";
+
+/** Default SRS metadata for new/unreviewed cards */
+export const DEFAULT_SRS_METADATA: SRSMetadata = {
+  stability: 0,
+  difficulty: 0,
+  reps: 0,
+  lapses: 0,
+  last_reviewed_at: null,
+  next_review_timestamp: 0,
+  state: 0,
+};
+
 
 export interface GrammarDrillItem {
   id: string;

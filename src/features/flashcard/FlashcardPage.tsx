@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useFlashcardStore } from './useFlashcardStore';
 import { FlashcardCard } from './FlashcardCard';
 import type { SRSRating } from '../../types/schemas';
+import { NEW_CARDS_PER_DAY } from './srs';
 import { CheckCircleIcon, RefreshIcon } from '../../components/Icons';
 import { useNotification } from '../../hooks/useNotification';
 import { Toast } from '../../components/common/Toast';
@@ -19,6 +20,7 @@ export const FlashcardPage: React.FC = () => {
     selectedTopic,
     setSelectedTopic,
     reviewedToday,
+    newCardsToday,
     isCloudSyncing,
     isOnline,
     submitReview,
@@ -51,11 +53,15 @@ export const FlashcardPage: React.FC = () => {
 
     setIsFlipped(false);
 
-    if (reviewQueue.length <= 1) {
+    if (rating === 'wrong') {
+      showNotification('Sẽ ôn lại từ này sau ít phút.', 'info');
+    }
+
+    if (reviewQueue.length <= 1 && rating === 'correct') {
       showNotification('🎉 Tuyệt vời! Bạn đã hoàn thành toàn bộ bài ôn hôm nay!', 'success');
     }
 
-    // Move to next card or stay if queue updates
+    // Move to next card or wrap around
     if (currentQueueIndex >= reviewQueue.length - 1) {
       setCurrentQueueIndex(0);
     }
@@ -145,8 +151,8 @@ export const FlashcardPage: React.FC = () => {
           <span className="stat-val stat-emerald">{stats.mastered} từ ({stats.masteryPercentage}%)</span>
         </div>
         <div className="stat-card">
-          <span className="stat-label">Đang ghi nhớ</span>
-          <span className="stat-val stat-gold">{stats.learning} từ</span>
+          <span className="stat-label">Từ mới hôm nay</span>
+          <span className="stat-val stat-gold">{newCardsToday}/{NEW_CARDS_PER_DAY}</span>
         </div>
         <div className="stat-card">
           <span className="stat-label">Hôm nay đã ôn</span>
@@ -285,15 +291,15 @@ export const FlashcardPage: React.FC = () => {
                 <div className="vocab-card-top">
                   <span className="badge badge-primary">{card.topic}</span>
                   <span className={`badge ${
-                    card.srs_metadata.status === 'mastered'
+                    card.srs_metadata.state === 2 && card.srs_metadata.reps >= 3
                       ? 'badge-emerald'
-                      : card.srs_metadata.status === 'learning'
+                      : card.srs_metadata.reps > 0
                       ? 'badge-gold'
                       : 'badge-primary'
                   }`}>
-                    {card.srs_metadata.status === 'mastered'
+                    {card.srs_metadata.state === 2 && card.srs_metadata.reps >= 3
                       ? 'Đã làm chủ'
-                      : card.srs_metadata.status === 'learning'
+                      : card.srs_metadata.reps > 0
                       ? 'Đang học'
                       : 'Mới'}
                   </span>
@@ -304,7 +310,9 @@ export const FlashcardPage: React.FC = () => {
                 <div className="vocab-footer">
                   <span className="vocab-level">Bậc {card.level} • {card.part_of_speech}</span>
                   <span className="vocab-interval">
-                    Khoảng cách: {card.srs_metadata.interval_days} ngày
+                    {card.srs_metadata.reps > 0
+                      ? `Đã ôn ${card.srs_metadata.reps} lần • Độ bền ${Math.round(card.srs_metadata.stability)}d`
+                      : 'Chưa học'}
                   </span>
                 </div>
               </div>

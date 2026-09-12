@@ -14,12 +14,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tổ chức kiểm chứng thông tin nỗ lực chống lại sự lan truyền chóng mặt của thông tin sai lệch về y tế trên mạng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -35,12 +36,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đài truyền hình quốc gia sẽ phát sóng trực tiếp buổi tranh luận của tổng thống vào tối nay.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -56,12 +58,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Báo chí điều tra đóng vai trò giám sát quan trọng trong việc vạch trần tham nhũng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -77,12 +80,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công ty đồ uống đã phát động một chiến dịch quảng cáo kỹ thuật số rầm rộ trên mạng xã hội.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -98,12 +102,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà vận động tự do báo chí cho rằng sự kiểm duyệt của chính phủ làm kìm hãm cuộc tranh luận công khai minh bạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -119,12 +124,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bài xã luận trên báo hôm nay đã chỉ trích sự chậm trễ của hội đồng thành phố trong việc nâng cấp giao thông công cộng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -140,12 +146,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thương hiệu hợp tác với những người có tầm ảnh hưởng thời trang nổi tiếng để tiếp thị trang phục bền vững cho giới trẻ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -161,12 +168,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vụ phóng tàu con thoi lịch sử vào không gian đã nhận được sự đưa tin rộng rãi của truyền thông quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -182,12 +190,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kênh khoa học giáo dục đã đạt hơn hai triệu người đăng ký chỉ trong năm đầu tiên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -203,12 +212,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phát hiện y học mang tính đột phá đã lên trang nhất các mặt báo trên toàn thế giới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -224,12 +234,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các đoạn phim quảng cáo truyền hình kinh phí cao được phát sóng trong trận chung kết bóng đá hàng năm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -245,12 +256,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tờ báo lá cải thường ưu tiên chuyện phiếm của người nổi tiếng hơn là phân tích chính sách thực chất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -266,12 +278,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người làm podcast điều chỉnh giọng điệu kể chuyện để kết nối chân thực với khán thính giả mục tiêu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -287,12 +300,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những tin đồn liên quan đến vụ sáp nhập doanh nghiệp đã lan truyền rộng rãi trên các diễn đàn tài chính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -308,12 +322,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tín hiệu phi ngôn ngữ rõ ràng và lắng nghe tích cực là những trụ cột cốt lõi của giao tiếp hiệu quả.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -329,12 +344,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những nhà báo chiến trường dũng cảm liều mình để đưa tin từ các khu vực xung đột tuyến đầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -350,12 +366,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tạp chí khoa học có phản biện sẽ xuất bản các kết quả nghiên cứu vào tháng tới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -371,12 +388,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mạng xã hội đã nổi lên như một kênh truyền thông không thể thiếu để nhận phản hồi trực tiếp từ khách hàng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -392,12 +410,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phóng viên tin tức đã truyền hình trực tiếp từ trung tâm chỉ huy cứu trợ bão.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -413,12 +432,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hàng triệu khán giả đã theo dõi chương trình phát sóng trực tiếp lễ khai mạc Thế vận hội.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -434,12 +454,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người dẫn chương trình radio hàng tuần mời thính giả gọi điện trực tiếp đặt câu hỏi và bình luận.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -455,12 +476,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô ấy là tác giả của một bài viết chuyên đề xem xét các lợi ích kinh tế của làn đường xe đạp đô thị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -476,12 +498,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chuyên gia phân tích tài chính viết một chuyên mục hàng tuần nổi tiếng về các chiến lược đầu tư cá nhân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -497,12 +520,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tổng biên tập quản lý đã xem xét bản thảo dự thảo để đảm bảo tính chính xác của báo chí.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -518,12 +542,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bộ trưởng đã phát biểu trước các nhà báo quốc tế trong một cuộc họp báo buổi sáng chật kín chỗ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -539,12 +564,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phương tiện truyền thông đại chúng định hình nhận thức của công chúng về các thách thức kinh tế và xã hội then chốt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -560,12 +586,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đài truyền hình đã tạm dừng chương trình thông thường để phát một bản tin thời tiết khẩn cấp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -581,12 +608,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phóng viên thường trú nước ngoài đã cung cấp các báo cáo trực tiếp về các cuộc đàm phán hiệp ước từ Geneva.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -602,12 +630,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chương trình podcast giáo dục cho phép người đi làm học ngoại ngữ trong các chuyến đi tàu hàng ngày.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -623,12 +652,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bình luận viên thể thao đã đưa ra lời bình luận trực tiếp lôi cuốn trong loạt sút luân lưu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -644,12 +674,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cơ quan đường sắt đã đưa ra thông báo về việc thay đổi sân ga tạm thời.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -665,12 +696,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người được phỏng vấn đã thẳng thắn chia sẻ về những thách thức trong việc cân bằng sự nghiệp doanh nghiệp và gia đình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -686,12 +718,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một người phỏng vấn lành nghề đặt những câu hỏi mở mang tính thăm dò giúp khám phá những hiểu biết sâu sắc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -707,12 +740,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bệnh viện đã ra tuyên bố chính thức xác nhận bệnh nhân đã bình phục hoàn toàn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -728,12 +762,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thúc đẩy đối thoại song phương mang tính xây dựng giúp giải quyết các tranh chấp thương mại mà không cần leo thang thuế quan.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -749,12 +784,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hội nghị thượng đỉnh đã tổ chức một cuộc thảo luận nhóm về các nguyên tắc đạo đức cho trí tuệ nhân tạo tự chủ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -770,12 +806,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cuộc thăm dò dư luận cho thấy sự ủng hộ áp đảo của người dân đối với các khoản đầu tư vào năng lượng mặt trời tái tạo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -791,12 +828,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lắng nghe những góc nhìn đa dạng giúp mở rộng sự hiểu biết phản biện của bạn về các vấn đề xã hội toàn cầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -812,12 +850,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chiến dịch y tế công cộng đã truyền tải thành công thông điệp khẩn cấp về vệ sinh tay.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -833,12 +872,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người dân dựa vào các thư viện công cộng để tiếp cận miễn phí và không bị hạn chế các thông tin xác thực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -854,12 +894,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các phóng viên có đạo đức luôn xác minh sự thật với nhiều nguồn đáng tin cậy trước khi xuất bản.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -875,12 +916,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người phát ngôn của công ty đã tổ chức một buổi thông tin ngắn để phủ nhận những tin đồn thất thiệt về các đợt sa thải sắp tới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -896,12 +938,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các trang blog giải trí giật gân phát triển mạnh nhờ sản xuất những tin đồn nhảm chưa được xác minh về người nổi tiếng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -917,12 +960,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thuế carbon được đề xuất đã châm ngòi cho một cuộc tranh luận sôi nổi giữa các nhà bảo vệ môi trường và các lãnh đạo doanh nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -938,12 +982,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bài phát biểu quan trọng nhấn mạnh tầm quan trọng thiết yếu của năng lực kỹ thuật số trong giáo dục tiểu học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -959,12 +1004,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Luyện tập các cuộc trò chuyện hàng ngày với người bản xứ giúp cải thiện khả năng nói tiếng Anh lưu loát nhanh chóng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -980,12 +1026,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tác giả đã đưa ra một lập luận thuyết phục được củng cố bởi dữ liệu nhân khẩu học phong phú.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1001,12 +1048,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tương tác trực tiếp giữa con người nuôi dưỡng sự thấu cảm sâu sắc hơn là nhắn tin văn bản không đồng bộ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1022,12 +1070,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đội ngũ hỗ trợ khách hàng đã nhận được lời khen ngợi vì sự phản hồi nhanh chóng và hữu ích.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1043,12 +1092,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà văn nên coi sự phê bình mang tính xây dựng là cơ hội để hoàn thiện phong cách hành văn của mình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1064,12 +1114,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Loạt bài điều tra đã nhận được sự biểu dương cao từ hiệp hội báo chí quốc gia.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1085,12 +1136,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tờ báo độc lập thực hiện một nghĩa vụ dân chủ thiết yếu là giữ cho công dân luôn được cập nhật thông tin.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1106,12 +1158,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà thơ sử dụng những ẩn dụ sống động để truyền tải những cảm xúc tinh tế của con người qua các ngôn ngữ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1127,12 +1180,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Diễn giả chính đã bày tỏ lòng biết ơn sâu sắc đối với các nhà tổ chức hội nghị chuyên đề.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1148,12 +1202,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các lập luận logic thuyết phục được củng cố bởi các sự kiện thực nghiệm sẽ thuyết phục được những khán giả hoài nghi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1169,12 +1224,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ban giám khảo sẽ công bố công khai những người đoạt giải thưởng văn học tại đêm tiệc tối mai.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1190,12 +1246,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đại diện cộng đồng đã tập hợp để thảo luận các giải pháp thiết thực cho tình trạng ùn tắc giao thông khu phố.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1211,12 +1268,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các phóng viên thường trú nước ngoài đã đưa tin trực tiếp từ hội nghị thượng đỉnh về khí hậu quốc tế tại Paris.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1232,12 +1290,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những nhà lãnh đạo hiệu quả luôn chăm chú lắng nghe phản hồi của nhân viên tuyến đầu trong các cuộc họp toàn thể.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1253,12 +1312,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thông báo đẩy thông báo kịp thời cho học sinh khi hàng đợi ôn tập ngắt quãng hàng ngày của họ đã sẵn sàng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1274,12 +1334,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cấu trúc các lập luận của bạn với bằng chứng thực nghiệm rõ ràng sẽ tạo nên một bài luận đầy tính thuyết phục.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1295,12 +1356,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bộ phim tài liệu đã cung cấp một cái nhìn tổng quan rất bổ ích về những đột phá năng lượng tái tạo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1316,12 +1378,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nền tảng chia sẻ video đã trở thành phương tiện phổ biến nhất cho việc giải trí của giới trẻ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1337,12 +1400,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ quan tình báo đã cảnh báo về các chiến dịch tung thông tin giả mạo có tổ chức do nhà nước bảo trợ trong các cuộc bầu cử.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1358,12 +1422,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà báo có trách nhiệm tránh xu hướng giật gân câu khách, thay vào đó chọn lối đưa tin có chừng mực và dựa trên sự thật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1379,12 +1444,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các buồng vang thuật toán trên mạng xã hội đẩy nhanh sự phân cực chính trị giữa các công dân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1400,12 +1466,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bảng tin mạng xã hội thường nhốt người dùng vào các buồng vang kỹ thuật số làm củng cố thêm các định kiến sẵn có.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1421,12 +1488,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Năng lực hiểu biết truyền thông phản biện giúp học sinh phân biệt việc đưa tin xác thực với sự tuyên truyền mang tính đảng phái.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1442,12 +1510,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhân vật của công chúng đã đệ đơn kiện bồi thường hàng triệu đô la vì tội phỉ báng danh dự chống lại nhà xuất bản báo lá cải.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1463,12 +1532,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Báo chí bới móc tiêu cực đầu thế kỷ XX đã phơi bày các tập đoàn độc quyền và lao động nhà máy không an toàn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1484,12 +1554,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà phê bình cho rằng các chương trình tin tức giải trí đêm muộn làm mờ ranh giới giữa tin thời sự và sự châm biếm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1505,12 +1576,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các trang báo điện tử thường sử dụng các tiêu đề mồi chài giật gân để tạo lượt xem quảng cáo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1526,12 +1598,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tờ báo đã đăng một bài đính chính nổi bật trên trang nhất sau khi xuất bản những cáo buộc chưa được xác minh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1547,12 +1620,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cố vấn quan hệ công chúng đã cố gắng định hướng dư luận tích cực về báo cáo thu nhập đáng thất vọng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1568,12 +1642,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các sáng kiến chính phủ mở bắt buộc tính minh bạch về mặt thuật toán trong việc ra quyết định của khu vực công.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1589,12 +1664,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các đài truyền hình công cộng được tài trợ bởi phí thuê bao duy trì tính độc lập biên tập khỏi các nhà quảng cáo doanh nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1610,12 +1686,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Loạt phim tài liệu ăn khách đã thu về hàng triệu đô la từ tiền bản quyền phát sóng lại trên truyền hình quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1631,12 +1708,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kẻ mị dân mang tính dân túy đã thao túng các nền tảng mạng xã hội để kích động sự phẫn nộ của công chúng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1652,12 +1730,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cử tri nên nhìn thấu những luận điệu tranh cử sáo rỗng và đánh giá hồ sơ bỏ phiếu chính sách cụ thể của các ứng viên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1673,12 +1752,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tòa soạn bị kết tội phỉ báng bằng văn bản vì đã in những cáo buộc vô căn cứ chống lại nhà ngoại giao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1694,12 +1774,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Không giống như phỉ báng bằng văn bản, vu khống bằng lời nói đề cập đến các nhận xét bôi nhọ được phát biểu tại các diễn đàn công cộng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1715,12 +1796,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các quy định chống độc quyền ngăn chặn sự độc quyền hóa các mạng lưới truyền hình quốc gia bởi các tập đoàn đơn lẻ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1736,12 +1818,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tính khách quan trong báo chí đòi hỏi các phóng viên phải trình bày các quan điểm đối lập một cách công bằng mà không đứng về phía nào.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1757,12 +1840,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trong khi các chuyên mục ý kiến đón nhận tính chủ quan, các bài báo thời sự phải tuân thủ nghiêm ngặt các sự thật có thể kiểm chứng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1778,12 +1862,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mạng lưới nhắn tin xã hội cho phép phổ biến nhanh chóng các cảnh báo thiên tai khẩn cấp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1799,12 +1884,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự khuếch đại bằng thuật toán trên các nền tảng video thường xuyên đẩy mạnh các nội dung gây tranh cãi đầy cảm xúc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1820,12 +1906,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cuộc thăm dò tương tác và các buổi hỏi đáp trực tiếp làm tăng đáng kể mức độ tương tác của khán giả kỹ thuật số.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1841,12 +1928,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tờ báo đã dựa vào những tiêu đề giật gân để tăng doanh số bán tại các sạp báo trong vụ bê bối.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1862,12 +1950,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thanh tra viên độc lập kiểm toán các mạng lưới tin tức để nhận diện và sửa chữa sự thiên vị phe phái.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1883,12 +1972,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các biên tập viên có trách nhiệm từ chối in các cáo buộc vô căn cứ mà không có các tài liệu chứng thực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1904,12 +1994,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bộ phim tài liệu đoạt giải đã trình bày một câu chuyện thuyết phục mạnh mẽ về chủ nghĩa anh hùng điều tra.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1925,12 +2016,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Luật bảo vệ người tiêu dùng cấm các kỹ thuật quảng cáo mang tính thao túng nhắm vào trẻ em dễ bị tổn thương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1946,12 +2038,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bài báo điều tra đã dành sáu tháng để xác minh hành vi gian lận sổ cái tài chính trên khắp các công ty vỏ bọc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1967,12 +2060,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà nghiên cứu y học trích dẫn tạp chí y khoa có phản biện như nguồn tin có thẩm quyền và uy tín cao nhất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1988,12 +2082,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự hiện diện ở khắp mọi nơi của điện thoại thông minh cho phép báo chí công dân tức thì trong các tin nóng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2009,12 +2104,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo dục năng lực số là điều thiết yếu để giúp người tiêu dùng định hướng trước ảnh hưởng tràn ngập của quảng cáo hướng đối tượng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2030,12 +2126,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà kiểm chứng sự thật đã chứng minh rằng đoạn video lan truyền hoàn toàn bị ngụy tạo bằng phần mềm deepfake.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2051,12 +2148,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà văn châm biếm chính trị sử dụng sự hài hước mang tính phản kháng để thách thức hiện trạng độc đoán một cách an toàn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2072,12 +2170,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hình ảnh vệ tinh độc lập đã giúp xác thực lời khai của nhân chứng về nạn phá rừng bất hợp pháp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2093,12 +2192,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bằng chứng khoa học phản bác kỹ lưỡng đã làm mất uy tín hoàn toàn những tuyên bố sức khỏe gian lận.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2114,12 +2214,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các blogger tai tiếng đã bịa đặt những câu trích dẫn giật gân để thúc đẩy lưu lượng truy cập lan truyền đến mạng quảng cáo của họ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2135,12 +2236,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những kẻ tuyên truyền sử dụng các câu trích dẫn có chọn lọc để thao túng dư luận và tạo ra những ấn tượng sai lệch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2156,12 +2258,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tờ báo buộc phải rút lại bài viết trang nhất sau khi nguồn tin thú nhận đã nói dối.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2177,12 +2280,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cuộc tranh luận giật gân trên truyền hình có xu hướng làm phân cực công chúng thành những phe phái ý thức hệ thù địch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2198,12 +2302,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chế độ độc đoán thường xuyên kiểm duyệt các cổng internet nước ngoài trong những thời kỳ bất ổn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2219,12 +2324,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chương trình podcast cơ sở khuếch đại tiếng nói của những cộng đồng bản địa xa xôi yếu thế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2240,12 +2346,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Loạt phim tài liệu đã vạch trần những sai phạm môi trường tràn lan trên khắp các khu công nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2261,12 +2368,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tổ chức tự do dân sự vận động không mệt mỏi cho luật pháp về hồ sơ mở minh bạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2282,12 +2390,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà báo phải tiết lộ các xung đột lợi ích tiềm ẩn khi đưa tin về các sản phẩm thương mại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2303,12 +2412,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đồ họa thông tin tương tác và trực quan hóa dữ liệu thu hút độc giả vào các chủ đề khí hậu phức tạp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2324,12 +2434,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người viết bài xã luận dày dạn kinh nghiệm đã đưa ra lập luận bảo vệ có chừng mực về các hiệp ước thương mại quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2345,12 +2456,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những suy ngẫm của nhà báo phụ trách chuyên mục về việc nuôi dạy con cái thời hiện đại được xuất bản trên bốn mươi tờ nhật báo quốc gia.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2366,12 +2478,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ quan quản lý thực thi các tiêu chuẩn nghiêm ngặt về sự chuẩn mực và tính trung thực trong ngành phát thanh truyền hình quốc gia.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2387,12 +2500,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Truyền thông vệ tinh hiện đại kết nối các trạm nghiên cứu xa xôi ở Nam Cực với các phòng thí nghiệm toàn cầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2408,12 +2522,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chính trị gia cáo buộc phe đối lập đã cố tình xuyên tạc bóp méo các đề xuất cải cách thuế của ông.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2429,12 +2544,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc đưa tin giật gân câu khách về tội phạm tạo ra nỗi sợ hãi vô cớ trong những công dân cao tuổi ở đô thị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2450,12 +2566,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các biên tập viên yêu cầu sự chứng thực bằng tài liệu độc lập trước khi đăng bài phóng sự điều tra bùng nổ về doanh nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2471,12 +2588,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chính sách của Wikipedia bắt buộc tính có thể kiểm chứng được thông qua các trích dẫn từ các nguồn đã xuất bản đáng tin cậy.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2492,12 +2610,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thanh tra báo chí độc lập điều tra các khiếu nại của độc giả liên quan đến những điểm không chính xác về sự thật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2513,12 +2632,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Báo lá cải có xu hướng giật gân hóa các tranh chấp nhỏ của người nổi tiếng để tạo ra các lượt nhấp chuột trực tuyến lan truyền.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2534,12 +2654,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các quảng cáo chế độ ăn uống gian lận cố tình cung cấp thông tin sai lệch cho người tiêu dùng về việc giảm cân nhanh chóng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2555,12 +2676,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các hợp đồng mua sắm của chính phủ phải chịu sự soi xét thẩm định kỹ lưỡng và độc lập của truyền thông.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2576,12 +2698,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thuật toán tự động phát hiện những trang web không trung thực đạo văn nội dung từ các nhà báo nguyên bản.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2597,12 +2720,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phóng viên điều tra đã cung cấp nhiều bằng chứng tài liệu có tính xác nhận phong phú cho tòa án.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2618,12 +2742,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiều thập kỷ kiểm chứng sự thật tỉ mỉ đã xây dựng nên uy tín thẩm quyền trường tồn của tờ báo quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2639,12 +2764,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự hiện diện ở khắp mọi nơi của điện thoại thông minh cho phép các cảnh quay của nhân chứng được phát trực tuyến trong vài giây.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2660,12 +2786,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà giáo dục nhấn mạnh tính lan tỏa tràn ngập của tiếp thị qua người có ảnh hưởng trong việc định hình lòng tự trọng của thanh thiếu niên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2681,12 +2808,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khả năng hùng biện thuyết phục và sự làm chủ dữ liệu thống kê của cô đã làm lung lay ủy ban nghị viện.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2702,12 +2830,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các diễn đàn cân nhắc dân chủ phát triển mạnh dựa trên tính chất trao đổi ngôn luận chính trị cởi mở, có lý trí và bao trùm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2723,12 +2852,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các kênh truyền thông nhà nước đã bị vũ khí hóa để tuyên truyền cho công dân trong cuộc xung đột địa chính trị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2744,12 +2874,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Baudrillard lập luận rằng truyền thông hiện đại tạo ra một bản sao siêu thực thay thế thực tại vật lý.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2765,12 +2896,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trong thời đại của các bảng tin mạng xã hội được tuyển chọn, các cá nhân ngày càng sống trong một thực tại ảo siêu thực nhân tạo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2786,12 +2918,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà hùng biện chính trị đã dựa vào thủ đoạn mị dân mang tính dân túy để kích động những bất bình sắc tộc và huy động phiếu bầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2807,12 +2940,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà phân tích quảng cáo giải mã biểu tượng học hình ảnh được nhúng trong các đoạn quảng cáo nước hoa xa xỉ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2828,12 +2962,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cơ chế giám sát toàn diện kỹ thuật số hoạt động thông qua theo dõi thuật toán và trích xuất dữ liệu hành vi tự động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2849,12 +2984,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cá nhân hóa bằng thuật toán có nguy cơ tạo ra một thuyết duy ngã kỹ thuật số nơi người dùng chỉ bắt gặp những phản chiếu định kiến của chính mình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2870,12 +3006,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ quan giám sát truyền thông đã lên án chương trình phát sóng vì tính thiên vị rõ rệt và sự cố tình bỏ sót sự thật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2891,12 +3028,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Triết gia đã xuất bản một bài văn bút chiến gay gắt công kích sự phá sản trí tuệ của chủ nghĩa tiêu dùng hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2912,12 +3050,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nổi tiếng là một nhà bút chiến đáng gờm, nhà tiểu luận đã bảo vệ mạnh mẽ quyền tự do ngôn luận theo hiến pháp trong các cuộc tranh luận trên truyền hình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2933,12 +3072,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người viết tít báo lá cải thường xuyên sử dụng biện pháp chơi chữ khéo léo để thu hút ánh nhìn của người đi đường.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2954,12 +3094,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Oscar Wilde được ca ngợi vì sự hóm hỉnh súc tích như danh ngôn và những lời bình luận xã hội mang tính phản kháng sắc sảo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2975,12 +3116,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà phê bình độc lập đã gạt bỏ người viết tiểu sử xu nịnh như không hơn gì một kẻ viết văn tán dương bợ đỡ doanh nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2996,12 +3138,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc tuyển chọn thuật toán quá mức có nguy cơ nuôi dưỡng một nền văn hóa duy ngã cách biệt khỏi những thực tế xã hội khó chịu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3017,12 +3160,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các học giả về ký hiệu học thị giác phân tích cách ánh sáng và góc máy mã hóa quyền lực trong các cuộc tranh luận chính trị trên truyền hình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3038,12 +3182,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tính đa nghĩa vốn có của hình ảnh nghệ thuật cho phép các khán giả đa dạng xây dựng những diễn giải ý thức hệ trái ngược nhau.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3059,12 +3204,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nghệ thuật châm biếm điện ảnh hiện đại dựa vào tính liên văn bản phong phú, liên hệ đến điện ảnh kinh điển để làm sâu sắc thêm tính châm biếm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3080,12 +3226,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các phóng viên thất vọng đã ngắt lời lối nói vòng vo tam quốc tẻ nhạt của chính trị gia để yêu cầu câu trả lời có hoặc không trực tiếp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3101,12 +3248,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà báo kiểm chứng sự thật đã phơi bày sự thao túng tâm lý chính trị của chính quyền liên quan đến các số liệu suy thoái kinh tế không thể phủ nhận.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3122,12 +3270,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà phê bình cảnh báo chống lại những bài viết chân dung quá đỗi tán tụng mà phớt lờ những sai phạm của ban điều hành doanh nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3143,12 +3292,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nền dân chủ hiến pháp phải xây dựng khả năng phục hồi công dân để vô hiệu hóa những lời kêu gọi mị dân hướng tới sự bất khoan dung.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3164,12 +3314,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nghệ thuật châm biếm phá vỡ định kiến của ấn phẩm đã vạch trần những thói đạo đức giả bên trong các cơ sở chính trị và văn hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3185,12 +3336,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ quan quản lý đã phạt công ty vì sử dụng các thuật ngữ pháp lý làm rối để che giấu các điều khoản lãi suất cho vay chụp giật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3206,12 +3358,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đoạn video đã được biên tập một cách thiên vị có chủ đích xấu để xuyên tạc cuộc biểu tình ôn hòa thành một cuộc bạo loạn hung hăng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3227,12 +3380,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tác giả đã áp dụng một giọng văn bút chiến sắc bén để thách thức các quan niệm chính thống thịnh hành trong các nghiên cứu truyền thông hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3248,12 +3402,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thực hiện phân tích thông diễn học các đoạn quảng cáo chiến dịch chính trị hé lộ những lời kêu gọi mang tính biểu tượng đã được mã hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3269,12 +3424,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cộng đồng trực tuyến tự cô lập theo lối duy ngã bác bỏ các quan điểm bên ngoài sẽ trở thành mảnh đất màu mỡ cho các thuyết âm mưu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3290,12 +3446,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phân tích ký hiệu học các logo công ty cho thấy cách phối màu và hình học truyền tải niềm tin thể chế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3311,12 +3468,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bản chất đa nghĩa của các ẩn dụ chính trị cho phép chúng đồng thời tạo ra sự đồng cảm với các khối cử tri đa dạng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3332,12 +3490,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hàng triệu khán giả đã xem buổi phát hình trực tiếp quốc tế của buổi hòa nhạc giao hưởng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3353,12 +3512,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nam người dẫn tin tức truyền hình dày dạn kinh nghiệm đã giới thiệu báo cáo đặc biệt về các hiệp định thương mại khu vực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3374,12 +3534,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nữ người dẫn tin tức đoạt giải đã điều hành cuộc tranh luận tại tòa thị chính trên truyền hình một cách điềm tĩnh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3395,12 +3556,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người viết bài phát biểu đảm bảo đề xuất chính sách cốt lõi của ứng viên chứa một đoạn trích ba mươi giây đáng nhớ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3416,12 +3578,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phát thanh viên tin tức đài phát thanh buổi tối đã tóm tắt chính xác những biến động của thị trường quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3437,12 +3600,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đội ngũ báo chí dữ liệu đã xuất bản một đồ họa thông tin tương tác rõ ràng chi tiết về tỷ lệ tiêm chủng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3458,12 +3622,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà báo săn tin không ngừng nghỉ đã dành nhiều tháng theo dõi hồ sơ giao dịch ở nước ngoài để giành được tin sốt dẻo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3479,12 +3644,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người đăng ký nhận được quyền truy cập không giới hạn vào kho lưu trữ điều tra đằng sau bức tường phí có đồng hồ đo của tờ báo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3500,12 +3666,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà báo đã lấp đầy phòng họp báo của quốc hội để chờ bài phát biểu về ngân sách của bộ trưởng tài chính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3521,12 +3688,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà truyền thông khoa học sử dụng video hoạt hình để làm sáng tỏ các khái niệm cơ học lượng tử phức tạp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3542,12 +3710,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đài truyền hình quốc gia sẽ truyền hình trực tiếp lễ khai mạc Đại hội Thể thao Châu Á vào ngày mai.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3563,12 +3732,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà lý luận văn học đã bút chiến mạnh mẽ chống lại các giả định cấu trúc luận trong các hội nghị chuyên đề học thuật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3584,12 +3754,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thư viện trường đại học đặt mua hàng chục ấn phẩm tạp chí định kỳ có phản biện quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3605,12 +3776,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các công nghệ truyền thông đại chúng hiện đại cho phép đưa tin tức tức thì trên toàn thế giới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3626,12 +3798,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đội ngũ truyền thông doanh nghiệp đã phát đi một thông cáo báo chí chính thức công bố vụ sáp nhập.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3647,12 +3820,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mạng lưới tin tức quốc tế đã thành lập một văn phòng phóng viên khu vực tại Tokyo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3668,12 +3842,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hàng triệu gia đình theo dõi chương trình bản tin truyền hình hàng đêm để nghe những tin tức quốc gia khách quan.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3689,12 +3864,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tạp chí Chủ nhật đã đăng một bài phóng sự chuyên đề hấp dẫn về những người bảo tồn biển.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3710,12 +3886,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà báo trẻ nỗ lực để có được dòng tên tác giả đầu tiên trên trang nhất của một tờ báo khổ lớn quốc gia.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3731,12 +3908,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà kinh tế học khí hậu đã đóng góp một bài bình luận khách mời có tầm ảnh hưởng kêu gọi đầu tư vào cơ sở hạ tầng xanh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3752,12 +3930,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tòa soạn báo lịch sử từng dựa vào những chiếc máy điện báo in kêu lách cách để nhận các bức điện tín quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3773,12 +3952,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tờ nhật báo địa phương dựa vào các hãng thông tấn xã quốc tế để đưa tin nóng về chiến tranh ở nước ngoài.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3794,12 +3974,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các mạng máy tính ma đối địch đã cố gắng tung tin giả đánh lừa cử tri bằng cách sử dụng dữ liệu thăm dò sai lệch trên mạng xã hội.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3815,12 +3996,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các đài truyền hình công cộng phân bổ thời lượng phát sóng miễn phí cho các ứng cử viên quốc hội đã đăng ký trong các cuộc bầu cử.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3836,12 +4018,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà bình luận xã luận đã tranh luận về những hệ lụy địa chính trị của hiệp ước khí hậu quốc tế mới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3857,12 +4040,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nền tảng phát trực tuyến kỹ thuật số phân phối điện ảnh độc lập trực tiếp đến các nhóm khán giả ngách chuyên biệt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3878,12 +4062,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà báo được công nhận đã nhận được thẻ tác nghiệp báo chí cho lễ nhậm chức của tổng thống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3899,12 +4084,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nền tảng báo chí khoa học đã vượt qua một triệu người đăng ký kỹ thuật số trả phí trong quý này.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3920,12 +4106,13 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thư viện duy trì một kho lưu trữ chứa hơn năm mươi ngàn ấn phẩm tạp chí định kỳ lịch sử.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   }
 ];

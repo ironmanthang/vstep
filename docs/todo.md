@@ -38,7 +38,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Điều chỉnh thứ tự hiển thị kỹ năng toàn app: Nghe (Listening) → Đọc (Reading) → Viết (Writing) → Nói (Speaking)
 
 ### Module Flashcard SRS Cốt lõi (Curated VSTEP SRS)
-- [x] Flashcard SRS: Thuật toán Spaced Repetition (1-3-7-14-30), hiệu ứng 3D Flip Card
+- [x] Flashcard SRS: Thuật toán Spaced Repetition FSRS v6 nhị phân (Sai / Đúng), hàng đợi 3 cấp ưu tiên, trần 365 ngày, giới hạn 20 từ mới/ngày, hiệu ứng 3D Flip Card
 - [x] Tích hợp hệ thống Toast notifications phản hồi học tập
 - [x] Xây dựng bộ ngữ liệu 1.500 từ vựng cốt lõi trích xuất từ đề thi thật ULIS/HNUE theo 8 chủ đề VSTEP chuẩn (188 Edu, 188 Work, 188 Health, 188 Env, 187 Tech, 187 Travel, 187 Soc, 187 Media)
 - [x] Xây dựng Daily Review Queue hiển thị số thẻ cần ôn tập hôm nay và thống kê tiến độ học
@@ -49,7 +49,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Xóa sạch dữ liệu đồng bộ đám mây (user_flashcard_reviews & user_daily_stats) khi người dùng xác nhận đặt lại Deck
 - [x] Cơ chế Decoupled Corpus Hydration: Giữ nguyên 100% tiến độ học khi mở rộng kho từ vựng từ 1.500 lên 3.000 từ trong tương lai
 - [ ] Tăng số lượng từ lên 3000, lấy từ các đề trong 4 skills
-- [ ] question: what is the algorithms logic of the Spaced Repetition (SRS) system in this project?? how does the system decide when to show which words??the priority order is??is it good? 
+- [x] Chuẩn hóa thuật toán Spaced Repetition sang FSRS v6 nhị phân: Hàng đợi ưu tiên re-learning -> due reviews (overdue sort) -> new cards (cap 20/ngày), trần 365 ngày
 - [ ] add noti to show the srs
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)
 - [x] Unit Test thuật toán Spaced Repetition (SRS algorithm) qua Vitest

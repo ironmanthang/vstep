@@ -3,12 +3,18 @@ import type { FlashcardItem } from '../../types/schemas';
 
 export interface UserCardReviewRecord {
   card_id: string;
-  repetition_count: number;
-  interval_days: number;
-  ease_factor: number;
+  stability: number;
+  difficulty: number;
+  reps: number;
+  lapses: number;
   last_reviewed_at: number | null;
   next_review_timestamp: number;
-  status: 'new' | 'learning' | 'mastered';
+  state: 0 | 1 | 2 | 3;
+  // Legacy v2 fields for backward compat during migration
+  repetition_count?: number;
+  interval_days?: number;
+  ease_factor?: number;
+  status?: string;
 }
 
 /**
@@ -20,7 +26,7 @@ export async function fetchUserCardReviews(userId: string): Promise<Record<strin
   try {
     const { data, error } = await supabase
       .from('user_flashcard_reviews')
-      .select('card_id, repetition_count, interval_days, ease_factor, last_reviewed_at, next_review_timestamp, status')
+      .select('card_id, stability, difficulty, reps, lapses, last_reviewed_at, next_review_timestamp, state, repetition_count, interval_days, ease_factor, status')
       .eq('user_id', userId);
 
     if (error) {
@@ -32,12 +38,18 @@ export async function fetchUserCardReviews(userId: string): Promise<Record<strin
     (data || []).forEach(row => {
       reviewMap[row.card_id] = {
         card_id: row.card_id,
-        repetition_count: row.repetition_count,
-        interval_days: row.interval_days,
-        ease_factor: Number(row.ease_factor),
+        stability: row.stability ?? 0,
+        difficulty: row.difficulty ?? 0,
+        reps: row.reps ?? row.repetition_count ?? 0,
+        lapses: row.lapses ?? 0,
         last_reviewed_at: row.last_reviewed_at ? Number(row.last_reviewed_at) : null,
         next_review_timestamp: Number(row.next_review_timestamp),
-        status: row.status as 'new' | 'learning' | 'mastered',
+        state: (row.state ?? 0) as 0 | 1 | 2 | 3,
+        // Keep legacy fields for reference
+        repetition_count: row.repetition_count,
+        interval_days: row.interval_days,
+        ease_factor: row.ease_factor ? Number(row.ease_factor) : undefined,
+        status: row.status,
       };
     });
 
@@ -55,15 +67,22 @@ export async function syncCardReviewToCloud(userId: string, card: FlashcardItem)
   if (!isSupabaseConfigured() || !userId) return { success: true };
 
   try {
+    const meta = card.srs_metadata;
     const payload = {
       user_id: userId,
       card_id: card.id,
-      repetition_count: card.srs_metadata.repetition_count,
-      interval_days: card.srs_metadata.interval_days,
-      ease_factor: card.srs_metadata.ease_factor,
-      last_reviewed_at: card.srs_metadata.last_reviewed_at,
-      next_review_timestamp: card.srs_metadata.next_review_timestamp,
-      status: card.srs_metadata.status,
+      stability: meta.stability,
+      difficulty: meta.difficulty,
+      reps: meta.reps,
+      lapses: meta.lapses,
+      last_reviewed_at: meta.last_reviewed_at,
+      next_review_timestamp: meta.next_review_timestamp,
+      state: meta.state,
+      // Keep legacy fields populated for backward compat
+      repetition_count: meta.reps,
+      interval_days: 0,
+      ease_factor: 2.5,
+      status: meta.state === 0 ? 'new' : meta.state === 2 ? 'mastered' : 'learning',
       updated_at: new Date().toISOString(),
     };
 

@@ -229,11 +229,11 @@
   color: var(--text-secondary);
 }
 
-/* SRS Action Bar */
+/* SRS Action Bar — Binary (2-button) layout */
 .srs-action-bar {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: var(--space-2);
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
   margin-top: auto;
   padding-top: var(--space-2);
 }
@@ -243,11 +243,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--space-2) var(--space-1);
+  padding: var(--space-3) var(--space-2);
   border-radius: var(--radius-md);
   transition: all var(--transition-fast);
   border: 1px solid transparent;
-  min-height: 48px;
+  min-height: 52px;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .srs-btn:disabled {
@@ -259,47 +261,37 @@
 }
 
 .srs-btn-label {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   font-weight: 700;
 }
-.srs-btn-interval {
+
+.srs-btn-interval {
   font-size: 0.6875rem;
   opacity: 0.85;
 }
 
-/* Button Variants */
-.srs-btn-forgot {
+/* Wrong (Sai) Button */
+.srs-btn-wrong {
   background-color: var(--coral-subtle);
   color: var(--coral-text);
   border-color: rgba(239, 68, 68, 0.3);
 }
 
-.srs-btn-remembered {
-  background-color: var(--gold-subtle);
-  color: var(--gold-text);
-  border-color: rgba(212, 163, 115, 0.3);
-}
-
-.srs-btn-easy {
+/* Correct (Đúng) Button */
+.srs-btn-correct {
   background-color: var(--emerald-subtle);
   color: var(--emerald-text);
   border-color: rgba(16, 185, 129, 0.3);
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .srs-btn-forgot:hover {
+  .srs-btn-wrong:hover {
     background-color: var(--coral);
     color: #ffffff;
     transform: translateY(-1px);
   }
 
-  .srs-btn-remembered:hover {
-    background-color: var(--gold);
-    color: var(--primary-contrast);
-    transform: translateY(-1px);
-  }
-
-  .srs-btn-easy:hover {
+  .srs-btn-correct:hover {
     background-color: var(--emerald);
     color: #ffffff;
     transform: translateY(-1px);

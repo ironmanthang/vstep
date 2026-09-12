@@ -14,12 +14,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hầu hết bao bì nhựa dùng một lần không thể phân hủy sinh học và làm ô nhiễm các dòng sông.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -35,12 +36,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nạn phá rừng ở các khu rừng mưa nhiệt đới phá hủy môi trường sống của động vật hoang dã và làm tăng tốc độ nóng lên toàn cầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -56,12 +58,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đầu tư vào năng lượng tái tạo như mặt trời và gió giúp giảm sự phụ thuộc vào nhiên liệu hóa thạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -77,12 +80,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các rạn san hô hỗ trợ một hệ sinh thái biển rực rỡ và mong manh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -98,12 +102,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khí thải từ phương tiện giao thông là nguồn gây ô nhiễm không khí chính ở các khu đô thị lớn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -119,12 +124,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các công viên quốc gia được thành lập để bảo tồn động vật hoang dã và nghiên cứu khoa học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -140,12 +146,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Săn bắn quá mức và mất môi trường sống đã đẩy một số loài tê giác đến bờ vực tuyệt chủng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -161,12 +168,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các vùng đất ngập nước cung cấp môi trường sống sinh sản quan trọng cho các loài chim di cư.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -182,12 +190,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nông nghiệp bền vững cân bằng giữa năng suất cây trồng với việc bảo tồn sức khỏe của đất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -203,12 +212,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hiệp ước bắt buộc các quốc gia phải giảm ba mươi phần trăm lượng phát thải khí nhà kính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -224,12 +234,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chương trình tái chế giúp chuyển hướng hàng tấn rác thải rắn đô thị ra khỏi các bãi chôn lấp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -245,12 +256,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ủ rác nhà bếp thành phân hữu cơ tạo ra phân bón màu mỡ cho các khu vườn gia đình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -266,12 +278,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đợt hạn hán kéo dài vào mùa hè đã làm sụt giảm nghiêm trọng sản lượng thu hoạch nông nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -287,12 +300,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nạn phá rừng ở các thung lũng thượng nguồn làm tăng tần suất của các trận lũ quét tàn khốc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -308,12 +322,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hiệu ứng nhà kính giữ nhiệt mặt trời trong khí quyển, làm ấm toàn cầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -329,12 +344,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người tiêu dùng nên phân loại lon nhôm và giấy để tái chế chúng một cách hiệu quả.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -350,12 +366,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lắp đặt các tấm pin mặt trời trên mái nhà tạo ra điện sạch và cắt giảm hóa đơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -371,12 +388,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nạn săn trộm đe dọa sự sống còn của các loài động vật hoang dã quý hiếm trong các khu bảo tồn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -392,12 +410,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Biến đổi khí hậu toàn cầu đang gây ra các hiện tượng thời tiết cực đoan trên toàn thế giới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -413,12 +432,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nước thải công nghiệp chưa qua xử lý có thể làm ô nhiễm nguồn cung cấp nước uống ngầm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -434,12 +454,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cộng đồng ven biển cần hệ thống radar cảnh báo sớm đối với các thảm họa thiên nhiên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -455,12 +476,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiệt độ đại dương tăng cao đe dọa các rạn san hô biển trên toàn thế giới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -476,12 +498,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lượng carbon dioxide dư thừa trong khí quyển giữ nhiệt và làm thay đổi các hình thái thời tiết.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -497,12 +520,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cần có các luật lệ nghiêm ngặt hơn để bảo tồn các khu rừng quốc gia nguyên sinh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -518,12 +542,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bảo tồn nguồn tài nguyên nước khan hiếm là điều tối quan trọng trong những tháng cao điểm mùa hè.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -539,12 +564,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trồng rừng ngập mặn dọc bờ biển giúp ngăn ngừa xói mòn bờ biển nghiêm trọng một cách hiệu quả.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -560,12 +586,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các sông băng tan chảy đóng góp trực tiếp vào sự gia tăng mực nước biển toàn cầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -581,12 +608,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tầng ôzôn che chở các sinh vật sống khỏi bức xạ cực tím có hại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -602,12 +630,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lạm dụng thuốc trừ sâu hóa học có thể gây hại cho các loài côn trùng thụ phấn có ích như ong.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -623,12 +652,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những khu rừng đóng vai trò như lá phổi tự nhiên khổng lồ thanh lọc không khí xung quanh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -644,12 +674,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà khoa học đã phát hiện ba loài lưỡng cư mới trong khu rừng rậm cao nguyên nguyên sinh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -665,12 +696,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xả rác thải công nghiệp độc hại vào nguồn nước bị pháp luật nghiêm cấm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -686,12 +718,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các đô thị phải nâng cấp cơ sở vật chất để xử lý rác thải điện tử nguy hại một cách an toàn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -707,12 +740,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một đợt rét đậm bất ngờ đã đe dọa mùa thu hoạch cà phê hàng năm ở vùng cao nguyên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -728,12 +762,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nước rửa trôi dư thừa phân bón hóa học gây ra hiện tượng tảo nở hoa độc hại ở các hồ lân cận.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -749,12 +784,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xử lý vứt bỏ pin lithium an toàn giúp ngăn các hóa chất độc hại rò rỉ vào đất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -770,12 +806,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mang túi vải có thể tái sử dụng đến cửa hàng tạp hóa giúp cắt giảm rác thải nhựa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -791,12 +828,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiệt độ bề mặt nước biển tăng kích hoạt các đợt tẩy trắng san hô thường xuyên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -812,12 +850,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chuyển sang xe buýt điện làm giảm khói xả độc hại của xe cộ ở các trung tâm đô thị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -833,12 +872,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lớn lên trong môi trường tự nhiên xanh mát khuyến khích ý thức bảo vệ môi trường ở trẻ em.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -854,12 +894,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Du lịch sinh thái cho phép du khách thưởng ngoạn vẻ đẹp thiên nhiên một cách có trách nhiệm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -875,12 +916,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hành động tập thể quốc tế là cấp bách để bảo tồn hành tinh của chúng ta cho các thế hệ tương lai.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -896,12 +938,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự nóng lên toàn cầu đòi hỏi các hiệp ước đa phương thống nhất để hạn chế phát thải carbon.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -917,12 +960,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mưa axit có thể gây tổn hại nghiêm trọng cho các tán rừng và các hồ nước ngọt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -938,12 +982,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các kiểm lâm viên tuần tra công viên quốc gia ngày đêm để bảo vệ loài voi có nguy cơ tuyệt chủng khỏi những kẻ săn trộm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -959,12 +1004,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Gấu bắc cực phải vật lộn để sinh tồn khi băng biển bắc cực theo mùa tan sớm hơn vào mỗi mùa xuân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -980,12 +1026,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các loài cỏ dại xâm lấn đe dọa đa dạng sinh học thực vật bản địa trên khắp thung lũng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1001,12 +1048,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sử dụng phương tiện công cộng là một cách đơn giản để giảm dấu chân carbon cá nhân của bạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1022,12 +1070,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lưới đánh cá cào đáy phá hủy các rạn san hô biển sâu mỏng manh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1043,12 +1092,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các hộ gia đình nên lắp vòi nước chảy chậm để tiết kiệm nguồn nước đô thị quý giá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1064,12 +1114,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các vùng đất ngập nước nhân tạo làm sạch nước mưa chảy tràn một cách tự nhiên trước khi đổ ra vịnh ven biển.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1085,12 +1136,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Báo tuyết quý hiếm sinh sống tại các sườn núi cao hiểm trở của dãy Himalaya.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1106,12 +1158,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thực vật sa mạc thích nghi với điều kiện khô cằn bằng cách phát triển rễ sâu và lá mọng nước.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1127,12 +1180,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những trận mưa trút nước theo mùa gió mùa lớn đã khiến các con sông trong khu vực tràn bờ bảo vệ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1148,12 +1202,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà máy gây ô nhiễm nguồn nước nguyên sinh sẽ đối mặt với các khoản phạt nặng theo luật định và bị đóng cửa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1169,12 +1224,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lưu vực sông Amazon tạo ra độ ẩm nuôi dưỡng lượng mưa trên khắp Nam Mỹ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1190,12 +1246,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tuabin gió ngoài khơi tạo ra điện sạch mà không sinh ra khí thải nhà kính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1211,12 +1268,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chim dodo đã tuyệt chủng vào thế kỷ XVII do con người săn bắn và các loài gây hại xâm lấn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1232,12 +1290,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phải tuân thủ các quy trình thích hợp khi vận chuyển chất thải hóa học nguy hại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1253,12 +1312,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các con suối trên núi cao cung cấp nguồn nước uống sạch tinh khiết và giàu khoáng chất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1274,12 +1334,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bảo tồn các vùng đất ngập nước tự nhiên giúp bảo vệ các cộng đồng ven biển khỏi những đợt triều cường bão cực đoan.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1295,12 +1356,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chính phủ cung cấp các khoản giảm thuế cho các doanh nghiệp áp dụng công nghệ năng lượng xanh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1316,12 +1378,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phương tiện chạy bằng hydro và điện hứa hẹn một bước chuyển đổi hướng tới giao thông đô thị sạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1337,12 +1400,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tái thả hổ sinh sản trong điều kiện nuôi nhốt về tự nhiên đòi hỏi các hành lang rừng bảo tồn rộng lớn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1358,12 +1422,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mực nước biển dâng cao đe dọa các vùng duyên hải trũng thấp với tình trạng ngập mặn vĩnh viễn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1379,12 +1444,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Băng ở các vùng cực tan chảy nhanh là một chỉ số then chốt về sự xáo trộn khí hậu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1400,12 +1466,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự nóng lên toàn cầu làm gia tăng tần suất của các hiện tượng thời tiết khắc nghiệt như bão lớn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1421,12 +1488,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đánh bắt cá quá mức làm gián đoạn sự cân bằng sinh học mong manh của chuỗi thức ăn đại dương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1442,12 +1510,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cáo bắc cực sở hữu bộ lông dày cách nhiệt để sinh tồn trong điều kiện thời tiết mùa đông dưới 0 độ khắc nghiệt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1463,12 +1532,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tiếp cận nguồn nước ngọt sạch đang trở thành một thách thức địa chính trị gay gắt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1484,12 +1554,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tê giác Java là một trong những loài động vật có vú lớn có nguy cơ tuyệt chủng nghiêm trọng nhất trên Trái Đất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1505,12 +1576,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các khu rừng mưa nhiệt đới lưu giữ nguồn đa dạng sinh học to lớn thiết yếu cho việc phát hiện các loại thuốc mới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1526,12 +1598,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chăn thả quá mức và hạn hán kéo dài làm tăng nhanh hiện tượng sa mạc hóa dọc theo vùng ranh giới Sahel khô hạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1547,12 +1620,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các sáng kiến tái trồng rừng của cộng đồng giúp phục hồi sự ổn định của lưu vực sông và hấp thụ carbon trong khí quyển.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1568,12 +1642,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trung Quốc đã phát động các chương trình trồng rừng mới quy mô lớn để tạo nên Vạn Lý Trường Thành Xanh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1589,12 +1664,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự axit hóa đại dương làm suy giảm khả năng xây dựng vỏ canxi của động vật có vỏ và san hô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1610,12 +1686,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nước rửa trôi nitrat nông nghiệp gây ra hiện tượng phú dưỡng nhanh chóng và các vùng chết cạn kiệt oxy làm cá ngạt thở.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1631,12 +1708,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự tích tụ sinh học thủy ngân ở các loài săn mồi biển đỉnh cao như cá ngừ gây rủi ro cho người tiêu dùng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1652,12 +1730,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các loài sinh vật lọc biển ăn phải các mảnh nhựa siêu nhỏ, đưa hạt vi nhựa vào chuỗi thức ăn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1673,12 +1752,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những tiến bộ trong công nghệ quang điện đã làm giảm đáng kể chi phí điện mặt trời.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1694,12 +1774,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Iceland khai thác năng lượng địa nhiệt núi lửa để sưởi ấm khu dân cư và sản xuất điện sạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1715,12 +1796,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự đồng thuận khoa học xác nhận rằng sự nóng lên toàn cầu đương đại chủ yếu do con người gây ra.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1736,12 +1818,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các quốc gia Vùng Vịnh khô cằn phụ thuộc rất nhiều vào các nhà máy khử mặn nước biển bằng màng lọc và nhiệt quy mô lớn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1757,12 +1840,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các đập thủy điện lớn tạo ra điện sạch nhưng làm gián đoạn sự di chuyển phù sa của dòng sông ở hạ lưu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1778,12 +1862,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nạn phá rừng và độc canh thâm canh thúc đẩy sự suy thoái đất nhanh chóng và mất độ phì nhiêu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1799,12 +1884,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chuyển đổi phụ phẩm cây trồng nông nghiệp thành viên nén sinh khối cung cấp năng lượng sưởi ấm tái tạo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1820,12 +1906,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tầng đất đóng băng vĩnh cửu ở bắc cực tan chảy giải phóng khí metan bị mắc kẹt, đẩy nhanh sự nóng lên do hiệu ứng nhà kính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1841,12 +1928,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Rừng ngập mặn ven biển vượt trội trong việc cô lập carbon sinh học, đóng vai trò là bể hấp thụ carbon xanh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1862,12 +1950,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nền nông nghiệp độc canh trên diện rộng khiến cây trồng rất dễ bị tổn thương trước những đợt bùng phát sâu bệnh tàn phá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1883,12 +1972,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lưu vực sông Amazon vẫn là hệ sinh thái trên cạn giàu tính đa dạng sinh học nhất trên hành tinh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1904,12 +1994,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nông lâm kết hợp hòa trộn việc trồng cây với chăn thả gia súc để tăng cường khả năng phục hồi sinh thái.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1925,12 +2016,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thoát nước kém và tưới tiêu quá mức gây ra hiện tượng nhiễm mặn đất nghiêm trọng ở các đồng bằng châu thổ khô hạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1946,12 +2038,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Du lịch sinh thái dựa vào cộng đồng tạo ra doanh thu cho việc bảo tồn động vật hoang dã đồng thời trao quyền cho người dân địa phương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1967,12 +2060,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bơm quá mức để tưới tiêu cây trồng đã làm cạn kiệt các tầng ngậm nước ngầm cổ xưa một cách nguy hiểm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1988,12 +2082,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bảo vệ các lưu vực đầu nguồn có rừng giúp bảo tồn khả năng thanh lọc nước tự nhiên của đô thị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2009,12 +2104,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giám sát bằng máy bay không người lái và tuần tra kiểm lâm vũ trang đã được triển khai để kiềm chế nạn săn trộm tê giác bất hợp pháp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2030,12 +2126,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đồng bằng ngập mặn ven biển đã được chỉ định làm khu bảo tồn chim di cư quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2051,12 +2148,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thực thi hạn ngạch đánh bắt theo mùa là điều thiết yếu để ngăn chặn việc đánh bắt quá mức trữ lượng cá tuyết.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2072,12 +2170,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xử lý sinh học sử dụng các loài nấm và vi khuẩn chuyên biệt để tẩy độc đất bị ô nhiễm dầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2093,12 +2192,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mưa gió mùa làm đầy lại các hồ chứa nước ngọt và phục hồi các vùng đất ngập nước nông nghiệp khô cằn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2114,12 +2214,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khai thác gỗ quy mô công nghiệp tiếp tục làm cạn kiệt các khu bảo tồn rừng mưa nhiệt đới nguyên sinh không thể thay thế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2135,12 +2236,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà máy đốt rác phát điện hiện đại thu giữ nhiệt trong khi lọc tro bay nguy hại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2156,12 +2258,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nạn phá rừng và xâm lấn vào rừng hoang dã làm tăng nguy cơ lây truyền virus từ động vật sang người.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2177,12 +2280,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xây dựng các hành lang sinh thái cầu vượt cho phép gấu băng qua đường cao tốc liên bang một cách an toàn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2198,12 +2302,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khai thác mỏ lộ thiên không kiểm soát gây ra tác động có hại đến chất lượng nước sông tại địa phương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2219,12 +2324,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những đợt nắng nóng mùa hè chưa từng có đã châm ngòi cho các vụ cháy rừng thảm khốc trên khắp các khu rừng thông Địa Trung Hải.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2240,12 +2346,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự tuyệt chủng đại diện cho sự mất mát không thể đảo ngược của thông tin di truyền tiến hóa độc nhất vô nhị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2261,12 +2368,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các đồng bằng châu thổ nông nghiệp trũng thấp đặc biệt dễ bị tổn thương trước các trận lũ do triều cường thảm khốc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2282,12 +2390,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tán rừng nhiệt đới rậm rạp không thể xuyên qua che chở vô số loài côn trùng chưa được khám phá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2303,12 +2412,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà bảo tồn chiến đấu để bảo vệ vùng hoang dã bắc cực nguyên sơ khỏi việc thăm dò dầu khí ngoài khơi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2324,12 +2434,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tích hợp tri thức sinh thái bản địa giúp nâng cao hiệu quả của công tác quản lý rừng hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2345,12 +2456,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vượn cáo là loài linh trưởng đặc hữu chỉ có ở các hệ sinh thái đảo Madagascar.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2366,12 +2478,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các hiệp ước bảo tồn toàn cầu huy động ngân sách để bảo vệ các hệ thống rạn san hô đại dương đang lâm nguy.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2387,12 +2500,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các loài chim di cư ven biển đặc biệt dễ bị tổn thương trước sự phát triển bờ biển công nghiệp đột ngột.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2408,12 +2522,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Rừng nhiệt đới đa dạng sinh học có khả năng chống chịu sâu bệnh tốt hơn nhiều so với các đồn điền độc canh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2429,12 +2544,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trồng cây lâu năm bảo vệ tầng đất mặt khỏi bị xói mòn so với việc cày xới hàng năm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2450,12 +2566,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nạn phá rừng phá hủy tán cây liên tục cần thiết cho loài sóc bay sinh sống trên cây.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2471,12 +2588,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Voi là loài động vật có vú trên cạn lớn nhất còn sống sót trên hành tinh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2492,12 +2610,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thành lập các khu bảo tồn biển cho phép các đàn cá bị cạn kiệt tái sinh một cách tự nhiên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2513,12 +2632,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các vụ tràn hóa chất công nghiệp tàn phá đời sống thủy sinh mỏng manh ở các lưu vực sông hạ lưu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2534,12 +2654,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ô nhiễm ánh sáng tại các thành phố đang mở rộng làm mất phương hướng của các loài săn mồi ban đêm như cú mèo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2555,12 +2676,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các loài chim săn mồi ban ngày như chim ưng dựa vào thị lực sắc bén ban ngày để phát hiện con mồi trên các đồng cỏ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2576,12 +2698,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tưới nhỏ giọt đưa nước trực tiếp đến rễ cây trong môi trường sa mạc khô cằn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2597,12 +2720,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kê chịu hạn được trồng rộng rãi trên khắp các vùng bán khô hạn dễ bị tổn thương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2618,12 +2742,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cây lá rộng rụng lá chiếm ưu thế ở các vùng rừng ôn đới của bắc bán cầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2639,12 +2764,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các xoáy thuận nhiệt đới lấy sức mạnh động năng to lớn từ các vùng nước đại dương xích đạo ấm áp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2660,12 +2786,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Độ ẩm liên tục và ánh nắng ấm áp là đặc trưng của quần xã rừng mưa nhiệt đới vùng xích đạo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2681,12 +2808,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cây rụng lá trút bỏ tán lá vào mùa thu để tiết kiệm nước qua các đợt đóng băng mùa đông.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2702,12 +2830,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cây thông hình nón là loài cây xanh quanh năm cứng cáp chịu đựng được khí hậu núi cao dưới 0 độ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2723,12 +2852,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tán rừng rậm rạp chặn những cơn mưa lớn, bảo vệ tầng đất mặt mỏng manh khỏi bị xói mòn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2744,12 +2874,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các loài dương xỉ và nấm ưa bóng râm phát triển mạnh trong bóng tối ẩm ướt của tầng cây bụi dưới tán rừng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2765,12 +2896,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các vùng đất ngập nước đóng vai trò như những bộ lọc sinh học tự nhiên giữ lại trầm tích và nitrat dư thừa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2786,12 +2918,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cửa sông cung cấp bãi ương giàu dinh dưỡng cho cá và tôm con giống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2807,12 +2940,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cỏ đầm lầy mặn đóng vai trò làm đệm bảo vệ các cộng đồng ven biển chống lại các đợt triều cường bão cuồng phong tàn phá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2828,12 +2962,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đồng bằng châu thổ sông màu mỡ sản xuất một tỷ lệ đáng kể sản lượng lúa thu hoạch của cả nước.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2849,12 +2984,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chỉ có các loài cây bụi lùn, rêu và địa y mới sống sót được trên vùng đài nguyên bắc cực lộng gió.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2870,12 +3006,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các đàn động vật ăn cỏ di cư qua vùng đồng cỏ xavan rộng lớn để tìm kiếm những cơn mưa theo mùa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2891,12 +3028,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Rễ rừng ngập mặn dày đặc giữ lại trầm tích, ổn định các đường bờ biển chống lại sự xói mòn sóng biển không ngừng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2912,12 +3050,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Rừng mưa nhiệt đới có chức năng như một bể hấp thụ carbon và máy bơm độ ẩm toàn cầu không thể thay thế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2933,12 +3072,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc chuyển đổi đồng cỏ bản địa thành đất nông nghiệp thâm canh đã xua đuổi loài cú đào hang bản địa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2954,12 +3094,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự axit hóa đại dương đe dọa các cấu trúc canxi cacbonat hình thành nên các rạn san hô sống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2975,12 +3116,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ quan quản lý giám sát các ống khói nhà máy để giới hạn lượng phát thải các chất ô nhiễm lưu huỳnh vào khí quyển.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2996,12 +3138,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công nghệ xử lý sinh học tận dụng các vi khuẩn được biến đổi để phân hủy các vụ tràn dầu mỏ độc hại thành các hợp chất vô hại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3017,12 +3160,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự cạn kiệt tài nguyên nhanh chóng đe dọa sự phát triển kinh tế và phúc lợi của các thế hệ tương lai.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3038,12 +3182,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tổ chức dành hàng triệu đô la cho việc bảo tồn dài hạn các hệ sinh thái rừng phương bắc nguyên sinh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3059,12 +3204,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các triết gia sinh thái học chiều sâu bác bỏ thuyết duy nhân loại, lập luận về giá trị nội tại của tất cả các loài sinh vật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3080,12 +3226,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thuyết duy sinh vật khẳng định rằng đạo đức sinh học phải mở rộng sự quan tâm đạo đức đến tất cả các loài động thực vật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3101,12 +3248,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thuyết duy hệ sinh thái ưu tiên sự cân bằng toàn diện của các hệ sinh thái hơn là sự tiện lợi thương mại cá nhân của con người.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3122,12 +3270,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các yếu tố phi sinh học như độ pH của đất, nhiệt độ và độ mặn quyết định sự phân bố của các loài thực vật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3143,12 +3292,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nấm rễ và rễ cây tồn tại trong một mối quan hệ cộng sinh tương hỗ giúp tăng cường hấp thụ chất dinh dưỡng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3164,12 +3314,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các kỹ sư đã sử dụng phỏng sinh học để thiết kế các đoàn tàu cao tốc khí động học lấy cảm hứng từ mỏ của chim bói cá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3185,12 +3336,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc tái thả chó sói vào Yellowstone đã kích hoạt một hiệu ứng bậc dinh dưỡng mạnh mẽ giúp ổn định các bờ sông.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3206,12 +3358,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Rái cá biển đóng vai trò là một loài chủ chốt bằng cách săn nhím biển để bảo vệ các khu rừng tảo bẹ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3227,12 +3380,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những cơn mưa bão sa mạc hiếm hoi kích hoạt những đợt hoa dại nở rộ phù du rồi tàn lụi trong vài ngày.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3248,12 +3402,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Quần xã thực vật bụi rậm khô hạn Địa Trung Hải thích nghi về mặt sinh thái với các chu kỳ cháy rừng tự nhiên định kỳ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3269,12 +3424,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bảo vệ thảm thực vật ven bờ bản địa dọc theo các tuyến đường thủy giúp ngăn ngừa nước rửa trôi nông nghiệp làm ô nhiễm sông ngòi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3290,12 +3446,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các hòn đảo như Galápagos thể hiện mức độ đặc hữu tiến hóa phi thường mà không nơi nào khác có được.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3311,12 +3468,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các hồ nước núi cao nghèo dinh dưỡng có làn nước trong như pha lê nhờ có rất ít nước rửa trôi chất dinh dưỡng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3332,12 +3490,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hoa hướng dương đã được trồng quanh Chernobyl như những tác nhân hiệu quả để xử lý đất ô nhiễm kim loại nặng bằng thực vật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3353,12 +3512,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các yếu tố đặc tính đất cụ thể như độ kiềm của đất giới hạn một số loài lan chỉ mọc trên các vách đá vôi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3374,12 +3534,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tàu lặn biển sâu đã phát hiện các sinh vật đáy kỳ lạ phát triển mạnh quanh các miệng phun thủy nhiệt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3395,12 +3556,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các lớp trầm tích phù sa màu mỡ để lại bởi các trận lũ hàng năm của sông Nile đã hỗ trợ nền nông nghiệp Ai Cập cổ đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3416,12 +3578,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các loài cá biển khơi như cá ngừ vây xanh di cư hàng ngàn hải lý qua các đại dương mở.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3437,12 +3600,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cây xương rồng thể hiện các sự thích nghi chịu hạn như lớp biểu bì sáp và thân mọng nước để lưu trữ lượng ẩm khan hiếm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3458,12 +3622,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự axit hóa đại dương làm giảm độ bão hòa ion cacbonat, cản trở nghiêm trọng quá trình canxi hóa của rạn san hô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3479,12 +3644,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự cách ly địa lý của các quần thể chim sẻ trên đảo đã cung cấp cho Darwin bằng chứng về sự hình thành loài mới thích nghi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3500,12 +3666,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Rừng mây trên núi cao đóng vai trò là nơi trú ẩn khí hậu thiết yếu cho các loài kỳ nhông núi cao nhạy cảm với nhiệt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3521,12 +3688,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc du nhập chuột xâm lấn đã tàn phá hệ động thực vật trên đảo độc nhất vô nhị của các hòn đảo đại dương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3542,12 +3710,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các vùng chuyển tiếp sinh thái nơi rừng chuyển sang đất ngập nước thường thể hiện sự phong phú loài đặc biệt cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3563,12 +3732,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà nghiên cứu trong ngành hồ học điều tra chu trình dinh dưỡng và hiện tượng tảo lam nở hoa có hại trong các hồ chứa nội địa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3584,12 +3754,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Luận văn tiến sĩ của cô nghiên cứu sinh thái học cá thể của loài bướm vua có nguy cơ tuyệt chủng dọc theo các tuyến đường di cư.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3605,12 +3776,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hiểu biết về sinh thái học quần xã rừng mưa đòi hỏi phải mô hình hóa hàng ngàn tương tác liên kết giữa nấm, thực vật và động vật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3626,12 +3798,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hà biển vùng triều đóng chặt lớp vỏ bảo vệ khi thủy triều rút để tránh tình trạng khô hạn kiệt nước gây chết.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3647,12 +3820,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giun đất và bọ chân đều hoạt động như các sinh vật ăn mùn bã hữu cơ thiết yếu giúp phân hủy lá rụng thành mùn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3668,12 +3842,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các loài ngập mặn là những thực vật chịu mặn chuyên biệt có khả năng lọc lượng muối dư thừa qua các tuyến lá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3689,12 +3864,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vùng bãi triều ven bờ trải qua những biến động mạnh mẽ về nhiệt độ, sóng biển dữ dội và độ mặn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3710,12 +3886,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mỗi loài chim gõ kiến chiếm một ổ sinh thái riêng biệt bên trong khu rừng thông cổ thụ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3731,12 +3908,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiệt độ mùa xuân ấm lên làm xáo trộn hiện tượng học của loài chim, khiến chim non nở sau thời kỳ sâu bướm xuất hiện nhiều nhất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3752,12 +3930,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sinh vật phù du thực vật đại dương tạo ra hơn năm mươi phần trăm lượng oxy trong khí quyển Trái Đất thông qua quang hợp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3773,12 +3952,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sinh vật phù du động vật vi mô hình thành mắt xích dinh dưỡng quan trọng giữa sinh vật sản xuất sơ cấp và cá biển khơi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3794,12 +3974,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tính bền vững sinh thái thực sự đòi hỏi phải tách rời sự thịnh vượng kinh tế khỏi việc khai thác tài nguyên hóa thạch hữu hạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3815,12 +3996,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà khí hậu học cảnh báo rằng sự sụp đổ của dải băng Tây Nam Cực đang tiến gần đến một điểm bùng phát không thể cứu vãn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3836,12 +4018,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà địa chất đã phân tích các mẫu lõi trầm tích chứa carbon để đánh giá các mô hình khí hậu trong lịch sử.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3857,12 +4040,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hàng thế kỷ phân hủy hữu cơ thúc đẩy quá trình hình thành đất trên vùng đồng bằng ngập lũ nông nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3878,12 +4062,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mái nhà xanh đô thị điều hòa vi khí hậu thành phố và làm mát không khí xung quanh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3899,12 +4084,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chính quyền thành phố cam kết trở nên hoàn toàn trung hòa carbon vào năm 2040.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3920,12 +4106,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các đô thị khô hạn bắt buộc quy hoạch cảnh quan tiết kiệm nước để bảo tồn các hồ chứa nước đô thị quý giá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3941,12 +4128,13 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công ty hóa chất đã tài trợ cho việc khắc phục môi trường toàn diện của bờ sông bị ô nhiễm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   }
 ];

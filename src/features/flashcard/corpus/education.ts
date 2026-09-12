@@ -14,12 +14,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà trường đã giới thiệu một chương trình giảng dạy khoa học hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -35,12 +36,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học sinh phải nộp bài tập được giao trước thứ Sáu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -56,12 +58,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô ấy đã được trao học bổng toàn phần để đi du học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -77,12 +80,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học phí tăng cao tạo gánh nặng lớn lên các gia đình có thu nhập thấp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -98,12 +102,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo dục tiểu học là bắt buộc đối với tất cả trẻ em trong nước.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -119,12 +124,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các hoạt động ngoại khóa giúp sinh viên phát triển kỹ năng mềm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -140,12 +146,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nền tảng học thuật tốt đã giúp cô ấy có được kỳ thực tập.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -161,12 +168,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bạn cần có chứng chỉ sư phạm để giảng dạy tại các trường công lập.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -182,12 +190,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Anh ấy đã nhận được chứng chỉ ngoại ngữ sau khi đỗ kỳ thi B2.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -203,12 +212,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Duy trì kỷ luật trong lớp học là điều cần thiết để học tập hiệu quả.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -224,12 +234,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo viên đánh giá sự tiến bộ của học sinh qua các bài kiểm tra định kỳ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -245,12 +256,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo sư đã thuyết giảng một bài giảng lôi cuốn về lịch sử hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -266,12 +278,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khoa đã tổ chức một buổi hội thảo chuyên đề về giáo dục biến đổi khí hậu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -287,12 +300,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Có một gia sư riêng đã giúp cậu ấy cải thiện điểm toán.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -308,12 +322,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô ấy đã tốt nghiệp đại học với danh hiệu thủ khoa năm ngoái.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -329,12 +344,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chính phủ đã phát động chiến dịch nhằm tăng tỷ lệ biết chữ ở người lớn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -350,12 +366,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kỹ năng tính toán sớm là nền tảng cho việc học khoa học trong tương lai.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -371,12 +388,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đào tạo nghề cung cấp các kỹ năng thực hành để đi làm ngay.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -392,12 +410,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học vẹt kém hiệu quả hơn là hiểu rõ các khái niệm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -413,12 +432,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Môi trường học tập yên tĩnh giúp học sinh tập trung tốt hơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -434,12 +454,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô ấy đã dành cả cuối tuần để ôn tập cho các bài thi cuối kỳ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -455,12 +476,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hơn 500 sinh viên đã đăng ký khóa học lập trình trực tuyến.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -476,12 +498,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc đi học chuyên cần là điều kiện bắt buộc để đủ tư cách thi cuối kỳ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -497,12 +520,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đề cương môn học phác thảo các tài liệu đọc và chủ đề hàng tuần.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -518,12 +542,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhận xét mang tính xây dựng từ giảng viên giúp người học tiến bộ nhanh chóng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -539,12 +564,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sinh viên được khuyến khích hợp tác trong các dự án nhóm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -560,12 +586,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trình bày một bài thuyết trình rõ ràng giúp tăng cường sự tự tin khi nói trước công chúng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -581,12 +608,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lớp hóa học đã tiến hành một thí nghiệm trong phòng lab về lọc nước.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -602,12 +630,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phần đọc hiểu kiểm tra khả năng nắm bắt ý chính của bạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -623,12 +652,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo dục mầm non bắt đầu từ trường mẫu giáo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -644,12 +674,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trường tiểu học xây dựng các kỹ năng đọc và tính toán cốt lõi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -665,12 +696,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo dục trung học chuẩn bị cho thanh thiếu niên hướng tới đại học hoặc nghề nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -686,12 +718,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đáp ứng đúng hạn chót dạy cho học sinh kỹ năng quản lý thời gian quý báu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -707,12 +740,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đánh giá quá trình chiếm bốn mươi phần trăm điểm tổng kết.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -728,12 +762,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự rõ ràng của lập luận là tiêu chí chính trong việc chấm điểm bài luận.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -749,12 +784,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khuôn viên trường có cơ sở vật chất phòng thí nghiệm hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -770,12 +806,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sống trong ký túc xá đại học nuôi dưỡng những tình bạn lâu dài.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -791,12 +828,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trường đại học tự hào có đội ngũ giảng viên luật nổi tiếng thế giới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -812,12 +850,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người hướng dẫn đã giải thích công thức phức tạp bằng ngôn từ đơn giản.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -833,12 +872,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học sinh tích cực tham gia thảo luận sẽ ghi nhớ được nhiều kiến thức hơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -854,12 +894,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cậu ấy vắng mặt ở lớp vì bị cảm lạnh nặng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -875,12 +916,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lời khen ngợi từ giáo viên có thể thúc đẩy học sinh học tập chăm chỉ hơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -896,12 +938,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các dự án khoa học thực hành khơi dậy tính tò mò tự nhiên của trẻ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -917,12 +960,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mục tiêu học tập chính của bài này là nắm vững các thì quá khứ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -938,12 +982,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lập dàn ý bài luận giúp ngăn ngừa sự thiếu nhất quán về mặt logic.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -959,12 +1004,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bạn nên tóm tắt các luận điểm chính trong hai câu ngắn gọn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -980,12 +1026,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Diễn đạt lại tài liệu nguồn giúp phòng tránh việc vô tình đạo văn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1001,12 +1048,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tra cứu từ điển uy tín giúp kiểm tra phát âm và cụm từ kết hợp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1022,12 +1070,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Luyện nói hàng ngày là điều cần thiết để trở nên thông thạo tiếng Anh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1043,12 +1092,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cả sự lưu loát và độ chính xác ngữ pháp đều được đánh giá trong bài thi nói.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1064,12 +1114,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sử dụng flashcard là một chiến lược hiệu quả để ghi nhớ từ vựng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1085,12 +1136,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hãy đọc kỹ hướng dẫn làm bài trước khi trả lời các câu hỏi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1106,12 +1158,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà trường có bổn phận giáo dục công dân trẻ về các giá trị công dân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1127,12 +1180,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đọc nhiều sách học thuật đa dạng sẽ mở rộng tri thức chuyên môn của bạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1148,12 +1202,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một giáo viên đầy nhiệt huyết có thể truyền cảm hứng về tình yêu học tập suốt đời.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1169,12 +1224,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Luyện tập thường xuyên là con đường chắc chắn nhất để thông thạo ngôn ngữ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1190,12 +1246,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô ấy đã có sự tiến bộ vững chắc trong kỹ năng viết học thuật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1211,12 +1268,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Điểm thi cao là phần thưởng xứng đáng cho nhiều tháng nỗ lực chăm chỉ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1232,12 +1290,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sinh viên làm bài kiểm tra giữa kỳ vào giữa học kỳ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1253,12 +1312,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Duy trì điểm số cao là điều thiết yếu để xét tuyển cao học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1274,12 +1334,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chiến thắng trong cuộc thi quốc gia là thành tích đáng tự hào nhất của cô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1295,12 +1356,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nuôi dưỡng tài năng âm nhạc trẻ đòi hỏi sự hỗ trợ giáo dục từ sớm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1316,12 +1378,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Làm chủ một ngôn ngữ thứ hai đòi hỏi nỗ lực kiên trì theo thời gian.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1337,12 +1400,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trong các kỳ thi, việc tập trung vào quản lý thời gian là rất quan trọng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1358,12 +1422,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Điểm nghe của anh ấy đã cải thiện đáng kể sau khi luyện tập với lời thoại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1379,12 +1444,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chương trình cố vấn bạn bè giúp tân sinh viên vượt qua khó khăn học tập.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1400,12 +1466,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà giáo dục hiện đại khuyến khích học sinh tự suy nghĩ độc lập.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1421,12 +1488,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự chuẩn bị kỹ lưỡng cho kỳ thi giúp giảm thiểu sự lo lắng khi làm bài.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1442,12 +1510,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các trường trung học nên cung cấp định hướng nghề nghiệp chuyên nghiệp cho học sinh cuối cấp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1463,12 +1532,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học hỏi từ các lỗi ngữ pháp giúp hoàn thiện phong cách viết.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1484,12 +1554,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lặp lại ngắt quãng giúp chuyển từ vựng vào trí nhớ dài hạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1505,12 +1576,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Viết một bài báo nghiên cứu là một thử thách trí tuệ đầy cam go.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1526,12 +1598,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xem lại ghi chép lớp học hàng ngày giúp củng cố sự thấu hiểu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1547,12 +1620,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học bổng vinh danh những sinh viên có năng lực học thuật xuất sắc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1568,12 +1642,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thái độ tích cực đối với các phản hồi là điều thiết yếu để phát triển bản thân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1589,12 +1664,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bảng tương tác đã thay đổi các phương pháp sư phạm hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1610,12 +1686,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc sử dụng song ngữ đã được chứng minh là tăng cường sự phát triển nhận thức của trẻ em.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1631,12 +1708,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô ấy đã dành hai năm tiến hành nghiên cứu thực nghiệm cho luận văn tiến sĩ của mình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1652,12 +1730,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các trường đại học sử dụng phần mềm tự động để phát hiện các trường hợp đạo văn học thuật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1673,12 +1752,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cơ hội tiếp cận giáo dục đại học đã mở rộng đáng kể trong thập kỷ qua.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1694,12 +1774,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chương trình mới nhằm đào tạo những người học độc lập và tự chủ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1715,12 +1796,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các buổi tranh luận giúp sinh viên rèn giũa kỹ năng tư duy phản biện.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1736,12 +1818,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà nghiên cứu đã giải thích phương pháp luận định lượng được sử dụng trong nghiên cứu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1757,12 +1840,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà phê bình cho rằng các bài kiểm tra chuẩn hóa không đo lường được tiềm năng sáng tạo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1778,12 +1862,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kỹ thuật chủ động gợi nhớ làm tăng đáng kể sự duy trì trí nhớ dài hạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1799,12 +1884,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các khóa học trực tuyến cho phép các chuyên gia đạt được các văn bằng chứng nhận mới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1820,12 +1906,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học tập dựa trên sự tò mò nuôi dưỡng sự hiểu biết sâu sắc thay vì nhồi nhét bề nổi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1841,12 +1928,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kỳ thi đầu vào đo lường năng khiếu học thuật và tư duy logic.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1862,12 +1950,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sư phạm hiện đại không khuyến khích học vẹt mà ưu tiên tìm hiểu khái niệm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1883,12 +1972,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự chênh lệch ngân sách giữa các vùng dẫn đến việc tiếp cận giáo dục chất lượng không đồng đều.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1904,12 +1994,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo dục toàn diện chú trọng đến cả phẩm chất đạo đức, cảm xúc và thể chất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1925,12 +2016,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các học giả lỗi lạc từ khắp nơi trên thế giới đã quy tụ tại hội nghị chuyên đề thường niên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1946,12 +2038,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Báo cáo đưa ra một phân tích toàn diện về tình trạng bỏ học ở bậc trung học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1967,12 +2060,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đánh giá quá trình cung cấp dữ liệu chẩn đoán kịp thời để định hướng giảng dạy.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1988,12 +2082,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đánh giá tổng kết xác định xem học sinh đã đạt các chuẩn đầu ra tốt nghiệp hay chưa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2009,12 +2104,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trường đại học đã đạt kiểm định quốc tế cho chương trình kỹ thuật của mình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2030,12 +2126,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các trường đại học nên đóng vai trò là cái nôi cho những khám phá trí tuệ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2051,12 +2148,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kết luận của cô được củng cố bởi bằng chứng thực nghiệm vững chắc từ các thử nghiệm thực tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2072,12 +2170,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các công cụ kỹ thuật số tương tác tạo điều kiện thuận lợi cho việc giải quyết vấn đề nhóm giữa các bạn học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2093,12 +2192,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một tâm trí ham học hỏi là đặc điểm quý giá nhất trong nghiên cứu khoa học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2114,12 +2214,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các quốc gia đang phát triển nỗ lực xóa bỏ nạn mù chữ chức năng ở vùng sâu vùng xa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2135,12 +2236,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khoa sư phạm lấy người học làm trung tâm đã thay thế phần lớn việc giảng bài một chiều truyền thống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2156,12 +2258,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo viên phải phân hóa việc giảng dạy để đáp ứng các nhịp độ học tập khác nhau.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2177,12 +2280,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giải tích đại cương là điều kiện tiên quyết bắt buộc cho môn vật lý nâng cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2198,12 +2302,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trường cung cấp các lớp bổ túc đọc hiểu cho các em học sinh còn gặp khó khăn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2219,12 +2324,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sinh viên tốt nghiệp được kỳ vọng sẽ thành thạo ít nhất một ngoại ngữ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2240,12 +2346,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học sinh năng khiếu tham gia các chương trình bồi dưỡng khoa học sau giờ học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2261,12 +2368,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo sư Lee đang trong kỳ nghỉ nghiên cứu để viết cuốn giáo trình toàn diện của mình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2282,12 +2390,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một mạng lưới cựu sinh viên vững mạnh mang lại sự cố vấn và định hướng nghề nghiệp vô giá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2303,12 +2412,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hàng nghìn tân sinh viên háo hức nhập học tại trường đại học thủ đô mỗi mùa thu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2324,12 +2434,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô đã được trao một học bổng nghiên cứu sau tiến sĩ đầy tính cạnh tranh tại Oxford.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2345,12 +2456,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chương trình cử nhân danh dự đòi hỏi một chương trình học khắt khe về toán lý thuyết.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2366,12 +2478,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Có một người thầy cố vấn giàu kinh nghiệm giúp đẩy nhanh tiến độ nghiên cứu tiến sĩ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2387,12 +2500,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chương trình giáo dục song ngữ nuôi dưỡng kỹ năng giao tiếp liên văn hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2408,12 +2522,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các phát hiện khoa học phải trải qua quá trình phản biện ngang hàng nghiêm ngặt trước khi xuất bản.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2429,12 +2544,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giải quyết các thách thức khí hậu đòi hỏi một phương pháp nghiên cứu đa ngành.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2450,12 +2566,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tin sinh học là một lĩnh vực nghiên cứu liên ngành đang mở rộng nhanh chóng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2471,12 +2588,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phương pháp giảng dạy quá nặng tính thuyết huấn có thể bóp nghẹt sự tò mò sáng tạo của học sinh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2492,12 +2610,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Điểm thi quốc tế đóng vai trò là chuẩn đối sánh đáng tin cậy về chất lượng trường học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2513,12 +2632,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sinh viên bậc đại học phải hoàn thành một dự án tốt nghiệp trong học kỳ cuối.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2534,12 +2654,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô quyết định theo đuổi chương trình học sau đại học về kinh tế môi trường.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2555,12 +2676,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Luận văn thạc sĩ của anh nghiên cứu các lợi ích sư phạm của việc game hóa học tập.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2576,12 +2698,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khoa đã tổ chức một hội nghị chuyên đề quốc tế về trí tuệ nhân tạo trong giáo dục.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2597,12 +2720,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà phê bình lo ngại rằng xu hướng hướng nghiệp quá mức làm xói mòn nền tảng khai phóng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2618,12 +2742,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bà được đông đảo mọi người coi là một nhà sư phạm có tư duy đổi mới truyền cảm hứng cải cách.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2639,12 +2764,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trẻ nhỏ thể hiện khả năng tiếp thu nhận thức to lớn đối với các âm thanh ngôn ngữ mới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2660,12 +2786,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phần tổng quan tài liệu đòi hỏi bạn phải tổng hợp các kết quả từ nhiều bài báo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2681,12 +2808,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sơ đồ trực quan giúp người học lĩnh hội các công thức toán học trừu tượng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2702,12 +2830,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sơ đồ tư duy là một kỹ thuật trực quan hữu ích để tạo thuận lợi cho việc ghi nhớ từ vựng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2723,12 +2852,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự cống hiến và các danh hiệu học thuật của cô là minh chứng điển hình cho người học giả lý tưởng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2744,12 +2874,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo viên đã dừng bài giảng để làm sáng tỏ một điểm ngữ pháp dễ gây nhầm lẫn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2765,12 +2896,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo dục mầm non nỗ lực vun đắp các giá trị đạo đức và sự tôn trọng lẫn nhau cho học sinh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2786,12 +2918,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà trường phải trau dồi các thói quen giải quyết vấn đề phân tích từ khi còn nhỏ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2807,12 +2940,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cô ấy có thể diễn đạt các lý thuyết triết học phức tạp một cách rất điềm tĩnh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2828,12 +2962,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo sư đã sử dụng các phép loại suy thực tế để giải thích cặn kẽ các nguyên lý lượng tử.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2849,12 +2984,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cần có thời gian để người học tiếp thu trọn vẹn một lượng lớn thuật ngữ chuyên ngành.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2870,12 +3006,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà phản biện xem xét kỹ lưỡng dữ liệu thực nghiệm trước khi xác nhận bản thảo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2891,12 +3028,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Từ kết quả kiểm tra, các nhà nghiên cứu suy luận rằng thiếu ngủ làm suy giảm trí nhớ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2912,12 +3050,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tạp chí truy cập mở giúp phổ biến nghiên cứu học thuật trên toàn cầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2933,12 +3072,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học sinh học cách xây dựng một giả thuyết khoa học có thể kiểm chứng được.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2954,12 +3094,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chúng ta không thể ngoại suy đáng tin cậy kết quả học tập dài hạn chỉ từ một bài kiểm tra ngắn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2975,12 +3116,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thành công học tập của cô là kết quả của sự siêng năng và kỷ luật bền bỉ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2996,12 +3138,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chứng chỉ C1 chứng minh trình độ ngôn ngữ nâng cao trong bối cảnh học thuật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3017,12 +3160,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thanh tra đã chỉ ra những thiếu sót về cơ sở hạ tầng tại các trường học địa phương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3038,12 +3182,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chương trình đào tạo nhằm xây dựng năng lực giao tiếp trong các bối cảnh thực tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3059,12 +3204,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các ứng dụng giáo dục game hóa tăng cường sự gắn kết của học sinh nhờ tính tương tác cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3080,12 +3226,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sinh viên đánh giá cao những môn học thể hiện tính thích đáng rõ ràng với thực tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3101,12 +3248,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo dục được công nhận rộng rãi là chất xúc tác mạnh mẽ nhất cho việc nâng cao vị thế của phụ nữ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3122,12 +3270,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những lời hứa hẹn nghề nghiệp không thực tế có thể gây ra sự vỡ mộng trong sinh viên mới tốt nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3143,12 +3292,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trong một thị trường việc làm biến động, các trường đại học phải nuôi dưỡng khả năng thích ứng trí tuệ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3164,12 +3314,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nghiên cứu tiến sĩ của cô khám phá nhận thức luận kiến tạo trong giáo dục toán học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3185,12 +3336,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà ngôn ngữ học tranh luận về quyền bá chủ ngôn ngữ toàn cầu của tiếng Anh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3206,12 +3358,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cuốn tiểu thuyết truyền tải các chủ đề đạo đức sâu sắc mà không dùng đến tính giáo điều lộ liễu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3227,12 +3380,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phương pháp sư phạm của người bị áp bức của Freire cổ vũ đối thoại phản biện giữa thầy và trò.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3248,12 +3402,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khung hỗ trợ giảng dạy sẽ dần được rút bớt khi người học mới đạt đến mức độ thuần thục.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3269,12 +3424,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giải quyết vấn đề bằng phương pháp tìm tòi khuyến khích người học tự tìm giải pháp qua thử nghiệm và khám phá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3290,12 +3446,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự ra đời của AI tạo sinh đại diện cho một bước chuyển dịch hệ hình trong đánh giá đại học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3311,12 +3468,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Là một người tự học thành tài, anh đã tự mình làm chủ ba ngôn ngữ lập trình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3332,12 +3490,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trẻ sơ sinh thể hiện một thiên hướng bẩm sinh trong việc tiếp thu các cấu trúc cú pháp phức tạp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3353,12 +3512,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Diễn giả chính đã làm say đắm cả hội trường bằng học vấn lịch sử uyên bác sâu rộng của mình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3374,12 +3534,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học viện nỗ lực khắc sâu ý thức trách nhiệm công dân sâu sắc trong đoàn học viên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3395,12 +3556,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự ám ảnh với các quy tắc định dạng nhỏ nhặt đã chạm đến ranh giới của thói câu nệ chữ nghĩa thái quá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3416,12 +3578,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tìm hiểu triết học đòi hỏi sự suy luận logic chặt chẽ thay vì phỏng đoán theo trực giác.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3437,12 +3600,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phát triển chuyên môn liên tục nâng cao năng lực sư phạm của giáo viên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3458,12 +3622,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chuyên khảo được giới tinh thông khen ngợi vì khung lý thuyết mang tính đột phá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3479,12 +3644,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trường đại học mở các hội thảo dự bị về logic trước các lớp triết học nâng cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3500,12 +3666,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các học giả văn học sử dụng thông diễn học để giải mã các tầng ẩn dụ ẩn giấu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3521,12 +3688,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thư viện số cung cấp một kho tàng tư liệu truy cập mở đồ sộ chưa từng có.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3542,12 +3710,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học thuật chân chính đòi hỏi sự chuyên môn hóa nghiêm ngặt chứ không phải sự học nửa vời của kẻ tài tử.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3563,12 +3732,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo sư đã thuyết giảng một bài nghị luận xuất sắc về đạo đức học hiện sinh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3584,12 +3754,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bài chú giải phản biện của ông về các bản thảo cổ đã hé lộ những lỗi sao chép chưa từng được nhận thấy.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3605,12 +3776,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hiệu trưởng đã đọc một bài văn tán dương cảm động vinh danh vị phó hiệu trưởng sắp nghỉ hưu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3626,12 +3798,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sư phạm hiện đại thể hiện sự dung hợp khi hòa trộn tâm lý học nhận thức với học tập qua trải nghiệm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3647,12 +3820,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học phần văn học phân tích các tiểu thuyết giáo dục kinh điển của Đức mô tả quá trình trưởng thành của tuổi trẻ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3668,12 +3842,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phương pháp giảng dạy Socrates dựa trên việc thu hút người đối thoại thông qua các câu hỏi có cấu trúc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3689,12 +3864,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Với khả năng nhìn xa trông rộng đáng kinh ngạc, các nhà lý thuyết ban đầu đã dự đoán sự chuyển dịch sang các lớp học ảo từ xa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3710,12 +3886,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mọi chiến thuật sư phạm cụ thể cuối cùng đều được gộp vào dưới các mục tiêu chương trình bao quát.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3731,12 +3908,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc lạm dụng thuật ngữ học thuật dày đặc chỉ nhằm làm tối nghĩa các khái niệm thực nghiệm đơn giản.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3752,12 +3930,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Quan điểm mục đích luận về giáo dục khẳng định rằng mọi sự học tập phải phục vụ cho quyền công dân dân chủ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3773,12 +3952,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trường phái lưu động của Aristotle nổi tiếng với những bài giảng triết học vừa đi dạo vừa đàm đạo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3794,12 +3974,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Óc sáng suốt của cô đã giúp cô nhận diện những lỗ hổng trong các mô hình kinh tế kinh điển.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3815,12 +3996,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Leonardo da Vinci vẫn là nhà thông thái nổi tiếng nhất lịch sử trong cả nghệ thuật và khoa học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3836,12 +4018,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vị trí giám đốc danh dự bị các nhà phê bình coi không hơn gì một vị trí ngồi mát ăn bát vàng mang tính nghi lễ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3857,12 +4040,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sinh viên học tiếng Hy Lạp cổ điển dựa vào các tuyển tập trích dẫn có chú giải để luyện cú pháp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3878,12 +4062,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự học tập có ý nghĩa nảy sinh từ cuộc đối thoại học thuật có cấu trúc giữa thầy và trò.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3899,12 +4084,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hội nghị chuyên đề mở màn bằng một bài tán dương nhiệt liệt ca ngợi người tiên phong của ngôn ngữ học nhận thức.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3920,12 +4106,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Buổi hội thảo tạm thời dừng lại khi chạm trán một nghịch lý bế tắc triết học căn bản.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3941,12 +4128,13 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cuộc tranh luận đại học thời trung cổ thường có các chủ đề thảo luận tùy chọn tự phát từ khán giả.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   }
 ];

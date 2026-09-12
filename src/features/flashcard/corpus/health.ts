@@ -14,12 +14,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lối sống ít vận động làm tăng nguy cơ mắc bệnh tim mạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -35,12 +36,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ quan cứu trợ cung cấp các gói thực phẩm tăng cường vi chất để chống lại tình trạng suy dinh dưỡng ở trẻ em.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -56,12 +58,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tập thể dục nhịp điệu thường xuyên giúp tăng cường sức khỏe tim mạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -77,12 +80,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các sáng kiến y tế công cộng nhằm kiềm chế tỷ lệ béo phì gia tăng ở trẻ em.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -98,12 +102,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vệ sinh cá nhân tốt là tuyến phòng thủ đầu tiên chống lại các bệnh nhiễm trùng do virus.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -119,12 +124,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sau ca gãy xương, cô ấy đã tham gia các buổi vật lý trị liệu hàng tuần.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -140,12 +146,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ho khan dai dẳng và mệt mỏi là các triệu chứng phổ biến của bệnh đường hô hấp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -161,12 +168,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dinh dưỡng cân bằng là điều tối quan trọng cho sự phát triển xương của thanh thiếu niên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -182,12 +190,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thuốc kháng sinh chỉ được dùng khi có đơn thuốc hợp lệ của bác sĩ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -203,12 +212,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tiêm chủng định kỳ cho trẻ em đã xóa sổ nhiều căn bệnh chết người.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -224,12 +234,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Quản lý các bệnh mãn tính đòi hỏi phải điều chỉnh lối sống lâu dài.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -245,12 +256,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Rửa sạch vết thương kỹ lưỡng bằng dung dịch sát khuẩn để ngăn ngừa nhiễm trùng do vi khuẩn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -266,12 +278,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hạn chế đường và đồ ăn nhẹ chế biến sẵn là một sự thay đổi khôn ngoan trong chế độ ăn uống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -287,12 +300,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tập luyện sức mạnh giúp thúc đẩy quá trình trao đổi chất khi nghỉ ngơi và đốt cháy calo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -308,12 +322,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Luôn kiểm tra nhãn thực phẩm cẩn thận nếu bạn bị dị ứng đậu phộng nghiêm trọng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -329,12 +344,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ngủ đủ giấc và uống đủ nước giúp ngăn ngừa sự mệt mỏi cả về thể chất lẫn tinh thần.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -350,12 +366,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tầm soát sớm cho phép các bác sĩ chuyên khoa ung thư chẩn đoán khối u ở giai đoạn có thể điều trị được.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -371,12 +388,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vận động viên đã trải qua sáu tháng phục hồi chức năng nghiêm ngặt sau phẫu thuật đầu gối.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -392,12 +410,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ăn các loại trái cây họ cam quýt giàu Vitamin C giúp tăng cường hệ miễn dịch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -413,12 +432,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các quan chức y tế công cộng đã hành động nhanh chóng để kiềm chế dịch cúm mùa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -434,12 +454,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vận động viên phải bổ sung nước đúng cách trước, trong và sau các chặng chạy bền.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -455,12 +476,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Theo dõi lượng calo nạp vào hàng ngày giúp duy trì trọng lượng cơ thể tối ưu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -476,12 +498,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Rau lá xanh chứa nhiều vitamin và khoáng chất thiết yếu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -497,12 +520,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Rau hữu cơ được trồng mà không sử dụng phân bón tổng hợp hay thuốc trừ sâu hóa học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -518,12 +542,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ăn chất xơ hỗ trợ hệ tiêu hóa hoạt động trơn tru và khỏe mạnh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -539,12 +564,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hoạt động thể chất thường xuyên giúp tăng cường đáng kể sức khỏe tâm lý.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -560,12 +586,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khởi động đúng cách giúp bảo vệ vận động viên khỏi bị chấn thương cơ gân kheo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -581,12 +608,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nghỉ ngơi đầy đủ và dinh dưỡng hợp lý giúp đẩy nhanh quá trình hồi phục sau phẫu thuật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -602,12 +630,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đạp xe đường dài giúp xây dựng sức bền tim mạch đáng kinh ngạc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -623,12 +652,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bơi lội và chạy bộ là những hình thức tập luyện hiếu khí tuyệt vời.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -644,12 +674,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chạy nước rút và cử tạ nặng chủ yếu dựa vào các con đường năng lượng kỵ khí.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -665,12 +696,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thực phẩm chức năng chỉ nên bổ sung chứ không thay thế một chế độ ăn cân bằng lành mạnh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -686,12 +718,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Gan và thận hoạt động liên tục để lọc sạch các độc tố trong cơ thể.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -707,12 +740,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giấc ngủ chất lượng giúp phục hồi sinh lực thể chất và làm sắc bén sự tập trung.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -728,12 +762,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Uống nhiều nước trong thời tiết nóng giúp ngăn ngừa say nắng và mất nước.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -749,12 +784,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hạn chế thời gian nhìn màn hình trước khi ngủ giúp giảm bớt chứng mất ngủ mãn tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -770,12 +806,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bệnh nhân nên uống thuốc theo chỉ định vào các khung giờ cố định hàng ngày.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -791,12 +828,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nha khoa dự phòng tập trung vào việc đánh răng, dùng chỉ nha khoa và khám răng định kỳ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -812,12 +850,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bạn có thể đặt lịch tư vấn y tế trực tuyến với bác sĩ đa khoa có chứng chỉ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -833,12 +872,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Không bao giờ được vượt quá liều lượng khuyến cáo mà không hỏi ý kiến dược sĩ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -854,12 +894,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hãy tham khảo ý kiến bác sĩ gia đình trước khi bắt đầu bất kỳ chế độ tập luyện khắt khe nào.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -875,12 +916,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đi bộ nhanh cải thiện tuần hoàn máu và làm giảm huyết áp khi nghỉ ngơi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -896,12 +938,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Axit béo Omega-3 có trong cá hồi giúp giảm viêm ở cấp độ tế bào.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -917,12 +960,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Duy trì tư thế đúng khi làm việc giúp ngăn ngừa đau thắt lưng mãn tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -938,12 +982,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nơi làm việc ngày càng đầu tư nhiều hơn vào các chương trình hỗ trợ sức khỏe tâm thần của nhân viên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -959,12 +1004,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tiếp cận nước sạch và điều kiện vệ sinh cơ bản giúp ngăn ngừa các dịch bệnh lây qua đường nước.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -980,12 +1026,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khói bụi đô thị làm trầm trọng thêm các bệnh lý hô hấp mãn tính như hen suyễn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1001,12 +1048,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Duy trì đủ nước là điều tối quan trọng đối với chức năng thận tối ưu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1022,12 +1070,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Yến mạch và các loại đậu rất giàu chất xơ giúp hỗ trợ tiêu hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1043,12 +1092,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giảm lượng natri nạp vào là điều cần thiết đối với bệnh nhân được chẩn đoán cao huyết áp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1064,12 +1114,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chế độ ăn cân bằng và tập thể dục đều đặn làm giảm nguy cơ mắc bệnh tiểu đường loại 2.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1085,12 +1136,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thực hành các kỹ thuật thư giãn hít thở sâu giúp làm giảm sự lo lắng cấp tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1106,12 +1158,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Rèn luyện thể lực hiếu khí giúp ổn định nhịp tim khi nghỉ ngơi ở mức khỏe mạnh hơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1127,12 +1180,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thiền chánh niệm giúp mọi người kiểm soát sự lo âu công việc hàng ngày.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1148,12 +1202,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các bác sĩ khuyến cáo nên khám sức khỏe định kỳ hàng năm để phát hiện sớm các bệnh không có triệu chứng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1169,12 +1224,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phòng khám y tế địa phương cung cấp dịch vụ tiêm chủng giá cả phải chăng cho trẻ em trong khu vực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1190,12 +1246,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhân viên y tế cứu thương đã phản ứng nhanh chóng trước tình huống cấp cứu y tế đe dọa tính mạng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1211,12 +1268,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tiêm chủng rộng rãi tạo ra miễn dịch cộng đồng giúp bảo vệ những nhóm người dễ bị tổn thương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1232,12 +1290,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dành mười phút thiền mỗi ngày giúp làm dịu hệ thần kinh đang bị kích thích quá mức.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1253,12 +1312,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc truy vết tiếp xúc đã giúp kiểm soát đợt bùng phát dịch tả đột ngột tại khu vực bến cảng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1274,12 +1334,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kéo giãn cơ nhẹ nhàng trước khi đi ngủ giúp giải tỏa căng thẳng cơ bắp và cải thiện chất lượng giấc ngủ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1295,12 +1356,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chương trình chăm sóc sức khỏe doanh nghiệp bao gồm các lớp yoga và huấn luyện dinh dưỡng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1316,12 +1378,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tiêu thụ quá nhiều chất béo chuyển hóa gây ra những tác hại rõ rệt đối với tim.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1337,12 +1400,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các y tá theo dõi các dấu hiệu sinh tồn của bệnh nhân mười lăm phút một lần.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1358,12 +1422,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Áp dụng các thói quen lối sống lành mạnh giúp phòng ngừa các bệnh mãn tính có thể tránh được.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1379,12 +1444,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thay băng vết thương đúng cách đảm bảo các vết mổ phẫu thuật lành lại mà không để lại sẹo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1400,12 +1466,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sử dụng thiết bị theo dõi thể lực đeo tay thúc đẩy người dùng đạt mục tiêu số bước hàng ngày.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1421,12 +1488,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dành thời gian hít thở sâu giúp làm dịu nhịp tim trong những khoảnh khắc căng thẳng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1442,12 +1510,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Carbohydrate phức hợp giải phóng glucose bền vững để duy trì mức năng lượng cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1463,12 +1532,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Uống một ly nước ấm khi thức dậy là một thói quen đơn giản và lành mạnh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1484,12 +1554,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giảm cân bền vững đòi hỏi sự cải thiện chế độ ăn uống dần dần chứ không phải nhịn ăn kham khổ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1505,12 +1576,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nghỉ ngơi đầy đủ cũng quan trọng đối với sự phát triển cơ bắp như chính buổi tập luyện.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1526,12 +1598,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà nghiên cứu tiếp tục tìm kiếm phương pháp chữa trị dứt điểm cho bệnh Alzheimer.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1547,12 +1620,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người có bệnh lý nền nên tham khảo ý kiến bác sĩ chuyên khoa trước khi tập luyện cường độ cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1568,12 +1642,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tập kháng lực giúp bảo tồn sức mạnh cơ bắp và mật độ xương ở người cao tuổi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1589,12 +1664,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dịch tễ học theo dõi các vật trung gian truyền bệnh và các mô hình nhân khẩu học của sự lây nhiễm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1610,12 +1686,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Áp dụng công thái học văn phòng giúp ngăn ngừa chấn thương do vận động lặp đi lặp lại ở các lập trình viên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1631,12 +1708,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khói thuốc lá chứa hàng chục hóa chất độc hại được phân loại là chất gây ung thư mạnh ở người.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1652,12 +1730,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nghiên cứu tại các Vùng Xanh chỉ ra rằng chế độ ăn dựa trên thực vật góp phần tạo nên tuổi thọ vượt trội.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1673,12 +1752,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khử trùng bằng tia cực tím giúp vô hiệu hóa các mầm bệnh lây qua không khí trong các phòng mổ bệnh viện.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1694,12 +1774,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phát hiện sớm mang lại cho bệnh nhân ung thư một tiên lượng lâm sàng thuận lợi hơn đáng kể.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1715,12 +1796,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Môi trường đồng quê yên bình đã giúp ích cho bệnh nhân trong những tháng hồi phục sức khỏe.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1736,12 +1818,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự lo lắng nơi làm việc kéo dài không được kiểm soát thường biểu hiện dưới dạng chứng co thắt dạ dày do tâm thể.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1757,12 +1840,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Uống thuốc sốt rét trước khi đến các vùng nhiệt đới là một biện pháp phòng bệnh thiết yếu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1778,12 +1862,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ quan y tế đã tổ chức các phòng khám lưu động để tiêm chủng cho các cộng đồng nông thôn xa xôi phòng bệnh bại liệt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1799,12 +1884,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Suy thận nặng là một chống chỉ định nghiêm ngặt đối với loại kháng sinh cụ thể này.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1820,12 +1906,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kết hợp thực phẩm giàu sắt với Vitamin C giúp tăng cường độ sinh khả dụng của khoáng chất này.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1841,12 +1928,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Điều chỉnh lối sống có thể làm giảm bớt khuynh hướng di truyền gia đình mạnh mẽ đối với bệnh tim.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1862,12 +1950,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đổ mồ hôi là một cơ chế sinh lý giúp duy trì sự cân bằng nội môi về nhiệt trong khi gắng sức.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1883,12 +1972,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các đội ngũ chăm sóc giảm nhẹ tập trung vào việc tối đa hóa sự thoải mái và chất lượng cuộc sống cho các bệnh nhân giai đoạn cuối.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1904,12 +1994,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thử nghiệm lâm sàng đã xác minh hiệu quả dược lý của hợp chất kháng virus mới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1925,12 +2016,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các bác sĩ phẫu thuật nhi khoa đã khắc phục dị tật tim bẩm sinh của đứa trẻ thông qua phẫu thuật xâm lấn tối thiểu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1946,12 +2038,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một người mang mầm bệnh không có triệu chứng có thể vô tình lây truyền virus sang các thành viên yếu ớt trong gia đình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1967,12 +2060,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đau nửa đầu có thể là một chứng bệnh làm suy nhược cơ thể, gây gián đoạn nghiêm trọng năng suất làm việc hàng ngày.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1988,12 +2082,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà khoa học theo dõi các đột biến có thể làm tăng tốc độ lây truyền hoặc độc lực của mầm bệnh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2009,12 +2104,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chiến dịch vệ sinh công cộng đã giúp giảm mạnh tỷ lệ mắc bệnh ở trẻ sơ sinh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2030,12 +2126,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tầm soát sớm và hóa trị hiện đại đã làm giảm đáng kể tỷ lệ tử vong do ung thư.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2051,12 +2148,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sau khi điều trị miễn dịch chuyên sâu, bệnh bạch cầu của bệnh nhân đã thuyên giảm lâm sàng hoàn toàn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2072,12 +2170,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các quy trình cách ly nghiêm ngặt trong khu cách ly đã ngăn ngừa sự lây nhiễm sang toàn bộ bệnh viện.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2093,12 +2192,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vật liệu cách nhiệt amiăng đã bị cấm trên toàn cầu do các đặc tính gây ung thư đã được chứng minh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2114,12 +2214,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thử nghiệm lâm sàng giai đoạn ba đã chứng minh rằng loại vắc xin mới có hiệu lực chín mươi lăm phần trăm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2135,12 +2236,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các vận động viên chạy marathon trải qua quá trình huấn luyện nghiêm ngặt để tối đa hóa sức bền cơ bắp và tinh thần.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2156,12 +2258,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hoạt động thể chất thường xuyên kích thích sự hình thành tế bào thần kinh và bảo vệ chống lại sự suy giảm thần kinh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2177,12 +2280,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bác sĩ chuyên khoa chỉnh hình khuyên nên dùng giày dép được thiết kế riêng để giảm bớt chứng viêm cân gan chân mãn tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2198,12 +2302,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà độc chất học kiểm tra kỹ lưỡng các dược phẩm thử nghiệm để loại trừ độc tính đối với các cơ quan.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2219,12 +2324,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tiếp xúc với ánh sáng xanh từ màn hình vào đêm muộn làm gián đoạn nhịp sinh học tự nhiên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2240,12 +2346,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chánh niệm và mạng lưới hỗ trợ xã hội nuôi dưỡng sức bật cảm xúc trong các cuộc khủng hoảng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2261,12 +2368,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lối sống ít vận động và chế độ ăn nhiều đường là các yếu tố nguy cơ chính gây ra hội chứng chuyển hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2282,12 +2390,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Du khách đến từ tâm dịch đã phải trải qua đợt cách ly bắt buộc kéo dài hai tuần.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2303,12 +2412,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kê đơn kháng sinh quá mức cho các trường hợp cảm lạnh do virus làm gia tăng sự kháng kháng sinh trên toàn cầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2324,12 +2434,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các loại quả mọng và trà xanh rất giàu chất chống oxy hóa giúp trung hòa các gốc tự do.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2345,12 +2456,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tập luyện ngắt quãng cường độ cao giúp tăng cường sức bền tim phổi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2366,12 +2478,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học các kỹ năng vận động phức tạp như đàn piano kích thích tính dẻo dai của não bộ suốt đời.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2387,12 +2500,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thiếu máu do thiếu sắt gây mệt mỏi dai dẳng, da xanh xao và chóng mặt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2408,12 +2522,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giảm cân và đi bộ nhanh hàng ngày có thể đảo ngược hoàn toàn giai đoạn tiền tiểu đường sớm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2429,12 +2544,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tiêu thụ đa dạng các loại thực phẩm lên men giúp hỗ trợ một hệ vi sinh vật đường ruột khỏe mạnh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2450,12 +2566,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Căng thẳng tâm lý mãn tính kích hoạt giải phóng cortisol gây ra sự suy giảm miễn dịch tạm thời.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2471,12 +2588,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sau khi chạy siêu marathon, người chạy phải bổ sung các chất điện giải như natri và kali.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2492,12 +2610,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chọn ngũ cốc nguyên hạt có chỉ số đường huyết thấp giúp ngăn ngừa lượng đường trong máu tăng đột biến.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2513,12 +2632,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nha sĩ đã kê một loại thuốc giảm đau nhẹ dạng uống sau khi nhổ răng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2534,12 +2654,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ca tiểu phẫu da được thực hiện dưới hình thức gây tê cục bộ mà không gặp biến chứng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2555,12 +2676,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sinh thiết mô phẫu thuật xác nhận rằng khối sưng hạch bạch huyết là lành tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2576,12 +2698,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kết hợp hóa trị đích với liệu pháp miễn dịch đã cải thiện đáng kể tỷ lệ sống sót.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2597,12 +2720,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người đi bộ đường dài bị mắc kẹt trên đỉnh núi tuyết đã được điều trị ngay lập tức vì bị hạ thân nhiệt nghiêm trọng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2618,12 +2742,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công nhân làm việc trong các xưởng đúc hở đối mặt với nguy cơ tăng thân nhiệt do gắng sức trong các đợt nắng nóng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2639,12 +2764,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phòng xét nghiệm bệnh lý đã xác định được chủng vi khuẩn cụ thể trong vòng bốn mươi tám giờ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2660,12 +2786,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hiểu biết về sinh lý học vận động cho phép các huấn luyện viên thiết kế các chương trình thể thao có mục tiêu cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2681,12 +2808,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xạ trị đích tiêu diệt các tế bào ung thư cục bộ trong khi vẫn bảo tồn mô lành xung quanh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2702,12 +2830,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bác sĩ đã cho dùng một loại thuốc an thần nhẹ để làm dịu bệnh nhân đang kích động trước khi phẫu thuật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2723,12 +2852,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mất nước nghiêm trọng đòi hỏi phải truyền dịch muối qua đường tĩnh mạch ngay lập tức.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2744,12 +2874,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Anh đã dành hai tuần yên bình dưỡng bệnh tại nhà sau ca phẫu thuật cắt ruột thừa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2765,12 +2896,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc tiêm phòng cúm hàng năm được khuyến nghị mạnh mẽ cho người cao tuổi và bệnh nhân tiểu đường.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2786,12 +2918,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lấy cao răng định kỳ đóng vai trò là biện pháp dự phòng quan trọng chống lại bệnh viêm nha chu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2807,12 +2940,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đeo miếng lót giày chỉnh hình được thiết kế riêng đã làm giảm chứng viêm gân mãn tính của người chạy.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2828,12 +2962,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bác sĩ vật lý trị liệu có chứng chỉ đã hướng dẫn bệnh nhân thực hiện các bài tập khớp vai có mục tiêu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2849,12 +2984,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bác sĩ chuyên khoa thần kinh đã yêu cầu chụp cộng hưởng từ MRI để điều tra các cơn co giật cục bộ tái phát.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2870,12 +3006,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các bậc cha mẹ nên tham khảo ý kiến bác sĩ nhi khoa nếu trẻ sơ sinh bị sốt cao kéo dài bốn mươi tám giờ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2891,12 +3028,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bác sĩ tim mạch đã thực hiện siêu âm tim để đánh giá hoạt động của van hai lá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2912,12 +3050,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhóm bác sĩ ung bướu đa chuyên khoa đã thiết kế một phác đồ hóa xạ trị cá nhân hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2933,12 +3072,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bác sĩ da liễu có chứng chỉ đã kiểm tra nốt ruồi bất thường để loại trừ u hắc tố ác tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2954,12 +3094,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những tiến bộ trong lão khoa tập trung vào việc duy trì sức sống nhận thức và khả năng vận động ở những người sống thọ trăm tuổi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2975,12 +3116,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dược sĩ có chứng chỉ đã cảnh báo khách hàng về các tương tác thuốc nguy hiểm qua lại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2996,12 +3138,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chăm sóc hậu phẫu chu đáo giúp ngăn ngừa nhiễm trùng vị trí phẫu thuật và cục máu đông.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3017,12 +3160,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhịn ăn trước phẫu thuật đảm bảo an toàn cho bệnh nhân trong quá trình gây mê toàn thân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3038,12 +3182,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tiệt trùng bằng nồi hấp áp suất cao tiêu diệt tất cả các bào tử vi sinh vật trên dụng cụ phẫu thuật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3059,12 +3204,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các bác sĩ phẫu thuật chấn thương đã tiến hành truyền máu khẩn cấp để ổn định nạn nhân tai nạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3080,12 +3226,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các phòng cấp cứu chứng kiến sự gia tăng đột biến các ca ngộ độc rượu cấp tính trong các kỳ nghỉ lễ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3101,12 +3248,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà nghiên cứu y học đã điều tra nguyên nhân bệnh căn do virus của các rối loạn thoái hóa thần kinh mãn tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3122,12 +3270,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bệnh nhân được chẩn đoán mắc chứng tăng huyết áp tự phát không rõ căn nguyên bất chấp các dấu ấn chẩn đoán tiêu chuẩn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3143,12 +3292,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các quy trình vệ sinh tay nghiêm ngặt đã làm giảm mạnh các ca nhiễm khuẩn huyết bệnh viện tại khoa chăm sóc tích cực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3164,12 +3314,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các sáng kiến an toàn người bệnh tìm cách giảm thiểu tổn hại do y khoa phát sinh từ các lỗi kê đơn thuốc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3185,12 +3336,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chấn thương cảm xúc nghiêm trọng thường biểu hiện qua sự cơ thể hóa như liệt tạm thời.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3206,12 +3358,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ quan y tế công cộng đã bác bỏ những tuyên bố vô căn cứ rằng nước chanh chữa được viêm phổi do virus.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3227,12 +3380,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chuyên gia dinh dưỡng ung thư nỗ lực ngăn chặn tình trạng teo cơ tiến triển của chứng suy mòn do ung thư.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3248,12 +3402,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người mang chứng tưởng bệnh kinh niên này đã đến khám ba bác sĩ khác nhau hàng tuần vì những căn bệnh không hề có thực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3269,12 +3424,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tìm kiếm thông tin sức khỏe trực tuyến quá mức có thể gây ra chứng nghi bệnh kỹ thuật số nghiêm trọng và các cơn hoảng loạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3290,12 +3446,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dược phẩm được đánh giá nghiêm ngặt về các nguy cơ gây quái thai trước khi được phép dùng cho phụ nữ mang thai.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3311,12 +3468,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Garô cấp cứu do nhân viên phản ứng đầu tiên thực hiện đã ngăn ngừa tình trạng mất máu đến cạn kiệt đe dọa tính mạng tại hiện trường.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3332,12 +3490,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hệ thống sưởi mùa đông khô hanh và sự mỏng manh của mạch máu có thể dẫn đến các cơn chảy máu cam đột ngột.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3353,12 +3512,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các đốm Koplik bên trong khoang miệng là dấu hiệu đặc trưng bệnh lý chỉ điểm nhiễm sởi giai đoạn đầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3374,12 +3534,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các bác sĩ nhi khoa đã hướng dẫn các bậc cha mẹ cách kiểm soát an toàn cơn sốt cao ở trẻ nhỏ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3395,12 +3556,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hồi sức cấp cứu đã khôi phục nhịp sinh tồn cho bệnh nhân tim mạch đang trong tình trạng hấp hối.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3416,12 +3578,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bệnh nhân có biểu hiện khó thở cấp tính đột ngột và co thắt ngực cần được cung cấp oxy ngay lập tức.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3437,12 +3600,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Co thắt phế quản do hen suyễn có thể kích hoạt một cơn ho kịch phát gây ngạt thở đột ngột.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3458,12 +3622,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các kỹ thuật viên lấy máu tĩnh mạch lành nghề giúp giảm thiểu sự khó chịu cho bệnh nhân trong các xét nghiệm máu định kỳ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3479,12 +3644,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Siêu âm ổ bụng xác nhận chứng lách to rõ rệt thứ phát sau bệnh tăng bạch cầu đơn nhân mãn tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3500,12 +3666,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Máy theo dõi từ xa đã báo động khi bệnh nhân trải qua một đợt nhịp tim nhanh thất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3521,12 +3688,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cấy máy tạo nhịp tim giúp khắc phục chứng nhịp tim chậm có triệu chứng nguy hiểm ở bệnh nhân cao tuổi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3542,12 +3710,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nong mạch bằng bóng ngay lập tức giúp khôi phục lưu lượng máu mạch vành trong cơn nhồi máu cơ tim cấp tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3563,12 +3732,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đeo tất áp lực trong các chuyến bay đường dài giúp ngăn ngừa huyết khối tĩnh mạch sâu ở chân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3584,12 +3754,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đứng lâu trong môi trường nóng bức có thể gây ra một cơn ngất do phế vị lành tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3605,12 +3776,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự xuất hiện của các đốm xuất huyết dưới da đã cảnh báo bác sĩ về khả năng giảm tiểu cầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3626,12 +3798,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tiêm bắp epinephrine ngay lập tức là phương pháp điều trị đầu tay cho sốc phản vệ cấp tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3647,12 +3820,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kháng sinh phổ rộng tiêm tĩnh mạch liều cao đã được bắt đầu để điều trị chứng nhiễm trùng huyết nặng do vi khuẩn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3668,12 +3842,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thiếu máu não cục bộ xảy ra khi sự tắc nghẽn động mạch làm mô não thiếu máu giàu oxy.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3689,12 +3864,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phục hồi chức năng thể chất nhằm giảm thiểu các di chứng vận động mãn tính sau đột quỵ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3710,12 +3886,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hệ thống cảnh giác dược theo dõi các tương tác thuốc để xóa bỏ hiện tượng bệnh do sai sót y khoa có thể phòng ngừa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3731,12 +3908,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cơn đau thể xác suy nhược mãn tính gây ra những tác động thể tâm sâu sắc lên tâm trạng và chứng trầm cảm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3752,12 +3930,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hiểu biết về dược lực học thụ thể cho phép các nhà hóa học thiết kế thuốc với ít tác dụng phụ không mong muốn hơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3773,12 +3952,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xét nghiệm độ thanh thải qua thận là điều thiết yếu để thiết lập dược động học nhi khoa an toàn cho các loại thuốc mới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3794,12 +3974,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhịn ăn gián đoạn đã được chứng minh trong các thử nghiệm lâm sàng là kích thích cơ chế tự thực bào và sửa chữa tế bào.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3815,12 +3996,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Điều chỉnh chế độ ăn kết hợp với liệu pháp statin giúp quản lý thành công chứng tăng mỡ máu có tính gia đình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3836,12 +4018,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các bác sĩ phẫu thuật mạch máu đã thực hiện thủ thuật nạo mảng xơ vữa nội mạch để khôi phục sự thông thoáng của lòng động mạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3857,12 +4040,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giảm đau ngoài màng cứng tạm thời ngăn chặn cảm thụ đau ở tủy sống trong các ca phẫu thuật ổ bụng lớn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3878,12 +4062,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thói lo lắng bệnh tật thái quá nếu không được kiểm soát có thể làm suy giảm nghiêm trọng chất lượng cuộc sống tâm lý của một người.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3899,12 +4084,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Y tá phân loại cấp cứu đã ưu tiên những bệnh nhân bị đau ngực cấp tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3920,12 +4106,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tiêm chủng định kỳ cho trẻ em bảo vệ người dân khỏi các dịch bệnh có thể phòng ngừa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3941,12 +4128,13 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Máy theo dõi Holter ghi lại hoạt động điện tim liên tục để phát hiện chứng rối loạn nhịp tim ngắt quãng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   }
 ];

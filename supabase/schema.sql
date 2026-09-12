@@ -37,21 +37,35 @@ CREATE TABLE IF NOT EXISTS public.user_mock_test_results (
 );
 
 -- 4. Table: user_flashcard_reviews
--- Tracks per-user spaced repetition metadata for each vocabulary card
+-- Tracks per-user spaced repetition metadata for each vocabulary card (FSRS v6)
 CREATE TABLE IF NOT EXISTS public.user_flashcard_reviews (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     card_id TEXT NOT NULL,
-    repetition_count INTEGER NOT NULL DEFAULT 0,
-    interval_days INTEGER NOT NULL DEFAULT 0,
-    ease_factor NUMERIC(4, 2) NOT NULL DEFAULT 2.50,
+    stability DOUBLE PRECISION NOT NULL DEFAULT 0,
+    difficulty DOUBLE PRECISION NOT NULL DEFAULT 0,
+    reps INTEGER NOT NULL DEFAULT 0,
+    lapses INTEGER NOT NULL DEFAULT 0,
+    state SMALLINT NOT NULL DEFAULT 0,
     last_reviewed_at BIGINT,
     next_review_timestamp BIGINT NOT NULL DEFAULT 0,
-    status TEXT NOT NULL DEFAULT 'new' CHECK (status IN ('new', 'learning', 'mastered')),
+    -- Legacy columns kept for backward compatibility:
+    repetition_count INTEGER DEFAULT 0,
+    interval_days INTEGER DEFAULT 0,
+    ease_factor NUMERIC(4, 2) DEFAULT 2.50,
+    status TEXT DEFAULT 'new',
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     CONSTRAINT user_card_unique UNIQUE (user_id, card_id)
 );
+
+-- Ensure FSRS columns exist on existing databases
+ALTER TABLE public.user_flashcard_reviews 
+    ADD COLUMN IF NOT EXISTS stability DOUBLE PRECISION NOT NULL DEFAULT 0,
+    ADD COLUMN IF NOT EXISTS difficulty DOUBLE PRECISION NOT NULL DEFAULT 0,
+    ADD COLUMN IF NOT EXISTS reps INTEGER NOT NULL DEFAULT 0,
+    ADD COLUMN IF NOT EXISTS lapses INTEGER NOT NULL DEFAULT 0,
+    ADD COLUMN IF NOT EXISTS state SMALLINT NOT NULL DEFAULT 0;
 
 -- 5. Table: user_daily_stats
 -- Tracks daily SRS review counts

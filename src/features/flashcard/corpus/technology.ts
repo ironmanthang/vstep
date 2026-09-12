@@ -14,12 +14,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các trường học đã triển khai các buổi hội thảo an toàn kỹ thuật số để bảo vệ học sinh khỏi nạn bắt nạt trên mạng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -35,12 +36,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Năng lực số là một kỹ năng thiết yếu cho tính cạnh tranh của lực lượng lao động hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -56,12 +58,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tự động hóa nhà máy làm tăng tốc độ sản xuất đồng thời giảm chi phí nhân công.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -77,12 +80,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thuật toán của công cụ tìm kiếm xếp hạng các trang web dựa trên mức độ liên quan và uy tín người dùng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -98,12 +102,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trí tuệ nhân tạo tạo sinh hỗ trợ các kỹ sư phần mềm trong việc sửa lỗi và viết mã nguồn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -119,12 +124,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tổ chức tài chính đầu tư mạnh vào an ninh mạng để bảo vệ dữ liệu của khách hàng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -140,12 +146,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đồng hồ thông minh và thiết bị theo dõi thể lực là những món đồ điện tử phổ biến đối với người chạy bộ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -161,12 +168,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hồ sơ thông tin khách hàng được lưu trữ an toàn trong một cơ sở dữ liệu đám mây được mã hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -182,12 +190,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nâng cấp phần cứng máy tính bên trong giúp nâng cao hiệu suất kết xuất video.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -203,12 +212,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phần mềm diệt virus quét hệ điều hành để tìm các chương trình theo dõi độc hại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -224,12 +234,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công ty đã tổ chức một cuộc họp ảo kết nối các kỹ sư làm việc từ xa trên năm quốc gia.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -245,12 +256,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cài đặt các tiện ích mở rộng trình duyệt bảo mật giúp chặn các tập lệnh theo dõi trực tuyến xâm phạm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -266,12 +278,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hãy chắc chắn không tải xuống các tệp đính kèm đáng ngờ từ những người gửi email chưa được xác minh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -287,12 +300,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sinh viên có thể tải các báo cáo dự án đã hoàn thành trực tiếp qua cổng học tập.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -308,12 +322,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sao lưu đám mây tự động hàng ngày đảm bảo rằng các tài liệu tài chính quan trọng không bao giờ bị mất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -329,12 +344,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Văn phòng hiện đại cung cấp kết nối không dây tốc độ cao cho tất cả máy tính xách tay của nhân viên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -350,12 +366,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các ứng dụng nhắn tin mã hóa thông tin liên lạc của người dùng để bảo vệ quyền riêng tư đầu cuối.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -371,12 +388,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cập nhật bảo mật định kỳ giúp vá các lỗ hổng hệ thống bị mã độc nguy hiểm khai thác.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -392,12 +410,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tường lửa mạng doanh nghiệp vững chắc ngăn chặn các hành vi xâm nhập máy chủ trái phép từ bên ngoài.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -413,12 +432,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thiết bị di động thông minh cho phép mọi người quản lý ngân hàng, công việc và giải trí ở mọi nơi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -434,12 +454,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đầu tư liên tục vào nghiên cứu và phát triển thúc đẩy sự đổi mới công nghệ tiên tiến.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -455,12 +476,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công ty khởi nghiệp đã thuê năm lập trình viên phần mềm toàn diện để xây dựng ứng dụng di động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -476,12 +498,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giao diện người dùng trực quan và thích ứng nhanh giúp nâng cao sự hài lòng của khách hàng đối với ứng dụng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -497,12 +520,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các bảo tàng kết hợp màn hình cảm ứng tương tác để thu hút các bạn học sinh trẻ tuổi tham quan.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -518,12 +542,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đèn đường tự động sử dụng cảm biến quang học để tự động bật sáng khi hoàng hôn buông xuống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -539,12 +564,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đăng ký dịch vụ lưu trữ đám mây được mã hóa cho phép truy cập tệp liền mạch trên nhiều thiết bị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -560,12 +586,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mở rộng cơ sở hạ tầng băng thông rộng nông thôn mang lại cơ hội giáo dục bình đẳng cho học sinh vùng sâu vùng xa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -581,12 +608,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cài đặt các bản cập nhật phần mềm ngay lập tức giúp vá các lỗ hổng bảo mật nghiêm trọng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -602,12 +630,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phòng CNTT sẽ nâng cấp các máy chủ cơ sở dữ liệu cốt lõi vào cuối tuần.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -623,12 +652,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phần cứng ngoại vi mới hoàn toàn tương thích với cả hệ điều hành macOS và Windows.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -644,12 +674,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nền tảng thương mại điện tử đã ghi nhận doanh số bán hàng kỷ lục trong ngày Black Friday.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -665,12 +696,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Điện thoại thông minh với màn hình OLED rực rỡ mang lại khả năng đọc văn bản rõ ràng ngoài trời.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -686,12 +718,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhân viên phải được đào tạo để nhận diện các email lừa đảo tìm cách đánh cắp mật khẩu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -707,12 +740,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hàng triệu khán giả xem trực tuyến các sự kiện thể thao với độ nét siêu cao qua kết nối cáp quang.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -728,12 +762,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Triển khai các máy chủ web chuyên dụng dự phòng giúp ngăn ngừa thời gian chết trong các đợt lưu lượng truy cập tăng đột biến.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -749,12 +784,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chuyển đổi số được đẩy nhanh cho phép các doanh nghiệp phục vụ khách hàng toàn cầu một cách hiệu quả.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -770,12 +806,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ổ cứng ngoài di động mỏng nhẹ giúp việc chuyển tệp ngoại tuyến an toàn trở nên thuận tiện.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -791,12 +828,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ứng dụng web cấp tiến hoạt động ngoại tuyến và mang lại trải nghiệm ứng dụng gốc mượt mà.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -812,12 +850,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người dùng có thể cài đặt PWA trực tiếp vào màn hình chính điện thoại thông minh chỉ với một chạm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -833,12 +872,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thiết bị nhà thông minh kết nối liền mạch với trung tâm điều khiển thông qua mạng lưới Bluetooth.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -854,12 +894,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dành thời gian ngắt kết nối mạng xã hội giúp cải thiện sự tập trung tinh thần và thư giãn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -875,12 +916,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xác thực đa yếu tố ngăn chặn việc truy cập trái phép vào các máy chủ nhạy cảm của công ty.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -896,12 +938,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chức năng ngoại tuyến cho phép người dùng học flashcard ngay cả khi không có mạng internet.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -917,12 +960,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bộ vi xử lý đa nhân hiện đại xử lý hàng triệu giao dịch tài chính phức tạp mỗi giây.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -938,12 +982,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cha mẹ được khuyên nên thiết lập giới hạn thời gian xem màn hình hàng ngày lành mạnh cho trẻ nhỏ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -959,12 +1004,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sử dụng mật khẩu mạnh, duy nhất kết hợp với trình quản lý mật khẩu giúp giảm thiểu việc tài khoản bị chiếm đoạt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -980,12 +1026,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người học có thể tìm kiếm kho 1.500 từ vựng theo chủ đề, từ loại hoặc trình độ CEFR.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1001,12 +1048,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Không bao giờ nhấp vào các liên kết đáng ngờ bên trong tin nhắn văn bản không mong muốn từ số lạ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1022,12 +1070,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nền tảng học tập trực tuyến tương tác cho phép sinh viên học tập theo nhịp độ riêng của mình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1043,12 +1092,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Service workers lưu trữ nội dung vào bộ nhớ đệm để cung cấp đầy đủ chức năng flashcard ở chế độ ngoại tuyến.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1064,12 +1114,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các sáng kiến thành phố thông minh sử dụng cảm biến IoT để tối ưu hóa chu kỳ đèn giao thông đô thị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1085,12 +1136,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đồng bộ hóa đám mây tự động đảm bảo số liệu thống kê học tập phản ánh ngay lập tức trên cả điện thoại và máy tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1106,12 +1158,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vite và các mạng CDN biên hiện đại đảm bảo tốc độ tải nhanh như chớp cho các ứng dụng web.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1127,12 +1180,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giao diện người dùng rõ ràng, đơn giản giúp giảm bớt tải nhận thức trong các buổi học căng thẳng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1148,12 +1202,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các mô hình học máy xử lý hàng triệu tham số phức tạp để tạo ra ngôn ngữ tự nhiên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1169,12 +1224,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nền tảng tuân thủ các tiêu chuẩn web hiện đại bao gồm PWA và thiết kế đáp ứng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1190,12 +1246,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Flashcard trên điện thoại di động giúp việc ôn từ vựng trong các chuyến đi làm hàng ngày trở nên rất thuận tiện.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1211,12 +1268,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nền tảng cung cấp phiên âm ngữ âm IPA chính xác cho từng mục từ vựng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1232,12 +1290,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Supabase cung cấp xác thực người dùng dựa trên mã thông báo an toàn và lưu trữ dữ liệu được mã hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1253,12 +1312,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự chuyển đổi nhanh chóng sang xe điện làm giảm khói bụi mịn đô thị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1274,12 +1334,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chữ ký điện tử đã hợp lý hóa các thỏa thuận hợp đồng xuyên biên giới quốc gia.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1295,12 +1356,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thư viện nỗ lực số hóa các bản thảo lịch sử cổ xưa để bảo tồn cho công chúng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1316,12 +1378,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các siêu máy tính phân tán tính toán các mô hình khí hậu phức tạp kéo dài nhiều thế kỷ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1337,12 +1400,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cáp quang truyền tải khối lượng dữ liệu kỹ thuật số khổng lồ với tốc độ ánh sáng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1358,12 +1422,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người dùng có thể duyệt tất cả tám danh mục chủ đề VSTEP hoặc lọc theo các cấp độ CEFR cụ thể.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1379,12 +1444,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thanh điều hướng dưới cùng cho phép người học di chuyển giữa Luyện tập, Bài thi và Flashcard.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1400,12 +1466,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ứng dụng đồng bộ hóa hàng đợi lặp lại ngắt quãng của bạn trên cả điện thoại di động và máy tính xách tay.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1421,12 +1488,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thành phần biểu mẫu xác thực dữ liệu đầu vào của người dùng ngay lập tức để ngăn gửi dữ liệu không hợp lệ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1442,12 +1510,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cổng AI cung cấp phản hồi ngữ pháp có cấu trúc dưới dạng đầu ra JSON đã được định dạng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1463,12 +1532,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mỗi thẻ flashcard chứa một liên kết từ điển nhúng để học tập ngữ cảnh mở rộng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1484,12 +1554,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ứng dụng đóng gói các tệp dữ liệu TypeScript tĩnh để đạt hiệu suất nhanh như chớp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1505,12 +1576,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các mô-đun từ vựng được sắp xếp gọn gàng trong một thư mục flashcard chuyên dụng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1526,12 +1598,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sổ cái chuỗi khối phi tập trung xác minh các giao dịch trên các mạng tiền mã hóa quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1547,12 +1620,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công nghệ nano cho phép các hệ thống đưa thuốc đích trực tiếp đến các tế bào khối u vi mô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1568,12 +1642,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các sân bay sử dụng quét nhận diện khuôn mặt sinh trắc học để đẩy nhanh thủ tục xuất nhập cảnh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1589,12 +1664,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các bác sĩ phẫu thuật sử dụng kính thực tế tăng cường để phủ bản quét nội tạng 3D trong các ca phẫu thuật tinh vi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1610,12 +1686,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Điện toán lượng tử tận dụng các qubit để giải quyết các mô phỏng phân tử phức tạp trong vài giây.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1631,12 +1708,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trợ cấp máy tính xách tay và internet cáp quang tại các trường học nông thôn giúp thu hẹp khoảng cách số giữa các vùng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1652,12 +1730,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các mô hình học máy phân tích hình ảnh y tế để phát hiện các dấu hiệu sớm của thoái hóa võng mạc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1673,12 +1752,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tiêu chuẩn API mở đảm bảo khả năng tương tác liên thông mượt mà giữa các nền tảng hồ sơ sức khỏe điện tử khác nhau.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1694,12 +1774,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự thiếu hụt toàn cầu về chip bán dẫn tiên tiến đã làm gián đoạn ngành sản xuất ô tô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1715,12 +1796,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nâng cấp mạng lưới viễn thông vệ tinh đã mang internet tốc độ cao đến các hòn đảo xa xôi ngoài đại dương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1736,12 +1818,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công nghệ chuỗi khối cung cấp một sổ cái minh bạch và không thể sửa đổi cho tài trợ thương mại quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1757,12 +1840,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà phê bình lên án các hành vi chủ đích tạo sự lỗi thời nhằm cố tình giới hạn tuổi thọ của các thiết bị tiêu dùng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1778,12 +1862,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đồng bộ hóa cơ sở dữ liệu thời gian thực đảm bảo số liệu thống kê hàng đợi ôn tập luôn được cập nhật trên mọi phiên làm việc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1799,12 +1884,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà nghiên cứu bảo mật có đạo đức đã báo cáo một lỗ hổng zero-day trong khung máy chủ web.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1820,12 +1906,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cơ sở hạ tầng kỹ thuật số vững chắc là nền tảng cho việc triển khai đám mây không máy chủ hiệu năng cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1841,12 +1928,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các công ty logistics sử dụng công nghệ viễn thông tin học đội xe để giám sát hiệu quả nhiên liệu và an toàn của tài xế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1862,12 +1950,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các khung mã nguồn mở đẩy nhanh sự phổ cập hóa các công cụ học máy cho các doanh nghiệp nhỏ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1883,12 +1972,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trí tuệ nhân tạo tạo sinh đại diện cho sự đột phá công nghệ đáng kể nhất trong nhiều thập kỷ qua.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1904,12 +1994,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cần phải có các cuộc kiểm toán để loại bỏ thiên kiến thuật toán khỏi phần mềm sàng lọc hồ sơ tự động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1925,12 +2016,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hội nghị truyền hình độ nét cao tiêu tốn lượng băng thông mạng đáng kể trong các giờ cao điểm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1946,12 +2038,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mạng 5G độ trễ thấp nâng cao tạo điều kiện cho việc phẫu thuật điều khiển từ xa qua khoảng cách địa lý rộng lớn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1967,12 +2060,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cáp quang tốc độ cao hình thành nên xương sống của mạng lưới liên lạc internet xuyên Đại Tây Dương hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1988,12 +2082,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hộ chiếu sinh trắc học lưu trữ dữ liệu vân tay và mống mắt được mã hóa để chống làm giả hộ chiếu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2009,12 +2104,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các trường y sử dụng hình chiếu không gian 3 chiều holographic để giảng dạy các cấu trúc giải phẫu phức tạp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2030,12 +2126,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mật mã khóa công khai đảm bảo các giao dịch tài chính an toàn và tin nhắn kỹ thuật số được mã hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2051,12 +2148,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các mạng nơ-ron sâu được huấn luyện trên hàng tỷ tham số để nhận diện các giọng điệu lời nói.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2072,12 +2170,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kiến trúc đám mây không máy chủ tự động mở rộng việc thực thi mà không cần phân bổ thủ công.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2093,12 +2192,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những tiến bộ trong kiến trúc bộ vi xử lý silicon đã tăng gấp đôi hiệu suất điện toán di động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2114,12 +2214,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xây dựng các ứng dụng chuẩn đám mây đảm bảo tính sẵn sàng cao, chuyển đổi dự phòng linh hoạt và sự cơ động của kiến trúc vi dịch vụ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2135,12 +2236,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các khóa mã hóa đa bit mạnh khiến cho việc giải mã trái phép hầu như là bất khả thi với các máy tính truyền thống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2156,12 +2258,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cơ sở dữ liệu của bệnh viện đã bị khóa tạm thời sau một cuộc tấn công mạng bằng mã độc tống tiền tinh vi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2177,12 +2280,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Duy trì các bản sao lưu ngoại tuyến độc lập giúp ngăn ngừa sự tê liệt của doanh nghiệp trong các cuộc tấn công bằng mã độc tống tiền.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2198,12 +2302,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hệ thống điện thoại qua giao thức internet cho phép các doanh nghiệp thực hiện các cuộc gọi rõ ràng qua kết nối dữ liệu web.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2219,12 +2324,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Điện toán biên xử lý dữ liệu cục bộ gần các cảm biến để giảm thiểu mạnh độ trễ khứ hồi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2240,12 +2346,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ảo hóa máy chủ cho phép nhiều hệ điều hành chạy độc lập trên một máy chủ vật lý duy nhất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2261,12 +2368,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà khí hậu học đã sử dụng một siêu máy tính quốc gia để mô phỏng quỹ đạo của cơn bão.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2282,12 +2390,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công nghệ thiết bị đeo giám sát sự biến thiên nhịp tim và chu kỳ giấc ngủ theo thời gian thực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2303,12 +2412,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thành viên hội đồng quản trị toàn cầu đã tập hợp qua một cuộc hội nghị truyền hình video quốc tế được mã hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2324,12 +2434,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kỹ thuật y sinh đã tạo ra các bộ phận giả sinh học tiên tiến được điều khiển bằng các xung thần kinh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2345,12 +2456,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự liên kết dày đặc của Internet vạn vật tạo ra sự tiện lợi và phức tạp chưa từng có.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2366,12 +2478,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc số hóa hàng loạt các tài liệu lưu trữ lịch sử đảm bảo sự bảo tồn vĩnh viễn chống lại sự xuống cấp vật lý.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2387,12 +2500,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chuỗi khối sử dụng các hàm băm mật mã để đảm bảo các bản ghi giao dịch không thể bị giả mạo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2408,12 +2522,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các bộ xử lý đồ họa chuyên dụng đẩy nhanh quá trình huấn luyện mạng nơ-ron bằng cách thực hiện các phép tính toán song song.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2429,12 +2544,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà bán lẻ sử dụng phân tích dự đoán để dự đoán nhu cầu của chuỗi cung ứng trước nhiều tuần.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2450,12 +2566,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đạt được ưu thế lượng tử hứa hẹn sẽ cách mạng hóa việc phát hiện thuốc phân tử và mật mã học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2471,12 +2588,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chế tạo chip hiện đại khắc các bóng bán dẫn vi mô có kích thước chỉ vài nanomet.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2492,12 +2610,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhóm kỹ thuật đã xem xét nguyên mẫu tuabin máy bay mới thông qua ảnh ba chiều 3D tương tác.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2513,12 +2632,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ống nano carbon sở hữu độ bền kéo vượt trội và độ dẫn điện cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2534,12 +2654,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Robot hiện diện từ xa cho phép các bác sĩ phẫu thuật từ xa tham gia đi buồng và hội chẩn với các y tá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2555,12 +2676,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nạp bản cập nhật phần sụn mã nguồn mở cho bộ định tuyến đã giải quyết tình trạng rớt mạng ngắt quãng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2576,12 +2698,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thiết kế các API hoàn toàn tương tác được cho phép các nhà phát triển bên ngoài dễ dàng xây dựng các dịch vụ bổ sung.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2597,12 +2720,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phi tập trung hóa mạng đảm bảo rằng sự cố của một nút duy nhất không làm sụp đổ toàn bộ hệ thống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2618,12 +2742,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thuật toán lượng tử đặt ra những mối đe dọa lý thuyết đòi hỏi các biện pháp phòng thủ phá mã thời hậu lượng tử.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2639,12 +2764,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Điện toán sinh học thử nghiệm sử dụng các chuỗi DNA tổng hợp để lưu trữ hàng petabyte dữ liệu trong hàng thiên niên kỷ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2660,12 +2786,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Điện toán hiệu năng siêu cao cấp độ exascale cho phép các nhà nghiên cứu mô phỏng sự cuộn gập của protein với độ chính xác cấp nguyên tử.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2681,12 +2808,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tính kết nối kỹ thuật số đan xen dày đặc của các hệ thống ngân hàng toàn cầu đòi hỏi các biện pháp phòng thủ mạng phối hợp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2702,12 +2830,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công nghệ giao diện não bộ - máy tính cho phép bệnh nhân bị liệt có thể gõ văn bản chỉ bằng suy nghĩ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2723,12 +2852,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà tương lai học suy đoán liệu điểm kỳ dị công nghệ sẽ nâng cao hay thay thế quyền tự quyết của con người.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2744,12 +2874,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "AI tạo sinh mang lại những thách thức nhận thức luận sâu sắc liên quan đến bản chất của quyền tác giả sáng tạo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2765,12 +2896,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà hoạt động tự do dân sự cảnh báo rằng sự giám sát khuôn mặt bằng thuật toán tràn lan tạo ra một nhà tù toàn cảnh kỹ thuật số không thể trốn thoát.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2786,12 +2918,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Norbert Wiener đã tiên phong trong lý thuyết điều khiển học để mô hình hóa các vòng phản hồi giao tiếp ở máy móc và động vật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2807,12 +2940,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chủ nghĩa siêu nhân loại cổ vũ việc sử dụng kỹ thuật di truyền và cấy ghép thần kinh để vượt qua các giới hạn sinh học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2828,12 +2962,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Không giống như các mạng nơ-ron xác suất, các thuật toán sắp xếp cổ điển hoàn toàn mang tính tất định trong quá trình thực thi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2849,12 +2984,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thuật toán định tuyến sử dụng phương pháp phỏng đoán kinh nghiệm điện toán để nhanh chóng tìm ra các đường giao hàng gần như tối ưu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2870,12 +3006,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người dùng thường thể hiện khuynh hướng nhân hình hóa ngây thơ khi trò chuyện với các chatbot ngôn ngữ tự nhiên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2891,12 +3028,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các mô hình học máy dựa vào thuật toán hạ độ dốc ngẫu nhiên để tối ưu hóa các trọng số phức tạp theo vòng lặp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2912,12 +3050,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thuật toán đồ thị phát hiện tính đẳng cấu toán học giữa các biểu diễn phân tử hóa học phức tạp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2933,12 +3072,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các mô hình ngôn ngữ lớn là các cỗ máy xác suất tạo sinh tính toán mã từ tiếp theo có khả năng xuất hiện cao nhất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2954,12 +3094,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các kỹ sư đã phát triển cá robot mô phỏng sinh học có khả năng lướt tự hành qua các rạn san hô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2975,12 +3116,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà phát triển phần mềm sử dụng các kỹ thuật làm rối mã nguồn nghiêm ngặt để bảo vệ các thuật toán độc quyền.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2996,12 +3138,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Máy tính lượng tử điều khiển sự vướng víu bit lượng tử siêu dẫn để thực hiện các phép tính song song theo cấp số nhân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3017,12 +3160,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chip silicon mô phỏng thần kinh bắt chước các khớp thần kinh sinh học để xử lý dữ liệu thị giác với mức tiêu thụ năng lượng tối thiểu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3038,12 +3182,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc ra quyết định tự chủ của các tác nhân nhân tạo đặt ra những câu hỏi bản thể luận phức tạp về trách nhiệm pháp lý.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3059,12 +3204,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thẻ thông minh tích hợp bộ vi xử lý mật mã phần cứng chống giả mạo để bảo vệ các khóa mã hóa riêng tư.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3080,12 +3226,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khoa học robot nano y học mường tượng ra những cỗ máy phân tử vi mô thực hiện phẫu thuật mảng bám động mạch có mục tiêu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3101,12 +3248,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà xã hội học tranh luận liệu việc quản trị bằng thuật toán có nguy cơ thay thế tranh luận dân chủ bằng chế độ kỹ trị không qua bầu cử hay không.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3122,12 +3270,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tìm kiếm nhị phân hoạt động trong thời gian logarit dưới tuyến tính, khiến nó trở nên tối ưu để truy vấn các cơ sở dữ liệu được lập chỉ mục khổng lồ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3143,12 +3292,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các máy quét an ninh mạng phải triển khai phương pháp phỏng đoán hành vi để phát hiện các biến thể mã độc đa hình lẩn tránh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3164,12 +3314,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các mô phỏng thực tế ảo phẫu thuật tiên tiến kết hợp phản hồi xúc giác để bắt chước sức cản xúc giác của mô cơ thể.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3185,12 +3336,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Định luật Moore đã dự đoán sự tăng gấp đôi theo cấp số nhân của các bóng bán dẫn được đóng gói trên một vi mạch dày đặc sau mỗi hai năm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3206,12 +3358,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ quan an ninh đang tiêu chuẩn hóa các hệ thống mật mã bất đối xứng có khả năng chống lại các cuộc tấn công lượng tử trong tương lai.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3227,12 +3380,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lĩnh vực liên ngành điều khiển học khám phá cách các vòng lặp phản hồi điều chỉnh các hệ thống sinh học và cơ học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3248,12 +3402,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cỗ máy chơi cờ vua đánh giá hàng tỷ nước cờ kết hợp theo phương pháp phỏng đoán để cắt tỉa các nhánh tìm kiếm không có lợi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3269,12 +3424,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các học giả đặt câu hỏi liệu nội dung tạo sinh tổng hợp có làm xói mòn uy tín tri thức của các nghiên cứu đã xuất bản hay không.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3290,12 +3446,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bảng tin mạng xã hội được tuyển chọn bằng thuật toán để tối đa hóa sự tương tác thông qua theo dõi hành vi cá nhân hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3311,12 +3468,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ủy ban tiền tệ gồm các chuyên gia kỹ trị dày dạn kinh nghiệm đã triển khai các bộ đệm thanh khoản bằng thuật toán.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3332,12 +3490,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tính ngẫu nhiên vốn có của vật lý khí quyển khiến việc dự báo thời tiết chính xác ngoài mười ngày trở nên hỗn loạn về mặt toán học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3353,12 +3512,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các lưới cơ sở hạ tầng quốc gia trọng yếu phải củng cố các lá chắn phòng thủ trước chiến tranh mạng do các quốc gia bảo trợ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3374,12 +3534,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà vật lý lý thuyết xây dựng các mô hình toán học siêu nghiệm để thăm dò các hình học dây đa chiều bậc cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3395,12 +3556,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trong cuộc khủng hoảng thời chiến, các chuyên gia giải mã quân sự đã giải mã các bức điện mật mã chặn được để thấy trước các cuộc điều động hạm đội của đối phương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3416,12 +3578,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các ứng dụng nhắn tin sử dụng mã hóa đầu cuối để ngăn chặn việc đánh chặn trái phép.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3437,12 +3600,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dữ liệu viễn trắc bay của vệ tinh xác nhận các tấm pin mặt trời đã mở thành công trên quỹ đạo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3458,12 +3622,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phần mềm trung gian doanh nghiệp điều phối các giao dịch cơ sở dữ liệu giữa các hệ thống máy chủ ngân hàng cũ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3479,12 +3644,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà khoa học thần kinh sử dụng quang di truyền học để kiểm soát sự phát xung của các tế bào thần kinh cụ thể bằng các xung ánh sáng hội tụ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3500,12 +3666,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ngôn ngữ học tính toán cho phép các mô hình ngôn ngữ tự nhiên xử lý các thành ngữ tinh tế của con người.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3521,12 +3688,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhấp vào siêu liên kết được nhúng sẽ dẫn người đọc trực tiếp đến báo cáo nghiên cứu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3542,12 +3710,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hệ thống máy chủ phía sau xử lý việc mã hóa token thanh toán và nhật ký thanh toán của khách hàng một cách an toàn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3563,12 +3732,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các khung giao diện tương tác hiện đại cho phép kết xuất phản ứng nhanh và chuyển màn hình động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3584,12 +3754,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đường trục cáp quang mang lại độ trễ mạng cực thấp cho các nguồn cấp dữ liệu video thời gian thực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3605,12 +3776,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tối ưu hóa bộ nhớ đệm đã làm tăng đáng kể thông lượng của máy chủ xử lý.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3626,12 +3798,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các trung tâm dữ liệu quy mô lớn triển khai hệ thống làm mát bằng chất lỏng vòng kín để giảm thiểu mức sử dụng điện năng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3647,12 +3820,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kỹ thuật quang khắc bán dẫn tạo hoa văn hàng tỷ bóng bán dẫn lên một vi mạch silicon.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3668,12 +3842,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kỹ thuật đa luồng hiệu quả cho phép công cụ trò chơi kết xuất vật lý phức tạp một cách liền mạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3689,12 +3864,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Alan Turing đã thiết lập các định lý toán học nền tảng liên quan đến giới hạn khả năng tính toán.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3710,12 +3886,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bộ giám sát máy ảo kim loại trần quản lý việc phân bổ tài nguyên trên mười hai máy chủ ảo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3731,12 +3908,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tái cấu trúc mã nguồn có hệ thống đã cải thiện tính mô-đun của hệ thống và loại bỏ nợ kỹ thuật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3752,12 +3930,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "SQL và React sử dụng cú pháp khai báo để chỉ định rõ ràng các kết quả mong muốn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3773,12 +3952,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "C và Hợp ngữ sử dụng mô hình mệnh lệnh kiểm soát các trạng thái bộ nhớ bộ xử lý rõ ràng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3794,12 +3974,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lập trình hàm thúc đẩy tính bất biến của trạng thái để loại bỏ các lỗi tương tranh điều kiện.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3815,12 +3996,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "JavaScript sử dụng các yêu cầu bất đồng bộ không chặn để lấy các gói dữ liệu API máy chủ từ xa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3836,12 +4018,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các truy vấn cơ sở dữ liệu đồng bộ làm đóng băng luồng giao diện người dùng cho đến khi các phản hồi quay trở lại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3857,12 +4040,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tính đa hình hướng đối tượng cho phép các hình học khác nhau triển khai các phương thức kết xuất giống hệt nhau.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3878,12 +4062,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tính đóng gói che giấu các trường nội bộ của lớp, chỉ để lộ các phương thức công khai sạch sẽ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3899,12 +4084,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các lớp con tái sử dụng logic cơ sở thông qua các phân cấp kế thừa đối tượng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3920,12 +4106,13 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hệ điều hành cung cấp một lớp trừu tượng phần cứng tách biệt các ứng dụng khỏi chip silicon vật lý.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   }
 ];

@@ -14,12 +14,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hướng dẫn viên du lịch đã phát một lịch trình chuyến đi chi tiết năm ngày khắp miền Trung Việt Nam.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -35,12 +36,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Du khách nên đặt chỗ ở khách sạn trước trong các mùa lễ hội cao điểm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -56,12 +58,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mở rộng các tuyến tàu điện ngầm giúp giảm bớt tình trạng ùn tắc giao thông giờ cao điểm mãn tính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -77,12 +80,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hàng ngàn người đi làm từ ngoại ô đi tàu điện vào trung tâm thành phố mỗi sáng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -98,12 +102,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khu phố cổ lịch sử đã được chuyển đổi thành khu phố đi bộ an toàn, không có ô tô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -119,12 +124,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cơ quan giao thông đô thị vận hành các đội xe buýt điện và đường sắt nhẹ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -140,12 +146,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đà Nẵng đã trở thành một điểm đến du lịch ven biển nổi tiếng quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -161,12 +168,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dân làng địa phương đã chào đón những du khách ba lô với lòng hiếu khách nồng hậu và các bữa cơm gia đình truyền thống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -182,12 +190,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khách du lịch thích mua khăn lụa thủ công làm quà lưu niệm văn hóa đích thực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -203,12 +212,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chúng tôi đã đặt một chuyến xe buýt hai tầng mui trần để tham quan ngắm cảnh có hướng dẫn quanh thủ đô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -224,12 +234,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ngôi chùa cổ kính sừng sững như một địa danh kiến trúc mang tính biểu tượng trong khu phố cổ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -245,12 +256,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiều gia đình chuyển đến các vùng ngoại ô rợp bóng cây xanh để thoát khỏi tiếng ồn và ô nhiễm nội đô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -266,12 +278,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đầu tư vào mạng lưới giao thông công cộng tích hợp giúp giảm đáng kể sự phụ thuộc vào ô tô cá nhân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -287,12 +300,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tàu du lịch bao gồm một chuyến du ngoạn trong ngày để khám phá các hang động đá vôi lân cận.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -308,12 +322,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lái xe dọc theo con đèo ven biển mang lại vẻ đẹp cảnh quan ngoạn mục của đại dương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -329,12 +344,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Quy hoạch đô thị hiệu quả kết hợp các công viên rộng rãi và lối đi bộ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -350,12 +366,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các homestay du lịch sinh thái mang lại thu nhập bổ sung cho các cộng đồng nông thôn xa xôi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -371,12 +388,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Quảng trường trung tâm có một tượng đài bằng đồng tưởng niệm các anh hùng dân tộc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -392,12 +410,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiều nhân viên văn phòng thành phố thích đi lại hàng ngày bằng xe đạp dọc theo các tuyến đường chuyên dụng ven sông.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -413,12 +432,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sau khi tốt nghiệp, cô đã dành ba tháng đi du lịch bụi qua các quốc gia Đông Nam Á.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -434,12 +454,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sân bay quốc tế đã mở một nhà ga hành khách mới hiện đại để đáp ứng lưu lượng hành khách tăng vọt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -455,12 +476,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hành khách quốc tế phải khai báo hàng hóa có giá trị khi đi qua cổng hải quan.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -476,12 +498,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hãy đảm bảo hộ chiếu của bạn còn hạn ít nhất sáu tháng trước khi đặt các chuyến bay quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -497,12 +520,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khu nghỉ dưỡng sang trọng bên bờ biển có các biệt thự riêng, hồ bơi vô cực và các dịch vụ spa thư giãn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -518,12 +542,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cuốn sách hướng dẫn du lịch đưa ra những gợi ý thiết thực về các quán ăn đường phố địa phương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -539,12 +564,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khu chợ cổ trở nên vô cùng đông đúc người mua sắm vào các tối thứ Bảy.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -560,12 +586,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thành phố Hồ Chí Minh là một đô thị nhộn nhịp nổi tiếng với các khu chợ đêm sôi động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -581,12 +608,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khu hoàng thành cổ kính là một di tích lịch sử được bảo vệ thu hút hàng triệu du khách văn hóa toàn cầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -602,12 +630,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ngày càng có nhiều chuyên gia trẻ chọn đi du lịch nước ngoài để có được những góc nhìn văn hóa toàn cầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -623,12 +652,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Do dông bão lớn, chuyến bay nối chuyến của chúng tôi đến Tokyo đã bị hoãn hai giờ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -644,12 +674,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hãy đảm bảo bạn gắn thẻ nhận dạng chống nước vào hành lý ký gửi của mình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -665,12 +696,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giảm giá vé tàu điện ngầm công cộng khuyến khích người đi làm để ô tô ở nhà.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -686,12 +718,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tuyến xe buýt kết nối ga tàu hỏa trung tâm với các ký túc xá trong khuôn viên trường đại học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -707,12 +740,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khu phố ấm cúng có những đại lộ rợp bóng cây, các tiệm bánh thủ công và các công viên nhỏ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -728,12 +762,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khám phá các con hẻm nhỏ hẹp hé lộ những quán mì truyền thống ẩn mình và những quán trà cổ kính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -749,12 +784,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nghệ sĩ đường phố biểu diễn các giai điệu violin cổ điển tại quảng trường thị trấn sôi động mỗi tối.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -770,12 +806,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tuyến đường cao tốc mới mở đã cắt giảm một nửa thời gian lái xe giữa hai thành phố ven biển.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -791,12 +828,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chuyển đổi các đội xe đô thị sang phương tiện điện không phát thải giúp cải thiện chất lượng không khí đô thị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -812,12 +850,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đại lộ rộng lớn được bao bọc bởi các cửa hàng thời trang cao cấp quốc tế và các quán cà phê.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -833,12 +872,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tàu chở hàng và tàu du lịch biển sang trọng cập bến tại cảng nước sâu tự nhiên kín gió.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -854,12 +894,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khách du lịch tập trung dọc theo bến phà để lên thuyền gỗ tham quan ngắm hoàng hôn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -875,12 +916,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đi phà chở khách qua dòng sông rộng mang lại tầm nhìn toàn cảnh đường chân trời thành phố.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -896,12 +938,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người đi phượt đường trường đã dừng chân qua đêm tại một nhà nghỉ bình dân sạch sẽ ven đường cao tốc ven biển.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -917,12 +960,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà nghỉ thanh niên cung cấp giường ký túc xá tập thể giá rẻ và cơ sở vật chất bếp chung.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -938,12 +982,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ở tại một nhà nghỉ gia đình truyền thống mang lại sự trải nghiệm đích thực về các phong tục ẩm thực địa phương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -959,12 +1004,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trải nghiệm homestay tại làng cho phép du khách tham gia vào hoạt động trồng lúa hữu cơ truyền thống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -980,12 +1026,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Du khách thích thú thư giãn trong ngôi nhà gỗ bungalow lợp mái tranh nhìn ra những con sóng ven biển màu ngọc lam.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1001,12 +1048,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đoàn thám hiểm leo núi đã lập bản đồ thành công cho một con đường mới lên đỉnh núi hiểm trở.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1022,12 +1070,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chiếc thuyền buồm gỗ cổ điển đã hoàn thành chuyến hải trình xuyên Đại Tây Dương lịch sử mà không gặp sự cố.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1043,12 +1092,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chuyến du thuyền sang trọng qua đêm tại Vịnh Hạ Long mang đến tầm nhìn ngoạn mục ra các hòn đảo đá vôi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1064,12 +1114,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Công ty du lịch đã thuê riêng một chiếc thuyền hai thân để chở những người đam mê lặn biển đến các rạn san hô xa xôi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1085,12 +1136,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khu nhà nghỉ safari chạy bằng năng lượng mặt trời hòa quyện hài hòa vào cảnh quan đồng cỏ xavan xung quanh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1106,12 +1158,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đi chuyến tàu giường nằm qua đêm thoải mái giúp tiết kiệm cả thời gian di chuyển ban ngày và tiền khách sạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1127,12 +1180,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cách tốt nhất để thưởng ngoạn các thành phố thủ đô châu Âu là khám phá các con hẻm lịch sử bằng cách đi bộ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1148,12 +1202,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Luôn đặt vé tàu trước trong các đợt cao điểm du lịch nghỉ lễ quốc gia.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1169,12 +1224,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chúng tôi đã giữ chỗ ở hàng ghế đầu tại nhà hát múa rối nước lịch sử.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1190,12 +1246,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đoàn tàu cao tốc đã đến chính xác theo lịch trình tại nhà ga trung tâm thủ đô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1211,12 +1268,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chuyến phà cao tốc ven biển dự kiến khởi hành vào đúng tám giờ mỗi sáng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1232,12 +1290,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người đi du lịch bụi có kinh nghiệm khuyên du khách nên đóng gói hành lý nhẹ nhàng và mang theo quần áo đa năng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1253,12 +1312,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sau một chuyến bay dài xuyên Đại Tây Dương, thật nhẹ nhõm khi được dỡ hành lý thoải mái tại khách sạn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1274,12 +1334,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cả người dân địa phương và du khách đều thích đi dạo thong thả vào buổi tối quanh con đường đi bộ ven hồ tuyệt đẹp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1295,12 +1356,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chúng tôi đã dành cả buổi chiều lang thang ngắm nhìn qua các khu chợ thủ công rực rỡ sắc màu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1316,12 +1378,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hành khách được mời lên máy bay theo các khu vực ghế ngồi đã được chỉ định.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1337,12 +1400,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Du khách đi du thuyền đã xuống tàu tại bến cảng lịch sử để khám phá các tàn tích cổ xưa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1358,12 +1422,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chính quyền thành phố đã đầu tư hàng tỷ đô la để hiện đại hóa giao thông công cộng và lối đi bộ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1379,12 +1444,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khán giả tụ tập đông đúc tại quảng trường thành phố để xem màn bắn pháo hoa mừng ngày độc lập dân tộc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1400,12 +1466,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các di sản thế giới được UNESCO công nhận thu hút hàng triệu du khách văn hóa quốc tế hàng năm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1421,12 +1488,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một nhà sử học địa phương đã hướng dẫn đoàn tham quan một cách chuyên nghiệp qua các hầm mộ cổ kính dưới lòng đất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1442,12 +1510,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người đi nghỉ có ý thức sinh thái chọn đi du lịch bền vững bằng cách đi tàu cao tốc điện.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1463,12 +1532,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiều nghệ sĩ sáng tạo cư trú tại các căn hộ gác xép công nghiệp được cải tạo dọc theo bờ sông được hồi sinh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1484,12 +1554,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đô thị hóa nhanh chóng gây áp lực to lớn lên hệ thống giao thông công cộng, nhà ở và mạng lưới thoát nước thải.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1505,12 +1576,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc nâng cấp chỉnh trang khu phố đã làm sống lại các mặt tiền cửa hàng lịch sử nhưng lại đẩy giá thuê nhà ở lên cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1526,12 +1598,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "London là một thành phố quốc tế nơi có hơn ba trăm ngôn ngữ được sử dụng trên khắp các quận.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1547,12 +1620,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các con kênh lịch sử ở Venice phải chịu nạn quá tải du lịch trầm trọng, dẫn đến việc phải giới hạn lượng khách vào.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1568,12 +1642,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các khu nghỉ dưỡng trên đảo áp dụng hiến chương du lịch bền vững bằng cách loại bỏ đồ nhựa dùng một lần và thu gom nước mưa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1589,12 +1664,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các luật quy hoạch vành đai xanh đã được ban hành quanh vùng đô thị để kiềm chế sự mở rộng vô trật tự của vùng ngoại ô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1610,12 +1686,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chính quyền đô thị địa phương đã đầu tư vào hệ thống xe điện để giảm lượng khí thải khói bụi ở trung tâm thành phố.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1631,12 +1708,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tuyến đường cao tốc đóng vai trò là tuyến huyết mạch thương mại quan trọng kết nối cảng biển với các khu công nghiệp nội địa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1652,12 +1730,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sống gần các tiện ích công cộng như thư viện và công viên giúp nâng cao chất lượng đáng sống của khu phố.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1673,12 +1752,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc tăng mật độ đô thị gần các nhà ga khuyến khích đi bộ và hỗ trợ các cửa hàng bán lẻ nhỏ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1694,12 +1774,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dự án tái thiết bờ sông đã biến các bến tàu chở hàng bị bỏ hoang thành các công viên công cộng và nhà hàng sôi động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1715,12 +1796,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các trung tâm thành phố châu Âu tự hào có mức độ thuận tiện cho người đi bộ vượt trội với các hành lang và quảng trường đi bộ liên tục.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1736,12 +1818,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bờ biển đã hình thành nên một cụm đại đô thị trải dài liên tục sáp nhập ba thành phố công nghiệp lân cận.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1757,12 +1840,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Siêu đại đô thị phía đông là nơi sinh sống của hơn bốn mươi triệu người dân được kết nối bởi các đoàn tàu cao tốc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1778,12 +1862,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vụ va chạm liên hoàn nhiều xe trên cầu treo đã khiến giao thông buổi tối ở trung tâm thành phố rơi vào tình trạng tê liệt hoàn toàn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1799,12 +1884,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc áp dụng phí chống ùn tắc đã mang lại sự thông suốt giao thông rõ rệt tại trung tâm tài chính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1820,12 +1906,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bảo tồn di sản văn hóa phi vật thể đảm bảo các truyền thống của tổ tiên tồn tại giữa làn sóng toàn cầu hóa hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1841,12 +1928,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người đi xe đạp và người đi bộ cùng chia sẻ con đường dạo bộ ven biển tuyệt đẹp trong những giờ hoàng hôn lộng gió.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1862,12 +1950,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tòa nhà bằng đá lịch sử nằm dọc theo tuyến đường đi bộ chính sầm uất của cố đô hoàng gia.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1883,12 +1972,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhóm bảo tồn đã phản đối kế hoạch phá dỡ tòa nhà bưu điện tân cổ điển trăm năm tuổi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1904,12 +1994,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Quy hoạch tổng thể tái phát triển khu bến cảng kết hợp nhà ở cho nhiều mức thu nhập, bến du thuyền và các trung tâm công nghệ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1925,12 +2016,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà quy hoạch thành phố đã bỏ phiếu biến khu vực lõi lịch sử thành phố đi bộ để giảm khí thải carbon và thu hút các quán cà phê.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1946,12 +2038,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ngôi làng miền núi đẹp như tranh vẽ với những thửa ruộng bậc thang thu hút các nhiếp ảnh gia trên toàn thế giới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1967,12 +2060,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Du khách bị quyến rũ bởi những con hẻm lát đá cuội cổ kính và những giỏ hoa treo của bến cảng xưa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1988,12 +2082,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đài quan sát trên đỉnh tòa nhà chọc trời mang đến tầm nhìn toàn cảnh tuyệt đẹp ra toàn bộ vịnh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2009,12 +2104,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tất cả các ga tàu điện ngầm mới xây dựng đều hoàn toàn có thể tiếp cận cho người đi xe lăn với thang máy tự động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2030,12 +2126,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các dự án phủ xanh đô thị làm cho các khối nhà bê tông mật độ cao trở nên dễ chịu và đáng sống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2051,12 +2148,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự ô nhiễm công nghiệp độc hại đã khiến khu vực kho chứa hóa chất trước đây hoàn toàn không thể sinh sống được.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2072,12 +2170,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Quần thể đền đài cổ kính thể hiện những cổng vòm đá đồ sộ và những cột trụ được chạm khắc tinh xảo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2093,12 +2192,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ga đường sắt trung tâm có chức năng như một trung tâm đa phương thức kết nối xe lửa, tàu điện ngầm và xe đưa đón sân bay.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2114,12 +2214,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đại lộ lịch sử có sự pha trộn đa phong cách giữa các mặt tiền kiến trúc thuộc địa Pháp và các tòa nhà chọc trời bằng thép hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2135,12 +2236,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Du khách rất dễ bị mất phương hướng trong những con hẻm chằng chịt như mê cung của khu chợ thời trung cổ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2156,12 +2258,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hòn đảo biệt lập vẫn giữ được bờ cát trắng chưa bị tàn phá, không có các công trình nghỉ dưỡng thương mại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2177,12 +2280,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người dân ngoại ô ngày càng ủng hộ việc mở rộng các tuyến tàu điện để tránh các trạm thu phí đường cao tốc tắc nghẽn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2198,12 +2302,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các khu phân lô nhà ở mới ở vành đai thành phố có sân chơi theo quy hoạch và đèn đường năng lượng mặt trời.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2219,12 +2324,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Quy hoạch ô cờ giao thông đều đặn của Manhattan giúp việc đánh số đường phố trở nên trực quan đối với du khách quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2240,12 +2346,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mở rộng các trục đường chính giúp phân tán luồng giao thông đi vào khu trung tâm thương mại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2261,12 +2368,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc chuyển đổi khu mua sắm thành phố đi bộ đã làm tăng ba mươi phần trăm lượng khách mua sắm vào cuối tuần.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2282,12 +2390,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các quán cà phê thủ công và phòng trưng bày nghệ thuật sáng tạo đã giúp hồi sinh khu nhà kho từng bị lãng quên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2303,12 +2412,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Làn sóng di cư nhanh chóng từ nông thôn ra thành thị có nguy cơ làm quá tải các dịch vụ công ích của thủ đô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2324,12 +2434,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Singapore đã lấn biển thành công để xây dựng các cơ sở sân bay và bến cảng hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2345,12 +2456,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những tòa tháp kiến trúc mang tính biểu tượng đã biến đổi hoàn toàn đường chân trời của thành phố thời hậu chiến.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2366,12 +2478,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trồng hoa anh đào theo mùa đã làm đẹp các con đường dạo bộ ven sông cho du khách mùa xuân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2387,12 +2500,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mạng lưới tàu điện ngầm khổng lồ dưới lòng đất vận chuyển hàng triệu hành khách mỗi ngày bên dưới đô thị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2408,12 +2522,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Pháo đài lịch sử tọa lạc một cách đẹp như tranh vẽ trên đỉnh một vách đá đại dương hiểm trở.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2429,12 +2544,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tokyo là một siêu đô thị trải rộng mênh mông bao gồm nhiều trung tâm khu phố đa dạng, được kết nối với nhau.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2450,12 +2566,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hồng Kông là một trong những vùng lãnh thổ ven biển có mật độ dân số dày đặc nhất trên Trái Đất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2471,12 +2588,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thung lũng đồng cỏ cao nguyên có dân cư thưa thớt thuộc các cộng đồng chăn thả du mục.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2492,12 +2610,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đứng trên đỉnh núi hé lộ một bức tranh toàn cảnh ngoạn mục đẹp nghẹt thở của mây và đỉnh núi buổi sáng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2513,12 +2632,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những ô cửa kính màu của nhà thờ tạo nên một bối cảnh tuyệt mỹ cho các buổi biểu diễn hợp xướng thiêng liêng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2534,12 +2654,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các khu chợ ẩm thực đường phố và các địa điểm biểu diễn nhạc jazz trực tiếp đóng góp vào cuộc sống về đêm rực rỡ của khu vực bến cảng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2555,12 +2676,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những chuyến đi thuyền vào sáng sớm mang lại một sự thoát ly thanh bình khỏi cuộc sống thành phố bận rộn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2576,12 +2698,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ngôi chùa hẻo lánh trong rừng mang lại chốn tĩnh tâm yên ả cho những du khách mệt mỏi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2597,12 +2720,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tính đa văn hóa mang tầm quốc tế trong lịch sử của bến cảng đã nuôi dưỡng sự khoan dung và đổi mới thương mại liên văn hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2618,12 +2742,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cư dân địa phương hoan nghênh các hành lang đạp xe xanh mới kết nối vùng ngoại ô với trung tâm thành phố.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2639,12 +2764,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiều gia đình trẻ đổi những căn hộ ở trung tâm thành phố lấy những khoảng sân rộng rãi ở vùng ngoại ô yên bình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2660,12 +2786,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xe buýt điện tốc hành đưa đón hành khách vào trung tâm thành phố trong vòng chưa đầy hai mươi phút.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2681,12 +2808,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các bảo tàng văn hóa và các vườn bách thảo dân cư thanh bình tập trung ở phía trên thành phố.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2702,12 +2830,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đường chân trời cảnh quan thành phố mang tính biểu tượng được thắp sáng bằng các màn trình diễn ánh sáng LED đồng bộ mỗi tối.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2723,12 +2852,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đài quan sát mang đến tầm nhìn 360 độ không bị cản trở ra toàn cảnh cảnh quan thành phố rộng lớn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2744,12 +2874,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đại lộ lớn nối liền khải hoàn môn trực tiếp với cung điện nghị viện quốc gia.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2765,12 +2896,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khái niệm người tản bộ thể hiện hình ảnh người quan sát nghệ thuật tách biệt dạo bước trên các đại lộ Paris thế kỷ XIX.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2786,12 +2918,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Rome là một tác phẩm đô thị nhiều tầng lớp kiến trúc nơi các vương cung thánh đường baroque tọa lạc ngay trên nền móng La Mã cổ đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2807,12 +2940,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Làn sóng những người giàu có chuyển đến đã đẩy giá thuê nhà tại địa phương lên cao, làm mất chỗ ở của những cư dân sinh sống qua nhiều thế hệ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2828,12 +2962,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hành lang siêu đại đô thị trải dài dọc bờ biển phía đông đòi hỏi sự quản trị đường sắt cao tốc phối hợp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2849,12 +2984,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà ga khởi hành sân bay quốc tế hoạt động như những không gian chuyển tiếp giữa các nền văn hóa đi và đến.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2870,12 +3006,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Foucault mô tả tàu du lịch như một dị không gian tối hậu, một thế giới nổi tự trị được điều chỉnh bởi các quy luật riêng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2891,12 +3028,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bảo tàng dân gian ngoài trời đã tái hiện cuộc sống làng quê thế kỷ XIX với tính chân thực lịch sử đáng kinh ngạc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2912,12 +3050,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hồi ký du lịch của ông ghi lại những chuyến du hành kéo dài cả thập kỷ qua những vùng cao nguyên hẻo lánh nhất của Trung Á.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2933,12 +3072,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chuyến lưu trú học thuật sáu tháng của cô tại Kyoto đã làm sâu sắc thêm hiểu biết của cô về mỹ học vườn Nhật Bản cổ điển.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2954,12 +3094,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thủ đô thời trang như Paris và Milan thu hút những du khách quốc tế giàu có tìm kiếm các bộ sưu tập thời trang cao cấp độc quyền.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2975,12 +3116,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tòa nhà quốc hội tân cổ điển sừng sững như một công trình kiến trúc bằng đá tráng lệ nhìn ra bờ kè sông trung tâm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2996,12 +3138,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ngôi làng ven biển Địa Trung Hải đã khơi dậy tâm trạng thảnh thơi vô tư lự tuyệt vời trong kỳ nghỉ của du khách.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3017,12 +3160,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trung tâm thành phố tràn ngập sự ồn ào náo động rực rỡ sắc màu của đoàn diễu hành lễ hội hóa trang hàng năm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3038,12 +3182,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khu nghỉ dưỡng đảo tư nhân năm sao được thiết kế như một thiên đường siêu sang trọng dành cho những du khách đam mê cuộc sống xa hoa sành điệu toàn cầu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3059,12 +3204,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khách du lịch ẩm thực tham khảo ý kiến của các chuyên gia sành sỏi để khám phá những quán rượu nhỏ đạt sao Michelin ẩn mình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3080,12 +3226,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vẻ đẹp như tranh vẽ của thung lũng núi cao đã khiến nó trở thành bối cảnh quay phim yêu thích của các đạo diễn điện ảnh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3101,12 +3248,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tuyến đường sắt trên núi cao băng qua những hẻm núi hiểm trở mang lại những khung cảnh toàn cảnh bao quát của các đỉnh núi phủ tuyết.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3122,12 +3270,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những khách quen văn học đã dành cả buổi chiều tranh luận chính trị bên tách cà phê espresso trong quán cà phê phóng khoáng lịch sử.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3143,12 +3292,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người hướng dẫn viên uyên bác của chúng tôi đã giải mã các dòng chữ khắc Etruscan cổ đại và giải thích những kỳ quan kỹ thuật thủy lực La Mã.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3164,12 +3314,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chương trình trao đổi văn hóa quốc tế nuôi dưỡng lòng yêu chuộng văn hóa ngoại quốc và dỡ bỏ những định kiến hạn hẹp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3185,12 +3336,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Là một người sành điệu biết tận hưởng cuộc sống, ông dành mỗi mùa thu để tham quan các điền trang trồng nho và dùng bữa tại các quán trọ thôn quê.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3206,12 +3358,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chuyên gia sành rượu đánh giá cao cách đất đai giàu khoáng chất và vi khí hậu thể hiện hương vị thổ nhưỡng đặc trưng độc đáo của vùng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3227,12 +3380,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người đi dạo buổi tối lấp đầy con đường đi bộ ven sông rộng lớn khi những ngọn đèn đường thắp sáng bến cảng yên bình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3248,12 +3402,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chàng trai lịch lãm hay lui tới các quán rượu thời thượng và các phòng trà văn học trên khắp thủ đô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3269,12 +3424,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khu đất ven biển rợp bóng cọ cung cấp một không gian tụ họp tuyệt đẹp cho các lễ hội nghệ thuật công cộng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3290,12 +3446,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lái xe dọc theo con đường đèo uốn lượn ven vách đá mang lại tầm nhìn chóng mặt ra những con sóng vỗ cách hàng trăm feet bên dưới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3311,12 +3468,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hội chứng lệch múi giờ nghiêm trọng đã khiến du khách quốc tế mệt mỏi phải di chuyển qua các nhà ga sân bay trong trạng thái như mộng du.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3332,12 +3490,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người sống xa xứ lâu năm trải qua quá trình tiếp biến văn hóa lẫn nhau, hòa trộn truyền thống nước sở tại với di sản quê hương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3353,12 +3512,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Du lịch quốc tế sâu rộng là liều thuốc giải độc mạnh mẽ nhất chống lại tính thiển cận hạn hẹp về mặt văn hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3374,12 +3534,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tính đa dạng không đồng nhất về mặt kiến trúc của khu phố kết hợp các dãy nhà phố bằng gỗ lịch sử với các gian nhà bằng thép siêu hiện đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3395,12 +3556,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự am hiểu sành sỏi tinh tế của cô về các loại trà khu vực đã làm các bậc thầy trà đạo khắp Kyoto phải ấn tượng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3416,12 +3578,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ngắm bình minh trên các đỉnh núi Himalaya đã khơi dậy một khoảnh khắc thăng hoa tâm linh sâu sắc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3437,12 +3600,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trong thời gian bốn giờ chờ chuyển chuyến bay tại sân bay, chúng tôi đã dạo các cửa hàng miễn thuế và đọc sách.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3458,12 +3622,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vé máy bay xuyên Thái Bình Dương cho phép dừng chân miễn phí hai ngày tại Tokyo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3479,12 +3644,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà khảo cổ học đã khai quật các hiện vật định cư của con người liên tục có niên đại năm thiên niên kỷ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3500,12 +3666,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà trú ẩn trên núi cung cấp củi khô và chăn ấm cho những người bộ hành bị mắc kẹt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3521,12 +3688,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Là một người thích phiêu lưu du lịch khắp thế giới, cô đã lấp đầy ba cuốn hộ chiếu bằng những con dấu thị thực quốc tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3542,12 +3710,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tuyến đường sắt liên tỉnh điện khí hóa mang lại sự thay thế nhanh chóng và ít phát thải carbon cho các chuyến bay nội địa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3563,12 +3732,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nông dân trồng cây ăn quả đã mở cửa trang trại đón khách du lịch nông nghiệp bền vững và thưởng thức rượu táo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3584,12 +3754,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Quản lý rác thải và nguồn cung cấp nước sạch trong một đại siêu đô thị trải rộng đòi hỏi quy hoạch to lớn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3605,12 +3776,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà văn ở Paris thế kỷ XIX đã biến nghệ thuật tản bộ ngắm nhìn phố phường nhàn nhã thành nền văn học đỉnh cao.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3626,12 +3798,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đặt vé máy bay khứ hồi trước nhiều tháng đảm bảo giá vé máy bay ưu đãi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3647,12 +3820,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người đi du lịch bụi một mình thường mua vé một chiều để duy trì tính linh hoạt trong lịch trình du lịch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3668,12 +3842,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các hãng hàng không bồi thường hậu hĩnh cho hành khách nếu bị từ chối lên máy bay do chuyến bay bán vé quá số ghế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3689,12 +3864,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hành khách xuất trình thẻ lên máy bay kỹ thuật số trên điện thoại thông minh tại cửa khởi hành.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3710,12 +3886,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhân viên hỗ trợ khách sạn đã đặt vé xem kịch cao cấp và giữ chỗ cho chuyến du thuyền ngắm bến cảng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3731,12 +3908,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khu bảo tồn safari cung cấp các lều cắm trại sang trọng được trang bị máy điều hòa và giường đôi lớn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3752,12 +3930,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đám đông du khách ngắm cảnh hào hứng đã tập trung dọc theo bờ sông để xem cuộc diễu hành thuyền.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3773,12 +3952,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiều thế hệ thủy thủ can trường đã chèo lái những chiếc thuyền buôn bằng gỗ vượt qua quần đảo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3794,12 +3974,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trạm dừng chân lữ quán Con đường Tơ lụa được phục dựng từng mang lại nơi trú ẩn an toàn cho các thương nhân và lạc đà.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3815,12 +3996,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tinh thần thích ngao du đã thôi thúc ông ghi lại các truyền thống truyền miệng ở các khu định cư núi cao xa xôi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3836,12 +4018,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người ngắm cảnh hào hứng lên thuyền du ngoạn trên kênh ngoài trời để chiêm ngưỡng những cây cầu thời trung cổ được thắp sáng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3857,12 +4040,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các công ty du lịch thiết kế các lịch trình tùy chỉnh phù hợp với sở thích gia đình và khả năng vận động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3878,12 +4062,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những du khách ba lô trên đảo chọn phòng nghỉ nhà trọ bằng tre thân thiện với môi trường gần điểm lướt sóng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3899,12 +4084,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tàu du lịch cung cấp các chuyến du ngoạn có hướng dẫn viên đến các miệng núi lửa và khu bảo tồn thực vật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3920,12 +4106,13 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đông Nam Á vẫn là một trong những điểm đến du lịch văn hóa được săn đón nhất trên thế giới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   }
 ];

@@ -14,12 +14,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tình nguyện viên đã tổ chức một đợt quyên góp từ thiện để hỗ trợ các gia đình có hoàn cảnh khó khăn trong cộng đồng địa phương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -35,12 +36,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Gói bánh chưng trong dịp Tết Nguyên Đán là một truyền thống văn hóa đáng trân trọng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -56,12 +58,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhiều sinh viên đại học đăng ký tham gia công tác tình nguyện mùa hè tại các bản làng vùng cao xa xôi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -77,12 +80,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Toàn bộ số tiền thu được từ buổi đấu giá nghệ thuật sẽ được quyên góp cho một quỹ từ thiện y tế nhi khoa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -98,12 +102,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trường đại học đã tổ chức lễ tốt nghiệp trang trọng để vinh danh những sinh viên nhận bằng xuất sắc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -119,12 +124,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tết Trung thu có các đoàn rước đèn lồng rực rỡ sắc màu và các màn biểu diễn múa lân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -140,12 +146,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Du khách nên tôn trọng các phong tục địa phương liên quan đến việc ăn mặc kín đáo khi vào đền chùa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -161,12 +168,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những công dân có trách nhiệm tích cực tham gia vào các dự án dọn dẹp vệ sinh khu phố cộng đồng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -182,12 +190,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đối thoại cởi mở trong gia đình giúp thu hẹp sự cách biệt về quan điểm do khoảng cách thế hệ gây ra.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -203,12 +212,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đạt được bình đẳng giới thực sự đòi hỏi thù lao ngang nhau cho công việc chuyên môn tương đương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -224,12 +234,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các khoản vay tài chính vi mô cho phép các nữ doanh nhân nông thôn đưa gia đình thoát khỏi cảnh nghèo đói.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -245,12 +256,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hệ thống phúc lợi xã hội quốc gia cung cấp dịch vụ y tế và lương hưu được trợ cấp cho người cao tuổi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -266,12 +278,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bảo tồn tiếng mẹ đẻ của người bản địa là điều thiết yếu để bảo vệ bản sắc văn hóa dân tộc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -287,12 +300,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các lễ hội đa văn hóa quốc tế tôn vinh sự đa dạng sắc tộc phong phú của các thành phố hiện đại chúng ta.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -308,12 +322,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đất nước là nơi sinh sống của năm mươi tư dân tộc anh em riêng biệt với âm nhạc và trang phục dân gian độc đáo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -329,12 +344,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trường học dạy trẻ em hành vi ứng xử xã hội lịch sự căn bản và sự tôn trọng lẫn nhau đối với bạn bè.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -350,12 +366,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Quyền tự do tín ngưỡng tôn giáo được pháp luật hiến pháp bảo đảm trên khắp tất cả các tỉnh thành.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -371,12 +388,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các dịch vụ hòa giải hỗ trợ những người hàng xóm có tranh chấp giải quyết các mâu thuẫn ranh giới một cách êm thấm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -392,12 +410,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thúc đẩy đối thoại giữa các tôn giáo nuôi dưỡng sự hòa hợp xã hội hòa bình tại các trung tâm đô thị đa văn hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -413,12 +432,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các trung tâm trợ giúp pháp lý đảm bảo rằng công dân có thu nhập thấp được tiếp cận công lý tư pháp một cách công bằng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -434,12 +454,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dân số già hóa làm tăng nhu cầu của xã hội đối với các nhân viên y tế chuyên khoa lão khoa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -455,12 +476,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các công ước quốc tế bảo vệ các quyền con người phổ quát bất kể chủng tộc, giới tính hay tôn giáo.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -476,12 +498,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lương hưu an sinh xã hội bảo vệ người về hưu khỏi rơi vào cảnh nghèo đói nghiêm trọng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -497,12 +520,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hiện đại hóa kinh tế đã nâng cao dần mức sống trung bình trên toàn quốc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -518,12 +542,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo dục theo truyền thống luôn là phương tiện đáng tin cậy nhất để nâng cao địa vị xã hội của một người.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -539,12 +564,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các khoản quyên góp từ thiện ẩn danh đã tài trợ cho việc xây dựng ba trường tiểu học nông thôn mới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -560,12 +586,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chỉ tiêu giáo dục đặc biệt hỗ trợ học sinh từ các cộng đồng dân tộc thiểu số vùng sâu vùng xa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -581,12 +608,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đại đa số công dân đã bỏ phiếu ủng hộ cuộc trưng cầu dân ý về bảo vệ môi trường mới.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -602,12 +630,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tổ chức nhân đạo phi lợi nhuận cung cấp nước uống sạch cho các vùng bị ảnh hưởng bởi thiên tai.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -623,12 +652,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Có những người hàng xóm tốt bụng và thân thiện nuôi dưỡng cảm giác thuộc về cộng đồng ấm áp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -644,12 +674,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Xu hướng ẩm thực phương Tây đã gây ra ảnh hưởng văn hóa rõ rệt đến thói quen ăn uống ở đô thị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -665,12 +696,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Lễ pha trà trang trọng là một nghi lễ thiêng liêng được thực hành với sự chánh niệm và điềm tĩnh.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -686,12 +718,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hoa sen được đông đảo mọi người trân trọng như một biểu tượng văn hóa dân tộc trường tồn của sự thuần khiết.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -707,12 +740,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người dân đã sát cánh trong tinh thần đoàn kết sâu sắc để gây quỹ cứu trợ cho các làng ven biển bị bão tàn phá.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -728,12 +762,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thể hiện sự tôn kính hiếu thảo với cha mẹ và người lớn tuổi là một trụ cột đạo đức cốt lõi của xã hội truyền thống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -749,12 +784,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ông bà truyền lại những bài học thông thái cổ xưa thông qua việc kể lại những câu chuyện dân gian kinh điển trước giờ đi ngủ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -770,12 +806,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phụ nữ mặc trang phục truyền thống bằng lụa thướt tha trong buổi lễ diễu hành văn hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -791,12 +828,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo dục đạo đức trong nhà trường nhấn mạnh tính trung thực, lòng trắc ẩn và ý thức trách nhiệm công dân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -812,12 +850,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các gia đình quây quần bên bàn thờ gia tiên để tưởng nhớ tổ tiên trong nghi lễ ngày giỗ hàng năm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -833,12 +872,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tình nguyện viên ứng phó với thảm họa động đất đã khôi phục niềm tin chung của chúng ta vào lòng nhân ái.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -854,12 +894,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chương trình trao đổi sinh viên quốc tế thúc đẩy sự hội nhập văn hóa và sự thấu cảm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -875,12 +916,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà khảo cổ học đã phát hiện các đồ gốm thủ công bắt nguồn từ một nền văn minh ven sông cổ đại.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -896,12 +938,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trung tâm cộng đồng được thành lập nhờ sự rộng lượng từ thiện của một cựu sinh viên địa phương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -917,12 +960,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người hàng xóm đã bày tỏ sự cảm thông sâu sắc và mang đồ ăn nóng đến cho gia đình đang có tang.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -938,12 +982,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trường học dạy sự khoan dung văn hóa để giúp trẻ em trân trọng các nền tảng ngôn ngữ đa dạng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -959,12 +1004,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thúc đẩy đối thoại giữa các tôn giáo là điều thiết yếu cho sự cùng chung sống hòa bình của các cộng đồng đa văn hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -980,12 +1026,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các bữa tiệc khu phố và công viên chung giúp thắt chặt sự gắn kết xã hội tại địa phương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1001,12 +1048,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các câu lạc bộ ngoại khóa mang lại không gian quý giá cho thanh thiếu niên tương tác tích cực với bạn bè.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1022,12 +1070,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các gia đình trên khắp cả nước quây quần bên nhau để kỷ niệm lễ hội mừng mùa thu hoạch truyền thống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1043,12 +1092,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những thắng lợi thể thao chung của quốc gia đoàn kết người dân vượt qua ranh giới khu vực và chính kiến.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1064,12 +1114,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đại gia đình tụ họp tại nhà thờ tổ để chào đón các truyền thống Tết Nguyên Đán.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1085,12 +1136,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tuổi trẻ thừa hưởng một di sản phong phú về văn học dân gian và triết lý đạo đức bản địa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1106,12 +1158,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đi du lịch nước ngoài cho phép người học trân trọng các biểu hiện văn hóa và quan điểm đa dạng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1127,12 +1180,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhân viên công tác xã hội giúp đỡ người cao tuổi đi mua sắm hàng tạp hóa hàng ngày và quản lý thuốc men.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1148,12 +1202,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Người dân đã xếp hàng nhiều giờ để hiến máu sau lời kêu gọi khẩn cấp của bệnh viện khu vực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1169,12 +1224,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bỏ phiếu trong các cuộc tổng tuyển cử được coi là một nghĩa vụ công dân không thể thiếu trong nền dân chủ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1190,12 +1246,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chương trình trao đổi văn hóa xóa bỏ những định kiến rập khuôn và xây dựng tình bạn quốc tế lâu bền.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1211,12 +1268,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trách nhiệm xã hội của doanh nghiệp khuyến khích các công ty tài trợ cho giáo dục địa phương và năng lượng sạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1232,12 +1290,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nghệ nhân tại các làng nghề gốm sứ bảo tồn các kỹ thuật làm gốm truyền thống được truyền qua nhiều thế kỷ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1253,12 +1312,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dân làng tập hợp tại đình làng để họp công dân và tổ chức các lễ hội văn hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1274,12 +1334,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các trường công lập trong một xã hội thế tục cung cấp nền giáo dục trung lập chào đón học sinh thuộc mọi đức tin.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1295,12 +1356,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cải cách pháp lý hiện đại chủ động xóa bỏ những hạn chế gia trưởng lỗi thời đối với quyền sở hữu đất đai của phụ nữ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1316,12 +1378,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một số cộng đồng bản địa vùng cao bảo tồn truyền thống huyết thống theo dòng mẹ và nếp nhà mẫu hệ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1337,12 +1400,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chính sách nhập cư khuyến khích sự hòa nhập lẫn nhau hơn là sự đồng hóa văn hóa bắt buộc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1358,12 +1422,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chủ nghĩa đa văn hóa làm phong phú đời sống đô thị bằng cách giới thiệu nghệ thuật ẩm thực, ngôn ngữ và lễ hội đa dạng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1379,12 +1444,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Mở rộng cơ hội tiếp cận giáo dục đại học miễn phí giúp làm giảm sự phân tầng kinh tế xã hội cứng nhắc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1400,12 +1466,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà xã hội học nghiên cứu quá trình thế tục hóa dần dần của các bộ luật dân sự trên khắp các quốc gia hậu công nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1421,12 +1488,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chính sách hành động khẳng định nhằm chống lại sự gạt ra ngoài lề lịch sử của các nhóm bản địa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1442,12 +1510,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các mô hình phúc lợi Bắc Âu dựa trên chủ nghĩa bình đẳng xã hội mạnh mẽ và các dịch vụ công ích phổ quát.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1463,12 +1532,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hoạt động từ thiện mang tính chiến lược hướng của cải tư nhân vào nghiên cứu y học dài hạn và các quỹ tài trợ đại học.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1484,12 +1554,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chiến dịch giáo dục công dân nỗ lực xóa bỏ nạn bài ngoại phi lý trong những thời kỳ kinh tế khó khăn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1505,12 +1576,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học văn học nước ngoài giúp sinh viên vượt qua thuyết vị chủng văn hóa ngây thơ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1526,12 +1598,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà ở xã hội được trợ cấp và phiếu thực phẩm bảo vệ các hộ gia đình yếu thế khỏi cảnh thiếu thốn vật chất nghiêm trọng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1547,12 +1620,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các phong trào dân quyền đã huy động hàng triệu công dân dũng cảm để bãi bỏ chế độ phân biệt chủng tộc được thể chế hóa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1568,12 +1642,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thảo luận cởi mở về tài chính cá nhân trong lịch sử từng bị coi là điều cấm kỵ trong xã hội lịch thiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1589,12 +1664,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chương trình cố vấn nghệ thuật và thể thao sau giờ học giúp giảm hiệu quả tỷ lệ tội phạm vị thành niên.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1610,12 +1686,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà quy hoạch đô thị thiết kế các quảng trường công cộng sôi động để chống lại đại dịch cô lập xã hội ngày càng tăng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1631,12 +1708,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phát triển năng lực liên văn hóa cho phép các nhà ngoại giao đàm phán hiệu quả vượt qua những bất đồng về ý thức hệ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1652,12 +1730,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các học giả nữ quyền nghiên cứu cách các cấu trúc mang tính hệ thống của chế độ phụ quyền ảnh hưởng đến sự bất bình đẳng lương trong lãnh đạo doanh nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1673,12 +1752,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Ở một số xã hội bản địa nhất định, quyền thừa kế đất đai được truyền lại độc quyền thông qua chế độ mẫu hệ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1694,12 +1774,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các xã hội phong kiến bị phân tầng sâu sắc, hầu như không mang lại sự dịch chuyển kinh tế xã hội đi lên nào cho nông nô.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1715,12 +1796,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trường đại học đã nhận được một khoản tài trợ từ thiện trị giá hàng triệu đô la để thành lập phòng thí nghiệm năng lượng sạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1736,12 +1818,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chính sách thuế tiến bộ nhằm nuôi dưỡng sự phân phối của cải công bằng và bình đẳng hơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1757,12 +1840,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các phòng tư vấn pháp lý cung cấp dịch vụ đại diện miễn phí cho các nhóm dân cư đô thị yếu thế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1778,12 +1862,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Thương mại toàn cầu và làn sóng di cư hiện đại đã biến các thị trấn cảng đơn văn hóa trong lịch sử thành các trung tâm đa dạng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1799,12 +1884,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự công nhận theo hiến pháp đối với các ngôn ngữ thiểu số là điều tối quan trọng cho sự hòa hợp trong một quốc gia đa dân tộc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1820,12 +1906,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các quốc gia thuần nhất trong lịch sử đang điều chỉnh các chính sách xã hội để thích ứng với làn sóng nhập cư gia tăng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1841,12 +1928,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một xã hội đa dạng không đồng nhất phát triển mạnh mẽ dựa trên sự trao đổi năng động giữa các quan điểm văn hóa trái ngược nhau.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1862,12 +1950,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đầu tư vào các trung tâm cộng đồng và thư viện công cộng giúp xây dựng một xã hội gắn kết và có khả năng phục hồi tốt hơn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1883,12 +1972,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhân viên tiếp cận thanh thiếu niên kết nối với những thanh thiếu niên cảm thấy bị cô lập để cung cấp sự cố vấn sức khỏe tâm thần.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1904,12 +1994,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học bổng mang lại cơ hội tiếp cận đại học thay đổi cuộc đời cho các sinh viên có hoàn cảnh khó khăn về kinh tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1925,12 +2016,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các sáng kiến từ thiện cung cấp quần áo ấm mùa đông và sách giáo khoa cho các trường học nông thôn yếu thế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1946,12 +2038,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà từ thiện lỗi lạc đã tài trợ mười triệu đô la để xây dựng các cơ sở nghiên cứu ung thư nhi khoa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1967,12 +2060,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà nhân khẩu học dự đoán rằng lực lượng lao động của quốc gia sẽ ổn định sau các cải cách hưu trí.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -1988,12 +2082,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà xã hội học điều tra ảnh hưởng của bảng tin mạng xã hội sử dụng thuật toán đối với sự phân cực chính trị của giới trẻ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2009,12 +2104,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà nhân chủng học văn hóa đã sống hai năm cùng các bộ lạc rừng rậm để ghi chép lại các bài xướng thiêng liêng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2030,12 +2126,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người ủng hộ chủ nghĩa thế tục kiên định lập luận rằng ngân sách giáo dục nhà nước không bao giờ được tài trợ cho các chương trình tôn giáo giáo phái.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2051,12 +2148,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Môn giáo dục công dân trung học trang bị cho học sinh hiểu biết thực tế về các thủ tục bỏ phiếu dân chủ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2072,12 +2170,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khoa học luật hiến pháp hiện đại nghiêm cấm phân biệt đối xử dựa trên giới tính trong tuyển dụng lao động.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2093,12 +2192,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hiến tặng nội tạng khẩn cấp được công nhận rộng rãi như một hành động vị tha cao cả của con người.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2114,12 +2214,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Vị tộc trưởng đáng kính của gia đình đã chủ trì bữa tiệc tưởng niệm tổ tiên hàng năm.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2135,12 +2236,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bà mẹ gia đình chín mươi tuổi đáng kính đã chúc phúc cho bốn thế hệ con cháu của mình trong kỳ nghỉ lễ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2156,12 +2258,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cuộc tranh luận tại nghị viện phải duy trì các tiêu chuẩn về sự lịch thiệp công cộng và ngôn từ có lý trí.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2177,12 +2280,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà lãnh đạo xã hội dân sự đã lên án những luận điệu bài ngoại kích động nhằm vào người lao động nhập cư.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2198,12 +2302,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đào tạo nhân chủng học giúp các nhà nghiên cứu thực địa nhận diện và loại bỏ những định kiến vị chủng trong tiềm thức.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2219,12 +2324,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc tiếp cận không bình đẳng vào các học viện tư thục ưu tú có xu hướng phân tầng xã hội thành các tầng lớp kinh tế cứng nhắc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2240,12 +2346,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hiện đại hóa công nghệ nhanh chóng không được gạt ra ngoài lề những công dân cao tuổi thiếu năng lực số.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2261,12 +2368,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Luận điệu phe phái hiếu chiến có nguy cơ làm cho các cử tri ôn hòa xa lánh việc tham gia dân chủ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2282,12 +2390,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Luật pháp quốc tế nghiêm cấm mọi nỗ lực của chính phủ nhằm chia tách học sinh thiểu số một cách trái pháp luật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2303,12 +2412,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chương trình tình nguyện cộng đồng giúp những người mới đến hòa nhập liền mạch vào đời sống khu phố.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2324,12 +2434,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các trường đại học chủ động sửa đổi chính sách tuyển dụng để đa dạng hóa đại diện giảng viên trên khắp các khoa học thuật.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2345,12 +2456,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giao lưu văn hóa xuyên biên giới giúp hài hòa các mối quan hệ giữa các quốc gia từng có xung đột trong lịch sử.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2366,12 +2478,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những nỗ lực ứng phó thiên tai chung của cộng đồng đã củng cố mối liên kết tin cậy lâu bền của khu phố.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2387,12 +2500,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Cơ quan lập pháp đã bỏ phiếu thể chế hóa các cải cách về chế độ nghỉ phép của cha mẹ vào bộ luật lao động theo luật định.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2408,12 +2522,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hiến máu là một hành động hoàn toàn mang tính vị tha cứu sống vô số nạn nhân chấn thương mỗi ngày.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2429,12 +2544,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hội đồng liên tôn giáo thành phố nuôi dưỡng sự hiểu biết lẫn nhau giữa các giáo đoàn tôn giáo đa dạng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2450,12 +2566,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Trong các xã hội theo dòng mẹ, tài sản của tổ tiên và huyết thống gia đình được truyền từ mẹ sang con gái.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2471,12 +2588,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các chế độ quân chủ châu Âu trong lịch sử đã tuân thủ nghiêm ngặt các quy tắc kế vị theo dòng cha.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2492,12 +2610,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ quan cứu trợ đã huy động viện trợ nhân đạo khẩn cấp để cung cấp nước sạch cho các nạn nhân động đất.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2513,12 +2632,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Việc tiếp thu ngôn ngữ không thể tách rời khỏi bối cảnh văn hóa xã hội rộng lớn hơn của nó.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2534,12 +2654,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cải cách giáo dục toàn diện nhằm bình đẳng hóa các cơ hội bất kể hoàn cảnh kinh tế xã hội.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2555,12 +2676,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Triết lý chủ nghĩa cộng đồng nhấn mạnh rằng sự phát triển của cá nhân gắn bó chặt chẽ không thể tách rời với phúc lợi tập thể.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2576,12 +2698,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các xã hội phương Tây có xu hướng mang tính chủ nghĩa cá nhân nhiều hơn, trong khi các nền văn hóa Đông Á thường nhấn mạnh sự gắn kết cộng đồng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2597,12 +2720,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chủ nghĩa cộng đồng làng quê truyền thống nuôi dưỡng việc hợp tác duy trì thủy lợi và cùng chia sẻ mùa màng thu hoạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2618,12 +2742,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nền dân chủ hiến pháp bảo vệ chủ nghĩa cá nhân triết học bên cạnh các nghĩa vụ công dân tập thể.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2639,12 +2764,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Khẩu hiệu sáng lập của nước cộng hòa đã tuyên bố những lý tưởng bất hủ về tự do, bình đẳng và bác ái.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2660,12 +2786,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các hợp tác xã phụ nữ cộng đồng nuôi dưỡng một mối liên kết tình chị em kinh tế tương hỗ mạnh mẽ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2681,12 +2808,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Một xã hội dân sự năng động, độc lập là điều thiết yếu để buộc các cơ quan chính quyền phải chịu trách nhiệm giải trình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2702,12 +2830,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bourdieu định nghĩa tập tính xã hội là những khuynh hướng xã hội được tiếp thu bên trong do nền tảng gia đình và sự nuôi dưỡng định hình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2723,12 +2852,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Phân tích sự bất bình đẳng xã hội qua lăng kính giao thoa hé lộ cách chủng tộc và giới tính cộng dồn những bất lợi kinh tế.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2744,12 +2874,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Gramsci lập luận rằng các giai cấp thống trị duy trì quyền lực bá quyền thông qua các thiết chế văn hóa hơn là sức mạnh thể chất thuần túy.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2765,12 +2896,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Durkheim khẳng định rằng sự xáo trộn kinh tế nhanh chóng tạo ra tình trạng vô chuẩn mực xã hội nơi các chuẩn mực đạo đức truyền thống bị phá vỡ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2786,12 +2918,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự hòa mình vào nhân chủng học buộc các nhà nghiên cứu phải đối mặt và vượt qua tính vị chủng văn hóa của chính mình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2807,12 +2940,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tiểu văn hóa giới trẻ sử dụng sự chắp vá sáng tạo văn hóa để tái sử dụng các phong cách thời trang cổ điển thành những bản sắc hiện đại mang tính phản kháng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2828,12 +2962,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Chủ nghĩa cộng đồng triết học thách thức chủ nghĩa cá nhân tự do triệt để bằng cách nhấn mạnh các mối liên kết xã hội và nghĩa vụ tương hỗ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2849,12 +2984,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tập tục ngoại hôn bộ lạc đã tạo nên các liên minh chính trị chiến lược và sự đa dạng di truyền giữa các thị tộc lân cận.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2870,12 +3006,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tập tục nội hôn đẳng cấp nghiêm ngặt trong lịch sử đã bảo tồn các đặc quyền kinh tế xã hội bên trong các triều đại quý tộc cha truyền con nối.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2891,12 +3028,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các hội đồng bộ lạc truyền thống hoạt động như một chế độ các bô lão cai trị được kính trọng nơi sự thông thái của người già điều chỉnh việc giải quyết các tranh chấp theo tập quán.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2912,12 +3050,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà phân tích chính trị cảnh báo rằng các khoản tài trợ tranh cử không được kiểm soát có thể biến nền dân chủ thành một chế độ tài phiệt đầu sỏ không chịu trách nhiệm giải trình.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2933,12 +3072,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kỳ thi công chức đã thiết lập một con đường mở, trọng dụng nhân tài để bước vào vị trí lãnh đạo hành chính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2954,12 +3094,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà viết kịch hiện đại được ca ngợi như một người bài trừ giáo điều văn hóa dũng cảm, người đã dỡ bỏ những quy ước tư sản đạo đức giả.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2975,12 +3116,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Văn hóa dân gian nông nghiệp cổ xưa tôn vinh các vị thần đất linh thiêng chịu trách nhiệm về độ phì nhiêu của đất đai theo mùa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -2996,12 +3138,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nhà nhân chủng học Victor Turner đã khám phá cách trạng thái ngưỡng chuyển tiếp trong nghi lễ cho phép người thụ lễ trút bỏ bản sắc xã hội trong quá khứ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3017,12 +3160,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những bài hát biểu tình của thập niên 1960 đã nắm bắt được tinh thần thời đại văn hóa đầy trăn trở của một thế hệ đòi quyền dân sự.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3038,12 +3182,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các phân tích xã hội học nghiên cứu cách sự trỗi dậy của giai cấp tư sản thương mại đã làm biến đổi các hệ thống chính trị châu Âu thế kỷ XVIII.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3059,12 +3204,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các công đoàn lao động ban đầu đã huy động giai cấp vô sản công nghiệp đấu tranh cho ngày làm việc tám giờ và tiền lương công bằng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3080,12 +3226,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà lý thuyết chính trị trong lịch sử đã phân biệt công nhân có ý thức giai cấp với tầng lớp lưu manh vô sản vô tổ chức.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3101,12 +3248,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Giáo dục công dân bảo vệ các thể chế dân chủ chống lại những lời kêu gọi lừa dối của thủ đoạn mị dân mang tính dân túy.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3122,12 +3270,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Luật hiến pháp tiến bộ nghiêm cấm rõ ràng mọi biểu hiện mang tính thể chế của chủ nghĩa sô-vanh nam quyền.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3143,12 +3292,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự bài trừ định kiến nghệ thuật trong phong trào tiên phong đã đập tan các quy ước hội họa học thuật truyền thống.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3164,12 +3314,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà lãnh đạo bản địa vận động cho chủ quyền và quyền tự quyết đầy đủ của bộ lạc thay vì chế độ gia trưởng bao bọc quan liêu của nhà nước.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3185,12 +3336,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Là một người đam mê các nền văn hóa ngoại quốc, nhà ngôn ngữ học đã dành bốn mươi năm để làm chủ tám ngôn ngữ của người Mỹ bản địa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3206,12 +3358,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tình nguyện viên đã làm việc một cách vị tha suốt ngày đêm để cung cấp cứu trợ thực phẩm khẩn cấp trong nạn đói.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3227,12 +3380,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nguyên tắc hiến pháp về tính thế tục đảm bảo rằng không một đức tin đơn lẻ nào được chi phối luật pháp dân sự.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3248,12 +3402,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Sự sụp đổ xã hội đột ngột có thể đẩy người dân vào trạng thái mất phương hướng và tuyệt vọng vô chuẩn mực.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3269,12 +3424,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Nghệ sĩ dân gian hoạt động như một người sáng tạo văn hóa chắp vá khéo léo, dung hợp phế liệu đô thị bị vứt bỏ thành những đền thờ tâm linh thiêng liêng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3290,12 +3446,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các tranh chấp chăn thả truyền thống đã được xét xử bởi một hội đồng các bô lão bộ lạc đáng kính.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3311,12 +3468,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các quy định chống độc quyền đã được củng cố để ngăn chặn giới tinh hoa doanh nghiệp đầu sỏ lũng đoạn các thị trường nông nghiệp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3332,12 +3490,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Văn học vĩ đại nắm bắt các luồng tư tưởng thời đại đang tiến hóa của các kỷ nguyên lịch sử liên tiếp với sự cộng hưởng cảm xúc sâu sắc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3353,12 +3512,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các triết gia dân chủ lập luận rằng luật pháp phải thúc đẩy phúc lợi tập thể của toàn bộ khối cộng đồng thịnh vượng chung.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3374,12 +3534,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các làng nông nghiệp truyền thống phát triển mạnh mẽ dựa trên lao động hợp tác và chủ nghĩa tập thể chia sẻ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3395,12 +3556,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà nghiên cứu về lão khoa xã hội điều tra các mô hình sinh hoạt cộng đồng hỗ trợ cho người về hưu.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3416,12 +3578,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Là một người có tấm lòng vị tha tận tâm, cô đã dành những ngày cuối tuần làm tình nguyện viên tại các bếp ăn tình thương trong khu phố.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3437,12 +3600,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bảo tồn các di tích lịch sử và văn hóa dân gian truyền miệng phản ánh lòng yêu nước văn hóa thực sự.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3458,12 +3622,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Học sinh hát những bài quốc ca yêu nước trong lễ kỷ niệm ngày độc lập dân tộc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3479,12 +3644,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Bản sửa đổi hiến pháp mang tính lịch sử đã trao quyền phổ thông đầu phiếu cho tất cả công dân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3500,12 +3666,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người đấu tranh vì quyền bầu cử dũng cảm đã diễu hành tại thủ đô đòi quyền bỏ phiếu dân chủ bình đẳng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3521,12 +3688,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà báo điều tra đã phơi bày các quỹ tín thác tài chính bí mật ở nước ngoài do các tài phiệt chính trị kiểm soát.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3542,12 +3710,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các hội đồng bộ lạc chăn thả cổ xưa hoạt động như những chế độ bô lão cai trị cộng đồng được kính trọng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3563,12 +3732,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Kiến trúc của hòn đảo thể hiện sự pha trộn dung hợp giữa nghề thủ công gỗ bản địa và đá thuộc địa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3584,12 +3754,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà xã hội học nghiên cứu cách các tập thể công dân tự nguyện tổ chức cứu trợ thiên tai khẩn cấp tương hỗ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3605,12 +3776,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ sở giáo dục dân chủ chủ động xóa bỏ những thứ bậc xã hội phong kiến cứng nhắc.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3626,12 +3798,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tìm thấy những điểm tương đồng văn hóa chung sẽ gắn kết các nhóm nhập cư đa dạng trên khắp các khu phố đô thị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3647,12 +3820,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những người theo chủ nghĩa thế tục lên tiếng bảo vệ sự tách biệt hoàn toàn giữa giáo điều tôn giáo giáo phái và luật pháp dân sự.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3668,12 +3842,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các nhà hoạt động nhân đạo tình nguyện đã triển khai các bộ lọc nước đến các ấp ven biển bị ảnh hưởng bởi lũ lụt.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3689,12 +3864,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Hệ thống chăm sóc sức khỏe toàn dân hoạt động trong một khuôn khổ xã hội mang tính đoàn kết rõ ràng.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3710,12 +3886,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các khoản tài trợ giáo dục có mục tiêu nhằm giảm bớt sự bất bình đẳng giàu nghèo trong lịch sử trên khắp các vùng nông thôn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3731,12 +3908,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Dân làng bảo vệ các truyền thống dân gian đáng trân trọng thông qua việc ngâm thơ truyền miệng và các lễ hội ngày lễ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3752,12 +3930,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thành phố đa văn hóa hiện đại tiếp nhận nhiều bản sắc văn hóa chồng chéo một cách liền mạch.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3773,12 +3952,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Đầu tư vào băng thông rộng cộng đồng trao quyền cho các cộng đồng nông thôn xa xôi tiếp cận y tế từ xa.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3794,12 +3974,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các gia đình cử hành các nghi lễ tổ tiên trang trọng để tưởng nhớ tiền nhân đã khuất vào mùa xuân.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3815,12 +3996,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các biện pháp bảo vệ theo hiến pháp bảo vệ các nhóm thiểu số ngôn ngữ bằng cách cung cấp giáo dục song ngữ.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3836,12 +4018,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thanh niên tình nguyện đã trồng năm ngàn cây đước con dọc theo bờ biển đang bị xói lòn.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3857,12 +4040,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Những công dân có hiểu biết tích cực tham gia vào các buổi tham vấn quy hoạch đô thị khu phố địa phương.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3878,12 +4062,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các thể chế công dân vững mạnh bảo vệ các quyền tự do dân sự trong những thời kỳ chuyển tiếp hiến pháp.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3899,12 +4084,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Các cơ quan y tế công cộng theo dõi kết quả dinh dưỡng trong các quần thể dân cư bản địa xa xôi.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   },
   {
@@ -3920,12 +4106,13 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
     example_sentence_vi: "Tỷ lệ hôn nhân dị chủng tộc ngày càng tăng phản ánh sự hòa nhập xã hội ngày càng lớn trên khắp các quận đô thị.",
     audio_url: '',
     srs_metadata: {
-      repetition_count: 0,
-      interval_days: 0,
-      ease_factor: 2.5,
+      stability: 0,
+      difficulty: 0,
+      reps: 0,
+      lapses: 0,
       last_reviewed_at: null,
       next_review_timestamp: 0,
-      status: 'new'
+      state: 0
     }
   }
 ];

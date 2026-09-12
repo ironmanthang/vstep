@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import type { FlashcardItem, SRSRating } from '../../types/schemas';
 import { VolumeIcon } from '../../components/Icons';
+import { getNextIntervalPreview, formatInterval } from './srs';
 import './FlashcardCard.css';
 
 interface FlashcardCardProps {
@@ -39,6 +40,10 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
     e.stopPropagation();
     onReview(card.id, rating);
   };
+
+  // Preview the next interval for the Correct button
+  const nextIntervalDays = getNextIntervalPreview(card);
+  const intervalLabel = formatInterval(nextIntervalDays);
 
   return (
     <div className="flashcard-container">
@@ -112,36 +117,26 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
             <p className="example-vi">{card.example_sentence_vi}</p>
           </div>
 
-          {/* SRS RATING BUTTONS */}
+          {/* BINARY SRS RATING BUTTONS */}
           <div className="srs-action-bar">
             <button
-              className="srs-btn srs-btn-forgot"
-              onClick={(e) => handleRating('forgot', e)}
+              className="srs-btn srs-btn-wrong"
+              onClick={(e) => handleRating('wrong', e)}
               disabled={disabled}
-              title={disabled ? 'Vui lòng kết nối Internet để tiếp tục ôn tập' : 'Cần ôn lại trong ngày mai (1 ngày)'}
+              title={disabled ? 'Vui lòng kết nối Internet để tiếp tục ôn tập' : 'Trả lời sai — Ôn lại ngay trong phiên này'}
             >
-              <span className="srs-btn-label">Quên</span>
-              <span className="srs-btn-interval">1 ngày</span>
+              <span className="srs-btn-label">✗ Sai</span>
+              <span className="srs-btn-interval">Ôn lại ngay</span>
             </button>
 
             <button
-              className="srs-btn srs-btn-remembered"
-              onClick={(e) => handleRating('remembered', e)}
+              className="srs-btn srs-btn-correct"
+              onClick={(e) => handleRating('correct', e)}
               disabled={disabled}
-              title={disabled ? 'Vui lòng kết nối Internet để tiếp tục ôn tập' : 'Nhớ được từ, ôn lại sau vài ngày'}
+              title={disabled ? 'Vui lòng kết nối Internet để tiếp tục ôn tập' : `Trả lời đúng — Ôn lại sau ${intervalLabel}`}
             >
-              <span className="srs-btn-label">Nhớ</span>
-              <span className="srs-btn-interval">3–7 ngày</span>
-            </button>
-
-            <button
-              className="srs-btn srs-btn-easy"
-              onClick={(e) => handleRating('easy', e)}
-              disabled={disabled}
-              title={disabled ? 'Vui lòng kết nối Internet để tiếp tục ôn tập' : 'Từ rất dễ / Đã nắm chắc, giãn lịch ôn dài'}
-            >
-              <span className="srs-btn-label">Rất dễ</span>
-              <span className="srs-btn-interval">14–30 ngày</span>
+              <span className="srs-btn-label">✓ Đúng</span>
+              <span className="srs-btn-interval">{intervalLabel}</span>
             </button>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
-import type { FlashcardItem, SRSRating } from '../../types/schemas';
+import type { FlashcardItem, SRSRating, SRSMetadata } from '../../types/schemas';
 import { VSTEP_CORPUS } from './corpus';
-import { getReviewQueue, reviewCard as applySRS, getSRSDeckStats } from './srs';
+import { getReviewQueue, reviewCard, getSRSDeckStats, NEW_CARDS_PER_DAY } from './srs';
 import { useAuth } from '../../services/supabase/authStore';
 import {
   fetchUserCardReviews,
@@ -12,9 +12,10 @@ import {
 } from '../../services/supabase/srsSync';
 import { recordStudyDateInStorage } from '../../services/user/userStore';
 
-const STORAGE_KEY = 'vstep_flashcard_deck_v2';
-const REVIEW_COUNT_KEY = 'vstep_reviewed_today_count_v2';
-const LAST_REVIEW_DATE_KEY = 'vstep_last_review_date_v2';
+const STORAGE_KEY = 'vstep_flashcard_deck_v3';
+const REVIEW_COUNT_KEY = 'vstep_reviewed_today_count_v3';
+const LAST_REVIEW_DATE_KEY = 'vstep_last_review_date_v3';
+const NEW_CARDS_TODAY_KEY = 'vstep_new_cards_today_v3';
 
 function getTodayString(): string {
   const d = new Date();
@@ -22,6 +23,35 @@ function getTodayString(): string {
   const month = String(d.getMonth() + 1).padStart(2, '0');
   const day = String(d.getDate()).padStart(2, '0');
   return `${year}-${month}-${day}`;
+}
+
+/**
+ * Migrate old v2 SRS metadata (repetition_count/interval_days/ease_factor/status)
+ * to new v3 FSRS format (stability/difficulty/reps/lapses/state).
+ * Returns null if already in v3 format or not a valid v2 record.
+ */
+function migrateV2Metadata(meta: Record<string, unknown>): SRSMetadata | null {
+  if (typeof meta.stability === 'number') return null; // Already v3
+  if (typeof meta.repetition_count !== 'number') return null;
+
+  const status = meta.status as string;
+  const repCount = meta.repetition_count as number;
+
+  // Map old status to FSRS state
+  let state: 0 | 1 | 2 | 3 = 0;
+  if (status === 'new') state = 0;
+  else if (status === 'learning') state = 1;
+  else if (status === 'mastered') state = 2;
+
+  return {
+    stability: 0,
+    difficulty: 0,
+    reps: repCount,
+    lapses: 0,
+    last_reviewed_at: (meta.last_reviewed_at as number | null) ?? null,
+    next_review_timestamp: (meta.next_review_timestamp as number) ?? 0,
+    state,
+  };
 }
 
 export function useFlashcardStore() {
@@ -48,15 +78,20 @@ export function useFlashcardStore() {
   // Initialize cards: canonical VSTEP_CORPUS combined with saved SRS metadata
   const [cards, setCards] = useState<FlashcardItem[]>(() => {
     try {
-      const saved = localStorage.getItem(STORAGE_KEY);
+      // Try v3 first, then fall back to v2 with migration
+      const saved = localStorage.getItem(STORAGE_KEY)
+        || localStorage.getItem('vstep_flashcard_deck_v2');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          const reviewMap = new Map(
-            parsed
-              .filter((c): c is FlashcardItem => Boolean(c && c.id && c.srs_metadata))
-              .map((c: FlashcardItem) => [c.id, c.srs_metadata])
-          );
+          const reviewMap = new Map<string, SRSMetadata>();
+          parsed
+            .filter((c): c is FlashcardItem => Boolean(c && c.id && c.srs_metadata))
+            .forEach((c: FlashcardItem) => {
+              // Attempt migration from v2 format
+              const migrated = migrateV2Metadata(c.srs_metadata as unknown as Record<string, unknown>);
+              reviewMap.set(c.id, migrated ?? c.srs_metadata);
+            });
 
           return VSTEP_CORPUS.map((seedCard) => {
             const savedMeta = reviewMap.get(seedCard.id);
@@ -79,9 +114,29 @@ export function useFlashcardStore() {
   const [reviewedToday, setReviewedToday] = useState<number>(() => {
     try {
       const today = getTodayString();
+      const savedDate = localStorage.getItem(LAST_REVIEW_DATE_KEY)
+        || localStorage.getItem('vstep_last_review_date_v2');
+      if (savedDate === today) {
+        return parseInt(
+          localStorage.getItem(REVIEW_COUNT_KEY)
+          || localStorage.getItem('vstep_reviewed_today_count_v2')
+          || '0',
+          10
+        );
+      }
+    } catch {
+      // fallback
+    }
+    return 0;
+  });
+
+  // Track new cards introduced today
+  const [newCardsToday, setNewCardsToday] = useState<number>(() => {
+    try {
+      const today = getTodayString();
       const savedDate = localStorage.getItem(LAST_REVIEW_DATE_KEY);
       if (savedDate === today) {
-        return parseInt(localStorage.getItem(REVIEW_COUNT_KEY) || '0', 10);
+        return parseInt(localStorage.getItem(NEW_CARDS_TODAY_KEY) || '0', 10);
       }
     } catch {
       // fallback
@@ -126,12 +181,13 @@ export function useFlashcardStore() {
                 return {
                   ...card,
                   srs_metadata: {
-                    repetition_count: cloudRecord.repetition_count,
-                    interval_days: cloudRecord.interval_days,
-                    ease_factor: cloudRecord.ease_factor,
+                    stability: cloudRecord.stability ?? 0,
+                    difficulty: cloudRecord.difficulty ?? 0,
+                    reps: cloudRecord.reps ?? cloudRecord.repetition_count ?? 0,
+                    lapses: cloudRecord.lapses ?? 0,
                     last_reviewed_at: cloudRecord.last_reviewed_at,
                     next_review_timestamp: cloudRecord.next_review_timestamp,
-                    status: cloudRecord.status,
+                    state: cloudRecord.state ?? 0,
                   },
                 };
               }
@@ -185,16 +241,26 @@ export function useFlashcardStore() {
     });
   }, [user]);
 
+  // Track new cards introduced
+  const incrementNewCardCount = useCallback(() => {
+    setNewCardsToday((prev) => {
+      const next = prev + 1;
+      localStorage.setItem(NEW_CARDS_TODAY_KEY, next.toString());
+      return next;
+    });
+  }, []);
+
   // Filtered cards by topic
   const filteredCards = useMemo(() => {
     if (selectedTopic === 'Tất cả') return cards;
     return cards.filter((c) => c.topic === selectedTopic);
   }, [cards, selectedTopic]);
 
-  // Review queue for the filtered topic
+  // Review queue for the filtered topic (with daily new card cap)
+  const newCardsRemaining = Math.max(0, NEW_CARDS_PER_DAY - newCardsToday);
   const reviewQueue = useMemo(() => {
-    return getReviewQueue(filteredCards);
-  }, [filteredCards]);
+    return getReviewQueue(filteredCards, undefined, newCardsRemaining);
+  }, [filteredCards, newCardsRemaining]);
 
   // Deck statistics
   const stats = useMemo(() => {
@@ -207,24 +273,35 @@ export function useFlashcardStore() {
     return ['Tất cả', ...Array.from(topicSet)];
   }, [cards]);
 
-  // Action: Review a card
-  const submitReview = useCallback(async (cardId: string, rating: SRSRating): Promise<{ success: boolean; error?: string }> => {
+  // Action: Review a card with binary rating + same-session re-queue
+  const submitReview = useCallback(async (cardId: string, rating: SRSRating): Promise<{ success: boolean; error?: string; shouldRequeue?: boolean }> => {
     if (typeof navigator !== 'undefined' && !navigator.onLine) {
       return { success: false, error: 'Mất kết nối Internet' };
     }
 
     let updatedCard: FlashcardItem | null = null;
+    let shouldRequeue = false;
+
+    // Check if this is a new card being reviewed for the first time
+    const targetCard = cards.find(c => c.id === cardId);
+    const isNewCard = targetCard?.srs_metadata.state === 0 && targetCard?.srs_metadata.reps === 0;
 
     setCards((prevCards) => {
       return prevCards.map((c) => {
         if (c.id === cardId) {
-          const reviewed = applySRS(c, rating);
-          updatedCard = reviewed;
-          return reviewed;
+          const result = reviewCard(c, rating);
+          updatedCard = result.updatedCard;
+          shouldRequeue = result.shouldRequeue;
+          return result.updatedCard;
         }
         return c;
       });
     });
+
+    // Track new card introduction
+    if (isNewCard) {
+      incrementNewCardCount();
+    }
 
     incrementDailyCount();
 
@@ -235,8 +312,8 @@ export function useFlashcardStore() {
       }
     }
 
-    return { success: true };
-  }, [incrementDailyCount, user]);
+    return { success: true, shouldRequeue };
+  }, [incrementDailyCount, incrementNewCardCount, user, cards]);
 
   // Action: Reset deck for user
   const resetDeck = useCallback(async (): Promise<{ success: boolean; error?: string }> => {
@@ -251,10 +328,16 @@ export function useFlashcardStore() {
 
     setCards(VSTEP_CORPUS);
     setReviewedToday(0);
+    setNewCardsToday(0);
     try {
       localStorage.removeItem(STORAGE_KEY);
       localStorage.removeItem(REVIEW_COUNT_KEY);
       localStorage.removeItem(LAST_REVIEW_DATE_KEY);
+      localStorage.removeItem(NEW_CARDS_TODAY_KEY);
+      // Clean up old v2 keys
+      localStorage.removeItem('vstep_flashcard_deck_v2');
+      localStorage.removeItem('vstep_reviewed_today_count_v2');
+      localStorage.removeItem('vstep_last_review_date_v2');
     } catch {
       // Ignore local storage error
     }
@@ -271,6 +354,7 @@ export function useFlashcardStore() {
     selectedTopic,
     setSelectedTopic,
     reviewedToday,
+    newCardsToday,
     isCloudSyncing,
     isOnline,
     submitReview,
