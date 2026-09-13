@@ -78,4 +78,4 @@ Chất lượng, hiệu năng và kiểm thử không tổ chức thành giai đ
 | **M3: Assisted Reading Studio** | Unified Reading Runner (`practice` \| `exam`), Split-Pane, 1-Tap Dict Tooltip, Highlights | Đã hoàn thành |
 | **M4: Scaffolded Writing & Vietlish AI** | Unified Writing Runner (`practice` \| `exam`), Editor auto-save, Pipeline chấm 3 tầng, Vietlish, AI-Fixed B1 | Đã hoàn thành |
 | **M5: Interactive Speaking Studio** | Unified Speaking Runner (`practice` \| `exam`), Countdown BEEP, IndexedDB buffer, Hybrid Groq Whisper + Gemini Audio, AI-Fixed B1, 7 Authentic ULIS Tests | Đã hoàn thành |
-| **M6: Full Mock Test & Exam Orchestrator** | Mock Orchestrator 180p, Question Palette, Barem 0.5 MOET, Radar Chart | Sắp tới |
+| **M6: Full Mock Test & Exam Orchestrator** | Mock Orchestrator 180p, Question Palette, Barem 0.5 MOET, Radar Chart | Đã hoàn thành |
