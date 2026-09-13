@@ -3,6 +3,7 @@ import {
   WRITING_TASK1_BANK,
   WRITING_TASK2_BANK,
   ALL_WRITING_PRACTICE_PROMPTS,
+  ALL_PRACTICE_WRITING_TESTS,
 } from './writingBank';
 import { ALL_ULIS_WRITING_TESTS, ULIS_WRITING_TESTS_MAP } from './mockTests';
 
@@ -79,4 +80,17 @@ describe('Authentic ULIS Writing Tests 01–07 Integrity', () => {
       expect(['B1', 'B2', 'C1']).toContain(t2.sample_response?.band);
     });
   });
+
+  it('ALL_PRACTICE_WRITING_TESTS should export 3 valid complete tests with Task 1 and Task 2', () => {
+    expect(ALL_PRACTICE_WRITING_TESTS.length).toBe(3);
+    ALL_PRACTICE_WRITING_TESTS.forEach((test, idx) => {
+      expect(test.id).toBe(`vstep_writing_prac_0${idx + 1}`);
+      expect(test.total_duration_minutes).toBe(60);
+      expect(test.task1.task_type).toBe('task1_letter');
+      expect(test.task2.task_type).toBe('task2_essay');
+      expect(test.task1.sample_response).toBeDefined();
+      expect(test.task2.sample_response).toBeDefined();
+    });
+  });
 });
+

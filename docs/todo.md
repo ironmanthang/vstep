@@ -73,7 +73,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Đề 6 (ULIS Test 6): PDF trang 75–82, đáp án trang 154 kèm 100% dẫn chứng verbatim chuẩn xác (`ulisReadingTest06.ts`)
 - [x] Đề 7 (ULIS Test 7): PDF trang 89–95, đáp án trang 159 kèm 100% dẫn chứng verbatim chuẩn xác (`ulisReadingTest07.ts`)
 - [x] 5 Đề Luyện Tập HCMUE (Drills 01–05): Trích xuất từ sách "20 Mock Tests" (NXB ĐH Sư Phạm TP.HCM) đồng bộ với 15 bài Listening Drills
-- [ ] Tích hợp Collection Switcher trên Reading Studio (`src/features/reading/ReadingStudioPage.tsx`): Cho phép chuyển đổi giữa "7 Đề thi chuẩn ULIS" (`ALL_VSTEP_READING_MOCK_TESTS`) và "5 Đề luyện tập HCMUE" (`HCMUE_READING_TESTS`, 200 câu hỏi trắc nghiệm tại `src/features/reading/data/drills/hcmue/`)
+- [x] Tích hợp Collection Switcher trên Reading Studio (`src/features/reading/ReadingStudioPage.tsx`): Cho phép chuyển đổi giữa "7 Đề thi chuẩn ULIS" (`ALL_VSTEP_READING_MOCK_TESTS`) và "5 Đề luyện tập HCMUE" (`HCMUE_READING_TESTS`, 200 câu hỏi trắc nghiệm tại `src/features/reading/data/drills/hcmue/`)
 - [x] Run audit codebase check sau khi hoàn thành kỹ năng Đọc (Reading)
 
 ## SPRINT: LUYỆN VIẾT VỚI GIÀN GIÁO (SCAFFOLDED WRITING & VIETLISH AI)
@@ -84,7 +84,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Trình soạn thảo 2 task (Task 1: Thư 120 từ / Task 2: Luận 250 từ) kèm bộ đếm từ thời gian thực và nút Lưu bài độc lập
 - [x] Cơ chế Auto-save tự động lưu bản nháp mỗi 5 giây vào LocalStorage
 - [x] Ngân hàng đề thi Viết thực chiến (`src/features/writing/data/writingBank.ts`): Trích xuất và cấu trúc hóa đề Task 1 & Task 2 từ 7 đề thi ULIS (Đề 01–07 hoàn thành, 5 đề HCMUE theo kế hoạch phiên sau)
-- [ ] Tích hợp Collection Switcher trên Writing Studio (`src/features/writing/WritingStudioPage.tsx`): Cho phép chuyển đổi giữa "7 Đề thi chuẩn ULIS" (`ALL_ULIS_WRITING_TESTS`) và "Ngân hàng đề luyện tập bổ sung" (`WRITING_TASK1_BANK` 3 bài Thư + `WRITING_TASK2_BANK` 2 bài Luận kèm bài mẫu B2/C1 tại `src/features/writing/data/writingBank.ts`)
+- [x] Tích hợp Collection Switcher trên Writing Studio (`src/features/writing/WritingStudioPage.tsx`): Cho phép chuyển đổi giữa "7 Đề thi chuẩn ULIS" (`ALL_ULIS_WRITING_TESTS`) và "Ngân hàng đề luyện tập bổ sung" (`WRITING_TASK1_BANK` 3 bài Thư + `WRITING_TASK2_BANK` 2 bài Luận kèm bài mẫu B2/C1 tại `src/features/writing/data/writingBank.ts`)
 
 ### Pipeline Chấm Writing 3 Tầng & Vietlish Engine
 - [x] Tầng 1 (Client-side): Local rule-based pre-filter & pre-calculation (<50ms, regex đếm từ, n-gram chống chép đề, lọc lỗi liên từ kép *Although... but...*, *Because... so...*)
@@ -104,7 +104,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Đồng hồ đếm ngược thời gian thực: Chuẩn bị (1p) và Ghi âm (3p) theo từng Part
 - [x] Tích hợp âm hiệu BEEP bắt đầu và kết thúc chuẩn phòng thi tạo bằng Web Audio API `OscillatorNode` độc lập
 - [x] Trích xuất & cấu trúc hóa 7 Đề thi Nói Authentic ULIS (`src/features/speaking/data/mockTests/ulisSpeakingTest01.ts` đến `07.ts`) từ sách "7 Vstep Tests" và tích hợp 1:1 vào `mockTest01.ts` đến `mockTest07.ts`
-- [ ] Tích hợp Collection Switcher trên Speaking Studio (`src/features/speaking/SpeakingStudioPage.tsx`): Cho phép chuyển đổi giữa "7 Đề thi chuẩn ULIS" (`ALL_ULIS_SPEAKING_TESTS`) và "5 Kỳ thi thật tháng 5" (`SPEAKING_EXAM_MAY_05`, `16`, `20`, `22`, `29` gồm đủ 3 Part tại `src/features/speaking/data/speakingBank.ts`)
+- [x] Tích hợp Collection Switcher trên Speaking Studio (`src/features/speaking/SpeakingStudioPage.tsx`): Cho phép chuyển đổi giữa "7 Đề thi chuẩn ULIS" (`ALL_ULIS_SPEAKING_TESTS`) và "5 Kỳ thi thật tháng 5" (`SPEAKING_EXAM_MAY_05`, `16`, `20`, `22`, `29` gồm đủ 3 Part tại `src/features/speaking/data/speakingBank.ts`)
 
 ### Thu âm Trình duyệt, Đàm phán MIME & Bộ đệm IndexedDB
 - [x] Đàm phán định dạng an toàn qua `MediaRecorder.isTypeSupported()` (`audio/webm;codecs=opus` -> `audio/webm` -> `audio/mp4`) tương thích tối đa trên Laptop, Android và Safari

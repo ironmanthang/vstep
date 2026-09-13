@@ -38,4 +38,7 @@ Mô-đun được đóng gói thành một `SpeakingRunner` duy nhất tiếp nh
 
 ## Ngân hàng Đề thi Nói Thực chiến
 - **7 Đề thi Chuẩn ULIS (`src/features/speaking/data/mockTests/`)**: Trích xuất authentic từ sách "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019) gồm 21 phần thi (7 đề $\times$ 3 parts) kèm bài mẫu khảo thí chính thức.
+- **Bộ Đề Thi Thật Tháng 5 (`ALL_MAY_SPEAKING_TESTS`)**: 5 Kỳ thi thật phòng máy từ Trung tâm Khảo thí (`05/05`, `16/05`, `20/05`, `24/05`, `30/05`) với đủ 15 phần thi độc lập, tình huống thực tế và câu hỏi mở rộng bám sát đề thi máy tính (`src/features/speaking/data/speakingBank.ts`).
+- **Bộ Chuyển Đổi Bộ Đề (Collection Switcher)**: `SpeakingStudioPage` tích hợp 2 thẻ chọn bộ đề ("Bộ Đề Thi Thử ULIS" và "Bộ Đề Thi Thật Tháng 5"). Tự động chuyển đổi thanh chọn đề, bảo tồn nút kiểm tra microphone và cô lập dữ liệu âm thanh nhị phân trong IndexedDB theo từng mã đề.
 - **Tích hợp Full Mock Test**: Thay thế các đề thi tạm thời trong `src/data/mock-tests/mockTest01.ts` đến `mockTest07.ts` bằng các bộ đề ULIS Speaking authentic tương ứng 1:1.
+

@@ -43,7 +43,11 @@ Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mo
   - `ULIS_READING_TEST_05` (Đề 5): 4 bài đọc, 40 câu hỏi, khớp 100% đáp án gốc trang 149 và dẫn chứng verbatim (`ulisReadingTest05.ts`).
   - `ULIS_READING_TEST_06` (Đề 6): 4 bài đọc, 40 câu hỏi, khớp 100% đáp án gốc trang 154 và dẫn chứng verbatim (`ulisReadingTest06.ts`).
   - `ULIS_READING_TEST_07` (Đề 7): 4 bài đọc, 40 câu hỏi, khớp 100% đáp án gốc trang 159 và dẫn chứng verbatim (`ulisReadingTest07.ts`).
-  - Bộ chọn đề thi (`reading-edition-selector-bar`) tại `ReadingStudioPage` tự động hiển thị danh sách toàn bộ đề thi trong `ALL_VSTEP_READING_MOCK_TESTS`.
+- **Ngân hàng Đề Luyện Tập HCMUE (HCMUE_READING_TESTS)**:
+  - 5 Đề thi thực hành đọc hiểu trích từ tuyển tập "20 Mock Tests" (NXB ĐH Sư Phạm TP.HCM, 2017) với 20 bài đọc, 200 câu hỏi kèm dẫn chứng verbatim và phân tích đáp án chi tiết (`src/features/reading/data/drills/hcmue/`).
+- **Bộ Chuyển Đổi Bộ Đề (Collection Switcher)**:
+  - `ReadingStudioPage` tích hợp 2 thẻ chọn bộ đề tương tác: "Bộ Đề Thi Thử ULIS (ĐHQGHN)" (7 đề, 280 câu) và "Bộ Đề Luyện Tập HCMUE" (5 đề, 200 câu).
+  - Thanh chọn đề (`reading-edition-selector-bar`) tự động chuyển đổi danh sách nút chọn đề `Đề 1` - `Đề 7` (ULIS) hoặc `Đề 1` - `Đề 5` (HCMUE) và làm mới runner qua `key={`${currentTest.id}_${mode}`}`.
 - **Tích hợp Thi Thử 4 Kỹ Năng (Full Mock Tests)**:
   - `VSTEP_MOCK_TEST_01`: Kết hợp Nghe Đề 1, Đọc Đề 1, Viết Task 1/2, Nói May 30 (`mockTest01.ts`).
   - `VSTEP_MOCK_TEST_02`: Kết hợp Nghe Đề 2, Đọc Đề 2, Viết Task 1/2, Nói May 05 (`mockTest02.ts`).

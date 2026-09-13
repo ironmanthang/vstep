@@ -1,11 +1,24 @@
 import { describe, it, expect } from 'vitest';
-import { ALL_SPEAKING_PRACTICE_TESTS } from './speakingBank';
+import { ALL_SPEAKING_PRACTICE_TESTS, ALL_MAY_SPEAKING_TESTS } from './speakingBank';
 import { ALL_ULIS_SPEAKING_TESTS } from './mockTests';
 
 describe('Speaking Practice Bank Integrity', () => {
-  it('should have 7 authentic ULIS tests and total 12 practice tests', () => {
+  it('should have 7 authentic ULIS tests, 5 May exams, and total 12 practice tests', () => {
     expect(ALL_ULIS_SPEAKING_TESTS.length).toBe(7);
+    expect(ALL_MAY_SPEAKING_TESTS.length).toBe(5);
     expect(ALL_SPEAKING_PRACTICE_TESTS.length).toBe(12);
+  });
+
+  it('each May exam session should have an exam_date, unique id, and 3 complete parts', () => {
+    const dates = ALL_MAY_SPEAKING_TESTS.map((e) => e.exam_date);
+    expect(new Set(dates).size).toBe(5);
+    ALL_MAY_SPEAKING_TESTS.forEach((exam) => {
+      expect(exam.id).toMatch(/^vstep_spk_2026_05_/);
+      expect(exam.exam_date).toBeTruthy();
+      expect(exam.part1.topics.length).toBe(2);
+      expect(exam.part2.options.length).toBe(3);
+      expect(exam.part3.mindmap_ideas.length).toBeGreaterThanOrEqual(3);
+    });
   });
 
   it('each ULIS exam session should have complete 3 parts and authentic sample responses', () => {

@@ -1,14 +1,37 @@
 import React, { useState } from 'react';
-import { ALL_VSTEP_READING_MOCK_TESTS } from './data';
+import { ALL_VSTEP_READING_MOCK_TESTS, HCMUE_READING_TESTS } from './data';
 import { ReadingRunner } from './ReadingRunner';
 import type { ReadingMode } from './types';
 import './ReadingStudioPage.css';
 
 export const ReadingStudioPage: React.FC = () => {
+  const [selectedCollection, setSelectedCollection] = useState<'ulis' | 'hcmue'>('ulis');
   const [testIndex, setTestIndex] = useState<number>(0);
   const [mode, setMode] = useState<ReadingMode>('practice');
 
-  const currentTest = ALL_VSTEP_READING_MOCK_TESTS[testIndex] || ALL_VSTEP_READING_MOCK_TESTS[0];
+  const availableTests = selectedCollection === 'ulis' ? ALL_VSTEP_READING_MOCK_TESTS : HCMUE_READING_TESTS;
+  const currentTest = availableTests[testIndex] || availableTests[0];
+
+  const collectionSummaries = [
+    {
+      id: 'ulis' as const,
+      name: 'Bộ Đề Thi Thử ULIS (ĐHQGHN)',
+      count: '7 Bộ Đề (280 Câu)',
+      time: '~60 phút/đề',
+      difficulty: 'B1–C1',
+      desc: '7 Bộ đề thi thử chuẩn ĐHQGHN với 100% dẫn chứng verbatim, highlight câu chứa đáp án và phân tích paraphrase chuyên sâu.',
+      badgeColor: 'badge-purple',
+    },
+    {
+      id: 'hcmue' as const,
+      name: 'Bộ Đề Luyện Tập HCMUE (ĐH Sư Phạm TP.HCM)',
+      count: '5 Bộ Đề (200 Câu)',
+      time: '~60 phút/đề',
+      difficulty: 'B2–C1',
+      desc: '5 Bộ đề thi chuẩn ĐH Sư Phạm TP.HCM, rèn luyện kỹ năng đọc hiểu chuyên sâu với hệ thống từ vựng phân hóa cao.',
+      badgeColor: 'badge-emerald',
+    },
+  ];
 
   return (
     <div className="reading-studio-page">
@@ -42,11 +65,52 @@ export const ReadingStudioPage: React.FC = () => {
         </div>
       </div>
 
+      {/* Collection Selection Cards */}
+      <div className="studio-parts-grid">
+        {collectionSummaries.map((col) => {
+          const isSelected = selectedCollection === col.id;
+          return (
+            <div
+              key={col.id}
+              className={`studio-part-card ${isSelected ? 'active' : ''}`}
+              onClick={() => {
+                setSelectedCollection(col.id);
+                setTestIndex(0);
+              }}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  setSelectedCollection(col.id);
+                  setTestIndex(0);
+                }
+              }}
+              aria-label={`Chọn ${col.name}`}
+            >
+              <div className="studio-part-card-header">
+                <span className={`badge ${col.badgeColor}`}>Bậc {col.difficulty}</span>
+                <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)', fontWeight: 600 }}>
+                  {col.count} • {col.time}
+                </span>
+              </div>
+              <h3 className="studio-part-title">{col.name}</h3>
+              <p className="studio-part-desc">{col.desc}</p>
+              <div style={{ marginTop: 'auto', paddingTop: 'var(--space-2)', fontSize: 'var(--fs-xs)', fontWeight: 700, color: isSelected ? 'var(--primary)' : 'var(--text-muted)' }}>
+                {isSelected ? '● Đang chọn bộ này' : 'Nhấn để chọn →'}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
       {/* Test Edition Selector Bar */}
-      {ALL_VSTEP_READING_MOCK_TESTS.length > 0 && (
+      {availableTests.length > 0 && (
         <div className="reading-edition-selector-bar">
-          <span className="reading-edition-label">Chọn Bộ Đề:</span>
-          {ALL_VSTEP_READING_MOCK_TESTS.map((t, idx) => {
+          <span className="reading-edition-label">
+            {selectedCollection === 'ulis' ? 'Bộ Đề ULIS:' : 'Bộ Đề HCMUE:'}
+          </span>
+          {availableTests.map((t, idx) => {
             const questionCount = t.passages.reduce((sum, p) => sum + p.questions.length, 0);
             return (
               <button
@@ -86,10 +150,11 @@ export const ReadingStudioPage: React.FC = () => {
             Chưa có bộ đề đọc nào sẵn sàng
           </h3>
           <p style={{ fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)', maxWidth: '460px', margin: '0 auto' }}>
-            Hệ thống đang tải dữ liệu đề thi chuẩn ĐHQGHN. Vui lòng quay lại sau giây lát.
+            Hệ thống đang tải dữ liệu đề thi. Vui lòng quay lại sau giây lát.
           </p>
         </div>
       )}
     </div>
   );
 };
+

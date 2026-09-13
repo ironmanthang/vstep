@@ -1,4 +1,5 @@
 import type { WritingPrompt } from '../../../types/schemas';
+import type { WritingTestInput } from '../WritingRunner';
 
 /**
  * Authentic VSTEP Writing Practice Bank (Task 1 Letters & Task 2 Essays)
@@ -145,3 +146,34 @@ export const ALL_WRITING_PRACTICE_PROMPTS = [
   ...WRITING_TASK1_BANK,
   ...WRITING_TASK2_BANK,
 ];
+
+export const ALL_PRACTICE_WRITING_TESTS: WritingTestInput[] = [
+  {
+    id: 'vstep_writing_prac_01',
+    test_number: 1,
+    title: 'Đề Luyện Viết 1: Đánh Giá Khóa Học & Mạng Xã Hội',
+    institution: 'VSTEP Authentic Practice Bank',
+    total_duration_minutes: 60,
+    task1: WRITING_TASK1_BANK[0],
+    task2: WRITING_TASK2_BANK[0],
+  },
+  {
+    id: 'vstep_writing_prac_02',
+    test_number: 2,
+    title: 'Đề Luyện Viết 2: Đơn Xin Việc & Trò Chơi Giáo Dục',
+    institution: 'VSTEP Authentic Practice Bank',
+    total_duration_minutes: 60,
+    task1: WRITING_TASK1_BANK[1],
+    task2: WRITING_TASK2_BANK[1],
+  },
+  {
+    id: 'vstep_writing_prac_03',
+    test_number: 3,
+    title: 'Đề Luyện Viết 3: Khiếu Nại Đơn Hàng & Mạng Xã Hội',
+    institution: 'VSTEP Authentic Practice Bank',
+    total_duration_minutes: 60,
+    task1: WRITING_TASK1_BANK[2],
+    task2: WRITING_TASK2_BANK[0],
+  },
+];
+

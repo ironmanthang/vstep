@@ -1,14 +1,38 @@
 import React, { useState } from 'react';
 import { ALL_ULIS_WRITING_TESTS } from './data/mockTests';
+import { ALL_PRACTICE_WRITING_TESTS } from './data/writingBank';
 import { WritingRunner } from './WritingRunner';
 import type { WritingMode } from './writingStorage';
 import './WritingStudioPage.css';
 
 export const WritingStudioPage: React.FC = () => {
+  const [selectedCollection, setSelectedCollection] = useState<'ulis' | 'practice_bank'>('ulis');
   const [testIndex, setTestIndex] = useState<number>(0);
   const [mode, setMode] = useState<WritingMode>('practice');
 
-  const currentTest = ALL_ULIS_WRITING_TESTS[testIndex] || ALL_ULIS_WRITING_TESTS[0];
+  const availableTests = selectedCollection === 'ulis' ? ALL_ULIS_WRITING_TESTS : ALL_PRACTICE_WRITING_TESTS;
+  const currentTest = availableTests[testIndex] || availableTests[0];
+
+  const collectionSummaries = [
+    {
+      id: 'ulis' as const,
+      name: 'Bộ Đề Thi Thử ULIS (ĐHQGHN)',
+      count: '7 Bộ Đề (14 Bài)',
+      time: '~60 phút/đề',
+      difficulty: 'B1–C1',
+      desc: '7 Bộ đề thi thử chuẩn ĐHQGHN (Thư & Luận) kèm barem chấm điểm B1 và bài mẫu đối chiếu.',
+      badgeColor: 'badge-purple',
+    },
+    {
+      id: 'practice_bank' as const,
+      name: 'Ngân Hàng Đề Luyện Tập Mở Rộng',
+      count: '3 Bộ Đề (Thư & Luận)',
+      time: '~60 phút/đề',
+      difficulty: 'B2–C1',
+      desc: '3 Bộ đề kết hợp từ ngân hàng 3 Thư (Letter) và 2 Luận (Essay) kèm bài mẫu phân tích chuẩn B2/C1.',
+      badgeColor: 'badge-emerald',
+    },
+  ];
 
   return (
     <div className="writing-studio-page">
@@ -42,18 +66,59 @@ export const WritingStudioPage: React.FC = () => {
         </div>
       </div>
 
+      {/* Collection Selection Cards */}
+      <div className="studio-parts-grid">
+        {collectionSummaries.map((col) => {
+          const isSelected = selectedCollection === col.id;
+          return (
+            <div
+              key={col.id}
+              className={`studio-part-card ${isSelected ? 'active' : ''}`}
+              onClick={() => {
+                setSelectedCollection(col.id);
+                setTestIndex(0);
+              }}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  setSelectedCollection(col.id);
+                  setTestIndex(0);
+                }
+              }}
+              aria-label={`Chọn ${col.name}`}
+            >
+              <div className="studio-part-card-header">
+                <span className={`badge ${col.badgeColor}`}>Bậc {col.difficulty}</span>
+                <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)', fontWeight: 600 }}>
+                  {col.count} • {col.time}
+                </span>
+              </div>
+              <h3 className="studio-part-title">{col.name}</h3>
+              <p className="studio-part-desc">{col.desc}</p>
+              <div style={{ marginTop: 'auto', paddingTop: 'var(--space-2)', fontSize: 'var(--fs-xs)', fontWeight: 700, color: isSelected ? 'var(--primary)' : 'var(--text-muted)' }}>
+                {isSelected ? '● Đang chọn bộ này' : 'Nhấn để chọn →'}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
       {/* Test Edition Selector Bar */}
-      {ALL_ULIS_WRITING_TESTS.length > 0 && (
+      {availableTests.length > 0 && (
         <div className="writing-edition-selector-bar">
-          <span className="writing-edition-label">Bộ Đề ULIS:</span>
-          {ALL_ULIS_WRITING_TESTS.map((t, idx) => (
+          <span className="writing-edition-label">
+            {selectedCollection === 'ulis' ? 'Bộ Đề ULIS:' : 'Bộ Đề Mở Rộng:'}
+          </span>
+          {availableTests.map((t, idx) => (
             <button
               key={t.id || idx}
               type="button"
               onClick={() => setTestIndex(idx)}
               className={`writing-edition-btn ${testIndex === idx ? 'active' : ''}`}
             >
-              ✍️ Đề {idx + 1} (Thư & Luận)
+              ✍️ Đề {idx + 1} ({selectedCollection === 'ulis' ? 'Thư & Luận' : t.task1.title.split(':')[0]})
             </button>
           ))}
         </div>
@@ -70,3 +135,4 @@ export const WritingStudioPage: React.FC = () => {
     </div>
   );
 };
+

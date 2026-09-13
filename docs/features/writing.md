@@ -21,6 +21,8 @@ Mô-đun được đóng gói thành một `WritingRunner` duy nhất tiếp nh�
 
 ## Ngân hàng Đề thi Viết Thực chiến
 - **7 Đề thi Chuẩn ULIS (`src/features/writing/data/mockTests/`)**: Trích xuất authentic từ sách "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019) gồm 14 nhiệm vụ (7 thư Task 1 + 7 bài luận Task 2).
+- **Ngân Hàng Đề Luyện Tập Mở Rộng (`ALL_PRACTICE_WRITING_TESTS`)**: 3 Đề thi thực hành hoàn chỉnh ghép từ 3 bài Thư Task 1 (`WRITING_TASK1_BANK`: Course Evaluation, Job Application, Delivery Complaint) và 2 bài Luận Task 2 (`WRITING_TASK2_BANK`: Social Media, Educational Gamification) kèm bài mẫu B2/C1 phân tích chi tiết tại `src/features/writing/data/writingBank.ts`.
+- **Bộ Chuyển Đổi Bộ Đề (Collection Switcher)**: `WritingStudioPage` tích hợp 2 thẻ chọn bộ đề ("Bộ Đề Thi Thử ULIS" và "Ngân Hàng Đề Luyện Tập Mở Rộng"). Tự động cập nhật thanh chọn đề và cô lập khóa lưu trữ nháp theo từng `test.id` riêng biệt.
 - **Bài Mẫu Khảo Thí**: Tích hợp đầy đủ bài mẫu B1 chính thức và phân tích chuyên gia cho từng đề.
 - **Tích hợp Full Mock Test**: Liên kết trực tiếp 1:1 với `mockTest01.ts` đến `mockTest07.ts`.
 
