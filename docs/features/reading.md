@@ -13,7 +13,7 @@ Bài thi bao gồm 4 bài đọc học thuật và đời sống (~450–500 t�
 | **Sentence Insertion** | Xác định vị trí chèn câu thích hợp nhất trong 4 vị trí đánh dấu `[A][B][C][D]`. |
 
 ## Kiến trúc Unified Reading Runner
-Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mode`:
+Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mode` và phân rã thành các sub-components chuyên biệt dưới 400 dòng mã:
 - **Practice Mode (`mode: 'practice'`)**:
   - Cho phép tra từ nhanh qua Tooltip 2 tầng (offline + MyMemory API), 3 chế độ đọc (Warm Sepia, Obsidian Dark, Cream Light), điều chỉnh cỡ chữ (14px–22px) và giãn dòng (1.5x–2.0x).
   - Tự động bôi màu dẫn chứng (Highlight Clues) với hiệu ứng pulse và tự cuộn mượt đến đoạn văn chứa dẫn chứng khi chọn câu hỏi.
@@ -23,6 +23,14 @@ Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mo
   - Khóa toàn bộ công cụ tra từ (chống gian lận chuẩn phòng thi).
   - Tích hợp Question Palette 40 câu kèm cờ Flag để đánh dấu câu cần xem lại.
   - Đồng hồ tổng 60 phút đếm ngược toàn bài thi Đọc và tự động thu bài khi hết giờ.
+- **Hệ thống Sub-Components & Hooks**:
+  - `ReadingHeader.tsx`: Tiêu đề bài thi, huy hiệu phân loại (Exam/Practice, Bậc B1-C1, số bài đọc), widget đồng hồ (cảnh báo khẩn cấp dưới 5 phút), banner cảnh báo đồng bộ không chặn và thẻ điểm tổng kết kèm nút làm lại bài.
+  - `ReadingPassageNavBar.tsx`: Thanh điều hướng bài đọc (Bài Đọc 1..N kèm badge số câu đã làm) và thanh chuyển tab trên di động (<768px).
+  - `ReadingQuestionsStream.tsx`: Luồng câu hỏi bài đọc hiện tại, quản lý danh sách `ReadingQuestionCard` và chuyển tiếp ref cuộn mượt.
+  - `ReadingResetModal.tsx`: Hộp thoại xác nhận làm lại bài thi đọc.
+  - `useReadingTimer.ts`: Quản lý đồng hồ bấm giờ (Practice) và đếm ngược tự động nộp bài (Exam).
+  - `useReaderSettings.ts`: Quản lý và lưu trữ cài đặt cỡ chữ, giãn dòng, theme đọc theo tài khoản.
+  - `useReadingSessionSync.ts`: Tự động lưu phiên làm bài vào LocalStorage và hòa giải trạng thái nộp bài từ Supabase.
 
 ## Bộ Công cụ Hỗ trợ Đọc Hiểu (Scaffolding Tools)
 - **1-Tap / Double-Click Dictionary Tooltip**:

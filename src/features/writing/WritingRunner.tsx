@@ -5,6 +5,10 @@ import { countWords, runTier1Precalc } from './services/writingTier1';
 import { evaluateWritingTask } from './services/writingTier2';
 import { calculateWritingCompositeScore } from './services/writingTier3';
 import { WritingEvaluationResult } from './components/WritingEvaluationResult';
+import { WritingHeader } from './components/WritingHeader';
+import { WritingPacingBanner } from './components/WritingPacingBanner';
+import { WritingTaskTabs } from './components/WritingTaskTabs';
+import { WritingScaffoldBox } from './components/WritingScaffoldBox';
 import { useAuth } from '../../services/supabase/authStore';
 import { useUserStore } from '../../services/user/userStore';
 import { upsertTestSubmission } from '../../services/supabase/testSubmissionSync';
@@ -215,76 +219,35 @@ export const WritingRunner: React.FC<WritingRunnerProps> = ({
   const currentMinWords = activePrompt.min_words;
   const currentLastSaved = activeTab === 'task1' ? task1SavedAt : task2SavedAt;
 
-  // Format timer MM:SS
-  const formatTime = (secs: number) => {
-    const m = Math.floor(secs / 60);
-    const s = secs % 60;
-    return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-  };
-
   // Show 20-minute pacing warning if on Task 1 and under 40 minutes remaining
   const showPacingAlert = mode === 'exam' && !pacingDismissed && activeTab === 'task1' && secondsRemaining <= 40 * 60;
 
   return (
     <div className="writing-runner">
-      {/* Top Header */}
-      <div className="writing-runner-header">
-        <div className="writing-header-title-box">
-          <h1>{test.title}</h1>
-          <div className="writing-header-subtitle">
-            {test.institution} • Thời lượng: {test.total_duration_minutes} phút • Barem B1 Bộ GD&ĐT
-          </div>
-        </div>
+      <WritingHeader
+        title={test.title}
+        institution={test.institution}
+        totalDurationMinutes={test.total_duration_minutes}
+        mode={mode}
+        secondsRemaining={secondsRemaining}
+        onExit={onExit}
+      />
 
-        <div className="writing-header-controls">
-          {mode === 'exam' && (
-            <div className={`writing-timer-widget ${secondsRemaining <= 300 ? 'urgent' : ''}`}>
-              <span>⏱️ Thời gian còn:</span>
-              <span className="writing-timer-digits">{formatTime(secondsRemaining)}</span>
-            </div>
-          )}
-
-          {onExit && (
-            <button className="writing-save-btn" onClick={onExit}>
-              ✕ Thoát
-            </button>
-          )}
-        </div>
-      </div>
-
-      {/* Pacing Alert Banner */}
       {showPacingAlert && (
-        <div className="writing-pacing-banner">
-          <span>⚠️ <strong>Nhắc nhở phân bổ thời gian:</strong> Đã hết 20 phút dành cho Task 1. Bạn nên chuyển sang Task 2 để bảo vệ 67% tổng điểm của bài thi!</span>
-          <button
-            className="writing-pacing-btn"
-            onClick={() => {
-              setActiveTab('task2');
-              setPacingDismissed(true);
-            }}
-          >
-            Chuyển sang Task 2 ➔
-          </button>
-        </div>
+        <WritingPacingBanner
+          onSwitchToTask2={() => {
+            setActiveTab('task2');
+            setPacingDismissed(true);
+          }}
+        />
       )}
 
-      {/* Task Switcher Navigation */}
-      <div className="writing-nav-bar">
-        <button
-          className={`writing-nav-tab ${activeTab === 'task1' ? 'active' : ''}`}
-          onClick={() => setActiveTab('task1')}
-        >
-          <span>Task 1: Thư / Email (≥120 từ, 1/3 điểm)</span>
-          <span className="writing-nav-word-pill">{countWords(task1Text)} từ</span>
-        </button>
-        <button
-          className={`writing-nav-tab ${activeTab === 'task2' ? 'active' : ''}`}
-          onClick={() => setActiveTab('task2')}
-        >
-          <span>Task 2: Bài Luận (≥250 từ, 2/3 điểm)</span>
-          <span className="writing-nav-word-pill">{countWords(task2Text)} từ</span>
-        </button>
-      </div>
+      <WritingTaskTabs
+        activeTab={activeTab}
+        task1WordCount={countWords(task1Text)}
+        task2WordCount={countWords(task2Text)}
+        onSelectTab={(tab) => setActiveTab(tab)}
+      />
 
       {/* Split Screen Container */}
       <div className="writing-split-container">
@@ -305,28 +268,7 @@ export const WritingRunner: React.FC<WritingRunnerProps> = ({
             {activePrompt.prompt_text}
           </div>
 
-          {/* Scaffolding in Practice Mode */}
-          {mode === 'practice' && (
-            <div className="writing-scaffold-box">
-              <h4 className="writing-scaffold-title">💡 Gợi ý cấu trúc viết chuẩn B1:</h4>
-              <div className="writing-scaffold-content">
-                {activeTab === 'task1' ? (
-                  <>
-                    • <strong>Mở thư:</strong> Dear [Name], / I am writing this email to...<br />
-                    • <strong>Thân thư:</strong> Trả lời lần lượt đủ 3 ý gợi ý trong đề bài.<br />
-                    • <strong>Kết thư:</strong> I hope to hear from you soon. / Best regards, [Your Name]
-                  </>
-                ) : (
-                  <>
-                    • <strong>Đoạn 1 (Intro):</strong> Nêu chủ đề + quan điểm cá nhân (Thesis Statement).<br />
-                    • <strong>Đoạn 2 (Body 1):</strong> Luận điểm 1 + Ví dụ (On the one hand...).<br />
-                    • <strong>Đoạn 3 (Body 2):</strong> Luận điểm 2 + Ví dụ (On the other hand...).<br />
-                    • <strong>Đoạn 4 (Conclusion):</strong> Khẳng định lại quan điểm (To sum up...).
-                  </>
-                )}
-              </div>
-            </div>
-          )}
+          {mode === 'practice' && <WritingScaffoldBox activeTab={activeTab} />}
         </div>
 
         {/* Right Panel: Editor */}

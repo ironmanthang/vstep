@@ -1,24 +1,25 @@
-import { useState, useRef, useEffect, useCallback } from 'react';
-import type { ReadingTest, ReadingMode, ReadingScoreResult, ReaderSettings } from './types';
+import React, { useState, useRef, useCallback, useEffect } from 'react';
+import type { ReadingTest, ReadingMode, ReadingScoreResult } from './types';
 import { PassagePanel } from './components/PassagePanel';
-import { ReadingQuestionCard } from './components/ReadingQuestionCard';
 import { ReadingQuestionPalette } from './components/ReadingQuestionPalette';
 import { DictionaryTooltip } from './components/DictionaryTooltip';
-import { ConfirmModal } from '../../components/common/ConfirmModal';
+import { ReadingHeader } from './components/ReadingHeader';
+import { ReadingPassageNavBar } from './components/ReadingPassageNavBar';
+import { ReadingQuestionsStream } from './components/ReadingQuestionsStream';
+import { ReadingResetModal } from './components/ReadingResetModal';
+import { useReadingTimer } from './useReadingTimer';
+import { useReaderSettings } from './useReaderSettings';
+import { useReadingSessionSync } from './useReadingSessionSync';
 import { useUserStore } from '../../services/user/userStore';
 import { useAuth } from '../../services/supabase/authStore';
 import {
-  fetchTestSubmission,
   upsertTestSubmission,
   deleteTestSubmission,
 } from '../../services/supabase/testSubmissionSync';
 import {
   loadReadingSession,
-  saveReadingSession,
   clearReadingSession,
-  hydrateReadingSessionFromCloud,
 } from './readingStorage';
-import { loadUserItem, saveUserItem } from '../../services/storage/userStorage';
 import './ReadingRunner.css';
 
 interface ReadingRunnerProps {
@@ -27,23 +28,11 @@ interface ReadingRunnerProps {
   onComplete?: (result: ReadingScoreResult) => void;
 }
 
-const DEFAULT_READER_SETTINGS: ReaderSettings = {
-  fontSize: 16,
-  lineHeight: 1.8,
-  theme: 'warm-sepia',
-};
-
 function toggleInSet(set: Set<string>, item: string): Set<string> {
   const next = new Set(set);
   if (next.has(item)) next.delete(item);
   else next.add(item);
   return next;
-}
-
-function formatSeconds(secs: number): string {
-  const m = Math.floor(secs / 60);
-  const s = secs % 60;
-  return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
 }
 
 export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
@@ -86,21 +75,7 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
   const questionsScrollPosRef = useRef<number>(0);
 
   // Reader Settings
-  const [readerSettings, setReaderSettings] = useState<ReaderSettings>(() => {
-    return loadUserItem<ReaderSettings>(
-      userId || 'guest_reader',
-      'reading_reader_settings',
-      DEFAULT_READER_SETTINGS
-    );
-  });
-
-  const handleUpdateReaderSettings = (updates: Partial<ReaderSettings>) => {
-    setReaderSettings((prev) => {
-      const next = { ...prev, ...updates };
-      saveUserItem(userId || 'guest_reader', 'reading_reader_settings', next);
-      return next;
-    });
-  };
+  const { readerSettings, updateReaderSettings } = useReaderSettings(userId);
 
   // Dictionary Tooltip State
   const [dictTooltip, setDictTooltip] = useState<{
@@ -112,13 +87,6 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
   const [isResetModalOpen, setIsResetModalOpen] = useState<boolean>(false);
   const [isResetting, setIsResetting] = useState<boolean>(false);
 
-  // Timer State
-  // Practice: stopwatch in seconds; Exam: 60min countdown (3600 seconds)
-  const [elapsedSeconds, setElapsedSeconds] = useState<number>(0);
-  const [examSecondsRemaining, setExamSecondsRemaining] = useState<number>(
-    test.duration_minutes ? test.duration_minutes * 60 : 3600
-  );
-
   const questionRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   // Flattened questions array
@@ -129,64 +97,42 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
   const activeQuestion = allQuestions.find((q) => q.id === activeQuestionId);
   const activeClueSentence = activeQuestion?.clue_sentence;
 
-  // Persist session to local storage
-  useEffect(() => {
-    if (!userId) return;
-    saveReadingSession(
-      test.id,
-      mode,
-      {
-        answers,
-        flaggedQuestions: Array.from(flaggedQuestions),
-        notes,
-        isSubmitted,
-        scoreResult,
-      },
-      userId
-    );
-  }, [test.id, mode, answers, flaggedQuestions, notes, isSubmitted, scoreResult, userId]);
+  // Session Persistence and Cloud Synchronization
+  useReadingSessionSync({
+    testId: test.id,
+    mode,
+    userId,
+    answers,
+    flaggedQuestions,
+    notes,
+    isSubmitted,
+    scoreResult,
+    initialSubmitted: initialSession?.isSubmitted,
+    onHydrate: (hydrated) => {
+      setAnswers(hydrated.answers);
+      setFlaggedQuestions(hydrated.flaggedQuestions);
+      setNotes(hydrated.notes);
+      setIsSubmitted(true);
+      setScoreResult(hydrated.scoreResult);
+    },
+    onRemoteReset: () => {
+      setAnswers({});
+      setFlaggedQuestions(new Set());
+      setNotes({});
+      setIsSubmitted(false);
+      setScoreResult(null);
+    },
+  });
 
-  // Cross-device cloud sync and remote reset reconciliation
-  useEffect(() => {
-    if (!userId) return;
-    let isCancelled = false;
+  const handleSubmitRef = useRef<() => void>(() => {});
 
-    async function syncFromCloud() {
-      if (!userId) return;
-      try {
-        const cloudData = await fetchTestSubmission(userId, test.id, mode);
-        if (isCancelled) return;
-
-        if (cloudData) {
-          const hydrated = hydrateReadingSessionFromCloud(test.id, mode, cloudData, userId);
-          if (isCancelled) return;
-          setAnswers(hydrated.answers);
-          setFlaggedQuestions(new Set(hydrated.flaggedQuestions));
-          setNotes(hydrated.notes);
-          setIsSubmitted(true);
-          setScoreResult(hydrated.scoreResult);
-        } else {
-          if (initialSession?.isSubmitted) {
-            clearReadingSession(test.id, mode, userId);
-            if (isCancelled) return;
-            setAnswers({});
-            setFlaggedQuestions(new Set());
-            setNotes({});
-            setIsSubmitted(false);
-            setScoreResult(null);
-          }
-        }
-      } catch (err) {
-        console.warn('Failed to sync reading test submission from cloud:', err);
-      }
-    }
-
-    syncFromCloud();
-
-    return () => {
-      isCancelled = true;
-    };
-  }, [userId, test.id, mode, initialSession?.isSubmitted]);
+  // Timer Hook
+  const { elapsedSeconds, examSecondsRemaining, resetTimer } = useReadingTimer({
+    isExam,
+    durationMinutes: test.duration_minutes,
+    isSubmitted,
+    onAutoSubmit: () => handleSubmitRef.current(),
+  });
 
   const handleSubmit = useCallback(async () => {
     const total = allQuestions.length;
@@ -252,29 +198,9 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
     user,
   ]);
 
-  // Timer Tick
   useEffect(() => {
-    if (isSubmitted) return;
-
-    const timerId = setInterval(() => {
-      if (isExam) {
-        setExamSecondsRemaining((prev) => Math.max(0, prev - 1));
-      } else {
-        setElapsedSeconds((prev) => prev + 1);
-      }
-    }, 1000);
-
-    return () => clearInterval(timerId);
-  }, [isSubmitted, isExam]);
-
-  // Auto-submit when exam time expires
-  useEffect(() => {
-    if (isExam && !isSubmitted && examSecondsRemaining === 0) {
-      queueMicrotask(() => {
-        handleSubmit();
-      });
-    }
-  }, [isExam, isSubmitted, examSecondsRemaining, handleSubmit]);
+    handleSubmitRef.current = handleSubmit;
+  }, [handleSubmit]);
 
   // Mobile Tab Switching with Scroll Position Memory
   const handleSwitchMobileTab = (newTab: 'passage' | 'questions') => {
@@ -309,7 +235,6 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
   const handleFocusQuestion = (questionId: string) => {
     setActiveQuestionId(questionId);
 
-    // Find which passage this question belongs to
     const passageIdx = test.passages.findIndex((p) =>
       p.questions.some((q) => q.id === questionId)
     );
@@ -317,13 +242,20 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
       setActivePassageIndex(passageIdx);
     }
 
-    // Scroll question card smoothly into view
     setTimeout(() => {
       const el = questionRefs.current[questionId];
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
     }, 50);
+  };
+
+  const handleSelectPassage = (pIdx: number) => {
+    setActivePassageIndex(pIdx);
+    const p = test.passages[pIdx];
+    if (p?.questions[0]) {
+      setActiveQuestionId(p.questions[0].id);
+    }
   };
 
   const handleConfirmReset = async () => {
@@ -341,8 +273,7 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
       setScoreResult(null);
       setNotes({});
       setSyncWarning(null);
-      setElapsedSeconds(0);
-      setExamSecondsRemaining(test.duration_minutes ? test.duration_minutes * 60 : 3600);
+      resetTimer();
       setIsResetModalOpen(false);
     } catch (err) {
       console.error('Failed to reset reading test:', err);
@@ -355,124 +286,29 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
 
   return (
     <div className="reading-runner">
-      {/* Runner Top Header */}
-      <div className="reading-runner-header">
-        <div className="reading-title-group">
-          <div className="reading-meta-row">
-            <span className={`badge ${isExam ? 'badge-gold' : 'badge-primary'}`}>
-              {isExam ? 'Chế Độ Thi Thử (Exam)' : 'Chế Độ Luyện Tập (Practice)'}
-            </span>
-            <span className="badge badge-emerald">Bậc {test.difficulty}</span>
-            <span className="badge badge-purple">{test.passages.length} Bài Đọc</span>
-          </div>
-          <h2 className="reading-main-title">{test.title}</h2>
-        </div>
+      <ReadingHeader
+        title={test.title}
+        difficulty={test.difficulty}
+        passageCount={test.passages.length}
+        isExam={isExam}
+        elapsedSeconds={elapsedSeconds}
+        examSecondsRemaining={examSecondsRemaining}
+        syncWarning={syncWarning}
+        isSubmitted={isSubmitted}
+        scoreResult={scoreResult}
+        onReset={() => setIsResetModalOpen(true)}
+      />
 
-        {/* Timer Widget */}
-        <div
-          className={`reading-timer-widget ${
-            isExam && examSecondsRemaining < 300 ? 'exam-urgent' : ''
-          }`}
-        >
-          <span>{isExam ? '⏳ Còn lại:' : '⏱️ Thời gian:'}</span>
-          <span className="timer-digits">
-            {isExam ? formatSeconds(examSecondsRemaining) : formatSeconds(elapsedSeconds)}
-          </span>
-          {!isExam && (
-            <span style={{ fontSize: '10px', color: 'var(--text-muted)' }}>
-              (Khuyến nghị: 15:00 / bài)
-            </span>
-          )}
-        </div>
-      </div>
-
-      {/* Sync Warning */}
-      {syncWarning && (
-        <div
-          style={{
-            padding: '8px 14px',
-            background: 'var(--bg-subtle)',
-            borderLeft: '3px solid var(--gold)',
-            borderRadius: 'var(--radius-sm)',
-            fontSize: 'var(--fs-xs)',
-            color: 'var(--text-secondary)',
-          }}
-        >
-          {syncWarning}
-        </div>
-      )}
-
-      {/* Score Result Card if submitted */}
-      {isSubmitted && scoreResult && (
-        <div className="score-result-card">
-          <span className="badge badge-emerald" style={{ fontSize: 'var(--fs-xs)' }}>
-            Kết Quả Chấm Điểm
-          </span>
-          <div className="score-number-display">{scoreResult.scoreOutOf10} / 10</div>
-          <p style={{ margin: 0, fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)' }}>
-            Đúng <strong>{scoreResult.correctCount}</strong> trên tổng số{' '}
-            <strong>{scoreResult.totalQuestions}</strong> câu hỏi. Thời gian làm bài:{' '}
-            <strong>{formatSeconds(scoreResult.timeSpentSeconds)}</strong>.
-          </p>
-          <div className="score-actions-inline">
-            <button
-              type="button"
-              className="secondary-btn score-reset-btn"
-              onClick={() => setIsResetModalOpen(true)}
-            >
-              🔄 Làm Lại Bài Này
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* Passage Selector Bar */}
-      <div className="reading-passage-nav-bar">
-        {test.passages.map((p, pIdx) => {
-          const passageAnswered = p.questions.filter((q) => Boolean(answers[q.id])).length;
-          const isCurrent = activePassageIndex === pIdx;
-
-          return (
-            <button
-              key={p.id || pIdx}
-              type="button"
-              className={`reading-pnav-btn ${isCurrent ? 'active' : ''}`}
-              onClick={() => {
-                setActivePassageIndex(pIdx);
-                // When selecting passage, set active question to first in that passage
-                if (p.questions[0]) {
-                  setActiveQuestionId(p.questions[0].id);
-                }
-              }}
-            >
-              <span>Bài Đọc {pIdx + 1}</span>
-              <span className="reading-pnav-badge">
-                {passageAnswered}/{p.questions.length}
-              </span>
-            </button>
-          );
-        })}
-      </div>
-
-      {/* Mobile Tab Switcher (<768px) */}
-      <div className="reading-mobile-tab-bar">
-        <div className="reading-mobile-tab-group">
-          <button
-            type="button"
-            className={`reading-mobile-tab-btn ${mobileTab === 'passage' ? 'active' : ''}`}
-            onClick={() => handleSwitchMobileTab('passage')}
-          >
-            📖 Bài Đọc {activePassageIndex + 1}
-          </button>
-          <button
-            type="button"
-            className={`reading-mobile-tab-btn ${mobileTab === 'questions' ? 'active' : ''}`}
-            onClick={() => handleSwitchMobileTab('questions')}
-          >
-            📝 Câu Hỏi ({answeredCount}/{allQuestions.length})
-          </button>
-        </div>
-      </div>
+      <ReadingPassageNavBar
+        passages={test.passages}
+        activePassageIndex={activePassageIndex}
+        answers={answers}
+        totalAnsweredCount={answeredCount}
+        totalQuestionsCount={allQuestions.length}
+        mobileTab={mobileTab}
+        onSelectPassage={handleSelectPassage}
+        onSwitchMobileTab={handleSwitchMobileTab}
+      />
 
       {/* Main Split-Pane Workspace Grid */}
       <div className="reading-workspace-grid">
@@ -490,48 +326,32 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
               totalPassages={test.passages.length}
               activeClueSentence={activeClueSentence}
               readerSettings={readerSettings}
-              onChangeReaderSettings={handleUpdateReaderSettings}
+              onChangeReaderSettings={updateReaderSettings}
               onWordSelect={(word, pos) => setDictTooltip({ word, position: pos })}
             />
           )}
         </div>
 
         {/* Middle Column: Question Cards Stream for Current Passage */}
-        <div
-          ref={questionsPaneRef}
-          className={`reading-questions-pane ${
-            mobileTab !== 'questions' ? 'mobile-hidden' : ''
-          }`}
-        >
-          <div className="reading-questions-stream">
-            {currentPassage?.questions.map((q) => {
-              const globalIndex = allQuestions.findIndex((item) => item.id === q.id);
-
-              return (
-                <ReadingQuestionCard
-                  key={q.id}
-                  ref={(el) => {
-                    questionRefs.current[q.id] = el;
-                  }}
-                  question={q}
-                  questionIndex={globalIndex >= 0 ? globalIndex : 0}
-                  selectedKey={answers[q.id]}
-                  isFlagged={flaggedQuestions.has(q.id)}
-                  isSubmitted={isSubmitted}
-                  isExam={isExam}
-                  isActive={activeQuestionId === q.id}
-                  onSelectOption={(key) => handleSelectOption(q.id, key)}
-                  onToggleFlag={() => handleToggleFlag(q.id)}
-                  onFocusQuestion={() => handleFocusQuestion(q.id)}
-                  note={notes[q.id] || ''}
-                  onChangeNote={(val) =>
-                    setNotes((prev) => ({ ...prev, [q.id]: val }))
-                  }
-                />
-              );
-            })}
-          </div>
-        </div>
+        <ReadingQuestionsStream
+          currentPassage={currentPassage}
+          allQuestions={allQuestions}
+          answers={answers}
+          flaggedQuestions={flaggedQuestions}
+          notes={notes}
+          isSubmitted={isSubmitted}
+          isExam={isExam}
+          activeQuestionId={activeQuestionId}
+          mobileHidden={mobileTab !== 'questions'}
+          questionRefs={questionRefs}
+          paneRef={questionsPaneRef}
+          onSelectOption={handleSelectOption}
+          onToggleFlag={handleToggleFlag}
+          onFocusQuestion={handleFocusQuestion}
+          onChangeNote={(qId, val) =>
+            setNotes((prev) => ({ ...prev, [qId]: val }))
+          }
+        />
 
         {/* Right Column: Question Palette Sidebar */}
         <div className="reading-palette-pane">
@@ -559,24 +379,11 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
       />
 
       {/* Confirmation Modal for Resetting Test */}
-      <ConfirmModal
+      <ReadingResetModal
         isOpen={isResetModalOpen}
-        onClose={() => {
-          if (!isResetting) setIsResetModalOpen(false);
-        }}
-        onConfirm={handleConfirmReset}
         isLoading={isResetting}
-        title="Làm lại bài thi Reading này?"
-        description={
-          <>
-            Hành động này sẽ{' '}
-            <strong>xóa toàn bộ câu trả lời, ghi chú và kết quả làm bài</strong> của bài thi
-            này trên thiết bị và tài khoản đám mây để bạn bắt đầu lại từ đầu.
-          </>
-        }
-        warningText="Kết quả đã nộp trước đó sẽ bị xóa vĩnh viễn khỏi lịch sử làm bài."
-        confirmLabel="Xác nhận làm lại"
-        cancelLabel="Giữ kết quả hiện tại"
+        onClose={() => setIsResetModalOpen(false)}
+        onConfirm={handleConfirmReset}
       />
     </div>
   );

@@ -6,7 +6,13 @@
 - **Part 3 (15 câu)**: 3 bài giảng / thuyết trình học thuật (mỗi bài 5 câu). Rèn luyện kỹ năng ghi chú nhanh (Note-taking) và nắm bắt cấu trúc triển khai bài giảng.
 
 ## Kiến trúc Unified Listening Runner
-Mô-đun được triển khai tập trung tại [`src/features/listening/`](file:///d:/program/vstep/src/features/listening) với component cốt lõi [`ListeningRunner.tsx`](file:///d:/program/vstep/src/features/listening/ListeningRunner.tsx):
+Mô-đun được triển khai tập trung tại [`src/features/listening/`](file:///d:/program/vstep/src/features/listening) với component cốt lõi [`ListeningRunner.tsx`](file:///d:/program/vstep/src/features/listening/ListeningRunner.tsx) (phân rã dưới 400 dòng mã) cùng các sub-components:
+- **Hệ thống Sub-Components Chuyên biệt**:
+  - `ListeningHeader.tsx`: Tiêu đề bài thi, huy hiệu phân loại chế độ (Exam/Practice) và độ khó Bậc B1-C1, banner cảnh báo đồng bộ không chặn và thẻ điểm tổng kết kèm nút làm lại bài.
+  - `ListeningResetModal.tsx`: Hộp thoại xác nhận làm lại bài thi nghe.
+  - `PassageGroupHeader.tsx`: Thanh tiêu đề phân đoạn hội thoại/bài giảng trong Part 2 và Part 3.
+  - `QuestionCard.tsx`: Thẻ hiển thị câu hỏi, các lựa chọn A/B/C/D, dẫn chứng transcript song ngữ và scratchpad ghi chú nháp.
+  - `QuestionPalette.tsx`: Bảng palette điều hướng nhanh 35 câu hỏi, đánh dấu trạng thái và cờ Flag.
 - **Practice Mode (`mode: 'practice'`)**:
   - Dòng câu hỏi đơn trang hợp nhất (Unified Question Stream): Bỏ hoàn toàn tab-switcher để người học tập trung giải quyết câu hỏi tại chỗ.
   - Phân đoạn nhóm bài nghe ([`PassageGroupHeader.tsx`](file:///d:/program/vstep/src/features/listening/components/PassageGroupHeader.tsx)): Tự động gom nhóm các câu hỏi cùng bài nghe (Part 2: 4 câu/hội thoại, Part 3: 5 câu/bài giảng), hiển thị dải thời lượng và nút bấm phát nhanh audio phân đoạn.

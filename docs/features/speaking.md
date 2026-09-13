@@ -7,7 +7,7 @@
 - **Trọng số & Làm tròn**: Điểm Speaking = `(Pronunciation + Fluency & Coherence + Grammar & Vocab + Task Fulfillment) / 4`, thang điểm 0.0 - 10.0, làm tròn theo bước 0.5 chuẩn Bộ GD&ĐT. Đích nhắm: **Bậc 3 (B1, thang 4.0 - 5.5)** xét chuẩn tốt nghiệp Đại học.
 
 ## Kiến trúc Unified Speaking Runner
-Mô-đun được đóng gói thành một `SpeakingRunner` duy nhất tiếp nhận tham số `mode`:
+Mô-đun được đóng gói thành một `SpeakingRunner` duy nhất tiếp nhận tham số `mode` và phân rã thành các sub-components dưới 400 dòng mã:
 - **Practice Mode (`mode: 'practice'`)**:
   - Luyện tập từng Part riêng lẻ, cho phép chuẩn bị linh hoạt và ghi âm thử nhiều lần.
   - Nghe lại bản ghi âm trước khi nộp chấm điểm AI.
@@ -21,6 +21,12 @@ Mô-đun được đóng gói thành một `SpeakingRunner` duy nhất tiếp nh
   - Tự động phát âm hiệu BEEP chuẩn phòng thi khi bắt đầu và kết thúc thời gian ghi âm (tổng hợp qua Web Audio API OscillatorNode, không phụ thuộc file âm thanh ngoài).
   - Khóa toàn bộ tính năng nghe lại và gợi ý dàn ý; lưu trữ từng đoạn ghi âm dạng Blob vào IndexedDB.
   - Tự động đóng gói và gửi chấm điểm sau khi hoàn thành toàn bộ bài thi.
+- **Hệ thống Sub-Components & Hooks**:
+  - `SpeakingHeader.tsx`: Tiêu đề bài thi, phụ đề chế độ phòng thi, widget đồng hồ (giai đoạn chuẩn bị/ghi âm), nút xem kết quả chấm điểm và nút thoát.
+  - `SpeakingPartTabs.tsx`: Thanh chuyển đổi 3 Part luyện tập trong Practice Mode.
+  - `SpeakingFooter.tsx`: Chân trang chuẩn hóa thông tin quyết định 729/QĐ-BGDĐT và codec âm thanh.
+  - `speakingPromptHelper.ts`: Hàm tập trung `getSpeakingPartPromptData` loại bỏ mã lặp định dạng đề bài và bài mẫu giữa các luồng chấm thi.
+  - `useSpeakingAudioStorage.ts`: Quản lý nạp blob nhị phân từ IndexedDB và thu hồi Object URL an toàn tránh rò rỉ bộ nhớ.
 - **Quản lý Phiên & Đồng bộ Đám mây (Storage & Cloud Sync)**:
   - Phân vùng lưu trữ đa tài khoản: Quản lý khóa metadata phiên cô lập theo User ID (`vstep_${userId}_speaking_session_${testId}_${mode}`) qua `speakingStorage.ts`.
   - Ghi nhận tiến độ học tập: Tự động gọi `recordStudyActivity()` và `incrementExercisesCompleted(1)` vào `userStore` khi hoàn thành bài thi nói.

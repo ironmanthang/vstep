@@ -138,3 +138,9 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Tối ưu Lazy loading Mock Test & Chart components
 - [x] Run audit codebase check sau khi hoàn thành Full Mock Test
 
+### Tối Ưu Hóa & Modular Hóa 4 Skill Runners (Architecture Refactoring)
+- [x] Phân rã sub-components cho cả 4 Skill Runners (Reading, Speaking, Writing, Listening): Đưa 100% các file runner cốt lõi xuống dưới ngưỡng 400 dòng mã (`ReadingRunner.tsx` 388 lines, `SpeakingRunner.tsx` 389 lines, `WritingRunner.tsx` 347 lines, `ListeningRunner.tsx` 347 lines).
+- [x] Tách các presentation sub-components chuyên biệt: Headers, Timer widgets, Navigation/Tabs, Pacing alerts, Scaffolding boxes và Reset confirmation modals vào thư mục `components/` của từng kỹ năng.
+- [x] Module hóa các custom hooks và deduplication helpers: `useReadingTimer`, `useReaderSettings`, `useReadingSessionSync`, `useSpeakingAudioStorage`, `speakingPromptHelper`.
+- [x] Bảo toàn 100% contracts component, state lifecycles, user-tenant storage isolation và 204 unit tests Vitest.
+

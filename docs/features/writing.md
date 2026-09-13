@@ -6,7 +6,7 @@
 - **Trọng số & Làm tròn**: Điểm tổng Viết = `(Task 1 + Task 2 * 2) / 3`, làm tròn theo bước 0.5 chuẩn Bộ GD&ĐT. Đích nhắm: **Bậc 3 (B1, thang 4.0 - 5.5)** xét chuẩn tốt nghiệp Đại học.
 
 ## Kiến trúc Unified Writing Runner
-Mô-đun được đóng gói thành một `WritingRunner` duy nhất tiếp nhận tham số `mode`:
+Mô-đun được đóng gói thành một `WritingRunner` duy nhất tiếp nhận tham số `mode` và phân rã thành các sub-components dưới 400 dòng mã:
 - **Practice Mode (`mode: 'practice'`)**:
   - Tích hợp gợi ý cấu trúc viết chuẩn B1 cho từng Task.
   - Chấm điểm AI 3 tầng với `gemini-3.5-flash-lite` tức thì (< 6s) theo barem B1 Bộ GD&ĐT.
@@ -18,6 +18,11 @@ Mô-đun được đóng gói thành một `WritingRunner` duy nhất tiếp nh�
   - Cảnh báo nhịp độ (Pacing Alert) tại phút 20 nhắc chuyển sang Task 2 nhằm bảo vệ 67% tổng điểm.
   - Bộ đếm từ thời gian thực, nút Lưu bài độc lập từng Task và tự động lưu bản nháp mỗi 5 giây vào `localStorage`.
   - Tự động nộp bài khi hết 60 phút và khóa toàn bộ gợi ý.
+- **Hệ thống Sub-Components**:
+  - `WritingHeader.tsx`: Tiêu đề bài thi, phụ đề tổ chức khảo thí & thời lượng, widget đếm ngược thời gian và nút thoát.
+  - `WritingPacingBanner.tsx`: Banner nhắc nhở phân bổ thời gian 20 phút cho Task 1 kèm nút chuyển nhanh Task 2.
+  - `WritingTaskTabs.tsx`: Thanh điều hướng Task 1 vs Task 2 tích hợp pill đếm số từ theo thời gian thực.
+  - `WritingScaffoldBox.tsx`: Khung gợi ý dàn bài chuẩn B1 cho thư và bài luận trong Practice Mode.
 - **Quản lý Phiên & Đồng bộ Đám mây (Storage & Cloud Sync)**:
   - Phân vùng lưu trữ đa tài khoản: Quản lý khóa phiên làm bài cô lập theo User ID (`vstep_${userId}_writing_session_${testId}_${mode}`) qua `writingStorage.ts`.
   - Ghi nhận tiến độ học tập: Tự động gọi `recordStudyActivity()` và `incrementExercisesCompleted(1)` vào `userStore` khi hoàn thành chấm điểm.

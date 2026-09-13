@@ -5,10 +5,11 @@ import { CustomAudioPlayer } from './components/CustomAudioPlayer';
 import { PassageGroupHeader } from './components/PassageGroupHeader';
 import { QuestionCard } from './components/QuestionCard';
 import { QuestionPalette } from './components/QuestionPalette';
+import { ListeningHeader } from './components/ListeningHeader';
+import { ListeningResetModal } from './components/ListeningResetModal';
 import { useUserStore } from '../../services/user/userStore';
 import { useAuth } from '../../services/supabase/authStore';
 import { fetchTestSubmission, upsertTestSubmission, deleteTestSubmission } from '../../services/supabase/testSubmissionSync';
-import { ConfirmModal } from '../../components/common/ConfirmModal';
 import { getQuestionTranscriptContext } from './transcriptContext';
 import {
   loadListeningSession,
@@ -245,59 +246,15 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
 
   return (
     <div className="listening-runner">
-      {/* Header */}
-      <div className="runner-header">
-        <div className="runner-title-group">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span className={`badge ${isExam ? 'badge-gold' : 'badge-primary'}`}>
-              {isExam ? 'Chế Độ Thi Thử (Exam Mode)' : 'Chế Độ Luyện Tập (Practice)'}
-            </span>
-            <span className="badge badge-emerald">Bậc {test.difficulty}</span>
-          </div>
-          <h2 style={{ fontSize: 'var(--fs-xl)', fontWeight: 800, margin: '4px 0 0 0' }}>
-            {test.title}
-          </h2>
-        </div>
-      </div>
-
-      {/* Non-blocking sync warning if network failed */}
-      {syncWarning && (
-        <div
-          style={{
-            padding: '8px 14px',
-            background: 'var(--bg-subtle)',
-            borderLeft: '3px solid var(--gold)',
-            borderRadius: 'var(--radius-sm)',
-            fontSize: 'var(--fs-xs)',
-            color: 'var(--text-secondary)',
-            marginBottom: 'var(--space-3)',
-          }}
-        >
-          {syncWarning}
-        </div>
-      )}
-
-      {/* Score Result Banner if submitted */}
-      {isSubmitted && scoreResult && (
-        <div className="score-result-card">
-          <span className="badge badge-emerald" style={{ fontSize: 'var(--fs-xs)' }}>
-            Kết Quả Chấm Điểm
-          </span>
-          <div className="score-number-display">{scoreResult.scoreOutOf10} / 10</div>
-          <p style={{ margin: 0, fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)' }}>
-            Đúng <strong>{scoreResult.correctCount}</strong> trên tổng số <strong>{scoreResult.totalQuestions}</strong> câu hỏi.
-          </p>
-          <div className="score-actions-inline">
-            <button
-              type="button"
-              className="secondary-btn score-reset-btn"
-              onClick={() => setIsResetModalOpen(true)}
-            >
-              🔄 Làm Lại Bài Này
-            </button>
-          </div>
-        </div>
-      )}
+      <ListeningHeader
+        title={test.title}
+        difficulty={test.difficulty}
+        isExam={isExam}
+        syncWarning={syncWarning}
+        isSubmitted={isSubmitted}
+        scoreResult={scoreResult}
+        onReset={() => setIsResetModalOpen(true)}
+      />
 
       {/* Main Content Workspace */}
       <div className="runner-workspace-grid">
@@ -379,23 +336,11 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
         />
       </div>
 
-      {/* Strict Confirmation Modal for Test Reset */}
-      <ConfirmModal
+      <ListeningResetModal
         isOpen={isResetModalOpen}
-        onClose={() => {
-          if (!isResetting) setIsResetModalOpen(false);
-        }}
-        onConfirm={handleConfirmReset}
         isLoading={isResetting}
-        title="Làm lại bài thi Listening này?"
-        description={
-          <>
-            Hành động này sẽ <strong>xóa toàn bộ câu trả lời, ghi chú và kết quả</strong> của bài thi này trên cả thiết bị và tài khoản đám mây để bạn bắt đầu lại từ đầu.
-          </>
-        }
-        warningText="Kết quả đã nộp trước đó sẽ bị xóa vĩnh viễn khỏi lịch sử làm bài."
-        confirmLabel="Xác nhận làm lại"
-        cancelLabel="Giữ kết quả hiện tại"
+        onClose={() => setIsResetModalOpen(false)}
+        onConfirm={handleConfirmReset}
       />
     </div>
   );
