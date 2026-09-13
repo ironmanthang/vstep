@@ -127,16 +127,17 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 ## SPRINT: THI THỬ THỰC CHIẾN (FULL MOCK TEST & EXAM ORCHESTRATOR)
 
 ### Mock Exam Orchestrator Chuẩn Phòng máy Bộ GD&ĐT
-- [ ] Xây dựng Mock Exam Orchestrator điều phối liên hoàn 4 Skill Runner ở `mode: 'exam'` (Listening 40p → Reading 60p → Writing 60p → Speaking 12p)
-- [ ] Khóa toàn bộ công cụ hỗ trợ (tra từ, tua audio, xem gợi ý dàn ý)
-- [ ] Question Palette tổng hợp đánh dấu trạng thái (Đã làm, Chưa làm, Gắn cờ Flag)
-- [ ] Đếm ngược toàn bài 180 phút và cảnh báo chống phân tâm khi click ra ngoài cửa sổ thi
+- [x] Xây dựng Mock Exam Orchestrator điều phối liên hoàn 4 Skill Runner ở `mode: 'exam'` (Listening 40p → Reading 60p → Writing 60p → Speaking 12p)
+- [x] Khóa toàn bộ công cụ hỗ trợ (tra từ, tua audio, xem gợi ý dàn ý)
+- [x] Question Palette tổng hợp đánh dấu trạng thái (Đã làm, Chưa làm, Gắn cờ Flag)
+- [x] Đếm ngược toàn bài 180 phút và cảnh báo chống phân tâm khi click ra ngoài cửa sổ thi
 
 ### Tự động Tính điểm, Barem 0.5 & Báo cáo Năng lực
-- [ ] Tự động tính điểm 4 kỹ năng và áp dụng công thức làm tròn 0.5 chuẩn Bộ GD&ĐT (xem [exam_format.md](file:///d:/program/vstep/docs/exam_format.md))
-- [ ] Báo cáo kết quả: Điểm từng kỹ năng, điểm Overall, xếp bậc năng lực (Dưới B1 / B1 / B2 / C1)
-- [ ] Radar Chart 4 kỹ năng và so sánh tiến độ so với các lần thi trước
-- [ ] Chế độ Review chi tiết: Xem lại từng câu trắc nghiệm sai kèm dẫn chứng và toàn bộ nhận xét AI
-- [ ] Unit Test thuật toán tính điểm và quy tắc làm tròn 0.5 VSTEP
-- [ ] Tối ưu Lazy loading Mock Test & Chart components
-- [ ] Run audit codebase check sau khi hoàn thành Full Mock Test
+- [x] Tự động tính điểm 4 kỹ năng và áp dụng công thức làm tròn 0.5 chuẩn Bộ GD&ĐT (xem [exam_format.md](file:///d:/program/vstep/docs/exam_format.md))
+- [x] Báo cáo kết quả: Điểm từng kỹ năng, điểm Overall, xếp bậc năng lực (Dưới B1 / B1 / B2 / C1)
+- [x] Radar Chart 4 kỹ năng và so sánh tiến độ so với các lần thi trước
+- [x] Chế độ Review chi tiết: Xem lại từng câu trắc nghiệm sai kèm dẫn chứng và toàn bộ nhận xét AI
+- [x] Unit Test thuật toán tính điểm và quy tắc làm tròn 0.5 VSTEP
+- [x] Tối ưu Lazy loading Mock Test & Chart components
+- [x] Run audit codebase check sau khi hoàn thành Full Mock Test
+

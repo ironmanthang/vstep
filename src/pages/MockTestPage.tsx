@@ -1,48 +1,86 @@
-import React from 'react';
+import React, { useState, Suspense, lazy } from 'react';
+import type { MockTest } from '../types/schemas';
+import { ALL_MOCK_TESTS } from '../data/mock-tests';
+import { MockTestLobby } from '../features/mock-test/components/MockTestLobby';
+import { MockTestResultDashboard } from '../features/mock-test/components/MockTestResultDashboard';
+import { loadMockTestSession, clearMockTestSession } from '../features/mock-test/mockTestStorage';
+import { useAuth } from '../services/supabase/authStore';
+
+// Lazy load full exam runner for bundle splitting
+const FullMockTestRunner = lazy(() =>
+  import('../features/mock-test/FullMockTestRunner').then((module) => ({
+    default: module.FullMockTestRunner,
+  }))
+);
 
 export const MockTestPage: React.FC = () => {
+  const { user } = useAuth();
+  const userId = user?.id;
+
+  const [activeExamTest, setActiveExamTest] = useState<MockTest | null>(null);
+  const [viewingResultTest, setViewingResultTest] = useState<MockTest | null>(null);
+
+  const handleStartExam = (test: MockTest) => {
+    setViewingResultTest(null);
+    setActiveExamTest(test);
+  };
+
+  const handleViewPreviousResult = (test: MockTest) => {
+    setActiveExamTest(null);
+    setViewingResultTest(test);
+  };
+
+  const handleExitToLobby = () => {
+    setActiveExamTest(null);
+    setViewingResultTest(null);
+  };
+
+  const handleRetakeFromDashboard = (test: MockTest) => {
+    clearMockTestSession(test.id, userId);
+    setViewingResultTest(null);
+    setActiveExamTest(test);
+  };
+
+  // 1. Active Exam Mode
+  if (activeExamTest) {
+    return (
+      <Suspense
+        fallback={
+          <div className="card-surface" style={{ padding: 'var(--space-8)', textAlign: 'center' }}>
+            <div style={{ fontSize: 'var(--fs-lg)', fontWeight: 700 }}>Đang chuẩn bị phòng thi máy tính...</div>
+            <div style={{ fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)', marginTop: 4 }}>
+              Khởi tạo đề thi {activeExamTest.title}
+            </div>
+          </div>
+        }
+      >
+        <FullMockTestRunner test={activeExamTest} onExit={handleExitToLobby} />
+      </Suspense>
+    );
+  }
+
+  // 2. Previous Result Dashboard Mode
+  if (viewingResultTest) {
+    const savedSession = loadMockTestSession(viewingResultTest.id, userId);
+
+    if (savedSession && savedSession.compositeResult) {
+      return (
+        <MockTestResultDashboard
+          test={viewingResultTest}
+          session={savedSession}
+          onRetake={() => handleRetakeFromDashboard(viewingResultTest)}
+          onExit={handleExitToLobby}
+        />
+      );
+    }
+  }
+
+  // 3. Lobby Mode (Default)
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6)' }}>
-      <div>
-        <h1 style={{ fontSize: 'var(--fs-2xl)', fontWeight: 800, color: 'var(--text-primary)' }}>Phòng Thi Thử VSTEP Thực Chiến</h1>
-        <p style={{ fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)', marginTop: 4 }}>
-          Mô phỏng 100% định dạng phòng máy Bộ GD&ĐT (180 phút, cấm tua/tra từ, tự động thu bài, làm tròn 0.5 chính thức).
-        </p>
-      </div>
-
-      <div className="card-surface" style={{ padding: 'var(--space-6)', display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 'var(--space-2)' }}>
-          <span className="badge badge-gold">Đề Thi Chuẩn Mẫu Số 01 (VSTEP.3-5)</span>
-          <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)' }}>Thời lượng: 180 phút • 4 Kỹ năng</span>
-        </div>
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 'var(--space-3)', margin: 'var(--space-2) 0' }}>
-          <div style={{ padding: 'var(--space-3)', background: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
-            <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)' }}>1. Nghe (Listening)</span>
-            <div style={{ fontWeight: 700, fontSize: 'var(--fs-sm)' }}>40 phút • 35 câu</div>
-          </div>
-          <div style={{ padding: 'var(--space-3)', background: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
-            <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)' }}>2. Đọc (Reading)</span>
-            <div style={{ fontWeight: 700, fontSize: 'var(--fs-sm)' }}>60 phút • 40 câu</div>
-          </div>
-          <div style={{ padding: 'var(--space-3)', background: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
-            <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)' }}>3. Viết (Writing)</span>
-            <div style={{ fontWeight: 700, fontSize: 'var(--fs-sm)' }}>60 phút • 2 tasks</div>
-          </div>
-          <div style={{ padding: 'var(--space-3)', background: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
-            <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)' }}>4. Nói (Speaking)</span>
-            <div style={{ fontWeight: 700, fontSize: 'var(--fs-sm)' }}>12 phút • 3 parts</div>
-          </div>
-        </div>
-
-        <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)' }}>
-          Quy chế: Khóa toàn bộ công cụ tra từ, bảng điểm Radar Chart 4 trục và báo cáo chi tiết theo Barem Bộ GD&ĐT sẽ xuất hiện ngay sau khi nộp bài.
-        </p>
-
-        <button className="primary-btn" style={{ width: 'fit-content' }}>
-          Bắt Đầu Thi Thử (Sprint 3)
-        </button>
-      </div>
-    </div>
+    <MockTestLobby
+      tests={ALL_MOCK_TESTS}
+      onStartExam={handleStartExam}
+      onViewPreviousResult={handleViewPreviousResult}
+    />
   );
 };
