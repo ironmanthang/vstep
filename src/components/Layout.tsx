@@ -5,7 +5,6 @@ import {
   PracticeIcon,
   FlashcardIcon,
   MockTestIcon,
-  SettingsIcon,
   UserIcon,
   SunIcon,
   MoonIcon,
@@ -53,11 +52,10 @@ export const Layout: React.FC = () => {
     { to: '/practice', label: 'Luyện kỹ năng', icon: <PracticeIcon size={20} /> },
     { to: '/flashcard', label: 'Từ vựng SRS', icon: <FlashcardIcon size={20} /> },
     { to: '/mock-test', label: 'Thi thử', icon: <MockTestIcon size={20} /> },
-    { to: '/settings', label: 'Cài đặt', icon: <SettingsIcon size={20} /> },
-    { to: '/profile', label: 'Hồ sơ', icon: <UserIcon size={20} /> },
+    { to: '/profile', label: 'Hồ sơ & Cài đặt', icon: <UserIcon size={20} /> },
   ];
 
-  const mobileNavItems = navItems.filter(item => item.to !== '/profile');
+  const mobileNavItems = navItems;
 
   // Title for mobile header
   const getPageTitle = (pathname: string) => {
@@ -66,8 +64,8 @@ export const Layout: React.FC = () => {
       case '/practice': return 'Luyện 4 Kỹ Năng';
       case '/flashcard': return 'Từ Vựng SRS';
       case '/mock-test': return 'Phòng Thi Thử';
-      case '/settings': return 'Cài Đặt Hệ Thống';
-      case '/profile': return 'Hồ Sơ Học Tập';
+      case '/profile': return 'Hồ Sơ & Cài Đặt';
+      case '/dev': return 'Developer Console';
       default: return 'VSTEP Master';
     }
   };

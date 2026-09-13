@@ -66,6 +66,7 @@ export function useFlashcardStore() {
   });
 
   const [selectedTopic, setSelectedTopic] = useState<string>('Tất cả');
+  const [selectedLevel, setSelectedLevel] = useState<'Tất cả' | 'B1' | 'B2' | 'C1'>('Tất cả');
 
   // Daily reviewed count
   const [reviewedToday, setReviewedToday] = useState<number>(() => {
@@ -171,11 +172,14 @@ export function useFlashcardStore() {
     });
   }, [userId]);
 
-  // Filtered cards by topic
+  // Filtered cards by topic and CEFR level
   const filteredCards = useMemo(() => {
-    if (selectedTopic === 'Tất cả') return cards;
-    return cards.filter((c) => c.topic === selectedTopic);
-  }, [cards, selectedTopic]);
+    return cards.filter((c) => {
+      const matchesTopic = selectedTopic === 'Tất cả' || c.topic === selectedTopic;
+      const matchesLevel = selectedLevel === 'Tất cả' || c.level === selectedLevel;
+      return matchesTopic && matchesLevel;
+    });
+  }, [cards, selectedTopic, selectedLevel]);
 
   // Review queue for the filtered topic (uncapped continuous learning)
   const reviewQueue = useMemo(() => {
@@ -299,6 +303,9 @@ export function useFlashcardStore() {
     topics,
     selectedTopic,
     setSelectedTopic,
+    levels: ['Tất cả', 'B1', 'B2', 'C1'] as const,
+    selectedLevel,
+    setSelectedLevel,
     reviewedToday,
     isCloudSyncing,
     isOnline,

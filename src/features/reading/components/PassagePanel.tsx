@@ -18,6 +18,77 @@ const THEME_LABELS: Record<ReaderTheme, { label: string; icon: string }> = {
   'cream-light': { label: 'Giấy Sáng', icon: '☀️' },
 };
 
+/**
+ * Resolves the English word and its bounding rectangle at a specific client coordinate.
+ * Works natively on touch and click without requiring OS text selection.
+ */
+function getWordAtCoordinates(x: number, y: number): { word: string; rect: DOMRect } | null {
+  let textNode: Node | null = null;
+  let offset = 0;
+
+  type DocWithCaret = Document & {
+    caretPositionFromPoint?: (x: number, y: number) => { offsetNode: Node; offset: number } | null;
+    caretRangeFromPoint?: (x: number, y: number) => Range | null;
+  };
+  const doc = document as DocWithCaret;
+
+  if (doc.caretPositionFromPoint) {
+    const pos = doc.caretPositionFromPoint(x, y);
+    if (pos) {
+      textNode = pos.offsetNode;
+      offset = pos.offset;
+    }
+  } else if (doc.caretRangeFromPoint) {
+    const range = doc.caretRangeFromPoint(x, y);
+    if (range) {
+      textNode = range.startContainer;
+      offset = range.startOffset;
+    }
+  }
+
+  if (!textNode || textNode.nodeType !== Node.TEXT_NODE || !textNode.textContent) {
+    return null;
+  }
+
+  const text = textNode.textContent;
+  if (offset < 0 || offset > text.length) return null;
+
+  const isWordChar = (char: string) => /[a-zA-Z0-9'-]/.test(char);
+
+  let start = offset;
+  let end = offset;
+
+  // If tapped right at the trailing boundary of a word
+  if (start > 0 && !isWordChar(text[start]) && isWordChar(text[start - 1])) {
+    start--;
+    end--;
+  }
+
+  if (!isWordChar(text[start])) {
+    return null;
+  }
+
+  while (start > 0 && isWordChar(text[start - 1])) {
+    start--;
+  }
+  while (end < text.length && isWordChar(text[end])) {
+    end++;
+  }
+
+  const word = text.slice(start, end).trim();
+  if (!word || word.length > 32) return null;
+
+  try {
+    const wordRange = document.createRange();
+    wordRange.setStart(textNode, start);
+    wordRange.setEnd(textNode, end);
+    const rect = wordRange.getBoundingClientRect();
+    return { word, rect };
+  } catch {
+    return null;
+  }
+}
+
 export const PassagePanel: React.FC<PassagePanelProps> = ({
   passage,
   passageIndex,
@@ -29,6 +100,7 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
 }) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const evidenceRef = useRef<HTMLElement | null>(null);
+  const touchStartPos = useRef<{ x: number; y: number; time: number } | null>(null);
 
   // Auto-scroll passage to evidence highlight when activeClueSentence changes
   useEffect(() => {
@@ -37,7 +109,40 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
     }
   }, [activeClueSentence]);
 
-  // Handle word selection or double-tap
+  // Touch handlers for seamless 1-tap word lookup on mobile devices
+  const handleTouchStart = (e: React.TouchEvent) => {
+    if (e.touches.length === 1) {
+      touchStartPos.current = {
+        x: e.touches[0].clientX,
+        y: e.touches[0].clientY,
+        time: Date.now(),
+      };
+    }
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (!touchStartPos.current || e.changedTouches.length === 0) return;
+    const touch = e.changedTouches[0];
+    const dx = touch.clientX - touchStartPos.current.x;
+    const dy = touch.clientY - touchStartPos.current.y;
+    const dt = Date.now() - touchStartPos.current.time;
+    touchStartPos.current = null;
+
+    // Distinguish a clean tap from a scroll/swipe or long-press
+    if (Math.hypot(dx, dy) > 8 || dt > 400) {
+      return;
+    }
+
+    const resolved = getWordAtCoordinates(touch.clientX, touch.clientY);
+    if (resolved) {
+      onWordSelect(resolved.word, {
+        x: resolved.rect.left + resolved.rect.width / 2,
+        y: resolved.rect.top,
+      });
+    }
+  };
+
+  // Handle desktop mouse text selection
   const handleTextInteraction = () => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) return;
@@ -53,6 +158,7 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
     }
   };
 
+  // Handle desktop double click
   const handleDoubleClick = (e: React.MouseEvent) => {
     const selection = window.getSelection();
     const selectedText = selection?.toString().trim();
@@ -192,7 +298,7 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
 
       {/* Tra từ nhanh hint */}
       <div className="reader-dictionary-hint">
-        💡 <em>Chạm đúp từ bất kỳ trong bài để tra từ điển tiếng Việt tức thì</em>
+        💡 <em>Chạm vào từ bất kỳ trong bài để tra từ điển tiếng Việt tức thì</em>
       </div>
 
       {/* Main Passage Content Body */}
@@ -203,8 +309,9 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
           fontSize: `${readerSettings.fontSize}px`,
           lineHeight: readerSettings.lineHeight,
         }}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
         onMouseUp={handleTextInteraction}
-        onTouchEnd={handleTextInteraction}
         onDoubleClick={handleDoubleClick}
       >
         <h2 className="passage-main-title">{passage.title}</h2>

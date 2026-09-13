@@ -73,7 +73,7 @@ Chất lượng, hiệu năng và kiểm thử không tổ chức thành giai đ
 
 | Milestone | Trọng tâm | Trạng thái |
 | :--- | :--- | :--- |
-| **M1: Foundation & Curated SRS** | App Shell PWA, AI Master Gateway & Key Pool, Flashcard SRS 2.000 từ | Đã hoàn thành |
+| **M1: Foundation & Curated SRS** | App Shell PWA, AI Master Gateway & Key Pool, Flashcard SRS 3.000 từ | Đã hoàn thành |
 | **M2: Assisted Listening Studio** | Unified Listening Runner (`practice` \| `exam`), Audio Player ±5s, Scratchpad, Inline Transcript | Đã hoàn thành |
 | **M3: Assisted Reading Studio** | Unified Reading Runner (`practice` \| `exam`), Split-Pane, 1-Tap Dict Tooltip, Highlights | Đã hoàn thành |
 | **M4: Scaffolded Writing & Vietlish AI** | Unified Writing Runner (`practice` \| `exam`), Editor auto-save, Pipeline chấm 3 tầng, Vietlish, AI-Fixed B1 | Đã hoàn thành |

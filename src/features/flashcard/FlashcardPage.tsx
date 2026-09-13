@@ -12,7 +12,6 @@ import './FlashcardPage.css';
 
 export const FlashcardPage: React.FC = () => {
   const {
-    cards,
     filteredCards,
     reviewQueue,
     totalDueCount,
@@ -20,6 +19,9 @@ export const FlashcardPage: React.FC = () => {
     topics,
     selectedTopic,
     setSelectedTopic,
+    levels,
+    selectedLevel,
+    setSelectedLevel,
     reviewedToday,
     isCloudSyncing,
     isOnline,
@@ -125,7 +127,7 @@ export const FlashcardPage: React.FC = () => {
               )}
             </div>
             <p className="page-subtitle">
-              Kho 2.000 từ vựng học thuật Spaced Repetition (SRS) bám sát 8 chủ đề đề thi VSTEP B1–B2–C1.
+              Kho 3.000 từ vựng học thuật Spaced Repetition (SRS) bám sát 8 chủ đề đề thi VSTEP B1–B2–C1.
             </p>
           </div>
           <div className="header-actions">
@@ -212,21 +214,40 @@ export const FlashcardPage: React.FC = () => {
         </div>
       </div>
 
-      {/* View Tabs & Topic Filter */}
+      {/* View Tabs & Topic/Level Filters */}
       <div className="controls-row">
-        <div className="tab-group">
-          <button
-            className={`tab-btn ${activeTab === 'queue' ? 'active' : ''}`}
-            onClick={() => { setActiveTab('queue'); setCurrentQueueIndex(0); setIsFlipped(false); }}
-          >
-            Hàng đợi ôn tập ({reviewQueue.length})
-          </button>
-          <button
-            className={`tab-btn ${activeTab === 'browse' ? 'active' : ''}`}
-            onClick={() => setActiveTab('browse')}
-          >
-            Kho từ vựng ({cards.length})
-          </button>
+        <div className="tab-and-levels-row">
+          <div className="tab-group">
+            <button
+              className={`tab-btn ${activeTab === 'queue' ? 'active' : ''}`}
+              onClick={() => { setActiveTab('queue'); setCurrentQueueIndex(0); setIsFlipped(false); }}
+            >
+              Hàng đợi ôn tập ({reviewQueue.length})
+            </button>
+            <button
+              className={`tab-btn ${activeTab === 'browse' ? 'active' : ''}`}
+              onClick={() => setActiveTab('browse')}
+            >
+              Kho từ vựng ({filteredCards.length})
+            </button>
+          </div>
+
+          {/* CEFR Level Filter Pills */}
+          <div className="level-pills-wrapper" role="group" aria-label="Lọc theo bậc năng lực CEFR">
+            {levels.map(lvl => (
+              <button
+                key={lvl}
+                className={`level-pill ${selectedLevel === lvl ? 'active' : ''}`}
+                onClick={() => {
+                  setSelectedLevel(lvl);
+                  setCurrentQueueIndex(0);
+                  setIsFlipped(false);
+                }}
+              >
+                {lvl === 'Tất cả' ? 'Tất cả Bậc' : `Bậc ${lvl}`}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Topic Filter Pills */}
@@ -382,7 +403,7 @@ export const FlashcardPage: React.FC = () => {
         title="Đặt lại toàn bộ Deck từ vựng?"
         description={
           <>
-            Hành động này sẽ <strong>xóa vĩnh viễn</strong> toàn bộ tiến độ Spaced Repetition (SRS) của <strong>2.000 từ vựng</strong> và đưa bộ đếm ôn tập hôm nay về <strong>0 thẻ</strong> trên cả thiết bị này và tài khoản đám mây của bạn.
+            Hành động này sẽ <strong>xóa vĩnh viễn</strong> toàn bộ tiến độ Spaced Repetition (SRS) của <strong>3.000 từ vựng</strong> và đưa bộ đếm ôn tập hôm nay về <strong>0 thẻ</strong> trên cả thiết bị này và tài khoản đám mây của bạn.
           </>
         }
         warningText="Dữ liệu đã xóa không thể khôi phục lại. Bạn sẽ cần bắt đầu học lại từ đầu."

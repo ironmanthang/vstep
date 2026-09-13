@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router';
 import { PracticeIcon, CheckCircleIcon, FireIcon } from '../components/Icons';
 import { useUserStore } from '../services/user/userStore';
 import { useAuth } from '../services/supabase/authStore';
 import { useNotification } from '../hooks/useNotification';
 import { Toast } from '../components/common/Toast';
+import { QuotaUsageCard } from './settings/QuotaUsageCard';
+import { ReminderSettingsModal } from '../features/flashcard/components/ReminderSettingsModal';
 
 export const ProfilePage: React.FC = () => {
   const {
@@ -25,6 +28,7 @@ export const ProfilePage: React.FC = () => {
   const { statusMessage, showNotification, clearNotification } = useNotification();
   const [isEditingName, setIsEditingName] = useState(false);
   const [tempName, setTempName] = useState(userDisplayName);
+  const [isReminderModalOpen, setIsReminderModalOpen] = useState(false);
 
   const handleSaveName = () => {
     setUserName(tempName.trim());
@@ -45,9 +49,9 @@ export const ProfilePage: React.FC = () => {
       <Toast message={statusMessage} onClose={clearNotification} />
 
       <div>
-        <h1 style={{ fontSize: 'var(--fs-2xl)', fontWeight: 800, color: 'var(--text-primary)' }}>Hồ Sơ Học Tập</h1>
+        <h1 style={{ fontSize: 'var(--fs-2xl)', fontWeight: 800, color: 'var(--text-primary)' }}>Hồ Sơ & Cài Đặt</h1>
         <p style={{ fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)', marginTop: 4 }}>
-          Theo dõi hành trình cá nhân hóa và thiết lập mục tiêu chứng chỉ VSTEP.
+          Theo dõi hành trình cá nhân hóa, thiết lập mục tiêu chứng chỉ và cài đặt ứng dụng.
         </p>
       </div>
 
@@ -217,6 +221,60 @@ export const ProfilePage: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Membership & Daily AI Quota */}
+      <QuotaUsageCard />
+
+      {/* SRS Flashcard Notification & PWA Badging */}
+      <div className="card-surface" style={{ padding: 'var(--space-5)', display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-4)', flexWrap: 'wrap' }}>
+          <div>
+            <h4 style={{ fontSize: 'var(--fs-sm)', fontWeight: 700 }}>Nhắc Nhở Ôn Tập Flashcard SRS & App Badging</h4>
+            <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', marginTop: 2 }}>
+              Tự động cập nhật số thẻ cần ôn lên icon ứng dụng PWA và hẹn giờ nhắc nhở hàng ngày trên Android &amp; Desktop.
+            </p>
+          </div>
+          <button
+            className="secondary-btn"
+            style={{ fontSize: 'var(--fs-xs)', padding: '6px 14px', whiteSpace: 'nowrap' }}
+            onClick={() => setIsReminderModalOpen(true)}
+          >
+            Cài đặt nhắc nhở
+          </button>
+        </div>
+      </div>
+
+      {/* PWA & Storage Status */}
+      <div className="card-surface" style={{ padding: 'var(--space-5)', display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
+        <h4 style={{ fontSize: 'var(--fs-sm)', fontWeight: 700 }}>Trạng Thái Ứng Dụng PWA & Bộ Nhớ</h4>
+        <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', margin: 0 }}>
+          Hệ thống lưu trữ bản nháp Writing cục bộ mỗi 5s chống rớt mạng. Hỗ trợ cài đặt PWA Standalone trên iOS, Android và Desktop.
+        </p>
+      </div>
+
+      {/* Developer Console Footer Link */}
+      <div style={{ display: 'flex', justifyContent: 'flex-end', paddingTop: 'var(--space-2)' }}>
+        <Link
+          to="/dev"
+          style={{
+            fontSize: 'var(--fs-xs)',
+            color: 'var(--text-muted)',
+            textDecoration: 'none',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '4px',
+          }}
+        >
+          ⚙️ Tùy chọn cho Nhà phát triển (Developer Console) →
+        </Link>
+      </div>
+
+      {/* Reminder Settings Modal */}
+      <ReminderSettingsModal
+        isOpen={isReminderModalOpen}
+        onClose={() => setIsReminderModalOpen(false)}
+        onNotify={showNotification}
+      />
     </div>
   );
 };

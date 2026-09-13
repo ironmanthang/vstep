@@ -2,11 +2,7 @@ import React, { useState } from 'react';
 import { getDailyAIQuotaStatus } from '../../services/ai';
 import { useAuth } from '../../services/supabase/authStore';
 
-interface QuotaUsageCardProps {
-  onNotify: (message: string, type?: 'info' | 'success' | 'error') => void;
-}
-
-export const QuotaUsageCard: React.FC<QuotaUsageCardProps> = ({ onNotify }) => {
+export const QuotaUsageCard: React.FC = () => {
   const { user } = useAuth();
   const [quota] = useState(() => getDailyAIQuotaStatus(user?.id));
 
@@ -43,16 +39,9 @@ export const QuotaUsageCard: React.FC<QuotaUsageCardProps> = ({ onNotify }) => {
       </div>
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'var(--space-1)', flexWrap: 'wrap', gap: 'var(--space-2)' }}>
-        <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)' }}>
-          Cần chấm không giới hạn và nhận bài mẫu nâng band chuyên sâu?
+        <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)' }}>
+          💡 Hạn ngạch được làm mới tự động 5 lượt chấm AI mỗi ngày lúc 00:00.
         </span>
-        <button
-          className="secondary-btn"
-          style={{ padding: 'var(--space-2) var(--space-4)', color: 'var(--primary-text)', borderColor: 'var(--primary)' }}
-          onClick={() => onNotify('Tính năng nâng cấp gói Pro sẽ ra mắt trong Sprint tiếp theo!', 'info')}
-        >
-          Tìm Hiểu Gói VSTEP Pro
-        </button>
       </div>
     </div>
   );

@@ -147,4 +147,21 @@ describe('FSRS Binary SRS Algorithm Suite', () => {
     const preview = getNextIntervalPreview(mockCard);
     expect(preview).toBeGreaterThanOrEqual(1);
   });
+
+  it('filters flashcard items accurately by CEFR level', () => {
+    const mixedDeck: FlashcardItem[] = [
+      { ...mockCard, id: 'b1_card', level: 'B1' },
+      { ...mockCard, id: 'b2_card', level: 'B2' },
+      { ...mockCard, id: 'c1_card', level: 'C1' },
+    ];
+
+    const filterByLevel = (cards: FlashcardItem[], level: string) =>
+      cards.filter((c) => level === 'Tất cả' || c.level === level);
+
+    expect(filterByLevel(mixedDeck, 'Tất cả')).toHaveLength(3);
+    expect(filterByLevel(mixedDeck, 'B1')).toHaveLength(1);
+    expect(filterByLevel(mixedDeck, 'B1')[0].id).toBe('b1_card');
+    expect(filterByLevel(mixedDeck, 'B2')).toHaveLength(1);
+    expect(filterByLevel(mixedDeck, 'C1')).toHaveLength(1);
+  });
 });

@@ -154,6 +154,48 @@
   box-shadow: var(--shadow-sm);
 }
 
+.tab-and-levels-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.level-pills-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background-color: var(--bg-subtle);
+  padding: 3px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.level-pill {
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: none;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.level-pill:hover {
+  color: var(--primary);
+}
+
+.level-pill.active {
+  background-color: var(--primary);
+  color: var(--primary-contrast);
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
 .topic-pills-wrapper {
   display: flex;
   gap: var(--space-2);

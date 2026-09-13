@@ -110,7 +110,7 @@ export const LoginPage: React.FC = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
             <span style={{ fontSize: '18px' }}>🧠</span>
             <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-primary)', fontWeight: 500 }}>
-              1,500+ từ vựng SRS phân bố theo band B1-B2-C1
+              3,000 từ vựng SRS phân bố theo band B1-B2-C1
             </span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>

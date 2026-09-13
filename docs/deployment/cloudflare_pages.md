@@ -58,7 +58,7 @@ Under **Settings** -> **Environment variables**, the following production variab
 ### Deployment Verification
 - **Live Production URL**: `https://vstep.pages.dev`
 - **Verification Points**:
-  - Client-side route navigation (`/flashcard`, `/practice`, `/settings`).
+  - Client-side route navigation (`/flashcard`, `/practice`, `/profile`, `/dev`, with `/settings` redirecting to `/profile`).
   - Hard-refreshing `/flashcard` does not return 404 (handled by `_redirects`).
   - Spaced Repetition (SRS) Flashcard review queue.
   - User Authentication & Cloud Sync with Supabase.

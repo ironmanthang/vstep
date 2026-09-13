@@ -11,9 +11,10 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 ## SPRINT: KHUNG NỀN TẢNG & FLASHCARD SRS (FOUNDATION & CURATED SRS)
 
 ### Khung Nền tảng & App Shell
-- [x] App Shell & Design System: Dự án Vite + React 19 + TypeScript, CSS tokens Dark/Light (Campfire warm amber & obsidian), điều hướng đa trang (Home, Skills, Flashcard, Mock Test, Settings, Profile), Layout responsive (Desktop Sidebar / Mobile Bottom Nav), nút Đăng xuất sticky mobile header, và ConfirmModal 2 bước dùng chung.
+- [x] App Shell & Design System: Dự án Vite + React 19 + TypeScript, CSS tokens Dark/Light (Campfire warm amber & obsidian), điều hướng đa trang (Home, Skills, Flashcard, Mock Test, Profile), Layout responsive (Desktop Sidebar / Mobile Bottom Nav), nút Đăng xuất sticky mobile header, và ConfirmModal 2 bước dùng chung.
 - [x] Xác thực & Đồng bộ Đám mây: Login-First Gate (`<ProtectedRoute>`), trang `/login` chuyên biệt Google OAuth, migration Supabase normalized tables (`user_profiles`, `user_study_logs`, `user_mock_test_results`, `user_flashcard_reviews`, `user_daily_stats`), trigger PostgreSQL `on_auth_user_created`, `profileSync.ts` đồng bộ hồ sơ/streak/điểm thi, tầng cô lập dữ liệu đa tài khoản theo User ID (`userStorage.ts`), dọn dẹp sạch sẽ `localStorage` khi đăng xuất, và Client optimistic UI buffer.
-- [x] Master AI Gateway: Tích hợp OpenRouter, Ollama Cloud và Google AI Studio với Key Pool rotation, Settings UI chẩn đoán độ trễ Ping (ms) & Dev override, tính năng Test Connection health check, cô lập hạn mức 5 lượt/ngày theo từng tài khoản (`vstep_${userId}_ai_daily_quota_v1`), và `AIServiceAdapter` xử lý fallback.
+- [x] Master AI Gateway: Tích hợp OpenRouter, Ollama Cloud và Google AI Studio với Key Pool rotation, bảng chẩn đoán Dev Console chuyên biệt (`/dev`) kiểm tra độ trễ Ping (ms) & Dev override, tính năng Test Connection health check, cô lập hạn mức 5 lượt/ngày theo từng tài khoản (`vstep_${userId}_ai_daily_quota_v1`), và `AIServiceAdapter` xử lý fallback.
+- [x] Hợp nhất Cài đặt & Hồ sơ Người học (`/profile`): Gom toàn bộ thông tin tài khoản, hạn mức AI hàng ngày (`QuotaUsageCard`), cài đặt nhắc nhở SRS (`ReminderSettingsModal`), trạng thái PWA và lối tắt bảng điều khiển nhà phát triển vào một trang duy nhất. Redirect `/settings` -> `/profile`.
 - [x] Cấu hình PWA: Web App Manifest (Standalone Mode), Service Worker cache tĩnh App Shell/font/assets, và chuẩn hóa thứ tự kỹ năng toàn app (Listening → Reading → Writing → Speaking).
 
 ### Module Flashcard SRS Cốt lõi (Curated VSTEP SRS)
@@ -24,6 +25,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
   - [x] Đợt 1 (Listening): Mở rộng từ 1.500 lên 2.000 từ (+500 từ) từ 7 Authentic Mock Tests & 15 HCMUE Drills (`scripts/mine_listening_vocab.mjs`)
   - [x] Đợt 2 (Reading): Mở rộng từ 2.000 lên 2.500 từ (+500 từ) từ 48 bài đọc VSTEP Reading (28 ULIS + 20 HCMUE, `scripts/mine_reading_vocab.mjs`)
   - [x] Đợt 3 (Writing & Speaking): Mở rộng từ 2.500 lên 3.000 từ (+500 từ) từ 14 đề ULIS Writing/Speaking, Writing Bank & Speaking Bank (`scripts/mine_productive_vocab.mjs`)
+- [x] Bộ lọc cấp độ CEFR Flashcard: Tích hợp chọn cấp độ ('Tất cả', 'B1', 'B2', 'C1') kết hợp cùng 8 chủ đề, và đồng bộ thống nhất toàn bộ copy kho từ vựng 3.000 từ trên toàn hệ thống.
 
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)
 - [x] Hạ tầng Kiểm thử & Triển khai: Unit tests Vitest, Pre-push pipeline tự động (`scripts/prepush.mjs`), CI/CD GitHub Actions (`.github/workflows/ci.yml`), kịch bản tự động hóa database migration (`scripts/migrate.mjs`), và triển khai Production Cloudflare Pages (`vstep.pages.dev`).
@@ -54,8 +56,8 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Tùy chỉnh hiển thị: Chỉnh cỡ chữ (14px–22px), giãn dòng (1.5x, 1.8x, 2.0x), và 3 chế độ nền (Warm Sepia, Obsidian Dark, Cream Light) lưu trữ theo tài khoản
 
 ### Tra từ Nhanh (1-Tap Dictionary Tooltip)
-- [x] Nhấn/chạm đúp vào từ tiếng Anh trong bài đọc hiển thị tooltip tra nghĩa tiếng Việt tức thì
-- [x] Hỗ trợ tra từ 2 tầng: Tầng 1 offline tra tức thì 2.000 từ VSTEP Core (`dictionaryVi.ts`) + Tầng 2 fallback qua MyMemory API hiển thị nghĩa tiếng Việt (không ghi rác vào hàng đợi SRS)
+- [x] Nhấn/chạm vào từ tiếng Anh trong bài đọc hiển thị tooltip tra nghĩa tiếng Việt tức thì; trên mobile hỗ trợ chạm 1 chạm tức thì (coordinate point resolution qua `caretPositionFromPoint` / `caretRangeFromPoint` kết hợp `touch-action: manipulation`) loại bỏ hoàn toàn xung đột menu hệ điều hành
+- [x] Hỗ trợ tra từ 2 tầng: Tầng 1 offline tra tức thì 3.000 từ VSTEP Core (`dictionaryVi.ts`) + Tầng 2 fallback qua MyMemory API hiển thị nghĩa tiếng Việt (không ghi rác vào hàng đợi SRS)
 
 ### Phân loại Dạng Câu hỏi, Highlight Dẫn chứng & Cấu trúc Dữ liệu
 - [x] Phân loại các dạng câu hỏi đọc hiểu: Main Idea, Vocab in Context, Factual Details, Negative Fact, Inference, Author Attitude, Sentence Insertion (`[A]-[D]`)

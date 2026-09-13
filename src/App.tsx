@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router';
+import { Routes, Route, Navigate } from 'react-router';
 import { Layout } from './components/Layout';
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
 import { LoginPage } from './pages/LoginPage';
@@ -11,8 +11,8 @@ import { WritingStudioPage } from './features/writing/WritingStudioPage';
 import { SpeakingStudioPage } from './features/speaking/SpeakingStudioPage';
 import { FlashcardPage } from './features/flashcard/FlashcardPage';
 import { MockTestPage } from './pages/MockTestPage';
-import { SettingsPage } from './pages/SettingsPage';
 import { ProfilePage } from './pages/ProfilePage';
+import { DeveloperSettingsPage } from './pages/DeveloperSettingsPage';
 
 export const App: React.FC = () => {
   return (
@@ -28,8 +28,9 @@ export const App: React.FC = () => {
           <Route path="/practice/speaking" element={<SpeakingStudioPage />} />
           <Route path="/flashcard" element={<FlashcardPage />} />
           <Route path="/mock-test" element={<MockTestPage />} />
-          <Route path="/settings" element={<SettingsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/settings" element={<Navigate to="/profile" replace />} />
+          <Route path="/dev" element={<DeveloperSettingsPage />} />
         </Route>
       </Route>
     </Routes>

@@ -89,7 +89,7 @@ export const SkillPracticePage: React.FC = () => {
       <div className="card-surface" style={{ padding: 'var(--space-5)', background: 'var(--bg-subtle)' }}>
         <h3 style={{ fontSize: 'var(--fs-md)', fontWeight: 700, marginBottom: 'var(--space-1)' }}>Cần củng cố từ vựng trước?</h3>
         <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', marginBottom: 'var(--space-3)' }}>
-          Học từ vựng theo phương pháp Spaced Repetition giúp bạn nắm vững 1.500 từ vựng VSTEP trước khi vào giải đề.
+          Học từ vựng theo phương pháp Spaced Repetition giúp bạn nắm vững 3.000 từ vựng VSTEP (B1–B2–C1) trước khi vào giải đề.
         </p>
         <Link to="/flashcard" className="badge badge-primary" style={{ padding: '8px 16px', fontSize: 'var(--fs-xs)', fontWeight: 700 }}>
           Đến phòng Flashcard SRS →
