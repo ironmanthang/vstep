@@ -13,10 +13,10 @@ Hệ thống sử dụng Master API Key Gateway chuẩn hóa trên mô hình **`
 
 ```typescript
 interface AIProviderConfig {
-  provider: "google_ai_studio" | "openrouter" | "ollama_cloud" | "ollama_local";
+  provider: "google_ai_studio" | "openrouter" | "ollama_cloud" | "ollama_local" | "groq";
   apiKey?: string;
   baseUrl?: string;
-  modelName: string; // Mặc định: 'gemini-3.5-flash-lite'
+  modelName: string; // Mặc định: 'gemini-3.5-flash-lite' hoặc 'whisper-large-v3-turbo'
 }
 
 interface AICompletionRequest {
@@ -26,10 +26,22 @@ interface AICompletionRequest {
   temperature?: number; // Mặc định 0.1
   responseSchema?: object; // JSON Schema định dạng đầu ra
 }
+
+interface AudioTranscriptionResult {
+  text: string;
+  duration?: number;
+  language?: string;
+  segments?: {
+    start: number;
+    end: number;
+    text: string;
+  }[];
+}
 ```
 
 - **Giao thức Chuẩn hóa**: Ánh xạ tất cả request chấm Writing/Speaking về interface đồng nhất, tự động chuyển đổi payload sang SDK Google GenAI hoặc REST API.
-- **Quản lý Master Key Pool**: Hệ thống quản lý danh sách Master API Key từ nhà phát triển, hỗ trợ xoay vòng key khi bị giới hạn tốc độ (Rate Limit 429) và tự động ghi nhận trạng thái hoạt động của từng key.
+- **Groq Whisper ASR Adapter (`src/services/ai/adapters/groqWhisper.ts`)**: Cung cấp adapter chuyển mã âm thanh chuyên dụng dựa trên mô hình `whisper-large-v3-turbo` qua Groq Cloud Audio API (`verbose_json`), bóc tách transcript với độ trễ dưới 1s.
+- **Quản lý Master Key Pool (`src/services/ai/masterKeys.ts`)**: Quản lý xoay vòng key tự động (Key Pool Rotation) cho cả Google AI Studio, OpenRouter, Ollama Cloud và Groq (`VITE_GROQ_API_KEYS`, `VITE_GROQ_API_KEY`, `GROQ_API_KEY`). Tự động bỏ qua key gặp lỗi Rate Limit (HTTP 429) với thời gian chờ làm nguội 60s.
 - **Developer Overrides**: Màn hình Settings cung cấp bảng chẩn đoán trạng thái AI Gateway và tùy chọn cấu hình nâng cao (chọn model, API Key tùy chỉnh) dành cho nhà phát triển.
 
 ## Kiểm tra Kết nối (Health Check & Diagnostics)

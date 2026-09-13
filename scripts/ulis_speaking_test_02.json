@@ -1,0 +1,80 @@
+{
+  "id": "ulis_spk_test_02",
+  "test_number": 2,
+  "title": "ULIS Authentic VSTEP Speaking Test 02",
+  "part1": {
+    "title": "Social Interaction",
+    "duration_minutes": 3,
+    "topics": [
+      {
+        "topic_name": "Hometown",
+        "topic_name_vi": "Quê hương",
+        "questions": [
+          "When is the best time to come to your hometown? Why?",
+          "What do you like best about your hometown?",
+          "Do you think your hometown is the best place to grow up? Why?/ Why not?"
+        ]
+      },
+      {
+        "topic_name": "Best Friend",
+        "topic_name_vi": "Bạn thân",
+        "questions": [
+          "What does your best friend look like?",
+          "How did you meet your best friend?",
+          "In your opinion, what is the best quality of a good friend?"
+        ]
+      }
+    ],
+    "sample_response": {
+      "band": "B1",
+      "text": "It is in spring as you can see flowers everywhere and the weather is pleasant. I like the people best because they are friendly, kind and hardworking. Certainly. It is peaceful and full of love from my family and friends. When I was 10, I moved to HCM City to live. She was my neighbor. He or she must be honest, sociable and reliable",
+      "analysis_vi": "Các câu trả lời ngắn gọn, trực tiếp vào trọng tâm câu hỏi, sử dụng từ vựng và ngữ pháp cơ bản phù hợp với trình độ B1."
+    }
+  },
+  "part2": {
+    "title": "Solution Discussion",
+    "duration_minutes": 4,
+    "situation": "Your friends are going to have a party. Where and when should they have the party?",
+    "options": [
+      {
+        "key": "Option 1",
+        "title": "At home",
+        "description": "Have the party at home"
+      },
+      {
+        "key": "Option 2",
+        "title": "At a restaurant",
+        "description": "Have the party at a restaurant"
+      },
+      {
+        "key": "Option 3",
+        "title": "Outdoors",
+        "description": "Have the party outdoors"
+      }
+    ],
+    "sample_response": {
+      "band": "B1",
+      "text": "ABC restaurant is the best choice. It is located downtown. It is spacious, clean and beautiful. Furthermore, the food is tasty and diverse. The service is good and the price is reasonable.",
+      "analysis_vi": "Bài nói đưa ra một lựa chọn cụ thể và cung cấp từ 3-4 lý do hỗ trợ rõ ràng (vị trí, không gian, đồ ăn, dịch vụ, giá cả) đúng chuẩn định hướng B1."
+    }
+  },
+  "part3": {
+    "title": "Topic Development",
+    "duration_minutes": 5,
+    "topic": "Describe an activity you like to do in your free time",
+    "mindmap_ideas": [
+      "What the activity is",
+      "When and where you do it",
+      "Who you do it with and why you like it"
+    ],
+    "follow_up_questions": [
+      "Why do people need to have free time?",
+      "Do you think people nowadays have more free time than in the past?"
+    ],
+    "sample_response": {
+      "band": "B1",
+      "text": "In my free time, I often play sports. I play football with my friends at the weekend. We play at the stadium near my house. It not only improves my health but also helps me relax",
+      "analysis_vi": "Bài phát triển chủ đề mở đầu bằng một câu định hướng rõ ràng, triển khai chi tiết hoạt động (chơi bóng đá cùng bạn bè vào cuối tuần tại sân gần nhà) và nêu được lợi ích."
+    }
+  }
+}

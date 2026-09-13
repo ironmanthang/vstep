@@ -2,7 +2,7 @@ import type { MockTest } from '../../types/schemas';
 import { VSTEP_LISTENING_MOCK_TEST_05 } from '../../features/listening/data';
 import { ULIS_READING_TEST_05 } from '../../features/reading/data';
 import { ULIS_WRITING_TEST_05_TASK1, ULIS_WRITING_TEST_05_TASK2 } from '../../features/writing/data';
-import { SPEAKING_EXAM_MAY_24 } from '../../features/speaking/data';
+import { ULIS_SPEAKING_TEST_05 } from '../../features/speaking/data';
 
 export const VSTEP_MOCK_TEST_05: MockTest = {
   id: 'vstep_mock_test_05',
@@ -16,5 +16,5 @@ export const VSTEP_MOCK_TEST_05: MockTest = {
     task1: ULIS_WRITING_TEST_05_TASK1,
     task2: ULIS_WRITING_TEST_05_TASK2,
   },
-  speaking: SPEAKING_EXAM_MAY_24,
+  speaking: ULIS_SPEAKING_TEST_05,
 };

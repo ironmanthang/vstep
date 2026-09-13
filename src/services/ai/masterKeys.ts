@@ -45,6 +45,18 @@ class KeyPoolManager {
     this.pools.set('google_ai_studio', Array.from(new Set(googleKeys)));
     this.currentIndex.set('google_ai_studio', 0);
 
+    // Groq pool (Whisper ASR)
+    const procEnv = typeof globalThis !== 'undefined' && 'process' in globalThis
+      ? (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env
+      : undefined;
+    const groqKeys = [
+      ...parseKeyPool(env.VITE_GROQ_API_KEYS),
+      ...parseKeyPool(env.VITE_GROQ_API_KEY),
+      ...parseKeyPool(procEnv?.GROQ_API_KEY),
+    ];
+    this.pools.set('groq', Array.from(new Set(groqKeys)));
+    this.currentIndex.set('groq', 0);
+
     // Local Ollama doesn't require keys
     this.pools.set('ollama_local', ['']);
     this.currentIndex.set('ollama_local', 0);

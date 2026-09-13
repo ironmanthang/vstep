@@ -1,0 +1,309 @@
+/* Speaking Evaluation Result Modal - Side-by-Side 3-Way Comparative View */
+
+.speaking-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 16px;
+}
+
+.speaking-modal-card {
+  background: var(--bg-surface, #181512);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
+  border-radius: 16px;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  color: var(--text-primary, #f5f0eb);
+}
+
+/* Header */
+.speaking-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+}
+
+.speaking-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.speaking-score-badge {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: rgba(239, 68, 68, 0.15);
+  border: 2px solid #ef4444;
+  color: #ef4444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.speaking-score-badge.passed {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: #10b981;
+  color: #10b981;
+}
+
+.speaking-score-number {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.speaking-score-label {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.speaking-header-info h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.speaking-meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.speaking-tag {
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-secondary, #a8a29e);
+}
+
+.speaking-tag.pass {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+
+.speaking-tag.fail {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.speaking-modal-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary, #a8a29e);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.speaking-modal-close-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Part Tabs */
+.speaking-part-nav {
+  display: flex;
+  background: rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+}
+
+.speaking-part-nav-btn {
+  flex: 1;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-secondary, #a8a29e);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.speaking-part-nav-btn.active {
+  color: #f59e0b;
+  border-bottom-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.05);
+}
+
+.speaking-nav-score-pill {
+  font-size: 11px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+/* Modal Body */
+.speaking-modal-body {
+  padding: 20px 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 4 Criteria Grid */
+.speaking-criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .speaking-criteria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.speaking-criterion-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.06));
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.speaking-criterion-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.speaking-criterion-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary, #a8a29e);
+}
+
+.speaking-criterion-score {
+  font-size: 14px;
+  font-weight: 800;
+  color: #f59e0b;
+}
+
+.speaking-criterion-desc {
+  margin: 0;
+  font-size: 11.5px;
+  color: var(--text-secondary, #d1d5db);
+  line-height: 1.4;
+}
+
+/* Action Items Box */
+.speaking-action-box {
+  background: rgba(245, 158, 11, 0.05);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.speaking-action-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: #f59e0b;
+  margin: 0 0 8px 0;
+}
+
+.speaking-action-list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--text-primary, #f5f0eb);
+}
+
+/* 3-Way Comparative View */
+.speaking-comparative-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.speaking-subview-nav {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  padding-bottom: 8px;
+}
+
+.speaking-subview-btn {
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 6px;
+  color: var(--text-secondary, #a8a29e);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.speaking-subview-btn.active {
+  background: #f59e0b;
+  color: #000;
+  border-color: #f59e0b;
+}
+
+.speaking-subview-content {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.06));
+  border-radius: 10px;
+  padding: 16px;
+  min-height: 140px;
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+/* Phonetic Errors Table */
+.speaking-phonetic-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.speaking-phonetic-table th {
+  text-align: left;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-secondary, #a8a29e);
+  font-size: 11.5px;
+  text-transform: uppercase;
+}
+
+.speaking-phonetic-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.speaking-phonetic-word {
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.speaking-phonetic-ipa {
+  font-family: monospace;
+  color: #60a5fa;
+}

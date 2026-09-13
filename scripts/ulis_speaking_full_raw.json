@@ -1,0 +1,526 @@
+{
+  "1": {
+    "id": "ulis_spk_test_01",
+    "test_number": 1,
+    "title": "ULIS Authentic VSTEP Speaking Test 01",
+    "part1": {
+      "title": "SOCIAL INTERACTION",
+      "duration_minutes": 3,
+      "topics": [
+        {
+          "topic_name": "Games and Sports",
+          "topic_name_vi": "Trò chơi và Thể thao",
+          "questions": [
+            "Which indoor games do you play regularly?",
+            "Which indoor games are common in your hometown?",
+            "Do you take part in any outdoor sports regularly? (Which?)"
+          ]
+        },
+        {
+          "topic_name": "Keeping Fit",
+          "topic_name_vi": "Giữ gìn vóc dáng / Sức khỏe",
+          "questions": [
+            "How often do you do any exercise?",
+            "Do you prefer to exercise alone or in a class? Why?",
+            "What do you think is the best type of exercise? Why?"
+          ]
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "I often play table tennis, do yoga, and dance. People in my hometown often do Yoga and Gym. Yes. I play badminton with my husband in the park near my house every day. Every morning, it's really good for our health. I like to exercise in a class. It would be fun if we do exercise with friends. It must be yoga as it not only improve our health but also prevent diseases",
+        "analysis_vi": "Các câu trả lời sử dụng từ vựng và ngữ pháp cơ bản, trả lời trực tiếp đúng trọng tâm câu hỏi, đạt chuẩn mức độ B1."
+      }
+    },
+    "part2": {
+      "title": "SOLUTION DISCUSSION",
+      "duration_minutes": 4,
+      "situation": "Should we learn English in a foreign English centre or in a Vietnamese center?",
+      "options": [
+        {
+          "key": "Option 1",
+          "title": "Foreign English centre",
+          "description": "Learn with native speakers and international environment"
+        },
+        {
+          "key": "Option 2",
+          "title": "Vietnamese center",
+          "description": "Learn with Vietnamese teachers and local students"
+        },
+        {
+          "key": "Option 3",
+          "title": "Online learning",
+          "description": "Learn flexibility through online platforms"
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "Learning English in a foreign centre is much better as we can learn with native speakers. They speak English perfectly. They have good method of teaching and they know how to inspire students to learn English.",
+        "analysis_vi": "Đưa ra lựa chọn rõ ràng kèm theo các lý do giải thích cơ bản, mạch lạc, phù hợp tiêu chí B1."
+      }
+    },
+    "part3": {
+      "title": "TOPIC",
+      "duration_minutes": 5,
+      "topic": "Describe a person who has strong influence on you",
+      "mindmap_ideas": [
+        "Who the person is",
+        "How you know this person",
+        "What influence this person has on you"
+      ],
+      "follow_up_questions": [
+        "What qualities should a good role model have?",
+        "Do you think children are easily influenced by famous people?"
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "It must be my mother. She is 60 years old. She is a farmer but she is so important to me. She taught me how to speak, how to walk, how to behave and how to enjoy life. Whenever I need help, she is willing to help me. She is my everything",
+        "analysis_vi": "Phát triển chủ đề xoay quanh nhân vật người mẹ, giới thiệu thông tin cơ bản và nêu rõ các ảnh hưởng tích cực đến người nói."
+      }
+    }
+  },
+  "2": {
+    "id": "ulis_spk_test_02",
+    "test_number": 2,
+    "title": "ULIS Authentic VSTEP Speaking Test 02",
+    "part1": {
+      "title": "Social Interaction",
+      "duration_minutes": 3,
+      "topics": [
+        {
+          "topic_name": "Hometown",
+          "topic_name_vi": "Quê hương",
+          "questions": [
+            "When is the best time to come to your hometown? Why?",
+            "What do you like best about your hometown?",
+            "Do you think your hometown is the best place to grow up? Why?/ Why not?"
+          ]
+        },
+        {
+          "topic_name": "Best Friend",
+          "topic_name_vi": "Bạn thân",
+          "questions": [
+            "What does your best friend look like?",
+            "How did you meet your best friend?",
+            "In your opinion, what is the best quality of a good friend?"
+          ]
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "It is in spring as you can see flowers everywhere and the weather is pleasant. I like the people best because they are friendly, kind and hardworking. Certainly. It is peaceful and full of love from my family and friends. When I was 10, I moved to HCM City to live. She was my neighbor. He or she must be honest, sociable and reliable",
+        "analysis_vi": "Các câu trả lời ngắn gọn, trực tiếp vào trọng tâm câu hỏi, sử dụng từ vựng và ngữ pháp cơ bản phù hợp với trình độ B1."
+      }
+    },
+    "part2": {
+      "title": "Solution Discussion",
+      "duration_minutes": 4,
+      "situation": "Your friends are going to have a party. Where and when should they have the party?",
+      "options": [
+        {
+          "key": "Option 1",
+          "title": "At home",
+          "description": "Have the party at home"
+        },
+        {
+          "key": "Option 2",
+          "title": "At a restaurant",
+          "description": "Have the party at a restaurant"
+        },
+        {
+          "key": "Option 3",
+          "title": "Outdoors",
+          "description": "Have the party outdoors"
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "ABC restaurant is the best choice. It is located downtown. It is spacious, clean and beautiful. Furthermore, the food is tasty and diverse. The service is good and the price is reasonable.",
+        "analysis_vi": "Bài nói đưa ra một lựa chọn cụ thể và cung cấp từ 3-4 lý do hỗ trợ rõ ràng (vị trí, không gian, đồ ăn, dịch vụ, giá cả) đúng chuẩn định hướng B1."
+      }
+    },
+    "part3": {
+      "title": "Topic Development",
+      "duration_minutes": 5,
+      "topic": "Describe an activity you like to do in your free time",
+      "mindmap_ideas": [
+        "What the activity is",
+        "When and where you do it",
+        "Who you do it with and why you like it"
+      ],
+      "follow_up_questions": [
+        "Why do people need to have free time?",
+        "Do you think people nowadays have more free time than in the past?"
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "In my free time, I often play sports. I play football with my friends at the weekend. We play at the stadium near my house. It not only improves my health but also helps me relax",
+        "analysis_vi": "Bài phát triển chủ đề mở đầu bằng một câu định hướng rõ ràng, triển khai chi tiết hoạt động (chơi bóng đá cùng bạn bè vào cuối tuần tại sân gần nhà) và nêu được lợi ích."
+      }
+    }
+  },
+  "3": {
+    "id": "ulis_spk_test_03",
+    "test_number": 3,
+    "title": "ULIS Authentic VSTEP Speaking Test 03",
+    "part1": {
+      "title": "Social Interaction",
+      "duration_minutes": 3,
+      "topics": [
+        {
+          "topic_name": "Holiday",
+          "topic_name_vi": "Kỳ nghỉ",
+          "questions": [
+            "What did you do on your last holiday?",
+            "Who do you prefer spending your holiday with? Relatives or friends?",
+            "Do you prefer going on holiday abroad?"
+          ]
+        },
+        {
+          "topic_name": "TV programmes",
+          "topic_name_vi": "Chương trình truyền hình",
+          "questions": [
+            "How many hours a day do you watch television?",
+            "Which programmes do you like?",
+            "Do you prefer watching television alone or with other people? Why?"
+          ]
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "1. What did you do on your last holiday? - I went to Halong Bay.\n2. Who do you prefer spending your holiday with? Relatives or friends? - With my friends. I have more fun\n3. Do you prefer going on holiday abroad? - No. It's too expensive\n4. How many hours a day do you watch television? - For about two hours\n5. Which programmes do you like? - I like films most\n6. Do you prefer watching television alone or with other people? Why? - With other people because I can share with them anything about what I am watching",
+        "analysis_vi": "Cầu trả lời trực tiếp, rõ ràng, sử dụng từ vựng và cấu trúc ngữ pháp cơ bản phù hợp với trình độ B1."
+      }
+    },
+    "part2": {
+      "title": "Solution Discussion",
+      "duration_minutes": 4,
+      "situation": "If you won the lottery of 1 billion VND, what would you do with the money?",
+      "options": [
+        {
+          "key": "Option 1",
+          "title": "Buy a new house.",
+          "description": "Buy a new house."
+        },
+        {
+          "key": "Option 2",
+          "title": "Start a business.",
+          "description": "Start a business."
+        },
+        {
+          "key": "Option 3",
+          "title": "Deposit the money in the bank.",
+          "description": "Deposit the money in the bank."
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "I would start a business as I have always wanted to have my own shop. I really like fashion so I will open a clothes shop. I think I would get a lot of experience of being a saleswoman and I would be able to get a lot of money",
+        "analysis_vi": "Thí sinh đã chọn được 1 phương án (start a business), đưa ra lý do cụ thể và giải thích rõ ràng mạch lạc."
+      }
+    },
+    "part3": {
+      "title": "Topic Development",
+      "duration_minutes": 5,
+      "topic": "Describe a popular holiday destination in your country.",
+      "mindmap_ideas": [
+        "Location and scenery",
+        "Things to do and see",
+        "Best time to visit"
+      ],
+      "follow_up_questions": [
+        "Why do you think this destination is so popular?",
+        "How has tourism changed this place over recent years?"
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "I am going to talk about Halong Bay. It is a popular holiday destination in Vietnam. It is very beautiful and famous. It is one of the seven wonders of the world. Here we can go sightseeing, climb mountains and eat seafood. Every year, millions of people come here to enjoy their holiday.",
+        "analysis_vi": "Phát triển chủ đề mạch lạc bằng cách giới thiệu địa điểm, mô tả đặc điểm nổi bật và các hoạt động có thể làm tại đây."
+      }
+    }
+  },
+  "4": {
+    "id": "ulis_spk_test_04",
+    "test_number": 4,
+    "title": "ULIS Authentic VSTEP Speaking Test 04",
+    "part1": {
+      "title": "Social Interaction",
+      "duration_minutes": 3,
+      "topics": [
+        {
+          "topic_name": "Birthday",
+          "topic_name_vi": "Sinh nhật",
+          "questions": [
+            "When is your birthday?",
+            "What do you usually do on your birthday?",
+            "What is your favourite family celebration? Why?"
+          ]
+        },
+        {
+          "topic_name": "Public transportation",
+          "topic_name_vi": "Giao thông công cộng",
+          "questions": [
+            "What is the best way to travel in your town/city?",
+            "What is your favourite means of transportation?",
+            "Do you think people should use public transportation more? Why? Why not?"
+          ]
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "1. It is June the first. 2. I have a small party with friends from my class. 3. My favourite family celebration is Tet holiday because all family members can gather together and eat delicious food.",
+        "analysis_vi": "Trả lời trực tiếp câu hỏi bằng các cấu trúc ngữ pháp cơ bản, từ vựng quen thuộc và có giải thích ngắn gọn, phù hợp với trình độ B1."
+      }
+    },
+    "part2": {
+      "title": "Solution Discussion",
+      "duration_minutes": 4,
+      "situation": "You have just received a sum of money from your father as a birthday present. How would you use the money?",
+      "options": [
+        {
+          "key": "A",
+          "title": "To buy a laptop for your study",
+          "description": "To buy a laptop for your study."
+        },
+        {
+          "key": "B",
+          "title": "To buy a fashionable smart phone",
+          "description": "To buy a fashionable smart phone."
+        },
+        {
+          "key": "C",
+          "title": "To save up for future",
+          "description": "To save up for future."
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "I would buy a laptop for my study as it is very necessary. I need it for my study and for my work. I don't need a fashionable smart phone.",
+        "analysis_vi": "Thí sinh đã lựa chọn rõ ràng một phương án và đưa ra lý do cơ bản để bảo vệ lựa chọn của mình (cần thiết cho học tập và công việc)."
+      }
+    },
+    "part3": {
+      "title": "Topic Development",
+      "duration_minutes": 5,
+      "topic": "Describe one of your friends",
+      "mindmap_ideas": [
+        "Who the person is",
+        "What she looks like",
+        "What you often do together"
+      ],
+      "follow_up_questions": [],
+      "sample_response": {
+        "band": "B1",
+        "text": "I am going to tell you about my best friend. She is Mai, 30 years old. She is married and has two children. She is a teacher for a high school in Hanoi. She is small but pretty and intelligent. In free time, we often go shopping and read books. She is a kind of person who is willing to help other people. I really like her",
+        "analysis_vi": "Bài nói bao quát đủ các gợi ý trong đề bài (giới thiệu ai, ngoại hình/tính cách, hoạt động thường làm cùng nhau) với các câu đơn và câu ghép cơ bản."
+      }
+    }
+  },
+  "5": {
+    "id": "ulis_spk_test_05",
+    "test_number": 5,
+    "title": "ULIS Authentic VSTEP Speaking Test 05",
+    "part1": {
+      "title": "SOCIAL INTERACTION",
+      "duration_minutes": 3,
+      "topics": [
+        {
+          "topic_name": "Music",
+          "topic_name_vi": "Âm nhạc",
+          "questions": [
+            "Do you like music? If yes, what kind of music do you like best? Why? If no, why not?",
+            "What is the most popular kind of music in your country?",
+            "How is music good or not good for people?"
+          ]
+        },
+        {
+          "topic_name": "English as a school subject",
+          "topic_name_vi": "Tiếng Anh là một môn học ở trường",
+          "questions": [
+            "Did you learn English at secondary school?",
+            "What do you think about how English is taught at school now?",
+            "In what ways has children's English much improved nowadays?"
+          ]
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "Yes, of course. I like pop music. It is popular and interesting. It is pop music. It is very good for people. It helps us relax. No, I didn't learn until high school. It is not very effective as there are too many students in each class. Children can speak English better than before.",
+        "analysis_vi": "Câu trả lời sử dụng từ vựng và cấu trúc ngữ pháp cơ bản, trả lời trực tiếp các câu hỏi về âm nhạc và môn tiếng Anh, đảm bảo phát triển ý ở mức độ B1."
+      }
+    },
+    "part2": {
+      "title": "SOLUTION DISCUSSION",
+      "duration_minutes": 4,
+      "situation": "If you have money to buy a car and a motorbike, which would you buy? Why?",
+      "options": [
+        {
+          "key": "Option A",
+          "title": "Car",
+          "description": "Buy a car"
+        },
+        {
+          "key": "Option B",
+          "title": "Motorbike",
+          "description": "Buy a motorbike"
+        },
+        {
+          "key": "Option C",
+          "title": "Both",
+          "description": "Buy both a car and a motorbike"
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "I would buy a car as it is very convenient. I can go with my whole family and I can go for a long distance in any kind of weather.",
+        "analysis_vi": "Thí sinh đã lựa chọn một phương án (mua ô tô) và đưa ra các lý do chính đáng (tiện lợi, đi được cả gia đình, đi xa trong mọi thời tiết) đúng theo yêu cầu phần Thảo luận giải pháp."
+      }
+    },
+    "part3": {
+      "title": "TOPIC",
+      "duration_minutes": 5,
+      "topic": "Describe your favourite TV program",
+      "mindmap_ideas": [
+        "What program it is?",
+        "What is it about?",
+        "Why do you like this program?"
+      ],
+      "follow_up_questions": [
+        "Do you prefer watching TV programs alone or with others?",
+        "What kinds of TV programs are popular in your country nowadays?"
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "My favorite TV program is 'Who is the millionaire?'. It is a game show, shown on VTV3. There are about 15 questions about every field in our life. The player can get 150 million Vietnam Dong if they can answer all these questions. This program is relaxing and useful as we can learn a lot of things from this program.",
+        "analysis_vi": "Bài nói mô tả chương trình truyền hình yêu thích, đề cập rõ tên chương trình, nội dung chính và lý do yêu thích, cấu trúc mạch lạc đạt chuẩn B1."
+      }
+    }
+  },
+  "6": {
+    "id": "ulis_spk_test_06",
+    "test_number": 6,
+    "title": "ULIS Authentic VSTEP Speaking Test 06",
+    "part1": {
+      "title": "Social Interaction",
+      "duration_minutes": 3,
+      "topics": [
+        {
+          "topic_name": "Hometown and Job",
+          "topic_name_vi": "Quê hương và Công việc",
+          "questions": [
+            "Where are you from?",
+            "How far is it from your hometown?",
+            "What do you like about your hometown?",
+            "What do you do?",
+            "Do you earn much money from your job?",
+            "Do you choose a job because if high salary or other things?"
+          ]
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "1. Where are you from? - I am from Hai Phong City.\n2. How far is it from your hometown? - It is about 70 kilometres from here.\n3. What do you like about your hometown? - I like the food and the people. We have seafood which is tasty and cheap. The people are friendly and helpful. They are willing to help you when you need.\n4. What do you do? - I am a doctor.\n5. Do you earn much money from your job? - No. But it is enough for my family to live here in Hanoi.\n6. Do you choose a job because if high salary or other things? - I choose the job that I like",
+        "analysis_vi": "Các câu trả lời ngắn gọn, rõ ràng, sử dụng từ vựng quen thuộc (friendly, helpful, tasty) và cấu trúc ngữ pháp cơ bản đạt chuẩn bậc 3 (B1)."
+      }
+    },
+    "part2": {
+      "title": "Solution Discussion",
+      "duration_minutes": 4,
+      "situation": "If you have $500, what phone would you buy?",
+      "options": [
+        {
+          "key": "Option 1",
+          "title": "Phone A",
+          "description": "Phone option 1"
+        },
+        {
+          "key": "Option 2",
+          "title": "Phone B",
+          "description": "Phone option 2"
+        },
+        {
+          "key": "Option 3",
+          "title": "Phone C",
+          "description": "Phone option 3"
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "If I have $500, I would buy an Iphone because it is reliable, fashionable and easy to use. It has the best security. It is the fact that today a big number of people in the world use Iphone",
+        "analysis_vi": "Bài nói đưa ra một lựa chọn cụ thể (mua iPhone với $500) và cung cấp các lý do đơn giản nhưng thuyết phục, đúng chuẩn cấu trúc giải quyết vấn đề B1."
+      }
+    },
+    "part3": {
+      "title": "Topic Development",
+      "duration_minutes": 5,
+      "topic": "Describe a means of public transport",
+      "mindmap_ideas": [
+        "What means of public transport it is",
+        "Where is it popular?",
+        "What do you like and dislike about it?"
+      ],
+      "follow_up_questions": [
+        "Why do people use public transport?",
+        "How to improve public transport in your city?"
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "Buses are very popular in big cities. People use buses to go to work or school. They are cheap, safe and convenient. However, they are dirty, noisy and smelly. Sometimes, it takes a lot of time to wait for the bus",
+        "analysis_vi": "Bài phát triển chủ đề đề cập đầy đủ các khía cạnh: loại phương tiện, nơi phổ biến, và nêu rõ các ưu điểm cũng như nhược điểm với từ vựng dễ hiểu."
+      }
+    }
+  },
+  "7": {
+    "id": "ulis_spk_test_07",
+    "test_number": 7,
+    "title": "ULIS Authentic VSTEP Speaking Test 07",
+    "part1": {
+      "title": "Social Interaction",
+      "duration_minutes": 3,
+      "topics": [
+        {
+          "topic_name": "Seasons and Sports",
+          "topic_name_vi": "Các mùa và thể thao",
+          "questions": [
+            "What season do you like best? Why?",
+            "Do you play sports?",
+            "How often do you play sports?",
+            "Why do you like sports?"
+          ]
+        }
+      ],
+      "sample_response": {
+        "band": "B1",
+        "text": "1. What season do you like best? Why? I autumn most because the weather is so pleasant. 2. Do you play sports? Yes, of course. I often play football. 3. How often do you play sports? I play sports every day, after work. 4. Why do you like sports? It is not only relaxing but also good for my health",
+        "analysis_vi": "Các câu trả lời sử dụng ngữ pháp và từ vựng đơn giản, quen thuộc, đủ ý đáp ứng các câu hỏi giao tiếp cơ bản."
+      }
+    },
+    "part2": {
+      "title": "Solution Discussion",
+      "duration_minutes": 4,
+      "situation": "One of your foreign friends wants to get to know one festival in Vietnam. Tell her one",
+      "options": [],
+      "sample_response": {
+        "band": "B1",
+        "text": "I am going to talk about Tet. It is the biggest festival in Vietnam. It is on the first days of the year. It is very important. All Vietnamese people come home and have Tet with their family. People often make Chung cake, clean and decorate the house. Children are the happiest because they have new clothes, eat good food and get a lot of lucky money.",
+        "analysis_vi": "Bài nói triển khai đúng trọng tâm yêu cầu đề bài (giới thiệu một lễ hội), sử dụng từ vựng phổ biến và các câu đơn, câu ghép ở mức B1."
+      }
+    },
+    "part3": {
+      "title": "Topic Development",
+      "duration_minutes": 5,
+      "topic": "Describe the activity you do when you have free time",
+      "mindmap_ideas": [
+        "What activity it is?",
+        "How often do you do it?",
+        "Why do you like this activity?"
+      ],
+      "follow_up_questions": [],
+      "sample_response": {
+        "band": "B1",
+        "text": "I am talking about the White House. It is located in Washing DC, the USA. It is painted white and it is the place where American presidents and their families live. It is equipped with the best facilities. It was designed and built in 1792. The construction took 8 years to complete",
+        "analysis_vi": "Bài phát triển chủ đề bám sát 3 gợi ý (What building it is, Where is it, What is special about it) bằng các cấu trúc câu rõ ràng, mạch lạc."
+      }
+    }
+  }
+}

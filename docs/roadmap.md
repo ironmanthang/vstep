@@ -53,11 +53,14 @@ Chất lượng, hiệu năng và kiểm thử không tổ chức thành giai đ
   - Tích hợp 7 đề thi authentic ULIS (`ulisWritingTest01.ts` – `07.ts`) kèm bài mẫu hội đồng khảo thí.
 
 ### Giai đoạn: Luyện Nói Tương tác (Interactive Speaking Studio)
-- **Trọng tâm**: Xây dựng Unified Speaking Runner (`mode: 'practice' | 'exam'`), Phòng thu đếm ngược 1p/2p kèm âm báo BEEP chuẩn Bộ GD&ĐT, Web Audio API acoustic metrics (WPM, khoảng lặng) và Gemini 3.5 Flash Lite Native Audio pipeline chấm 5 tiêu chí MOET.
+- **Trọng tâm**: Xây dựng Unified Speaking Runner (`mode: 'practice' | 'exam'`), Bộ đệm nhị phân Native IndexedDB (`audio_blobs`), Phòng thu đếm ngược 1p/3p kèm âm báo BEEP Web Audio API chuẩn Bộ GD&ĐT, Kiến trúc Hybrid ASR (Groq Whisper `whisper-large-v3-turbo` + Gemini 3.5 Flash Lite Multimodal Native Audio), sinh AI-Fixed B1 Speech và tích hợp 7 đề thi authentic ULIS.
 - **Tiêu chuẩn hoàn thành (Definition of Done)**:
-  - Ghi âm trình duyệt ổn định qua MediaRecorder trên các trình duyệt, xuất biểu đồ sóng âm thời gian thực.
-  - AI phản hồi kết quả chấm Speaking dưới 10 giây trực tiếp từ audio blob qua `gemini-3.5-flash-lite`.
-  - Xuất Radar Chart 5 trục, phonetic highlights từ phát âm sai và bài nói mẫu nâng band B2/C1.
+  - Ghi âm trình duyệt an toàn qua MediaRecorder MIME dynamic detection, xuất biểu đồ sóng âm thời gian thực trên Canvas.
+  - Lưu trữ audio nhị phân vào IndexedDB nguyên bản, ngăn chặn triệt để lỗi tràn hạn ngạch 5MB của localStorage.
+  - AI phản hồi kết quả chấm Speaking dưới 8 giây, tính toán tốc độ nói WPM từ transcript thực tế và đối chiếu barem 4 tiêu chí Quyết định 729/QĐ-BGDĐT làm tròn 0.5.
+  - Đối chiếu 3 chiều Side-by-Side: Bản ghi âm & Transcript học viên vs. AI-Fixed B1 Speech vs. Bài mẫu ULIS chính thức.
+  - Trích xuất và tích hợp trọn vẹn 7 Đề thi Nói Authentic ULIS (`ulisSpeakingTest01.ts` – `07.ts`) từ ấn phẩm "7 Vstep Tests B1-B2-C1 Full Key".
+  - Bộ kiểm thử 10 unit tests cho Tier 1 và Tier 3 pass 100%, pre-push verification pipeline hoàn tất không lỗi.
 
 ### Giai đoạn: Thi thử Thực chiến & Điều phối Phòng thi (Full Mock Test & Exam Orchestrator)
 - **Trọng tâm**: Xây dựng Mock Exam Orchestrator điều phối 4 Skill Runner liên hoàn 180 phút (`mode: 'exam'`), Question Palette 40 câu kèm Flag, khóa toàn bộ công cụ hỗ trợ và tự động thu bài.
@@ -74,5 +77,5 @@ Chất lượng, hiệu năng và kiểm thử không tổ chức thành giai đ
 | **M2: Assisted Listening Studio** | Unified Listening Runner (`practice` \| `exam`), Audio Player ±5s, Scratchpad, Inline Transcript | Đã hoàn thành |
 | **M3: Assisted Reading Studio** | Unified Reading Runner (`practice` \| `exam`), Split-Pane, 1-Tap Dict Tooltip, Highlights | Đã hoàn thành |
 | **M4: Scaffolded Writing & Vietlish AI** | Unified Writing Runner (`practice` \| `exam`), Editor auto-save, Pipeline chấm 3 tầng, Vietlish, AI-Fixed B1 | Đã hoàn thành |
-| **M5: Interactive Speaking Studio** | Unified Speaking Runner (`practice` \| `exam`), Countdown BEEP, Web Audio, Gemini 3.5 Flash Lite Native Audio | Sắp tới |
+| **M5: Interactive Speaking Studio** | Unified Speaking Runner (`practice` \| `exam`), Countdown BEEP, IndexedDB buffer, Hybrid Groq Whisper + Gemini Audio, AI-Fixed B1, 7 Authentic ULIS Tests | Đã hoàn thành |
 | **M6: Full Mock Test & Exam Orchestrator** | Mock Orchestrator 180p, Question Palette, Barem 0.5 MOET, Radar Chart | Sắp tới |

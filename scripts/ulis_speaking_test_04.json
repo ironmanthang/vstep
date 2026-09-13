@@ -1,0 +1,77 @@
+{
+  "id": "ulis_spk_test_04",
+  "test_number": 4,
+  "title": "ULIS Authentic VSTEP Speaking Test 04",
+  "part1": {
+    "title": "Social Interaction",
+    "duration_minutes": 3,
+    "topics": [
+      {
+        "topic_name": "Birthday",
+        "topic_name_vi": "Sinh nhật",
+        "questions": [
+          "When is your birthday?",
+          "What do you usually do on your birthday?",
+          "What is your favourite family celebration? Why?"
+        ]
+      },
+      {
+        "topic_name": "Public transportation",
+        "topic_name_vi": "Giao thông công cộng",
+        "questions": [
+          "What is the best way to travel in your town/city?",
+          "What is your favourite means of transportation?",
+          "Do you think people should use public transportation more? Why? Why not?"
+        ]
+      }
+    ],
+    "sample_response": {
+      "band": "B1",
+      "text": "1. It is June the first. 2. I have a small party with friends from my class. 3. My favourite family celebration is Tet holiday because all family members can gather together and eat delicious food.",
+      "analysis_vi": "Trả lời trực tiếp câu hỏi bằng các cấu trúc ngữ pháp cơ bản, từ vựng quen thuộc và có giải thích ngắn gọn, phù hợp với trình độ B1."
+    }
+  },
+  "part2": {
+    "title": "Solution Discussion",
+    "duration_minutes": 4,
+    "situation": "You have just received a sum of money from your father as a birthday present. How would you use the money?",
+    "options": [
+      {
+        "key": "A",
+        "title": "To buy a laptop for your study",
+        "description": "To buy a laptop for your study."
+      },
+      {
+        "key": "B",
+        "title": "To buy a fashionable smart phone",
+        "description": "To buy a fashionable smart phone."
+      },
+      {
+        "key": "C",
+        "title": "To save up for future",
+        "description": "To save up for future."
+      }
+    ],
+    "sample_response": {
+      "band": "B1",
+      "text": "I would buy a laptop for my study as it is very necessary. I need it for my study and for my work. I don't need a fashionable smart phone.",
+      "analysis_vi": "Thí sinh đã lựa chọn rõ ràng một phương án và đưa ra lý do cơ bản để bảo vệ lựa chọn của mình (cần thiết cho học tập và công việc)."
+    }
+  },
+  "part3": {
+    "title": "Topic Development",
+    "duration_minutes": 5,
+    "topic": "Describe one of your friends",
+    "mindmap_ideas": [
+      "Who the person is",
+      "What she looks like",
+      "What you often do together"
+    ],
+    "follow_up_questions": [],
+    "sample_response": {
+      "band": "B1",
+      "text": "I am going to tell you about my best friend. She is Mai, 30 years old. She is married and has two children. She is a teacher for a high school in Hanoi. She is small but pretty and intelligent. In free time, we often go shopping and read books. She is a kind of person who is willing to help other people. I really like her",
+      "analysis_vi": "Bài nói bao quát đủ các gợi ý trong đề bài (giới thiệu ai, ngoại hình/tính cách, hoạt động thường làm cùng nhau) với các câu đơn và câu ghép cơ bản."
+    }
+  }
+}

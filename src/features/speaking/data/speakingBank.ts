@@ -279,7 +279,10 @@ export const SPEAKING_EXAM_MAY_30: SpeakingTest = {
   },
 };
 
+import { ALL_ULIS_SPEAKING_TESTS } from './mockTests';
+
 export const ALL_SPEAKING_PRACTICE_TESTS: SpeakingTest[] = [
+  ...ALL_ULIS_SPEAKING_TESTS,
   SPEAKING_EXAM_MAY_30,
   SPEAKING_EXAM_MAY_24,
   SPEAKING_EXAM_MAY_20,

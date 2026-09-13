@@ -12,7 +12,7 @@ Mô-đun được đóng gói thành một `SpeakingRunner` duy nhất tiếp nh
   - Luyện tập từng Part riêng lẻ, cho phép chuẩn bị linh hoạt và ghi âm thử nhiều lần.
   - Nghe lại bản ghi âm trước khi nộp chấm điểm AI.
   - Tích hợp gợi ý khung câu trả lời chuẩn B1 cho từng Part (Part 1: Trực diện + 2 câu mở rộng; Part 2: Chọn 1 + 2 lý do + phản biện 2 phương án còn lại; Part 3: Khai triển 3 nhánh Mindmap).
-  - Chấm điểm AI một lượt (Single-shot Multimodal) qua `gemini-3.5-flash-lite` trong ~5-6 giây.
+  - Chấm điểm AI qua Kiến trúc Lai (Hybrid Architecture): Tự động chuyển mã âm thanh qua Groq Whisper `whisper-large-v3-turbo` khi có API key (độ trễ < 1s) hoặc trực tiếp qua `gemini-3.5-flash-lite` Multimodal Audio trong ~5-6 giây.
   - Sinh trực tiếp **AI-Fixed B1 Speech**: Viết lại bài nói của học viên thành phiên bản nói chuẩn B1 từ chính ý tưởng gốc, sửa sạch lỗi ngữ pháp và từ vựng, chỉ dẫn trọng âm và âm đuôi, giữ câu văn tự nhiên dễ nói.
   - Đối chiếu đa chiều: Bản ghi âm & Transcript học viên | Bài nói sửa B1 từ AI | Bài mẫu chính thức từ hội đồng khảo thí ULIS.
 - **Exam Mode (`mode: 'exam'`)**:

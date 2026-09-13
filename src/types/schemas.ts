@@ -222,6 +222,7 @@ export interface SpeakingEvaluationResult {
 
 export interface SpeakingTest {
   id: string;
+  test_number?: number;
   exam_date?: string;
   title: string;
   part1: {
@@ -232,6 +233,11 @@ export interface SpeakingTest {
       topic_name_vi?: string;
       questions: string[];
     }[];
+    sample_response?: {
+      band?: "B1" | "B2" | "C1";
+      text: string;
+      analysis_vi?: string;
+    };
   };
   part2: {
     title: string;
@@ -242,6 +248,11 @@ export interface SpeakingTest {
       title: string;
       description?: string;
     }[];
+    sample_response?: {
+      band?: "B1" | "B2" | "C1";
+      text: string;
+      analysis_vi?: string;
+    };
   };
   part3: {
     title: string;
@@ -249,6 +260,11 @@ export interface SpeakingTest {
     topic: string;
     mindmap_ideas: string[];
     follow_up_questions: string[];
+    sample_response?: {
+      band?: "B1" | "B2" | "C1";
+      text: string;
+      analysis_vi?: string;
+    };
   };
 }
 

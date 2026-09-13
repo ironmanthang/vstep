@@ -8,6 +8,7 @@ import { SkillPracticePage } from './pages/SkillPracticePage';
 import { ListeningStudioPage } from './features/listening/ListeningStudioPage';
 import { ReadingStudioPage } from './features/reading/ReadingStudioPage';
 import { WritingStudioPage } from './features/writing/WritingStudioPage';
+import { SpeakingStudioPage } from './features/speaking/SpeakingStudioPage';
 import { FlashcardPage } from './features/flashcard/FlashcardPage';
 import { MockTestPage } from './pages/MockTestPage';
 import { SettingsPage } from './pages/SettingsPage';
@@ -24,6 +25,7 @@ export const App: React.FC = () => {
           <Route path="/practice/listening" element={<ListeningStudioPage />} />
           <Route path="/practice/reading" element={<ReadingStudioPage />} />
           <Route path="/practice/writing" element={<WritingStudioPage />} />
+          <Route path="/practice/speaking" element={<SpeakingStudioPage />} />
           <Route path="/flashcard" element={<FlashcardPage />} />
           <Route path="/mock-test" element={<MockTestPage />} />
           <Route path="/settings" element={<SettingsPage />} />

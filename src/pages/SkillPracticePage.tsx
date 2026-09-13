@@ -35,9 +35,9 @@ export const SkillPracticePage: React.FC = () => {
       desc: 'Thu âm trình duyệt, đếm ngược BEEP chuẩn phòng thi, AI đánh giá phát âm và tốc độ nói WPM.',
       badge: '3 Phần Thu Âm',
       badgeColor: 'badge-emerald',
-      status: 'Sprint 3',
-      link: undefined,
-      cta: 'Đang hoàn thiện module →',
+      status: 'Sẵn Sàng Luyện',
+      link: '/practice/speaking',
+      cta: 'Vào phòng thu nói →',
     },
   ];
 

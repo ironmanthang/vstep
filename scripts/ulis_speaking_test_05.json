@@ -1,0 +1,80 @@
+{
+  "id": "ulis_spk_test_05",
+  "test_number": 5,
+  "title": "ULIS Authentic VSTEP Speaking Test 05",
+  "part1": {
+    "title": "SOCIAL INTERACTION",
+    "duration_minutes": 3,
+    "topics": [
+      {
+        "topic_name": "Music",
+        "topic_name_vi": "Âm nhạc",
+        "questions": [
+          "Do you like music? If yes, what kind of music do you like best? Why? If no, why not?",
+          "What is the most popular kind of music in your country?",
+          "How is music good or not good for people?"
+        ]
+      },
+      {
+        "topic_name": "English as a school subject",
+        "topic_name_vi": "Tiếng Anh là một môn học ở trường",
+        "questions": [
+          "Did you learn English at secondary school?",
+          "What do you think about how English is taught at school now?",
+          "In what ways has children's English much improved nowadays?"
+        ]
+      }
+    ],
+    "sample_response": {
+      "band": "B1",
+      "text": "Yes, of course. I like pop music. It is popular and interesting. It is pop music. It is very good for people. It helps us relax. No, I didn't learn until high school. It is not very effective as there are too many students in each class. Children can speak English better than before.",
+      "analysis_vi": "Câu trả lời sử dụng từ vựng và cấu trúc ngữ pháp cơ bản, trả lời trực tiếp các câu hỏi về âm nhạc và môn tiếng Anh, đảm bảo phát triển ý ở mức độ B1."
+    }
+  },
+  "part2": {
+    "title": "SOLUTION DISCUSSION",
+    "duration_minutes": 4,
+    "situation": "If you have money to buy a car and a motorbike, which would you buy? Why?",
+    "options": [
+      {
+        "key": "Option A",
+        "title": "Car",
+        "description": "Buy a car"
+      },
+      {
+        "key": "Option B",
+        "title": "Motorbike",
+        "description": "Buy a motorbike"
+      },
+      {
+        "key": "Option C",
+        "title": "Both",
+        "description": "Buy both a car and a motorbike"
+      }
+    ],
+    "sample_response": {
+      "band": "B1",
+      "text": "I would buy a car as it is very convenient. I can go with my whole family and I can go for a long distance in any kind of weather.",
+      "analysis_vi": "Thí sinh đã lựa chọn một phương án (mua ô tô) và đưa ra các lý do chính đáng (tiện lợi, đi được cả gia đình, đi xa trong mọi thời tiết) đúng theo yêu cầu phần Thảo luận giải pháp."
+    }
+  },
+  "part3": {
+    "title": "TOPIC",
+    "duration_minutes": 5,
+    "topic": "Describe your favourite TV program",
+    "mindmap_ideas": [
+      "What program it is?",
+      "What is it about?",
+      "Why do you like this program?"
+    ],
+    "follow_up_questions": [
+      "Do you prefer watching TV programs alone or with others?",
+      "What kinds of TV programs are popular in your country nowadays?"
+    ],
+    "sample_response": {
+      "band": "B1",
+      "text": "My favorite TV program is 'Who is the millionaire?'. It is a game show, shown on VTV3. There are about 15 questions about every field in our life. The player can get 150 million Vietnam Dong if they can answer all these questions. This program is relaxing and useful as we can learn a lot of things from this program.",
+      "analysis_vi": "Bài nói mô tả chương trình truyền hình yêu thích, đề cập rõ tên chương trình, nội dung chính và lý do yêu thích, cấu trúc mạch lạc đạt chuẩn B1."
+    }
+  }
+}

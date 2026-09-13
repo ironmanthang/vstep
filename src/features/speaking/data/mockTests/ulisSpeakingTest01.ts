@@ -1,0 +1,87 @@
+import type { SpeakingTest } from '../../../../types/schemas';
+
+/**
+ * Authentic ULIS VSTEP Speaking Test 01
+ * Sourced from "7 Vstep Tests B1-B2-C1 Full Key" (ULIS - ĐHQGHN, 2019)
+ */
+
+export const ULIS_SPEAKING_TEST_01: SpeakingTest = {
+  "id": "ulis_spk_test_01",
+  "test_number": 1,
+  "title": "ULIS Authentic VSTEP Speaking Test 01",
+  "part1": {
+    "title": "SOCIAL INTERACTION",
+    "duration_minutes": 3,
+    "topics": [
+      {
+        "topic_name": "Games and Sports",
+        "topic_name_vi": "Trò chơi và Thể thao",
+        "questions": [
+          "Which indoor games do you play regularly?",
+          "Which indoor games are common in your hometown?",
+          "Do you take part in any outdoor sports regularly? (Which?)"
+        ]
+      },
+      {
+        "topic_name": "Keeping Fit",
+        "topic_name_vi": "Giữ gìn vóc dáng / Sức khỏe",
+        "questions": [
+          "How often do you do any exercise?",
+          "Do you prefer to exercise alone or in a class? Why?",
+          "What do you think is the best type of exercise? Why?"
+        ]
+      }
+    ],
+    "sample_response": {
+      "band": "B1",
+      "text": "I often play table tennis, do yoga, and dance. People in my hometown often do Yoga and Gym. Yes. I play badminton with my husband in the park near my house every day. Every morning, it's really good for our health. I like to exercise in a class. It would be fun if we do exercise with friends. It must be yoga as it not only improve our health but also prevent diseases",
+      "analysis_vi": "Các câu trả lời sử dụng từ vựng và ngữ pháp cơ bản, trả lời trực tiếp đúng trọng tâm câu hỏi, đạt chuẩn mức độ B1."
+    }
+  },
+  "part2": {
+    "title": "SOLUTION DISCUSSION",
+    "duration_minutes": 4,
+    "situation": "Should we learn English in a foreign English centre or in a Vietnamese center?",
+    "options": [
+      {
+        "key": "Option 1",
+        "title": "Foreign English centre",
+        "description": "Learn with native speakers and international environment"
+      },
+      {
+        "key": "Option 2",
+        "title": "Vietnamese center",
+        "description": "Learn with Vietnamese teachers and local students"
+      },
+      {
+        "key": "Option 3",
+        "title": "Online learning",
+        "description": "Learn flexibility through online platforms"
+      }
+    ],
+    "sample_response": {
+      "band": "B1",
+      "text": "Learning English in a foreign centre is much better as we can learn with native speakers. They speak English perfectly. They have good method of teaching and they know how to inspire students to learn English.",
+      "analysis_vi": "Đưa ra lựa chọn rõ ràng kèm theo các lý do giải thích cơ bản, mạch lạc, phù hợp tiêu chí B1."
+    }
+  },
+  "part3": {
+    "title": "TOPIC",
+    "duration_minutes": 5,
+    "topic": "Describe a person who has strong influence on you",
+    "mindmap_ideas": [
+      "Who the person is",
+      "How you know this person",
+      "What influence this person has on you"
+    ],
+    "follow_up_questions": [
+      "What qualities should a good role model have?",
+      "Do you think children are easily influenced by famous people?"
+    ],
+    "sample_response": {
+      "band": "B1",
+      "text": "It must be my mother. She is 60 years old. She is a farmer but she is so important to me. She taught me how to speak, how to walk, how to behave and how to enjoy life. Whenever I need help, she is willing to help me. She is my everything",
+      "analysis_vi": "Phát triển chủ đề xoay quanh nhân vật người mẹ, giới thiệu thông tin cơ bản và nêu rõ các ảnh hưởng tích cực đến người nói."
+    }
+  }
+};

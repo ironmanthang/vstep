@@ -1,0 +1,100 @@
+/* Speaking Studio Page Styles */
+
+.speaking-studio-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.speaking-studio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+}
+
+.speaking-studio-mode-toggle {
+  display: flex;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+}
+
+.speaking-mode-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary, #a8a29e);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.speaking-mode-btn.active {
+  background: #f59e0b;
+  color: #000;
+}
+
+.speaking-edition-selector-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 4px 0;
+}
+
+.speaking-edition-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text-secondary, #a8a29e);
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+
+.speaking-edition-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  background: var(--bg-surface, #181512);
+  color: var(--text-secondary, #a8a29e);
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.speaking-edition-btn:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: var(--text-primary, #f5f0eb);
+}
+
+.speaking-edition-btn.active {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: #f59e0b;
+  color: #f59e0b;
+}
+
+.speaking-mic-check-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: var(--text-secondary, #a8a29e);
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.speaking-mic-check-btn:hover {
+  color: #10b981;
+  border-color: #10b981;
+}

@@ -1,7 +1,7 @@
 // TypeScript interfaces for VSTEP Master AI Service Layer
 // Standardized contract for OpenRouter, Ollama Cloud, and Google AI Studio
 
-export type AIProvider = 'openrouter' | 'ollama_cloud' | 'google_ai_studio' | 'ollama_local';
+export type AIProvider = 'openrouter' | 'ollama_cloud' | 'google_ai_studio' | 'ollama_local' | 'groq';
 
 export interface AIProviderConfig {
   provider: AIProvider;
@@ -25,6 +25,14 @@ export interface AICompletionResponse {
   parsedJson?: unknown;
   providerUsed: AIProvider;
   modelUsed: string;
+  latencyMs: number;
+}
+
+export interface AudioTranscriptionResult {
+  text: string;
+  duration?: number;
+  words?: Array<{ word: string; start: number; end: number }>;
+  providerUsed: AIProvider;
   latencyMs: number;
 }
 

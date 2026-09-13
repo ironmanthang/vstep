@@ -16,12 +16,11 @@
 - **Âm hiệu BEEP chuẩn phòng máy Bộ GD&ĐT**:
   - Tự động sinh âm báo BEEP (800Hz / 200ms) bằng Web Audio API `OscillatorNode` độc lập, không phụ thuộc file MP3 tĩnh ngoài mạng.
 
-### Tầng 2: Single-Shot Multimodal AI Evaluation (`gemini-3.5-flash-lite`, Strict JSON Schema)
-- **Mô hình & Cấu hình**: Chuẩn hóa trên `gemini-3.5-flash-lite` qua Google AI Studio REST API với `inlineData: { mimeType, data: base64 }`, `temperature = 0.1`.
-- **Triết lý Single-Shot (Không dùng Dual-Call Transcribe trung gian)**:
-  - Không phân tách thành 2 lượt gọi (Transcribe $\rightarrow$ Grade) nhằm tránh nhân đôi độ trễ (lên tới 8-12s), tiêu hao hạn ngạch 15 RPM và tạo thêm điểm lỗi (point of failure).
-  - VSTEP Speaking là bài thi độc thoại (Monologue), tính năng Speaker Diarization là dư thừa.
-  - `gemini-3.5-flash-lite` tiếp nhận trực tiếp file âm thanh nguyên bản, đồng thời bóc tách transcript, phân tích âm học (trọng âm, phụ âm đuôi, ngữ điệu) và trả về kết quả trong ~5-6s.
+### Tầng 2: Hybrid AI Evaluation (Pluggable Groq Whisper ASR + Gemini Multimodal Native Audio)
+- **Kiến trúc Lai (Option C: Hybrid Architecture)**:
+  - **Nhánh 1 (Default khi có Groq API Key)**: Audio Blob được chuyển mã siêu tốc (< 1s) qua Groq Cloud `whisper-large-v3-turbo` (`verbose_json`), trả về transcript chính xác kèm word-level timestamps. Bản bóc tách transcript kết hợp cùng chỉ số âm học Client (thời lượng nói, WPM, khoảng lặng) sau đó được chuyển đến `gemini-3.5-flash-lite` để chấm 4 tiêu chí MOET và sinh bài nói sửa B1.
+  - **Nhánh 2 (Zero-dependency Fallback)**: Khi không cấu hình Groq Key, hệ thống tự động fallback sang Single-shot Multimodal Audio trực tiếp trên `gemini-3.5-flash-lite` với `inlineData: { mimeType, data: base64 }`, `temperature = 0.1` trong ~5-6s.
+  - Bộ điều phối: `src/features/speaking/services/speakingTranscriber.ts`.
 - **Chuẩn hóa Bậc 3 (B1 Pass Gate)**:
   - Đánh giá theo 4 tiêu chí Quyết định 729/QĐ-BGDĐT: Pronunciation (25%), Fluency & Coherence (25%), Grammar & Vocabulary (25%), Task Fulfillment (25%).
   - Chấp nhận tốc độ nói vừa phải (90 - 120 WPM), ngập ngừng ngắn khi tìm từ, và các lỗi phát âm nhỏ không làm cản trở việc truyền tải ý chính.

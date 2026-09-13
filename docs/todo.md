@@ -104,25 +104,25 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 ## SPRINT: LUYỆN NÓI TƯƠNG TÁC (INTERACTIVE SPEAKING STUDIO)
 
 ### Kiến trúc Unified Speaking Runner & Phòng thu BEEP
-- [ ] Xây dựng `SpeakingRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (luyện từng Part riêng, nghe lại bản thu, xem gợi ý cấu trúc B1, chấm tức thì) và `mode: 'exam'` (liên tục 3 Part 12 phút, chuẩn phòng thi VLU & Bộ GD&ĐT)
-- [ ] Đồng hồ đếm ngược thời gian thực: Chuẩn bị (1p) và Ghi âm (3p) theo từng Part
-- [ ] Tích hợp âm hiệu BEEP bắt đầu và kết thúc chuẩn phòng thi tạo bằng Web Audio API `OscillatorNode` độc lập
-- [ ] Trích xuất & cấu trúc hóa 7 Đề thi Nói Authentic ULIS (`src/features/speaking/data/mockTests/ulisSpeakingTest01.ts` đến `07.ts`) từ sách "7 Vstep Tests" và tích hợp 1:1 vào `mockTest01.ts` đến `mockTest07.ts`
+- [x] Xây dựng `SpeakingRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (luyện từng Part riêng, nghe lại bản thu, xem gợi ý cấu trúc B1, chấm tức thì) và `mode: 'exam'` (liên tục 3 Part 12 phút, chuẩn phòng thi VLU & Bộ GD&ĐT)
+- [x] Đồng hồ đếm ngược thời gian thực: Chuẩn bị (1p) và Ghi âm (3p) theo từng Part
+- [x] Tích hợp âm hiệu BEEP bắt đầu và kết thúc chuẩn phòng thi tạo bằng Web Audio API `OscillatorNode` độc lập
+- [x] Trích xuất & cấu trúc hóa 7 Đề thi Nói Authentic ULIS (`src/features/speaking/data/mockTests/ulisSpeakingTest01.ts` đến `07.ts`) từ sách "7 Vstep Tests" và tích hợp 1:1 vào `mockTest01.ts` đến `mockTest07.ts`
 
 ### Thu âm Trình duyệt, Đàm phán MIME & Bộ đệm IndexedDB
-- [ ] Đàm phán định dạng an toàn qua `MediaRecorder.isTypeSupported()` (`audio/webm;codecs=opus` -> `audio/webm` -> `audio/mp4`) tương thích tối đa trên Laptop, Android và Safari
-- [ ] Bộ đệm lưu trữ nhị phân Native IndexedDB (`src/features/speaking/speakingStorage.ts`): Lưu các đoạn audio dạng `Blob` nguyên bản, triệt tiêu lỗi tràn hạn ngạch 5MB của localStorage
-- [ ] Client Acoustic Metrics & Visualizer (Web Audio API): Trực quan hóa sóng âm microphone trên Canvas và phát hiện khoảng lặng chết (> 2s) qua bộ phân tích biên độ RMS
+- [x] Đàm phán định dạng an toàn qua `MediaRecorder.isTypeSupported()` (`audio/webm;codecs=opus` -> `audio/webm` -> `audio/mp4`) tương thích tối đa trên Laptop, Android và Safari
+- [x] Bộ đệm lưu trữ nhị phân Native IndexedDB (`src/features/speaking/speakingStorage.ts`): Lưu các đoạn audio dạng `Blob` nguyên bản, triệt tiêu lỗi tràn hạn ngạch 5MB của localStorage
+- [x] Client Acoustic Metrics & Visualizer (Web Audio API): Trực quan hóa sóng âm microphone trên Canvas và phát hiện khoảng lặng chết (> 2s) qua bộ phân tích biên độ RMS
 
 ### Pipeline Chấm Speaking 3 Tầng qua Gemini 3.5 Flash Lite Native Audio
-- [ ] Single-shot Multimodal Evaluation: Gửi trực tiếp audio blob lên `gemini-3.5-flash-lite` qua REST API (không dùng dual-call transcribe trung gian để tiết kiệm 50% độ trễ và tránh rate limit)
-- [ ] Chấm điểm theo 4 tiêu chí chuẩn Quyết định 729/QĐ-BGDĐT: Pronunciation (25%), Fluency & Coherence (25%), Grammar & Vocabulary (25%), Task Fulfillment (25%)
-- [ ] Tính toán tốc độ nói WPM từ transcript và thời lượng nói thực tế
-- [ ] Phonetic Analysis: Phát hiện từ phát âm sai, thiếu âm đuôi (`/s/`, `/ed/`, `/t/`) hoặc sai trọng âm kèm phiên âm IPA chuẩn và giải thích bằng tiếng Việt
-- [ ] Sinh trực tiếp bài nói sửa chuẩn B1 (**AI-Fixed B1 Speech**) từ ý tưởng gốc của học viên
-- [ ] Giao diện kết quả Speaking: Radar Chart 4 trục, nghe lại audio bản thu, đối chiếu Side-by-Side (Bản ghi âm & Transcript | AI-Fixed B1 | Authentic ULIS Model)
-- [ ] Unit Test bộ tính điểm 4 tiêu chí MOET và quy tắc làm tròn 0.5
-- [ ] Run audit codebase check sau khi hoàn thành kỹ năng Nói (Speaking)
+- [x] Single-shot Multimodal Evaluation & Pluggable Groq Whisper ASR Adapter: Tích hợp adapter chuyển mã âm thanh Groq Whisper `whisper-large-v3-turbo` + fallback Gemini 3.5 Flash Lite Multimodal Native Audio
+- [x] Chấm điểm theo 4 tiêu chí chuẩn Quyết định 729/QĐ-BGDĐT: Pronunciation (25%), Fluency & Coherence (25%), Grammar & Vocabulary (25%), Task Fulfillment (25%)
+- [x] Tính toán tốc độ nói WPM từ transcript và thời lượng nói thực tế
+- [x] Phonetic Analysis: Phát hiện từ phát âm sai, thiếu âm đuôi (`/s/`, `/ed/`, `/t/`) hoặc sai trọng âm kèm phiên âm IPA chuẩn và giải thích bằng tiếng Việt
+- [x] Sinh trực tiếp bài nói sửa chuẩn B1 (**AI-Fixed B1 Speech**) từ ý tưởng gốc của học viên
+- [x] Giao diện kết quả Speaking: Radar Chart 4 trục, nghe lại audio bản thu, đối chiếu Side-by-Side (Bản ghi âm & Transcript | AI-Fixed B1 | Authentic ULIS Model)
+- [x] Unit Test bộ tính điểm 4 tiêu chí MOET và quy tắc làm tròn 0.5
+- [x] Run audit codebase check sau khi hoàn thành kỹ năng Nói (Speaking)
 
 ## SPRINT: THI THỬ THỰC CHIẾN (FULL MOCK TEST & EXAM ORCHESTRATOR)
 
