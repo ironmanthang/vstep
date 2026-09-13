@@ -21,6 +21,11 @@ Mô-đun được đóng gói thành một `SpeakingRunner` duy nhất tiếp nh
   - Tự động phát âm hiệu BEEP chuẩn phòng thi khi bắt đầu và kết thúc thời gian ghi âm (tổng hợp qua Web Audio API OscillatorNode, không phụ thuộc file âm thanh ngoài).
   - Khóa toàn bộ tính năng nghe lại và gợi ý dàn ý; lưu trữ từng đoạn ghi âm dạng Blob vào IndexedDB.
   - Tự động đóng gói và gửi chấm điểm sau khi hoàn thành toàn bộ bài thi.
+- **Quản lý Phiên & Đồng bộ Đám mây (Storage & Cloud Sync)**:
+  - Phân vùng lưu trữ đa tài khoản: Quản lý khóa metadata phiên cô lập theo User ID (`vstep_${userId}_speaking_session_${testId}_${mode}`) qua `speakingStorage.ts`.
+  - Ghi nhận tiến độ học tập: Tự động gọi `recordStudyActivity()` và `incrementExercisesCompleted(1)` vào `userStore` khi hoàn thành bài thi nói.
+  - Đồng bộ điểm thi lên Supabase: Lưu snapshot điểm composite, transcript và thời gian làm bài vào bảng `public.user_test_submissions` (`skill: 'speaking'`) qua `upsertTestSubmission`.
+  - Hệ thống kiểu dữ liệu tập trung: Quản lý toàn bộ contracts tại `src/features/speaking/types.ts`.
 
 ## Giao diện Phòng thu & Chỉ số Âm học (Studio Metrics)
 - **MediaRecorder & Safe Dynamic MIME Detection**: Tự động đàm phán định dạng hỗ trợ tốt nhất theo thứ tự ưu tiên: `audio/webm;codecs=opus` $\rightarrow$ `audio/webm` $\rightarrow$ `audio/mp4`, đảm bảo hoạt động an toàn tuyệt đối trên Laptop, Android và iOS Safari.

@@ -18,6 +18,11 @@ Mô-đun được đóng gói thành một `WritingRunner` duy nhất tiếp nh�
   - Cảnh báo nhịp độ (Pacing Alert) tại phút 20 nhắc chuyển sang Task 2 nhằm bảo vệ 67% tổng điểm.
   - Bộ đếm từ thời gian thực, nút Lưu bài độc lập từng Task và tự động lưu bản nháp mỗi 5 giây vào `localStorage`.
   - Tự động nộp bài khi hết 60 phút và khóa toàn bộ gợi ý.
+- **Quản lý Phiên & Đồng bộ Đám mây (Storage & Cloud Sync)**:
+  - Phân vùng lưu trữ đa tài khoản: Quản lý khóa phiên làm bài cô lập theo User ID (`vstep_${userId}_writing_session_${testId}_${mode}`) qua `writingStorage.ts`.
+  - Ghi nhận tiến độ học tập: Tự động gọi `recordStudyActivity()` và `incrementExercisesCompleted(1)` vào `userStore` khi hoàn thành chấm điểm.
+  - Đồng bộ điểm thi lên Supabase: Lưu snapshot điểm số, bài viết và thời gian làm bài vào bảng `public.user_test_submissions` (`skill: 'writing'`) qua `upsertTestSubmission`.
+  - Hệ thống kiểu dữ liệu tập trung: Quản lý toàn bộ contracts tại `src/features/writing/types.ts`.
 
 ## Ngân hàng Đề thi Viết Thực chiến
 - **7 Đề thi Chuẩn ULIS (`src/features/writing/data/mockTests/`)**: Trích xuất authentic từ sách "7 Vstep Tests B1-B2-C1 Full Key" (NXB ĐHQGHN, 2019) gồm 14 nhiệm vụ (7 thư Task 1 + 7 bài luận Task 2).

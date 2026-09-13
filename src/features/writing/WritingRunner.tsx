@@ -1,26 +1,20 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import type { WritingPrompt } from '../../types/schemas';
-import type { WritingMode, WritingEvaluationResult as IWritingEvaluationResult } from './writingStorage';
+import type { WritingMode, WritingEvaluationResult as IWritingEvaluationResult, WritingTestInput } from './types';
 import { loadWritingSession, saveWritingSession } from './writingStorage';
 import { countWords, runTier1Precalc } from './services/writingTier1';
 import { evaluateWritingTask } from './services/writingTier2';
 import { calculateWritingCompositeScore } from './services/writingTier3';
 import { WritingEvaluationResult } from './components/WritingEvaluationResult';
+import { useAuth } from '../../services/supabase/authStore';
+import { useUserStore } from '../../services/user/userStore';
+import { upsertTestSubmission } from '../../services/supabase/testSubmissionSync';
 import './WritingRunner.css';
 
-export interface WritingTestInput {
-  id: string;
-  test_number: number;
-  title: string;
-  institution: string;
-  total_duration_minutes: number;
-  task1: WritingPrompt;
-  task2: WritingPrompt;
-}
+export type { WritingTestInput };
 
 interface WritingRunnerProps {
   test: WritingTestInput;
-  mode: WritingMode;
+  mode?: WritingMode;
   userId?: string;
   onComplete?: (result: IWritingEvaluationResult) => void;
   onExit?: () => void;
@@ -28,11 +22,14 @@ interface WritingRunnerProps {
 
 export const WritingRunner: React.FC<WritingRunnerProps> = ({
   test,
-  mode,
-  userId,
+  mode = 'practice',
+  userId: propUserId,
   onComplete,
   onExit,
 }) => {
+  const { user } = useAuth();
+  const userId = propUserId || user?.id;
+  const { recordStudyActivity, incrementExercisesCompleted } = useUserStore();
   const [task1Text, setTask1Text] = useState(() => loadWritingSession(test.id, mode, userId)?.task1Text || '');
   const [task2Text, setTask2Text] = useState(() => loadWritingSession(test.id, mode, userId)?.task2Text || '');
   const [activeTab, setActiveTab] = useState<'task1' | 'task2'>(() => loadWritingSession(test.id, mode, userId)?.activeTab || 'task1');
@@ -131,6 +128,28 @@ export const WritingRunner: React.FC<WritingRunnerProps> = ({
         userId
       );
 
+      recordStudyActivity();
+      incrementExercisesCompleted(1);
+
+      if (userId) {
+        upsertTestSubmission({
+          user_id: userId,
+          test_id: test.id,
+          skill: 'writing',
+          mode,
+          score: compositeScore.roundedScore,
+          correct_count: compositeScore.isB1Passed ? 1 : 0,
+          total_questions: 2,
+          time_spent_seconds: Math.max(0, (test.total_duration_minutes * 60) - secondsRemaining),
+          answers: { task1: task1Text, task2: task2Text },
+          notes: {},
+          flagged_questions: [],
+          completed_at: new Date(fullResult.evaluatedAt).toISOString(),
+        }).catch((err) => {
+          console.warn('Failed to sync writing submission to cloud:', err);
+        });
+      }
+
       if (onComplete) {
         onComplete(fullResult);
       }
@@ -139,7 +158,7 @@ export const WritingRunner: React.FC<WritingRunnerProps> = ({
     } finally {
       setIsSubmitting(false);
     }
-  }, [isSubmitting, task1Text, task2Text, test, activeTab, secondsRemaining, mode, userId, onComplete]);
+  }, [isSubmitting, task1Text, task2Text, test, activeTab, secondsRemaining, mode, userId, onComplete, recordStudyActivity, incrementExercisesCompleted]);
 
   // Exam Countdown Timer
   const submitRef = useRef(handleSubmit);

@@ -4,7 +4,7 @@ import type {
   SpeakingMode,
   SpeakingEvaluationResult as ISpeakingEvaluationResult,
   PartEvaluation,
-} from './speakingStorage';
+} from './types';
 import {
   saveAudioBlob,
   getAllAudioBlobs,
@@ -23,11 +23,14 @@ import { SpeakingEvaluationResult } from './components/SpeakingEvaluationResult'
 import { SpeakingPromptViewer } from './components/SpeakingPromptViewer';
 import { SpeakingWaveform } from './components/SpeakingWaveform';
 import { SpeakingControls } from './components/SpeakingControls';
+import { useAuth } from '../../services/supabase/authStore';
+import { useUserStore } from '../../services/user/userStore';
+import { upsertTestSubmission } from '../../services/supabase/testSubmissionSync';
 import './SpeakingRunner.css';
 
 interface SpeakingRunnerProps {
   test: SpeakingTest;
-  mode: SpeakingMode;
+  mode?: SpeakingMode;
   userId?: string;
   onComplete?: (result: ISpeakingEvaluationResult) => void;
   onExit?: () => void;
@@ -35,11 +38,15 @@ interface SpeakingRunnerProps {
 
 export const SpeakingRunner: React.FC<SpeakingRunnerProps> = ({
   test,
-  mode,
-  userId,
+  mode = 'practice',
+  userId: propUserId,
   onComplete,
   onExit,
 }) => {
+  const { user } = useAuth();
+  const userId = propUserId || user?.id;
+  const { recordStudyActivity, incrementExercisesCompleted } = useUserStore();
+
   const [activePart, setActivePart] = useState<1 | 2 | 3>(() => {
     const saved = loadSpeakingSession(test.id, mode, userId);
     return saved?.activePart || 1;
@@ -62,6 +69,58 @@ export const SpeakingRunner: React.FC<SpeakingRunnerProps> = ({
 
   const sessionRef = useRef<AudioRecordingSession | null>(null);
   const [currentSession, setCurrentSession] = useState<AudioRecordingSession | null>(null);
+
+  const handleFinalizeSpeaking = useCallback(
+    (fullResult: ISpeakingEvaluationResult, isExamSubmit: boolean) => {
+      setEvaluationResult(fullResult);
+      setIsResultOpen(true);
+
+      const completedParts = [1, 2, 3].filter((p) => !!fullResult[`part${p as 1 | 2 | 3}`]);
+
+      saveSpeakingSession(
+        test.id,
+        mode,
+        {
+          activePart,
+          completedParts,
+          secondsRemaining,
+          isSubmitted: isExamSubmit,
+          evaluationResult: fullResult,
+          audioDurations: {},
+        },
+        userId
+      );
+
+      recordStudyActivity();
+      incrementExercisesCompleted(1);
+
+      if (userId) {
+        upsertTestSubmission({
+          user_id: userId,
+          test_id: test.id,
+          skill: 'speaking',
+          mode,
+          score: fullResult.compositeScore.roundedScore,
+          correct_count: fullResult.compositeScore.isB1Passed ? 1 : 0,
+          total_questions: 3,
+          time_spent_seconds: mode === 'exam' ? Math.max(0, 720 - secondsRemaining) : 720,
+          answers: {
+            part1: fullResult.part1?.transcript || '',
+            part2: fullResult.part2?.transcript || '',
+            part3: fullResult.part3?.transcript || '',
+          },
+          notes: {},
+          flagged_questions: [],
+          completed_at: new Date(fullResult.evaluatedAt).toISOString(),
+        }).catch((err) => {
+          console.warn('Failed to sync speaking submission to cloud:', err);
+        });
+      }
+
+      if (onComplete) onComplete(fullResult);
+    },
+    [test.id, mode, activePart, secondsRemaining, userId, recordStudyActivity, incrementExercisesCompleted, onComplete]
+  );
 
   // Load existing audio blobs from IndexedDB on mount
   useEffect(() => {
@@ -139,15 +198,13 @@ export const SpeakingRunner: React.FC<SpeakingRunnerProps> = ({
         evaluatedAt: Date.now(),
       };
 
-      setEvaluationResult(fullResult);
-      setIsResultOpen(true);
-      if (onComplete) onComplete(fullResult);
+      handleFinalizeSpeaking(fullResult, true);
     } catch (err) {
       console.error('Exam evaluation error:', err);
     } finally {
       setIsSubmitting(false);
     }
-  }, [audioBlobs, clientMetrics, test, onComplete]);
+  }, [audioBlobs, clientMetrics, test, handleFinalizeSpeaking]);
 
   // Stop current recording
   const handleStopRecording = useCallback(async () => {
@@ -292,23 +349,7 @@ export const SpeakingRunner: React.FC<SpeakingRunnerProps> = ({
         evaluatedAt: Date.now(),
       };
 
-      setEvaluationResult(fullResult);
-      setIsResultOpen(true);
-      if (onComplete) onComplete(fullResult);
-
-      saveSpeakingSession(
-        test.id,
-        mode,
-        {
-          activePart,
-          completedParts: Object.keys(updatedEvals).map(Number),
-          secondsRemaining,
-          isSubmitted: false,
-          evaluationResult: fullResult,
-          audioDurations: {},
-        },
-        userId
-      );
+      handleFinalizeSpeaking(fullResult, false);
     } catch (err) {
       alert('Đã xảy ra lỗi khi chấm bài thi nói. Vui lòng thử lại.');
       console.error(err);

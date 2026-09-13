@@ -73,48 +73,32 @@ export const ListeningStudioPage: React.FC = () => {
   return (
     <div className="listening-studio-page">
       {/* Studio Header */}
-      <div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 'var(--space-2)' }}>
-          <div>
-            <h1 style={{ fontSize: 'var(--fs-2xl)', fontWeight: 800, color: 'var(--text-primary)', margin: 0 }}>
-              Phòng Luyện Nghe Chủ Động (Listening Studio)
-            </h1>
-            <p style={{ fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)', marginTop: 4 }}>
-              Audio player thông minh tua ±5s, chỉnh tốc độ, ghi chú nháp và xem lời thoại manh mối theo từng câu.
-            </p>
-          </div>
+      <div className="listening-studio-header">
+        <div>
+          <h1 style={{ fontSize: 'var(--fs-2xl)', fontWeight: 800, color: 'var(--text-primary)', margin: 0 }}>
+            Phòng Luyện Nghe Chủ Động (Listening Studio)
+          </h1>
+          <p style={{ fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)', marginTop: 4 }}>
+            Audio player thông minh tua ±5s, chỉnh tốc độ, ghi chú nháp và xem lời thoại manh mối theo từng câu.
+          </p>
+        </div>
 
-          {/* Mode Switcher */}
-          <div style={{ display: 'flex', background: 'var(--bg-subtle)', padding: 3, borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
-            <button
-              className={`secondary-btn ${mode === 'practice' ? 'active' : ''}`}
-              onClick={() => setMode('practice')}
-              style={{
-                padding: '6px 12px',
-                fontSize: 'var(--fs-xs)',
-                fontWeight: 700,
-                border: 'none',
-                background: mode === 'practice' ? 'var(--primary)' : 'transparent',
-                color: mode === 'practice' ? '#141210' : 'var(--text-secondary)',
-              }}
-            >
-              🛠️ Chế Độ Luyện Tập
-            </button>
-            <button
-              className={`secondary-btn ${mode === 'exam' ? 'active' : ''}`}
-              onClick={() => setMode('exam')}
-              style={{
-                padding: '6px 12px',
-                fontSize: 'var(--fs-xs)',
-                fontWeight: 700,
-                border: 'none',
-                background: mode === 'exam' ? 'var(--gold)' : 'transparent',
-                color: mode === 'exam' ? '#141210' : 'var(--text-secondary)',
-              }}
-            >
-              ⏱️ Thi Thử (Exam)
-            </button>
-          </div>
+        {/* Mode Switcher */}
+        <div className="listening-studio-mode-toggle">
+          <button
+            type="button"
+            className={`listening-mode-btn practice ${mode === 'practice' ? 'active' : ''}`}
+            onClick={() => setMode('practice')}
+          >
+            🛠️ Chế Độ Luyện Tập
+          </button>
+          <button
+            type="button"
+            className={`listening-mode-btn exam ${mode === 'exam' ? 'active' : ''}`}
+            onClick={() => setMode('exam')}
+          >
+            ⏱️ Thi Thử (Exam)
+          </button>
         </div>
       </div>
 

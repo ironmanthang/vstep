@@ -27,7 +27,7 @@ Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mo
 ## Bộ Công cụ Hỗ trợ Đọc Hiểu (Scaffolding Tools)
 - **1-Tap / Double-Click Dictionary Tooltip**:
   - Nhấn/chạm đúp hoặc chọn từ tiếng Anh trong bài đọc hiển thị tooltip tra nghĩa tiếng Việt tức thì trong 0ms.
-  - Kiến trúc 2 tầng: Tầng 1 tra offline 2.000 từ VSTEP Core (`dictionaryVi.ts`), Tầng 2 fallback qua MyMemory API (`en|vi`). Tuyệt đối không ghi rác vào hàng đợi SRS.
+  - Kiến trúc 2 tầng: Tầng 1 tra offline 3.000 từ VSTEP Core (`dictionaryVi.ts`), Tầng 2 fallback qua MyMemory API (`en|vi`). Tuyệt đối không ghi rác vào hàng đợi SRS.
 - **Bố cục Linh hoạt (Desktop Split-Pane & Mobile Tabs)**:
   - Trên Desktop (>=768px): Khung bài đọc bên trái cuộn độc lập với thanh công cụ Reader Controls, khung câu hỏi và sticky palette bên phải.
   - Trên Mobile (<768px): Bộ chuyển tab "Bài Đọc" và "Câu Hỏi" toàn màn hình, lưu vị trí cuộn độc lập khi chuyển qua lại.
