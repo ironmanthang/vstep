@@ -104,20 +104,24 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 ## SPRINT: LUYỆN NÓI TƯƠNG TÁC (INTERACTIVE SPEAKING STUDIO)
 
 ### Kiến trúc Unified Speaking Runner & Phòng thu BEEP
-- [ ] Xây dựng `SpeakingRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (luyện từng part, xem gợi ý P-E-E-R, chấm tức thì) và `mode: 'exam'` (liên tục 3 Part 12 phút, chuẩn phòng thi)
-- [ ] Đồng hồ đếm ngược thời gian thực: Chuẩn bị (1p) và Ghi âm (2p) theo từng Part
-- [ ] Tích hợp âm hiệu BEEP bắt đầu và kết thúc chuẩn phòng máy Bộ GD&ĐT
+- [ ] Xây dựng `SpeakingRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (luyện từng Part riêng, nghe lại bản thu, xem gợi ý cấu trúc B1, chấm tức thì) và `mode: 'exam'` (liên tục 3 Part 12 phút, chuẩn phòng thi VLU & Bộ GD&ĐT)
+- [ ] Đồng hồ đếm ngược thời gian thực: Chuẩn bị (1p) và Ghi âm (3p) theo từng Part
+- [ ] Tích hợp âm hiệu BEEP bắt đầu và kết thúc chuẩn phòng thi tạo bằng Web Audio API `OscillatorNode` độc lập
+- [ ] Trích xuất & cấu trúc hóa 7 Đề thi Nói Authentic ULIS (`src/features/speaking/data/mockTests/ulisSpeakingTest01.ts` đến `07.ts`) từ sách "7 Vstep Tests" và tích hợp 1:1 vào `mockTest01.ts` đến `mockTest07.ts`
 
-### Thu âm Trình duyệt & Web Audio Acoustic Metrics
-- [ ] Ghi âm trình duyệt qua `MediaRecorder`, trực quan hóa sóng âm thời gian thực, nén file `audio/webm`
-- [ ] Client Acoustic Metrics qua Web Audio API: Đo WPM (chuẩn 110–150 WPM), đo thời lượng nói và khoảng lặng (>2s)
+### Thu âm Trình duyệt, Đàm phán MIME & Bộ đệm IndexedDB
+- [ ] Đàm phán định dạng an toàn qua `MediaRecorder.isTypeSupported()` (`audio/webm;codecs=opus` -> `audio/webm` -> `audio/mp4`) tương thích tối đa trên Laptop, Android và Safari
+- [ ] Bộ đệm lưu trữ nhị phân Native IndexedDB (`src/features/speaking/speakingStorage.ts`): Lưu các đoạn audio dạng `Blob` nguyên bản, triệt tiêu lỗi tràn hạn ngạch 5MB của localStorage
+- [ ] Client Acoustic Metrics & Visualizer (Web Audio API): Trực quan hóa sóng âm microphone trên Canvas và phát hiện khoảng lặng chết (> 2s) qua bộ phân tích biên độ RMS
 
-### Pipeline Chấm Speaking qua Gemini 3.5 Flash Lite Native Audio
-- [ ] Single-shot Multimodal Evaluation: Gửi trực tiếp audio blob lên `gemini-3.5-flash-lite` Native Audio API để chấm 5 tiêu chí MOET và phát hiện lỗi âm vị (xem [speaking_pipeline.md](file:///d:/program/vstep/docs/architecture/speaking_pipeline.md))
-- [ ] Xuất Radar Chart 5 trục trực quan hóa điểm mạnh/yếu
-- [ ] Phonetic Highlighting: Bôi đỏ từ phát âm sai / thiếu phụ âm cuối kèm phát âm mẫu IPA
-- [ ] Gợi ý dàn ý mở rộng P-E-E-R và bài nói mẫu nâng band B2/C1
-- [ ] Tối ưu Lazy loading audio processor và module Speaking
+### Pipeline Chấm Speaking 3 Tầng qua Gemini 3.5 Flash Lite Native Audio
+- [ ] Single-shot Multimodal Evaluation: Gửi trực tiếp audio blob lên `gemini-3.5-flash-lite` qua REST API (không dùng dual-call transcribe trung gian để tiết kiệm 50% độ trễ và tránh rate limit)
+- [ ] Chấm điểm theo 4 tiêu chí chuẩn Quyết định 729/QĐ-BGDĐT: Pronunciation (25%), Fluency & Coherence (25%), Grammar & Vocabulary (25%), Task Fulfillment (25%)
+- [ ] Tính toán tốc độ nói WPM từ transcript và thời lượng nói thực tế
+- [ ] Phonetic Analysis: Phát hiện từ phát âm sai, thiếu âm đuôi (`/s/`, `/ed/`, `/t/`) hoặc sai trọng âm kèm phiên âm IPA chuẩn và giải thích bằng tiếng Việt
+- [ ] Sinh trực tiếp bài nói sửa chuẩn B1 (**AI-Fixed B1 Speech**) từ ý tưởng gốc của học viên
+- [ ] Giao diện kết quả Speaking: Radar Chart 4 trục, nghe lại audio bản thu, đối chiếu Side-by-Side (Bản ghi âm & Transcript | AI-Fixed B1 | Authentic ULIS Model)
+- [ ] Unit Test bộ tính điểm 4 tiêu chí MOET và quy tắc làm tròn 0.5
 - [ ] Run audit codebase check sau khi hoàn thành kỹ năng Nói (Speaking)
 
 ## SPRINT: THI THỬ THỰC CHIẾN (FULL MOCK TEST & EXAM ORCHESTRATOR)
