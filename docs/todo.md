@@ -22,7 +22,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Thông báo PWA & App Badging: Tự động đồng bộ số thẻ cần ôn lên huy hiệu icon (`navigator.setAppBadge`), hẹn giờ nhắc nhở hàng ngày (`srsReminderService.ts`), Service Worker custom extension (`sw-custom.js`), và `ReminderSettingsModal` responsive.
 - [ ] Tăng số lượng từ lên 3000, lấy từ các đề trong 4 skills
   - [x] Đợt 1 (Listening): Mở rộng từ 1.500 lên 2.000 từ (+500 từ) từ 7 Authentic Mock Tests & 15 HCMUE Drills (`scripts/mine_listening_vocab.mjs`)
-  - [ ] Đợt 2 (Reading): Mở rộng từ 2.000 lên 2.500 từ (+500 từ) từ ngân hàng bài đọc VSTEP Reading
+  - [x] Đợt 2 (Reading): Mở rộng từ 2.000 lên 2.500 từ (+500 từ) từ 48 bài đọc VSTEP Reading (28 ULIS + 20 HCMUE, `scripts/mine_reading_vocab.mjs`)
   - [ ] Đợt 3 (Writing & Speaking): Mở rộng từ 2.500 lên 3.000 từ (+500 từ)
 
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)

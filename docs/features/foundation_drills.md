@@ -1,9 +1,11 @@
 # ĐẶC TẢ TÍNH NĂNG: BỔ TRỢ NỀN TẢNG (FOUNDATION & CURATED SRS)
 
 ## Học Từ vựng Ngắt quãng (Flashcard SRS Cốt lõi)
-- **Bộ 2.000 Từ vựng Trọng tâm Trích xuất Đề thi Thật**:
-  - Trích xuất trực tiếp từ các bộ đề thi thật và đề minh họa chuẩn của **ULIS (ĐH Ngoại ngữ – ĐHQGHN)**, **HNUE**, và **HCMUE** (gồm 7 đề thi Full Mock Test và 15 đề HCMUE Drills) kết hợp các cụm học thuật B1/B2/C1.
-  - Phân loại theo 8 chủ đề VSTEP chuẩn (tổng 2.000 từ): Công việc & Sự nghiệp (263 từ), Giáo dục & Học tập (258 từ), Sức khỏe & Lối sống (253 từ), Du lịch & Đô thị (252 từ), Xã hội & Văn hóa (252 từ), Truyền thông & Giao tiếp (247 từ), Môi trường & Tự nhiên (238 từ), Khoa học & Công nghệ (237 từ).
+- **Bộ 2.500 Từ vựng Trọng tâm Trích xuất Đề thi Thật**:
+  - Trích xuất trực tiếp từ các bộ đề thi thật và đề minh họa chuẩn của **ULIS (ĐH Ngoại ngữ – ĐHQGHN)**, **HNUE**, và **HCMUE**:
+    - **Đợt 1 (Listening)**: 500 từ trích xuất từ 7 Authentic Mock Tests và 15 HCMUE Drills (`scripts/mine_listening_vocab.mjs`).
+    - **Đợt 2 (Reading)**: 500 từ học thuật trích xuất từ 48 bài đọc VSTEP Reading (28 ULIS + 20 HCMUE, 739 phân đoạn văn bản) qua Gemini Flash cascade (`scripts/mine_reading_vocab.mjs`).
+  - Phân loại theo 8 chủ đề VSTEP chuẩn (tổng 2.500 từ, 100% ID và từ vựng duy nhất): Xã hội & Văn hóa (405 từ), Môi trường & Tự nhiên (353 từ), Công việc & Sự nghiệp (319 từ), Sức khỏe & Lối sống (317 từ), Giáo dục & Học tập (285 từ), Du lịch & Đô thị (284 từ), Khoa học & Công nghệ (269 từ), Truyền thông & Giao tiếp (268 từ).
   - Cấu trúc thẻ đầy đủ: Từ vựng, phiên âm IPA chuẩn, audio phát âm bản xứ, định nghĩa tiếng Việt ngắn gọn, Collocations đi kèm và câu ví dụ song ngữ trích từ ngữ cảnh bài thi.
 - **Thuật toán Spaced Repetition (FSRS v6 Binary Engine)**:
   - Động cơ lập lịch FSRS v6 qua thư viện `ts-fsrs` (v5.4.2) với target retention 90% (`request_retention: 0.90`), trần khoảng cách tối đa 365 ngày (`maximum_interval: 365`), và thuật toán jitter/fuzz (`enable_fuzz: true`) chống hiện tượng dồn thẻ.
@@ -21,7 +23,7 @@
   - Đồng bộ hóa Đặt lại Đa thiết bị (Remote Reset Reconciliation): Khi đám mây trả về deck rỗng (`{}`) do người dùng đã đặt lại trên thiết bị khác, client tự động reset local cache về `VSTEP_CORPUS` ban đầu thay vì nạp đè dữ liệu cũ.
   - Dữ liệu ôn tập lưu trữ trên Supabase PostgreSQL (`user_flashcard_reviews` & `user_daily_stats`), hỗ trợ tương thích ngược kép (chọn đồng thời cột mới `stability, difficulty, reps, lapses, state` và cột cũ `repetition_count, interval_days, ease_factor, status`).
   - Hàng rào ngoại tuyến (Offline Barrier): Tự động phát hiện khi mất kết nối Internet, hiển thị banner cảnh báo và vô hiệu hóa các nút đánh giá để chống phát sinh tiến độ ma không được lưu.
-  - Decoupled Corpus Hydration: Tách biệt nội dung từ điển tĩnh (`VSTEP_CORPUS`) và siêu dữ liệu ôn tập (`srs_metadata`). Đảm bảo khi mở rộng kho từ 1.500 lên 2.000 và tiến tới 3.000 từ, toàn bộ từ vựng người dùng đã học vẫn được bảo toàn 100%.
+  - Decoupled Corpus Hydration: Tách biệt nội dung từ điển tĩnh (`VSTEP_CORPUS`) và siêu dữ liệu ôn tập (`srs_metadata`). Đảm bảo khi mở rộng kho từ 1.500 lên 2.000, 2.500 và tiến tới 3.000 từ, toàn bộ từ vựng người dùng đã học vẫn được bảo toàn 100%.
 - **An toàn Dữ liệu & Đặt lại Deck (ConfirmModal)**:
   - Nút đặt lại Deck được bảo vệ bằng Modal xác nhận cảnh báo 2 bước chống bấm nhầm (`src/components/common/ConfirmModal.tsx`), tự động căn giữa trên Desktop và chuyển thành Bottom Sheet trên Mobile.
   - Nút Hủy bỏ được focus mặc định để tránh xác nhận ngoài ý muốn.

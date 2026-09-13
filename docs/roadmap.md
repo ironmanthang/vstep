@@ -3,7 +3,7 @@
 Tài liệu này xác định các giai đoạn phát triển, nguyên tắc ưu tiên và tiêu chuẩn hoàn thành (Definition of Done) cho nền tảng luyện thi VSTEP PWA. Chi tiết đầu việc theo Sprint xem tại [todo.md](file:///d:/program/vstep/docs/todo.md).
 
 ## Nguyên tắc Ưu tiên & Kiến trúc Cốt lõi
-- **P1 (Foundation & Curated SRS)**: App Shell PWA, Master AI Gateway (Google AI, OpenRouter, Ollama Cloud) với Key Pool rotation, Flashcard SRS 2.000 từ cốt lõi trích xuất từ đề thi thật ULIS/HNUE/HCMUE theo 8 chủ đề VSTEP.
+- **P1 (Foundation & Curated SRS)**: App Shell PWA, Master AI Gateway (Google AI, OpenRouter, Ollama Cloud) với Key Pool rotation, Flashcard SRS 2.500 từ cốt lõi trích xuất từ đề thi thật ULIS/HNUE/HCMUE theo 8 chủ đề VSTEP.
 - **P2 (Assisted Listening Studio)**: Unified Listening Runner (`mode: 'practice' | 'exam'`), Custom Audio Player có tua ±5s, phân đoạn nhóm bài nghe (Passage Headers), Scratchpad ghi chú nháp và Transcript song ngữ gạch chân Key Clues.
 - **P3 (Assisted Reading Studio)**: Unified Reading Runner (`mode: 'practice' | 'exam'`), Split-Pane cuộn độc lập, 1-Tap Dictionary (tooltip tra từ tức thì, không lưu rác vào SRS), phân tích 5 dạng câu hỏi đọc hiểu và Highlight dẫn chứng.
 - **P4 (Scaffolded Writing & Vietlish AI)**: Unified Writing Runner (`mode: 'practice' | 'exam'`), Editor đếm từ và auto-save bản nháp 5s, Pipeline chấm 3 tầng, chuẩn hóa B1 pass gate và Vietlish Engine 3 nhóm lỗi.
@@ -24,7 +24,7 @@ Chất lượng, hiệu năng và kiểm thử không tổ chức thành giai đ
 ## Các Giai đoạn Phát triển
 
 ### Giai đoạn: Khung Nền tảng & Flashcard SRS (Foundation & Curated SRS)
-- **Trọng tâm**: Hoàn thiện App Shell PWA, Master AI Gateway với Key Pool rotation, Flashcard SRS 2.000 từ trích xuất từ đề thi thật ULIS/HNUE/HCMUE theo 8 chủ đề VSTEP.
+- **Trọng tâm**: Hoàn thiện App Shell PWA, Master AI Gateway với Key Pool rotation, Flashcard SRS 2.500 từ trích xuất từ đề thi thật ULIS/HNUE/HCMUE theo 8 chủ đề VSTEP.
 - **Tiêu chuẩn hoàn thành (Definition of Done)**:
   - Người học cài đặt được PWA và ôn tập Flashcard hàng ngày trên điện thoại.
   - Master AI Gateway kiểm tra kết nối, đo độ trễ chuẩn xác và tự động xoay vòng Key.

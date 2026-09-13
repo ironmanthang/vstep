@@ -8,7 +8,7 @@ Dự án là nền tảng web học tiếng Anh và luyện thi VSTEP thế hệ
   - Cho phép tua lại ±5s, chỉnh tốc độ nghe, ghi chú nháp từ khóa và xem lời thoại manh mối trực tiếp.
   - Cung cấp giàn giáo hỗ trợ (Scaffolding): Gợi ý dàn ý, mẫu câu ăn điểm, kho bài mẫu giải phẫu 5 màu.
   - Trợ lý AI chỉ ra lỗi tư duy tiếng Việt (Vietlish), phản hồi tích cực và ghi nhận điểm sáng.
-  - Học vi mô (Micro-learning): Flashcard SRS 2.000 từ cốt lõi duy trì thói quen học mỗi ngày trên điện thoại.
+  - Học vi mô (Micro-learning): Flashcard SRS 2.500 từ cốt lõi duy trì thói quen học mỗi ngày trên điện thoại.
 - **Chế độ Thi thử Thực chiến (Mock Test Mode)**:
   - Mô phỏng 100% định dạng phòng thi máy tính của Bộ GD&ĐT (180 phút, cấm tua/tra từ, tự động thu bài).
   - Đánh giá năng lực thực tế qua Barem chuẩn và thuật toán làm tròn 0.5 chính thức.
@@ -26,7 +26,7 @@ Dự án là nền tảng web học tiếng Anh và luyện thi VSTEP thế hệ
 - **PWA Support**: Hỗ trợ cài đặt ứng dụng Standalone trên iOS/Android không cần App Store.
 - **Online-First & Auto-save Resilience**: Đồng bộ tiến độ đám mây; tích hợp tự động lưu bản nháp Writing mỗi 5 giây chống mất kết nối.
 - **Nguồn Dữ liệu & Ngữ liệu Cốt lõi**:
-  - 2.000 từ vựng và bài đọc/nghe trích xuất trực tiếp từ các bộ đề thi thật và đề minh họa chuẩn của **ULIS (Trường ĐH Ngoại ngữ – ĐHQGHN)**, **HNUE** và **Trường ĐH Sư phạm TP.HCM** phân loại theo 8 chủ đề VSTEP chuẩn Bộ GD&ĐT (xem chi tiết tại [exam_format.md](file:///d:/program/vstep/docs/exam_format.md)).
+  - 2.500 từ vựng và bài đọc/nghe trích xuất trực tiếp từ các bộ đề thi thật và đề minh họa chuẩn của **ULIS (Trường ĐH Ngoại ngữ – ĐHQGHN)**, **HNUE** và **Trường ĐH Sư phạm TP.HCM** phân loại theo 8 chủ đề VSTEP chuẩn Bộ GD&ĐT (xem chi tiết tại [exam_format.md](file:///d:/program/vstep/docs/exam_format.md)).
 
 ## Cấu trúc Tài liệu Hệ thống
 
@@ -46,7 +46,7 @@ Dự án là nền tảng web học tiếng Anh và luyện thi VSTEP thế hệ
 - [speaking_pipeline.md](file:///d:/program/vstep/docs/architecture/speaking_pipeline.md): Pipeline chấm Speaking qua Gemini 3.5 Flash Lite Native Audio và Web Audio acoustic metrics.
 
 ### Đặc tả Tính năng (`docs/features/`)
-- [foundation_drills.md](file:///d:/program/vstep/docs/features/foundation_drills.md): Flashcard SRS 2.000 từ trích xuất đề thi thật ULIS/HNUE/HCMUE theo 8 chủ đề.
+- [foundation_drills.md](file:///d:/program/vstep/docs/features/foundation_drills.md): Flashcard SRS 2.500 từ trích xuất đề thi thật ULIS/HNUE/HCMUE theo 8 chủ đề.
 - [listening.md](file:///d:/program/vstep/docs/features/listening.md): Unified Listening Runner, smart player ±5s, khung ghi chú nháp và lời thoại manh mối theo câu.
 - [reading.md](file:///d:/program/vstep/docs/features/reading.md): Unified Reading Runner, 1-Tap Dictionary tooltip, split-pane và highlight dẫn chứng.
 - [writing.md](file:///d:/program/vstep/docs/features/writing.md): Unified Writing Runner, giàn giáo hỗ trợ, Vietlish engine và quy ước bôi màu nhận xét.

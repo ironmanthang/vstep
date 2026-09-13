@@ -12,29 +12,29 @@ import {
 } from './index';
 
 describe('VSTEP Flashcard Corpus Integrity', () => {
-  it('should contain exactly 2,000 cards in the master corpus', () => {
-    expect(VSTEP_CORPUS.length).toBe(2000);
+  it('should contain exactly 2,500 cards in the master corpus', () => {
+    expect(VSTEP_CORPUS.length).toBe(2500);
   });
 
   it('should have exact expected word counts per topic file', () => {
-    expect(EDUCATION_FLASHCARDS.length).toBe(258);
-    expect(WORK_FLASHCARDS.length).toBe(263);
-    expect(HEALTH_FLASHCARDS.length).toBe(253);
-    expect(ENVIRONMENT_FLASHCARDS.length).toBe(238);
-    expect(TECHNOLOGY_FLASHCARDS.length).toBe(237);
-    expect(TRAVEL_FLASHCARDS.length).toBe(252);
-    expect(SOCIETY_FLASHCARDS.length).toBe(252);
-    expect(MEDIA_FLASHCARDS.length).toBe(247);
+    expect(EDUCATION_FLASHCARDS.length).toBe(285);
+    expect(WORK_FLASHCARDS.length).toBe(319);
+    expect(HEALTH_FLASHCARDS.length).toBe(317);
+    expect(ENVIRONMENT_FLASHCARDS.length).toBe(353);
+    expect(TECHNOLOGY_FLASHCARDS.length).toBe(269);
+    expect(TRAVEL_FLASHCARDS.length).toBe(284);
+    expect(SOCIETY_FLASHCARDS.length).toBe(405);
+    expect(MEDIA_FLASHCARDS.length).toBe(268);
   });
 
-  it('should have unique IDs across all 2,000 cards', () => {
+  it('should have unique IDs across all 2,500 cards', () => {
     const idSet = new Set(VSTEP_CORPUS.map((c) => c.id));
-    expect(idSet.size).toBe(2000);
+    expect(idSet.size).toBe(2500);
   });
 
-  it('should have unique words across all 2,000 cards', () => {
+  it('should have unique words across all 2,500 cards', () => {
     const wordSet = new Set(VSTEP_CORPUS.map((c) => c.word.toLowerCase().trim()));
-    expect(wordSet.size).toBe(2000);
+    expect(wordSet.size).toBe(2500);
   });
 
   it('should validate every card against the FlashcardItem schema requirements', () => {
