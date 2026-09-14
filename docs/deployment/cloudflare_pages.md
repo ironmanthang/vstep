@@ -55,6 +55,18 @@ Under **Settings** -> **Environment variables**, the following production variab
 - `VITE_OPENROUTER_API_KEYS` = `(OpenRouter key pool)`
 - `VITE_OLLAMA_API_KEYS` = `(Ollama Cloud key pool)`
 
+### HTTP Headers & PWA Caching Strategy (`public/_headers`)
+Cloudflare Pages serves custom HTTP headers defined in [`public/_headers`](file:///d:/program/vstep/public/_headers):
+- `/assets/*`: `Cache-Control: public, max-age=31536000, immutable` (Vite includes content hashes in filenames).
+- `/sw.js`, `/sw-custom.js`, `/manifest.webmanifest`: `Cache-Control: public, max-age=0, must-revalidate` (Never serve stale Service Worker scripts or extensions).
+- `/*`: `Cache-Control: public, max-age=0, must-revalidate` (HTML documents revalidate immediately).
+
+### PWA 1-Refresh Deploy Coordination
+In tandem with `_headers`, the client coordinator [`src/services/pwa/registerServiceWorker.ts`](file:///d:/program/vstep/src/services/pwa/registerServiceWorker.ts) listens to `controllerchange`:
+- On page reload (`F5` / pull-to-refresh) during initial load (`performance.now() < 8000ms`), triggers an automated reload to serve the newly activated build immediately (guaranteed 1-refresh updates).
+- In-session (`performance.now() >= 8000ms`), protects active tests and recordings, dispatching `vstep:sw-update-available` to show an unobtrusive toast.
+- Native `vite:preloadError` and `lazyWithRetry.ts` self-heal dynamic chunk 404s after new deployment hash rotation.
+
 ### Deployment Verification
 - **Live Production URL**: `https://vstep.pages.dev`
 - **Verification Points**:
@@ -62,4 +74,6 @@ Under **Settings** -> **Environment variables**, the following production variab
   - Hard-refreshing `/flashcard` does not return 404 (handled by `_redirects`).
   - Spaced Repetition (SRS) Flashcard review queue.
   - User Authentication & Cloud Sync with Supabase.
+  - Pull-to-refresh on mobile / F5 on desktop activates new deploy immediately.
+
 

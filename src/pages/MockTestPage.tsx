@@ -1,16 +1,20 @@
-import React, { useState, Suspense, lazy } from 'react';
+import React, { useState, Suspense } from 'react';
 import type { MockTest } from '../types/schemas';
 import { ALL_MOCK_TESTS } from '../data/mock-tests';
 import { MockTestLobby } from '../features/mock-test/components/MockTestLobby';
 import { MockTestResultDashboard } from '../features/mock-test/components/MockTestResultDashboard';
 import { loadMockTestSession, clearMockTestSession } from '../features/mock-test/mockTestStorage';
 import { useAuth } from '../services/supabase/authStore';
+import { lazyWithRetry } from '../utils/lazyWithRetry';
+import { ChunkErrorBoundary } from '../components/common/ChunkErrorBoundary';
 
-// Lazy load full exam runner for bundle splitting
-const FullMockTestRunner = lazy(() =>
-  import('../features/mock-test/FullMockTestRunner').then((module) => ({
-    default: module.FullMockTestRunner,
-  }))
+// Lazy load full exam runner with automatic deploy-rotation self-healing
+const FullMockTestRunner = lazyWithRetry(
+  () =>
+    import('../features/mock-test/FullMockTestRunner').then((module) => ({
+      default: module.FullMockTestRunner,
+    })),
+  'full_mock_test_runner'
 );
 
 export const MockTestPage: React.FC = () => {
@@ -44,18 +48,20 @@ export const MockTestPage: React.FC = () => {
   // 1. Active Exam Mode
   if (activeExamTest) {
     return (
-      <Suspense
-        fallback={
-          <div className="card-surface" style={{ padding: 'var(--space-8)', textAlign: 'center' }}>
-            <div style={{ fontSize: 'var(--fs-lg)', fontWeight: 700 }}>Đang chuẩn bị phòng thi máy tính...</div>
-            <div style={{ fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)', marginTop: 4 }}>
-              Khởi tạo đề thi {activeExamTest.title}
+      <ChunkErrorBoundary fallbackTitle="Không thể tải phòng thi máy tính" onReset={handleExitToLobby}>
+        <Suspense
+          fallback={
+            <div className="card-surface" style={{ padding: 'var(--space-8)', textAlign: 'center' }}>
+              <div style={{ fontSize: 'var(--fs-lg)', fontWeight: 700 }}>Đang chuẩn bị phòng thi máy tính...</div>
+              <div style={{ fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)', marginTop: 4 }}>
+                Khởi tạo đề thi {activeExamTest.title}
+              </div>
             </div>
-          </div>
-        }
-      >
-        <FullMockTestRunner test={activeExamTest} onExit={handleExitToLobby} />
-      </Suspense>
+          }
+        >
+          <FullMockTestRunner test={activeExamTest} onExit={handleExitToLobby} />
+        </Suspense>
+      </ChunkErrorBoundary>
     );
   }
 

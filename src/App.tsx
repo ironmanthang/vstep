@@ -13,27 +13,31 @@ import { FlashcardPage } from './features/flashcard/FlashcardPage';
 import { MockTestPage } from './pages/MockTestPage';
 import { ProfilePage } from './pages/ProfilePage';
 import { DeveloperSettingsPage } from './pages/DeveloperSettingsPage';
+import { UpdateNotificationToast } from './components/pwa/UpdateNotificationToast';
 
 export const App: React.FC = () => {
   return (
-    <Routes>
-      <Route path="/login" element={<LoginPage />} />
-      <Route element={<ProtectedRoute />}>
-        <Route element={<Layout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/practice" element={<SkillPracticePage />} />
-          <Route path="/practice/listening" element={<ListeningStudioPage />} />
-          <Route path="/practice/reading" element={<ReadingStudioPage />} />
-          <Route path="/practice/writing" element={<WritingStudioPage />} />
-          <Route path="/practice/speaking" element={<SpeakingStudioPage />} />
-          <Route path="/flashcard" element={<FlashcardPage />} />
-          <Route path="/mock-test" element={<MockTestPage />} />
-          <Route path="/profile" element={<ProfilePage />} />
-          <Route path="/settings" element={<Navigate to="/profile" replace />} />
-          <Route path="/dev" element={<DeveloperSettingsPage />} />
+    <>
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
+        <Route element={<ProtectedRoute />}>
+          <Route element={<Layout />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/practice" element={<SkillPracticePage />} />
+            <Route path="/practice/listening" element={<ListeningStudioPage />} />
+            <Route path="/practice/reading" element={<ReadingStudioPage />} />
+            <Route path="/practice/writing" element={<WritingStudioPage />} />
+            <Route path="/practice/speaking" element={<SpeakingStudioPage />} />
+            <Route path="/flashcard" element={<FlashcardPage />} />
+            <Route path="/mock-test" element={<MockTestPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/settings" element={<Navigate to="/profile" replace />} />
+            <Route path="/dev" element={<DeveloperSettingsPage />} />
+          </Route>
         </Route>
-      </Route>
-    </Routes>
+      </Routes>
+      <UpdateNotificationToast />
+    </>
   );
 };
 

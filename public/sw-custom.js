@@ -10,13 +10,13 @@ self.addEventListener('notificationclick', (event) => {
 
   const urlToOpen = (event.notification.data && event.notification.data.url)
     ? event.notification.data.url
-    : '/flashcards';
+    : '/flashcard';
 
   event.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true }).then((windowClients) => {
       // Check if a tab with VSTEP flashcards is already open
       for (const client of windowClients) {
-        if (client.url.includes('/flashcards') && 'focus' in client) {
+        if (client.url.includes('/flashcard') && 'focus' in client) {
           return client.focus();
         }
       }
@@ -39,7 +39,7 @@ self.addEventListener('periodicsync', (event) => {
         tag: 'vstep-srs-daily-reminder',
         renotify: true,
         vibrate: [100, 50, 100],
-        data: { url: '/flashcards' },
+        data: { url: '/flashcard' },
       })
     );
   }
