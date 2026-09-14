@@ -196,14 +196,14 @@ describe('AI Master Gateway & Service Layer Test Suite', () => {
         ok: true,
         status: 200,
         json: async () => ({
-          models: [{ name: 'models/gemini-2.0-flash' }],
+          models: [{ name: 'models/gemini-3.5-flash-lite' }],
         }),
       });
 
       const result = await testAIConnection({
         provider: 'google_ai_studio',
         apiKey: 'AIzaSyFakeKeyTest',
-        modelName: 'gemini-2.0-flash',
+        modelName: 'gemini-3.5-flash-lite',
       });
 
       expect(result.success).toBe(true);
@@ -233,7 +233,7 @@ describe('AI Master Gateway & Service Layer Test Suite', () => {
       const response = await generateAICompletion(request, {
         provider: 'google_ai_studio',
         apiKey: 'AIzaSyFakeKeyTest',
-        modelName: 'gemini-2.0-flash',
+        modelName: 'gemini-3.5-flash-lite',
       });
 
       expect(response.providerUsed).toBe('google_ai_studio');

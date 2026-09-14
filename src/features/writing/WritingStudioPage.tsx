@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { ALL_ULIS_WRITING_TESTS } from './data/mockTests';
-import { ALL_PRACTICE_WRITING_TESTS } from './data/writingBank';
+import { HCMUE_WRITING_TESTS } from './data/drills/hcmue';
 import { WritingRunner } from './WritingRunner';
 import type { WritingMode } from './writingStorage';
 import './WritingStudioPage.css';
 
 export const WritingStudioPage: React.FC = () => {
-  const [selectedCollection, setSelectedCollection] = useState<'ulis' | 'practice_bank'>('ulis');
+  const [selectedCollection, setSelectedCollection] = useState<'ulis' | 'hcmue'>('ulis');
   const [testIndex, setTestIndex] = useState<number>(0);
   const [mode, setMode] = useState<WritingMode>('practice');
 
-  const availableTests = selectedCollection === 'ulis' ? ALL_ULIS_WRITING_TESTS : ALL_PRACTICE_WRITING_TESTS;
+  const availableTests = selectedCollection === 'ulis' ? ALL_ULIS_WRITING_TESTS : HCMUE_WRITING_TESTS;
   const currentTest = availableTests[testIndex] || availableTests[0];
 
   const collectionSummaries = [
@@ -24,12 +24,12 @@ export const WritingStudioPage: React.FC = () => {
       badgeColor: 'badge-purple',
     },
     {
-      id: 'practice_bank' as const,
-      name: 'Ngân Hàng Đề Luyện Tập Mở Rộng',
-      count: '3 Bộ Đề (Thư & Luận)',
+      id: 'hcmue' as const,
+      name: 'Bộ Đề Luyện Tập HCMUE (ĐH Sư Phạm TP.HCM)',
+      count: '5 Bộ Đề (10 Bài)',
       time: '~60 phút/đề',
-      difficulty: 'B2–C1',
-      desc: '3 Bộ đề kết hợp từ ngân hàng 3 Thư (Letter) và 2 Luận (Essay) kèm bài mẫu phân tích chuẩn B2/C1.',
+      difficulty: 'B1–C1',
+      desc: '5 Bộ đề thi chuẩn ĐH Sư Phạm TP.HCM (Thư & Luận) kèm dàn ý, bài mẫu đối chiếu và tiêu chí phân tích chuyên sâu.',
       badgeColor: 'badge-emerald',
     },
   ];
@@ -109,7 +109,7 @@ export const WritingStudioPage: React.FC = () => {
       {availableTests.length > 0 && (
         <div className="writing-edition-selector-bar">
           <span className="writing-edition-label">
-            {selectedCollection === 'ulis' ? 'Bộ Đề ULIS:' : 'Bộ Đề Mở Rộng:'}
+            {selectedCollection === 'ulis' ? 'Bộ Đề ULIS:' : 'Bộ Đề HCMUE:'}
           </span>
           {availableTests.map((t, idx) => (
             <button
@@ -118,7 +118,7 @@ export const WritingStudioPage: React.FC = () => {
               onClick={() => setTestIndex(idx)}
               className={`writing-edition-btn ${testIndex === idx ? 'active' : ''}`}
             >
-              ✍️ Đề {idx + 1} ({selectedCollection === 'ulis' ? 'Thư & Luận' : t.task1.title.split(':')[0]})
+              ✍️ Đề {idx + 1} (Thư & Luận)
             </button>
           ))}
         </div>

@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { ALL_ULIS_SPEAKING_TESTS } from './data/mockTests';
-import { ALL_MAY_SPEAKING_TESTS } from './data/speakingBank';
+import { HCMUE_SPEAKING_TESTS } from './data/drills/hcmue';
 import { SpeakingRunner } from './SpeakingRunner';
 import type { SpeakingMode } from './speakingStorage';
 import './SpeakingStudioPage.css';
 
 export const SpeakingStudioPage: React.FC = () => {
-  const [selectedCollection, setSelectedCollection] = useState<'ulis' | 'may_exams'>('ulis');
+  const [selectedCollection, setSelectedCollection] = useState<'ulis' | 'hcmue'>('ulis');
   const [testIndex, setTestIndex] = useState<number>(0);
   const [mode, setMode] = useState<SpeakingMode>('practice');
   const [micStatus, setMicStatus] = useState<'unchecked' | 'ready' | 'error'>('unchecked');
 
-  const availableTests = selectedCollection === 'ulis' ? ALL_ULIS_SPEAKING_TESTS : ALL_MAY_SPEAKING_TESTS;
+  const availableTests = selectedCollection === 'ulis' ? ALL_ULIS_SPEAKING_TESTS : HCMUE_SPEAKING_TESTS;
   const currentTest = availableTests[testIndex] || availableTests[0];
 
   const collectionSummaries = [
@@ -25,13 +25,13 @@ export const SpeakingStudioPage: React.FC = () => {
       badgeColor: 'badge-purple',
     },
     {
-      id: 'may_exams' as const,
-      name: 'Bộ Đề Thi Thật Tháng 5 (Authentic May Sessions)',
-      count: '5 Kỳ Thi Thật (15 Phần)',
+      id: 'hcmue' as const,
+      name: 'Bộ Đề Luyện Tập HCMUE (ĐH Sư Phạm TP.HCM)',
+      count: '5 Bộ Đề (15 Phần)',
       time: '~12 phút/đề',
-      difficulty: 'B1–B2',
-      desc: '5 Đề thi thật phòng máy từ Trung tâm Khảo thí (Ngày 05/05, 16/05, 20/05, 24/05, 30/05) với chủ đề cập nhật sát thực tế.',
-      badgeColor: 'badge-gold',
+      difficulty: 'B1–C1',
+      desc: '5 Bộ đề thi chuẩn ĐH Sư Phạm TP.HCM với đầy đủ 3 phần: Tương tác xã hội, Thảo luận giải pháp, và Phát triển chủ đề kèm dàn ý gợi ý chi tiết.',
+      badgeColor: 'badge-emerald',
     },
   ];
 
@@ -120,7 +120,7 @@ export const SpeakingStudioPage: React.FC = () => {
       {availableTests.length > 0 && (
         <div className="speaking-edition-selector-bar">
           <span className="speaking-edition-label">
-            {selectedCollection === 'ulis' ? 'Bộ Đề ULIS:' : 'Kỳ Thi Tháng 5:'}
+            {selectedCollection === 'ulis' ? 'Bộ Đề ULIS:' : 'Bộ Đề HCMUE:'}
           </span>
           {availableTests.map((t, idx) => (
             <button
@@ -129,7 +129,7 @@ export const SpeakingStudioPage: React.FC = () => {
               onClick={() => setTestIndex(idx)}
               className={`speaking-edition-btn ${testIndex === idx ? 'active' : ''}`}
             >
-              🎙️ {selectedCollection === 'ulis' ? `Đề ${idx + 1}` : `Ngày ${t.exam_date || idx + 1}`} (3 Part)
+              🎙️ Đề {idx + 1} (3 Part)
             </button>
           ))}
 

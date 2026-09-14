@@ -14,8 +14,8 @@ This directory maintains the source citations, original transcripts, reference t
 | :--- | :--- | :--- |
 | [`listening/`](file:///d:/program/vstep/docs/sources/listening/README.md) | 35-Question Listening Tests (Part 1, 2, 3), transcripts, audio sources | 7 Full Mock Tests (`vstep-test-1..7.mp3`, 245Q in `mockTests/`), Discrete Part Banks (`HCMUE_LISTENING_PART{1..3}_{01..05}`, 175 questions across 15 drill sets from HCMUE 20 Mock Tests) |
 | [`reading/`](file:///d:/program/vstep/docs/sources/reading/README.md) | 4-Passage / 40-Question Reading Tests, original texts, explanations | ULIS Sets 1–7: Sách 7 Vstep Tests (NXB ĐHQGHN, 280 Questions, B1-C1), HCMUE Drills 01–05 (20 passages, 200 questions) |
-| [`writing/`](file:///d:/program/vstep/docs/sources/writing/README.md) | Task 1 (Letter) & Task 2 (Essay) prompts, benchmark sample essays | ULIS Sets 01–07: Sách 7 Vstep Tests (NXB ĐHQGHN, 14 tasks: 7 Task 1 Letters + 7 Task 2 Essays with official B1 benchmark answers), ULIS Sample Test, Practice Bank |
-| [`speaking/`](file:///d:/program/vstep/docs/sources/speaking/README.md) | Part 1 (Social), Part 2 (Solution), Part 3 (Topic) prompt cards | Set 1: ULIS Sample Test, 2026 Bank: 5 Official May Exam Sessions (May 5, 16, 20, 24, 30) |
+| [`writing/`](file:///d:/program/vstep/docs/sources/writing/README.md) | Task 1 (Letter) & Task 2 (Essay) prompts, benchmark sample essays | ULIS Sets 01–07 (14 tasks: 7 Task 1 Letters + 7 Task 2 Essays with official B1 benchmark answers), HCMUE Drills 01–05 (10 tasks: 5 Letters + 5 Essays with official model answers and linguistic analysis) |
+| [`speaking/`](file:///d:/program/vstep/docs/sources/speaking/README.md) | Part 1 (Social), Part 2 (Solution), Part 3 (Topic) prompt cards | ULIS Sets 01–07 (21 parts: 7 Part 1 + 7 Part 2 + 7 Part 3), HCMUE Drills 01–05 (15 parts: 5 Part 1 + 5 Part 2 + 5 Part 3 with official outlines, follow-ups, and sample responses) |
 | [`mock_tests/`](file:///d:/program/vstep/docs/sources/mock_tests/README.md) | 180-Minute Exam Manifests stitching the 4 skills above | Mock Tests 01–07: ULIS Full 180-min Exams (L: 35Q, R: 40Q, W: 2 tasks, S: 3 parts) |
 
 

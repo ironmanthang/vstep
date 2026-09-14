@@ -85,8 +85,8 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Đồng hồ đếm ngược 60 phút hợp nhất chuẩn phòng thi ĐH Văn Lang & Bộ GD&ĐT kèm cảnh báo nhịp độ (Pacing Alert phút 20 nhắc chuyển Task 2 để bảo vệ 67% điểm số)
 - [x] Trình soạn thảo 2 task (Task 1: Thư 120 từ / Task 2: Luận 250 từ) kèm bộ đếm từ thời gian thực và nút Lưu bài độc lập
 - [x] Cơ chế Auto-save tự động lưu bản nháp mỗi 5 giây vào LocalStorage
-- [x] Ngân hàng đề thi Viết thực chiến (`src/features/writing/data/writingBank.ts`): Trích xuất và cấu trúc hóa đề Task 1 & Task 2 từ 7 đề thi ULIS (Đề 01–07 hoàn thành, 5 đề HCMUE theo kế hoạch phiên sau)
-- [x] Tích hợp Collection Switcher trên Writing Studio (`src/features/writing/WritingStudioPage.tsx`): Cho phép chuyển đổi giữa "7 Đề thi chuẩn ULIS" (`ALL_ULIS_WRITING_TESTS`) và "Ngân hàng đề luyện tập bổ sung" (`WRITING_TASK1_BANK` 3 bài Thư + `WRITING_TASK2_BANK` 2 bài Luận kèm bài mẫu B2/C1 tại `src/features/writing/data/writingBank.ts`)
+- [x] Ngân hàng đề thi Viết thực chiến: Trích xuất và cấu trúc hóa 7 Đề thi ULIS (Đề 01–07 tại `mockTests/`) và 5 Đề thi Authentic HCMUE (Đề 01–05 tại `src/features/writing/data/drills/hcmue/` gồm 10 bài Thư & Luận) kèm 100% bài mẫu chính thức và phân tích tiếng Việt
+- [x] Tích hợp Collection Switcher trên Writing Studio (`src/features/writing/WritingStudioPage.tsx`): Cho phép chuyển đổi giữa "7 Đề thi chuẩn ULIS" (`ALL_ULIS_WRITING_TESTS`) và "5 Đề luyện tập HCMUE" (`HCMUE_WRITING_TESTS`, 10 bài Thư & Luận)
 
 ### Pipeline Chấm Writing 3 Tầng & Vietlish Engine
 - [x] Tầng 1 (Client-side): Local rule-based pre-filter & pre-calculation (<50ms, regex đếm từ, n-gram chống chép đề, lọc lỗi liên từ kép *Although... but...*, *Because... so...*)
@@ -106,7 +106,8 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Đồng hồ đếm ngược thời gian thực: Chuẩn bị (1p) và Ghi âm (3p) theo từng Part
 - [x] Tích hợp âm hiệu BEEP bắt đầu và kết thúc chuẩn phòng thi tạo bằng Web Audio API `OscillatorNode` độc lập
 - [x] Trích xuất & cấu trúc hóa 7 Đề thi Nói Authentic ULIS (`src/features/speaking/data/mockTests/ulisSpeakingTest01.ts` đến `07.ts`) từ sách "7 Vstep Tests" và tích hợp 1:1 vào `mockTest01.ts` đến `mockTest07.ts`
-- [x] Tích hợp Collection Switcher trên Speaking Studio (`src/features/speaking/SpeakingStudioPage.tsx`): Cho phép chuyển đổi giữa "7 Đề thi chuẩn ULIS" (`ALL_ULIS_SPEAKING_TESTS`) và "5 Kỳ thi thật tháng 5" (`SPEAKING_EXAM_MAY_05`, `16`, `20`, `22`, `29` gồm đủ 3 Part tại `src/features/speaking/data/speakingBank.ts`)
+- [x] Ngân hàng đề thi Nói thực chiến: Trích xuất và cấu trúc hóa 5 Đề thi Authentic HCMUE (Đề 01–05 tại `src/features/speaking/data/drills/hcmue/` gồm 15 phần thi) kèm gợi ý dàn ý và bài mẫu chính thức
+- [x] Tích hợp Collection Switcher trên Speaking Studio (`src/features/speaking/SpeakingStudioPage.tsx`): Cho phép chuyển đổi giữa "7 Đề thi chuẩn ULIS" (`ALL_ULIS_SPEAKING_TESTS`) và "5 Đề luyện tập HCMUE" (`HCMUE_SPEAKING_TESTS`, 15 phần thi)
 
 ### Thu âm Trình duyệt, Đàm phán MIME & Bộ đệm IndexedDB
 - [x] Đàm phán định dạng an toàn qua `MediaRecorder.isTypeSupported()` (`audio/webm;codecs=opus` -> `audio/webm` -> `audio/mp4`) tương thích tối đa trên Laptop, Android và Safari

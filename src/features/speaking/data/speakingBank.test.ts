@@ -1,23 +1,48 @@
 import { describe, it, expect } from 'vitest';
-import { ALL_SPEAKING_PRACTICE_TESTS, ALL_MAY_SPEAKING_TESTS } from './speakingBank';
+import {
+  ALL_SPEAKING_PRACTICE_TESTS,
+  HCMUE_SPEAKING_TESTS,
+  HCMUE_SPEAKING_TESTS_MAP,
+} from './speakingBank';
 import { ALL_ULIS_SPEAKING_TESTS } from './mockTests';
 
-describe('Speaking Practice Bank Integrity', () => {
-  it('should have 7 authentic ULIS tests, 5 May exams, and total 12 practice tests', () => {
+describe('Speaking Practice Bank (HCMUE 01–05) Integrity', () => {
+  it('should have 7 authentic ULIS tests, 5 HCMUE tests, and total 12 practice tests', () => {
     expect(ALL_ULIS_SPEAKING_TESTS.length).toBe(7);
-    expect(ALL_MAY_SPEAKING_TESTS.length).toBe(5);
+    expect(HCMUE_SPEAKING_TESTS.length).toBe(5);
     expect(ALL_SPEAKING_PRACTICE_TESTS.length).toBe(12);
   });
 
-  it('each May exam session should have an exam_date, unique id, and 3 complete parts', () => {
-    const dates = ALL_MAY_SPEAKING_TESTS.map((e) => e.exam_date);
-    expect(new Set(dates).size).toBe(5);
-    ALL_MAY_SPEAKING_TESTS.forEach((exam) => {
-      expect(exam.id).toMatch(/^vstep_spk_2026_05_/);
-      expect(exam.exam_date).toBeTruthy();
+  it('each HCMUE exam session should have a valid id, test_number, and 3 complete parts with sample responses', () => {
+    HCMUE_SPEAKING_TESTS.forEach((exam, idx) => {
+      const numStr = String(idx + 1).padStart(2, '0');
+      expect(exam.id).toBe(`hcmue_spk_test_${numStr}`);
+      expect(exam.test_number).toBe(idx + 1);
+      expect(exam.title).toContain(`HCMUE Authentic VSTEP Speaking Test ${numStr}`);
+
+      // Part 1
       expect(exam.part1.topics.length).toBe(2);
+      exam.part1.topics.forEach((t: { topic_name: string; questions: string[] }) => {
+        expect(t.questions.length).toBe(3);
+        expect(t.topic_name).toBeTruthy();
+      });
+      expect(exam.part1.sample_response?.text).toBeTruthy();
+      expect(exam.part1.sample_response?.band).toBeTruthy();
+
+      // Part 2
+      expect(exam.part2.situation).toBeTruthy();
       expect(exam.part2.options.length).toBe(3);
-      expect(exam.part3.mindmap_ideas.length).toBeGreaterThanOrEqual(3);
+      expect(exam.part2.sample_response?.text).toBeTruthy();
+      expect(exam.part2.sample_response?.band).toBeTruthy();
+
+      // Part 3
+      expect(exam.part3.topic).toBeTruthy();
+      expect(exam.part3.mindmap_ideas.length).toBe(3);
+      expect(exam.part3.follow_up_questions.length).toBe(3);
+      expect(exam.part3.sample_response?.text).toBeTruthy();
+      expect(exam.part3.sample_response?.band).toBeTruthy();
+
+      expect(HCMUE_SPEAKING_TESTS_MAP[exam.id]).toBe(exam);
     });
   });
 

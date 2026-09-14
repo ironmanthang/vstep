@@ -17,11 +17,11 @@ if not api_key:
     sys.exit(1)
 
 MODELS = [
-    'gemini-3.5-flash-lite',
-    'gemini-3.5-flash',
-    'gemini-3.6-flash',
-    'gemini-3.7-flash',
     'gemini-3.8-flash',
+    'gemini-3.7-flash',
+    'gemini-3.6-flash',
+    'gemini-3.5-flash',
+    'gemini-3.5-flash-lite',
 ]
 
 def call_gemini(b64_pdf, prompt, is_json=False):

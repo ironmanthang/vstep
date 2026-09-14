@@ -5,7 +5,7 @@
  * enriched via Gemini Flash cascade.
  * 
  * Model cascade:
- *   gemini-3.8-flash -> gemini-3.7-flash -> gemini-3.6-flash -> gemini-3.5-flash-lite -> gemini-2.5-flash -> gemini-1.5-flash
+ *   gemini-3.8-flash -> gemini-3.7-flash -> gemini-3.6-flash -> gemini-3.5-flash -> gemini-3.5-flash-lite
  * 
  * Usage:
  *   node --experimental-strip-types scripts/mine_reading_vocab.mjs [--apply]
@@ -23,9 +23,8 @@ const CANDIDATE_LLM_MODELS = [
   'gemini-3.8-flash',
   'gemini-3.7-flash',
   'gemini-3.6-flash',
+  'gemini-3.5-flash',
   'gemini-3.5-flash-lite',
-  'gemini-2.5-flash',
-  'gemini-1.5-flash',
 ];
 
 export const TOPIC_CONFIG = {

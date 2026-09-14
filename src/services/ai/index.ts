@@ -47,10 +47,10 @@ export const PRESET_MODELS: AIModelOption[] = [
     badge: 'Khuyên Dùng',
   },
   {
-    id: 'gemini-1.5-pro',
-    name: 'Gemini 1.5 Pro',
+    id: 'gemini-3.8-flash',
+    name: 'Gemini 3.8 Flash (Direct)',
     provider: 'google_ai_studio',
-    description: 'Khả năng suy luận sâu cho bài luận học thuật Task 2',
+    description: 'Mô hình mạnh mẽ nhất dòng 3.x Flash, hỗ trợ multimodal & audio native',
   },
   {
     id: 'qwen2.5',

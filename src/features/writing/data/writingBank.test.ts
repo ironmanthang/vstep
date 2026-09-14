@@ -4,41 +4,58 @@ import {
   WRITING_TASK2_BANK,
   ALL_WRITING_PRACTICE_PROMPTS,
   ALL_PRACTICE_WRITING_TESTS,
+  HCMUE_WRITING_TESTS,
+  HCMUE_WRITING_TESTS_MAP,
 } from './writingBank';
 import { ALL_ULIS_WRITING_TESTS, ULIS_WRITING_TESTS_MAP } from './mockTests';
 
-describe('Writing Practice Bank Integrity', () => {
-  it('should export non-empty Task 1 and Task 2 collections', () => {
-    expect(WRITING_TASK1_BANK.length).toBeGreaterThanOrEqual(2);
-    expect(WRITING_TASK2_BANK.length).toBeGreaterThanOrEqual(2);
-    expect(ALL_WRITING_PRACTICE_PROMPTS.length).toBe(
-      WRITING_TASK1_BANK.length + WRITING_TASK2_BANK.length
-    );
+describe('Writing Practice Bank (HCMUE 01–05) Integrity', () => {
+  it('should export exactly 5 authentic Task 1 and Task 2 prompts', () => {
+    expect(WRITING_TASK1_BANK.length).toBe(5);
+    expect(WRITING_TASK2_BANK.length).toBe(5);
+    expect(ALL_WRITING_PRACTICE_PROMPTS.length).toBe(10);
+    expect(HCMUE_WRITING_TESTS.length).toBe(5);
+    expect(ALL_PRACTICE_WRITING_TESTS.length).toBe(5);
   });
 
   it('each Task 1 letter prompt should meet VSTEP B1-B2 exam standards', () => {
-    WRITING_TASK1_BANK.forEach((prompt) => {
-      expect(prompt.id).toBeTruthy();
+    WRITING_TASK1_BANK.forEach((prompt, idx) => {
+      expect(prompt.id).toBe(`hcmue_writing_test_0${idx + 1}_t1`);
       expect(prompt.task_type).toBe('task1_letter');
       expect(prompt.time_allowed_minutes).toBe(20);
       expect(prompt.min_words).toBe(120);
       expect(prompt.prompt_text.trim().length).toBeGreaterThan(50);
       expect(prompt.sample_response).toBeDefined();
       expect(prompt.sample_response?.text.trim().length).toBeGreaterThan(100);
-      expect(prompt.sample_response?.band).toBeTruthy();
+      expect(['B1', 'B2', 'C1']).toContain(prompt.sample_response?.band);
     });
   });
 
   it('each Task 2 essay prompt should meet VSTEP B1-B2 exam standards', () => {
-    WRITING_TASK2_BANK.forEach((prompt) => {
-      expect(prompt.id).toBeTruthy();
+    WRITING_TASK2_BANK.forEach((prompt, idx) => {
+      expect(prompt.id).toBe(`hcmue_writing_test_0${idx + 1}_t2`);
       expect(prompt.task_type).toBe('task2_essay');
       expect(prompt.time_allowed_minutes).toBe(40);
       expect(prompt.min_words).toBe(250);
       expect(prompt.prompt_text.trim().length).toBeGreaterThan(50);
       expect(prompt.sample_response).toBeDefined();
       expect(prompt.sample_response?.text.trim().length).toBeGreaterThan(150);
-      expect(prompt.sample_response?.band).toBeTruthy();
+      expect(['B1', 'B2', 'C1']).toContain(prompt.sample_response?.band);
+    });
+  });
+
+  it('HCMUE_WRITING_TESTS should export 5 valid complete tests with Task 1 and Task 2', () => {
+    HCMUE_WRITING_TESTS.forEach((test, idx) => {
+      const numStr = String(idx + 1).padStart(2, '0');
+      expect(test.id).toBe(`hcmue_writing_test_${numStr}`);
+      expect(test.test_number).toBe(idx + 1);
+      expect(test.institution).toBe('HCMUE - ĐH Sư phạm TP.HCM');
+      expect(test.total_duration_minutes).toBe(60);
+      expect(test.task1.task_type).toBe('task1_letter');
+      expect(test.task2.task_type).toBe('task2_essay');
+      expect(test.task1.sample_response).toBeDefined();
+      expect(test.task2.sample_response).toBeDefined();
+      expect(HCMUE_WRITING_TESTS_MAP[test.id]).toBe(test);
     });
   });
 });
@@ -55,7 +72,7 @@ describe('Authentic ULIS Writing Tests 01–07 Integrity', () => {
     }
   });
 
-  it('each ULIS test has verified Task 1 letter with B1 sample answer', () => {
+  it('each ULIS test has verified Task 1 letter with sample answer', () => {
     ALL_ULIS_WRITING_TESTS.forEach((test) => {
       const t1 = test.task1;
       expect(t1.task_type).toBe('task1_letter');
@@ -68,7 +85,7 @@ describe('Authentic ULIS Writing Tests 01–07 Integrity', () => {
     });
   });
 
-  it('each ULIS test has verified Task 2 essay with B1 sample answer', () => {
+  it('each ULIS test has verified Task 2 essay with sample answer', () => {
     ALL_ULIS_WRITING_TESTS.forEach((test) => {
       const t2 = test.task2;
       expect(t2.task_type).toBe('task2_essay');
@@ -80,17 +97,4 @@ describe('Authentic ULIS Writing Tests 01–07 Integrity', () => {
       expect(['B1', 'B2', 'C1']).toContain(t2.sample_response?.band);
     });
   });
-
-  it('ALL_PRACTICE_WRITING_TESTS should export 3 valid complete tests with Task 1 and Task 2', () => {
-    expect(ALL_PRACTICE_WRITING_TESTS.length).toBe(3);
-    ALL_PRACTICE_WRITING_TESTS.forEach((test, idx) => {
-      expect(test.id).toBe(`vstep_writing_prac_0${idx + 1}`);
-      expect(test.total_duration_minutes).toBe(60);
-      expect(test.task1.task_type).toBe('task1_letter');
-      expect(test.task2.task_type).toBe('task2_essay');
-      expect(test.task1.sample_response).toBeDefined();
-      expect(test.task2.sample_response).toBeDefined();
-    });
-  });
 });
-
