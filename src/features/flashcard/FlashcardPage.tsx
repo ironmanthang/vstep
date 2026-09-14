@@ -141,12 +141,12 @@ export const FlashcardPage: React.FC = () => {
         {/* Stats Summary Bar */}
         <div className="stats-grid">
           <div className="stat-card">
-            <span className="stat-label">Đang học</span>
-            <span className="stat-val stat-gold">{stats.learning} từ</span>
-          </div>
-          <div className="stat-card">
             <span className="stat-label">Đã làm chủ</span>
             <span className="stat-val stat-emerald">{stats.mastered} từ ({stats.masteryPercentage}%)</span>
+          </div>
+          <div className="stat-card">
+            <span className="stat-label">Đang học</span>
+            <span className="stat-val stat-gold">{stats.learning} từ</span>
           </div>
           <div className="stat-card">
             <span className="stat-label">Hôm nay đã ôn</span>
@@ -160,11 +160,11 @@ export const FlashcardPage: React.FC = () => {
       {/* Mobile Compact Study Bar (Visible only on mobile in queue mode) */}
       <div className="mobile-study-bar">
         <div className="mobile-study-stats">
-          <span className="mobile-stat-pill stat-gold">
-            <strong>{stats.learning}</strong> đang học
-          </span>
           <span className="mobile-stat-pill stat-emerald">
             <strong>{stats.mastered}</strong> làm chủ
+          </span>
+          <span className="mobile-stat-pill stat-gold">
+            <strong>{stats.learning}</strong> đang học
           </span>
           <span className="mobile-stat-pill stat-primary">
             ✓ <strong>{reviewedToday}</strong> đã ôn
