@@ -13,6 +13,8 @@ export default defineConfig({
       workbox: {
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         importScripts: ['/sw-custom.js'],
+        navigateFallback: null,
+        globIgnores: ['**/index.html'],
       },
       manifest: {
         name: 'VSTEP Master — Luyện thi VSTEP B1-B2 Thông minh',

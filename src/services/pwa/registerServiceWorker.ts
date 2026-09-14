@@ -114,7 +114,7 @@ export function initPwaLifecycle(): void {
 
   // 3. Register service worker immediately (don't delay until window 'load')
   navigator.serviceWorker
-    .register('/sw.js', { scope: '/' })
+    .register('/sw.js', { scope: '/', updateViaCache: 'none' })
     .then((registration) => {
       // Proactively check for new build on the server
       registration.update().catch(() => {});
