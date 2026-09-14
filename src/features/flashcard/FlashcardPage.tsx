@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { useFlashcardStore } from './useFlashcardStore';
 import { FlashcardCard } from './FlashcardCard';
 import type { SRSRating } from '../../types/schemas';
@@ -14,7 +14,6 @@ import './FlashcardPage.css';
 export const FlashcardPage: React.FC = () => {
   const {
     cards,
-    filteredCards,
     reviewQueue,
     totalDueCount,
     stats,
@@ -43,12 +42,6 @@ export const FlashcardPage: React.FC = () => {
   // Active card in queue (always the head of the priority queue)
   const currentCard = reviewQueue[0] || null;
 
-  // Topic progress calculations
-  const totalInTopic = filteredCards.length;
-  const learnedInTopic = useMemo(() => {
-    return filteredCards.filter((c) => c.srs_metadata.reps > 0).length;
-  }, [filteredCards]);
-  const topicProgressPercent = totalInTopic > 0 ? Math.round((learnedInTopic / totalInTopic) * 100) : 0;
 
   const handleReview = async (cardId: string, rating: SRSRating) => {
     if (!isOnline) {
@@ -99,47 +92,8 @@ export const FlashcardPage: React.FC = () => {
         </div>
       )}
 
-      {/* Header & Stats Dashboard (Collapses on Mobile during Review Queue to lift card above the fold) */}
+      {/* Stats Dashboard (Collapses on Mobile during Review Queue to lift card above the fold) */}
       <div className="header-stats-wrapper compact-mobile">
-        {/* Page Header */}
-        <div className="page-header-row">
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <h1 className="page-title">Từ Vựng VSTEP SRS</h1>
-              {isCloudSyncing && (
-                <span className="badge badge-gold" style={{ fontSize: '0.75rem', animation: 'pulse 1.5s infinite' }}>
-                  🔄 Đang đồng bộ Cloud...
-                </span>
-              )}
-            </div>
-            <p className="page-subtitle">
-              Kho 3.000 từ vựng học thuật Spaced Repetition (SRS) bám sát 8 chủ đề đề thi VSTEP B1–B2–C1.
-            </p>
-          </div>
-          <div className="header-actions">
-            <button
-              className="secondary-btn"
-              onClick={() => setIsReminderModalOpen(true)}
-              title="Cài đặt thông báo nhắc nhở ôn tập SRS"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
-            >
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
-                <path d="M13.73 21a2 2 0 0 1-3.46 0" />
-              </svg>
-              Nhắc nhở SRS
-            </button>
-            <button
-              className="secondary-btn"
-              onClick={() => setIsResetModalOpen(true)}
-              title="Đặt lại toàn bộ tiến độ học của Deck"
-              disabled={isResetting}
-            >
-              <RefreshIcon size={16} /> Đặt lại Deck
-            </button>
-          </div>
-        </div>
-
         {/* Stats Summary Bar - Interactive to inspect word list */}
         <div className="stats-grid">
           <div
@@ -206,6 +160,11 @@ export const FlashcardPage: React.FC = () => {
           </button>
         </div>
         <div className="mobile-study-actions">
+          {isCloudSyncing && (
+            <span className="mobile-sync-badge" title="Đang đồng bộ Cloud...">
+              🔄
+            </span>
+          )}
           <button
             className="mobile-icon-btn"
             onClick={() => setIsReminderModalOpen(true)}
@@ -217,35 +176,47 @@ export const FlashcardPage: React.FC = () => {
               <path d="M13.73 21a2 2 0 0 1-3.46 0" />
             </svg>
           </button>
-          <button
-            className="mobile-icon-btn"
-            onClick={() => setIsResetModalOpen(true)}
-            title="Đặt lại Deck"
-            aria-label="Đặt lại Deck"
-            disabled={isResetting}
-          >
-            <RefreshIcon size={16} />
-          </button>
         </div>
       </div>
 
       {/* Topic & Level Filters */}
       <div className="controls-row">
         <div className="filter-levels-row">
-          <span className="filter-section-title">Bậc CEFR:</span>
-          <div className="level-pills-wrapper" role="group" aria-label="Lọc theo bậc năng lực CEFR">
-            {levels.map(lvl => (
-              <button
-                key={lvl}
-                className={`level-pill ${selectedLevel === lvl ? 'active' : ''}`}
-                onClick={() => {
-                  setSelectedLevel(lvl);
-                  setIsFlipped(false);
-                }}
-              >
-                {lvl === 'Tất cả' ? 'Tất cả Bậc' : `Bậc ${lvl}`}
-              </button>
-            ))}
+          <div className="filter-levels-group">
+            <span className="filter-section-title">Bậc CEFR:</span>
+            <div className="level-pills-wrapper" role="group" aria-label="Lọc theo bậc năng lực CEFR">
+              {levels.map(lvl => (
+                <button
+                  key={lvl}
+                  className={`level-pill ${selectedLevel === lvl ? 'active' : ''}`}
+                  onClick={() => {
+                    setSelectedLevel(lvl);
+                    setIsFlipped(false);
+                  }}
+                >
+                  {lvl === 'Tất cả' ? 'Tất cả Bậc' : `Bậc ${lvl}`}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="filter-actions-group">
+            {isCloudSyncing && (
+              <span className="cloud-sync-badge badge-gold" title="Đang đồng bộ tiến độ với Supabase Cloud">
+                🔄 Đang đồng bộ Cloud...
+              </span>
+            )}
+            <button
+              className="secondary-btn reminder-btn"
+              onClick={() => setIsReminderModalOpen(true)}
+              title="Cài đặt thông báo nhắc nhở ôn tập SRS"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+              </svg>
+              <span>Nhắc nhở SRS</span>
+            </button>
           </div>
         </div>
 
@@ -270,26 +241,6 @@ export const FlashcardPage: React.FC = () => {
       <div className="queue-section">
         {currentCard ? (
           <div className="review-workspace">
-            {/* Queue Progress Indicator */}
-            <div className="queue-progress-bar-container">
-              <div className="progress-info">
-                <span className="progress-text">
-                  Tiến độ chủ đề: <strong>{learnedInTopic}</strong> / <strong>{totalInTopic}</strong> từ ({topicProgressPercent}%)
-                </span>
-                <span className="queue-remaining-badge">
-                  Còn {reviewQueue.length} thẻ
-                </span>
-              </div>
-              <div className="progress-track">
-                <div
-                  className="progress-fill"
-                  style={{
-                    width: `${topicProgressPercent}%`,
-                  }}
-                />
-              </div>
-            </div>
-
             {/* Card Component */}
             <FlashcardCard
               card={currentCard}
@@ -330,6 +281,19 @@ export const FlashcardPage: React.FC = () => {
             </div>
           </div>
         )}
+      </div>
+
+      {/* Danger Zone / Deck Management Area (Bottom of Page, High Friction) */}
+      <div className="deck-danger-zone">
+        <button
+          className="reset-deck-btn"
+          onClick={() => setIsResetModalOpen(true)}
+          title="Đặt lại toàn bộ tiến độ học của Deck"
+          disabled={isResetting}
+        >
+          <RefreshIcon size={14} />
+          <span>Đặt lại toàn bộ tiến độ Deck</span>
+        </button>
       </div>
 
       {/* Sổ tay từ vựng Inspector Modal */}

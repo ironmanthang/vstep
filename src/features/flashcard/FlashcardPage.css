@@ -41,31 +41,6 @@
   flex-shrink: 0;
 }
 
-.page-header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: var(--space-4);
-  flex-wrap: wrap;
-}
-
-.page-title {
-  font-size: var(--fs-2xl);
-  font-weight: 800;
-  color: var(--text-primary);
-  margin-bottom: var(--space-1);
-}
-
-.page-subtitle {
-  font-size: var(--fs-sm);
-  color: var(--text-secondary);
-  max-width: 620px;
-}
-
-.header-actions {
-  display: flex;
-  gap: var(--space-2);
-}
 
 .header-stats-wrapper {
   display: flex;
@@ -159,8 +134,33 @@
 .filter-levels-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: var(--space-3);
   flex-wrap: wrap;
+}
+
+.filter-levels-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.filter-actions-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.cloud-sync-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--fs-xs);
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  animation: pulse 1.5s infinite;
+  white-space: nowrap;
 }
 
 .filter-section-title {
@@ -258,50 +258,6 @@
   margin: 0 auto;
 }
 
-.queue-progress-bar-container {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
-}
-
-.progress-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.progress-text {
-  font-size: var(--fs-xs);
-  color: var(--text-secondary);
-}
-
-.progress-text strong {
-  color: var(--text-primary);
-}
-
-.queue-remaining-badge {
-  font-size: var(--fs-xs);
-  font-weight: 600;
-  color: var(--primary-text);
-  background-color: var(--primary-subtle);
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
-}
-
-.progress-track {
-  width: 100%;
-  height: 6px;
-  background-color: var(--border);
-  border-radius: var(--radius-full);
-  overflow: hidden;
-}
-
-.progress-fill {
-  height: 100%;
-  background-color: var(--primary);
-  border-radius: var(--radius-full);
-  transition: width 0.3s ease;
-}
 
 /* Empty Queue State */
 .empty-queue-card {
@@ -385,6 +341,42 @@
   color: var(--text-primary);
 }
 
+/* Deck Danger Zone (High Friction Bottom Area) */
+.deck-danger-zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--space-8);
+  padding-top: var(--space-4);
+  border-top: 1px dashed var(--border);
+}
+
+.reset-deck-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.reset-deck-btn:hover:not(:disabled) {
+  color: var(--coral-text);
+  background-color: rgba(220, 38, 38, 0.08);
+  border-color: rgba(220, 38, 38, 0.2);
+}
+
+.reset-deck-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /* (Browse Vocabulary Grid removed in favor of WordInspectorModal) */
 
 /* Mobile Responsiveness */
@@ -460,23 +452,13 @@
     cursor: not-allowed;
   }
 
-  .page-header-row {
-    flex-direction: column;
-    align-items: stretch;
-    gap: var(--space-3);
+  .filter-actions-group .reminder-btn {
+    display: none;
   }
 
-  .page-title {
-    font-size: var(--fs-xl);
-  }
-
-  .header-actions {
-    width: 100%;
-  }
-
-  .header-actions .secondary-btn {
-    width: 100%;
-    justify-content: center;
+  .mobile-sync-badge {
+    font-size: var(--fs-xs);
+    animation: pulse 1.5s infinite;
   }
 
   .stats-grid {

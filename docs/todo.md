@@ -27,6 +27,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
   - [x] Đợt 3 (Writing & Speaking): Mở rộng từ 2.500 lên 3.000 từ (+500 từ) từ 14 đề ULIS Writing/Speaking, Writing Bank & Speaking Bank (`scripts/mine_productive_vocab.mjs`)
 - [x] Bộ lọc cấp độ CEFR Flashcard: Tích hợp chọn cấp độ ('Tất cả', 'B1', 'B2', 'C1') kết hợp cùng 8 chủ đề, và đồng bộ thống nhất toàn bộ copy kho từ vựng 3.000 từ trên toàn hệ thống.
 - [x] Tinh giản Studio Luyện từ vựng & Sổ tay Tra cứu Tương tác: Loại bỏ tab duyệt tĩnh 3.000 từ gây quá tải; biến 3 ô thống kê cốt lõi (Đã làm chủ, Đang học, Hôm nay đã ôn) thành lối tắt tương tác mở Sổ tay từ vựng (`WordInspectorModal.tsx`) với bộ lọc tức thì, tìm kiếm thời gian thực và phát âm audio bản xứ.
+- [x] Tinh giản Không Gian Luyện Tập & Bố Cục Nút Bấm An Toàn: Loại bỏ banner tiêu đề/mô tả và thanh tiến độ chủ đề tối ưu không gian Above-the-Fold; đưa nút Nhắc nhở SRS vào thanh lọc CEFR kèm huy hiệu đồng bộ Cloud; chuyển nút Đặt lại Deck xuống khu vực chân trang (High Friction) và loại bỏ khỏi mobile study bar chống bấm nhầm.
 
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)
 - [x] Hạ tầng Kiểm thử & Triển khai: Unit tests Vitest, Pre-push pipeline tự động (`scripts/prepush.mjs`), CI/CD GitHub Actions (`.github/workflows/ci.yml`), kịch bản tự động hóa database migration (`scripts/migrate.mjs`), và triển khai Production Cloudflare Pages (`vstep.pages.dev`).
