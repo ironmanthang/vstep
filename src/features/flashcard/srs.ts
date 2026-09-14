@@ -15,12 +15,8 @@ const scheduler: FSRS = fsrs({
   request_retention: 0.90,   // 90% target recall probability
   maximum_interval: 365,     // 1 year max interval
   enable_fuzz: true,         // ±5% interval randomization to prevent clustering
-  enable_short_term: true,   // Enable learning steps for failed cards
-  learning_steps: ['10m'],   // Re-show failed card after 10 minutes (in-session)
-  relearning_steps: ['10m'], // Same for lapsed mature cards
+  enable_short_term: false,  // Clean daily spaced repetition without in-session 10m limbo
 });
-
-const NEW_CARDS_PER_DAY = 20;
 
 // ─── Conversion Helpers ────────────────────────────────────────────────────
 
@@ -66,17 +62,14 @@ function ratingToFSRS(rating: SRSRating): Grade {
 
 /**
  * Build the review queue with correct priority ordering:
- *  1. Re-learning cards (answered wrong in session, re-queued)
- *  2. Due review cards (overdue, sorted by most overdue first)
- *  3. New cards (never seen, uncapped by default for continuous learning)
+ *  1. Due review cards (previously learned, overdue, sorted by most overdue first)
+ *  2. New cards (never seen, uncapped for continuous learning)
  */
 export function getReviewQueue(
   cards: FlashcardItem[],
   now?: number,
-  newCardsRemaining?: number,
 ): FlashcardItem[] {
   const currentTime = now ?? Date.now();
-  const relearning: FlashcardItem[] = [];
   const dueReviews: FlashcardItem[] = [];
   const newCards: FlashcardItem[] = [];
 
@@ -84,49 +77,44 @@ export function getReviewQueue(
     const meta = card.srs_metadata;
 
     if (meta.state === State.New && meta.reps === 0) {
-      // Never reviewed — new card
       newCards.push(card);
     } else if (meta.next_review_timestamp <= currentTime) {
-      // Due for review
-      if (meta.state === State.Relearning || meta.state === State.Learning) {
-        relearning.push(card);
-      } else {
-        dueReviews.push(card);
-      }
+      dueReviews.push(card);
     }
-    // else: not due yet, skip
   }
 
   // Sort due reviews: most overdue first (lowest next_review_timestamp)
-  dueReviews.sort((a, b) =>
-    a.srs_metadata.next_review_timestamp - b.srs_metadata.next_review_timestamp
+  dueReviews.sort(
+    (a, b) => a.srs_metadata.next_review_timestamp - b.srs_metadata.next_review_timestamp
   );
 
-  // Sort relearning: oldest failure first
-  relearning.sort((a, b) =>
-    a.srs_metadata.next_review_timestamp - b.srs_metadata.next_review_timestamp
-  );
+  return [...dueReviews, ...newCards];
+}
 
-  // If newCardsRemaining is specified, cap new cards; otherwise serve all new cards uncapped
-  const eligibleNewCards = typeof newCardsRemaining === 'number'
-    ? newCards.slice(0, Math.max(0, newCardsRemaining))
-    : newCards;
-
-  return [...relearning, ...dueReviews, ...eligibleNewCards];
+/**
+ * Count how many cards are genuinely due for review (excluding unreviewed new cards).
+ */
+export function getDueReviewCount(
+  cards: FlashcardItem[],
+  now?: number,
+): number {
+  const currentTime = now ?? Date.now();
+  return cards.filter(
+    (c) => c.srs_metadata.reps > 0 && c.srs_metadata.next_review_timestamp <= currentTime
+  ).length;
 }
 
 /**
  * Pure Spaced Repetition state transition using FSRS v6.
  * Binary input: 'correct' → Rating.Good, 'wrong' → Rating.Again
  *
- * Returns updated FlashcardItem + a flag indicating if the card
- * should be re-queued in the current session (wrong → re-learn).
+ * Returns updated FlashcardItem with deterministic daily interval.
  */
 export function reviewCard(
   card: FlashcardItem,
   rating: SRSRating,
   now: number = Date.now(),
-): { updatedCard: FlashcardItem; shouldRequeue: boolean } {
+): { updatedCard: FlashcardItem } {
   const fsrsCard = metadataToCard(card.srs_metadata);
   const fsrsRating = ratingToFSRS(rating);
   const reviewDate = new Date(now);
@@ -139,19 +127,16 @@ export function reviewCard(
     srs_metadata: newMeta,
   };
 
-  // Re-queue in current session if the card entered Learning or Relearning state
-  const shouldRequeue = rating === 'wrong' && (
-    newMeta.state === State.Learning ||
-    newMeta.state === State.Relearning
-  );
-
-  return { updatedCard, shouldRequeue };
+  return { updatedCard };
 }
 
 /**
- * Compute the next interval preview (in days) for display on the Correct button.
+ * Compute the next interval preview (in days) for display on the rating buttons.
  */
-export function getNextIntervalPreview(card: FlashcardItem): number {
+export function getNextIntervalPreview(card: FlashcardItem, rating: SRSRating = 'correct'): number {
+  if (rating === 'wrong') {
+    return 1;
+  }
   const fsrsCard = metadataToCard(card.srs_metadata);
   const preview = scheduler.repeat(fsrsCard, new Date());
   const goodCard = preview[Rating.Good].card;
@@ -163,7 +148,7 @@ export function getNextIntervalPreview(card: FlashcardItem): number {
  * Format interval as human-readable Vietnamese string.
  */
 export function formatInterval(days: number): string {
-  if (days < 1) return 'Ôn lại ngay';
+  if (days < 1) return '1 ngày';
   if (days === 1) return '1 ngày';
   if (days < 30) return `${days} ngày`;
   if (days < 365) {
@@ -175,17 +160,22 @@ export function formatInterval(days: number): string {
 
 /**
  * Aggregates statistics for the user's deck.
+ * Invariant: total === mastered + learning + newCards
  */
 export function getSRSDeckStats(cards: FlashcardItem[]) {
   const total = cards.length;
-  const mastered = cards.filter(c => c.srs_metadata.state === State.Review && c.srs_metadata.reps >= 3).length;
-  const learning = cards.filter(c =>
-    c.srs_metadata.state === State.Learning ||
-    c.srs_metadata.state === State.Relearning ||
-    (c.srs_metadata.state === State.Review && c.srs_metadata.reps < 3)
+  const mastered = cards.filter(
+    (c) => c.srs_metadata.state === State.Review && c.srs_metadata.reps >= 3
   ).length;
-  const newCards = cards.filter(c => c.srs_metadata.state === State.New && c.srs_metadata.reps === 0).length;
-  const leeches = cards.filter(c => c.srs_metadata.lapses >= 8).length;
+  const learning = cards.filter(
+    (c) =>
+      c.srs_metadata.reps > 0 &&
+      !(c.srs_metadata.state === State.Review && c.srs_metadata.reps >= 3)
+  ).length;
+  const newCards = cards.filter(
+    (c) => c.srs_metadata.state === State.New && c.srs_metadata.reps === 0
+  ).length;
+  const leeches = cards.filter((c) => c.srs_metadata.lapses >= 8).length;
 
   return {
     total,
@@ -197,4 +187,4 @@ export function getSRSDeckStats(cards: FlashcardItem[]) {
   };
 }
 
-export { NEW_CARDS_PER_DAY, DEFAULT_SRS_METADATA };
+export { DEFAULT_SRS_METADATA };

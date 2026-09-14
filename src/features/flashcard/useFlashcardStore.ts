@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import type { FlashcardItem, SRSRating } from '../../types/schemas';
 import { VSTEP_CORPUS } from './corpus';
-import { getReviewQueue, reviewCard, getSRSDeckStats } from './srs';
+import { getReviewQueue, reviewCard, getSRSDeckStats, getDueReviewCount } from './srs';
 import { useAuth } from '../../services/supabase/authStore';
 import {
   fetchUserCardReviews,
@@ -112,10 +112,24 @@ export function useFlashcardStore() {
 
         if (!isMounted) return;
 
-        // Uniform projection flow: project cloud reviews directly onto VSTEP_CORPUS
-        // If cloudReviews is empty (new account or reset deck), nextCards cleanly equals VSTEP_CORPUS
+        // Existing local cache for this user (if any)
+        const localCached = loadUserItem<FlashcardItem[] | null>(userId, 'flashcard_deck_v3', null) || [];
+        const localMetaMap = new Map(localCached.map((c) => [c.id, c.srs_metadata]));
+
+        // Uniform projection flow: merge cloud reviews and local cached reviews onto VSTEP_CORPUS
         const nextCards = VSTEP_CORPUS.map((seedCard) => {
           const cloudRecord = cloudReviews[seedCard.id];
+          const localMeta = localMetaMap.get(seedCard.id);
+
+          // If both exist, pick whichever review is more recent / has higher reps
+          if (cloudRecord && localMeta && localMeta.reps > 0) {
+            const cloudTimestamp = cloudRecord.last_reviewed_at ? Number(cloudRecord.last_reviewed_at) : 0;
+            const localTimestamp = localMeta.last_reviewed_at || 0;
+            if (localTimestamp > cloudTimestamp || localMeta.reps > (cloudRecord.reps ?? 0)) {
+              return { ...seedCard, srs_metadata: localMeta };
+            }
+          }
+
           if (cloudRecord) {
             return {
               ...seedCard,
@@ -130,6 +144,11 @@ export function useFlashcardStore() {
               },
             };
           }
+
+          if (localMeta && localMeta.reps > 0) {
+            return { ...seedCard, srs_metadata: localMeta };
+          }
+
           return seedCard;
         });
 
@@ -186,9 +205,9 @@ export function useFlashcardStore() {
     return getReviewQueue(filteredCards);
   }, [filteredCards]);
 
-  // Total due cards across the entire deck (for app badging & notifications)
+  // Total due review cards across the entire deck (for app badging & notifications)
   const totalDueCount = useMemo(() => {
-    return getReviewQueue(cards).length;
+    return getDueReviewCount(cards);
   }, [cards]);
 
   // Synchronize PWA App Badge with total due cards
@@ -228,49 +247,47 @@ export function useFlashcardStore() {
     return ['Tất cả', ...Array.from(topicSet)];
   }, [cards]);
 
-  // Action: Review a card with binary rating + same-session re-queue
+  // Action: Review a card with binary rating
   const submitReview = useCallback(
     async (
       cardId: string,
       rating: SRSRating
-    ): Promise<{ success: boolean; error?: string; shouldRequeue?: boolean }> => {
+    ): Promise<{ success: boolean; error?: string }> => {
       if (typeof navigator !== 'undefined' && !navigator.onLine) {
         return { success: false, error: 'Mất kết nối Internet' };
       }
 
-      let updatedCard: FlashcardItem | null = null;
-      let shouldRequeue = false;
+      // 1. Synchronously find the target card and calculate review transition
+      const targetCard = cards.find((c) => c.id === cardId);
+      if (!targetCard) {
+        return { success: false, error: 'Không tìm thấy thẻ từ vựng' };
+      }
 
+      const { updatedCard } = reviewCard(targetCard, rating);
+
+      // 2. Immediately update React state & local storage
       setCards((prevCards) => {
-        const next = prevCards.map((c) => {
-          if (c.id === cardId) {
-            const result = reviewCard(c, rating);
-            updatedCard = result.updatedCard;
-            shouldRequeue = result.shouldRequeue;
-            return result.updatedCard;
-          }
-          return c;
-        });
-
+        const next = prevCards.map((c) => (c.id === cardId ? updatedCard : c));
         if (userId) {
           saveUserItem(userId, 'flashcard_deck_v3', next);
         }
-
         return next;
       });
 
+      // 3. Increment daily review count
       incrementDailyCount();
 
-      if (userId && updatedCard) {
+      // 4. Directly sync updated card review to Supabase Cloud
+      if (userId) {
         const syncRes = await syncCardReviewToCloud(userId, updatedCard);
         if (!syncRes.success) {
-          return syncRes;
+          console.warn('Failed to sync card review to cloud:', syncRes.error);
         }
       }
 
-      return { success: true, shouldRequeue };
+      return { success: true };
     },
-    [incrementDailyCount, userId]
+    [cards, incrementDailyCount, userId]
   );
 
   // Action: Reset deck for user

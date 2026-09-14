@@ -319,13 +319,13 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
                 title={
                   disabled
                     ? 'Vui lòng kết nối Internet để tiếp tục ôn tập'
-                    : 'Trả lời sai (Phím ← hoặc Vuốt trái) — Ôn lại ngay'
+                    : 'Trả lời sai (Phím ← hoặc Vuốt trái) — Ôn lại sau 1 ngày'
                 }
               >
                 <span className="srs-btn-label">
                   <span className="key-badge">←</span> ✗ Sai
                 </span>
-                <span className="srs-btn-interval">Ôn lại ngay</span>
+                <span className="srs-btn-interval">1 ngày</span>
               </button>
 
               <button

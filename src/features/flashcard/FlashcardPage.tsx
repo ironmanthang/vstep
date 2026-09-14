@@ -157,10 +157,6 @@ export const FlashcardPage: React.FC = () => {
         {/* Stats Summary Bar */}
         <div className="stats-grid">
           <div className="stat-card">
-            <span className="stat-label">Cần ôn hôm nay</span>
-            <span className="stat-val stat-primary">{reviewQueue.length} thẻ</span>
-          </div>
-          <div className="stat-card">
             <span className="stat-label">Đang học</span>
             <span className="stat-val stat-gold">{stats.learning} từ</span>
           </div>
@@ -170,7 +166,7 @@ export const FlashcardPage: React.FC = () => {
           </div>
           <div className="stat-card">
             <span className="stat-label">Hôm nay đã ôn</span>
-            <span className="stat-val stat-emerald">
+            <span className="stat-val stat-primary">
               {reviewedToday} thẻ
             </span>
           </div>
@@ -180,13 +176,13 @@ export const FlashcardPage: React.FC = () => {
       {/* Mobile Compact Study Bar (Visible only on mobile in queue mode) */}
       <div className="mobile-study-bar">
         <div className="mobile-study-stats">
-          <span className="mobile-stat-pill stat-primary">
-            <strong>{reviewQueue.length}</strong> cần ôn
-          </span>
           <span className="mobile-stat-pill stat-gold">
             <strong>{stats.learning}</strong> đang học
           </span>
           <span className="mobile-stat-pill stat-emerald">
+            <strong>{stats.mastered}</strong> làm chủ
+          </span>
+          <span className="mobile-stat-pill stat-primary">
             ✓ <strong>{reviewedToday}</strong> đã ôn
           </span>
         </div>
@@ -222,7 +218,7 @@ export const FlashcardPage: React.FC = () => {
               className={`tab-btn ${activeTab === 'queue' ? 'active' : ''}`}
               onClick={() => { setActiveTab('queue'); setCurrentQueueIndex(0); setIsFlipped(false); }}
             >
-              Hàng đợi ôn tập ({reviewQueue.length})
+              Hàng đợi học tập ({reviewQueue.length})
             </button>
             <button
               className={`tab-btn ${activeTab === 'browse' ? 'active' : ''}`}
