@@ -86,10 +86,18 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
 
       if (e.key === 'ArrowLeft') {
         e.preventDefault();
-        handleRating('wrong');
+        if (isFlipped) {
+          handleRating('wrong');
+        } else {
+          onFlip();
+        }
       } else if (e.key === 'ArrowRight') {
         e.preventDefault();
-        handleRating('correct');
+        if (isFlipped) {
+          handleRating('correct');
+        } else {
+          onFlip();
+        }
       } else if (e.key === ' ' || e.key === 'ArrowUp' || e.key === 'ArrowDown') {
         e.preventDefault();
         onFlip();
@@ -101,7 +109,7 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [disabled, handleRating, onFlip, playAudio]);
+  }, [disabled, handleRating, isFlipped, onFlip, playAudio]);
 
   // Proportional Touch Swipe Handlers
   const handleTouchStart = (e: React.TouchEvent) => {

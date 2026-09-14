@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useFlashcardStore } from './useFlashcardStore';
 import { FlashcardCard } from './FlashcardCard';
 import type { SRSRating } from '../../types/schemas';
@@ -33,14 +33,20 @@ export const FlashcardPage: React.FC = () => {
   const { statusMessage, showNotification, clearNotification } = useNotification();
 
   const [activeTab, setActiveTab] = useState<'queue' | 'browse'>('queue');
-  const [currentQueueIndex, setCurrentQueueIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [isResetModalOpen, setIsResetModalOpen] = useState(false);
   const [isResetting, setIsResetting] = useState(false);
   const [isReminderModalOpen, setIsReminderModalOpen] = useState(false);
 
-  // Active card in queue
-  const currentCard = reviewQueue[currentQueueIndex] || null;
+  // Active card in queue (always the head of the priority queue)
+  const currentCard = reviewQueue[0] || null;
+
+  // Topic progress calculations
+  const totalInTopic = filteredCards.length;
+  const learnedInTopic = useMemo(() => {
+    return filteredCards.filter((c) => c.srs_metadata.reps > 0).length;
+  }, [filteredCards]);
+  const topicProgressPercent = totalInTopic > 0 ? Math.round((learnedInTopic / totalInTopic) * 100) : 0;
 
   const handleReview = async (cardId: string, rating: SRSRating) => {
     if (!isOnline) {
@@ -60,11 +66,6 @@ export const FlashcardPage: React.FC = () => {
     if (reviewQueue.length <= 1 && rating === 'correct') {
       showNotification('🎉 Tuyệt vời! Bạn đã hoàn thành toàn bộ bài ôn hôm nay!', 'success');
     }
-
-    // Move to next card or wrap around
-    if (currentQueueIndex >= reviewQueue.length - 1) {
-      setCurrentQueueIndex(0);
-    }
   };
 
   const handleConfirmReset = async () => {
@@ -74,27 +75,10 @@ export const FlashcardPage: React.FC = () => {
     setIsResetModalOpen(false);
 
     if (res.success) {
-      setCurrentQueueIndex(0);
       setIsFlipped(false);
       showNotification('✓ Đã đặt lại toàn bộ thẻ và số thẻ đã ôn hôm nay về 0.', 'info');
     } else {
       showNotification(res.error || 'Không thể đặt lại tiến độ trên đám mây. Vui lòng thử lại.', 'error');
-    }
-  };
-
-  const handleNextCard = () => {
-    setIsFlipped(false);
-    if (currentQueueIndex < reviewQueue.length - 1) {
-      setCurrentQueueIndex(prev => prev + 1);
-    } else {
-      setCurrentQueueIndex(0);
-    }
-  };
-
-  const handlePrevCard = () => {
-    setIsFlipped(false);
-    if (currentQueueIndex > 0) {
-      setCurrentQueueIndex(prev => prev - 1);
     }
   };
 
@@ -216,7 +200,7 @@ export const FlashcardPage: React.FC = () => {
           <div className="tab-group">
             <button
               className={`tab-btn ${activeTab === 'queue' ? 'active' : ''}`}
-              onClick={() => { setActiveTab('queue'); setCurrentQueueIndex(0); setIsFlipped(false); }}
+              onClick={() => { setActiveTab('queue'); setIsFlipped(false); }}
             >
               Hàng đợi học tập ({reviewQueue.length})
             </button>
@@ -236,7 +220,6 @@ export const FlashcardPage: React.FC = () => {
                 className={`level-pill ${selectedLevel === lvl ? 'active' : ''}`}
                 onClick={() => {
                   setSelectedLevel(lvl);
-                  setCurrentQueueIndex(0);
                   setIsFlipped(false);
                 }}
               >
@@ -254,7 +237,6 @@ export const FlashcardPage: React.FC = () => {
               className={`topic-pill ${selectedTopic === topic ? 'active' : ''}`}
               onClick={() => {
                 setSelectedTopic(topic);
-                setCurrentQueueIndex(0);
                 setIsFlipped(false);
               }}
             >
@@ -273,17 +255,17 @@ export const FlashcardPage: React.FC = () => {
               <div className="queue-progress-bar-container">
                 <div className="progress-info">
                   <span className="progress-text">
-                    Thẻ <strong>{currentQueueIndex + 1}</strong> trên <strong>{reviewQueue.length}</strong>
+                    Tiến độ chủ đề: <strong>{learnedInTopic}</strong> / <strong>{totalInTopic}</strong> từ ({topicProgressPercent}%)
                   </span>
                   <span className="queue-remaining-badge">
-                    Còn {reviewQueue.length - currentQueueIndex} thẻ
+                    Còn {reviewQueue.length} thẻ
                   </span>
                 </div>
                 <div className="progress-track">
                   <div
                     className="progress-fill"
                     style={{
-                      width: `${((currentQueueIndex + 1) / reviewQueue.length) * 100}%`,
+                      width: `${topicProgressPercent}%`,
                     }}
                   />
                 </div>
@@ -297,24 +279,6 @@ export const FlashcardPage: React.FC = () => {
                 onFlip={() => setIsFlipped(prev => !prev)}
                 disabled={!isOnline || isCloudSyncing || isResetting}
               />
-
-              {/* Navigation arrows for convenience */}
-              <div className="card-nav-controls">
-                <button
-                  className="nav-btn"
-                  onClick={handlePrevCard}
-                  disabled={currentQueueIndex === 0}
-                >
-                  ← Thẻ trước
-                </button>
-                <button
-                  className="nav-btn"
-                  onClick={handleNextCard}
-                  disabled={currentQueueIndex >= reviewQueue.length - 1}
-                >
-                  Thẻ tiếp theo →
-                </button>
-              </div>
             </div>
           ) : (
             /* Empty Queue State */
@@ -331,18 +295,23 @@ export const FlashcardPage: React.FC = () => {
                   className="primary-btn"
                   onClick={() => {
                     setSelectedTopic('Tất cả');
+                    setSelectedLevel('Tất cả');
                     setActiveTab('browse');
                   }}
                 >
                   Duyệt kho từ vựng toàn bộ
                 </button>
-                <button
-                  className="secondary-btn"
-                  onClick={() => setIsResetModalOpen(true)}
-                  disabled={isResetting}
-                >
-                  <RefreshIcon size={16} /> Ôn tập lại từ đầu (Reset)
-                </button>
+                {selectedTopic !== 'Tất cả' && (
+                  <button
+                    className="secondary-btn"
+                    onClick={() => {
+                      setSelectedTopic('Tất cả');
+                      setSelectedLevel('Tất cả');
+                    }}
+                  >
+                    Học các chủ đề khác
+                  </button>
+                )}
               </div>
             </div>
           )}
