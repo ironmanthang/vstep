@@ -8,10 +8,12 @@ import { Toast } from '../../components/common/Toast';
 import { useUserStore } from '../../services/user/userStore';
 import { ConfirmModal } from '../../components/common/ConfirmModal';
 import { ReminderSettingsModal } from './components/ReminderSettingsModal';
+import { WordInspectorModal, type WordInspectorFilter } from './components/WordInspectorModal';
 import './FlashcardPage.css';
 
 export const FlashcardPage: React.FC = () => {
   const {
+    cards,
     filteredCards,
     reviewQueue,
     totalDueCount,
@@ -32,7 +34,7 @@ export const FlashcardPage: React.FC = () => {
   const { userDisplayName } = useUserStore();
   const { statusMessage, showNotification, clearNotification } = useNotification();
 
-  const [activeTab, setActiveTab] = useState<'queue' | 'browse'>('queue');
+  const [inspectorFilter, setInspectorFilter] = useState<WordInspectorFilter | null>(null);
   const [isFlipped, setIsFlipped] = useState(false);
   const [isResetModalOpen, setIsResetModalOpen] = useState(false);
   const [isResetting, setIsResetting] = useState(false);
@@ -98,7 +100,7 @@ export const FlashcardPage: React.FC = () => {
       )}
 
       {/* Header & Stats Dashboard (Collapses on Mobile during Review Queue to lift card above the fold) */}
-      <div className={`header-stats-wrapper ${activeTab === 'queue' ? 'compact-mobile' : ''}`}>
+      <div className="header-stats-wrapper compact-mobile">
         {/* Page Header */}
         <div className="page-header-row">
           <div>
@@ -138,17 +140,38 @@ export const FlashcardPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Stats Summary Bar */}
+        {/* Stats Summary Bar - Interactive to inspect word list */}
         <div className="stats-grid">
-          <div className="stat-card">
+          <div
+            className="stat-card clickable-stat"
+            role="button"
+            tabIndex={0}
+            onClick={() => setInspectorFilter('mastered')}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setInspectorFilter('mastered'); }}
+            title="Bấm để xem danh sách từ vựng đã làm chủ"
+          >
             <span className="stat-label">Đã làm chủ</span>
             <span className="stat-val stat-emerald">{stats.mastered} từ ({stats.masteryPercentage}%)</span>
           </div>
-          <div className="stat-card">
+          <div
+            className="stat-card clickable-stat"
+            role="button"
+            tabIndex={0}
+            onClick={() => setInspectorFilter('learning')}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setInspectorFilter('learning'); }}
+            title="Bấm để xem danh sách từ vựng đang học"
+          >
             <span className="stat-label">Đang học</span>
             <span className="stat-val stat-gold">{stats.learning} từ</span>
           </div>
-          <div className="stat-card">
+          <div
+            className="stat-card clickable-stat"
+            role="button"
+            tabIndex={0}
+            onClick={() => setInspectorFilter('reviewedToday')}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setInspectorFilter('reviewedToday'); }}
+            title="Bấm để xem danh sách từ vựng đã ôn hôm nay"
+          >
             <span className="stat-label">Hôm nay đã ôn</span>
             <span className="stat-val stat-primary">
               {reviewedToday} thẻ
@@ -160,15 +183,27 @@ export const FlashcardPage: React.FC = () => {
       {/* Mobile Compact Study Bar (Visible only on mobile in queue mode) */}
       <div className="mobile-study-bar">
         <div className="mobile-study-stats">
-          <span className="mobile-stat-pill stat-emerald">
+          <button
+            className="mobile-stat-pill stat-emerald clickable-pill"
+            onClick={() => setInspectorFilter('mastered')}
+            title="Xem từ đã làm chủ"
+          >
             <strong>{stats.mastered}</strong> làm chủ
-          </span>
-          <span className="mobile-stat-pill stat-gold">
+          </button>
+          <button
+            className="mobile-stat-pill stat-gold clickable-pill"
+            onClick={() => setInspectorFilter('learning')}
+            title="Xem từ đang học"
+          >
             <strong>{stats.learning}</strong> đang học
-          </span>
-          <span className="mobile-stat-pill stat-primary">
+          </button>
+          <button
+            className="mobile-stat-pill stat-primary clickable-pill"
+            onClick={() => setInspectorFilter('reviewedToday')}
+            title="Xem từ đã ôn hôm nay"
+          >
             ✓ <strong>{reviewedToday}</strong> đã ôn
-          </span>
+          </button>
         </div>
         <div className="mobile-study-actions">
           <button
@@ -194,25 +229,10 @@ export const FlashcardPage: React.FC = () => {
         </div>
       </div>
 
-      {/* View Tabs & Topic/Level Filters */}
+      {/* Topic & Level Filters */}
       <div className="controls-row">
-        <div className="tab-and-levels-row">
-          <div className="tab-group">
-            <button
-              className={`tab-btn ${activeTab === 'queue' ? 'active' : ''}`}
-              onClick={() => { setActiveTab('queue'); setIsFlipped(false); }}
-            >
-              Hàng đợi học tập ({reviewQueue.length})
-            </button>
-            <button
-              className={`tab-btn ${activeTab === 'browse' ? 'active' : ''}`}
-              onClick={() => setActiveTab('browse')}
-            >
-              Kho từ vựng ({filteredCards.length})
-            </button>
-          </div>
-
-          {/* CEFR Level Filter Pills */}
+        <div className="filter-levels-row">
+          <span className="filter-section-title">Bậc CEFR:</span>
           <div className="level-pills-wrapper" role="group" aria-label="Lọc theo bậc năng lực CEFR">
             {levels.map(lvl => (
               <button
@@ -246,115 +266,81 @@ export const FlashcardPage: React.FC = () => {
         </div>
       </div>
 
-      {/* TAB 1: DAILY REVIEW QUEUE */}
-      {activeTab === 'queue' && (
-        <div className="queue-section">
-          {currentCard ? (
-            <div className="review-workspace">
-              {/* Queue Progress Indicator */}
-              <div className="queue-progress-bar-container">
-                <div className="progress-info">
-                  <span className="progress-text">
-                    Tiến độ chủ đề: <strong>{learnedInTopic}</strong> / <strong>{totalInTopic}</strong> từ ({topicProgressPercent}%)
-                  </span>
-                  <span className="queue-remaining-badge">
-                    Còn {reviewQueue.length} thẻ
-                  </span>
-                </div>
-                <div className="progress-track">
-                  <div
-                    className="progress-fill"
-                    style={{
-                      width: `${topicProgressPercent}%`,
-                    }}
-                  />
-                </div>
+      {/* ACTIVE RECALL PRACTICE QUEUE */}
+      <div className="queue-section">
+        {currentCard ? (
+          <div className="review-workspace">
+            {/* Queue Progress Indicator */}
+            <div className="queue-progress-bar-container">
+              <div className="progress-info">
+                <span className="progress-text">
+                  Tiến độ chủ đề: <strong>{learnedInTopic}</strong> / <strong>{totalInTopic}</strong> từ ({topicProgressPercent}%)
+                </span>
+                <span className="queue-remaining-badge">
+                  Còn {reviewQueue.length} thẻ
+                </span>
               </div>
-
-              {/* Card Component */}
-              <FlashcardCard
-                card={currentCard}
-                onReview={handleReview}
-                isFlipped={isFlipped}
-                onFlip={() => setIsFlipped(prev => !prev)}
-                disabled={!isOnline || isCloudSyncing || isResetting}
-              />
+              <div className="progress-track">
+                <div
+                  className="progress-fill"
+                  style={{
+                    width: `${topicProgressPercent}%`,
+                  }}
+                />
+              </div>
             </div>
-          ) : (
-            /* Empty Queue State */
-            <div className="empty-queue-card">
-              <div className="empty-icon-circle">
-                <CheckCircleIcon size={44} color="#10B981" />
-              </div>
-              <h2 className="empty-title">Tuyệt vời, {userDisplayName} đã hoàn thành mục tiêu hôm nay!</h2>
-              <p className="empty-desc">
-                Không còn thẻ nào cần ôn trong hàng đợi của chủ đề này. Thuật toán SRS đã tự động lên lịch nhắc lại cho các ngày tiếp theo.
-              </p>
-              <div className="empty-actions">
+
+            {/* Card Component */}
+            <FlashcardCard
+              card={currentCard}
+              onReview={handleReview}
+              isFlipped={isFlipped}
+              onFlip={() => setIsFlipped(prev => !prev)}
+              disabled={!isOnline || isCloudSyncing || isResetting}
+            />
+          </div>
+        ) : (
+          /* Empty Queue State */
+          <div className="empty-queue-card">
+            <div className="empty-icon-circle">
+              <CheckCircleIcon size={44} color="#10B981" />
+            </div>
+            <h2 className="empty-title">Tuyệt vời, {userDisplayName} đã hoàn thành mục tiêu hôm nay!</h2>
+            <p className="empty-desc">
+              Không còn thẻ nào cần ôn trong hàng đợi của chủ đề này. Thuật toán SRS đã tự động lên lịch nhắc lại cho các ngày tiếp theo.
+            </p>
+            <div className="empty-actions">
+              <button
+                className="primary-btn"
+                onClick={() => setInspectorFilter('reviewedToday')}
+              >
+                Xem các từ đã ôn hôm nay
+              </button>
+              {selectedTopic !== 'Tất cả' && (
                 <button
-                  className="primary-btn"
+                  className="secondary-btn"
                   onClick={() => {
                     setSelectedTopic('Tất cả');
                     setSelectedLevel('Tất cả');
-                    setActiveTab('browse');
                   }}
                 >
-                  Duyệt kho từ vựng toàn bộ
+                  Học các chủ đề khác
                 </button>
-                {selectedTopic !== 'Tất cả' && (
-                  <button
-                    className="secondary-btn"
-                    onClick={() => {
-                      setSelectedTopic('Tất cả');
-                      setSelectedLevel('Tất cả');
-                    }}
-                  >
-                    Học các chủ đề khác
-                  </button>
-                )}
-              </div>
+              )}
             </div>
-          )}
-        </div>
-      )}
-
-      {/* TAB 2: BROWSE ALL VOCABULARY */}
-      {activeTab === 'browse' && (
-        <div className="browse-section">
-          <div className="vocab-grid">
-            {filteredCards.map((card) => (
-              <div key={card.id} className="vocab-item-card">
-                <div className="vocab-card-top">
-                  <span className="badge badge-primary">{card.topic}</span>
-                  <span className={`badge ${
-                    card.srs_metadata.state === 2 && card.srs_metadata.reps >= 3
-                      ? 'badge-emerald'
-                      : card.srs_metadata.reps > 0
-                      ? 'badge-gold'
-                      : 'badge-primary'
-                  }`}>
-                    {card.srs_metadata.state === 2 && card.srs_metadata.reps >= 3
-                      ? 'Đã làm chủ'
-                      : card.srs_metadata.reps > 0
-                      ? 'Đang học'
-                      : 'Mới'}
-                  </span>
-                </div>
-                <h3 className="vocab-word">{card.word}</h3>
-                <span className="vocab-phonetic">{card.phonetic}</span>
-                <p className="vocab-def">{card.definition_vi}</p>
-                <div className="vocab-footer">
-                  <span className="vocab-level">Bậc {card.level} • {card.part_of_speech}</span>
-                  <span className="vocab-interval">
-                    {card.srs_metadata.reps > 0
-                      ? `Đã ôn ${card.srs_metadata.reps} lần • Độ bền ${Math.round(card.srs_metadata.stability)}d`
-                      : 'Chưa học'}
-                  </span>
-                </div>
-              </div>
-            ))}
           </div>
-        </div>
+        )}
+      </div>
+
+      {/* Sổ tay từ vựng Inspector Modal */}
+      {inspectorFilter && (
+        <WordInspectorModal
+          isOpen={true}
+          onClose={() => setInspectorFilter(null)}
+          initialFilter={inspectorFilter}
+          cards={cards}
+          reviewedTodayCount={reviewedToday}
+        />
       )}
 
       {/* Strict Confirmation Modal for Deck Reset */}
