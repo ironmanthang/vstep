@@ -322,7 +322,7 @@ export const WritingRunner: React.FC<WritingRunnerProps> = ({
                 {isSubmitting ? (
                   <span>⏳ Đang Chấm Bài AI...</span>
                 ) : (
-                  <span>{mode === 'exam' ? '📤 Nộp Bài Thi' : '✨ Chấm Bài AI (Chuẩn B1)'}</span>
+                  <span>{mode === 'exam' ? '📤 Nộp Bài Thi' : '✨ Chấm Bài AI'}</span>
                 )}
               </button>
             )}

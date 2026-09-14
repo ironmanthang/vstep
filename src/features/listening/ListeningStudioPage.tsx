@@ -37,7 +37,6 @@ export const ListeningStudioPage: React.FC = () => {
       name: 'Part 1: Thông Báo & Hướng Dẫn',
       count: '8 Câu hỏi',
       time: '~4–5 phút',
-      difficulty: 'B1',
       desc: 'Rèn luyện bắt thông tin chi tiết (con số, địa điểm, thời gian, thay đổi đột xuất).',
       badgeColor: 'badge-primary',
     },
@@ -46,7 +45,6 @@ export const ListeningStudioPage: React.FC = () => {
       name: 'Part 2: Đoạn Hội Thoại Đời Sống',
       count: '12 Câu hỏi (3 Đoạn)',
       time: '~6–8 phút',
-      difficulty: 'B2',
       desc: 'Rèn luyện nhận diện từ khóa chuyển hướng (however, actually) và quan hệ nhân vật.',
       badgeColor: 'badge-emerald',
     },
@@ -55,7 +53,6 @@ export const ListeningStudioPage: React.FC = () => {
       name: 'Part 3: Bài Giảng Học Thuật',
       count: '15 Câu hỏi (3 Bài)',
       time: '~10–12 phút',
-      difficulty: 'C1',
       desc: 'Rèn luyện ghi chú nhanh (Note-taking) và nắm bắt cấu trúc triển khai luận điểm khoa học.',
       badgeColor: 'badge-gold',
     },
@@ -64,7 +61,6 @@ export const ListeningStudioPage: React.FC = () => {
       name: 'Mock Test: Sửa Đề & Luyện Sâu',
       count: '35 Câu hỏi (Trọn Bộ)',
       time: '~40 phút',
-      difficulty: 'B1–C1',
       desc: '7 Bộ đề thi thử chuẩn ĐHQGHN với audio phòng thi gốc, chữa đề, ghi chú nháp và xem manh mối 35 câu.',
       badgeColor: 'badge-purple',
     },
@@ -126,9 +122,9 @@ export const ListeningStudioPage: React.FC = () => {
               aria-label={`Chọn ${p.name}`}
             >
               <div className="studio-part-card-header">
-                <span className={`badge ${p.badgeColor}`}>Bậc {p.difficulty}</span>
+                <span className={`badge ${p.badgeColor}`}>{p.count}</span>
                 <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)', fontWeight: 600 }}>
-                  {p.count} • {p.time}
+                  {p.time}
                 </span>
               </div>
               <h3 className="studio-part-title">{p.name}</h3>

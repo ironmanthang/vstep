@@ -18,7 +18,6 @@ export const ReadingStudioPage: React.FC = () => {
       name: 'Bộ Đề Thi Thử ULIS (ĐHQGHN)',
       count: '7 Bộ Đề (280 Câu)',
       time: '~60 phút/đề',
-      difficulty: 'B1–C1',
       desc: '7 Bộ đề thi thử chuẩn ĐHQGHN với 100% dẫn chứng verbatim, highlight câu chứa đáp án và phân tích paraphrase chuyên sâu.',
       badgeColor: 'badge-purple',
     },
@@ -27,7 +26,6 @@ export const ReadingStudioPage: React.FC = () => {
       name: 'Bộ Đề Luyện Tập HCMUE (ĐH Sư Phạm TP.HCM)',
       count: '5 Bộ Đề (200 Câu)',
       time: '~60 phút/đề',
-      difficulty: 'B2–C1',
       desc: '5 Bộ đề thi chuẩn ĐH Sư Phạm TP.HCM, rèn luyện kỹ năng đọc hiểu chuyên sâu với hệ thống từ vựng phân hóa cao.',
       badgeColor: 'badge-emerald',
     },
@@ -89,9 +87,9 @@ export const ReadingStudioPage: React.FC = () => {
               aria-label={`Chọn ${col.name}`}
             >
               <div className="studio-part-card-header">
-                <span className={`badge ${col.badgeColor}`}>Bậc {col.difficulty}</span>
+                <span className={`badge ${col.badgeColor}`}>{col.count}</span>
                 <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)', fontWeight: 600 }}>
-                  {col.count} • {col.time}
+                  {col.time}
                 </span>
               </div>
               <h3 className="studio-part-title">{col.name}</h3>

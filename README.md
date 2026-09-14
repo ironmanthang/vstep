@@ -1,6 +1,6 @@
 # VSTEP PRACTICE PLATFORM
 
-Nền tảng web học tiếng Anh và luyện thi VSTEP thế hệ mới (Online-First Web Platform với hỗ trợ PWA Installable), xây dựng theo triết lý Learner-First hỗ trợ lộ trình từ 0 đến B1/B2/C1.
+Nền tảng web học tiếng Anh và luyện thi VSTEP thế hệ mới (Online-First Web Platform với hỗ trợ PWA Installable), xây dựng theo triết lý Learner-First hỗ trợ lộ trình từ 0 đến B1 chuẩn đầu ra.
 
 ## Lệnh Phát triển & Kiểm thử
 

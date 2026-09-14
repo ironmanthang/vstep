@@ -5,10 +5,8 @@ import {
   PracticeIcon,
   FlashcardIcon,
   MockTestIcon,
-  UserIcon,
   SunIcon,
   MoonIcon,
-  FireIcon,
   LogoutIcon
 } from './Icons';
 import { useAuth } from '../services/supabase/authStore';
@@ -20,17 +18,17 @@ export const Layout: React.FC = () => {
     return (localStorage.getItem('vstep_theme') as 'light' | 'dark') || 'light';
   });
   const { signOut } = useAuth();
-  const { userDisplayName, avatarInitial, avatarUrl, targetBand, streakDays, streakBadgeText, resetProfile } = useUserStore();
+  const { userDisplayName, avatarInitial, avatarUrl, resetProfile } = useUserStore();
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('vstep_theme', theme);
-    const themeColorMeta = document.querySelector('meta[name="theme-color"]:not([media])');
-    if (themeColorMeta) {
-      themeColorMeta.setAttribute('content', theme === 'dark' ? '#141210' : '#FAF8F5');
-    }
+    const themeColor = theme === 'dark' ? '#141210' : '#FAF8F5';
+    document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => {
+      meta.setAttribute('content', themeColor);
+    });
   }, [theme]);
 
   const toggleTheme = () => {
@@ -49,10 +47,9 @@ export const Layout: React.FC = () => {
 
   const navItems = [
     { to: '/', label: 'Trang chủ', icon: <HomeIcon size={20} /> },
-    { to: '/practice', label: 'Luyện kỹ năng', icon: <PracticeIcon size={20} /> },
     { to: '/flashcard', label: 'Từ vựng SRS', icon: <FlashcardIcon size={20} /> },
+    { to: '/practice', label: 'Luyện kỹ năng', icon: <PracticeIcon size={20} /> },
     { to: '/mock-test', label: 'Thi thử', icon: <MockTestIcon size={20} /> },
-    { to: '/profile', label: 'Hồ sơ & Cài đặt', icon: <UserIcon size={20} /> },
   ];
 
   const mobileNavItems = navItems;
@@ -61,8 +58,8 @@ export const Layout: React.FC = () => {
   const getPageTitle = (pathname: string) => {
     switch (pathname) {
       case '/': return 'VSTEP Master';
-      case '/practice': return 'Luyện 4 Kỹ Năng';
       case '/flashcard': return 'Từ Vựng SRS';
+      case '/practice': return 'Luyện 4 Kỹ Năng';
       case '/mock-test': return 'Phòng Thi Thử';
       case '/profile': return 'Hồ Sơ & Cài Đặt';
       case '/dev': return 'Developer Console';
@@ -83,13 +80,22 @@ export const Layout: React.FC = () => {
           </div>
           <div className="brand-text">
             <span className="brand-title">VSTEP Master</span>
-            <span className="brand-badge">B1-B2 Prep</span>
           </div>
         </div>
 
         {/* User Target Card in Sidebar */}
         <div className="user-target-card">
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: '4px' }}>
+          <NavLink
+            to="/profile"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 'var(--space-2)',
+              textDecoration: 'none',
+              color: 'inherit',
+            }}
+            title="Xem Hồ sơ & Cài đặt"
+          >
             {avatarUrl ? (
               <img
                 src={avatarUrl}
@@ -117,16 +123,7 @@ export const Layout: React.FC = () => {
             <span className="user-name" style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
               {userDisplayName}
             </span>
-          </div>
-
-          <div className="user-info-row" style={{ marginTop: 4 }}>
-            <div className="target-pill" style={{ margin: 0 }}>
-              Bậc <strong>{targetBand === 'B1' ? '3 (B1)' : targetBand === 'B2' ? '4 (B2)' : '5 (C1)'}</strong>
-            </div>
-            <span className={`badge ${streakDays > 0 ? 'badge-emerald' : 'badge-primary'}`}>
-              <FireIcon size={12} color={streakDays > 0 ? '#059669' : 'var(--text-muted)'} /> {streakBadgeText}
-            </span>
-          </div>
+          </NavLink>
 
           <div style={{ marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span style={{ fontSize: '0.75rem', color: '#10B981', fontWeight: 600 }}>● Đồng bộ Cloud</span>

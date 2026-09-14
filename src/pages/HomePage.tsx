@@ -3,130 +3,129 @@ import { Link } from 'react-router';
 import {
   FlashcardIcon,
   PracticeIcon,
-  MockTestIcon,
-  FireIcon
+  MockTestIcon
 } from '../components/Icons';
 import { useUserStore } from '../services/user/userStore';
 import { useFlashcardStore } from '../features/flashcard/useFlashcardStore';
 
 export const HomePage: React.FC = () => {
   const {
-    userDisplayName,
-    targetBand,
-    streakDays,
-    streakBannerText,
     completedExercisesCount,
     latestMockTest,
   } = useUserStore();
 
   const { cards, stats } = useFlashcardStore();
-
   const learnedCount = stats.mastered + stats.learning;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6)' }}>
-      {/* Welcome Banner */}
-      <div className="card-surface" style={{ padding: 'var(--space-6)', display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 'var(--space-2)' }}>
-          <div>
-            <span className="badge badge-primary" style={{ marginBottom: 'var(--space-1)' }}>
-              Mục tiêu: Bậc {targetBand === 'B1' ? '3 (B1)' : targetBand === 'B2' ? '4 (B2)' : '5 (C1)'}
-            </span>
-            <h1 style={{ fontSize: 'var(--fs-2xl)', fontWeight: 800 }}>Xin chào, {userDisplayName}! 👋</h1>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)', height: '100%', justifyContent: 'center' }}>
+      {/* 3 Main Functional Hub Cards */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 'var(--space-4)' }}>
+        {/* Card 1: Flashcard SRS */}
+        <Link
+          to="/flashcard"
+          className="card-surface"
+          style={{
+            padding: 'var(--space-5)',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 'var(--space-2)',
+            textDecoration: 'none',
+            color: 'inherit',
+            transition: 'all 0.2s ease',
+            border: '1px solid var(--border)',
+          }}
+        >
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ width: 44, height: 44, borderRadius: 'var(--radius-md)', background: 'var(--primary-subtle)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
+              <FlashcardIcon size={24} />
+            </div>
+            <span className="badge badge-primary">SRS Flashcard</span>
           </div>
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 'var(--space-2)',
-              background: streakDays > 0 ? 'var(--emerald-subtle)' : 'var(--bg-subtle)',
-              padding: '8px 16px',
-              borderRadius: 'var(--radius-full)',
-              border: '1px solid var(--border)'
-            }}
-          >
-            <FireIcon size={22} color={streakDays > 0 ? '#059669' : 'var(--text-muted)'} />
-            <span
-              style={{
-                fontWeight: 800,
-                color: streakDays > 0 ? '#065F46' : 'var(--text-secondary)',
-                fontSize: 'var(--fs-sm)'
-              }}
-            >
-              {streakBannerText}
-            </span>
+          <h2 style={{ fontSize: 'var(--fs-lg)', fontWeight: 800, margin: 'var(--space-1) 0 0 0', color: 'var(--text-primary)' }}>
+            Từ Vựng SRS
+          </h2>
+          <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', lineHeight: 1.4, margin: 0 }}>
+            {cards.length} từ vựng trích xuất từ đề thi thật. Thuật toán FSRS tự động lên lịch nhắc lại.
+          </p>
+          <div style={{ marginTop: 'auto', paddingTop: 'var(--space-2)', color: 'var(--primary)', fontWeight: 700, fontSize: 'var(--fs-xs)' }}>
+            Vào phòng ôn tập →
           </div>
-        </div>
-        <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--fs-sm)', maxWidth: '640px' }}>
-          Mục tiêu: Đạt chứng chỉ <strong>VSTEP {targetBand}</strong>. Mỗi ngày ôn tập 10–15 phút từ vựng SRS để nâng band vững chắc, không học vẹt.
-        </p>
-      </div>
+        </Link>
 
-      {/* Quick Action Cards Grid */}
-      <div>
-        <h2 style={{ fontSize: 'var(--fs-lg)', fontWeight: 700, marginBottom: 'var(--space-3)' }}>Hoạt Động Hôm Nay</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 'var(--space-4)' }}>
-          {/* Card 1: Flashcard SRS */}
-          <Link to="/flashcard" className="card-surface" style={{ padding: 'var(--space-5)', display: 'flex', flexDirection: 'column', gap: 'var(--space-2)', transition: 'all 0.2s ease' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <div style={{ width: 40, height: 40, borderRadius: 'var(--radius-md)', background: 'var(--primary-subtle)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
-                <FlashcardIcon size={22} />
-              </div>
-              <span className="badge badge-primary">Ưu tiên số 1</span>
+        {/* Card 2: Skill Practice */}
+        <Link
+          to="/practice"
+          className="card-surface"
+          style={{
+            padding: 'var(--space-5)',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 'var(--space-2)',
+            textDecoration: 'none',
+            color: 'inherit',
+            transition: 'all 0.2s ease',
+            border: '1px solid var(--border)',
+          }}
+        >
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ width: 44, height: 44, borderRadius: 'var(--radius-md)', background: 'var(--emerald-subtle)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--emerald)' }}>
+              <PracticeIcon size={24} />
             </div>
-            <h3 style={{ fontSize: 'var(--fs-md)', fontWeight: 700, color: 'var(--text-primary)' }}>Từ Vựng SRS Hàng Ngày</h3>
-            <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', lineHeight: 1.4 }}>
-              Kho {cards.length} từ vựng học thuật theo 8 chủ đề VSTEP. Thuật toán tự lên lịch nhắc lại.
-            </p>
-            <div style={{ marginTop: 'auto', paddingTop: 'var(--space-2)', color: 'var(--primary)', fontWeight: 700, fontSize: 'var(--fs-xs)' }}>
-              Vào phòng ôn tập →
-            </div>
-          </Link>
+            <span className="badge badge-emerald">4 Kỹ Năng</span>
+          </div>
+          <h2 style={{ fontSize: 'var(--fs-lg)', fontWeight: 800, margin: 'var(--space-1) 0 0 0', color: 'var(--text-primary)' }}>
+            Luyện Kỹ Năng
+          </h2>
+          <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', lineHeight: 1.4, margin: 0 }}>
+            Nghe tua ±5s, Đọc tra từ 1 chạm, Viết giàn giáo hỗ trợ, Nói phòng thu tương tác.
+          </p>
+          <div style={{ marginTop: 'auto', paddingTop: 'var(--space-2)', color: 'var(--emerald)', fontWeight: 700, fontSize: 'var(--fs-xs)' }}>
+            Chọn kỹ năng luyện →
+          </div>
+        </Link>
 
-          {/* Card 2: Skill Practice */}
-          <Link to="/practice" className="card-surface" style={{ padding: 'var(--space-5)', display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <div style={{ width: 40, height: 40, borderRadius: 'var(--radius-md)', background: 'var(--emerald-subtle)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--emerald)' }}>
-                <PracticeIcon size={22} />
-              </div>
-              <span className="badge badge-emerald">4 Kỹ Năng</span>
+        {/* Card 3: Mock Test */}
+        <Link
+          to="/mock-test"
+          className="card-surface"
+          style={{
+            padding: 'var(--space-5)',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 'var(--space-2)',
+            textDecoration: 'none',
+            color: 'inherit',
+            transition: 'all 0.2s ease',
+            border: '1px solid var(--border)',
+          }}
+        >
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ width: 44, height: 44, borderRadius: 'var(--radius-md)', background: 'var(--gold-subtle)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--gold)' }}>
+              <MockTestIcon size={24} />
             </div>
-            <h3 style={{ fontSize: 'var(--fs-md)', fontWeight: 700, color: 'var(--text-primary)' }}>Luyện Kỹ Năng Thân Thiện</h3>
-            <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', lineHeight: 1.4 }}>
-              Nghe có tua lại ±5s, Đọc tra từ 1 chạm, Viết có dàn ý gợi ý, Nói có phòng thu tương tác.
-            </p>
-            <div style={{ marginTop: 'auto', paddingTop: 'var(--space-2)', color: 'var(--emerald)', fontWeight: 700, fontSize: 'var(--fs-xs)' }}>
-              Chọn kỹ năng luyện →
-            </div>
-          </Link>
-
-          {/* Card 3: Mock Test */}
-          <Link to="/mock-test" className="card-surface" style={{ padding: 'var(--space-5)', display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <div style={{ width: 40, height: 40, borderRadius: 'var(--radius-md)', background: 'var(--gold-subtle)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--gold)' }}>
-                <MockTestIcon size={22} />
-              </div>
-              <span className="badge badge-gold">180 Phút</span>
-            </div>
-            <h3 style={{ fontSize: 'var(--fs-md)', fontWeight: 700, color: 'var(--text-primary)' }}>Phòng Thi Thử Máy Tính</h3>
-            <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', lineHeight: 1.4 }}>
-              Mô phỏng 100% phần mềm thi Bộ GD&ĐT. Tự động tính điểm và làm tròn 0.5 chính thức.
-            </p>
-            <div style={{ marginTop: 'auto', paddingTop: 'var(--space-2)', color: 'var(--gold-hover)', fontWeight: 700, fontSize: 'var(--fs-xs)' }}>
-              Xem danh sách đề →
-            </div>
-          </Link>
-        </div>
+            <span className="badge badge-gold">180 Phút</span>
+          </div>
+          <h2 style={{ fontSize: 'var(--fs-lg)', fontWeight: 800, margin: 'var(--space-1) 0 0 0', color: 'var(--text-primary)' }}>
+            Phòng Thi Thử
+          </h2>
+          <p style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-secondary)', lineHeight: 1.4, margin: 0 }}>
+            Mô phỏng thi máy chuẩn Bộ GD&ĐT. Tự động tính điểm và làm tròn 0.5 chính thức.
+          </p>
+          <div style={{ marginTop: 'auto', paddingTop: 'var(--space-2)', color: 'var(--gold-hover)', fontWeight: 700, fontSize: 'var(--fs-xs)' }}>
+            Xem danh sách đề →
+          </div>
+        </Link>
       </div>
 
       {/* Target Progress Bar */}
-      <div className="card-surface" style={{ padding: 'var(--space-5)' }}>
-        <h3 style={{ fontSize: 'var(--fs-md)', fontWeight: 700, marginBottom: 'var(--space-3)' }}>
-          Tiến Độ Chinh Phục VSTEP {targetBand}
+      <div className="card-surface" style={{ padding: 'var(--space-4) var(--space-5)', border: '1px solid var(--border)' }}>
+        <h3 style={{ fontSize: 'var(--fs-sm)', fontWeight: 700, margin: '0 0 var(--space-3) 0', color: 'var(--text-secondary)' }}>
+          Tiến Độ Học Tập
         </h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 'var(--space-3)' }}>
           <div style={{ padding: 'var(--space-3)', background: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
-            <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)' }}>Từ Vựng Đã Học</span>
+            <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)' }}>Từ Vựng Đã Thuộc</span>
             <div style={{ fontSize: 'var(--fs-lg)', fontWeight: 700, color: 'var(--primary)' }}>
               {learnedCount} / {cards.length} từ
             </div>

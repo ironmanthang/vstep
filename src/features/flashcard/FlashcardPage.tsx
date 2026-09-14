@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { useFlashcardStore } from './useFlashcardStore';
 import { FlashcardCard } from './FlashcardCard';
 import type { SRSRating } from '../../types/schemas';
-import { CheckCircleIcon, RefreshIcon } from '../../components/Icons';
+import { CheckCircleIcon } from '../../components/Icons';
 import { useNotification } from '../../hooks/useNotification';
 import { Toast } from '../../components/common/Toast';
 import { useUserStore } from '../../services/user/userStore';
-import { ConfirmModal } from '../../components/common/ConfirmModal';
 import { ReminderSettingsModal } from './components/ReminderSettingsModal';
 import { WordInspectorModal, type WordInspectorFilter } from './components/WordInspectorModal';
 import './FlashcardPage.css';
@@ -27,7 +26,6 @@ export const FlashcardPage: React.FC = () => {
     isCloudSyncing,
     isOnline,
     submitReview,
-    resetDeck,
   } = useFlashcardStore();
 
   const { userDisplayName } = useUserStore();
@@ -35,8 +33,6 @@ export const FlashcardPage: React.FC = () => {
 
   const [inspectorFilter, setInspectorFilter] = useState<WordInspectorFilter | null>(null);
   const [isFlipped, setIsFlipped] = useState(false);
-  const [isResetModalOpen, setIsResetModalOpen] = useState(false);
-  const [isResetting, setIsResetting] = useState(false);
   const [isReminderModalOpen, setIsReminderModalOpen] = useState(false);
 
   // Active card in queue (always the head of the priority queue)
@@ -60,20 +56,6 @@ export const FlashcardPage: React.FC = () => {
 
     if (reviewQueue.length <= 1 && rating === 'correct') {
       showNotification('🎉 Tuyệt vời! Bạn đã hoàn thành toàn bộ bài ôn hôm nay!', 'success');
-    }
-  };
-
-  const handleConfirmReset = async () => {
-    setIsResetting(true);
-    const res = await resetDeck();
-    setIsResetting(false);
-    setIsResetModalOpen(false);
-
-    if (res.success) {
-      setIsFlipped(false);
-      showNotification('✓ Đã đặt lại toàn bộ thẻ và số thẻ đã ôn hôm nay về 0.', 'info');
-    } else {
-      showNotification(res.error || 'Không thể đặt lại tiến độ trên đám mây. Vui lòng thử lại.', 'error');
     }
   };
 
@@ -283,19 +265,6 @@ export const FlashcardPage: React.FC = () => {
         )}
       </div>
 
-      {/* Danger Zone / Deck Management Area (Bottom of Page, High Friction) */}
-      <div className="deck-danger-zone">
-        <button
-          className="reset-deck-btn"
-          onClick={() => setIsResetModalOpen(true)}
-          title="Đặt lại toàn bộ tiến độ học của Deck"
-          disabled={isResetting}
-        >
-          <RefreshIcon size={14} />
-          <span>Đặt lại toàn bộ tiến độ Deck</span>
-        </button>
-      </div>
-
       {/* Sổ tay từ vựng Inspector Modal */}
       {inspectorFilter && (
         <WordInspectorModal
@@ -306,25 +275,6 @@ export const FlashcardPage: React.FC = () => {
           reviewedTodayCount={reviewedToday}
         />
       )}
-
-      {/* Strict Confirmation Modal for Deck Reset */}
-      <ConfirmModal
-        isOpen={isResetModalOpen}
-        onClose={() => {
-          if (!isResetting) setIsResetModalOpen(false);
-        }}
-        onConfirm={handleConfirmReset}
-        isLoading={isResetting}
-        title="Đặt lại toàn bộ Deck từ vựng?"
-        description={
-          <>
-            Hành động này sẽ <strong>xóa vĩnh viễn</strong> toàn bộ tiến độ Spaced Repetition (SRS) của <strong>3.000 từ vựng</strong> và đưa bộ đếm ôn tập hôm nay về <strong>0 thẻ</strong> trên cả thiết bị này và tài khoản đám mây của bạn.
-          </>
-        }
-        warningText="Dữ liệu đã xóa không thể khôi phục lại. Bạn sẽ cần bắt đầu học lại từ đầu."
-        confirmLabel="Xác nhận xóa & Đặt lại"
-        cancelLabel="Hủy bỏ (Giữ tiến độ)"
-      />
 
       {/* SRS Reminder Notification Settings Modal */}
       <ReminderSettingsModal

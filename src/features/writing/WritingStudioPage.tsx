@@ -19,8 +19,7 @@ export const WritingStudioPage: React.FC = () => {
       name: 'Bộ Đề Thi Thử ULIS (ĐHQGHN)',
       count: '7 Bộ Đề (14 Bài)',
       time: '~60 phút/đề',
-      difficulty: 'B1–C1',
-      desc: '7 Bộ đề thi thử chuẩn ĐHQGHN (Thư & Luận) kèm barem chấm điểm B1 và bài mẫu đối chiếu.',
+      desc: '7 Bộ đề thi thử chuẩn ĐHQGHN (Thư & Luận) kèm barem chấm điểm và bài mẫu đối chiếu.',
       badgeColor: 'badge-purple',
     },
     {
@@ -28,7 +27,6 @@ export const WritingStudioPage: React.FC = () => {
       name: 'Bộ Đề Luyện Tập HCMUE (ĐH Sư Phạm TP.HCM)',
       count: '5 Bộ Đề (10 Bài)',
       time: '~60 phút/đề',
-      difficulty: 'B1–C1',
       desc: '5 Bộ đề thi chuẩn ĐH Sư Phạm TP.HCM (Thư & Luận) kèm dàn ý, bài mẫu đối chiếu và tiêu chí phân tích chuyên sâu.',
       badgeColor: 'badge-emerald',
     },
@@ -43,7 +41,7 @@ export const WritingStudioPage: React.FC = () => {
             Phòng Luyện Viết VSTEP (Writing Studio)
           </h1>
           <p style={{ fontSize: 13, color: 'var(--text-secondary, #a8a29e)', marginTop: 4, margin: 0 }}>
-            Mô phỏng thi máy chuẩn Đại học Văn Lang & Bộ GD&ĐT • Đích nhắm: <strong>Bậc 3 (B1) Đạt chuẩn đầu ra</strong>
+            Mô phỏng thi máy chuẩn Đại học Văn Lang & Bộ GD&ĐT
           </p>
         </div>
 
@@ -90,9 +88,9 @@ export const WritingStudioPage: React.FC = () => {
               aria-label={`Chọn ${col.name}`}
             >
               <div className="studio-part-card-header">
-                <span className={`badge ${col.badgeColor}`}>Bậc {col.difficulty}</span>
+                <span className={`badge ${col.badgeColor}`}>{col.count}</span>
                 <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-muted)', fontWeight: 600 }}>
-                  {col.count} • {col.time}
+                  {col.time}
                 </span>
               </div>
               <h3 className="studio-part-title">{col.name}</h3>

@@ -21,7 +21,7 @@ export const MockTestRadarChart: React.FC<MockTestRadarChartProps> = ({
   reading,
   writing,
   speaking,
-  targetBand = 'B2',
+  targetBand = 'B1',
 }) => {
   const size = 320;
   const cx = size / 2;

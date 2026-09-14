@@ -11,10 +11,10 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 ## SPRINT: KHUNG NỀN TẢNG & FLASHCARD SRS (FOUNDATION & CURATED SRS)
 
 ### Khung Nền tảng & App Shell
-- [x] App Shell & Design System: Dự án Vite + React 19 + TypeScript, CSS tokens Dark/Light (Campfire warm amber & obsidian), điều hướng đa trang (Home, Skills, Flashcard, Mock Test, Profile), Layout responsive (Desktop Sidebar / Mobile Bottom Nav), nút Đăng xuất sticky mobile header, và ConfirmModal 2 bước dùng chung.
+- [x] App Shell & Design System: Dự án Vite + React 19 + TypeScript, CSS tokens Dark/Light (Campfire warm amber & obsidian), điều hướng 4 mục chính (Trang chủ, Từ vựng SRS, Luyện kỹ năng, Thi thử), truy cập Hồ sơ qua avatar header/sidebar, Layout responsive, và đồng bộ theme-color thanh hệ thống điện thoại Dark mode.
 - [x] Xác thực & Đồng bộ Đám mây: Login-First Gate (`<ProtectedRoute>`), trang `/login` chuyên biệt Google OAuth, migration Supabase normalized tables (`user_profiles`, `user_study_logs`, `user_mock_test_results`, `user_flashcard_reviews`, `user_daily_stats`), trigger PostgreSQL `on_auth_user_created`, `profileSync.ts` đồng bộ hồ sơ/streak/điểm thi, tầng cô lập dữ liệu đa tài khoản theo User ID (`userStorage.ts`), dọn dẹp sạch sẽ `localStorage` khi đăng xuất, và Client optimistic UI buffer.
 - [x] Master AI Gateway: Tích hợp OpenRouter, Ollama Cloud và Google AI Studio với Key Pool rotation, bảng chẩn đoán Dev Console chuyên biệt (`/dev`) kiểm tra độ trễ Ping (ms) & Dev override, tính năng Test Connection health check, cô lập hạn mức 5 lượt/ngày theo từng tài khoản (`vstep_${userId}_ai_daily_quota_v1`), và `AIServiceAdapter` xử lý fallback.
-- [x] Hợp nhất Cài đặt & Hồ sơ Người học (`/profile`): Gom toàn bộ thông tin tài khoản, hạn mức AI hàng ngày (`QuotaUsageCard`), cài đặt nhắc nhở SRS (`ReminderSettingsModal`), trạng thái PWA và lối tắt bảng điều khiển nhà phát triển vào một trang duy nhất. Redirect `/settings` -> `/profile`.
+- [x] Tinh giản Hồ sơ Người học (`/profile`): Rút gọn hồ sơ tài khoản hiển thị email Google, đổi tên trực tiếp, hạn mức AI hàng ngày (`QuotaUsageCard`), và đặt lại tiến độ Deck (Reset Deck) tại vùng Danger Zone.
 - [x] Cấu hình PWA & Điều phối Cập nhật: Web App Manifest (Standalone Mode), Workbox autoUpdate với `injectRegister: null`, điều hướng Network-Direct không cache `index.html` (`navigateFallback: null`, `globIgnores: ['**/index.html']`, `updateViaCache: 'none'`) loại bỏ hoàn toàn hiện tượng kẹt cache build cũ, bộ điều phối `registerServiceWorker.ts` đảm bảo 1-refresh updates trên Desktop/Mobile, bảo vệ phiên thi đang diễn ra (In-Session Safety), first-visit guard, tự chữa lỗi dynamic chunk 404 (`vite:preloadError` + `lazyWithRetry`), đồng bộ header Cloudflare Pages `_headers`, và chuẩn hóa thứ tự kỹ năng toàn app (Listening → Reading → Writing → Speaking).
 
 ### Module Flashcard SRS Cốt lõi (Curated VSTEP SRS)
@@ -25,9 +25,9 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
   - [x] Đợt 1 (Listening): Mở rộng từ 1.500 lên 2.000 từ (+500 từ) từ 7 Authentic Mock Tests & 15 HCMUE Drills (`scripts/mine_listening_vocab.mjs`)
   - [x] Đợt 2 (Reading): Mở rộng từ 2.000 lên 2.500 từ (+500 từ) từ 48 bài đọc VSTEP Reading (28 ULIS + 20 HCMUE, `scripts/mine_reading_vocab.mjs`)
   - [x] Đợt 3 (Writing & Speaking): Mở rộng từ 2.500 lên 3.000 từ (+500 từ) từ 14 đề ULIS Writing/Speaking, Writing Bank & Speaking Bank (`scripts/mine_productive_vocab.mjs`)
-- [x] Bộ lọc cấp độ CEFR Flashcard: Tích hợp chọn cấp độ ('Tất cả', 'B1', 'B2', 'C1') kết hợp cùng 8 chủ đề, và đồng bộ thống nhất toàn bộ copy kho từ vựng 3.000 từ trên toàn hệ thống.
+- [x] Bộ lọc cấp độ CEFR Flashcard: Tích hợp chọn cấp độ ('Tất cả', 'B1', 'B2', 'C1') kết hợp cùng 8 chủ đề, lưu trữ trạng thái bền vững trên thiết bị cục bộ (localStorage).
 - [x] Tinh giản Studio Luyện từ vựng & Sổ tay Tra cứu Tương tác: Loại bỏ tab duyệt tĩnh 3.000 từ gây quá tải; biến 3 ô thống kê cốt lõi (Đã làm chủ, Đang học, Hôm nay đã ôn) thành lối tắt tương tác mở Sổ tay từ vựng (`WordInspectorModal.tsx`) với bộ lọc tức thì, tìm kiếm thời gian thực và phát âm audio bản xứ.
-- [x] Tinh giản Không Gian Luyện Tập & Bố Cục Nút Bấm An Toàn: Loại bỏ banner tiêu đề/mô tả và thanh tiến độ chủ đề tối ưu không gian Above-the-Fold; đưa nút Nhắc nhở SRS vào thanh lọc CEFR kèm huy hiệu đồng bộ Cloud; chuyển nút Đặt lại Deck xuống khu vực chân trang (High Friction) và loại bỏ khỏi mobile study bar chống bấm nhầm.
+- [x] Tinh giản Không Gian Luyện Tập & Bố Cục Nút Bấm An Toàn: Loại bỏ banner tiêu đề/mô tả và thanh tiến độ chủ đề tối ưu không gian Above-the-Fold; đưa nút Nhắc nhở SRS vào thanh lọc CEFR kèm huy hiệu đồng bộ Cloud; chuyển nút Đặt lại Deck sang trang Hồ sơ tài khoản (/profile) trong khu vực Quản lý dữ liệu.
 
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)
 - [x] Hạ tầng Kiểm thử & Triển khai: Unit tests Vitest, Pre-push pipeline tự động (`scripts/prepush.mjs`), CI/CD GitHub Actions (`.github/workflows/ci.yml`), kịch bản tự động hóa database migration (`scripts/migrate.mjs`), và triển khai Production Cloudflare Pages (`vstep.pages.dev`).
@@ -148,4 +148,5 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Tách các presentation sub-components chuyên biệt: Headers, Timer widgets, Navigation/Tabs, Pacing alerts, Scaffolding boxes và Reset confirmation modals vào thư mục `components/` của từng kỹ năng.
 - [x] Module hóa các custom hooks và deduplication helpers: `useReadingTimer`, `useReaderSettings`, `useReadingSessionSync`, `useSpeakingAudioStorage`, `speakingPromptHelper`.
 - [x] Bảo toàn 100% contracts component, state lifecycles, user-tenant storage isolation và 204 unit tests Vitest.
-
+- [x] Tinh giản Giao diện Không Gian & Loại bỏ Nhãn Nhiễu CEFR: Tối ưu trang chủ (Home) và Luyện kỹ năng (Skills Practice) thành giao diện no-scroll không cần cuộn trang; tinh giản điều hướng còn 4 tab chính; loại bỏ các nhãn độ khó bề mặt (B1–C1, B2–C1, B1-B2); duy trì đánh giá AI cố định chuẩn B1; lưu trữ bền vững lựa chọn Bậc CEFR của Flashcard trên thiết bị cục bộ (localStorage); và đồng bộ màu theme-color thanh hệ thống điện thoại khi ở chế độ Dark mode.
+- [ ] Audit all the B1, C1, C2 if they really belong to the tier

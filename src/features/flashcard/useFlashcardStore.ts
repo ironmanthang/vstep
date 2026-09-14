@@ -66,7 +66,18 @@ export function useFlashcardStore() {
   });
 
   const [selectedTopic, setSelectedTopic] = useState<string>('Tất cả');
-  const [selectedLevel, setSelectedLevel] = useState<'Tất cả' | 'B1' | 'B2' | 'C1'>('Tất cả');
+  const [selectedLevel, setSelectedLevelState] = useState<'Tất cả' | 'B1' | 'B2' | 'C1'>(() => {
+    const saved = localStorage.getItem('vstep_flashcard_cefr_level');
+    if (saved === 'B1' || saved === 'B2' || saved === 'C1' || saved === 'Tất cả') {
+      return saved;
+    }
+    return 'Tất cả';
+  });
+
+  const setSelectedLevel = useCallback((level: 'Tất cả' | 'B1' | 'B2' | 'C1') => {
+    setSelectedLevelState(level);
+    localStorage.setItem('vstep_flashcard_cefr_level', level);
+  }, []);
 
   // Daily reviewed count
   const [reviewedToday, setReviewedToday] = useState<number>(() => {

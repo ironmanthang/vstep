@@ -176,7 +176,7 @@ export const MockTestResultDashboard: React.FC<MockTestResultDashboardProps> = (
           reading={readingScore}
           writing={writingScore}
           speaking={speakingScore}
-          targetBand={targetBand || 'B2'}
+          targetBand={targetBand || 'B1'}
         />
 
         {/* Exam Integrity & History Summary */}

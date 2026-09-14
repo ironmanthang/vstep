@@ -90,7 +90,7 @@ export const LoginPage: React.FC = () => {
             VSTEP Master
           </h1>
           <p style={{ fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)', margin: 0 }}>
-            Hệ thống luyện thi VSTEP B1-B2 Chuẩn Khung 6 Bậc
+            Hệ thống luyện thi VSTEP Chuẩn Khung 6 Bậc
           </p>
         </div>
 
@@ -110,7 +110,7 @@ export const LoginPage: React.FC = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
             <span style={{ fontSize: '18px' }}>🧠</span>
             <span style={{ fontSize: 'var(--fs-xs)', color: 'var(--text-primary)', fontWeight: 500 }}>
-              3,000 từ vựng SRS phân bố theo band B1-B2-C1
+              3,000 từ vựng SRS theo các chủ đề VSTEP
             </span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>

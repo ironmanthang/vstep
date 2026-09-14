@@ -8,7 +8,7 @@
     - **Đợt 3 (Writing & Speaking)**: 500 từ diễn đạt học thuật và giao tiếp tự nhiên trích xuất từ 14 đề thi thật ULIS Writing & Speaking, Writing Bank và Speaking Bank qua Gemini Flash cascade (`scripts/mine_productive_vocab.mjs`).
   - Phân loại theo 8 chủ đề VSTEP chuẩn (tổng 3.000 từ, 100% ID và từ vựng duy nhất): Xã hội & Văn hóa (450 từ), Môi trường & Tự nhiên (400 từ), Công việc & Sự nghiệp (380 từ), Sức khỏe & Lối sống (380 từ), Giáo dục & Học tập (350 từ), Du lịch & Đô thị (350 từ), Truyền thông & Giao tiếp (350 từ), Khoa học & Công nghệ (340 từ).
   - Cấu trúc thẻ đầy đủ: Từ vựng, phiên âm IPA chuẩn, audio phát âm bản xứ, định nghĩa tiếng Việt ngắn gọn, Collocations đi kèm và câu ví dụ song ngữ trích từ ngữ cảnh bài thi.
-  - **Bộ Lọc Cấp Độ CEFR (B1, B2, C1)**: Cho phép học viên lọc danh sách thẻ theo cấp độ mục tiêu ('Tất cả', 'B1', 'B2', 'C1') kết hợp đồng thời cùng 8 chủ đề, hỗ trợ thí sinh tập trung ôn luyện đúng phân khúc năng lực.
+  - **Bộ Lọc Cấp Độ CEFR (B1, B2, C1)**: Cho phép học viên lọc danh sách thẻ theo cấp độ mục tiêu ('Tất cả', 'B1', 'B2', 'C1') kết hợp đồng thời cùng 8 chủ đề, hỗ trợ thí sinh tập trung ôn luyện đúng phân khúc năng lực. Lựa chọn được lưu trữ bền vững trên thiết bị cục bộ (`localStorage`).
 - **Thuật toán Spaced Repetition (FSRS v6 Daily Engine)**:
   - Động cơ lập lịch FSRS v6 qua thư viện `ts-fsrs` với target retention 90% (`request_retention: 0.90`), trần khoảng cách tối đa 365 ngày (`maximum_interval: 365`), tắt các bước ngắn hạn trong phiên (`enable_short_term: false`) để chuẩn hóa chu kỳ lặp lại theo ngày hoàn toàn xác định, và thuật toán jitter/fuzz (`enable_fuzz: true`) chống dồn thẻ.
   - Đánh giá nhị phân (Binary Rating): Loại bỏ lựa chọn độ khó chủ quan, chuẩn hóa thành 2 trạng thái:
@@ -27,8 +27,8 @@
   - Dữ liệu ôn tập lưu trữ trên Supabase PostgreSQL (`user_flashcard_reviews` & `user_daily_stats`), hỗ trợ tương thích ngược kép (chọn đồng thời cột mới `stability, difficulty, reps, lapses, state` và cột cũ `repetition_count, interval_days, ease_factor, status`).
   - Hàng rào ngoại tuyến (Offline Barrier): Tự động phát hiện khi mất kết nối Internet, hiển thị banner cảnh báo và vô hiệu hóa các nút đánh giá để chống phát sinh tiến độ ma không được lưu.
   - Decoupled Corpus Hydration: Tách biệt nội dung từ điển tĩnh (`VSTEP_CORPUS`) và siêu dữ liệu ôn tập (`srs_metadata`). Đảm bảo khi mở rộng kho từ 1.500 lên 2.000, 2.500 và đạt mốc 3.000 từ, toàn bộ từ vựng người dùng đã học vẫn được bảo toàn 100%.
-- **An toàn Dữ liệu & Đặt lại Deck (ConfirmModal & Vùng Nguy Hiểm Cuối Trang)**:
-  - Nút đặt lại Deck được chuyển xuống vị trí cuối cùng của trang (`.deck-danger-zone`) có vạch phân tách mờ và phong cách tối giản nhằm tạo lực cản có chủ đích (High Friction), ngăn chặn hoàn toàn việc chạm nhầm trong khi ôn tập. Loại bỏ hoàn toàn nút đặt lại khỏi thanh trạng thái mobile (`mobile-study-bar`).
+- **An toàn Dữ liệu & Đặt lại Deck (ConfirmModal & Trang Hồ sơ)**:
+  - Nút đặt lại Deck được chuyển sang trang Hồ sơ tài khoản (`/profile`) trong khu vực Quản Lý Dữ Liệu Flashcard nhằm tạo lực cản có chủ đích (High Friction), ngăn chặn hoàn toàn việc chạm nhầm trong khi ôn tập.
   - Được bảo vệ bằng Modal xác nhận cảnh báo 2 bước chống bấm nhầm (`src/components/common/ConfirmModal.tsx`), tự động căn giữa trên Desktop và chuyển thành Bottom Sheet trên Mobile.
   - Nút Hủy bỏ được focus mặc định để tránh xác nhận ngoài ý muốn.
   - Khi xác nhận đặt lại: Xóa sạch dữ liệu trên Supabase Cloud (`user_flashcard_reviews` và `user_daily_stats`), reset toàn bộ thẻ về trạng thái từ mới ban đầu và đưa số thẻ đã ôn hôm nay về 0.
