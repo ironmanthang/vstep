@@ -1,7 +1,9 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { recordStudyDateInStorage } from './userStore';
+import { getUserStorageKey } from '../storage/userStorage';
 
 describe('userStore and profile storage utilities', () => {
+
   const store = new Map<string, string>();
 
   beforeEach(() => {
@@ -42,4 +44,14 @@ describe('userStore and profile storage utilities', () => {
     const parsed = JSON.parse(raw!);
     expect(parsed.study_dates).toEqual(['2026-08-27', '2026-08-28']);
   });
+
+  it('records study date into user-scoped storage when userId is provided', () => {
+    recordStudyDateInStorage('2026-09-01', 'user-123');
+    const key = getUserStorageKey('user-123', 'user_learning_profile_v2');
+    const raw = globalThis.localStorage.getItem(key);
+    expect(raw).toBeTruthy();
+    const parsed = JSON.parse(raw!);
+    expect(parsed.study_dates).toContain('2026-09-01');
+  });
 });
+

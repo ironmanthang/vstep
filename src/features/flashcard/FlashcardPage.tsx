@@ -84,9 +84,9 @@ export const FlashcardPage: React.FC = () => {
             tabIndex={0}
             onClick={() => setInspectorFilter('mastered')}
             onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setInspectorFilter('mastered'); }}
-            title="Bấm để xem danh sách từ vựng đã làm chủ"
+            title="Bấm để xem danh sách từ vựng đã thuộc"
           >
-            <span className="stat-label">Đã làm chủ</span>
+            <span className="stat-label">Đã thuộc</span>
             <span className="stat-val stat-emerald">{stats.mastered} từ ({stats.masteryPercentage}%)</span>
           </div>
           <div
@@ -122,9 +122,9 @@ export const FlashcardPage: React.FC = () => {
           <button
             className="mobile-stat-pill stat-emerald clickable-pill"
             onClick={() => setInspectorFilter('mastered')}
-            title="Xem từ đã làm chủ"
+            title="Xem từ đã thuộc"
           >
-            <strong>{stats.mastered}</strong> làm chủ
+            <strong>{stats.mastered}</strong> đã thuộc
           </button>
           <button
             className="mobile-stat-pill stat-gold clickable-pill"

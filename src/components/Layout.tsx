@@ -26,6 +26,10 @@ export const Layout: React.FC = () => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('vstep_theme', theme);
     const themeColor = theme === 'dark' ? '#141210' : '#FAF8F5';
+    const metaThemeColor = document.getElementById('meta-theme-color');
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', themeColor);
+    }
     document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => {
       meta.setAttribute('content', themeColor);
     });
@@ -61,8 +65,6 @@ export const Layout: React.FC = () => {
       case '/flashcard': return 'Từ Vựng SRS';
       case '/practice': return 'Luyện 4 Kỹ Năng';
       case '/mock-test': return 'Phòng Thi Thử';
-      case '/profile': return 'Hồ Sơ & Cài Đặt';
-      case '/dev': return 'Developer Console';
       default: return 'VSTEP Master';
     }
   };
@@ -86,7 +88,7 @@ export const Layout: React.FC = () => {
         {/* User Target Card in Sidebar */}
         <div className="user-target-card">
           <NavLink
-            to="/profile"
+            to="/"
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -94,7 +96,7 @@ export const Layout: React.FC = () => {
               textDecoration: 'none',
               color: 'inherit',
             }}
-            title="Xem Hồ sơ & Cài đặt"
+            title="Trang chủ & Tài khoản"
           >
             {avatarUrl ? (
               <img
@@ -184,7 +186,7 @@ export const Layout: React.FC = () => {
             <h1 className="mobile-page-title">{getPageTitle(location.pathname)}</h1>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <NavLink to="/profile" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+            <NavLink to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }} title="Trang chủ & Tài khoản">
               {avatarUrl ? (
                 <img
                   src={avatarUrl}

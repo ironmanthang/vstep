@@ -153,7 +153,7 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
               setSearchQuery('');
             }}
           >
-            Đã làm chủ ({masteredCards.length})
+            Đã thuộc ({masteredCards.length})
           </button>
           <button
             role="tab"
@@ -262,7 +262,7 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
                 {searchQuery
                   ? 'Không tìm thấy từ vựng nào khớp với từ khóa'
                   : activeFilter === 'mastered'
-                  ? 'Chưa có từ vựng nào đạt mốc làm chủ'
+                  ? 'Chưa có từ vựng nào đạt mốc đã thuộc'
                   : activeFilter === 'learning'
                   ? 'Chưa có từ vựng nào đang trong chu kỳ học'
                   : 'Chưa có từ vựng nào được ôn trong ngày hôm nay'}

@@ -11,8 +11,6 @@ import { WritingStudioPage } from './features/writing/WritingStudioPage';
 import { SpeakingStudioPage } from './features/speaking/SpeakingStudioPage';
 import { FlashcardPage } from './features/flashcard/FlashcardPage';
 import { MockTestPage } from './pages/MockTestPage';
-import { ProfilePage } from './pages/ProfilePage';
-import { DeveloperSettingsPage } from './pages/DeveloperSettingsPage';
 import { UpdateNotificationToast } from './components/pwa/UpdateNotificationToast';
 
 export const App: React.FC = () => {
@@ -30,9 +28,9 @@ export const App: React.FC = () => {
             <Route path="/practice/speaking" element={<SpeakingStudioPage />} />
             <Route path="/flashcard" element={<FlashcardPage />} />
             <Route path="/mock-test" element={<MockTestPage />} />
-            <Route path="/profile" element={<ProfilePage />} />
-            <Route path="/settings" element={<Navigate to="/profile" replace />} />
-            <Route path="/dev" element={<DeveloperSettingsPage />} />
+            <Route path="/profile" element={<Navigate to="/" replace />} />
+            <Route path="/settings" element={<Navigate to="/" replace />} />
+            <Route path="/dev" element={<Navigate to="/" replace />} />
           </Route>
         </Route>
       </Routes>

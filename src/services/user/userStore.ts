@@ -100,6 +100,12 @@ export function recordStudyDateInStorage(
   }
 }
 
+const profileListeners = new Set<(updatedProfile?: UserLearningProfile) => void>();
+
+export function notifyProfileChanged(profile?: UserLearningProfile): void {
+  profileListeners.forEach((listener) => listener(profile));
+}
+
 export function useUserStore() {
   const { user, isAuthenticated } = useAuth();
   const userId = user?.id;
@@ -112,6 +118,21 @@ export function useUserStore() {
   });
 
   const syncedUserIdRef = useRef<string | null>(null);
+
+  // Synchronize state across active hook instances
+  useEffect(() => {
+    const handleUpdate = (updatedProfile?: UserLearningProfile) => {
+      if (updatedProfile) {
+        setProfile(updatedProfile);
+      } else if (userId) {
+        setProfile(loadUserItem<UserLearningProfile>(userId, 'user_learning_profile_v2', DEFAULT_PROFILE));
+      }
+    };
+    profileListeners.add(handleUpdate);
+    return () => {
+      profileListeners.delete(handleUpdate);
+    };
+  }, [userId]);
 
   // Synchronize profile from Supabase when user logs in or switches
   useEffect(() => {
@@ -158,6 +179,7 @@ export function useUserStore() {
 
         setProfile(updatedProfile);
         saveUserItem(userId, 'user_learning_profile_v2', updatedProfile);
+        notifyProfileChanged(updatedProfile);
       } catch (err) {
         console.error('Failed to hydrate user profile from cloud:', err);
       }
@@ -170,20 +192,14 @@ export function useUserStore() {
     };
   }, [isAuthenticated, userId, user]);
 
-  // Save to user-scoped localStorage on state changes
-  useEffect(() => {
-    if (userId) {
-      saveUserItem(userId, 'user_learning_profile_v2', profile);
-    }
-  }, [profile, userId]);
-
-  // Compute effective display name
+  // Display Name with fallback priority
   const userDisplayName = useMemo(() => {
-    if (profile.user_name.trim()) {
-      return profile.user_name.trim();
+    if (profile.user_name && profile.user_name.trim()) {
+      return profile.user_name;
     }
-    if (user?.user_metadata?.full_name) {
-      return user.user_metadata.full_name;
+    const googleFullName = user?.user_metadata?.full_name || user?.user_metadata?.name;
+    if (googleFullName) {
+      return googleFullName;
     }
     if (user?.email) {
       return user.email.split('@')[0];
@@ -193,8 +209,7 @@ export function useUserStore() {
 
   // Avatar initial letter
   const avatarInitial = useMemo(() => {
-    const name = userDisplayName.trim();
-    return name.charAt(0).toUpperCase() || 'H';
+    return (userDisplayName[0] || 'V').toUpperCase();
   }, [userDisplayName]);
 
   // Avatar URL from Google auth metadata
@@ -215,26 +230,41 @@ export function useUserStore() {
     return formatStreakBannerText(streakDays);
   }, [streakDays]);
 
-  // Actions with 0ms optimistic updates + background Supabase sync
+  // Actions with 0ms optimistic updates + local storage persistence + background Supabase sync
   const setUserName = useCallback((name: string) => {
-    setProfile((prev) => ({ ...prev, user_name: name }));
-    if (userId) {
-      upsertUserProfile(userId, { user_name: name });
-    }
+    setProfile((prev) => {
+      const next = { ...prev, user_name: name };
+      if (userId) {
+        saveUserItem(userId, 'user_learning_profile_v2', next);
+        upsertUserProfile(userId, { user_name: name });
+      }
+      notifyProfileChanged(next);
+      return next;
+    });
   }, [userId]);
 
   const setTargetBand = useCallback((band: 'B1' | 'B2' | 'C1') => {
-    setProfile((prev) => ({ ...prev, target_band: band }));
-    if (userId) {
-      upsertUserProfile(userId, { target_band: band });
-    }
+    setProfile((prev) => {
+      const next = { ...prev, target_band: band };
+      if (userId) {
+        saveUserItem(userId, 'user_learning_profile_v2', next);
+        upsertUserProfile(userId, { target_band: band });
+      }
+      notifyProfileChanged(next);
+      return next;
+    });
   }, [userId]);
 
   const setTargetExamDate = useCallback((dateStr: string | null) => {
-    setProfile((prev) => ({ ...prev, target_exam_date: dateStr }));
-    if (userId) {
-      upsertUserProfile(userId, { target_exam_date: dateStr });
-    }
+    setProfile((prev) => {
+      const next = { ...prev, target_exam_date: dateStr };
+      if (userId) {
+        saveUserItem(userId, 'user_learning_profile_v2', next);
+        upsertUserProfile(userId, { target_exam_date: dateStr });
+      }
+      notifyProfileChanged(next);
+      return next;
+    });
   }, [userId]);
 
   const recordStudyActivity = useCallback((dateStr?: string) => {
@@ -243,10 +273,15 @@ export function useUserStore() {
       if (prev.study_dates.includes(today)) {
         return prev;
       }
-      return {
+      const next = {
         ...prev,
         study_dates: [...prev.study_dates, today],
       };
+      if (userId) {
+        saveUserItem(userId, 'user_learning_profile_v2', next);
+      }
+      notifyProfileChanged(next);
+      return next;
     });
     if (userId) {
       recordStudyDateInCloud(userId, today);
@@ -256,13 +291,16 @@ export function useUserStore() {
   const incrementExercisesCompleted = useCallback((count: number = 1) => {
     setProfile((prev) => {
       const nextCount = Math.max(0, prev.completed_exercises_count + count);
-      if (userId) {
-        upsertUserProfile(userId, { completed_exercises_count: nextCount });
-      }
-      return {
+      const next = {
         ...prev,
         completed_exercises_count: nextCount,
       };
+      if (userId) {
+        saveUserItem(userId, 'user_learning_profile_v2', next);
+        upsertUserProfile(userId, { completed_exercises_count: nextCount });
+      }
+      notifyProfileChanged(next);
+      return next;
     });
   }, [userId]);
 
@@ -275,10 +313,17 @@ export function useUserStore() {
       timestamp: now,
       date_str: formatDateToLocalISO(new Date(now)),
     };
-    setProfile((prev) => ({
-      ...prev,
-      latest_mock_test: record,
-    }));
+    setProfile((prev) => {
+      const next = {
+        ...prev,
+        latest_mock_test: record,
+      };
+      if (userId) {
+        saveUserItem(userId, 'user_learning_profile_v2', next);
+      }
+      notifyProfileChanged(next);
+      return next;
+    });
     if (userId) {
       recordMockTestInCloud(userId, record);
     }
@@ -293,6 +338,7 @@ export function useUserStore() {
     if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
       localStorage.removeItem(USER_PROFILE_STORAGE_KEY);
     }
+    notifyProfileChanged(DEFAULT_PROFILE);
   }, [userId]);
 
   return {

@@ -70,7 +70,7 @@ In tandem with `_headers`, the client coordinator [`src/services/pwa/registerSer
 ### Deployment Verification
 - **Live Production URL**: `https://vstep.pages.dev`
 - **Verification Points**:
-  - Client-side route navigation (`/flashcard`, `/practice`, `/profile`, `/dev`, with `/settings` redirecting to `/profile`).
+  - Client-side route navigation (`/`, `/flashcard`, `/practice`, `/mock-test`, with `/profile`, `/settings`, and `/dev` redirecting to `/`).
   - Hard-refreshing `/flashcard` does not return 404 (handled by `_redirects`).
   - Spaced Repetition (SRS) Flashcard review queue.
   - User Authentication & Cloud Sync with Supabase.
