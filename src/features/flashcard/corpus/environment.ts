@@ -4,7 +4,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_001',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "biodegradable",
     phonetic: "/ˌbaɪ.əʊ.dɪˈɡreɪ.də.bəl/",
     part_of_speech: 'adjective',
@@ -26,7 +26,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_002',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "deforestation",
     phonetic: "/diːˌfɒr.ɪˈsteɪ.ʃən/",
     part_of_speech: 'noun',
@@ -48,7 +48,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_003',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "renewable",
     phonetic: "/rɪˈnjuː.ə.bəl/",
     part_of_speech: 'adjective',
@@ -114,7 +114,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_006',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "conservation",
     phonetic: "/ˌkɒn.səˈveɪ.ʃən/",
     part_of_speech: 'noun',
@@ -158,7 +158,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_008',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "habitat",
     phonetic: "/ˈhæb.ɪ.tæt/",
     part_of_speech: 'noun',
@@ -180,7 +180,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_009',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "sustainable",
     phonetic: "/səˈsteɪ.nə.bəl/",
     part_of_speech: 'adjective',
@@ -202,7 +202,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_010',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "emission",
     phonetic: "/iˈmɪʃ.ən/",
     part_of_speech: 'noun',
@@ -224,7 +224,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_011',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "landfill",
     phonetic: "/ˈlænd.fɪl/",
     part_of_speech: 'noun',
@@ -246,7 +246,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_012',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "compost",
     phonetic: "/ˈkɒm.pɒst/",
     part_of_speech: 'noun',
@@ -268,7 +268,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_013',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "drought",
     phonetic: "/draʊt/",
     part_of_speech: 'noun',
@@ -312,7 +312,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_015',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "greenhouse",
     phonetic: "/ˈɡriːn.haʊs/",
     part_of_speech: 'noun',
@@ -356,7 +356,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_017',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "solar",
     phonetic: "/ˈsəʊ.lər/",
     part_of_speech: 'adjective',
@@ -378,7 +378,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_018',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "wildlife",
     phonetic: "/ˈwaɪld.laɪf/",
     part_of_speech: 'noun',
@@ -422,7 +422,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_020',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "contaminate",
     phonetic: "/kənˈtæm.ɪ.neɪt/",
     part_of_speech: 'verb',
@@ -510,7 +510,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_024',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "preserve",
     phonetic: "/prɪˈzɜːv/",
     part_of_speech: 'verb',
@@ -554,7 +554,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_026',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "erosion",
     phonetic: "/ɪˈrəʊ.ʒən/",
     part_of_speech: 'noun',
@@ -576,7 +576,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_027',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "glacier",
     phonetic: "/ˈɡlæs.i.ər/",
     part_of_speech: 'noun',
@@ -598,7 +598,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_028',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "ozone",
     phonetic: "/ˈəʊ.zəʊn/",
     part_of_speech: 'noun',
@@ -620,7 +620,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_029',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "pesticide",
     phonetic: "/ˈpes.tɪ.saɪd/",
     part_of_speech: 'noun',
@@ -664,7 +664,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_031',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "species",
     phonetic: "/ˈspiː.ʃiːz/",
     part_of_speech: 'noun',
@@ -686,7 +686,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_032',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'C1',
     word: "toxic",
     phonetic: "/ˈtɒk.sɪk/",
     part_of_speech: 'adjective',
@@ -730,7 +730,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_034',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'C1',
     word: "harvest",
     phonetic: "/ˈhɑː.vɪst/",
     part_of_speech: 'noun',
@@ -752,7 +752,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_035',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "fertilizer",
     phonetic: "/ˈfɜː.tɪ.laɪ.zər/",
     part_of_speech: 'noun',
@@ -774,7 +774,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_036',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'C1',
     word: "disposal",
     phonetic: "/dɪˈspəʊ.zəl/",
     part_of_speech: 'noun',
@@ -840,7 +840,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_039',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "exhaust",
     phonetic: "/ɪɡˈzɔːst/",
     part_of_speech: 'noun',
@@ -862,7 +862,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_040',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "surroundings",
     phonetic: "/səˈraʊn.dɪŋz/",
     part_of_speech: 'noun',
@@ -1016,7 +1016,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_047',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "threaten",
     phonetic: "/ˈθret.ən/",
     part_of_speech: 'verb',
@@ -1082,7 +1082,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_050',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'C1',
     word: "conserve",
     phonetic: "/kənˈsɜːv/",
     part_of_speech: 'verb',
@@ -1104,7 +1104,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_051',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "cleanse",
     phonetic: "/klenz/",
     part_of_speech: 'verb',
@@ -1126,7 +1126,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_052',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "inhabit",
     phonetic: "/ɪnˈhæb.ɪt/",
     part_of_speech: 'verb',
@@ -1148,7 +1148,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_053',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "adapt",
     phonetic: "/əˈdæpt/",
     part_of_speech: 'verb',
@@ -1214,7 +1214,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_056',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'C1',
     word: "sustain",
     phonetic: "/səˈsteɪn/",
     part_of_speech: 'verb',
@@ -1236,7 +1236,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_057',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "generate",
     phonetic: "/ˈdʒen.ə.reɪt/",
     part_of_speech: 'verb',
@@ -1280,7 +1280,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_059',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "hazardous",
     phonetic: "/ˈhæz.ə.dəs/",
     part_of_speech: 'adjective',
@@ -1302,7 +1302,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_060',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "pure",
     phonetic: "/pjʊər/",
     part_of_speech: 'adjective',
@@ -1412,7 +1412,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_065',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'C1',
     word: "coastal",
     phonetic: "/ˈkəʊ.stəl/",
     part_of_speech: 'adjective',
@@ -1456,7 +1456,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_067',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'B2',
     word: "severe",
     phonetic: "/sɪˈvɪər/",
     part_of_speech: 'adjective',
@@ -1478,7 +1478,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_068',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'C1',
     word: "delicate",
     phonetic: "/ˈdel.ɪ.kət/",
     part_of_speech: 'adjective',
@@ -1500,7 +1500,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_069',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B1',
+    level: 'C1',
     word: "harsh",
     phonetic: "/hɑːʃ/",
     part_of_speech: 'adjective',
@@ -1654,7 +1654,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_076',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "acidification",
     phonetic: "/əˌsɪd.ɪ.fɪˈkeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1676,7 +1676,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_077',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "eutrophication",
     phonetic: "/ˌjuː.trə.fɪˈkeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1698,7 +1698,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_078',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "bioaccumulation",
     phonetic: "/ˌbaɪ.əʊ.əˌkjuː.mjəˈleɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1742,7 +1742,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_080',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "photovoltaic",
     phonetic: "/ˌfəʊ.təʊ.vɒlˈteɪ.ɪk/",
     part_of_speech: 'adjective',
@@ -1764,7 +1764,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_081',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "geothermal",
     phonetic: "/ˌdʒiː.əʊˈθɜː.məl/",
     part_of_speech: 'adjective',
@@ -1786,7 +1786,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_082',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "anthropogenic",
     phonetic: "/ˌæn.θrə.pəˈdʒen.ɪk/",
     part_of_speech: 'adjective',
@@ -1808,7 +1808,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_083',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "desalination",
     phonetic: "/diːˌsæl.ɪˈneɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1830,7 +1830,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_084',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "hydropower",
     phonetic: "/ˈhaɪ.drəʊˌpaʊ.ər/",
     part_of_speech: 'noun',
@@ -1852,7 +1852,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_085',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "degradation",
     phonetic: "/ˌdeɡ.rəˈdeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1874,7 +1874,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_086',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "biomass",
     phonetic: "/ˈbaɪ.əʊˌmæs/",
     part_of_speech: 'noun',
@@ -1896,7 +1896,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_087',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "permafrost",
     phonetic: "/ˈpɜː.mə.frɒst/",
     part_of_speech: 'noun',
@@ -1918,7 +1918,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_088',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "sequestration",
     phonetic: "/ˌsiː.kwesˈtreɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1940,7 +1940,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_089',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "monoculture",
     phonetic: "/ˈmɒn.əˌkʌl.tʃər/",
     part_of_speech: 'noun',
@@ -1984,7 +1984,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_091',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "agroforestry",
     phonetic: "/ˌæɡ.rəʊˈfɒr.ɪ.stri/",
     part_of_speech: 'noun',
@@ -2006,7 +2006,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_092',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "salinization",
     phonetic: "/ˌsæl.ɪ.naɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -2028,7 +2028,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_093',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "ecotourism",
     phonetic: "/ˈiː.kəʊˌtʊə.rɪ.zəm/",
     part_of_speech: 'noun',
@@ -2160,7 +2160,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_099',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "decontaminate",
     phonetic: "/ˌdiː.kənˈtæm.ɪ.neɪt/",
     part_of_speech: 'verb',
@@ -2248,7 +2248,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_103',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "spillover",
     phonetic: "/ˈspɪlˌəʊ.vər/",
     part_of_speech: 'noun',
@@ -2292,7 +2292,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_105',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "detrimental",
     phonetic: "/ˌdet.rɪˈmen.təl/",
     part_of_speech: 'adjective',
@@ -2424,7 +2424,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_111',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "indigenous",
     phonetic: "/ɪnˈdɪdʒ.ɪ.nəs/",
     part_of_speech: 'adjective',
@@ -2446,7 +2446,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_112',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "endemic",
     phonetic: "/enˈdem.ɪk/",
     part_of_speech: 'adjective',
@@ -2468,7 +2468,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_113',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "imperiled",
     phonetic: "/ɪmˈper.əld/",
     part_of_speech: 'adjective',
@@ -2490,7 +2490,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_114',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "vulnerable",
     phonetic: "/ˈvʌl.nər.ə.bəl/",
     part_of_speech: 'adjective',
@@ -2512,7 +2512,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_115',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "resilient",
     phonetic: "/rɪˈzɪl.jənt/",
     part_of_speech: 'adjective',
@@ -2534,7 +2534,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_116',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "perennial",
     phonetic: "/pəˈren.i.əl/",
     part_of_speech: 'adjective',
@@ -2556,7 +2556,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_117',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "arboreal",
     phonetic: "/ɑːˈbɔː.ri.əl/",
     part_of_speech: 'adjective',
@@ -2600,7 +2600,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_119',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "marine",
     phonetic: "/məˈriːn/",
     part_of_speech: 'adjective',
@@ -2644,7 +2644,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_121',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "nocturnal",
     phonetic: "/nɒkˈtɜː.nəl/",
     part_of_speech: 'adjective',
@@ -2666,7 +2666,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_122',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "diurnal",
     phonetic: "/daɪˈɜː.nəl/",
     part_of_speech: 'adjective',
@@ -2798,7 +2798,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_128',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "deciduous",
     phonetic: "/dɪˈsɪdʒ.u.əs/",
     part_of_speech: 'adjective',
@@ -2864,7 +2864,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_131',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "understory",
     phonetic: "/ˈʌn.dəˌstɔː.ri/",
     part_of_speech: 'noun',
@@ -2886,7 +2886,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_132',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "wetland",
     phonetic: "/ˈwet.lænd/",
     part_of_speech: 'noun',
@@ -2952,7 +2952,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_135',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "delta",
     phonetic: "/ˈdel.tə/",
     part_of_speech: 'noun',
@@ -3040,7 +3040,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_139',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "rainforest",
     phonetic: "/ˈreɪn.fɒr.ɪst/",
     part_of_speech: 'noun',
@@ -3062,7 +3062,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_140',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "grassland",
     phonetic: "/ˈɡrɑːs.lænd/",
     part_of_speech: 'noun',
@@ -3106,7 +3106,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_142',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "pollutant",
     phonetic: "/pəˈluː.tənt/",
     part_of_speech: 'noun',
@@ -3128,7 +3128,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_143',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "bioremediation",
     phonetic: "/ˌbaɪ.əʊ.rɪˌmiː.diˈeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -3172,7 +3172,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_145',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "preservation",
     phonetic: "/ˌprez.əˈveɪ.ʃən/",
     part_of_speech: 'noun',
@@ -3282,7 +3282,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_150',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "symbiosis",
     phonetic: "/ˌsɪm.baɪˈəʊ.sɪs/",
     part_of_speech: 'noun',
@@ -3326,7 +3326,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_152',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "trophic cascade",
     phonetic: "/ˈtrɒf.ɪk kæsˈkeɪd/",
     part_of_speech: 'phrase',
@@ -3348,7 +3348,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_153',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "keystone species",
     phonetic: "/ˈkiː.stəʊn ˌspiː.ʃiːz/",
     part_of_speech: 'phrase',
@@ -3964,7 +3964,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_181',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "sustainability",
     phonetic: "/səˌsteɪ.nəˈbɪl.ə.ti/",
     part_of_speech: 'noun',
@@ -3986,7 +3986,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_182',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B1',
     word: "tipping point",
     phonetic: "/ˈtɪp.ɪŋ ˌpɔɪnt/",
     part_of_speech: 'phrase',
@@ -4162,7 +4162,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_190',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "study",
     phonetic: "/ˈstʌdi/",
     part_of_speech: 'noun',
@@ -4338,7 +4338,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_198',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "balance",
     phonetic: "/ˈbæl.əns/",
     part_of_speech: 'verb',
@@ -4470,7 +4470,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_204',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "changing",
     phonetic: "/ˈtʃeɪndʒɪŋ/",
     part_of_speech: 'adjective',
@@ -4558,7 +4558,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_208',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "convection",
     phonetic: "/kənˈvekʃn/",
     part_of_speech: 'noun',
@@ -4778,7 +4778,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_218',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "development",
     phonetic: "/dɪˈvel.əp.mənt/",
     part_of_speech: 'noun',
@@ -4932,7 +4932,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_225',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "uniform",
     phonetic: "/ˈjuː.nɪ.fɔːm/",
     part_of_speech: 'adjective',
@@ -5108,7 +5108,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_233',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "relocate",
     phonetic: "/ˌriː.ləʊˈkeɪt/",
     part_of_speech: 'verb',
@@ -5196,7 +5196,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_237',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "aurora",
     phonetic: "/ɔːˈrɔːrə/",
     part_of_speech: 'noun',
@@ -5284,7 +5284,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_241',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "nest",
     phonetic: "/nest/",
     part_of_speech: 'noun',
@@ -5306,7 +5306,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_242',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "crystal",
     phonetic: "/ˈkrɪs.təl/",
     part_of_speech: 'noun',
@@ -5328,7 +5328,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_243',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "moisture",
     phonetic: "/ˈmɔɪs.tʃər/",
     part_of_speech: 'noun',
@@ -5350,7 +5350,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_244',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "potash",
     phonetic: "/ˈpɒt.æʃ/",
     part_of_speech: 'noun',
@@ -5416,7 +5416,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_247',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "soil",
     phonetic: "/sɔɪl/",
     part_of_speech: 'noun',
@@ -5438,7 +5438,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_248',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "scientist",
     phonetic: "/ˈsaɪən.tɪst/",
     part_of_speech: 'noun',
@@ -5460,7 +5460,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_249',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "environment",
     phonetic: "/ɪnˈvaɪ.rən.mənt/",
     part_of_speech: 'noun',
@@ -5482,7 +5482,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_250',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "supply",
     phonetic: "/səˈplaɪ/",
     part_of_speech: 'noun',
@@ -5504,7 +5504,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_251',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "snowfall",
     phonetic: "/ˈsnəʊ.fɔːl/",
     part_of_speech: 'noun',
@@ -5526,7 +5526,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_252',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "desert",
     phonetic: "/ˈdez.ət/",
     part_of_speech: 'noun',
@@ -5548,7 +5548,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_253',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "structure",
     phonetic: "/ˈstrʌk.tʃər/",
     part_of_speech: 'noun',
@@ -5592,7 +5592,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_255',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "amount",
     phonetic: "/əˈmaʊnt/",
     part_of_speech: 'noun',
@@ -5636,7 +5636,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_257',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "remain",
     phonetic: "/rɪˈmeɪn/",
     part_of_speech: 'verb',
@@ -5680,7 +5680,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_259',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "material",
     phonetic: "/məˈtɪə.ri.əl/",
     part_of_speech: 'noun',
@@ -5768,7 +5768,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_263',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "hold",
     phonetic: "/həʊld/",
     part_of_speech: 'verb',
@@ -5790,7 +5790,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_264',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "variety",
     phonetic: "/vəˈraɪ.ə.ti/",
     part_of_speech: 'noun',
@@ -5834,7 +5834,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_266',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "fixation",
     phonetic: "/fɪkˈseɪ.ʃən/",
     part_of_speech: 'noun',
@@ -5878,7 +5878,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_268',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "surface",
     phonetic: "/ˈsɜː.fɪs/",
     part_of_speech: 'noun',
@@ -5900,7 +5900,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_269',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "gravity",
     phonetic: "/ˈɡræv.ə.ti/",
     part_of_speech: 'noun',
@@ -5944,7 +5944,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_271',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "hunt",
     phonetic: "/hʌnt/",
     part_of_speech: 'verb',
@@ -5966,7 +5966,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_272',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "queen",
     phonetic: "/kwiːn/",
     part_of_speech: 'noun',
@@ -5988,7 +5988,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_273',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "layer",
     phonetic: "/ˈleɪ.ər/",
     part_of_speech: 'noun',
@@ -6054,7 +6054,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_276',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "fill",
     phonetic: "/fɪld/",
     part_of_speech: 'verb',
@@ -6076,7 +6076,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_277',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "earthquake",
     phonetic: "/ˈɜːrθ.kweɪk/",
     part_of_speech: 'noun',
@@ -6098,7 +6098,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_278',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "eventually",
     phonetic: "/ɪˈven.tʃu.ə.li/",
     part_of_speech: 'adverb',
@@ -6164,7 +6164,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_281',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "rising",
     phonetic: "/ˈraɪ.zɪŋ/",
     part_of_speech: 'adjective',
@@ -6252,7 +6252,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_285',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "organism",
     phonetic: "/ˈɔː.ɡən.ɪ.zəm/",
     part_of_speech: 'noun',
@@ -6274,7 +6274,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_286',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "liquid",
     phonetic: "/ˈlɪk.wɪd/",
     part_of_speech: 'noun',
@@ -6296,7 +6296,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_287',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "path",
     phonetic: "/pɑːθ/",
     part_of_speech: 'noun',
@@ -6384,7 +6384,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_291',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "belong",
     phonetic: "/bɪˈlɒŋ/",
     part_of_speech: 'verb',
@@ -6472,7 +6472,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_295',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "remora",
     phonetic: "/ˈremərə/",
     part_of_speech: 'noun',
@@ -6736,7 +6736,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_307',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "occur",
     phonetic: "/əˈkɜːr/",
     part_of_speech: 'verb',
@@ -6758,7 +6758,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_308',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "flow",
     phonetic: "/fləʊ/",
     part_of_speech: 'verb',
@@ -6846,7 +6846,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_312',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "recycling",
     phonetic: "/ˌriːˈsaɪ.klɪŋ/",
     part_of_speech: 'noun',
@@ -6868,7 +6868,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_313',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "land-filling",
     phonetic: "/ˈlændˌfɪl.ɪŋ/",
     part_of_speech: 'noun',
@@ -6912,7 +6912,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_315',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "microorganism",
     phonetic: "/ˌmaɪ.krəʊˈɔː.ɡən.ɪ.zəm/",
     part_of_speech: 'noun',
@@ -6934,7 +6934,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_316',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "approximately",
     phonetic: "/əˈprɒk.sɪ.mət.li/",
     part_of_speech: 'adverb',
@@ -6956,7 +6956,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_317',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "substance",
     phonetic: "/ˈsʌb.stəns/",
     part_of_speech: 'noun',
@@ -7088,7 +7088,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_323',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "clearing",
     phonetic: "/ˈklɪə.rɪŋ/",
     part_of_speech: 'noun',
@@ -7154,7 +7154,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_326',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "forward",
     phonetic: "/ˈfɔːrwərd/",
     part_of_speech: 'adverb',
@@ -7198,7 +7198,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_328',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "drawback",
     phonetic: "/ˈdrɔːbæk/",
     part_of_speech: 'noun',
@@ -7220,7 +7220,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_329',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "wilderness",
     phonetic: "/ˈwɪl.dɚ.nəs/",
     part_of_speech: 'noun',
@@ -7264,7 +7264,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_331',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "inflow",
     phonetic: "/ˈɪn.floʊ/",
     part_of_speech: 'noun',
@@ -7308,7 +7308,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_333',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "beetle",
     phonetic: "/ˈbiːtl/",
     part_of_speech: 'noun',
@@ -7396,7 +7396,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_337',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "barrel",
     phonetic: "/ˈbærəl/",
     part_of_speech: 'noun',
@@ -7506,7 +7506,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_342',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "burning",
     phonetic: "/ˈbɜː.nɪŋ/",
     part_of_speech: 'noun',
@@ -7638,7 +7638,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_348',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "pass",
     phonetic: "/pɑːs/",
     part_of_speech: 'verb',
@@ -7660,7 +7660,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_349',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "belt",
     phonetic: "/belt/",
     part_of_speech: 'noun',
@@ -7748,7 +7748,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_353',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "ammonia",
     phonetic: "/əˈməʊ.ni.ə/",
     part_of_speech: 'noun',
@@ -7792,7 +7792,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_355',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "noxious",
     phonetic: "/ˈnɒk.ʃəs/",
     part_of_speech: 'adjective',
@@ -7836,7 +7836,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_357',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "impact",
     phonetic: "/ˈɪm.pækt/",
     part_of_speech: 'noun',
@@ -7880,7 +7880,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_359',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "air pollution",
     phonetic: "/ˈeə pəˌluː.ʃən/",
     part_of_speech: 'noun',
@@ -7902,7 +7902,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_360',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "owner",
     phonetic: "/ˈəʊ.nər/",
     part_of_speech: 'noun',
@@ -7924,7 +7924,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_361',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "levy",
     phonetic: "/ˈlev.i/",
     part_of_speech: 'verb',
@@ -7946,7 +7946,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_362',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "measure",
     phonetic: "/ˈmɛʒ.ər/",
     part_of_speech: 'noun',
@@ -7990,7 +7990,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_364',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B1',
     word: "taxing",
     phonetic: "/ˈtæk.sɪŋ/",
     part_of_speech: 'verb',
@@ -8034,7 +8034,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_366',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "impose",
     phonetic: "/ɪmˈpəʊz/",
     part_of_speech: 'verb',
@@ -8078,7 +8078,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_368',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "policy",
     phonetic: "/ˈpɒl.ə.si/",
     part_of_speech: 'noun',
@@ -8100,7 +8100,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_369',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "widen",
     phonetic: "/ˈwaɪ.dən/",
     part_of_speech: 'verb',
@@ -8210,7 +8210,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_374',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "green transit",
     phonetic: "/ɡriːn ˈtræn.zɪt/",
     part_of_speech: 'noun',
@@ -8254,7 +8254,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_376',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "environmental preservation",
     phonetic: "/ɪnˌvaɪ.rənˈmɛn.təl ˌprɛz.əˈveɪ.ʃən/",
     part_of_speech: 'noun',
@@ -8298,7 +8298,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_378',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "waste management",
     phonetic: "/weɪst ˈmæn.ɪdʒ.mənt/",
     part_of_speech: 'noun',
@@ -8320,7 +8320,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_379',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "mass transit",
     phonetic: "/mæs ˈtræn.zɪt/",
     part_of_speech: 'noun',
@@ -8386,7 +8386,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_382',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B1',
     word: "environmental sustainability",
     phonetic: "/ɪnˌvaɪ.rənˈmɛn.təl səˌsteɪ.nəˈbɪl.ə.ti/",
     part_of_speech: 'noun',
@@ -8452,7 +8452,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_385',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'C1',
     word: "cultural heritage",
     phonetic: "/ˈkʌl.tʃər.əl ˈhɛr.ɪ.tɪdʒ/",
     part_of_speech: 'noun',
@@ -8474,7 +8474,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_386',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "sustainable revenue",
     phonetic: "/səˈsteɪ.nə.bəl ˈrɛv.ə.njuː/",
     part_of_speech: 'noun',
@@ -8496,7 +8496,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_387',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B1',
     word: "congestion pricing",
     phonetic: "/kənˈdʒɛs.tʃən ˈpraɪ.sɪŋ/",
     part_of_speech: 'noun',
@@ -8562,7 +8562,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_390',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "curb",
     phonetic: "/kɜːb/",
     part_of_speech: 'verb',
@@ -8650,7 +8650,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_394',
     topic: 'Môi trường & Tự nhiên',
-    level: 'C1',
+    level: 'B2',
     word: "dwindle",
     phonetic: "/ˈdwɪn.dəl/",
     part_of_speech: 'verb',
@@ -8782,7 +8782,7 @@ export const ENVIRONMENT_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_env_400',
     topic: 'Môi trường & Tự nhiên',
-    level: 'B2',
+    level: 'B1',
     word: "alternative",
     phonetic: "/ɒlˈtɜː.nə.tɪv/",
     part_of_speech: 'noun',

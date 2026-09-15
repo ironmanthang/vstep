@@ -4,7 +4,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_001',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'C1',
     word: "itinerary",
     phonetic: "/aɪˈtɪn.ər.ər.i/",
     part_of_speech: 'noun',
@@ -48,7 +48,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_003',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "congestion",
     phonetic: "/kənˈdʒes.tʃən/",
     part_of_speech: 'noun',
@@ -70,7 +70,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_004',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "commuter",
     phonetic: "/kəˈmjuː.tər/",
     part_of_speech: 'noun',
@@ -92,7 +92,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_005',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "pedestrian",
     phonetic: "/pəˈdes.tri.ən/",
     part_of_speech: 'noun',
@@ -114,7 +114,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_006',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "metropolitan",
     phonetic: "/ˌmet.rəˈpɒl.ɪ.tən/",
     part_of_speech: 'adjective',
@@ -158,7 +158,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_008',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "hospitality",
     phonetic: "/ˌhɒs.pɪˈtæl.ə.ti/",
     part_of_speech: 'noun',
@@ -224,7 +224,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_011',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'C1',
     word: "landmark",
     phonetic: "/ˈlænd.mɑːk/",
     part_of_speech: 'noun',
@@ -246,7 +246,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_012',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "suburb",
     phonetic: "/ˈsʌb.ɜːb/",
     part_of_speech: 'noun',
@@ -268,7 +268,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_013',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'C1',
     word: "transit",
     phonetic: "/ˈtræn.zɪt/",
     part_of_speech: 'noun',
@@ -290,7 +290,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_014',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "excursion",
     phonetic: "/ɪkˈskɜː.ʃən/",
     part_of_speech: 'noun',
@@ -334,7 +334,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_016',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "urban",
     phonetic: "/ˈɜː.bən/",
     part_of_speech: 'adjective',
@@ -356,7 +356,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_017',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "rural",
     phonetic: "/ˈrʊə.rəl/",
     part_of_speech: 'adjective',
@@ -378,7 +378,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_018',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "monument",
     phonetic: "/ˈmɒn.jə.mənt/",
     part_of_speech: 'noun',
@@ -400,7 +400,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_019',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "commute",
     phonetic: "/kəˈmjuːt/",
     part_of_speech: 'verb',
@@ -444,7 +444,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_021',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "terminal",
     phonetic: "/ˈtɜː.mɪ.nəl/",
     part_of_speech: 'noun',
@@ -510,7 +510,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_024',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "resort",
     phonetic: "/rɪˈzɔːt/",
     part_of_speech: 'noun',
@@ -576,7 +576,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_027',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "bustling",
     phonetic: "/ˈbʌs.lɪŋ/",
     part_of_speech: 'adjective',
@@ -620,7 +620,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_029',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "overseas",
     phonetic: "/ˌəʊ.vəˈsiːz/",
     part_of_speech: 'adverb',
@@ -642,7 +642,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_030',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "delayed",
     phonetic: "/dɪˈleɪd/",
     part_of_speech: 'adjective',
@@ -686,7 +686,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_032',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "fare",
     phonetic: "/feər/",
     part_of_speech: 'noun',
@@ -862,7 +862,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_040',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "harbor",
     phonetic: "/ˈhɑː.bər/",
     part_of_speech: 'noun',
@@ -884,7 +884,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_041',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "quay",
     phonetic: "/kiː/",
     part_of_speech: 'noun',
@@ -1082,7 +1082,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_050',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "cruise",
     phonetic: "/kruːz/",
     part_of_speech: 'noun',
@@ -1104,7 +1104,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_051',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'C1',
     word: "charter",
     phonetic: "/ˈtʃɑː.tər/",
     part_of_speech: 'verb',
@@ -1148,7 +1148,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_053',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "overnight",
     phonetic: "/ˌəʊ.vəˈnaɪt/",
     part_of_speech: 'adverb',
@@ -1214,7 +1214,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_056',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "reserve",
     phonetic: "/rɪˈzɜːv/",
     part_of_speech: 'verb',
@@ -1258,7 +1258,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_058',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "depart",
     phonetic: "/dɪˈpɑːt/",
     part_of_speech: 'verb',
@@ -1346,7 +1346,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_062',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "wander",
     phonetic: "/ˈwɒn.dər/",
     part_of_speech: 'verb',
@@ -1390,7 +1390,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_064',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "disembark",
     phonetic: "/ˌdɪs.ɪmˈbɑːk/",
     part_of_speech: 'verb',
@@ -1412,7 +1412,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_065',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "modernize",
     phonetic: "/ˈmɒd.ən.aɪz/",
     part_of_speech: 'verb',
@@ -1522,7 +1522,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_070',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'C1',
     word: "reside",
     phonetic: "/rɪˈzaɪd/",
     part_of_speech: 'verb',
@@ -1566,7 +1566,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_072',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "gentrification",
     phonetic: "/ˌdʒen.trɪ.fɪˈkeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1654,7 +1654,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_076',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "sprawl",
     phonetic: "/sprɔːl/",
     part_of_speech: 'noun',
@@ -1742,7 +1742,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_080',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "densification",
     phonetic: "/ˌden.sɪ.fɪˈkeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1786,7 +1786,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_082',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "walkability",
     phonetic: "/ˌwɔː.kəˈbɪl.ə.ti/",
     part_of_speech: 'noun',
@@ -1808,7 +1808,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_083',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "conurbation",
     phonetic: "/ˌkɒn.ɜːˈbeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1830,7 +1830,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_084',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "megalopolis",
     phonetic: "/ˌmeɡ.əˈlɒp.əl.ɪs/",
     part_of_speech: 'noun',
@@ -1896,7 +1896,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_087',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "heritage",
     phonetic: "/ˈher.ɪ.tɪdʒ/",
     part_of_speech: 'noun',
@@ -1918,7 +1918,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_088',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "promenade",
     phonetic: "/ˌprɒm.əˈnɑːd/",
     part_of_speech: 'noun',
@@ -1962,7 +1962,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_090',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "demolition",
     phonetic: "/ˌdem.əˈlɪʃ.ən/",
     part_of_speech: 'noun',
@@ -2006,7 +2006,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_092',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "pedestrianize",
     phonetic: "/pəˈdes.tri.ə.naɪz/",
     part_of_speech: 'verb',
@@ -2072,7 +2072,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_095',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "panoramic",
     phonetic: "/ˌpæn.ərˈæm.ɪk/",
     part_of_speech: 'adjective',
@@ -2094,7 +2094,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_096',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "accessible",
     phonetic: "/əkˈses.ə.bəl/",
     part_of_speech: 'adjective',
@@ -2116,7 +2116,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_097',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "inhabitable",
     phonetic: "/ɪnˈhæb.ɪ.tə.bəl/",
     part_of_speech: 'adjective',
@@ -2138,7 +2138,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_098',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "uninhabitable",
     phonetic: "/ˌʌn.ɪnˈhæb.ɪ.tə.bəl/",
     part_of_speech: 'adjective',
@@ -2182,7 +2182,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_100',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "intermodal",
     phonetic: "/ˌɪn.təˈməʊ.dəl/",
     part_of_speech: 'adjective',
@@ -2204,7 +2204,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_101',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "eclectic",
     phonetic: "/ekˈlek.tɪk/",
     part_of_speech: 'adjective',
@@ -2226,7 +2226,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_102',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "labyrinthine",
     phonetic: "/ˌlæb.əˈrɪn.θaɪn/",
     part_of_speech: 'adjective',
@@ -2314,7 +2314,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_106',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "grid",
     phonetic: "/ɡrɪd/",
     part_of_speech: 'noun',
@@ -2358,7 +2358,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_108',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "pedestrianization",
     phonetic: "/pəˌdes.tri.ə.naɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -2424,7 +2424,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_111',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "reclaim",
     phonetic: "/rɪˈkleɪm/",
     part_of_speech: 'verb',
@@ -2490,7 +2490,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_114',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "subterranean",
     phonetic: "/ˌsʌb.təˈreɪ.ni.ən/",
     part_of_speech: 'adjective',
@@ -2534,7 +2534,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_116',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "sprawling",
     phonetic: "/ˈsprɔː.lɪŋ/",
     part_of_speech: 'adjective',
@@ -2644,7 +2644,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_121',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "vibrant",
     phonetic: "/ˈvaɪ.brənt/",
     part_of_speech: 'adjective',
@@ -2688,7 +2688,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_123',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "tranquil",
     phonetic: "/ˈtræŋ.kwɪl/",
     part_of_speech: 'adjective',
@@ -2710,7 +2710,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_124',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "cosmopolitanism",
     phonetic: "/ˌkɒz.məˈpɒl.ɪ.tən.ɪ.zəm/",
     part_of_speech: 'noun',
@@ -2754,7 +2754,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_126',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "suburbia",
     phonetic: "/səˈbɜː.bi.ə/",
     part_of_speech: 'noun',
@@ -3370,7 +3370,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_154',
     topic: 'Du lịch & Đô thị',
-    level: 'C1',
+    level: 'B2',
     word: "promenader",
     phonetic: "/ˌprɒm.əˈnɑː.dər/",
     part_of_speech: 'noun',
@@ -3414,7 +3414,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_156',
     topic: 'Du lịch & Đô thị',
-    level: 'C1',
+    level: 'B2',
     word: "esplanade",
     phonetic: "/ˈes.plə.nɑːd/",
     part_of_speech: 'noun',
@@ -3612,7 +3612,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_165',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "stopover",
     phonetic: "/ˈstɒpˌəʊ.vər/",
     part_of_speech: 'noun',
@@ -3634,7 +3634,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_166',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "habitation",
     phonetic: "/ˌhæb.ɪˈteɪ.ʃən/",
     part_of_speech: 'noun',
@@ -3678,7 +3678,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_168',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "globetrotter",
     phonetic: "/ˈɡləʊbˌtrɒt.ər/",
     part_of_speech: 'noun',
@@ -3898,7 +3898,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_178',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "glamping",
     phonetic: "/ˈɡlæm.pɪŋ/",
     part_of_speech: 'noun',
@@ -4030,7 +4030,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_184',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'C1',
     word: "itineraries",
     phonetic: "/aɪˈtɪn.ər.ər.iz/",
     part_of_speech: 'noun',
@@ -4074,7 +4074,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_186',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "excursions",
     phonetic: "/ɪkˈskɜː.ʃənz/",
     part_of_speech: 'noun',
@@ -4910,7 +4910,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_224',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "require",
     phonetic: "/rɪˈkwaɪə(r)/",
     part_of_speech: 'verb',
@@ -4954,7 +4954,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_226',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "litre",
     phonetic: "/ˈliː.tər/",
     part_of_speech: 'noun',
@@ -5240,7 +5240,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_239',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "highway",
     phonetic: "/ˈhaɪ.weɪ/",
     part_of_speech: 'noun',
@@ -5394,7 +5394,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_246',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'C1',
     word: "noon",
     phonetic: "/nuːn/",
     part_of_speech: 'noun',
@@ -5614,7 +5614,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_256',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "discover",
     phonetic: "/dɪˈskʌv.ər/",
     part_of_speech: 'verb',
@@ -5680,7 +5680,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_259',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "pacific",
     phonetic: "/pəˈsɪf.ɪk/",
     part_of_speech: 'adjective',
@@ -5702,7 +5702,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_260',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "railroad",
     phonetic: "/ˈreɪl.rəʊd/",
     part_of_speech: 'noun',
@@ -5768,7 +5768,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_263',
     topic: 'Du lịch & Đô thị',
-    level: 'C1',
+    level: 'B2',
     word: "emigrant",
     phonetic: "/ˈem.ɪ.ɡrənt/",
     part_of_speech: 'noun',
@@ -5812,7 +5812,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_265',
     topic: 'Du lịch & Đô thị',
-    level: 'C1',
+    level: 'B2',
     word: "weary",
     phonetic: "/ˈwɪə.ri/",
     part_of_speech: 'adjective',
@@ -5834,7 +5834,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_266',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "cross",
     phonetic: "/krɒs/",
     part_of_speech: 'verb',
@@ -5856,7 +5856,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_267',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "arrival",
     phonetic: "/əˈraɪ.vəl/",
     part_of_speech: 'noun',
@@ -5900,7 +5900,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_269',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "overland",
     phonetic: "/ˈəʊ.və.lænd/",
     part_of_speech: 'adverb',
@@ -5944,7 +5944,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_271',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "luxury",
     phonetic: "/ˈlʌk.ʃər.i/",
     part_of_speech: 'adjective',
@@ -5966,7 +5966,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_272',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "mediterranean",
     phonetic: "/ˌmed.ɪ.təˈreɪ.ni.ən/",
     part_of_speech: 'adjective',
@@ -6010,7 +6010,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_274',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "transport",
     phonetic: "/trænˈspɔːt/",
     part_of_speech: 'verb',
@@ -6076,7 +6076,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_277',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "apart",
     phonetic: "/əˈpɑːt/",
     part_of_speech: 'adverb',
@@ -6098,7 +6098,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_278',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "trail",
     phonetic: "/treɪl/",
     part_of_speech: 'noun',
@@ -6186,7 +6186,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_282',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "wagon",
     phonetic: "/ˈwæɡ.ən/",
     part_of_speech: 'noun',
@@ -6208,7 +6208,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_283',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "crossing",
     phonetic: "/ˈkrɒs.ɪŋ/",
     part_of_speech: 'noun',
@@ -6340,7 +6340,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_289',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "geographical",
     phonetic: "/ˌdʒiː.əˈɡræf.ɪ.kəl/",
     part_of_speech: 'adjective',
@@ -6362,7 +6362,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_290',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "private car",
     phonetic: "/ˈpraɪ.vət kɑːr/",
     part_of_speech: 'noun',
@@ -6384,7 +6384,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_291',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "tourism",
     phonetic: "/ˈtʊə.rɪ.zəm/",
     part_of_speech: 'noun',
@@ -6406,7 +6406,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_292',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "traffic congestion",
     phonetic: "/ˈtræf.ɪk kənˈdʒes.tʃən/",
     part_of_speech: 'noun',
@@ -6538,7 +6538,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_298',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "spacious",
     phonetic: "/ˈspeɪ.ʃəs/",
     part_of_speech: 'adjective',
@@ -6604,7 +6604,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_301',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "private vehicle",
     phonetic: "/ˌpraɪ.vət ˈviː.ɪ.kəl/",
     part_of_speech: 'noun',
@@ -6626,7 +6626,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_302',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "enjoyable",
     phonetic: "/ɪnˈdʒɔɪ.ə.bəl/",
     part_of_speech: 'adjective',
@@ -6648,7 +6648,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_303',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "socialize",
     phonetic: "/ˈsəʊ.ʃəl.aɪz/",
     part_of_speech: 'verb',
@@ -6692,7 +6692,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_305',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "touch",
     phonetic: "/tʌtʃ/",
     part_of_speech: 'phrase',
@@ -6714,7 +6714,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_306',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'C1',
     word: "bay",
     phonetic: "/beɪ/",
     part_of_speech: 'noun',
@@ -6736,7 +6736,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_307',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "correspondence",
     phonetic: "/ˌkɒr.ɪˈspɒn.dəns/",
     part_of_speech: 'noun',
@@ -6802,7 +6802,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_310',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "companion",
     phonetic: "/kəmˈpæn.jən/",
     part_of_speech: 'noun',
@@ -6846,7 +6846,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_312',
     topic: 'Du lịch & Đô thị',
-    level: 'C1',
+    level: 'B2',
     word: "culinary",
     phonetic: "/ˈkʌl.ɪ.nər.i/",
     part_of_speech: 'adjective',
@@ -6956,7 +6956,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_317',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "chosen",
     phonetic: "/ˈtʃəʊ.zən/",
     part_of_speech: 'adjective',
@@ -6978,7 +6978,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_318',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "incredible",
     phonetic: "/ɪnˈkred.ə.bəl/",
     part_of_speech: 'adjective',
@@ -7044,7 +7044,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_321',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "motorbike",
     phonetic: "/ˈməʊ.tə.baɪk/",
     part_of_speech: 'noun',
@@ -7176,7 +7176,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_327',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "yesterday",
     phonetic: "/ˈjes.tɚ.deɪ/",
     part_of_speech: 'adverb',
@@ -7220,7 +7220,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_329',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "taste",
     phonetic: "/teɪst/",
     part_of_speech: 'verb',
@@ -7264,7 +7264,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_331',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "eat",
     phonetic: "/iːt/",
     part_of_speech: 'verb',
@@ -7286,7 +7286,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_332',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "treatment",
     phonetic: "/ˈtriːt.mənt/",
     part_of_speech: 'noun',
@@ -7330,7 +7330,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_334',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "open-air",
     phonetic: "/ˌəʊ.pənˈeər/",
     part_of_speech: 'adjective',
@@ -7352,7 +7352,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_335',
     topic: 'Du lịch & Đô thị',
-    level: 'B1',
+    level: 'B2',
     word: "affordable",
     phonetic: "/əˈfɔː.də.bəl/",
     part_of_speech: 'adjective',
@@ -7396,7 +7396,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_337',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "wonder",
     phonetic: "/ˈwʌn.dər/",
     part_of_speech: 'noun',
@@ -7550,7 +7550,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_344',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "attraction",
     phonetic: "/əˈtræk.ʃən/",
     part_of_speech: 'noun',
@@ -7572,7 +7572,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_345',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "shuttle",
     phonetic: "/ˈʃʌtl/",
     part_of_speech: 'noun',
@@ -7594,7 +7594,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_346',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "independent",
     phonetic: "/ˌɪndɪˈpendənt/",
     part_of_speech: 'adjective',
@@ -7616,7 +7616,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_347',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'C1',
     word: "admission",
     phonetic: "/ədˈmɪʃn/",
     part_of_speech: 'noun',
@@ -7660,7 +7660,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_349',
     topic: 'Du lịch & Đô thị',
-    level: 'B2',
+    level: 'B1',
     word: "refund",
     phonetic: "/ˈriːfʌnd/",
     part_of_speech: 'noun',
@@ -7682,7 +7682,7 @@ export const TRAVEL_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_travel_350',
     topic: 'Du lịch & Đô thị',
-    level: 'C1',
+    level: 'B2',
     word: "multigenerational",
     phonetic: "/ˌmʌltiˌdʒenəˈreɪʃənl/",
     part_of_speech: 'adjective',

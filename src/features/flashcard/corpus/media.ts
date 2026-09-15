@@ -4,7 +4,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_001',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "misinformation",
     phonetic: "/ˌmɪs.ɪn.fəˈmeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -26,7 +26,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_002',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "broadcast",
     phonetic: "/ˈbrɔːd.kɑːst/",
     part_of_speech: 'verb',
@@ -48,7 +48,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_003',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "journalism",
     phonetic: "/ˈdʒɜː.nə.lɪ.zəm/",
     part_of_speech: 'noun',
@@ -92,7 +92,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_005',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "censorship",
     phonetic: "/ˈsen.sə.ʃɪp/",
     part_of_speech: 'noun',
@@ -114,7 +114,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_006',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "editorial",
     phonetic: "/ˌed.ɪˈtɔː.ri.əl/",
     part_of_speech: 'noun',
@@ -158,7 +158,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_008',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "coverage",
     phonetic: "/ˈkʌv.ər.ɪdʒ/",
     part_of_speech: 'noun',
@@ -180,7 +180,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_009',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'C1',
     word: "subscriber",
     phonetic: "/səbˈskraɪ.bər/",
     part_of_speech: 'noun',
@@ -246,7 +246,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_012',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "tabloid",
     phonetic: "/ˈtæb.lɔɪd/",
     part_of_speech: 'noun',
@@ -290,7 +290,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_014',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'C1',
     word: "circulate",
     phonetic: "/ˈsɜː.kjə.leɪt/",
     part_of_speech: 'verb',
@@ -598,7 +598,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_028',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'C1',
     word: "correspondent",
     phonetic: "/ˌkɒr.ɪˈspɒn.dənt/",
     part_of_speech: 'noun',
@@ -642,7 +642,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_030',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'C1',
     word: "commentary",
     phonetic: "/ˈkɒm.ən.tər.i/",
     part_of_speech: 'noun',
@@ -818,7 +818,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_038',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "perspective",
     phonetic: "/pəˈspek.tɪv/",
     part_of_speech: 'noun',
@@ -906,7 +906,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_042',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'C1',
     word: "rumor",
     phonetic: "/ˈruː.mər/",
     part_of_speech: 'noun',
@@ -950,7 +950,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_044',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "debate",
     phonetic: "/dɪˈbeɪt/",
     part_of_speech: 'noun',
@@ -1038,7 +1038,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_048',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "interaction",
     phonetic: "/ˌɪn.təˈræk.ʃən/",
     part_of_speech: 'noun',
@@ -1082,7 +1082,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_050',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "criticism",
     phonetic: "/ˈkrɪt.ɪ.sɪ.zəm/",
     part_of_speech: 'noun',
@@ -1104,7 +1104,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_051',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "praise",
     phonetic: "/preɪz/",
     part_of_speech: 'noun',
@@ -1126,7 +1126,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_052',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "inform",
     phonetic: "/ɪnˈfɔːm/",
     part_of_speech: 'verb',
@@ -1148,7 +1148,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_053',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "convey",
     phonetic: "/kənˈveɪ/",
     part_of_speech: 'verb',
@@ -1302,7 +1302,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_060',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'C1',
     word: "notify",
     phonetic: "/ˈnəʊ.tɪ.faɪ/",
     part_of_speech: 'verb',
@@ -1390,7 +1390,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_064',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "disinformation",
     phonetic: "/ˌdɪs.ɪn.fəˈmeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1412,7 +1412,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_065',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "sensationalism",
     phonetic: "/senˈseɪ.ʃən.əl.ɪ.zəm/",
     part_of_speech: 'noun',
@@ -1434,7 +1434,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_066',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "polarization",
     phonetic: "/ˌpəʊ.lə.raɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1456,7 +1456,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_067',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "echo chamber",
     phonetic: "/ˈek.əʊ ˌtʃeɪm.bər/",
     part_of_speech: 'phrase',
@@ -1478,7 +1478,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_068',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "propaganda",
     phonetic: "/ˌprɒp.əˈɡæn.də/",
     part_of_speech: 'noun',
@@ -1500,7 +1500,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_069',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "defamation",
     phonetic: "/ˌdef.əˈmeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1522,7 +1522,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_070',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "muckraking",
     phonetic: "/ˈmʌkˌreɪ.kɪŋ/",
     part_of_speech: 'noun',
@@ -1544,7 +1544,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_071',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "infotainment",
     phonetic: "/ˈɪn.fəʊˌteɪn.mənt/",
     part_of_speech: 'noun',
@@ -1588,7 +1588,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_073',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "retraction",
     phonetic: "/rɪˈtræk.ʃən/",
     part_of_speech: 'noun',
@@ -1610,7 +1610,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_074',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "spin",
     phonetic: "/spɪn/",
     part_of_speech: 'noun',
@@ -1632,7 +1632,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_075',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "transparency",
     phonetic: "/trænˈspær.ən.si/",
     part_of_speech: 'noun',
@@ -1676,7 +1676,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_077',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "syndication",
     phonetic: "/ˌsɪn.dɪˈkeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1698,7 +1698,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_078',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "demagogue",
     phonetic: "/ˈdem.ə.ɡɒɡ/",
     part_of_speech: 'noun',
@@ -1720,7 +1720,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_079',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "rhetoric",
     phonetic: "/ˈret.ər.ɪk/",
     part_of_speech: 'noun',
@@ -1742,7 +1742,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_080',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "libel",
     phonetic: "/ˈlaɪ.bəl/",
     part_of_speech: 'noun',
@@ -1764,7 +1764,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_081',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "slander",
     phonetic: "/ˈslɑːn.dər/",
     part_of_speech: 'noun',
@@ -1786,7 +1786,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_082',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "monopolization",
     phonetic: "/məˌnɒp.əl.aɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1852,7 +1852,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_085',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "dissemination",
     phonetic: "/dɪˌsem.ɪˈneɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1874,7 +1874,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_086',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "amplification",
     phonetic: "/ˌæm.plɪ.fɪˈkeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1896,7 +1896,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_087',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "engagement",
     phonetic: "/ɪnˈɡeɪdʒ.mənt/",
     part_of_speech: 'noun',
@@ -1962,7 +1962,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_090',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "unsubstantiated",
     phonetic: "/ˌʌn.səbˈstæn.ʃi.eɪ.tɪd/",
     part_of_speech: 'adjective',
@@ -1984,7 +1984,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_091',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "compelling",
     phonetic: "/kəmˈpel.ɪŋ/",
     part_of_speech: 'adjective',
@@ -2072,7 +2072,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_095',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "ubiquitous",
     phonetic: "/juːˈbɪk.wɪ.təs/",
     part_of_speech: 'adjective',
@@ -2094,7 +2094,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_096',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "pervasive",
     phonetic: "/pəˈveɪ.sɪv/",
     part_of_speech: 'adjective',
@@ -2116,7 +2116,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_097',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "fabricated",
     phonetic: "/ˈfæb.rɪ.keɪ.tɪd/",
     part_of_speech: 'adjective',
@@ -2138,7 +2138,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_098',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "subversive",
     phonetic: "/səbˈvɜː.sɪv/",
     part_of_speech: 'adjective',
@@ -2160,7 +2160,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_099',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "corroborate",
     phonetic: "/kəˈrɒb.ə.reɪt/",
     part_of_speech: 'verb',
@@ -2204,7 +2204,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_101',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "fabricate",
     phonetic: "/ˈfæb.rɪ.keɪt/",
     part_of_speech: 'verb',
@@ -2226,7 +2226,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_102',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "manipulate",
     phonetic: "/məˈnɪp.jə.leɪt/",
     part_of_speech: 'verb',
@@ -2248,7 +2248,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_103',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "retract",
     phonetic: "/rɪˈtrækt/",
     part_of_speech: 'verb',
@@ -2270,7 +2270,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_104',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "polarize",
     phonetic: "/ˈpəʊ.lə.raɪz/",
     part_of_speech: 'verb',
@@ -2358,7 +2358,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_108',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "advocate",
     phonetic: "/ˈæd.və.keɪt/",
     part_of_speech: 'verb',
@@ -2380,7 +2380,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_109',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "disclose",
     phonetic: "/dɪsˈkləʊz/",
     part_of_speech: 'verb',
@@ -2424,7 +2424,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_111',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "editorialist",
     phonetic: "/ˌed.ɪˈtɔː.ri.ə.lɪst/",
     part_of_speech: 'noun',
@@ -2446,7 +2446,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_112',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "columnist",
     phonetic: "/ˈkɒl.əm.nɪst/",
     part_of_speech: 'noun',
@@ -2512,7 +2512,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_115',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "misrepresentation",
     phonetic: "/ˌmɪsˌrep.rɪ.zenˈteɪ.ʃən/",
     part_of_speech: 'noun',
@@ -2534,7 +2534,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_116',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "sensationalistic",
     phonetic: "/senˌseɪ.ʃən.əlˈɪs.tɪk/",
     part_of_speech: 'adjective',
@@ -2556,7 +2556,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_117',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "corroboration",
     phonetic: "/kəˌrɒb.əˈreɪ.ʃən/",
     part_of_speech: 'noun',
@@ -2578,7 +2578,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_118',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "verifiability",
     phonetic: "/ˌver.ɪ.faɪ.əˈbɪl.ə.ti/",
     part_of_speech: 'noun',
@@ -2600,7 +2600,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_119',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "ombudsman",
     phonetic: "/ˈɒm.bʊdz.mən/",
     part_of_speech: 'noun',
@@ -2622,7 +2622,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_120',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "sensationalize",
     phonetic: "/senˈseɪ.ʃən.əl.aɪz/",
     part_of_speech: 'verb',
@@ -2666,7 +2666,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_122',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "scrutiny",
     phonetic: "/ˈskruː.tɪ.ni/",
     part_of_speech: 'noun',
@@ -2710,7 +2710,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_124',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "corroborative",
     phonetic: "/kəˈrɒb.ər.ə.tɪv/",
     part_of_speech: 'adjective',
@@ -2732,7 +2732,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_125',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "authoritativeness",
     phonetic: "/ɔːˌθɒr.ɪˈteɪ.tɪv.nəs/",
     part_of_speech: 'noun',
@@ -2754,7 +2754,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_126',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "ubiquity",
     phonetic: "/juːˈbɪk.wə.ti/",
     part_of_speech: 'noun',
@@ -2776,7 +2776,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_127',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "pervasiveness",
     phonetic: "/pəˈveɪ.sɪv.nəs/",
     part_of_speech: 'noun',
@@ -2820,7 +2820,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_129',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "discursiveness",
     phonetic: "/dɪˈskɜː.sɪv.nəs/",
     part_of_speech: 'noun',
@@ -2842,7 +2842,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_130',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "propagandize",
     phonetic: "/ˌprɒp.əˈɡæn.daɪz/",
     part_of_speech: 'verb',
@@ -3480,7 +3480,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_159',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "telecast",
     phonetic: "/ˈtel.ɪ.kɑːst/",
     part_of_speech: 'noun',
@@ -3502,7 +3502,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_160',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "anchorman",
     phonetic: "/ˈæŋ.kə.mæn/",
     part_of_speech: 'noun',
@@ -3524,7 +3524,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_161',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "anchorwoman",
     phonetic: "/ˈæŋ.kəˌwʊm.ən/",
     part_of_speech: 'noun',
@@ -3568,7 +3568,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_163',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "newscaster",
     phonetic: "/ˈnjuːzˌkɑː.stər/",
     part_of_speech: 'noun',
@@ -3590,7 +3590,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_164',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "infographic",
     phonetic: "/ˈɪn.fəʊˌɡræf.ɪk/",
     part_of_speech: 'noun',
@@ -3634,7 +3634,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_166',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "paywall",
     phonetic: "/ˈpeɪ.wɔːl/",
     part_of_speech: 'noun',
@@ -3656,7 +3656,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_167',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "pressroom",
     phonetic: "/ˈpres.ruːm/",
     part_of_speech: 'noun',
@@ -3678,7 +3678,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_168',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "demystify",
     phonetic: "/diːˈmɪs.tɪ.faɪ/",
     part_of_speech: 'verb',
@@ -3700,7 +3700,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_169',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "televise",
     phonetic: "/ˈtel.ɪ.vaɪz/",
     part_of_speech: 'verb',
@@ -3744,7 +3744,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_171',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "periodical",
     phonetic: "/ˌpɪə.riˈɒd.ɪ.kəl/",
     part_of_speech: 'noun',
@@ -3766,7 +3766,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_172',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "mass-communication",
     phonetic: "/mæs kəˌmjuː.nɪˈkeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -3788,7 +3788,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_173',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "press-release",
     phonetic: "/ˈpres rɪˌliːs/",
     part_of_speech: 'noun',
@@ -3810,7 +3810,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_174',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "bureau",
     phonetic: "/ˈbjʊə.rəʊ/",
     part_of_speech: 'noun',
@@ -3832,7 +3832,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_175',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "newscast",
     phonetic: "/ˈnjuːz.kɑːst/",
     part_of_speech: 'noun',
@@ -3854,7 +3854,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_176',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "feature-story",
     phonetic: "/ˈfiː.tʃər ˌstɔː.ri/",
     part_of_speech: 'noun',
@@ -3876,7 +3876,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_177',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "byline",
     phonetic: "/ˈbaɪ.laɪn/",
     part_of_speech: 'noun',
@@ -3898,7 +3898,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_178',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "op-ed",
     phonetic: "/ˌɒpˈed/",
     part_of_speech: 'noun',
@@ -3920,7 +3920,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_179',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "teleprinter",
     phonetic: "/ˈtel.ɪˌprɪn.tər/",
     part_of_speech: 'noun',
@@ -3964,7 +3964,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_181',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "disinform",
     phonetic: "/ˌdɪs.ɪnˈfɔːm/",
     part_of_speech: 'verb',
@@ -4008,7 +4008,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_183',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "columnists",
     phonetic: "/ˈkɒl.əm.nɪsts/",
     part_of_speech: 'noun',
@@ -4074,7 +4074,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_186',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'C1',
     word: "subscribers",
     phonetic: "/səbˈskraɪ.bərz/",
     part_of_speech: 'noun',
@@ -4096,7 +4096,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_187',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "publications",
     phonetic: "/ˌpʌb.lɪˈkeɪ.ʃənz/",
     part_of_speech: 'noun',
@@ -4888,7 +4888,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_223',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "textbook",
     phonetic: "/ˈtekstbʊk/",
     part_of_speech: 'noun',
@@ -5152,7 +5152,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_235',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "archive",
     phonetic: "/ˈɑː.kaɪv/",
     part_of_speech: 'noun',
@@ -5240,7 +5240,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_239',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "advise",
     phonetic: "/ədˈvaɪz/",
     part_of_speech: 'verb',
@@ -5262,7 +5262,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_240',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "abbott",
     phonetic: "/ˈæb.ət/",
     part_of_speech: 'noun',
@@ -5284,7 +5284,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_241',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "blend",
     phonetic: "/blend/",
     part_of_speech: 'verb',
@@ -5416,7 +5416,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_247',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "receipt",
     phonetic: "/rɪˈsiːt/",
     part_of_speech: 'noun',
@@ -5438,7 +5438,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_248',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "pottery",
     phonetic: "/ˈpɒt.ər.i/",
     part_of_speech: 'noun',
@@ -5526,7 +5526,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_252',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "force",
     phonetic: "/fɔːs/",
     part_of_speech: 'noun',
@@ -5570,7 +5570,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_254',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "base",
     phonetic: "/beɪs/",
     part_of_speech: 'verb',
@@ -5658,7 +5658,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_258',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "symphony",
     phonetic: "/ˈsɪm.fə.ni/",
     part_of_speech: 'noun',
@@ -5724,7 +5724,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_261',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "hero",
     phonetic: "/ˈhɪərəʊ/",
     part_of_speech: 'noun',
@@ -5746,7 +5746,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_262',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "immediate",
     phonetic: "/ɪˈmiːdiət/",
     part_of_speech: 'adjective',
@@ -5768,7 +5768,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_263',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "trumpet",
     phonetic: "/ˈtrʌmpɪt/",
     part_of_speech: 'noun',
@@ -5790,7 +5790,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_264',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "trumpeter",
     phonetic: "/ˈtrʌmpɪtə(r)/",
     part_of_speech: 'noun',
@@ -5966,7 +5966,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_272',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "psychological impact",
     phonetic: "/ˌsaɪ.kəˈlɒdʒɪ.kəl ˈɪm.pækt/",
     part_of_speech: 'noun',
@@ -6076,7 +6076,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_277',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "social networking platform",
     phonetic: "/ˈsoʊ.ʃəl ˈnet.wɝː.kɪŋ ˈplæt.fɔːrm/",
     part_of_speech: 'phrase',
@@ -6208,7 +6208,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_283',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "cinematic",
     phonetic: "/fɪlmz/",
     part_of_speech: 'noun',
@@ -6340,7 +6340,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_289',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "millionaire",
     phonetic: "/ˌmɪl.jəˈneər/",
     part_of_speech: 'noun',
@@ -6362,7 +6362,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_290',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "cordial",
     phonetic: "/ˈkɔː.di.əl/",
     part_of_speech: 'adjective',
@@ -6384,7 +6384,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_291',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "meaningful",
     phonetic: "/ˈmiː.nɪŋ.fəl/",
     part_of_speech: 'adjective',
@@ -6406,7 +6406,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_292',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "promote",
     phonetic: "/prəˈmoʊt/",
     part_of_speech: 'verb',
@@ -6494,7 +6494,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_296',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B1',
     word: "beverage",
     phonetic: "/ˈbev.ər.ɪdʒ/",
     part_of_speech: 'noun',
@@ -6582,7 +6582,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_300',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "perceive",
     phonetic: "/pəˈsiːv/",
     part_of_speech: 'verb',
@@ -6626,7 +6626,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_302',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "nurture",
     phonetic: "/ˈnɜː.tʃər/",
     part_of_speech: 'verb',
@@ -6648,7 +6648,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_303',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "supportive",
     phonetic: "/səˈpɔː.tɪv/",
     part_of_speech: 'adjective',
@@ -6714,7 +6714,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_306',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "regardless",
     phonetic: "/rɪˈɡɑːd.ləs/",
     part_of_speech: 'adverb',
@@ -6736,7 +6736,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_307',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "serve",
     phonetic: "/sɜːv/",
     part_of_speech: 'verb',
@@ -6758,7 +6758,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_308',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "emotional",
     phonetic: "/ɪˈmoʊ.ʃən.əl/",
     part_of_speech: 'adjective',
@@ -6780,7 +6780,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_309',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B1',
     word: "voice",
     phonetic: "/vɔɪs/",
     part_of_speech: 'verb',
@@ -6846,7 +6846,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_312',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "idealize",
     phonetic: "/aɪˈdɪə.laɪzd/",
     part_of_speech: 'adjective',
@@ -6868,7 +6868,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_313',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "persona",
     phonetic: "/pɜːˈsəʊ.nə/",
     part_of_speech: 'noun',
@@ -6912,7 +6912,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_315',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "hazard",
     phonetic: "/ˈhæz.ərd/",
     part_of_speech: 'noun',
@@ -7022,7 +7022,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_320',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "highlight",
     phonetic: "/ˈhaɪ.laɪt/",
     part_of_speech: 'noun',
@@ -7066,7 +7066,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_322',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "validation",
     phonetic: "/ˌvæl.ɪˈdeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -7110,7 +7110,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_324',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "dispatch",
     phonetic: "/dɪˈspætʃ/",
     part_of_speech: 'verb',
@@ -7154,7 +7154,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_326',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "cosmetic",
     phonetic: "/kɒzˈmet.ɪk/",
     part_of_speech: 'adjective',
@@ -7198,7 +7198,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_328',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "prepared",
     phonetic: "/prɪˈpeerd/",
     part_of_speech: 'adjective',
@@ -7242,7 +7242,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_330',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'C1',
     word: "shipping",
     phonetic: "/ˈʃɪp.ɪŋ/",
     part_of_speech: 'noun',
@@ -7264,7 +7264,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_331',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B1',
+    level: 'B2',
     word: "fee",
     phonetic: "/fiː/",
     part_of_speech: 'noun',
@@ -7286,7 +7286,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_332',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "attach",
     phonetic: "/əˈtætʃ/",
     part_of_speech: 'verb',
@@ -7396,7 +7396,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_337',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'C1',
     word: "filtered",
     phonetic: "/ˈfɪl.təd/",
     part_of_speech: 'adjective',
@@ -7506,7 +7506,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_342',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "polished",
     phonetic: "/ˈpɒl.ɪʃt/",
     part_of_speech: 'adjective',
@@ -7572,7 +7572,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_345',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "dissatisfaction",
     phonetic: "/ˌdɪsˌsæt.ɪsˈfæk.ʃən/",
     part_of_speech: 'noun',
@@ -7616,7 +7616,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_347',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'B2',
+    level: 'B1',
     word: "addictive",
     phonetic: "/əˈdɪk.tɪv/",
     part_of_speech: 'adjective',
@@ -7638,7 +7638,7 @@ export const MEDIA_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_media_348',
     topic: 'Truyền thông & Giao tiếp',
-    level: 'C1',
+    level: 'B2',
     word: "pursuit",
     phonetic: "/pəˈsjuːt/",
     part_of_speech: 'noun',

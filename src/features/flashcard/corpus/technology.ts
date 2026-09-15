@@ -4,7 +4,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_001',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "cyberbullying",
     phonetic: "/ˈsaɪ.bəˌbʊl.i.ɪŋ/",
     part_of_speech: 'noun',
@@ -26,7 +26,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_002',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "digital literacy",
     phonetic: "/ˈdɪdʒ.ɪ.təl ˈlɪt.ər.ə.si/",
     part_of_speech: 'phrase',
@@ -48,7 +48,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_003',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "automation",
     phonetic: "/ˌɔː.təˈmeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -70,7 +70,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_004',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "algorithm",
     phonetic: "/ˈæl.ɡə.rɪ.ðəm/",
     part_of_speech: 'noun',
@@ -92,7 +92,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_005',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "artificial intelligence",
     phonetic: "/ˌɑː.tɪˈfɪʃ.əl ɪnˈtel.ɪ.dʒəns/",
     part_of_speech: 'phrase',
@@ -114,7 +114,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_006',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "cybersecurity",
     phonetic: "/ˈsaɪ.bə.sɪˌkjʊə.rɪ.ti/",
     part_of_speech: 'noun',
@@ -136,7 +136,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_007',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "gadget",
     phonetic: "/ˈɡædʒ.ɪt/",
     part_of_speech: 'noun',
@@ -158,7 +158,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_008',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "database",
     phonetic: "/ˈdeɪ.tə.beɪs/",
     part_of_speech: 'noun',
@@ -180,7 +180,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_009',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "hardware",
     phonetic: "/ˈhɑːd.weər/",
     part_of_speech: 'noun',
@@ -224,7 +224,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_011',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "virtual",
     phonetic: "/ˈvɜː.tʃu.əl/",
     part_of_speech: 'adjective',
@@ -246,7 +246,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_012',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "browser",
     phonetic: "/ˈbraʊ.zər/",
     part_of_speech: 'noun',
@@ -312,7 +312,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_015',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "backup",
     phonetic: "/ˈbæk.ʌp/",
     part_of_speech: 'noun',
@@ -356,7 +356,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_017',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "encrypt",
     phonetic: "/ɪnˈkrɪpt/",
     part_of_speech: 'verb',
@@ -378,7 +378,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_018',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "malware",
     phonetic: "/ˈmæl.weər/",
     part_of_speech: 'noun',
@@ -400,7 +400,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_019',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "firewall",
     phonetic: "/ˈfaɪə.wɔːl/",
     part_of_speech: 'noun',
@@ -444,7 +444,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_021',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "innovation",
     phonetic: "/ˌɪn.əˈveɪ.ʃən/",
     part_of_speech: 'noun',
@@ -466,7 +466,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_022',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "programmer",
     phonetic: "/ˈprəʊ.ɡræm.ər/",
     part_of_speech: 'noun',
@@ -488,7 +488,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_023',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "interface",
     phonetic: "/ˈɪn.tə.feɪs/",
     part_of_speech: 'noun',
@@ -510,7 +510,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_024',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "interactive",
     phonetic: "/ˌɪn.tərˈæk.tɪv/",
     part_of_speech: 'adjective',
@@ -532,7 +532,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_025',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "sensor",
     phonetic: "/ˈsen.sər/",
     part_of_speech: 'noun',
@@ -554,7 +554,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_026',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "storage",
     phonetic: "/ˈstɔː.rɪdʒ/",
     part_of_speech: 'noun',
@@ -576,7 +576,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_027',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "broadband",
     phonetic: "/ˈbrɔːd.bænd/",
     part_of_speech: 'noun',
@@ -620,7 +620,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_029',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "upgrade",
     phonetic: "/ʌpˈɡreɪd/",
     part_of_speech: 'verb',
@@ -642,7 +642,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_030',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "compatible",
     phonetic: "/kəmˈpæt.ə.bəl/",
     part_of_speech: 'adjective',
@@ -686,7 +686,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_032',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "display",
     phonetic: "/dɪˈspleɪ/",
     part_of_speech: 'noun',
@@ -708,7 +708,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_033',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "phishing",
     phonetic: "/ˈfɪʃ.ɪŋ/",
     part_of_speech: 'noun',
@@ -730,7 +730,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_034',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "stream",
     phonetic: "/striːm/",
     part_of_speech: 'verb',
@@ -796,7 +796,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_037',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "portable",
     phonetic: "/ˈpɔː.tə.bəl/",
     part_of_speech: 'adjective',
@@ -840,7 +840,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_039',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "install",
     phonetic: "/ɪnˈstɔːl/",
     part_of_speech: 'verb',
@@ -884,7 +884,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_041',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "disconnect",
     phonetic: "/ˌdɪs.kəˈnekt/",
     part_of_speech: 'verb',
@@ -950,7 +950,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_044',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "process",
     phonetic: "/ˈprəʊ.ses/",
     part_of_speech: 'verb',
@@ -994,7 +994,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_046',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "password",
     phonetic: "/ˈpɑːs.wɜːd/",
     part_of_speech: 'noun',
@@ -1126,7 +1126,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_052',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "automatic",
     phonetic: "/ˌɔː.təˈmæt.ɪk/",
     part_of_speech: 'adjective',
@@ -1258,7 +1258,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_058',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "accurate",
     phonetic: "/ˈæk.jə.rət/",
     part_of_speech: 'adjective',
@@ -1280,7 +1280,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_059',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "secure",
     phonetic: "/sɪˈkjʊər/",
     part_of_speech: 'adjective',
@@ -1346,7 +1346,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_062',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "digitalize",
     phonetic: "/ˈdɪdʒ.ɪ.təl.aɪz/",
     part_of_speech: 'verb',
@@ -1368,7 +1368,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_063',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "compute",
     phonetic: "/kəmˈpjuːt/",
     part_of_speech: 'verb',
@@ -1390,7 +1390,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_064',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "transmit",
     phonetic: "/trænzˈmɪt/",
     part_of_speech: 'verb',
@@ -1412,7 +1412,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_065',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "browse",
     phonetic: "/braʊz/",
     part_of_speech: 'verb',
@@ -1434,7 +1434,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_066',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "navigate",
     phonetic: "/ˈnæv.ɪ.ɡeɪt/",
     part_of_speech: 'verb',
@@ -1456,7 +1456,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_067',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "sync",
     phonetic: "/sɪŋk/",
     part_of_speech: 'verb',
@@ -1478,7 +1478,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_068',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "input",
     phonetic: "/ˈɪn.pʊt/",
     part_of_speech: 'noun',
@@ -1500,7 +1500,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_069',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "output",
     phonetic: "/ˈaʊt.pʊt/",
     part_of_speech: 'noun',
@@ -1588,7 +1588,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_073',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "cryptocurrency",
     phonetic: "/ˈkrɪp.təʊˌkʌr.ən.si/",
     part_of_speech: 'noun',
@@ -1610,7 +1610,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_074',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "nanotechnology",
     phonetic: "/ˌnæn.əʊ.tekˈnɒl.ə.dʒi/",
     part_of_speech: 'noun',
@@ -1632,7 +1632,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_075',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "biometrics",
     phonetic: "/ˌbaɪ.əʊˈmet.rɪks/",
     part_of_speech: 'noun',
@@ -1654,7 +1654,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_076',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "augmented reality",
     phonetic: "/ɔːɡˌmen.tɪd riˈæl.ə.ti/",
     part_of_speech: 'phrase',
@@ -1676,7 +1676,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_077',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "quantum computing",
     phonetic: "/ˌkwɒn.təm kəmˈpjuː.tɪŋ/",
     part_of_speech: 'phrase',
@@ -1720,7 +1720,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_079',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "machine learning",
     phonetic: "/məˈʃiːn ˌlɜː.nɪŋ/",
     part_of_speech: 'phrase',
@@ -1742,7 +1742,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_080',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "interoperability",
     phonetic: "/ˌɪn.tərˌɒp.ər.əˈbɪl.ə.ti/",
     part_of_speech: 'noun',
@@ -1764,7 +1764,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_081',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "semiconductor",
     phonetic: "/ˌsem.i.kənˈdʌk.tər/",
     part_of_speech: 'noun',
@@ -1786,7 +1786,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_082',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "telecommunications",
     phonetic: "/ˌtel.ɪ.kəˌmjuː.nɪˈkeɪ.ʃənz/",
     part_of_speech: 'noun',
@@ -1808,7 +1808,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_083',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "blockchain",
     phonetic: "/ˈblɒk.tʃeɪn/",
     part_of_speech: 'noun',
@@ -1874,7 +1874,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_086',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "vulnerability",
     phonetic: "/ˌvʌl.nər.əˈbɪl.ə.ti/",
     part_of_speech: 'noun',
@@ -1918,7 +1918,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_088',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "telematics",
     phonetic: "/ˌtel.ɪˈmæt.ɪks/",
     part_of_speech: 'noun',
@@ -1940,7 +1940,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_089',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "democratization",
     phonetic: "/dɪˌmɒk.rə.taɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1962,7 +1962,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_090',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "disruption",
     phonetic: "/dɪsˈrʌp.ʃən/",
     part_of_speech: 'noun',
@@ -1984,7 +1984,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_091',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "algorithmic",
     phonetic: "/ˌæl.ɡəˈrɪð.mɪk/",
     part_of_speech: 'adjective',
@@ -2028,7 +2028,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_093',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "teleoperation",
     phonetic: "/ˌtel.i.ɒp.ərˈeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -2050,7 +2050,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_094',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "optics",
     phonetic: "/ˈɒp.tɪks/",
     part_of_speech: 'noun',
@@ -2116,7 +2116,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_097',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "cryptography",
     phonetic: "/krɪpˈtɒɡ.rə.fi/",
     part_of_speech: 'noun',
@@ -2138,7 +2138,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_098',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "neural",
     phonetic: "/ˈnjʊə.rəl/",
     part_of_speech: 'adjective',
@@ -2160,7 +2160,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_099',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "serverless",
     phonetic: "/ˈsɜː.və.ləs/",
     part_of_speech: 'adjective',
@@ -2204,7 +2204,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_101',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "cloud-native",
     phonetic: "/ˌklaʊd ˈneɪ.tɪv/",
     part_of_speech: 'adjective',
@@ -2226,7 +2226,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_102',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "decryption",
     phonetic: "/diːˈkrɪp.ʃən/",
     part_of_speech: 'noun',
@@ -2314,7 +2314,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_106',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "computing",
     phonetic: "/kəmˈpjuː.tɪŋ/",
     part_of_speech: 'noun',
@@ -2336,7 +2336,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_107',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "virtualization",
     phonetic: "/ˌvɜː.tʃu.əl.aɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -2424,7 +2424,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_111',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "biomedical",
     phonetic: "/ˌbaɪ.əʊˈmed.ɪ.kəl/",
     part_of_speech: 'adjective',
@@ -2490,7 +2490,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_114',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "cryptographic",
     phonetic: "/ˌkrɪp.təˈɡræf.ɪk/",
     part_of_speech: 'adjective',
@@ -2512,7 +2512,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_115',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "processor",
     phonetic: "/ˈprəʊ.ses.ər/",
     part_of_speech: 'noun',
@@ -2556,7 +2556,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_117',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "quantum",
     phonetic: "/ˈkwɒn.təm/",
     part_of_speech: 'adjective',
@@ -2622,7 +2622,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_120',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "nanotube",
     phonetic: "/ˈnæn.əʊ.tʃuːb/",
     part_of_speech: 'noun',
@@ -2644,7 +2644,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_121',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "telepresence",
     phonetic: "/ˈtel.ɪˌprez.əns/",
     part_of_speech: 'noun',
@@ -2666,7 +2666,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_122',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "firmware",
     phonetic: "/ˈfɜːm.weər/",
     part_of_speech: 'noun',
@@ -2710,7 +2710,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_124',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "decentralization",
     phonetic: "/diːˌsen.trə.laɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -2732,7 +2732,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_125',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "cryptanalysis",
     phonetic: "/ˌkrɪpt.əˈnæl.ə.sɪs/",
     part_of_speech: 'noun',
@@ -2754,7 +2754,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_126',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "biocomputing",
     phonetic: "/ˌbaɪ.əʊ.kəmˈpjuː.tɪŋ/",
     part_of_speech: 'noun',
@@ -2776,7 +2776,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_127',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "supercomputing",
     phonetic: "/ˌsuː.pə.kəmˈpjuː.tɪŋ/",
     part_of_speech: 'noun',
@@ -2798,7 +2798,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_128',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "interconnectedness",
     phonetic: "/ˌɪn.tə.kəˈnek.tɪd.nəs/",
     part_of_speech: 'noun',
@@ -2820,7 +2820,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_129',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "neurotechnology",
     phonetic: "/ˌnjʊə.rəʊ.tekˈnɒl.ə.dʒi/",
     part_of_speech: 'noun',
@@ -3326,7 +3326,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_152',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "transistor",
     phonetic: "/trænˈzɪs.tər/",
     part_of_speech: 'noun',
@@ -3436,7 +3436,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_157',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "algorithmically",
     phonetic: "/ˌæl.ɡəˈrɪð.mɪ.kəl.i/",
     part_of_speech: 'adverb',
@@ -3502,7 +3502,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_160',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "cyberwarfare",
     phonetic: "/ˈsaɪ.bəˌwɔː.feər/",
     part_of_speech: 'noun',
@@ -3590,7 +3590,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_164',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "telemetry",
     phonetic: "/təˈlem.ə.tri/",
     part_of_speech: 'noun',
@@ -3612,7 +3612,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_165',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "middleware",
     phonetic: "/ˈmɪd.əl.weər/",
     part_of_speech: 'noun',
@@ -3810,7 +3810,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_174',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "microchip",
     phonetic: "/ˈmaɪ.krəʊ.tʃɪp/",
     part_of_speech: 'noun',
@@ -3832,7 +3832,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_175',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "multithreading",
     phonetic: "/ˌmʌl.tiˈθred.ɪŋ/",
     part_of_speech: 'noun',
@@ -3876,7 +3876,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_177',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "hypervisor",
     phonetic: "/ˈhaɪ.pəˌvaɪ.zər/",
     part_of_speech: 'noun',
@@ -3898,7 +3898,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_178',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "refactoring",
     phonetic: "/riːˈfæk.tər.ɪŋ/",
     part_of_speech: 'noun',
@@ -3920,7 +3920,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_179',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "declarative",
     phonetic: "/dɪˈklær.ə.tɪv/",
     part_of_speech: 'adjective',
@@ -3942,7 +3942,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_180',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "imperative",
     phonetic: "/ɪmˈper.ə.tɪv/",
     part_of_speech: 'adjective',
@@ -3964,7 +3964,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_181',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "immutability",
     phonetic: "/ɪˌmjuː.təˈbɪl.ə.ti/",
     part_of_speech: 'noun',
@@ -4030,7 +4030,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_184',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "polymorphism",
     phonetic: "/ˌpɒl.iˈmɔː.fɪ.zəm/",
     part_of_speech: 'noun',
@@ -4052,7 +4052,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_185',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "encapsulation",
     phonetic: "/ɪnˌkæp.sjʊˈleɪ.ʃən/",
     part_of_speech: 'noun',
@@ -4074,7 +4074,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_186',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'C1',
     word: "inheritance",
     phonetic: "/ɪnˈher.ɪ.təns/",
     part_of_speech: 'noun',
@@ -4096,7 +4096,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_187',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "abstraction",
     phonetic: "/æbˈstræk.ʃən/",
     part_of_speech: 'noun',
@@ -4316,7 +4316,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_197',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "tunnel",
     phonetic: "/ˈtʌn.əl/",
     part_of_speech: 'noun',
@@ -4404,7 +4404,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_201',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "heater",
     phonetic: "/ˈhiː.tər/",
     part_of_speech: 'noun',
@@ -4514,7 +4514,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_206',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "power",
     phonetic: "/ˈpaʊə(r)/",
     part_of_speech: 'noun',
@@ -4580,7 +4580,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_209',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "correspond",
     phonetic: "/ˌkɒr.ɪˈspɒnd/",
     part_of_speech: 'verb',
@@ -4624,7 +4624,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_211',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "warranty",
     phonetic: "/ˈwɒr.ən.ti/",
     part_of_speech: 'noun',
@@ -4646,7 +4646,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_212',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "range",
     phonetic: "/reɪndʒ/",
     part_of_speech: 'noun',
@@ -4976,7 +4976,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_227',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "officer",
     phonetic: "/ˈɒf.ɪ.sər/",
     part_of_speech: 'noun',
@@ -5152,7 +5152,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_235',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "balloon",
     phonetic: "/bəˈluːn/",
     part_of_speech: 'noun',
@@ -5174,7 +5174,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_236',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "self-service",
     phonetic: "/ˌself ˈsɜːvɪs/",
     part_of_speech: 'adjective',
@@ -5196,7 +5196,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_237',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "rock",
     phonetic: "/rɒk/",
     part_of_speech: 'verb',
@@ -5306,7 +5306,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_242',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "scientific",
     phonetic: "/ˌsaɪənˈtɪf.ɪk/",
     part_of_speech: 'adjective',
@@ -5328,7 +5328,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_243',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B1',
     word: "molecule",
     phonetic: "/ˈmɒl.ɪ.kjuːlz/",
     part_of_speech: 'noun',
@@ -5350,7 +5350,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_244',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "station",
     phonetic: "/ˈsteɪ.ʃən/",
     part_of_speech: 'noun',
@@ -5394,7 +5394,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_246',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "currently",
     phonetic: "/ˈkʌr.ənt.li/",
     part_of_speech: 'adverb',
@@ -5460,7 +5460,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_249',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "differ",
     phonetic: "/ˈdɪf.ər/",
     part_of_speech: 'verb',
@@ -5504,7 +5504,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_251',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B1',
     word: "nucleus",
     phonetic: "/ˈnuː.kli.əs/",
     part_of_speech: 'noun',
@@ -5570,7 +5570,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_254',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "inorganic",
     phonetic: "/ˌɪn.ɔːˈɡæn.ɪk/",
     part_of_speech: 'adjective',
@@ -5614,7 +5614,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_256',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "bright",
     phonetic: "/braɪt/",
     part_of_speech: 'adjective',
@@ -5636,7 +5636,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_257',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "similarly",
     phonetic: "/ˈsɪmələrli/",
     part_of_speech: 'adverb',
@@ -5768,7 +5768,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_263',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "nebula",
     phonetic: "/ˈneb.jə.lə/",
     part_of_speech: 'noun',
@@ -5812,7 +5812,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_265',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "model",
     phonetic: "/ˈmɒd.əl/",
     part_of_speech: 'noun',
@@ -5900,7 +5900,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_269',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "inspiration",
     phonetic: "/ˌɪn.spəˈreɪ.ʃən/",
     part_of_speech: 'noun',
@@ -5922,7 +5922,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_270',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "gamification",
     phonetic: "/ˌɡeɪ.mɪ.fɪˈkeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -5944,7 +5944,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_271',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "contemporary",
     phonetic: "/kənˈtem.pər.ər.i/",
     part_of_speech: 'adjective',
@@ -5966,7 +5966,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_272',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B1',
     word: "unboxing",
     phonetic: "/ʌnˈbɒk.sɪŋ/",
     part_of_speech: 'noun',
@@ -6054,7 +6054,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_276',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "schema",
     phonetic: "/ˈskiːmə/",
     part_of_speech: 'noun',
@@ -6076,7 +6076,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_277',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "nowadays",
     phonetic: "/ˈnaʊədeɪz/",
     part_of_speech: 'adverb',
@@ -6142,7 +6142,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_280',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "location",
     phonetic: "/ləʊˈkeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -6186,7 +6186,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_282',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "consequence",
     phonetic: "/ˈkɒn.sɪ.kwəns/",
     part_of_speech: 'noun',
@@ -6230,7 +6230,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_284',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "in-store",
     phonetic: "/ˈɪn.stɔːr/",
     part_of_speech: 'adjective',
@@ -6274,7 +6274,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_286',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "minimize",
     phonetic: "/ˈmɪn.ɪ.maɪz/",
     part_of_speech: 'verb',
@@ -6362,7 +6362,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_290',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "account",
     phonetic: "/əˈkaʊnt/",
     part_of_speech: 'noun',
@@ -6384,7 +6384,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_291',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "previously",
     phonetic: "/ˈpriː.vi.əs.li/",
     part_of_speech: 'adverb',
@@ -6406,7 +6406,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_292',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "disproportionately",
     phonetic: "/ˌdɪs.prəˈpɔː.ʃənət.li/",
     part_of_speech: 'adverb',
@@ -6428,7 +6428,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_293',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "regressive",
     phonetic: "/rɪˈɡres.ɪv/",
     part_of_speech: 'adjective',
@@ -6450,7 +6450,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_294',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "whilst",
     phonetic: "/waɪlst/",
     part_of_speech: 'adverb',
@@ -6494,7 +6494,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_296',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "limit",
     phonetic: "/ˈlɪm.ɪt/",
     part_of_speech: 'verb',
@@ -6516,7 +6516,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_297',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "practical",
     phonetic: "/ˈpræk.tɪ.kəl/",
     part_of_speech: 'adjective',
@@ -6538,7 +6538,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_298',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "immersive",
     phonetic: "/ɪˈmɜːr.sɪv/",
     part_of_speech: 'adjective',
@@ -6582,7 +6582,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_300',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "replace",
     phonetic: "/rɪˈpleɪs/",
     part_of_speech: 'verb',
@@ -6604,7 +6604,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_301',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "connectivity",
     phonetic: "/ˌkɒn.ekˈtɪv.ə.ti/",
     part_of_speech: 'noun',
@@ -6648,7 +6648,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_303',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "noticeable",
     phonetic: "/ˈnəʊtɪsəbl/",
     part_of_speech: 'adjective',
@@ -6670,7 +6670,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_304',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "notification",
     phonetic: "/ˌnəʊtɪfɪˈkeɪʃən/",
     part_of_speech: 'noun',
@@ -6692,7 +6692,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_305',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "connection",
     phonetic: "/kəˈnek.ʃən/",
     part_of_speech: 'noun',
@@ -6714,7 +6714,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_306',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "validation-seeking",
     phonetic: "/ˌvæl.ɪˈdeɪ.ʃən ˈsiː.kɪŋ/",
     part_of_speech: 'adjective',
@@ -6758,7 +6758,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_308',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "mind",
     phonetic: "/maɪnd/",
     part_of_speech: 'noun',
@@ -6780,7 +6780,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_309',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "mitigate",
     phonetic: "/ˈmɪt.ɪ.ɡeɪt/",
     part_of_speech: 'verb',
@@ -6890,7 +6890,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_314',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "consumption",
     phonetic: "/kənˈsʌmp.ʃən/",
     part_of_speech: 'noun',
@@ -6912,7 +6912,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_315',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "passive",
     phonetic: "/ˈpæs.ɪv/",
     part_of_speech: 'adjective',
@@ -6934,7 +6934,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_316',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "e-commerce",
     phonetic: "/ˈiːˌkɒm.ɜːs/",
     part_of_speech: 'noun',
@@ -6956,7 +6956,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_317',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "transaction",
     phonetic: "/trænˈzæk.ʃən/",
     part_of_speech: 'noun',
@@ -6978,7 +6978,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_318',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "fraud",
     phonetic: "/frɔːd/",
     part_of_speech: 'noun',
@@ -7022,7 +7022,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_320',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "multimedia",
     phonetic: "/ˌmʌl.tiˈmiː.di.ə/",
     part_of_speech: 'noun',
@@ -7066,7 +7066,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_322',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "mobility",
     phonetic: "/məʊˈbɪl.ə.ti/",
     part_of_speech: 'noun',
@@ -7088,7 +7088,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_323',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "virtualize",
     phonetic: "/ˈvɜː.tʃu.ə.laɪz/",
     part_of_speech: 'verb',
@@ -7132,7 +7132,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_325',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "automated",
     phonetic: "/ˈɔː.tə.meɪ.tɪd/",
     part_of_speech: 'adjective',
@@ -7154,7 +7154,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_326',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "digitally",
     phonetic: "/ˈdɪdʒ.ɪ.təl.i/",
     part_of_speech: 'adverb',
@@ -7176,7 +7176,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_327',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "remotely",
     phonetic: "/rɪˈməʊt.li/",
     part_of_speech: 'adverb',
@@ -7220,7 +7220,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_329',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'B1',
     word: "eyestrain",
     phonetic: "/ˈaɪ.streɪn/",
     part_of_speech: 'noun',
@@ -7264,7 +7264,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_331',
     topic: 'Khoa học & Công nghệ',
-    level: 'B1',
+    level: 'B2',
     word: "monitor",
     phonetic: "/ˈmɒn.ɪ.tər/",
     part_of_speech: 'noun',
@@ -7286,7 +7286,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_332',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "friction",
     phonetic: "/ˈfrɪk.ʃən/",
     part_of_speech: 'noun',
@@ -7374,7 +7374,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_336',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "customization",
     phonetic: "/ˌkʌs.tə.maɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -7396,7 +7396,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_337',
     topic: 'Khoa học & Công nghệ',
-    level: 'B2',
+    level: 'C1',
     word: "collaboration",
     phonetic: "/kəˌlæb.əˈreɪ.ʃən/",
     part_of_speech: 'noun',
@@ -7418,7 +7418,7 @@ export const TECHNOLOGY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_tech_338',
     topic: 'Khoa học & Công nghệ',
-    level: 'C1',
+    level: 'B2',
     word: "optimization",
     phonetic: "/ˌɒp.tɪ.maɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',

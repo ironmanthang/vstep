@@ -158,7 +158,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_008',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "citizen",
     phonetic: "/ˈsɪt.ɪ.zən/",
     part_of_speech: 'noun',
@@ -202,7 +202,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_010',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "equality",
     phonetic: "/iˈkwɒl.ə.ti/",
     part_of_speech: 'noun',
@@ -246,7 +246,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_012',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "welfare",
     phonetic: "/ˈwel.feər/",
     part_of_speech: 'noun',
@@ -290,7 +290,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_014',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "diversity",
     phonetic: "/daɪˈvɜː.sə.ti/",
     part_of_speech: 'noun',
@@ -312,7 +312,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_015',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "ethnic",
     phonetic: "/ˈeθ.nɪk/",
     part_of_speech: 'adjective',
@@ -378,7 +378,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_018',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "conflict",
     phonetic: "/ˈkɒn.flɪkt/",
     part_of_speech: 'noun',
@@ -400,7 +400,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_019',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "harmony",
     phonetic: "/ˈhɑː.mə.ni/",
     part_of_speech: 'noun',
@@ -422,7 +422,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_020',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "justice",
     phonetic: "/ˈdʒʌs.tɪs/",
     part_of_speech: 'noun',
@@ -532,7 +532,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_025',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "status",
     phonetic: "/ˈsteɪ.təs/",
     part_of_speech: 'noun',
@@ -554,7 +554,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_026',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "donation",
     phonetic: "/dəʊˈneɪ.ʃən/",
     part_of_speech: 'noun',
@@ -576,7 +576,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_027',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "minority",
     phonetic: "/maɪˈnɒr.ə.ti/",
     part_of_speech: 'noun',
@@ -598,7 +598,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_028',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "majority",
     phonetic: "/məˈdʒɒr.ə.ti/",
     part_of_speech: 'noun',
@@ -686,7 +686,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_032',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "ritual",
     phonetic: "/ˈrɪtʃ.u.əl/",
     part_of_speech: 'noun',
@@ -730,7 +730,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_034',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "solidarity",
     phonetic: "/ˌsɒl.ɪˈdær.ə.ti/",
     part_of_speech: 'noun',
@@ -818,7 +818,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_038',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "morality",
     phonetic: "/məˈræl.ə.ti/",
     part_of_speech: 'noun',
@@ -840,7 +840,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_039',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "ancestor",
     phonetic: "/ˈæn.ses.tər/",
     part_of_speech: 'noun',
@@ -862,7 +862,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_040',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "humanity",
     phonetic: "/hjuːˈmæn.ə.ti/",
     part_of_speech: 'noun',
@@ -884,7 +884,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_041',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "integration",
     phonetic: "/ˌɪn.tɪˈɡreɪ.ʃən/",
     part_of_speech: 'noun',
@@ -906,7 +906,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_042',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "civilization",
     phonetic: "/ˌsɪv.əl.aɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -928,7 +928,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_043',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "generosity",
     phonetic: "/ˌdʒen.ərˈɒs.ə.ti/",
     part_of_speech: 'noun',
@@ -950,7 +950,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_044',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "sympathy",
     phonetic: "/ˈsɪm.pə.θi/",
     part_of_speech: 'noun',
@@ -972,7 +972,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_045',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "tolerance",
     phonetic: "/ˈtɒl.ər.əns/",
     part_of_speech: 'noun',
@@ -994,7 +994,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_046',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "coexistence",
     phonetic: "/ˌkəʊ.ɪɡˈzɪs.təns/",
     part_of_speech: 'noun',
@@ -1016,7 +1016,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_047',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "cohesion",
     phonetic: "/kəʊˈhiː.ʒən/",
     part_of_speech: 'noun',
@@ -1038,7 +1038,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_048',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "interact",
     phonetic: "/ˌɪn.təˈrækt/",
     part_of_speech: 'verb',
@@ -1082,7 +1082,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_050',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "unite",
     phonetic: "/juːˈnaɪt/",
     part_of_speech: 'verb',
@@ -1126,7 +1126,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_052',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "inherit",
     phonetic: "/ɪnˈher.ɪt/",
     part_of_speech: 'verb',
@@ -1214,7 +1214,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_056',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "civic",
     phonetic: "/ˈsɪv.ɪk/",
     part_of_speech: 'adjective',
@@ -1302,7 +1302,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_060',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "communal",
     phonetic: "/ˈkɒm.jə.nəl/",
     part_of_speech: 'adjective',
@@ -1324,7 +1324,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_061',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "secular",
     phonetic: "/ˈsek.jə.lər/",
     part_of_speech: 'adjective',
@@ -1346,7 +1346,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_062',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "patriarchal",
     phonetic: "/ˌpeɪ.triˈɑː.kəl/",
     part_of_speech: 'adjective',
@@ -1368,7 +1368,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_063',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "matriarchal",
     phonetic: "/ˌmeɪ.triˈɑː.kəl/",
     part_of_speech: 'adjective',
@@ -1390,7 +1390,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_064',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "assimilation",
     phonetic: "/əˌsɪm.ɪˈleɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1434,7 +1434,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_066',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "stratification",
     phonetic: "/ˌstræt.ɪ.fɪˈkeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1456,7 +1456,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_067',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "secularization",
     phonetic: "/ˌsek.jə.lə.raɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1500,7 +1500,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_069',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "egalitarianism",
     phonetic: "/ɪˌɡæl.ɪˈteə.ri.ə.nɪ.zəm/",
     part_of_speech: 'noun',
@@ -1522,7 +1522,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_070',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "philanthropy",
     phonetic: "/fɪˈlæn.θrə.pi/",
     part_of_speech: 'noun',
@@ -1566,7 +1566,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_072',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "ethnocentrism",
     phonetic: "/ˌeθ.nəʊˈsen.trɪ.zəm/",
     part_of_speech: 'noun',
@@ -1588,7 +1588,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_073',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "deprivation",
     phonetic: "/ˌdep.rɪˈveɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1720,7 +1720,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_079',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "patriarchy",
     phonetic: "/ˈpeɪ.tri.ɑː.ki/",
     part_of_speech: 'noun',
@@ -1742,7 +1742,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_080',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "matriarchy",
     phonetic: "/ˈmeɪ.tri.ɑː.ki/",
     part_of_speech: 'noun',
@@ -1764,7 +1764,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_081',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "stratified",
     phonetic: "/ˈstræt.ɪ.faɪd/",
     part_of_speech: 'adjective',
@@ -1786,7 +1786,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_082',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "philanthropic",
     phonetic: "/ˌfɪl.ənˈθrɒp.ɪk/",
     part_of_speech: 'adjective',
@@ -1808,7 +1808,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_083',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "egalitarian",
     phonetic: "/ɪˌɡæl.ɪˈteə.ri.ən/",
     part_of_speech: 'adjective',
@@ -1852,7 +1852,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_085',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "monocultural",
     phonetic: "/ˌmɒn.əʊˈkʌl.tʃər.əl/",
     part_of_speech: 'adjective',
@@ -1874,7 +1874,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_086',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "pluri-ethnic",
     phonetic: "/ˈplʊə.ri ˈeθ.nɪk/",
     part_of_speech: 'adjective',
@@ -1962,7 +1962,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_090',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "alienated",
     phonetic: "/ˈeɪ.li.ə.neɪ.tɪd/",
     part_of_speech: 'adjective',
@@ -1984,7 +1984,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_091',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "disadvantaged",
     phonetic: "/ˌdɪs.ədˈvɑːn.tɪdʒd/",
     part_of_speech: 'adjective',
@@ -2028,7 +2028,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_093',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "philanthropist",
     phonetic: "/fɪˈlæn.θrə.pɪst/",
     part_of_speech: 'noun',
@@ -2050,7 +2050,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_094',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "demographer",
     phonetic: "/dɪˈmɒɡ.rə.fər/",
     part_of_speech: 'noun',
@@ -2072,7 +2072,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_095',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "sociologist",
     phonetic: "/ˌsəʊ.siˈɒl.ə.dʒɪst/",
     part_of_speech: 'noun',
@@ -2094,7 +2094,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_096',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "anthropologist",
     phonetic: "/ˌæn.θrəˈpɒl.ə.dʒɪst/",
     part_of_speech: 'noun',
@@ -2116,7 +2116,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_097',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "secularist",
     phonetic: "/ˈsek.jə.lə.rɪst/",
     part_of_speech: 'noun',
@@ -2138,7 +2138,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_098',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "civics",
     phonetic: "/ˈsɪv.ɪks/",
     part_of_speech: 'noun',
@@ -2160,7 +2160,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_099',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "jurisprudence",
     phonetic: "/ˌdʒʊə.rɪsˈpruː.dəns/",
     part_of_speech: 'noun',
@@ -2182,7 +2182,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_100',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "altruism",
     phonetic: "/ˈæl.tru.ɪ.zəm/",
     part_of_speech: 'noun',
@@ -2292,7 +2292,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_105',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "ethnocentric",
     phonetic: "/ˌeθ.nəʊˈsen.trɪk/",
     part_of_speech: 'adjective',
@@ -2314,7 +2314,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_106',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "stratify",
     phonetic: "/ˈstræt.ɪ.faɪ/",
     part_of_speech: 'verb',
@@ -2358,7 +2358,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_108',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "alienate",
     phonetic: "/ˈeɪ.li.ə.neɪt/",
     part_of_speech: 'verb',
@@ -2490,7 +2490,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_114',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "institutionalize",
     phonetic: "/ˌɪn.stɪˈtʃuː.ʃən.əl.aɪz/",
     part_of_speech: 'verb',
@@ -2512,7 +2512,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_115',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "altruistic",
     phonetic: "/ˌæl.truˈɪs.tɪk/",
     part_of_speech: 'adjective',
@@ -2556,7 +2556,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_117',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "matrilineal",
     phonetic: "/ˌmæt.rɪˈlɪn.i.əl/",
     part_of_speech: 'adjective',
@@ -2578,7 +2578,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_118',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "patrilineal",
     phonetic: "/ˌpæt.rɪˈlɪn.i.əl/",
     part_of_speech: 'adjective',
@@ -2600,7 +2600,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_119',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "humanitarian",
     phonetic: "/hjuːˌmæn.ɪˈteə.ri.ən/",
     part_of_speech: 'adjective',
@@ -2666,7 +2666,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_122',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "communitarian",
     phonetic: "/kəˌmjuː.nɪˈteə.ri.ən/",
     part_of_speech: 'adjective',
@@ -2710,7 +2710,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_124',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "communalism",
     phonetic: "/ˈkɒm.jə.nəl.ɪ.zəm/",
     part_of_speech: 'noun',
@@ -2732,7 +2732,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_125',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "individualism",
     phonetic: "/ˌɪn.dɪˈvɪdʒ.u.əl.ɪ.zəm/",
     part_of_speech: 'noun',
@@ -2754,7 +2754,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_126',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "fraternity",
     phonetic: "/frəˈtɜː.nə.ti/",
     part_of_speech: 'noun',
@@ -2776,7 +2776,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_127',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "sorority",
     phonetic: "/səˈrɒr.ə.ti/",
     part_of_speech: 'noun',
@@ -3524,7 +3524,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_161',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "collectivism",
     phonetic: "/kəˈlek.tɪ.vɪ.zəm/",
     part_of_speech: 'noun',
@@ -3546,7 +3546,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_162',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "gerontology",
     phonetic: "/ˌdʒer.ɒnˈtɒl.ə.dʒi/",
     part_of_speech: 'noun',
@@ -3590,7 +3590,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_164',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "patriotism",
     phonetic: "/ˈpæt.ri.ə.tɪ.zəm/",
     part_of_speech: 'noun',
@@ -3612,7 +3612,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_165',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "patriotic",
     phonetic: "/ˌpæt.riˈɒt.ɪk/",
     part_of_speech: 'adjective',
@@ -3634,7 +3634,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_166',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "suffrage",
     phonetic: "/ˈsʌf.rɪdʒ/",
     part_of_speech: 'noun',
@@ -3656,7 +3656,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_167',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "suffragist",
     phonetic: "/ˈsʌf.rə.dʒɪst/",
     part_of_speech: 'noun',
@@ -3766,7 +3766,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_172',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "hierarchies",
     phonetic: "/ˈhaɪə.rɑː.kiz/",
     part_of_speech: 'noun',
@@ -3788,7 +3788,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_173',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "communalities",
     phonetic: "/ˌkɒm.jəˈnæl.ə.tiz/",
     part_of_speech: 'noun',
@@ -3810,7 +3810,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_174',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "secularists",
     phonetic: "/ˈsek.jə.lə.rɪsts/",
     part_of_speech: 'noun',
@@ -3832,7 +3832,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_175',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "humanitarians",
     phonetic: "/hjuːˌmæn.ɪˈteə.ri.ənz/",
     part_of_speech: 'noun',
@@ -3876,7 +3876,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_177',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'C1',
     word: "inequalities",
     phonetic: "/ˌɪn.ɪˈkwɒl.ə.tiz/",
     part_of_speech: 'noun',
@@ -3986,7 +3986,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_182',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "minorities",
     phonetic: "/maɪˈnɒr.ə.tiz/",
     part_of_speech: 'noun',
@@ -4030,7 +4030,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_184',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "citizens",
     phonetic: "/ˈsɪt.ɪ.zənz/",
     part_of_speech: 'noun',
@@ -4426,7 +4426,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_202',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "abbot",
     phonetic: "/ˈæbət/",
     part_of_speech: 'noun',
@@ -4580,7 +4580,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_209',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "political",
     phonetic: "/pəˈlɪtɪkl/",
     part_of_speech: 'adjective',
@@ -5064,7 +5064,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_231',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "frank",
     phonetic: "/fræŋk/",
     part_of_speech: 'adjective',
@@ -5262,7 +5262,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_240',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "basis",
     phonetic: "/ˈbeɪ.sɪs/",
     part_of_speech: 'noun',
@@ -5328,7 +5328,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_243',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "understanding",
     phonetic: "/ˌʌn.dəˈstæn.dɪŋ/",
     part_of_speech: 'noun',
@@ -5526,7 +5526,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_252',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "role",
     phonetic: "/rəʊl/",
     part_of_speech: 'noun',
@@ -5592,7 +5592,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_255',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "throughout",
     phonetic: "/θruːˈaʊt/",
     part_of_speech: 'adverb',
@@ -5636,7 +5636,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_257',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "movement",
     phonetic: "/ˈmuːv.mənt/",
     part_of_speech: 'noun',
@@ -5658,7 +5658,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_258',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "thus",
     phonetic: "/ðʌs/",
     part_of_speech: 'adverb',
@@ -5680,7 +5680,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_259',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "importance",
     phonetic: "/ɪmˈpɔː.təns/",
     part_of_speech: 'noun',
@@ -5702,7 +5702,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_260',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "series",
     phonetic: "/ˈsɪə.riːz/",
     part_of_speech: 'noun',
@@ -5856,7 +5856,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_267',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "nearly",
     phonetic: "/ˈnɪə.li/",
     part_of_speech: 'adverb',
@@ -5878,7 +5878,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_268',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "religious",
     phonetic: "/rɪˈlɪdʒ.əs/",
     part_of_speech: 'adjective',
@@ -5900,7 +5900,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_269',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "record",
     phonetic: "/ˈrek.ɔːd/",
     part_of_speech: 'noun',
@@ -5944,7 +5944,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_271',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "national",
     phonetic: "/ˈnæʃ.ən.əl/",
     part_of_speech: 'adjective',
@@ -5988,7 +5988,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_273',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "central",
     phonetic: "/ˈsen.trəl/",
     part_of_speech: 'adjective',
@@ -6032,7 +6032,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_275',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "clay",
     phonetic: "/kleɪ/",
     part_of_speech: 'noun',
@@ -6054,7 +6054,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_276',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "fort",
     phonetic: "/fɔːt/",
     part_of_speech: 'noun',
@@ -6076,7 +6076,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_277',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "post",
     phonetic: "/pəʊst/",
     part_of_speech: 'noun',
@@ -6120,7 +6120,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_279',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "quality",
     phonetic: "/ˈkwɒl.ə.ti/",
     part_of_speech: 'noun',
@@ -6208,7 +6208,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_283',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "relationship",
     phonetic: "/rɪˈleɪ.ʃən.ʃɪp/",
     part_of_speech: 'noun',
@@ -6230,7 +6230,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_284',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "colonist",
     phonetic: "/ˈkɒl.ə.nɪsts/",
     part_of_speech: 'noun',
@@ -6252,7 +6252,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_285',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "western",
     phonetic: "/ˈwes.tən/",
     part_of_speech: 'adjective',
@@ -6274,7 +6274,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_286',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "issue",
     phonetic: "/ˈɪʃ.uː/",
     part_of_speech: 'noun',
@@ -6296,7 +6296,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_287',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "brownstone",
     phonetic: "/ˈbraʊn.stəʊn/",
     part_of_speech: 'noun',
@@ -6318,7 +6318,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_288',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "total",
     phonetic: "/ˈtoʊ.təl/",
     part_of_speech: 'noun',
@@ -6340,7 +6340,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_289',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "addition",
     phonetic: "/əˈdɪʃ.ən/",
     part_of_speech: 'noun',
@@ -6384,7 +6384,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_291',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "despite",
     phonetic: "/dɪˈspaɪt/",
     part_of_speech: 'noun',
@@ -6406,7 +6406,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_292',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "rise",
     phonetic: "/raɪz/",
     part_of_speech: 'verb',
@@ -6428,7 +6428,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_293',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "plate",
     phonetic: "/pleɪt/",
     part_of_speech: 'noun',
@@ -6472,7 +6472,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_295',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "related",
     phonetic: "/rɪˈleɪ.tɪd/",
     part_of_speech: 'adjective',
@@ -6494,7 +6494,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_296',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "represent",
     phonetic: "/ˌrep.rɪˈzent/",
     part_of_speech: 'verb',
@@ -6516,7 +6516,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_297',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "heavily",
     phonetic: "/ˈhev.ɪ.li/",
     part_of_speech: 'adverb',
@@ -6626,7 +6626,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_302',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "instrument",
     phonetic: "/ˈɪn.strə.mənt/",
     part_of_speech: 'noun',
@@ -6648,7 +6648,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_303',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "particular",
     phonetic: "/pəˈtɪk.jə.lər/",
     part_of_speech: 'adjective',
@@ -6670,7 +6670,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_304',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "individual",
     phonetic: "/ˌɪn.dɪˈvɪdʒ.u.əl/",
     part_of_speech: 'adjective',
@@ -6692,7 +6692,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_305',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "colonial",
     phonetic: "/kəˈləʊ.ni.əl/",
     part_of_speech: 'adjective',
@@ -6780,7 +6780,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_309',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "agreement",
     phonetic: "/əˈɡriː.mənt/",
     part_of_speech: 'noun',
@@ -6802,7 +6802,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_310',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "divide",
     phonetic: "/dɪˈvaɪd/",
     part_of_speech: 'verb',
@@ -6868,7 +6868,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_313',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "decorate",
     phonetic: "/ˈdekəreɪt/",
     part_of_speech: 'verb',
@@ -6890,7 +6890,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_314',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "reality",
     phonetic: "/riˈæləti/",
     part_of_speech: 'noun',
@@ -6912,7 +6912,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_315',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "aware",
     phonetic: "/əˈweə(r)/",
     part_of_speech: 'adjective',
@@ -7044,7 +7044,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_321',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "content",
     phonetic: "/kənˈtent/",
     part_of_speech: 'adjective',
@@ -7154,7 +7154,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_326',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "heyday",
     phonetic: "/ˈheɪ.deɪ/",
     part_of_speech: 'noun',
@@ -7176,7 +7176,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_327',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "party",
     phonetic: "/ˈpɑː.ti/",
     part_of_speech: 'noun',
@@ -7198,7 +7198,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_328',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "discovery",
     phonetic: "/dɪˈskʌv.ər.i/",
     part_of_speech: 'noun',
@@ -7242,7 +7242,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_330',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "generally",
     phonetic: "/ˈdʒen.ər.əl.i/",
     part_of_speech: 'adverb',
@@ -7308,7 +7308,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_333',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "pentathlon",
     phonetic: "/penˈtæθ.lən/",
     part_of_speech: 'noun',
@@ -7330,7 +7330,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_334',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "decathlon",
     phonetic: "/dɪˈkæθ.lən/",
     part_of_speech: 'noun',
@@ -7352,7 +7352,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_335',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "settlement",
     phonetic: "/ˈset.əl.mənt/",
     part_of_speech: 'noun',
@@ -7396,7 +7396,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_337',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "architecture",
     phonetic: "/ˈɑː.kɪ.tek.tʃər/",
     part_of_speech: 'noun',
@@ -7440,7 +7440,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_339',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "heptathlon",
     phonetic: "/hepˈtæθ.lɒn/",
     part_of_speech: 'noun',
@@ -7462,7 +7462,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_340',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "responsible",
     phonetic: "/rɪˈspɒn.sə.bəl/",
     part_of_speech: 'adjective',
@@ -7506,7 +7506,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_342',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "olympics",
     phonetic: "/əˈlɪm.pɪks/",
     part_of_speech: 'noun',
@@ -7572,7 +7572,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_345',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "expression",
     phonetic: "/ɪkˈsprɛʃən/",
     part_of_speech: 'noun',
@@ -7594,7 +7594,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_346',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "introduce",
     phonetic: "/ˌɪntrəˈduːs/",
     part_of_speech: 'verb',
@@ -7638,7 +7638,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_348',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "nevertheless",
     phonetic: "/ˌnɛvərðəˈlɛs/",
     part_of_speech: 'adverb',
@@ -7660,7 +7660,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_349',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "sense",
     phonetic: "/sɛns/",
     part_of_speech: 'noun',
@@ -7682,7 +7682,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_350',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B1',
     word: "hardly",
     phonetic: "/ˈhɑːd.li/",
     part_of_speech: 'adverb',
@@ -7748,7 +7748,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_353',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "bury",
     phonetic: "/ˈber.i/",
     part_of_speech: 'verb',
@@ -7814,7 +7814,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_356',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "setting",
     phonetic: "/ˈset.ɪŋ/",
     part_of_speech: 'noun',
@@ -7836,7 +7836,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_357',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "region",
     phonetic: "/ˈriː.dʒən/",
     part_of_speech: 'noun',
@@ -7880,7 +7880,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_359',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "quietly",
     phonetic: "/ˈkwaɪət.li/",
     part_of_speech: 'adverb',
@@ -7990,7 +7990,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_364',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "interest",
     phonetic: "/ˈɪn.trəst/",
     part_of_speech: 'noun',
@@ -8012,7 +8012,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_365',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "presidential",
     phonetic: "/ˌprez.ɪˈden.ʃəl/",
     part_of_speech: 'adjective',
@@ -8056,7 +8056,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_367',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "alike",
     phonetic: "/əˈlaɪk/",
     part_of_speech: 'adverb',
@@ -8100,7 +8100,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_369',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "embrace",
     phonetic: "/ɪmˈbreɪs/",
     part_of_speech: 'verb',
@@ -8144,7 +8144,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_371',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "invariably",
     phonetic: "/ɪnˈveriəbli/",
     part_of_speech: 'adverb',
@@ -8166,7 +8166,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_372',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "contrast",
     phonetic: "/ˈkɒntrɑːst/",
     part_of_speech: 'noun',
@@ -8210,7 +8210,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_374',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "pleasure",
     phonetic: "/ˈpleʒər/",
     part_of_speech: 'noun',
@@ -8254,7 +8254,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_376',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "poetry",
     phonetic: "/ˈpəʊətri/",
     part_of_speech: 'noun',
@@ -8320,7 +8320,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_379',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "regarding",
     phonetic: "/rɪˈɡɑː.dɪŋ/",
     part_of_speech: 'noun',
@@ -8386,7 +8386,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_382',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "kangaroo",
     phonetic: "/ˌkæŋ.ɡərˈuː/",
     part_of_speech: 'noun',
@@ -8452,7 +8452,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_385',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "jade",
     phonetic: "/dʒeɪd/",
     part_of_speech: 'noun',
@@ -8540,7 +8540,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_389',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "technique",
     phonetic: "/tekˈniːk/",
     part_of_speech: 'noun',
@@ -8606,7 +8606,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_392',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "discus",
     phonetic: "/ˈdɪs.kəs/",
     part_of_speech: 'noun',
@@ -8628,7 +8628,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_393',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "javelin",
     phonetic: "/ˈdʒæv.əl.ɪn/",
     part_of_speech: 'noun',
@@ -8672,7 +8672,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_395',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "united",
     phonetic: "/juˈnaɪtɪd/",
     part_of_speech: 'adjective',
@@ -8694,7 +8694,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_396',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "fixed",
     phonetic: "/fɪkst/",
     part_of_speech: 'adjective',
@@ -8716,7 +8716,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_397',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "boundary",
     phonetic: "/ˈbaʊn.dər.i/",
     part_of_speech: 'noun',
@@ -8782,7 +8782,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_400',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "porcelain",
     phonetic: "/ˈpɔː.səl.ɪn/",
     part_of_speech: 'noun',
@@ -8804,7 +8804,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_401',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "champion",
     phonetic: "/ˈtʃæm.pi.ən/",
     part_of_speech: 'noun',
@@ -8848,7 +8848,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_403',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "anew",
     phonetic: "/əˈnuː/",
     part_of_speech: 'adverb',
@@ -8936,7 +8936,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_407',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "consumerism",
     phonetic: "/kənˈsuː.mər.ɪ.zəm/",
     part_of_speech: 'noun',
@@ -8958,7 +8958,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_408',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "dilemma",
     phonetic: "/daɪˈlem.ə/",
     part_of_speech: 'noun',
@@ -9090,7 +9090,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_414',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "first and foremost",
     phonetic: "/ˌfɜːst ənd ˈfɔː.mɪst/",
     part_of_speech: 'adverb',
@@ -9112,7 +9112,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_415',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "peer comparison",
     phonetic: "/pɪər kəmˈpær.ɪ.sən/",
     part_of_speech: 'noun',
@@ -9178,7 +9178,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_418',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "tax",
     phonetic: "/tæks/",
     part_of_speech: 'noun',
@@ -9222,7 +9222,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_420',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'C1',
     word: "retail outlet",
     phonetic: "/ˈriːteɪl ˈaʊtlet/",
     part_of_speech: 'noun',
@@ -9288,7 +9288,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_423',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "minor",
     phonetic: "/ˈmaɪnə(r)/",
     part_of_speech: 'noun',
@@ -9508,7 +9508,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_433',
     topic: 'Xã hội & Văn hóa',
-    level: 'B1',
+    level: 'B2',
     word: "willing",
     phonetic: "/ˈwɪl.ɪŋ/",
     part_of_speech: 'adjective',
@@ -9706,7 +9706,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_442',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "foremost",
     phonetic: "/ˈfɔːr.moʊst/",
     part_of_speech: 'adjective',
@@ -9728,7 +9728,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_443',
     topic: 'Xã hội & Văn hóa',
-    level: 'B2',
+    level: 'B1',
     word: "complain",
     phonetic: "/kəmˈpleɪn/",
     part_of_speech: 'verb',
@@ -9838,7 +9838,7 @@ export const SOCIETY_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_soc_448',
     topic: 'Xã hội & Văn hóa',
-    level: 'C1',
+    level: 'B2',
     word: "convincingly",
     phonetic: "/kənˈvɪnsɪŋli/",
     part_of_speech: 'adverb',

@@ -19,6 +19,7 @@
     "enrich:listening": "node scripts/enrich_listening.mjs",
     "mine:vocab": "node scripts/mine_listening_vocab.mjs",
     "mine:reading": "node --experimental-strip-types scripts/mine_reading_vocab.mjs",
+    "audit:vocab": "node scripts/audit_and_update_corpus.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

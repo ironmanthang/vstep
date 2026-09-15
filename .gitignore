@@ -54,6 +54,8 @@ scripts/.hcmue_pages_cache/
 scripts/.hcmue_productive_cache/
 scripts/.hcmue_cache_*.json
 scripts/.test_*_passages_cache.json
+scripts/.cefr_audit_cache.json
+scripts/cefr_audit_report.json
 
 # Large binary archives
 *.zip

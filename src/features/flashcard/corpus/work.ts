@@ -48,7 +48,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_003',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "promotion",
     phonetic: "/prəˈməʊ.ʃən/",
     part_of_speech: 'noun',
@@ -70,7 +70,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_004',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "overtime",
     phonetic: "/ˈəʊ.və.taɪm/",
     part_of_speech: 'adverb',
@@ -114,7 +114,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_006',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "freelance",
     phonetic: "/ˈfriː.lɑːns/",
     part_of_speech: 'adjective',
@@ -158,7 +158,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_008',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'C1',
     word: "resume",
     phonetic: "/ˈrez.juː.meɪ/",
     part_of_speech: 'noun',
@@ -180,7 +180,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_009',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "probation",
     phonetic: "/prəˈbeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -202,7 +202,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_010',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'C1',
     word: "turnover",
     phonetic: "/ˈtɜːnˌəʊ.vər/",
     part_of_speech: 'noun',
@@ -224,7 +224,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_011',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'C1',
     word: "supervisor",
     phonetic: "/ˈsuː.pə.vaɪ.zər/",
     part_of_speech: 'noun',
@@ -246,7 +246,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_012',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "deadline-driven",
     phonetic: "/ˈded.laɪn ˌdrɪv.ən/",
     part_of_speech: 'adjective',
@@ -268,7 +268,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_013',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'C1',
     word: "bonus",
     phonetic: "/ˈbəʊ.nəs/",
     part_of_speech: 'noun',
@@ -290,7 +290,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_014',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "workplace",
     phonetic: "/ˈwɜːk.pleɪs/",
     part_of_speech: 'noun',
@@ -312,7 +312,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_015',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "pension",
     phonetic: "/ˈpen.ʃən/",
     part_of_speech: 'noun',
@@ -334,7 +334,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_016',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "flexible",
     phonetic: "/ˈflek.sə.bəl/",
     part_of_speech: 'adjective',
@@ -400,7 +400,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_019',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "punctual",
     phonetic: "/ˈpʌŋk.tʃu.əl/",
     part_of_speech: 'adjective',
@@ -422,7 +422,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_020',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "contract",
     phonetic: "/ˈkɒn.trækt/",
     part_of_speech: 'noun',
@@ -532,7 +532,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_025',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "applicant",
     phonetic: "/ˈæp.lɪ.kənt/",
     part_of_speech: 'noun',
@@ -620,7 +620,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_029',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "negotiate",
     phonetic: "/nəˈɡəʊ.ʃi.eɪt/",
     part_of_speech: 'verb',
@@ -642,7 +642,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_030',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "resign",
     phonetic: "/rɪˈzaɪn/",
     part_of_speech: 'verb',
@@ -686,7 +686,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_032',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "wage",
     phonetic: "/weɪdʒ/",
     part_of_speech: 'noun',
@@ -708,7 +708,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_033',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'C1',
     word: "collaborator",
     phonetic: "/kəˈlæb.ə.reɪ.tər/",
     part_of_speech: 'noun',
@@ -774,7 +774,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_036',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "dismiss",
     phonetic: "/dɪsˈmɪs/",
     part_of_speech: 'verb',
@@ -796,7 +796,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_037',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "guidelines",
     phonetic: "/ˈɡaɪd.laɪnz/",
     part_of_speech: 'noun',
@@ -1016,7 +1016,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_047',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "reputation",
     phonetic: "/ˌrep.jəˈteɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1060,7 +1060,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_049',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'C1',
     word: "apprentice",
     phonetic: "/əˈpren.tɪs/",
     part_of_speech: 'noun',
@@ -1082,7 +1082,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_050',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "colleagueship",
     phonetic: "/ˈkɒl.iːɡ.ʃɪp/",
     part_of_speech: 'noun',
@@ -1104,7 +1104,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_051',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "efficient",
     phonetic: "/ɪˈfɪʃ.ənt/",
     part_of_speech: 'adjective',
@@ -1192,7 +1192,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_055',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "cooperation",
     phonetic: "/kəʊˌɒp.ərˈeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1214,7 +1214,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_056',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "satisfaction",
     phonetic: "/ˌsæt.ɪsˈfæk.ʃən/",
     part_of_speech: 'noun',
@@ -1324,7 +1324,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_061',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "contribute",
     phonetic: "/kənˈtrɪb.juːt/",
     part_of_speech: 'verb',
@@ -1412,7 +1412,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_065',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'C1',
     word: "cooperate",
     phonetic: "/kəʊˈɒp.ər.eɪt/",
     part_of_speech: 'verb',
@@ -1500,7 +1500,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_069',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "rewarding",
     phonetic: "/rɪˈwɔː.dɪŋ/",
     part_of_speech: 'adjective',
@@ -1544,7 +1544,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_071',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "occupation",
     phonetic: "/ˌɒk.jəˈpeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1610,7 +1610,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_074',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "meritocracy",
     phonetic: "/ˌmer.ɪˈtɒk.rə.si/",
     part_of_speech: 'noun',
@@ -1632,7 +1632,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_075',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "redundancy",
     phonetic: "/rɪˈdʌn.dən.si/",
     part_of_speech: 'noun',
@@ -1654,7 +1654,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_076',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "work-life balance",
     phonetic: "/ˌwɜːk laɪf ˈbæl.əns/",
     part_of_speech: 'phrase',
@@ -1698,7 +1698,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_078',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "bureaucracy",
     phonetic: "/bjʊəˈrɒk.rə.si/",
     part_of_speech: 'noun',
@@ -1742,7 +1742,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_080',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "delegate",
     phonetic: "/ˈdel.ɪ.ɡeɪt/",
     part_of_speech: 'verb',
@@ -1830,7 +1830,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_084',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "retrenchment",
     phonetic: "/rɪˈtrentʃ.mənt/",
     part_of_speech: 'noun',
@@ -1940,7 +1940,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_089',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "productivity",
     phonetic: "/ˌprɒd.ʌkˈtɪv.ə.ti/",
     part_of_speech: 'noun',
@@ -1962,7 +1962,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_090',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "accountability",
     phonetic: "/əˌkaʊn.təˈbɪl.ə.ti/",
     part_of_speech: 'noun',
@@ -1984,7 +1984,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_091',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "benchmarking",
     phonetic: "/ˈbentʃ.mɑː.kɪŋ/",
     part_of_speech: 'noun',
@@ -2116,7 +2116,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_097',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "monotony",
     phonetic: "/məˈnɒt.ən.i/",
     part_of_speech: 'noun',
@@ -2204,7 +2204,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_101',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "empower",
     phonetic: "/ɪmˈpaʊər/",
     part_of_speech: 'verb',
@@ -2226,7 +2226,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_102',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "solicit",
     phonetic: "/səˈlɪs.ɪt/",
     part_of_speech: 'verb',
@@ -2270,7 +2270,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_104',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "consolidate",
     phonetic: "/kənˈsɒl.ɪ.deɪt/",
     part_of_speech: 'verb',
@@ -2336,7 +2336,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_107',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "demographics",
     phonetic: "/ˌdem.əˈɡræf.ɪks/",
     part_of_speech: 'noun',
@@ -2358,7 +2358,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_108',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "remunerative",
     phonetic: "/rɪˈmjuː.nər.ə.tɪv/",
     part_of_speech: 'adjective',
@@ -2446,7 +2446,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_112',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "supervision",
     phonetic: "/ˌsuː.pəˈvɪʒ.ən/",
     part_of_speech: 'noun',
@@ -2468,7 +2468,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_113',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "attrition",
     phonetic: "/əˈtrɪʃ.ən/",
     part_of_speech: 'noun',
@@ -2512,7 +2512,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_115',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "compensation",
     phonetic: "/ˌkɒm.penˈseɪ.ʃən/",
     part_of_speech: 'noun',
@@ -2534,7 +2534,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_116',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "compliance",
     phonetic: "/kəmˈplaɪ.əns/",
     part_of_speech: 'noun',
@@ -2622,7 +2622,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_120',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "governance",
     phonetic: "/ˈɡʌv.ən.əns/",
     part_of_speech: 'noun',
@@ -2842,7 +2842,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_130',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "prospectus",
     phonetic: "/prəˈspek.təs/",
     part_of_speech: 'noun',
@@ -2864,7 +2864,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_131',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "synergistic",
     phonetic: "/ˌsɪn.əˈdʒɪs.tɪk/",
     part_of_speech: 'adjective',
@@ -2886,7 +2886,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_132',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "fiduciary",
     phonetic: "/fɪˈdʒuː.ʃi.ər.i/",
     part_of_speech: 'adjective',
@@ -3040,7 +3040,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_139',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "privatization",
     phonetic: "/ˌpraɪ.və.taɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -3062,7 +3062,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_140',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "subsidy",
     phonetic: "/ˈsʌb.sɪ.di/",
     part_of_speech: 'noun',
@@ -3744,7 +3744,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_171',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "inequity",
     phonetic: "/ɪnˈek.wɪ.ti/",
     part_of_speech: 'noun',
@@ -3876,7 +3876,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_177',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B1',
     word: "quid pro quo",
     phonetic: "/ˌkwɪd prəʊ ˈkwəʊ/",
     part_of_speech: 'phrase',
@@ -3898,7 +3898,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_178',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "headquarters",
     phonetic: "/ˈhedˌkwɔː.təz/",
     part_of_speech: 'noun',
@@ -3920,7 +3920,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_179',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "telecommute",
     phonetic: "/ˈtel.i.kəˌmjuːt/",
     part_of_speech: 'verb',
@@ -3986,7 +3986,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_182',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "workstation",
     phonetic: "/ˈwɜːkˌsteɪ.ʃən/",
     part_of_speech: 'noun',
@@ -4074,7 +4074,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_186',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "strikebreaker",
     phonetic: "/ˈstraɪkˌbreɪ.kər/",
     part_of_speech: 'noun',
@@ -4096,7 +4096,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_187',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "nepotistic",
     phonetic: "/ˌnep.əˈtɪs.tɪk/",
     part_of_speech: 'adjective',
@@ -4822,7 +4822,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_220',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "economy",
     phonetic: "/ɪˈkɒnəmi/",
     part_of_speech: 'noun',
@@ -4888,7 +4888,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_223',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "major",
     phonetic: "/ˈmeɪdʒə(r)/",
     part_of_speech: 'adjective',
@@ -4998,7 +4998,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_228',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "break down",
     phonetic: "/breɪk daʊn/",
     part_of_speech: 'verb',
@@ -5306,7 +5306,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_242',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "competition",
     phonetic: "/ˌkɒmpəˈtɪʃn/",
     part_of_speech: 'noun',
@@ -5482,7 +5482,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_250',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "allowance",
     phonetic: "/əˈlaʊ.əns/",
     part_of_speech: 'noun',
@@ -5658,7 +5658,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_258',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "charge",
     phonetic: "/tʃɑːdʒ/",
     part_of_speech: 'noun',
@@ -5680,7 +5680,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_259',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "plumber",
     phonetic: "/ˈplʌm.ər/",
     part_of_speech: 'noun',
@@ -5746,7 +5746,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_262',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "part-time",
     phonetic: "/ˌpɑːtˈtaɪm/",
     part_of_speech: 'adjective',
@@ -5768,7 +5768,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_263',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "personnel",
     phonetic: "/ˌpɜːsəˈnel/",
     part_of_speech: 'noun',
@@ -5790,7 +5790,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_264',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "work",
     phonetic: "/wɜːk/",
     part_of_speech: 'noun',
@@ -5812,7 +5812,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_265',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "effect",
     phonetic: "/ɪˈfekt/",
     part_of_speech: 'noun',
@@ -5834,7 +5834,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_266',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "economic",
     phonetic: "/ˌiː.kəˈnɒm.ɪk/",
     part_of_speech: 'adjective',
@@ -5878,7 +5878,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_268',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "market",
     phonetic: "/ˈmɑː.kɪt/",
     part_of_speech: 'noun',
@@ -5966,7 +5966,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_272',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "import",
     phonetic: "/ɪmˈpɔːt/",
     part_of_speech: 'verb',
@@ -5988,7 +5988,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_273',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "afford",
     phonetic: "/əˈfɔːd/",
     part_of_speech: 'verb',
@@ -6032,7 +6032,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_275',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "prove",
     phonetic: "/pruːv/",
     part_of_speech: 'verb',
@@ -6054,7 +6054,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_276',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "unable",
     phonetic: "/ʌnˈeɪ.bəl/",
     part_of_speech: 'adjective',
@@ -6098,7 +6098,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_278',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "planning",
     phonetic: "/ˈplæn.ɪŋ/",
     part_of_speech: 'noun',
@@ -6142,7 +6142,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_280',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "face",
     phonetic: "/feɪs/",
     part_of_speech: 'verb',
@@ -6164,7 +6164,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_281',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "lack",
     phonetic: "/læk/",
     part_of_speech: 'noun',
@@ -6186,7 +6186,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_282',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "personal",
     phonetic: "/ˈpɜː.sən.əl/",
     part_of_speech: 'adjective',
@@ -6230,7 +6230,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_284',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "varied",
     phonetic: "/ˈveə.rid/",
     part_of_speech: 'adjective',
@@ -6252,7 +6252,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_285',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "principal",
     phonetic: "/ˈprɪn.sɪ.pəl/",
     part_of_speech: 'adjective',
@@ -6274,7 +6274,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_286',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "direction",
     phonetic: "/daɪˈrek.ʃən/",
     part_of_speech: 'noun',
@@ -6296,7 +6296,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_287',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "unusual",
     phonetic: "/ʌnˈjuːʒuəl/",
     part_of_speech: 'adjective',
@@ -6384,7 +6384,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_291',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "involved",
     phonetic: "/ɪnˈvɒlvd/",
     part_of_speech: 'adjective',
@@ -6428,7 +6428,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_293',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "entrepreneur",
     phonetic: "/ˌɒn.trə.prəˈnɜːr/",
     part_of_speech: 'noun',
@@ -6516,7 +6516,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_297',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "profit",
     phonetic: "/ˈprɑːfɪt/",
     part_of_speech: 'noun',
@@ -6538,7 +6538,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_298',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "production",
     phonetic: "/prəˈdʌkʃən/",
     part_of_speech: 'noun',
@@ -6582,7 +6582,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_300',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "data",
     phonetic: "/ˈdeɪ.tə/",
     part_of_speech: 'noun',
@@ -6626,7 +6626,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_302',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "quantity",
     phonetic: "/ˈkwɒn.tə.ti/",
     part_of_speech: 'noun',
@@ -6648,7 +6648,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_303',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "professional",
     phonetic: "/prəˈfeʃ.ən.əl/",
     part_of_speech: 'adjective',
@@ -6692,7 +6692,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_305',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "extremely",
     phonetic: "/ɪkˈstriːm.li/",
     part_of_speech: 'adverb',
@@ -6714,7 +6714,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_306',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "considerably",
     phonetic: "/kənˈsɪd.ər.ə.bli/",
     part_of_speech: 'adverb',
@@ -6780,7 +6780,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_309',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "previous",
     phonetic: "/ˈpriːviəs/",
     part_of_speech: 'adjective',
@@ -6802,7 +6802,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_310',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "neatly",
     phonetic: "/ˈniːtli/",
     part_of_speech: 'adverb',
@@ -6846,7 +6846,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_312',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "president",
     phonetic: "/ˈprɛz.ɪ.dənt/",
     part_of_speech: 'noun',
@@ -6868,7 +6868,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_313',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "management",
     phonetic: "/ˈmænɪdʒmənt/",
     part_of_speech: 'noun',
@@ -6912,7 +6912,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_315',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "trend",
     phonetic: "/trend/",
     part_of_speech: 'noun',
@@ -6978,7 +6978,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_318',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "servant",
     phonetic: "/ˈsɜː.vənt/",
     part_of_speech: 'noun',
@@ -7044,7 +7044,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_321',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "availability",
     phonetic: "/əˌveɪ.ləˈbɪl.ə.ti/",
     part_of_speech: 'noun',
@@ -7088,7 +7088,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_323',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "coordinator",
     phonetic: "/koʊˈɔːr.dən.eɪ.tər/",
     part_of_speech: 'noun',
@@ -7110,7 +7110,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_324',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "reimbursement",
     phonetic: "/ˌriː.ɪmˈbɝːs.mənt/",
     part_of_speech: 'noun',
@@ -7198,7 +7198,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_328',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "career opportunity",
     phonetic: "/kəˈrɪə ˌɒpəˈtjuːnəti/",
     part_of_speech: 'noun',
@@ -7220,7 +7220,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_329',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "employment",
     phonetic: "/ɪmˈplɔɪ.mənt/",
     part_of_speech: 'noun',
@@ -7264,7 +7264,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_331',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "complaint",
     phonetic: "/kəmˈpleɪnt/",
     part_of_speech: 'noun',
@@ -7374,7 +7374,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_336',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "feasible",
     phonetic: "/ˈfiː.zə.bl̩/",
     part_of_speech: 'adjective',
@@ -7528,7 +7528,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_343',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "learn new tricks",
     phonetic: "/lɜːn nuː trɪks/",
     part_of_speech: 'phrase',
@@ -7550,7 +7550,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_344',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "cancel",
     phonetic: "/ˈkæn.səl/",
     part_of_speech: 'verb',
@@ -7594,7 +7594,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_346',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "suit",
     phonetic: "/suːt/",
     part_of_speech: 'verb',
@@ -7616,7 +7616,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_347',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "financial burden",
     phonetic: "/faɪˈnæn.ʃəl ˈbɜː.dən/",
     part_of_speech: 'noun',
@@ -7638,7 +7638,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_348',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "improvement",
     phonetic: "/ɪmˈpruːv.mənt/",
     part_of_speech: 'noun',
@@ -7726,7 +7726,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_352',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "expertise",
     phonetic: "/ˌek.spɜːˈtiːz/",
     part_of_speech: 'noun',
@@ -7748,7 +7748,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_353',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "efficiency",
     phonetic: "/ɪˈfɪʃ.ən.si/",
     part_of_speech: 'noun',
@@ -7792,7 +7792,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_355',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "madam",
     phonetic: "/ˈmæd.əm/",
     part_of_speech: 'noun',
@@ -7814,7 +7814,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_356',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "industrious",
     phonetic: "/ɪnˈdʌs.tri.əs/",
     part_of_speech: 'adjective',
@@ -7836,7 +7836,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_357',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "currency",
     phonetic: "/ˈkʌr.ən.si/",
     part_of_speech: 'noun',
@@ -7858,7 +7858,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_358',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'B2',
     word: "saleswoman",
     phonetic: "/ˈseɪlzˌwʊm.ən/",
     part_of_speech: 'noun',
@@ -7880,7 +7880,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_359',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "defective merchandise",
     phonetic: "/dɪˈfek.tɪv ˈmɜː.tʃən.daɪs/",
     part_of_speech: 'phrase',
@@ -7968,7 +7968,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_363',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "background",
     phonetic: "/ˈbæk.ɡraʊnd/",
     part_of_speech: 'noun',
@@ -7990,7 +7990,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_364',
     topic: 'Công việc & Sự nghiệp',
-    level: 'C1',
+    level: 'B2',
     word: "conflict resolution",
     phonetic: "/ˈkɒn.flɪkt ˌrez.əˈluː.ʃən/",
     part_of_speech: 'noun',
@@ -8056,7 +8056,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_367',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "assembly",
     phonetic: "/əˈsem.bli/",
     part_of_speech: 'noun',
@@ -8078,7 +8078,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_368',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B1',
+    level: 'C1',
     word: "screw",
     phonetic: "/skruː/",
     part_of_speech: 'noun',
@@ -8100,7 +8100,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_369',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "replacement",
     phonetic: "/rɪˈpleɪs.mənt/",
     part_of_speech: 'noun',
@@ -8122,7 +8122,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_370',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'C1',
     word: "partial",
     phonetic: "/ˈpɑːʃəl/",
     part_of_speech: 'adjective',
@@ -8144,7 +8144,7 @@ export const WORK_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_work_371',
     topic: 'Công việc & Sự nghiệp',
-    level: 'B2',
+    level: 'B1',
     word: "tabletop",
     phonetic: "/ˈteɪ.bəl.tɒp/",
     part_of_speech: 'noun',

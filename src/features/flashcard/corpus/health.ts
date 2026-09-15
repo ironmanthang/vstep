@@ -4,7 +4,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_001',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "sedentary",
     phonetic: "/ˈsed.ən.tər.i/",
     part_of_speech: 'adjective',
@@ -26,7 +26,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_002',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "malnutrition",
     phonetic: "/ˌmæl.njuːˈtrɪʃ.ən/",
     part_of_speech: 'noun',
@@ -48,7 +48,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_003',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "cardiovascular",
     phonetic: "/ˌkɑː.di.əʊˈvæs.kjə.lər/",
     part_of_speech: 'adjective',
@@ -70,7 +70,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_004',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "obesity",
     phonetic: "/əʊˈbiː.sə.ti/",
     part_of_speech: 'noun',
@@ -92,7 +92,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_005',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "hygiene",
     phonetic: "/ˈhaɪ.dʒiːn/",
     part_of_speech: 'noun',
@@ -114,7 +114,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_006',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "therapy",
     phonetic: "/ˈθer.ə.pi/",
     part_of_speech: 'noun',
@@ -158,7 +158,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_008',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "nutrition",
     phonetic: "/njuːˈtrɪʃ.ən/",
     part_of_speech: 'noun',
@@ -180,7 +180,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_009',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "prescription",
     phonetic: "/prɪˈskrɪp.ʃən/",
     part_of_speech: 'noun',
@@ -224,7 +224,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_011',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "chronic",
     phonetic: "/ˈkrɒn.ɪk/",
     part_of_speech: 'adjective',
@@ -246,7 +246,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_012',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "infection",
     phonetic: "/ɪnˈfek.ʃən/",
     part_of_speech: 'noun',
@@ -290,7 +290,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_014',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "metabolism",
     phonetic: "/məˈtæb.əl.ɪ.zəm/",
     part_of_speech: 'noun',
@@ -334,7 +334,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_016',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "fatigue",
     phonetic: "/fəˈtiːɡ/",
     part_of_speech: 'noun',
@@ -356,7 +356,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_017',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "diagnose",
     phonetic: "/ˈdaɪ.əɡ.nəʊz/",
     part_of_speech: 'verb',
@@ -378,7 +378,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_018',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "rehabilitation",
     phonetic: "/ˌriː.həˌbɪl.ɪˈteɪ.ʃən/",
     part_of_speech: 'noun',
@@ -400,7 +400,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_019',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "immune",
     phonetic: "/ɪˈmjuːn/",
     part_of_speech: 'adjective',
@@ -422,7 +422,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_020',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "epidemic",
     phonetic: "/ˌep.ɪˈdem.ɪk/",
     part_of_speech: 'noun',
@@ -466,7 +466,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_022',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "calorie",
     phonetic: "/ˈkæl.ər.i/",
     part_of_speech: 'noun',
@@ -488,7 +488,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_023',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "mineral",
     phonetic: "/ˈmɪn.ər.əl/",
     part_of_speech: 'noun',
@@ -510,7 +510,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_024',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "organic",
     phonetic: "/ɔːˈɡæn.ɪk/",
     part_of_speech: 'adjective',
@@ -554,7 +554,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_026',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "wellbeing",
     phonetic: "/ˌwelˈbiː.ɪŋ/",
     part_of_speech: 'noun',
@@ -598,7 +598,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_028',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "recovery",
     phonetic: "/rɪˈkʌv.ər.i/",
     part_of_speech: 'noun',
@@ -620,7 +620,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_029',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "stamina",
     phonetic: "/ˈstæm.ɪ.nə/",
     part_of_speech: 'noun',
@@ -642,7 +642,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_030',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "aerobic",
     phonetic: "/eəˈrəʊ.bɪk/",
     part_of_speech: 'adjective',
@@ -664,7 +664,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_031',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "anaerobic",
     phonetic: "/æn.eəˈrəʊ.bɪk/",
     part_of_speech: 'adjective',
@@ -686,7 +686,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_032',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "supplements",
     phonetic: "/ˈsʌp.lɪ.mənts/",
     part_of_speech: 'noun',
@@ -708,7 +708,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_033',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "toxin",
     phonetic: "/ˈtɒk.sɪn/",
     part_of_speech: 'noun',
@@ -730,7 +730,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_034',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "vitality",
     phonetic: "/vaɪˈtæl.ə.ti/",
     part_of_speech: 'noun',
@@ -774,7 +774,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_036',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "insomnia",
     phonetic: "/ɪnˈsɒm.ni.ə/",
     part_of_speech: 'noun',
@@ -796,7 +796,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_037',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "medication",
     phonetic: "/ˌmed.ɪˈkeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -818,7 +818,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_038',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "dentistry",
     phonetic: "/ˈden.tɪ.stri/",
     part_of_speech: 'noun',
@@ -840,7 +840,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_039',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "consultation",
     phonetic: "/ˌkɒn.sʌlˈteɪ.ʃən/",
     part_of_speech: 'noun',
@@ -862,7 +862,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_040',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "dosage",
     phonetic: "/ˈdəʊ.sɪdʒ/",
     part_of_speech: 'noun',
@@ -884,7 +884,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_041',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "physician",
     phonetic: "/fɪˈzɪʃ.ən/",
     part_of_speech: 'noun',
@@ -906,7 +906,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_042',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "circulation",
     phonetic: "/ˌsɜː.kjəˈleɪ.ʃən/",
     part_of_speech: 'noun',
@@ -928,7 +928,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_043',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "inflammation",
     phonetic: "/ˌɪn.fləˈmeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -950,7 +950,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_044',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "posture",
     phonetic: "/ˈpɒs.tʃər/",
     part_of_speech: 'noun',
@@ -994,7 +994,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_046',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "sanitation",
     phonetic: "/ˌsæn.ɪˈteɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1016,7 +1016,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_047',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "respiratory",
     phonetic: "/rɪˈspɪr.ə.tər.i/",
     part_of_speech: 'adjective',
@@ -1082,7 +1082,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_050',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "hypertension",
     phonetic: "/ˌhaɪ.pəˈten.ʃən/",
     part_of_speech: 'noun',
@@ -1126,7 +1126,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_052',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "relaxation",
     phonetic: "/ˌriː.lækˈseɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1170,7 +1170,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_054',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "anxiety",
     phonetic: "/æŋˈzaɪ.ə.ti/",
     part_of_speech: 'noun',
@@ -1214,7 +1214,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_056',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "clinic",
     phonetic: "/ˈklɪn.ɪk/",
     part_of_speech: 'noun',
@@ -1258,7 +1258,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_058',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "immunity",
     phonetic: "/ɪˈmjuː.nə.ti/",
     part_of_speech: 'noun',
@@ -1302,7 +1302,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_060',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "outbreak",
     phonetic: "/ˈaʊt.breɪk/",
     part_of_speech: 'noun',
@@ -1324,7 +1324,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_061',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "stretching",
     phonetic: "/ˈstretʃ.ɪŋ/",
     part_of_speech: 'noun',
@@ -1346,7 +1346,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_062',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "wellness",
     phonetic: "/ˈwel.nəs/",
     part_of_speech: 'noun',
@@ -1368,7 +1368,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_063',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "harmful",
     phonetic: "/ˈhɑːm.fəl/",
     part_of_speech: 'adjective',
@@ -1390,7 +1390,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_064',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "vital",
     phonetic: "/ˈvaɪ.təl/",
     part_of_speech: 'adjective',
@@ -1434,7 +1434,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_066',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "heal",
     phonetic: "/hiːl/",
     part_of_speech: 'verb',
@@ -1588,7 +1588,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_073',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "cure",
     phonetic: "/kjʊər/",
     part_of_speech: 'verb',
@@ -1654,7 +1654,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_076',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "epidemiology",
     phonetic: "/ˌep.ɪ.diː.miˈɒl.ə.dʒi/",
     part_of_speech: 'noun',
@@ -1676,7 +1676,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_077',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "ergonomics",
     phonetic: "/ˌɜː.ɡəˈnɒm.ɪks/",
     part_of_speech: 'noun',
@@ -1698,7 +1698,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_078',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "carcinogen",
     phonetic: "/kɑːˈsɪn.ə.dʒən/",
     part_of_speech: 'noun',
@@ -1720,7 +1720,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_079',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "longevity",
     phonetic: "/lɒnˈdʒev.ə.ti/",
     part_of_speech: 'noun',
@@ -1742,7 +1742,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_080',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "pathogen",
     phonetic: "/ˈpæθ.ə.dʒən/",
     part_of_speech: 'noun',
@@ -1764,7 +1764,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_081',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "prognosis",
     phonetic: "/prɒɡˈnəʊ.sɪs/",
     part_of_speech: 'noun',
@@ -1786,7 +1786,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_082',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "convalescence",
     phonetic: "/ˌkɒn.vəˈles.əns/",
     part_of_speech: 'noun',
@@ -1808,7 +1808,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_083',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "psychosomatic",
     phonetic: "/ˌsaɪ.kəʊ.səˈmæt.ɪk/",
     part_of_speech: 'adjective',
@@ -1830,7 +1830,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_084',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "prophylactic",
     phonetic: "/ˌprɒf.ɪˈlæk.tɪk/",
     part_of_speech: 'adjective',
@@ -1852,7 +1852,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_085',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "inoculate",
     phonetic: "/ɪˈnɒk.jə.leɪt/",
     part_of_speech: 'verb',
@@ -1874,7 +1874,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_086',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "contraindication",
     phonetic: "/ˌkɒn.trəˌɪn.dɪˈkeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1896,7 +1896,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_087',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "bioavailability",
     phonetic: "/ˌbaɪ.əʊ.əˌveɪ.ləˈbɪl.ə.ti/",
     part_of_speech: 'noun',
@@ -1918,7 +1918,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_088',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "predisposition",
     phonetic: "/ˌpriː.dɪs.pəˈzɪʃ.ən/",
     part_of_speech: 'noun',
@@ -1940,7 +1940,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_089',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "homeostasis",
     phonetic: "/ˌhəʊ.mi.əʊˈsteɪ.sɪs/",
     part_of_speech: 'noun',
@@ -1962,7 +1962,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_090',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "palliative",
     phonetic: "/ˈpæl.i.ə.tɪv/",
     part_of_speech: 'adjective',
@@ -1984,7 +1984,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_091',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "pharmacological",
     phonetic: "/ˌfɑː.mə.kəˈlɒdʒ.ɪ.kəl/",
     part_of_speech: 'adjective',
@@ -2072,7 +2072,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_095',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "virulence",
     phonetic: "/ˈvɪr.jə.ləns/",
     part_of_speech: 'noun',
@@ -2094,7 +2094,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_096',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "morbidity",
     phonetic: "/mɔːˈbɪd.ə.ti/",
     part_of_speech: 'noun',
@@ -2138,7 +2138,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_098',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "remission",
     phonetic: "/rɪˈmɪʃ.ən/",
     part_of_speech: 'noun',
@@ -2160,7 +2160,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_099',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "contagion",
     phonetic: "/kənˈteɪ.dʒən/",
     part_of_speech: 'noun',
@@ -2314,7 +2314,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_106',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "circadian",
     phonetic: "/sɜːˈkeɪ.di.ən/",
     part_of_speech: 'adjective',
@@ -2336,7 +2336,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_107',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "resilience",
     phonetic: "/rɪˈzɪl.jəns/",
     part_of_speech: 'noun',
@@ -2358,7 +2358,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_108',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "syndrome",
     phonetic: "/ˈsɪn.drəʊm/",
     part_of_speech: 'noun',
@@ -2402,7 +2402,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_110',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "antibiotic",
     phonetic: "/ˌæn.ti.baɪˈɒt.ɪk/",
     part_of_speech: 'noun',
@@ -2424,7 +2424,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_111',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "antioxidant",
     phonetic: "/ˌæn.tiˈɒk.sɪ.dənt/",
     part_of_speech: 'noun',
@@ -2446,7 +2446,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_112',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "cardiopulmonary",
     phonetic: "/ˌkɑː.di.əʊˈpʊl.mə.nər.i/",
     part_of_speech: 'adjective',
@@ -2468,7 +2468,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_113',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "neuroplasticity",
     phonetic: "/ˌnjʊə.rəʊ.plæsˈtɪs.ə.ti/",
     part_of_speech: 'noun',
@@ -2490,7 +2490,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_114',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "deficiency",
     phonetic: "/dɪˈfɪʃ.ən.si/",
     part_of_speech: 'noun',
@@ -2556,7 +2556,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_117',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "immunosuppression",
     phonetic: "/ˌɪm.jʊ.nəʊ.səˈpreʃ.ən/",
     part_of_speech: 'noun',
@@ -2600,7 +2600,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_119',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "glycemic",
     phonetic: "/ɡlaɪˈsiː.mɪk/",
     part_of_speech: 'adjective',
@@ -2644,7 +2644,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_121',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "anesthesia",
     phonetic: "/ˌæn.əsˈθiː.zi.ə/",
     part_of_speech: 'noun',
@@ -2732,7 +2732,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_125',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "hyperthermia",
     phonetic: "/ˌhaɪ.pəˈθɜː.mi.ə/",
     part_of_speech: 'noun',
@@ -2754,7 +2754,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_126',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "pathology",
     phonetic: "/pəˈθɒl.ə.dʒi/",
     part_of_speech: 'noun',
@@ -2776,7 +2776,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_127',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "physiology",
     phonetic: "/ˌfɪz.iˈɒl.ə.dʒi/",
     part_of_speech: 'noun',
@@ -2798,7 +2798,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_128',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "radiotherapy",
     phonetic: "/ˌreɪ.di.əʊˈθer.ə.pi/",
     part_of_speech: 'noun',
@@ -2864,7 +2864,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_131',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "convalesce",
     phonetic: "/ˌkɒn.vəˈles/",
     part_of_speech: 'verb',
@@ -2908,7 +2908,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_133',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "prophylaxis",
     phonetic: "/ˌprɒf.ɪˈlæk.sɪs/",
     part_of_speech: 'noun',
@@ -2930,7 +2930,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_134',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "orthotics",
     phonetic: "/ɔːˈθɒt.ɪks/",
     part_of_speech: 'noun',
@@ -2952,7 +2952,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_135',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "physiotherapist",
     phonetic: "/ˌfɪz.i.əʊˈθer.ə.pɪst/",
     part_of_speech: 'noun',
@@ -3040,7 +3040,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_139',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "oncologist",
     phonetic: "/ɒŋˈkɒl.ə.dʒɪst/",
     part_of_speech: 'noun',
@@ -3084,7 +3084,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_141',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "geriatrics",
     phonetic: "/ˌdʒer.iˈæt.rɪks/",
     part_of_speech: 'noun',
@@ -3524,7 +3524,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_161',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "febrile",
     phonetic: "/ˈfiː.braɪl/",
     part_of_speech: 'adjective',
@@ -3722,7 +3722,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_170',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "thrombosis",
     phonetic: "/θrɒmˈbəʊ.sɪs/",
     part_of_speech: 'noun',
@@ -3788,7 +3788,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_173',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "anaphylaxis",
     phonetic: "/ˌæn.ə.fɪˈlæk.sɪs/",
     part_of_speech: 'noun',
@@ -4118,7 +4118,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_188',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "arrhythmia",
     phonetic: "/əˈrɪð.mi.ə/",
     part_of_speech: 'noun',
@@ -4602,7 +4602,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_210',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "insurance",
     phonetic: "/ɪnˈʃʊərəns/",
     part_of_speech: 'noun',
@@ -5438,7 +5438,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_248',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "period",
     phonetic: "/ˈpɪə.ri.əd/",
     part_of_speech: 'noun',
@@ -5614,7 +5614,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_256',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "current",
     phonetic: "/ˈkʌr.ənt/",
     part_of_speech: 'adjective',
@@ -5636,7 +5636,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_257',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "researcher",
     phonetic: "/rɪˈsɜː.tʃər/",
     part_of_speech: 'noun',
@@ -5746,7 +5746,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_262',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "antibiotics",
     phonetic: "/ˌæn.ti.baɪˈɒt.ɪks/",
     part_of_speech: 'noun',
@@ -5790,7 +5790,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_264',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "disease",
     phonetic: "/dɪˈziːz/",
     part_of_speech: 'noun',
@@ -5812,7 +5812,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_265',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "block",
     phonetic: "/blɒk/",
     part_of_speech: 'verb',
@@ -5834,7 +5834,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_266',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "slightly",
     phonetic: "/ˈslaɪt.li/",
     part_of_speech: 'adverb',
@@ -5856,7 +5856,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_267',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "fermentation",
     phonetic: "/ˌfɜːr.menˈteɪ.ʃən/",
     part_of_speech: 'noun',
@@ -5878,7 +5878,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_268',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "specific",
     phonetic: "/spəˈsɪf.ɪk/",
     part_of_speech: 'adjective',
@@ -5944,7 +5944,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_271',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "virtually",
     phonetic: "/ˈvɜː.tjuə.li/",
     part_of_speech: 'adverb',
@@ -6032,7 +6032,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_275',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "cycle",
     phonetic: "/ˈsaɪ.kəl/",
     part_of_speech: 'noun',
@@ -6054,7 +6054,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_276',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "affect",
     phonetic: "/əˈfekt/",
     part_of_speech: 'verb',
@@ -6142,7 +6142,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_280',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "conditions",
     phonetic: "/kənˈdɪʃ.ənz/",
     part_of_speech: 'noun',
@@ -6164,7 +6164,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_281',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "intestine",
     phonetic: "/ɪnˈtes.tɪn/",
     part_of_speech: 'noun',
@@ -6208,7 +6208,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_283',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "manner",
     phonetic: "/ˈmæn.ər/",
     part_of_speech: 'noun',
@@ -6230,7 +6230,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_284',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "soda",
     phonetic: "/ˈsəʊ.də/",
     part_of_speech: 'noun',
@@ -6340,7 +6340,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_289',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "invade",
     phonetic: "/ɪnˈveɪd/",
     part_of_speech: 'verb',
@@ -6362,7 +6362,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_290',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "growth",
     phonetic: "/ɡroʊθ/",
     part_of_speech: 'noun',
@@ -6450,7 +6450,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_294',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "figure",
     phonetic: "/ˈfɪɡə(r)/",
     part_of_speech: 'noun',
@@ -6472,7 +6472,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_295',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "infect",
     phonetic: "/ɪnˈfekt/",
     part_of_speech: 'verb',
@@ -6494,7 +6494,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_296',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "nutrient",
     phonetic: "/ˈnjuːtriənt/",
     part_of_speech: 'noun',
@@ -6560,7 +6560,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_299',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "deceased",
     phonetic: "/dɪˈsiːst/",
     part_of_speech: 'adjective',
@@ -6648,7 +6648,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_303',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "migraine",
     phonetic: "/ˈmiːɡreɪn/",
     part_of_speech: 'noun',
@@ -6670,7 +6670,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_304',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "hyperactive",
     phonetic: "/ˌhaɪpərˈæktɪv/",
     part_of_speech: 'adjective',
@@ -6692,7 +6692,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_305',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "tobacco",
     phonetic: "/təˈbæk.əʊ/",
     part_of_speech: 'noun',
@@ -6846,7 +6846,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_312',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "wipe",
     phonetic: "/waɪp/",
     part_of_speech: 'verb',
@@ -6868,7 +6868,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_313',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "action",
     phonetic: "/ˈæk.ʃən/",
     part_of_speech: 'noun',
@@ -6934,7 +6934,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_316',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "caring",
     phonetic: "/ˈkeə.rɪŋ/",
     part_of_speech: 'adjective',
@@ -6956,7 +6956,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_317',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "compassionate",
     phonetic: "/kəmˈpæʃ.ən.ət/",
     part_of_speech: 'adjective',
@@ -6978,7 +6978,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_318',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "adolescent",
     phonetic: "/ˌæd.əˈles.ənt/",
     part_of_speech: 'noun',
@@ -7066,7 +7066,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_322',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "consume",
     phonetic: "/kənˈsjuːm/",
     part_of_speech: 'verb',
@@ -7088,7 +7088,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_323',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "chronic disease",
     phonetic: "/ˈkrɒn.ɪk dɪˈziːz/",
     part_of_speech: 'noun',
@@ -7132,7 +7132,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_325',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "well-being",
     phonetic: "/ˈwelˌbiːɪŋ/",
     part_of_speech: 'noun',
@@ -7154,7 +7154,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_326',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "athletics",
     phonetic: "/æθˈlet.iks/",
     part_of_speech: 'noun',
@@ -7220,7 +7220,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_329',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "ban",
     phonetic: "/bæn/",
     part_of_speech: 'noun',
@@ -7286,7 +7286,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_332',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "reflex",
     phonetic: "/ˈriː.flɛks/",
     part_of_speech: 'noun',
@@ -7352,7 +7352,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_335',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "breakfast",
     phonetic: "/ˈbrek.fəst/",
     part_of_speech: 'noun',
@@ -7396,7 +7396,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_337',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B1',
     word: "secondhand smoke",
     phonetic: "/ˌsek.əndˌhænd ˈsməʊk/",
     part_of_speech: 'noun',
@@ -7418,7 +7418,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_338',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "bystander",
     phonetic: "/ˈbaɪˌstæn.dər/",
     part_of_speech: 'noun',
@@ -7484,7 +7484,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_341',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "lung",
     phonetic: "/lʌŋ/",
     part_of_speech: 'noun',
@@ -7506,7 +7506,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_342',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "non-smoker",
     phonetic: "/ˌnɒnˈsməʊ.kər/",
     part_of_speech: 'noun',
@@ -7528,7 +7528,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_343',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "badly",
     phonetic: "/ˈbæd.li/",
     part_of_speech: 'adverb',
@@ -7594,7 +7594,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_346',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "arena",
     phonetic: "/əˈriː.nə/",
     part_of_speech: 'noun',
@@ -7682,7 +7682,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_350',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "metabolic",
     phonetic: "/ˌmet.əˈbɒl.ɪk/",
     part_of_speech: 'adjective',
@@ -7704,7 +7704,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_351',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "ergonomic",
     phonetic: "/ˌɜː.ɡəˈnɒm.ɪk/",
     part_of_speech: 'adjective',
@@ -7770,7 +7770,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_354',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "sad",
     phonetic: "/sæd/",
     part_of_speech: 'adjective',
@@ -7792,7 +7792,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_355',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "expert",
     phonetic: "/ˈek.spɜːt/",
     part_of_speech: 'noun',
@@ -7836,7 +7836,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_357',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "prevention",
     phonetic: "/prɪˈvenʃn/",
     part_of_speech: 'noun',
@@ -7858,7 +7858,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_358',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "replenishment",
     phonetic: "/rɪˈplenɪʃmənt/",
     part_of_speech: 'noun',
@@ -7880,7 +7880,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_359',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B1',
     word: "dependency",
     phonetic: "/dɪˈpendənsi/",
     part_of_speech: 'noun',
@@ -7902,7 +7902,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_360',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "stability",
     phonetic: "/stəˈbɪləti/",
     part_of_speech: 'noun',
@@ -7990,7 +7990,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_364',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "nutritional",
     phonetic: "/nuˈtrɪʃənəl/",
     part_of_speech: 'adjective',
@@ -8012,7 +8012,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_365',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "nourishment",
     phonetic: "/ˈnɜːrɪʃmənt/",
     part_of_speech: 'noun',
@@ -8034,7 +8034,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_366',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'B2',
     word: "cardio",
     phonetic: "/ˈkɑːrdioʊ/",
     part_of_speech: 'noun',
@@ -8056,7 +8056,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_367',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "therapeutic",
     phonetic: "/ˌθerəˈpjuːtɪk/",
     part_of_speech: 'adjective',
@@ -8100,7 +8100,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_369',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B1',
+    level: 'C1',
     word: "workout",
     phonetic: "/ˈwɜːrkˌaʊt/",
     part_of_speech: 'noun',
@@ -8122,7 +8122,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_370',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'B1',
     word: "secondhand",
     phonetic: "/ˈsekəndhænd/",
     part_of_speech: 'adjective',
@@ -8166,7 +8166,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_372',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "agility",
     phonetic: "/əˈdʒɪləti/",
     part_of_speech: 'noun',
@@ -8210,7 +8210,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_374',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "detoxification",
     phonetic: "/ˌdiːtɑːksɪfɪˈkeɪʃn/",
     part_of_speech: 'noun',
@@ -8254,7 +8254,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_376',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "impairment",
     phonetic: "/ɪmˈpermənt/",
     part_of_speech: 'noun',
@@ -8298,7 +8298,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_378',
     topic: 'Sức khỏe & Lối sống',
-    level: 'B2',
+    level: 'C1',
     word: "physique",
     phonetic: "/fɪˈziːk/",
     part_of_speech: 'noun',
@@ -8320,7 +8320,7 @@ export const HEALTH_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_health_379',
     topic: 'Sức khỏe & Lối sống',
-    level: 'C1',
+    level: 'B2',
     word: "pharmaceutical",
     phonetic: "/ˌfɑːməˈsuːtɪkl/",
     part_of_speech: 'adjective',

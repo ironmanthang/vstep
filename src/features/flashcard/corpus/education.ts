@@ -4,7 +4,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_001',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "curriculum",
     phonetic: "/kəˈrɪk.jə.ləm/",
     part_of_speech: 'noun',
@@ -48,7 +48,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_003',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "scholarship",
     phonetic: "/ˈskɒl.ə.ʃɪp/",
     part_of_speech: 'noun',
@@ -70,7 +70,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_004',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'C1',
     word: "tuition",
     phonetic: "/tjuːˈɪʃ.ən/",
     part_of_speech: 'noun',
@@ -92,7 +92,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_005',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "compulsory",
     phonetic: "/kəmˈpʌl.sər.i/",
     part_of_speech: 'adjective',
@@ -114,7 +114,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_006',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'C1',
     word: "extracurricular",
     phonetic: "/ˌek.strə.kəˈrɪk.jə.lər/",
     part_of_speech: 'adjective',
@@ -180,7 +180,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_009',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "certificate",
     phonetic: "/səˈtɪf.ɪ.kət/",
     part_of_speech: 'noun',
@@ -202,7 +202,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_010',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "discipline",
     phonetic: "/ˈdɪs.ə.plɪn/",
     part_of_speech: 'noun',
@@ -224,7 +224,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_011',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "evaluate",
     phonetic: "/ɪˈvæl.ju.eɪt/",
     part_of_speech: 'verb',
@@ -268,7 +268,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_013',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "seminar",
     phonetic: "/ˈsem.ɪ.nɑːr/",
     part_of_speech: 'noun',
@@ -290,7 +290,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_014',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "tutor",
     phonetic: "/ˈtjuː.tər/",
     part_of_speech: 'noun',
@@ -334,7 +334,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_016',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'C1',
     word: "literacy",
     phonetic: "/ˈlɪt.ər.ə.si/",
     part_of_speech: 'noun',
@@ -356,7 +356,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_017',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "numeracy",
     phonetic: "/ˈnjuː.mə.rə.si/",
     part_of_speech: 'noun',
@@ -378,7 +378,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_018',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'C1',
     word: "vocational",
     phonetic: "/vəʊˈkeɪ.ʃən.əl/",
     part_of_speech: 'adjective',
@@ -466,7 +466,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_022',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'C1',
     word: "enroll",
     phonetic: "/ɪnˈrəʊl/",
     part_of_speech: 'verb',
@@ -488,7 +488,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_023',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'C1',
     word: "attendance",
     phonetic: "/əˈten.dəns/",
     part_of_speech: 'noun',
@@ -532,7 +532,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_025',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "feedback",
     phonetic: "/ˈfiːd.bæk/",
     part_of_speech: 'noun',
@@ -554,7 +554,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_026',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'C1',
     word: "collaborate",
     phonetic: "/kəˈlæb.ə.reɪt/",
     part_of_speech: 'verb',
@@ -620,7 +620,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_029',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "comprehension",
     phonetic: "/ˌkɒm.prɪˈhen.ʃən/",
     part_of_speech: 'noun',
@@ -708,7 +708,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_033',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "deadline",
     phonetic: "/ˈded.laɪn/",
     part_of_speech: 'noun',
@@ -730,7 +730,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_034',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "assessment",
     phonetic: "/əˈses.mənt/",
     part_of_speech: 'noun',
@@ -752,7 +752,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_035',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "criterion",
     phonetic: "/kraɪˈtɪə.ri.ən/",
     part_of_speech: 'noun',
@@ -774,7 +774,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_036',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "facility",
     phonetic: "/fəˈsɪl.ɪ.ti/",
     part_of_speech: 'noun',
@@ -796,7 +796,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_037',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "dormitory",
     phonetic: "/ˈdɔː.mɪ.tər.i/",
     part_of_speech: 'noun',
@@ -818,7 +818,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_038',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'C1',
     word: "faculty",
     phonetic: "/ˈfæk.əl.ti/",
     part_of_speech: 'noun',
@@ -884,7 +884,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_041',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'C1',
     word: "absent",
     phonetic: "/ˈæb.sənt/",
     part_of_speech: 'adjective',
@@ -906,7 +906,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_042',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "motivate",
     phonetic: "/ˈməʊ.tɪ.veɪt/",
     part_of_speech: 'verb',
@@ -928,7 +928,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_043',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'C1',
     word: "curiosity",
     phonetic: "/ˌkjʊə.riˈɒs.ɪ.ti/",
     part_of_speech: 'noun',
@@ -950,7 +950,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_044',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "objective",
     phonetic: "/əbˈdʒek.tɪv/",
     part_of_speech: 'noun',
@@ -972,7 +972,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_045',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "outline",
     phonetic: "/ˈaʊt.laɪn/",
     part_of_speech: 'noun',
@@ -1016,7 +1016,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_047',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "paraphrase",
     phonetic: "/ˈpær.ə.freɪz/",
     part_of_speech: 'verb',
@@ -1082,7 +1082,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_050',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "accuracy",
     phonetic: "/ˈæk.jə.rə.si/",
     part_of_speech: 'noun',
@@ -1192,7 +1192,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_055',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "inspire",
     phonetic: "/ɪnˈspaɪər/",
     part_of_speech: 'verb',
@@ -1258,7 +1258,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_058',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "reward",
     phonetic: "/rɪˈwɔːd/",
     part_of_speech: 'noun',
@@ -1500,7 +1500,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_069',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'C1',
     word: "guidance",
     phonetic: "/ˈɡaɪ.dəns/",
     part_of_speech: 'noun',
@@ -1654,7 +1654,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_076',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "pedagogical",
     phonetic: "/ˌped.əˈɡɒdʒ.ɪ.kəl/",
     part_of_speech: 'adjective',
@@ -1676,7 +1676,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_077',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "cognition",
     phonetic: "/kɒɡˈnɪʃ.ən/",
     part_of_speech: 'noun',
@@ -1698,7 +1698,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_078',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "dissertation",
     phonetic: "/ˌdɪs.əˈteɪ.ʃən/",
     part_of_speech: 'noun',
@@ -1764,7 +1764,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_081',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "autonomous",
     phonetic: "/ɔːˈtɒn.ə.məs/",
     part_of_speech: 'adjective',
@@ -1808,7 +1808,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_083',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "methodology",
     phonetic: "/ˌmeθ.əˈdɒl.ə.dʒi/",
     part_of_speech: 'noun',
@@ -1852,7 +1852,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_085',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "retention",
     phonetic: "/rɪˈten.ʃən/",
     part_of_speech: 'noun',
@@ -1874,7 +1874,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_086',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "credential",
     phonetic: "/krɪˈden.ʃəl/",
     part_of_speech: 'noun',
@@ -1918,7 +1918,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_088',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "aptitude",
     phonetic: "/ˈæp.tɪ.tʃuːd/",
     part_of_speech: 'noun',
@@ -1940,7 +1940,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_089',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "rote learning",
     phonetic: "/ˌrəʊt ˈlɜː.nɪŋ/",
     part_of_speech: 'phrase',
@@ -2050,7 +2050,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_094',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "formative",
     phonetic: "/ˈfɔː.mə.tɪv/",
     part_of_speech: 'adjective',
@@ -2072,7 +2072,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_095',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "summative",
     phonetic: "/ˈsʌm.ə.tɪv/",
     part_of_speech: 'adjective',
@@ -2094,7 +2094,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_096',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "accreditation",
     phonetic: "/əˌkred.ɪˈteɪ.ʃən/",
     part_of_speech: 'noun',
@@ -2138,7 +2138,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_098',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "empirical",
     phonetic: "/ɪmˈpɪr.ɪ.kəl/",
     part_of_speech: 'adjective',
@@ -2160,7 +2160,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_099',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "facilitate",
     phonetic: "/fəˈsɪl.ɪ.teɪt/",
     part_of_speech: 'verb',
@@ -2226,7 +2226,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_102',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "pedagogy",
     phonetic: "/ˈped.ə.ɡɒdʒ.i/",
     part_of_speech: 'noun',
@@ -2248,7 +2248,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_103',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "differentiate",
     phonetic: "/ˌdɪf.əˈren.ʃi.eɪt/",
     part_of_speech: 'verb',
@@ -2292,7 +2292,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_105',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "remedial",
     phonetic: "/rɪˈmiː.di.əl/",
     part_of_speech: 'adjective',
@@ -2358,7 +2358,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_108',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "sabbatical",
     phonetic: "/səˈbæt.ɪ.kəl/",
     part_of_speech: 'noun',
@@ -2402,7 +2402,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_110',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "matriculate",
     phonetic: "/məˈtrɪk.jə.leɪt/",
     part_of_speech: 'verb',
@@ -2424,7 +2424,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_111',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "fellowship",
     phonetic: "/ˈfel.əʊ.ʃɪp/",
     part_of_speech: 'noun',
@@ -2468,7 +2468,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_113',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "mentor",
     phonetic: "/ˈmen.tɔːr/",
     part_of_speech: 'noun',
@@ -2490,7 +2490,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_114',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "bilingual",
     phonetic: "/baɪˈlɪŋ.ɡwəl/",
     part_of_speech: 'adjective',
@@ -2578,7 +2578,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_118',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "didactic",
     phonetic: "/daɪˈdæk.tɪk/",
     part_of_speech: 'adjective',
@@ -2600,7 +2600,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_119',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "benchmark",
     phonetic: "/ˈbentʃ.mɑːk/",
     part_of_speech: 'noun',
@@ -2622,7 +2622,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_120',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "undergraduate",
     phonetic: "/ˌʌn.dəˈɡrædʒ.u.ət/",
     part_of_speech: 'noun',
@@ -2688,7 +2688,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_123',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "symposium",
     phonetic: "/sɪmˈpəʊ.zi.əm/",
     part_of_speech: 'noun',
@@ -2710,7 +2710,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_124',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "vocationalism",
     phonetic: "/vəʊˈkeɪ.ʃən.əl.ɪ.zəm/",
     part_of_speech: 'noun',
@@ -2732,7 +2732,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_125',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "pedagogue",
     phonetic: "/ˈped.ə.ɡɒɡ/",
     part_of_speech: 'noun',
@@ -2754,7 +2754,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_126',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "receptivity",
     phonetic: "/ˌriː.sepˈtɪv.ə.ti/",
     part_of_speech: 'noun',
@@ -2776,7 +2776,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_127',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "synthesize",
     phonetic: "/ˈsɪn.θə.saɪz/",
     part_of_speech: 'verb',
@@ -2820,7 +2820,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_129',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "memorization",
     phonetic: "/ˌmem.ər.aɪˈzeɪ.ʃən/",
     part_of_speech: 'noun',
@@ -2908,7 +2908,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_133',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "cultivate",
     phonetic: "/ˈkʌl.tɪ.veɪt/",
     part_of_speech: 'verb',
@@ -2930,7 +2930,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_134',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "articulate",
     phonetic: "/ɑːˈtɪk.jə.leɪt/",
     part_of_speech: 'verb',
@@ -2952,7 +2952,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_135',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "elucidate",
     phonetic: "/iˈluː.sɪ.deɪt/",
     part_of_speech: 'verb',
@@ -2974,7 +2974,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_136',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "assimilate",
     phonetic: "/əˈsɪm.ɪ.leɪt/",
     part_of_speech: 'verb',
@@ -3040,7 +3040,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_139',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "disseminate",
     phonetic: "/dɪˈsem.ɪ.neɪt/",
     part_of_speech: 'verb',
@@ -3062,7 +3062,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_140',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "formulate",
     phonetic: "/ˈfɔː.mjə.leɪt/",
     part_of_speech: 'verb',
@@ -3084,7 +3084,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_141',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "extrapolate",
     phonetic: "/ɪkˈstræp.ə.leɪt/",
     part_of_speech: 'verb',
@@ -3106,7 +3106,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_142',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "diligence",
     phonetic: "/ˈdɪl.ɪ.dʒəns/",
     part_of_speech: 'noun',
@@ -3172,7 +3172,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_145',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "competence",
     phonetic: "/ˈkɒm.pɪ.təns/",
     part_of_speech: 'noun',
@@ -3216,7 +3216,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_147',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "relevance",
     phonetic: "/ˈrel.ə.vəns/",
     part_of_speech: 'noun',
@@ -3260,7 +3260,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_149',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "disillusionment",
     phonetic: "/ˌdɪs.ɪˈluː.ʒən.mənt/",
     part_of_speech: 'noun',
@@ -3370,7 +3370,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_154',
     topic: 'Giáo dục & Học tập',
-    level: 'C1',
+    level: 'B1',
     word: "pedagogy of the oppressed",
     phonetic: "/ˈped.ə.ɡɒdʒ.i əv ði əˈprest/",
     part_of_speech: 'phrase',
@@ -4646,7 +4646,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_212',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "credit",
     phonetic: "/ˈkredɪt/",
     part_of_speech: 'noun',
@@ -5042,7 +5042,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_230',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "stay behind",
     phonetic: "/steɪ bɪˈhaɪnd/",
     part_of_speech: 'phrase',
@@ -5130,7 +5130,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_234',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "consider",
     phonetic: "/kənˈsɪdə(r)/",
     part_of_speech: 'verb',
@@ -5152,7 +5152,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_235',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "chair",
     phonetic: "/tʃeə(r)/",
     part_of_speech: 'noun',
@@ -5372,7 +5372,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_245',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "element",
     phonetic: "/ˈel.ɪ.mənt/",
     part_of_speech: 'noun',
@@ -5504,7 +5504,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_251',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "economics",
     phonetic: "/ˌiːkəˈnɒmɪks/",
     part_of_speech: 'noun',
@@ -5680,7 +5680,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_259',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "literature",
     phonetic: "/ˈlɪt.rə.tʃər/",
     part_of_speech: 'noun',
@@ -5702,7 +5702,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_260',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "theory",
     phonetic: "/ˈθɪə.ri/",
     part_of_speech: 'noun',
@@ -5724,7 +5724,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_261',
     topic: 'Giáo dục & Học tập',
-    level: 'C1',
+    level: 'B2',
     word: "progression",
     phonetic: "/prəˈɡreʃ.ən/",
     part_of_speech: 'noun',
@@ -5746,7 +5746,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_262',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "familiar",
     phonetic: "/fəˈmɪliə(r)/",
     part_of_speech: 'adjective',
@@ -5768,7 +5768,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_263',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "original",
     phonetic: "/əˈrɪdʒ.ən.əl/",
     part_of_speech: 'adjective',
@@ -5790,7 +5790,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_264',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "evidence",
     phonetic: "/ˈev.ɪ.dəns/",
     part_of_speech: 'noun',
@@ -5856,7 +5856,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_267',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "contain",
     phonetic: "/kənˈteɪn/",
     part_of_speech: 'verb',
@@ -5900,7 +5900,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_269',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "geometry",
     phonetic: "/dʒiˈɒm.ə.tri/",
     part_of_speech: 'noun',
@@ -5944,7 +5944,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_271',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "flask",
     phonetic: "/flɑːsk/",
     part_of_speech: 'noun',
@@ -5966,7 +5966,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_272',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "journal",
     phonetic: "/ˈdʒɜːrnl/",
     part_of_speech: 'noun',
@@ -6032,7 +6032,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_275',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "authority",
     phonetic: "/əˈθɔːrəti/",
     part_of_speech: 'noun',
@@ -6054,7 +6054,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_276',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "factor",
     phonetic: "/ˈfæktər/",
     part_of_speech: 'noun',
@@ -6208,7 +6208,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_283',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "equal",
     phonetic: "/ˈiːkwəl/",
     part_of_speech: 'adjective',
@@ -6252,7 +6252,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_285',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "starry",
     phonetic: "/ˈstɑːri/",
     part_of_speech: 'adjective',
@@ -6274,7 +6274,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_286',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "authentic",
     phonetic: "/ɔːˈθen.tɪk/",
     part_of_speech: 'adjective',
@@ -6318,7 +6318,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_288',
     topic: 'Giáo dục & Học tập',
-    level: 'C1',
+    level: 'B2',
     word: "rationale",
     phonetic: "/ˌræʃ.əˈnæl/",
     part_of_speech: 'noun',
@@ -6384,7 +6384,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_291',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "educational resource",
     phonetic: "/ˌedʒ.uˈkeɪ.ʃən.əl rɪˈzɔːs/",
     part_of_speech: 'noun',
@@ -6406,7 +6406,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_292',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "engaging",
     phonetic: "/ɪnˈɡeɪ.dʒɪŋ/",
     part_of_speech: 'adjective',
@@ -6450,7 +6450,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_294',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "conversational",
     phonetic: "/ˌkɒn.vəˈseɪ.ʃən.əl/",
     part_of_speech: 'adjective',
@@ -6472,7 +6472,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_295',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "beneficial",
     phonetic: "/ˌben.ɪˈfɪʃ.əl/",
     part_of_speech: 'adjective',
@@ -6516,7 +6516,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_297',
     topic: 'Giáo dục & Học tập',
-    level: 'C1',
+    level: 'B2',
     word: "mentorship",
     phonetic: "/ˈmen.tɔː.ʃɪp/",
     part_of_speech: 'noun',
@@ -6560,7 +6560,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_299',
     topic: 'Giáo dục & Học tập',
-    level: 'C1',
+    level: 'B2',
     word: "session duration",
     phonetic: "/ˈseʃn djʊˈreɪʃn/",
     part_of_speech: 'noun',
@@ -6626,7 +6626,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_302',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "respond",
     phonetic: "/rɪˈspɒnd/",
     part_of_speech: 'verb',
@@ -6648,7 +6648,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_303',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "conclude",
     phonetic: "/kənˈkluːd/",
     part_of_speech: 'verb',
@@ -6670,7 +6670,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_304',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "communication skill",
     phonetic: "/kəˌmjuː.nɪˈkeɪ.ʃən skɪl/",
     part_of_speech: 'noun',
@@ -6692,7 +6692,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_305',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "educated",
     phonetic: "/ˈedʒ.u.keɪ.tɪd/",
     part_of_speech: 'adjective',
@@ -6758,7 +6758,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_308',
     topic: 'Giáo dục & Học tập',
-    level: 'C1',
+    level: 'B1',
     word: "knowledge sharing",
     phonetic: "/ˈnɒl.ɪdʒ ˈʃeə.rɪŋ/",
     part_of_speech: 'noun',
@@ -6824,7 +6824,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_311',
     topic: 'Giáo dục & Học tập',
-    level: 'C1',
+    level: 'B2',
     word: "supplementary",
     phonetic: "/ˌsʌplɪˈmentri/",
     part_of_speech: 'adjective',
@@ -6868,7 +6868,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_313',
     topic: 'Giáo dục & Học tập',
-    level: 'C1',
+    level: 'B2',
     word: "framework",
     phonetic: "/ˈfreɪm.wɜːk/",
     part_of_speech: 'noun',
@@ -6890,7 +6890,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_314',
     topic: 'Giáo dục & Học tập',
-    level: 'C1',
+    level: 'B2',
     word: "timespan",
     phonetic: "/ˈtaɪm.spæn/",
     part_of_speech: 'noun',
@@ -6912,7 +6912,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_315',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'B2',
     word: "pupil",
     phonetic: "/ˈpjuː.pəl/",
     part_of_speech: 'noun',
@@ -6934,7 +6934,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_316',
     topic: 'Giáo dục & Học tập',
-    level: 'C1',
+    level: 'B2',
     word: "repository",
     phonetic: "/rɪˈpɒz.ɪ.tər.i/",
     part_of_speech: 'noun',
@@ -6956,7 +6956,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_317',
     topic: 'Giáo dục & Học tập',
-    level: 'B1',
+    level: 'C1',
     word: "academy",
     phonetic: "/əˈkæd.ə.mi/",
     part_of_speech: 'noun',
@@ -7132,7 +7132,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_325',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "laboratory",
     phonetic: "/ləˈbɒr.ə.tər.i/",
     part_of_speech: 'noun',
@@ -7176,7 +7176,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_327',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "specialized",
     phonetic: "/ˈspeʃ.ə.laɪzd/",
     part_of_speech: 'adjective',
@@ -7242,7 +7242,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_330',
     topic: 'Giáo dục & Học tập',
-    level: 'C1',
+    level: 'B2',
     word: "peer feedback",
     phonetic: "/pɪər ˈfiːd.bæk/",
     part_of_speech: 'phrase',
@@ -7264,7 +7264,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_331',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "foster",
     phonetic: "/ˈfɒs.tər/",
     part_of_speech: 'verb',
@@ -7286,7 +7286,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_332',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "problem-solving",
     phonetic: "/ˈprɒb.ləm ˌsɒl.vɪŋ/",
     part_of_speech: 'noun',
@@ -7308,7 +7308,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_333',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "educator",
     phonetic: "/ˈedʒ.ʊ.keɪ.tər/",
     part_of_speech: 'noun',
@@ -7418,7 +7418,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_338',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'C1',
     word: "intensive",
     phonetic: "/ɪnˈten.sɪv/",
     part_of_speech: 'adjective',
@@ -7638,7 +7638,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_348',
     topic: 'Giáo dục & Học tập',
-    level: 'B2',
+    level: 'B1',
     word: "occasion",
     phonetic: "/əˈkeɪ.ʒən/",
     part_of_speech: 'noun',
@@ -7682,7 +7682,7 @@ export const EDUCATION_FLASHCARDS: FlashcardItem[] = [
   {
     id: 'fc_edu_350',
     topic: 'Giáo dục & Học tập',
-    level: 'C1',
+    level: 'B2',
     word: "pairwise",
     phonetic: "/ˈpeə.waɪz/",
     part_of_speech: 'adjective',
