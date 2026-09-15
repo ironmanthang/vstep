@@ -34,8 +34,8 @@
   - Dữ liệu ôn tập lưu trữ trên Supabase PostgreSQL (`user_flashcard_reviews` & `user_daily_stats`), hỗ trợ tương thích ngược kép (chọn đồng thời cột mới `stability, difficulty, reps, lapses, state` và cột cũ `repetition_count, interval_days, ease_factor, status`).
   - Hàng rào ngoại tuyến (Offline Barrier): Tự động phát hiện khi mất kết nối Internet, hiển thị banner cảnh báo và vô hiệu hóa các nút đánh giá để chống phát sinh tiến độ ma không được lưu.
   - Decoupled Corpus Hydration: Tách biệt nội dung từ điển tĩnh (`VSTEP_CORPUS`) và siêu dữ liệu ôn tập (`srs_metadata`). Đảm bảo khi mở rộng kho từ 1.500 lên 2.000, 2.500 và đạt mốc 3.000 từ, toàn bộ từ vựng người dùng đã học vẫn được bảo toàn 100%.
-- **An toàn Dữ liệu & Đặt lại Deck (ConfirmModal & Trung tâm Người học)**:
-  - Nút đặt lại Deck được tích hợp tại Trung tâm Người học (`/`) trong khu vực Quản Lý Dữ Liệu Flashcard nhằm tạo lực cản có chủ đích (High Friction), ngăn chặn hoàn toàn việc chạm nhầm trong khi ôn tập.
+- **An toàn Dữ liệu & Đặt lại Deck (ConfirmModal & Cuối trang Flashcard SRS)**:
+  - Nút đặt lại Deck được tích hợp ở cuối trang Từ vựng SRS (`/flashcard`) trong khu vực Quản lý dữ liệu Flashcard, bảo đảm tính cục bộ của nghiệp vụ Deck mà vẫn tạo khoảng cách an toàn tránh chạm nhầm trong khi ôn tập.
   - Được bảo vệ bằng Modal xác nhận cảnh báo 2 bước chống bấm nhầm (`src/components/common/ConfirmModal.tsx`), tự động căn giữa trên Desktop và chuyển thành Bottom Sheet trên Mobile.
   - Nút Hủy bỏ được focus mặc định để tránh xác nhận ngoài ý muốn.
   - Khi xác nhận đặt lại: Xóa sạch dữ liệu trên Supabase Cloud (`user_flashcard_reviews` và `user_daily_stats`), reset toàn bộ thẻ về trạng thái từ mới ban đầu và đưa số thẻ đã ôn hôm nay về 0.

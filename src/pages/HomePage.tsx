@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { RefreshIcon } from '../components/Icons';
 import { useUserStore } from '../services/user/userStore';
 import { useFlashcardStore } from '../features/flashcard/useFlashcardStore';
 import { useAuth } from '../services/supabase/authStore';
 import { useNotification } from '../hooks/useNotification';
 import { Toast } from '../components/common/Toast';
-import { ConfirmModal } from '../components/common/ConfirmModal';
 import './HomePage.css';
 
 export const HomePage: React.FC = () => {
@@ -18,14 +16,12 @@ export const HomePage: React.FC = () => {
     latestMockTest,
   } = useUserStore();
 
-  const { stats, resetDeck } = useFlashcardStore();
+  const { stats } = useFlashcardStore();
   const { user } = useAuth();
   const { statusMessage, showNotification, clearNotification } = useNotification();
 
   const [isEditingName, setIsEditingName] = useState(false);
   const [tempName, setTempName] = useState(userDisplayName);
-  const [isResetModalOpen, setIsResetModalOpen] = useState(false);
-  const [isResetting, setIsResetting] = useState(false);
 
   const handleSaveName = () => {
     const trimmed = tempName.trim();
@@ -33,19 +29,6 @@ export const HomePage: React.FC = () => {
       setUserName(trimmed);
       setIsEditingName(false);
       showNotification('Đã cập nhật tên người học thành công!', 'success');
-    }
-  };
-
-  const handleConfirmResetDeck = async () => {
-    setIsResetting(true);
-    const res = await resetDeck();
-    setIsResetting(false);
-    setIsResetModalOpen(false);
-
-    if (res.success) {
-      showNotification('✓ Đã đặt lại toàn bộ thẻ và số thẻ đã ôn hôm nay về 0.', 'info');
-    } else {
-      showNotification(res.error || 'Không thể đặt lại tiến độ trên đám mây. Vui lòng thử lại.', 'error');
     }
   };
 
@@ -141,42 +124,6 @@ export const HomePage: React.FC = () => {
         </div>
       </div>
 
-      {/* SRS Deck Data Management Card */}
-      <div className="card-surface home-settings-card">
-        <div className="home-settings-row">
-          <span className="home-settings-label">Dữ liệu flashcard SRS:</span>
-          <button
-            type="button"
-            className="secondary-btn home-reset-btn"
-            onClick={() => setIsResetModalOpen(true)}
-            disabled={isResetting}
-          >
-            <RefreshIcon size={14} />
-            <span>Đặt lại toàn bộ Deck từ vựng</span>
-          </button>
-        </div>
-      </div>
-
-      {/* Confirmation Modal for Deck Reset */}
-      <ConfirmModal
-        isOpen={isResetModalOpen}
-        onClose={() => {
-          if (!isResetting) setIsResetModalOpen(false);
-        }}
-        onConfirm={handleConfirmResetDeck}
-        isLoading={isResetting}
-        title="Đặt lại toàn bộ Deck từ vựng?"
-        description={
-          <>
-            Hành động này sẽ <strong>xóa vĩnh viễn</strong> toàn bộ tiến độ Spaced Repetition (SRS) của{' '}
-            <strong>3.000 từ vựng</strong> và đưa bộ đếm ôn tập hôm nay về <strong>0 thẻ</strong> trên cả thiết bị này và
-            tài khoản đám mây của bạn.
-          </>
-        }
-        warningText="Dữ liệu đã xóa không thể khôi phục lại. Bạn sẽ cần bắt đầu học lại từ đầu."
-        confirmLabel="Xác nhận xóa & Đặt lại"
-        cancelLabel="Hủy bỏ (Giữ tiến độ)"
-      />
     </div>
   );
 };

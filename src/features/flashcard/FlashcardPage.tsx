@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { useFlashcardStore } from './useFlashcardStore';
 import { FlashcardCard } from './FlashcardCard';
 import type { SRSRating } from '../../types/schemas';
-import { CheckCircleIcon } from '../../components/Icons';
+import { CheckCircleIcon, RefreshIcon } from '../../components/Icons';
 import { useNotification } from '../../hooks/useNotification';
 import { Toast } from '../../components/common/Toast';
+import { ConfirmModal } from '../../components/common/ConfirmModal';
 import { useUserStore } from '../../services/user/userStore';
 import { ReminderSettingsModal } from './components/ReminderSettingsModal';
 import { WordInspectorModal, type WordInspectorFilter } from './components/WordInspectorModal';
@@ -26,6 +27,7 @@ export const FlashcardPage: React.FC = () => {
     isCloudSyncing,
     isOnline,
     submitReview,
+    resetDeck,
   } = useFlashcardStore();
 
   const { userDisplayName } = useUserStore();
@@ -34,9 +36,24 @@ export const FlashcardPage: React.FC = () => {
   const [inspectorFilter, setInspectorFilter] = useState<WordInspectorFilter | null>(null);
   const [isFlipped, setIsFlipped] = useState(false);
   const [isReminderModalOpen, setIsReminderModalOpen] = useState(false);
+  const [isResetModalOpen, setIsResetModalOpen] = useState(false);
+  const [isResetting, setIsResetting] = useState(false);
 
   // Active card in queue (always the head of the priority queue)
   const currentCard = reviewQueue[0] || null;
+
+  const handleConfirmResetDeck = async () => {
+    setIsResetting(true);
+    const res = await resetDeck();
+    setIsResetting(false);
+    setIsResetModalOpen(false);
+
+    if (res.success) {
+      showNotification('✓ Đã đặt lại toàn bộ thẻ và số thẻ đã ôn hôm nay về 0.', 'info');
+    } else {
+      showNotification(res.error || 'Không thể đặt lại tiến độ trên đám mây. Vui lòng thử lại.', 'error');
+    }
+  };
 
 
   const handleReview = async (cardId: string, rating: SRSRating) => {
@@ -282,6 +299,46 @@ export const FlashcardPage: React.FC = () => {
         onClose={() => setIsReminderModalOpen(false)}
         dueCount={totalDueCount}
         onNotify={showNotification}
+      />
+
+      {/* SRS Deck Data Management Card (Reset Deck) */}
+      <div className="card-surface flashcard-settings-card">
+        <div className="flashcard-settings-row">
+          <div className="flashcard-settings-text">
+            <span className="flashcard-settings-label">Dữ liệu flashcard SRS</span>
+            <span className="flashcard-settings-desc">Khởi tạo lại toàn bộ tiến độ 3.000 từ về trạng thái ban đầu</span>
+          </div>
+          <button
+            type="button"
+            className="secondary-btn flashcard-reset-btn"
+            onClick={() => setIsResetModalOpen(true)}
+            disabled={isResetting}
+          >
+            <RefreshIcon size={14} />
+            <span>Đặt lại toàn bộ Deck từ vựng</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Confirmation Modal for Deck Reset */}
+      <ConfirmModal
+        isOpen={isResetModalOpen}
+        onClose={() => {
+          if (!isResetting) setIsResetModalOpen(false);
+        }}
+        onConfirm={handleConfirmResetDeck}
+        isLoading={isResetting}
+        title="Đặt lại toàn bộ Deck từ vựng?"
+        description={
+          <>
+            Hành động này sẽ <strong>xóa vĩnh viễn</strong> toàn bộ tiến độ Spaced Repetition (SRS) của{' '}
+            <strong>3.000 từ vựng</strong> và đưa bộ đếm ôn tập hôm nay về <strong>0 thẻ</strong> trên cả thiết bị này và
+            tài khoản đám mây của bạn.
+          </>
+        }
+        warningText="Dữ liệu đã xóa không thể khôi phục lại. Bạn sẽ cần bắt đầu học lại từ đầu."
+        confirmLabel="Xác nhận xóa & Đặt lại"
+        cancelLabel="Hủy bỏ (Giữ tiến độ)"
       />
     </div>
   );

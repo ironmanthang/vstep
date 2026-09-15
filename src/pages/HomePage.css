@@ -195,39 +195,6 @@
   color: var(--text-secondary);
 }
 
-/* SRS Settings Card */
-.home-settings-card {
-  padding: var(--space-3) var(--space-4);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-}
-
-.home-settings-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-}
-
-.home-settings-label {
-  font-size: var(--fs-xs);
-  color: var(--text-muted);
-}
-
-.home-reset-btn {
-  color: var(--coral);
-  border-color: var(--coral);
-  font-size: var(--fs-xs);
-  padding: 6px 12px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.home-reset-btn:hover {
-  background: var(--coral-subtle);
-}
 
 @media (min-width: 640px) {
   .home-metrics-grid {

@@ -3,7 +3,7 @@
 .flashcard-page {
   display: flex;
   flex-direction: column;
-  gap: var(--space-6);
+  gap: var(--space-4);
   min-width: 0;
   max-width: 100%;
   width: 100%;
@@ -112,7 +112,7 @@
 .controls-row {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: var(--space-2);
   padding-bottom: var(--space-2);
   border-bottom: 1px solid var(--border);
   min-width: 0;
@@ -519,5 +519,62 @@
   .vocab-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* SRS Deck Data Management Card (Reset Deck) at Bottom */
+.flashcard-settings-card {
+  margin-top: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-surface);
+}
+
+.flashcard-settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.flashcard-settings-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.flashcard-settings-label {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.flashcard-settings-desc {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.flashcard-reset-btn {
+  color: var(--coral);
+  border-color: var(--coral);
+  font-size: var(--fs-xs);
+  padding: 6px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.flashcard-reset-btn:hover:not(:disabled) {
+  background: var(--coral-subtle);
+}
+
+.flashcard-reset-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
