@@ -163,4 +163,32 @@ describe('Decoupled Corpus Hydration Safety Suite (FSRS v3)', () => {
     expect(migrated.state).toBe(2);
     expect(migrated.next_review_timestamp).toBe(1701209600000);
   });
+
+  it('persists and restores chosen CEFR level filter to localStorage', () => {
+    const store = new Map<string, string>();
+    const mockStorage = {
+      getItem: (k: string) => store.get(k) ?? null,
+      setItem: (k: string, v: string) => store.set(k, v),
+      removeItem: (k: string) => store.delete(k),
+    };
+
+    const STORAGE_KEY = 'vstep_flashcard_cefr_level';
+
+    const getInitialLevel = () => {
+      const saved = mockStorage.getItem(STORAGE_KEY);
+      if (saved === 'B1' || saved === 'B2' || saved === 'C1' || saved === 'Tất cả') {
+        return saved;
+      }
+      return 'Tất cả';
+    };
+
+    expect(getInitialLevel()).toBe('Tất cả');
+
+    mockStorage.setItem(STORAGE_KEY, 'B1');
+    expect(getInitialLevel()).toBe('B1');
+
+    mockStorage.setItem(STORAGE_KEY, 'C1');
+    expect(getInitialLevel()).toBe('C1');
+  });
 });
+

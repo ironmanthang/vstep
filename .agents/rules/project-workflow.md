@@ -17,6 +17,7 @@ trigger: always_on
 
 ## Commands & Monorepo Workflow
 - **PowerShell Shell (Windows):** The shell is PowerShell (`pwsh`), not bash. Never use Linux/bash-only commands. Common substitutions: `head -n N` → `Select-Object -First N`, `tail -n N` → `Select-Object -Last N`, `grep` → `Select-String`.
+- **Mandatory Pre-Push Verification Pipeline:** Never run ad-hoc piecemeal validation commands (`tsc`, `lint`, `test`) prior to commit or push. Always execute `pnpm prepush` (`node scripts/prepush.mjs`) as the single source of truth. It validates composite project references (`tsc -b --noEmit`), oxlint (`oxlint --deny-warnings`), vitest (`vitest run`), and runs the production build smoke test (`tsc -b && vite build`) in one deterministic gate.
 - **pnpm typecheck pattern:** To run `tsc` in a workspace package, always use `pnpm --filter <workspace-name> exec tsc --noEmit`. Never use `pnpm --filter <workspace-name> tsc --noEmit` — that fails because `tsc` is a binary, not a package.json script.
 - **Proactive Command Execution:** Whenever a diagnostic check, environment check, file existence check (e.g., `Test-Path`), log inspection, or non-destructive read-only command is needed, proactively run or propose the command instead of asking the user to execute it manually.
 - **Proactive Self-Correction & Learning:** Whenever the user points out a mistake in behavior/execution, or you catch your own mistake during a task, proactively suggest and propose an update to the appropriate rule file (global or workspace rule) so the lesson is persisted for future sessions.
