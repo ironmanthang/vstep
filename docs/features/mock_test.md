@@ -32,6 +32,6 @@
 - **Biểu đồ Radar SVG Native**: [MockTestRadarChart.tsx](file:///d:/program/vstep/src/features/mock-test/components/MockTestRadarChart.tsx) trực quan hóa 4 trục (Nghe, Đọc, Viết, Nói) và đa giác mục tiêu (B1/B2/C1) mà không dùng thư viện ngoài.
 - **Bảng điểm & Phân tích**: [MockTestResultDashboard.tsx](file:///d:/program/vstep/src/features/mock-test/components/MockTestResultDashboard.tsx) hiển thị chứng nhận năng lực, thẻ điểm 4 kỹ năng, lịch sử thi và nút chuyển sang chế độ Review.
 - **Chế độ Review chi tiết**: [MockTestReviewViewer.tsx](file:///d:/program/vstep/src/features/mock-test/components/MockTestReviewViewer.tsx) đối soát từng câu trắc nghiệm với transcript dẫn chứng, bài đọc song song, bài viết mẫu AI-Fixed B1 và audio kèm phân tích âm vị.
-- **Lobby chọn đề thi**: [MockTestLobby.tsx](file:///d:/program/vstep/src/features/mock-test/components/MockTestLobby.tsx) hỗ trợ chuyển đổi linh hoạt giữa 7 bộ đề thi chuẩn ULIS (Đề 01 đến Đề 07).
+- **Lobby chọn đề thi**: [MockTestLobby.tsx](file:///d:/program/vstep/src/features/mock-test/components/MockTestLobby.tsx) và [MockTestLobby.css](file:///d:/program/vstep/src/features/mock-test/components/MockTestLobby.css) thiết kế tối giản không cuộn (Zero-Scroll Mobile Layout, ~340px chiều cao dọc), thanh chọn 7 bộ đề thi chuẩn ULIS (Đề 01 đến Đề 07) kèm điểm lần thi gần nhất, 4 thẻ kỹ năng chuẩn tiếng Anh và quy chế phòng thi 1 dòng.
 - **Trang điều hướng Lazy**: [MockTestPage.tsx](file:///d:/program/vstep/src/pages/MockTestPage.tsx) tích hợp dynamic code splitting với React Suspense cho phòng thi.
 

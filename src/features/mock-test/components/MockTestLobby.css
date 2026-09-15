@@ -1,0 +1,206 @@
+/* Mock Test Lobby — Minimalist & Zero-Scroll Layout */
+
+.mock-test-lobby-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  width: 100%;
+  gap: var(--space-3);
+}
+
+/* Test Edition Switcher Bar */
+.mock-test-edition-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.mock-test-edition-btn {
+  padding: 6px 12px;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.mock-test-edition-btn.active {
+  background-color: var(--primary-subtle);
+  border-color: var(--primary);
+  color: var(--primary-text);
+  font-weight: 800;
+}
+
+/* Selected Test Card */
+.mock-test-card {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+}
+
+/* Test Meta Row */
+.mock-test-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.mock-test-meta-title-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.mock-test-meta-title {
+  font-size: var(--fs-md);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.mock-test-meta-time {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Previous Attempt Banner */
+.mock-test-attempt-banner {
+  background: var(--emerald-subtle);
+  border: 1px solid var(--emerald);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.mock-test-attempt-text {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: var(--emerald-text);
+}
+
+.mock-test-attempt-link {
+  font-size: var(--fs-xs);
+  padding: 4px 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--emerald);
+  color: var(--emerald-text);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.mock-test-attempt-link:hover {
+  background: var(--emerald-subtle);
+}
+
+/* 4 Skills Grid */
+.mock-test-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+}
+
+.mock-test-skill-card {
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-subtle);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.mock-test-skill-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mock-test-skill-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.mock-test-skill-name {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.mock-test-skill-detail {
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+
+/* Rules Notice Strip */
+.mock-test-rules-strip {
+  padding: 8px 12px;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--border);
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* CTA Button */
+.mock-test-cta-btn {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--fs-base);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+/* Responsive Desktop Enhancements */
+@media (min-width: 640px) {
+  .mock-test-card {
+    padding: var(--space-5);
+    gap: var(--space-4);
+  }
+
+  .mock-test-skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+  }
+
+  .mock-test-skill-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-3) var(--space-2);
+    gap: var(--space-2);
+  }
+
+  .mock-test-skill-info {
+    align-items: center;
+  }
+}
