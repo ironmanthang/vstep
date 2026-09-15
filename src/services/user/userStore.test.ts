@@ -53,5 +53,12 @@ describe('userStore and profile storage utilities', () => {
     const parsed = JSON.parse(raw!);
     expect(parsed.study_dates).toContain('2026-09-01');
   });
+
+  it('provides clearProfileSessionSync helper to reset session sync gate', async () => {
+    const { clearProfileSessionSync } = await import('./userStore');
+    expect(typeof clearProfileSessionSync).toBe('function');
+    expect(() => clearProfileSessionSync()).not.toThrow();
+  });
 });
+
 

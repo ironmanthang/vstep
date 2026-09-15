@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useAuth } from '../supabase/authStore';
 import {
   fetchUserProfile,
@@ -106,6 +106,13 @@ export function notifyProfileChanged(profile?: UserLearningProfile): void {
   profileListeners.forEach((listener) => listener(profile));
 }
 
+// Module-level set of user IDs who have completed profile cloud sync in this app session
+const syncedProfileUserIds = new Set<string>();
+
+export function clearProfileSessionSync(): void {
+  syncedProfileUserIds.clear();
+}
+
 export function useUserStore() {
   const { user, isAuthenticated } = useAuth();
   const userId = user?.id;
@@ -116,8 +123,6 @@ export function useUserStore() {
     }
     return DEFAULT_PROFILE;
   });
-
-  const syncedUserIdRef = useRef<string | null>(null);
 
   // Synchronize state across active hook instances
   useEffect(() => {
@@ -134,18 +139,24 @@ export function useUserStore() {
     };
   }, [userId]);
 
-  // Synchronize profile from Supabase when user logs in or switches
+  // Adjust state during render when userId changes (official React pattern)
+  const [prevUserId, setPrevUserId] = useState(userId);
+  if (prevUserId !== userId) {
+    setPrevUserId(userId);
+    setProfile(userId ? loadUserItem<UserLearningProfile>(userId, 'user_learning_profile_v2', DEFAULT_PROFILE) : DEFAULT_PROFILE);
+  }
+
+  // Synchronize profile from Supabase ONCE per user session (app boot or user account switch)
   useEffect(() => {
     if (!isAuthenticated || !userId) {
-      syncedUserIdRef.current = null;
       return;
     }
 
-    if (syncedUserIdRef.current === userId) {
+    if (syncedProfileUserIds.has(userId)) {
       return;
     }
 
-    syncedUserIdRef.current = userId;
+    syncedProfileUserIds.add(userId);
     let isMounted = true;
 
     async function hydrateFromCloud() {
@@ -330,11 +341,11 @@ export function useUserStore() {
   }, [userId]);
 
   const resetProfile = useCallback(() => {
-    syncedUserIdRef.current = null;
-    setProfile(DEFAULT_PROFILE);
     if (userId) {
+      syncedProfileUserIds.delete(userId);
       removeUserItem(userId, 'user_learning_profile_v2');
     }
+    setProfile(DEFAULT_PROFILE);
     if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
       localStorage.removeItem(USER_PROFILE_STORAGE_KEY);
     }

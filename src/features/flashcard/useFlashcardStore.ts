@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import type { FlashcardItem, SRSRating } from '../../types/schemas';
 import { VSTEP_CORPUS } from './corpus';
 import { getReviewQueue, reviewCard, getSRSDeckStats, getDueReviewCount } from './srs';
@@ -27,6 +27,71 @@ function getTodayString(): string {
   return `${year}-${month}-${day}`;
 }
 
+// Module-level memory cache for the active user's deck to eliminate re-parsing and duplicate state
+let cachedDeckUserId: string | null = null;
+let cachedDeckCards: FlashcardItem[] | null = null;
+let cachedReviewedToday = 0;
+let cachedReviewedDate: string | null = null;
+const deckListeners = new Set<() => void>();
+
+function notifyDeckChanged(): void {
+  deckListeners.forEach((listener) => listener());
+}
+
+// Module-level set of user IDs who have completed cloud sync in this app session
+const syncedSRSUserIds = new Set<string>();
+
+export function clearSRSSessionSync(): void {
+  syncedSRSUserIds.clear();
+  cachedDeckUserId = null;
+  cachedDeckCards = null;
+  cachedReviewedToday = 0;
+  cachedReviewedDate = null;
+}
+
+function getCardsForUser(userId?: string): FlashcardItem[] {
+  if (!userId) {
+    return VSTEP_CORPUS;
+  }
+  if (cachedDeckUserId === userId && cachedDeckCards) {
+    return cachedDeckCards;
+  }
+  const cached = loadUserItem<FlashcardItem[] | null>(userId, 'flashcard_deck_v3', null);
+  if (cached && Array.isArray(cached) && cached.length > 0) {
+    const reviewMap = new Map(cached.map((c) => [c.id, c.srs_metadata]));
+    const hydrated = VSTEP_CORPUS.map((seedCard) => {
+      const savedMeta = reviewMap.get(seedCard.id);
+      return savedMeta ? { ...seedCard, srs_metadata: savedMeta } : seedCard;
+    });
+    cachedDeckUserId = userId;
+    cachedDeckCards = hydrated;
+    return hydrated;
+  }
+  cachedDeckUserId = userId;
+  cachedDeckCards = VSTEP_CORPUS;
+  return VSTEP_CORPUS;
+}
+
+function getReviewedTodayForUser(userId?: string): number {
+  if (!userId) {
+    return 0;
+  }
+  const today = getTodayString();
+  if (cachedDeckUserId === userId && cachedReviewedDate === today) {
+    return cachedReviewedToday;
+  }
+  const savedDate = loadUserItem<string | null>(userId, 'last_review_date_v3', null);
+  if (savedDate === today) {
+    const count = loadUserItem<number>(userId, 'reviewed_today_count_v3', 0);
+    cachedReviewedToday = count;
+    cachedReviewedDate = today;
+    return count;
+  }
+  cachedReviewedToday = 0;
+  cachedReviewedDate = today;
+  return 0;
+}
+
 export function useFlashcardStore() {
   const { user, isAuthenticated } = useAuth();
   const userId = user?.id;
@@ -50,20 +115,29 @@ export function useFlashcardStore() {
     };
   }, []);
 
-  // Initialize cards: canonical VSTEP_CORPUS
-  const [cards, setCards] = useState<FlashcardItem[]>(() => {
-    if (userId) {
-      const cached = loadUserItem<FlashcardItem[] | null>(userId, 'flashcard_deck_v3', null);
-      if (cached && Array.isArray(cached) && cached.length > 0) {
-        const reviewMap = new Map(cached.map((c) => [c.id, c.srs_metadata]));
-        return VSTEP_CORPUS.map((seedCard) => {
-          const savedMeta = reviewMap.get(seedCard.id);
-          return savedMeta ? { ...seedCard, srs_metadata: savedMeta } : seedCard;
-        });
-      }
-    }
-    return VSTEP_CORPUS;
-  });
+  // Initialize cards synchronously from memory cache or local user storage
+  const [cards, setCards] = useState<FlashcardItem[]>(() => getCardsForUser(userId));
+  const [reviewedToday, setReviewedToday] = useState<number>(() => getReviewedTodayForUser(userId));
+
+  // Cross-component synchronizer (e.g. HomePage <-> FlashcardPage)
+  useEffect(() => {
+    const handleUpdate = () => {
+      setCards(getCardsForUser(userId));
+      setReviewedToday(getReviewedTodayForUser(userId));
+    };
+    deckListeners.add(handleUpdate);
+    return () => {
+      deckListeners.delete(handleUpdate);
+    };
+  }, [userId]);
+
+  // Adjust state during render when userId changes (official React pattern)
+  const [prevUserId, setPrevUserId] = useState(userId);
+  if (prevUserId !== userId) {
+    setPrevUserId(userId);
+    setCards(getCardsForUser(userId));
+    setReviewedToday(getReviewedTodayForUser(userId));
+  }
 
   const [selectedTopic, setSelectedTopic] = useState<string>('Tất cả');
   const [selectedLevel, setSelectedLevelState] = useState<'Tất cả' | 'B1' | 'B2' | 'C1'>(() => {
@@ -79,41 +153,25 @@ export function useFlashcardStore() {
     localStorage.setItem('vstep_flashcard_cefr_level', level);
   }, []);
 
-  // Daily reviewed count
-  const [reviewedToday, setReviewedToday] = useState<number>(() => {
-    if (userId) {
-      const today = getTodayString();
-      const savedDate = loadUserItem<string | null>(userId, 'last_review_date_v3', null);
-      if (savedDate === today) {
-        return loadUserItem<number>(userId, 'reviewed_today_count_v3', 0);
-      }
-    }
-    return 0;
-  });
-
-  // Track if cloud sync has been completed for current user
-  const syncedUserIdRef = useRef<string | null>(null);
-
-  // Synchronize with Supabase Cloud upon user sign-in or account switch
+  // Synchronize with Supabase Cloud ONCE per user session (app boot or user account switch)
   useEffect(() => {
     if (!isAuthenticated || !userId) {
-      syncedUserIdRef.current = null;
       return;
     }
 
-    if (syncedUserIdRef.current === userId) {
+    if (syncedSRSUserIds.has(userId)) {
       return;
     }
 
-    syncedUserIdRef.current = userId;
+    syncedSRSUserIds.add(userId);
     let isMounted = true;
-    setIsCloudSyncing(true);
 
     const today = getTodayString();
 
-    // Hydrate ground truth from Supabase Cloud
+    // Hydrate ground truth from Supabase Cloud in background
     async function syncWithCloud() {
       if (!userId) return;
+      setIsCloudSyncing(true);
 
       try {
         const [cloudReviews, cloudDailyCount] = await Promise.all([
@@ -163,12 +221,17 @@ export function useFlashcardStore() {
           return seedCard;
         });
 
+        cachedDeckUserId = userId;
+        cachedDeckCards = nextCards;
         setCards(nextCards);
         saveUserItem(userId, 'flashcard_deck_v3', nextCards);
 
         if (cloudDailyCount > 0) {
+          cachedReviewedToday = Math.max(cachedReviewedToday, cloudDailyCount);
+          cachedReviewedDate = today;
           setReviewedToday((prev) => Math.max(prev, cloudDailyCount));
         }
+        notifyDeckChanged();
       } catch (err) {
         console.error('Failed to sync flashcard progress with cloud:', err);
       } finally {
@@ -193,11 +256,14 @@ export function useFlashcardStore() {
     }
     setReviewedToday((prev) => {
       const next = prev + 1;
+      cachedReviewedToday = next;
+      cachedReviewedDate = today;
       if (userId) {
         saveUserItem(userId, 'last_review_date_v3', today);
         saveUserItem(userId, 'reviewed_today_count_v3', next);
         incrementUserDailyCountInCloud(userId, today, next);
       }
+      notifyDeckChanged();
       return next;
     });
   }, [userId]);
@@ -276,14 +342,17 @@ export function useFlashcardStore() {
 
       const { updatedCard } = reviewCard(targetCard, rating);
 
-      // 2. Immediately update React state & local storage
+      // 2. Immediately update React state & local storage & module cache
       setCards((prevCards) => {
         const next = prevCards.map((c) => (c.id === cardId ? updatedCard : c));
+        cachedDeckUserId = userId ?? null;
+        cachedDeckCards = next;
         if (userId) {
           saveUserItem(userId, 'flashcard_deck_v3', next);
         }
         return next;
       });
+      notifyDeckChanged();
 
       // 3. Increment daily review count
       incrementDailyCount();
@@ -315,9 +384,15 @@ export function useFlashcardStore() {
       removeUserItem(userId, 'last_review_date_v3');
     }
 
+    cachedDeckUserId = userId ?? null;
+    cachedDeckCards = VSTEP_CORPUS;
+    cachedReviewedToday = 0;
+    cachedReviewedDate = today;
+
     setCards(VSTEP_CORPUS);
     setReviewedToday(0);
     clearBadge();
+    notifyDeckChanged();
 
     return { success: true };
   }, [userId]);

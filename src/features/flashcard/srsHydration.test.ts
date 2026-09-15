@@ -190,5 +190,12 @@ describe('Decoupled Corpus Hydration Safety Suite (FSRS v3)', () => {
     mockStorage.setItem(STORAGE_KEY, 'C1');
     expect(getInitialLevel()).toBe('C1');
   });
+
+  it('provides clearSRSSessionSync to reset session cache on account change or signout', async () => {
+    const { clearSRSSessionSync } = await import('./useFlashcardStore');
+    expect(typeof clearSRSSessionSync).toBe('function');
+    expect(() => clearSRSSessionSync()).not.toThrow();
+  });
 });
+
 

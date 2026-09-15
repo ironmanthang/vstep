@@ -60,6 +60,8 @@
 ## Ranh giới Xử lý
 - **Phía Client (Trình duyệt)**:
   - Tầng lưu trữ `userStorage.ts` cô lập triệt để dữ liệu theo `userId` (`vstep_${userId}_*`), tự động xóa sạch khi đăng xuất chống rò rỉ dữ liệu giữa các tài khoản trên cùng thiết bị.
+  - **Khởi tạo Cục bộ Đồng bộ & Triệt tiêu Chớp Nháy (Zero Double-Render Flash)**: `authStore.ts` hoạt động như một singleton module store qua native React `useSyncExternalStore`, quét token `localStorage` (`sb-*-auth-token`) ngay khi nạp module để cung cấp `user` và `userId` đồng bộ ở Frame 1 (0ms). `useFlashcardStore.ts` và `userStore.ts` khởi tạo trạng thái tức thì từ bộ nhớ đệm cục bộ (`flashcard_deck_v3`, `user_learning_profile_v2`), triệt tiêu hoàn toàn hiện tượng chớp nhấp nháy từ vựng mặc định `curriculum` và chỉ số 0 khi chuyển tab.
+  - **Cổng Đồng Bộ Cloud Theo Phiên (Session-Gated Cloud Sync)**: Sử dụng các Set cấp module (`syncedSRSUserIds`, `syncedProfileUserIds`) bảo đảm Supabase Cloud chỉ được truy vấn đối soát chạy ngầm 1 lần duy nhất khi nạp ứng dụng / F5 hoặc đổi tài khoản. Chuyển đổi nội bộ giữa các tab hoàn toàn chạy cục bộ 0ms, không phát sinh HTTP request lặp lại.
   - Cơ chế Uniform Cloud Projection chiếu trực tiếp bản ghi đám mây lên danh mục tĩnh, triệt tiêu hoàn toàn lỗi ghép thẻ Frankenstein.
   - Cơ chế Remote Reset Reconciliation tự động phát hiện và đồng bộ hóa trạng thái reset/retake từ thiết bị khác (xóa local cache khi cloud trả về rỗng).
   - Tính toán thuật toán Spaced Repetition (SRS) cho Flashcard và chuyển đổi điểm VSTEP (0ms), hàng rào ngoại tuyến dừng ôn tập khi mất kết nối mạng.
