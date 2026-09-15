@@ -229,7 +229,7 @@ export const FlashcardPage: React.FC = () => {
               onReview={handleReview}
               isFlipped={isFlipped}
               onFlip={() => setIsFlipped(prev => !prev)}
-              disabled={!isOnline || isCloudSyncing || isResetting}
+              disabled={!isOnline || isCloudSyncing}
             />
           </div>
         ) : (
