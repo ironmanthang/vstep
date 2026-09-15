@@ -133,12 +133,6 @@
   max-width: 200px;
 }
 
-.home-profile-sync-badge {
-  font-size: 0.6875rem;
-  color: var(--emerald);
-  font-weight: 600;
-  white-space: nowrap;
-}
 
 /* 4 Key Metrics Grid */
 .home-metrics-grid {

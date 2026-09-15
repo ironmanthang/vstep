@@ -127,8 +127,7 @@ export const Layout: React.FC = () => {
             </span>
           </NavLink>
 
-          <div style={{ marginTop: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span style={{ fontSize: '0.75rem', color: '#10B981', fontWeight: 600 }}>● Đồng bộ Cloud</span>
+          <div style={{ marginTop: '8px', display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
             <button
               onClick={handleSignOut}
               style={{

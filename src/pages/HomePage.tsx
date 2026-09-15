@@ -106,7 +106,6 @@ export const HomePage: React.FC = () => {
 
           <div className="home-profile-sub-row">
             {user?.email && <span className="home-profile-email">{user.email}</span>}
-            <span className="home-profile-sync-badge">● Đồng bộ Cloud</span>
           </div>
         </div>
       </div>

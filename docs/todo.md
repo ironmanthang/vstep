@@ -155,5 +155,5 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] page mock test, remove: "Phòng Thi Thử VSTEP Thực Chiến/Mô phỏng 100% định dạng phòng máy Bộ GD&ĐT (180 phút, cấm tua/tra từ, tự động thu bài, làm tròn 0.5 chính thức)." "Đề Thi Chuẩn Số 1
 VSTEP Authentic Full Mock Test 01 (Chuẩn ĐHNN - ĐHQGHN)
 ULIS - ĐHQGHN / VNU Test Standard • Tổng thời lượng: 180 phút" "Quy chế phòng thi: Khóa toàn bộ công cụ tra từ và phụ đề; không thể quay lại phần thi trước sau khi đã chuyển tiếp; hệ thống tự động ghi nhận nếu click chuột ra ngoài cửa sổ thi; bảng điểm Barem 0.5 và Radar Chart 4 trục hiển thị ngay sau khi hoàn thành." becuase it repeat words many times. next keep the english skill, delete the vietnam skill "nghe, noi,..". 
-- [ ] why in mobile, even in dark mode, my top bar where it show the system infos, are still bright yellow color?it suppose to be dark, is it a build dpeloy problem? i reset the phone and reload the website on my phone
-- [ ] if the text "Đồng bộ Cloud" is hardcode->delete it
+- [ ] why in mobile, even when i reset the phone and reload the website on my phone and are in dark mode, my top bar where it show the system infos, are still bright yellow color?it suppose to be dark, is it a build dpeloy problem? 
+- [x] if the text "Đồng bộ Cloud" is hardcode->delete it
