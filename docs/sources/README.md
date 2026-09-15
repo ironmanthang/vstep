@@ -17,5 +17,6 @@ This directory maintains the source citations, original transcripts, reference t
 | [`writing/`](file:///d:/program/vstep/docs/sources/writing/README.md) | Task 1 (Letter) & Task 2 (Essay) prompts, benchmark sample essays | ULIS Sets 01–07 (14 tasks: 7 Task 1 Letters + 7 Task 2 Essays with official B1 benchmark answers), HCMUE Drills 01–05 (10 tasks: 5 Letters + 5 Essays with official model answers and linguistic analysis) |
 | [`speaking/`](file:///d:/program/vstep/docs/sources/speaking/README.md) | Part 1 (Social), Part 2 (Solution), Part 3 (Topic) prompt cards | ULIS Sets 01–07 (21 parts: 7 Part 1 + 7 Part 2 + 7 Part 3), HCMUE Drills 01–05 (15 parts: 5 Part 1 + 5 Part 2 + 5 Part 3 with official outlines, follow-ups, and sample responses) |
 | [`mock_tests/`](file:///d:/program/vstep/docs/sources/mock_tests/README.md) | 180-Minute Exam Manifests stitching the 4 skills above | Mock Tests 01–07: ULIS Full 180-min Exams (L: 35Q, R: 40Q, W: 2 tasks, S: 3 parts) |
+| Flashcard Corpus | 3.000 từ vựng trọng tâm theo 8 chủ đề VSTEP | Ngữ liệu từ đề thi thật ULIS/HCMUE, chuẩn hóa bậc CEFR (B1–C1) theo Oxford 3000/5000 & CEFR-J/Octanove |
 
 

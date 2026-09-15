@@ -9,6 +9,11 @@
   - Phân loại theo 8 chủ đề VSTEP chuẩn (tổng 3.000 từ, 100% ID và từ vựng duy nhất): Xã hội & Văn hóa (450 từ), Môi trường & Tự nhiên (400 từ), Công việc & Sự nghiệp (380 từ), Sức khỏe & Lối sống (380 từ), Giáo dục & Học tập (350 từ), Du lịch & Đô thị (350 từ), Truyền thông & Giao tiếp (350 từ), Khoa học & Công nghệ (340 từ).
   - Cấu trúc thẻ đầy đủ: Từ vựng, phiên âm IPA chuẩn, audio phát âm bản xứ, định nghĩa tiếng Việt ngắn gọn, Collocations đi kèm và câu ví dụ song ngữ trích từ ngữ cảnh bài thi.
   - **Bộ Lọc Cấp Độ CEFR (B1, B2, C1)**: Cho phép học viên lọc danh sách thẻ theo cấp độ mục tiêu ('Tất cả', 'B1', 'B2', 'C1') kết hợp đồng thời cùng 8 chủ đề, hỗ trợ thí sinh tập trung ôn luyện đúng phân khúc năng lực. Lựa chọn được lưu trữ bền vững trên thiết bị cục bộ (`localStorage`).
+  - **Kiểm định & Chuẩn hóa Bậc CEFR (CEFR Tier Audit & Normalization)**:
+    - Toàn bộ 3.000 thẻ từ vựng qua 8 chủ đề được đối soát và chuẩn hóa tự động qua pipeline xác định (`scripts/audit_and_update_corpus.mjs`, `pnpm audit:vocab`).
+    - Đối sánh từ vựng trực tiếp với chuẩn từ điển **Oxford 3000/5000** (A1–C1) và **CEFR-J (ver 1.5) / Octanove Labs** (A1–C2) kết hợp ngữ cảnh học thuật VSTEP.
+    - Khắc phục triệt để các trường hợp gán bậc sai lệch (1.156 thẻ / 38.5%): đưa từ học thuật/chuyên sâu từ B1 lên C1 (vd: `tuition`, `attendance`, `collaborate`, `faculty`, `literacy`), nâng từ trung cao cấp lên B2 (vd: `compulsory`, `certificate`, `discipline`, `evaluate`, `seminar`), đưa từ nền tảng từ B2 về B1 (vd: `consider`, `theory`, `evidence`, `economy`), và chuyển từ quá tầm từ C1 về B2 (vd: `framework`, `entrepreneur`, `considerably`, `expertise`).
+    - Phân bổ chuẩn hóa sau kiểm định: B1 đạt 1.274 thẻ (42.5%), B2 đạt 910 thẻ (30.3%), C1 đạt 816 thẻ (27.2%), phản ánh chính xác cấu trúc đề thi VSTEP bậc 3-5.
 - **Thuật toán Spaced Repetition (FSRS v6 Daily Engine)**:
   - Động cơ lập lịch FSRS v6 qua thư viện `ts-fsrs` với target retention 90% (`request_retention: 0.90`), trần khoảng cách tối đa 365 ngày (`maximum_interval: 365`), tắt các bước ngắn hạn trong phiên (`enable_short_term: false`) để chuẩn hóa chu kỳ lặp lại theo ngày hoàn toàn xác định, và thuật toán jitter/fuzz (`enable_fuzz: true`) chống dồn thẻ.
   - Đánh giá nhị phân (Binary Rating): Loại bỏ lựa chọn độ khó chủ quan, chuẩn hóa thành 2 trạng thái:
