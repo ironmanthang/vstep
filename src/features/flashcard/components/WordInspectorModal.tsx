@@ -74,6 +74,16 @@ export const WordInspectorModal: React.FC<WordInspectorModalProps> = ({
       }
     }
 
+    const sortByNewest = (a: FlashcardItem, b: FlashcardItem) => {
+      const timeA = a.srs_metadata.last_reviewed_at || 0;
+      const timeB = b.srs_metadata.last_reviewed_at || 0;
+      return timeB - timeA;
+    };
+
+    mastered.sort(sortByNewest);
+    learning.sort(sortByNewest);
+    today.sort(sortByNewest);
+
     return {
       masteredCards: mastered,
       learningCards: learning,

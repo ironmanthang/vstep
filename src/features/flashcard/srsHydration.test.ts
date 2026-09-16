@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import type { FlashcardItem, SRSMetadata } from '../../types/schemas';
 import { DEFAULT_SRS_METADATA } from '../../types/schemas';
+import { clearSRSSessionSync } from './useFlashcardStore';
 
 describe('Decoupled Corpus Hydration Safety Suite (FSRS v3)', () => {
   const sampleCorpus: FlashcardItem[] = [
@@ -191,8 +192,7 @@ describe('Decoupled Corpus Hydration Safety Suite (FSRS v3)', () => {
     expect(getInitialLevel()).toBe('C1');
   });
 
-  it('provides clearSRSSessionSync to reset session cache on account change or signout', async () => {
-    const { clearSRSSessionSync } = await import('./useFlashcardStore');
+  it('provides clearSRSSessionSync to reset session cache on account change or signout', () => {
     expect(typeof clearSRSSessionSync).toBe('function');
     expect(() => clearSRSSessionSync()).not.toThrow();
   });
