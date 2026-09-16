@@ -1,5 +1,6 @@
 ---
-trigger: manual
+trigger: model_decision
+description: Apply when executing Git operations, crafting release commits, bumping versions, moving files, or managing repository history.
 ---
 
 # Git & Release Workflow Rules

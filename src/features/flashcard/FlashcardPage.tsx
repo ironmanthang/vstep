@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useFlashcardStore } from './useFlashcardStore';
 import { FlashcardCard } from './FlashcardCard';
 import type { SRSRating } from '../../types/schemas';
-import { CheckCircleIcon, RefreshIcon } from '../../components/Icons';
+import { CheckCircleIcon, RefreshIcon, FilterIcon, ChevronDownIcon } from '../../components/Icons';
 import { useNotification } from '../../hooks/useNotification';
 import { Toast } from '../../components/common/Toast';
 import { ConfirmModal } from '../../components/common/ConfirmModal';
@@ -38,6 +38,28 @@ export const FlashcardPage: React.FC = () => {
   const [isReminderModalOpen, setIsReminderModalOpen] = useState(false);
   const [isResetModalOpen, setIsResetModalOpen] = useState(false);
   const [isResetting, setIsResetting] = useState(false);
+  const [isTopicDropdownOpen, setIsTopicDropdownOpen] = useState(false);
+  const topicDropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isTopicDropdownOpen) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      if (topicDropdownRef.current && !topicDropdownRef.current.contains(e.target as Node)) {
+        setIsTopicDropdownOpen(false);
+      }
+    };
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsTopicDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isTopicDropdownOpen]);
 
   // Active card in queue (always the head of the priority queue)
   const currentCard = reviewQueue[0] || null;
@@ -178,7 +200,7 @@ export const FlashcardPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Topic & Level Filters */}
+      {/* Topic & Level Filters (1-Line Compact Toolbar) */}
       <div className="controls-row">
         <div className="filter-levels-row">
           <div className="filter-levels-group">
@@ -196,6 +218,49 @@ export const FlashcardPage: React.FC = () => {
                   {lvl === 'Tất cả' ? 'Tất cả Bậc' : `Bậc ${lvl}`}
                 </button>
               ))}
+            </div>
+
+            {/* Topic Filter Dropdown */}
+            <div className="topic-dropdown-container" ref={topicDropdownRef}>
+              <button
+                type="button"
+                className={`topic-dropdown-btn ${selectedTopic !== 'Tất cả' ? 'has-filter' : ''}`}
+                onClick={() => setIsTopicDropdownOpen(prev => !prev)}
+                aria-haspopup="listbox"
+                aria-expanded={isTopicDropdownOpen}
+                title="Lọc từ vựng theo chủ đề"
+              >
+                <FilterIcon size={14} className="filter-btn-icon" />
+                <span className="topic-dropdown-label">
+                  {selectedTopic === 'Tất cả' ? 'Chủ đề: Tất cả' : selectedTopic}
+                </span>
+                <ChevronDownIcon size={12} className={`chevron-icon ${isTopicDropdownOpen ? 'open' : ''}`} />
+              </button>
+
+              {isTopicDropdownOpen && (
+                <div className="topic-dropdown-menu" role="listbox" aria-label="Danh sách chủ đề từ vựng">
+                  {topics.map(topic => {
+                    const isSelected = selectedTopic === topic;
+                    return (
+                      <button
+                        key={topic}
+                        type="button"
+                        role="option"
+                        aria-selected={isSelected}
+                        className={`topic-dropdown-item ${isSelected ? 'selected' : ''}`}
+                        onClick={() => {
+                          setSelectedTopic(topic);
+                          setIsFlipped(false);
+                          setIsTopicDropdownOpen(false);
+                        }}
+                      >
+                        <span className="topic-item-name">{topic}</span>
+                        {isSelected && <span className="topic-item-check">✓</span>}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           </div>
 
@@ -217,22 +282,6 @@ export const FlashcardPage: React.FC = () => {
               <span>Nhắc nhở SRS</span>
             </button>
           </div>
-        </div>
-
-        {/* Topic Filter Pills */}
-        <div className="topic-pills-wrapper">
-          {topics.map(topic => (
-            <button
-              key={topic}
-              className={`topic-pill ${selectedTopic === topic ? 'active' : ''}`}
-              onClick={() => {
-                setSelectedTopic(topic);
-                setIsFlipped(false);
-              }}
-            >
-              {topic}
-            </button>
-          ))}
         </div>
       </div>
 

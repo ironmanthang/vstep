@@ -200,4 +200,25 @@ describe('FSRS Pure Spaced Repetition Suite', () => {
     expect(filterByLevel(mixedDeck, 'B2')).toHaveLength(1);
     expect(filterByLevel(mixedDeck, 'C1')).toHaveLength(1);
   });
+
+  it('filters flashcard items accurately by topic and compound level filter', () => {
+    const mixedDeck: FlashcardItem[] = [
+      { ...mockCard, id: 'b1_env', level: 'B1', topic: 'Môi trường & Tự nhiên' },
+      { ...mockCard, id: 'b2_env', level: 'B2', topic: 'Môi trường & Tự nhiên' },
+      { ...mockCard, id: 'b1_work', level: 'B1', topic: 'Công việc & Sự nghiệp' },
+    ];
+
+    const filterCards = (cards: FlashcardItem[], topic: string, level: string) =>
+      cards.filter(
+        (c) =>
+          (topic === 'Tất cả' || c.topic === topic) &&
+          (level === 'Tất cả' || c.level === level)
+      );
+
+    expect(filterCards(mixedDeck, 'Tất cả', 'Tất cả')).toHaveLength(3);
+    expect(filterCards(mixedDeck, 'Môi trường & Tự nhiên', 'Tất cả')).toHaveLength(2);
+    expect(filterCards(mixedDeck, 'Môi trường & Tự nhiên', 'B1')).toHaveLength(1);
+    expect(filterCards(mixedDeck, 'Môi trường & Tự nhiên', 'B1')[0].id).toBe('b1_env');
+    expect(filterCards(mixedDeck, 'Công việc & Sự nghiệp', 'B2')).toHaveLength(0);
+  });
 });

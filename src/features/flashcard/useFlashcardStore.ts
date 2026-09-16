@@ -139,7 +139,21 @@ export function useFlashcardStore() {
     setReviewedToday(getReviewedTodayForUser(userId));
   }
 
-  const [selectedTopic, setSelectedTopic] = useState<string>('Tất cả');
+  const [selectedTopic, setSelectedTopicState] = useState<string>(() => {
+    if (typeof localStorage === 'undefined') return 'Tất cả';
+    const saved = localStorage.getItem('vstep_flashcard_selected_topic');
+    if (saved && (saved === 'Tất cả' || VSTEP_CORPUS.some((c) => c.topic === saved))) {
+      return saved;
+    }
+    return 'Tất cả';
+  });
+
+  const setSelectedTopic = useCallback((topic: string) => {
+    setSelectedTopicState(topic);
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('vstep_flashcard_selected_topic', topic);
+    }
+  }, []);
   const [selectedLevel, setSelectedLevelState] = useState<'Tất cả' | 'B1' | 'B2' | 'C1'>(() => {
     const saved = localStorage.getItem('vstep_flashcard_cefr_level');
     if (saved === 'B1' || saved === 'B2' || saved === 'C1' || saved === 'Tất cả') {
@@ -391,6 +405,10 @@ export function useFlashcardStore() {
 
     setCards(VSTEP_CORPUS);
     setReviewedToday(0);
+    setSelectedTopicState('Tất cả');
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('vstep_flashcard_selected_topic', 'Tất cả');
+    }
     clearBadge();
     notifyDeckChanged();
 

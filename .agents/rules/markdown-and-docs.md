@@ -1,5 +1,6 @@
 ---
-trigger: always_on
+trigger: model_decision
+description: Apply when creating, editing, or synchronizing Markdown documentation files, plans, or notes in docs/ to enforce token efficiency and preserve user notes.
 ---
 
 # Lean Markdown & Token-Efficient Documentation Rules

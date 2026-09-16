@@ -1,5 +1,6 @@
 ---
-trigger: always_on
+trigger: model_decision
+description: Apply when decomposing complex problems, making architectural decisions, refactoring, questioning requirements, or deleting unnecessary complexity using first principles.
 ---
 
 # Elon Musk First Principles & The Algorithm Rules

@@ -28,6 +28,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Bộ lọc cấp độ CEFR Flashcard: Tích hợp chọn cấp độ ('Tất cả', 'B1', 'B2', 'C1') kết hợp cùng 8 chủ đề, lưu trữ trạng thái bền vững trên thiết bị cục bộ (localStorage).
 - [x] Tinh giản Studio Luyện từ vựng & Sổ tay Tra cứu Tương tác: Loại bỏ tab duyệt tĩnh 3.000 từ gây quá tải; biến 3 ô thống kê cốt lõi (Đã làm chủ, Đang học, Hôm nay đã ôn) thành lối tắt tương tác mở Sổ tay từ vựng (`WordInspectorModal.tsx`) với bộ lọc tức thì, tìm kiếm thời gian thực và phát âm audio bản xứ.
 - [x] Tinh giản Không Gian Luyện Tập & Bố Cục Nút Bấm An Toàn: Loại bỏ banner tiêu đề/mô tả và thanh tiến độ chủ đề tối ưu không gian Above-the-Fold; đưa nút Nhắc nhở SRS vào thanh lọc CEFR gọn nhẹ kèm huy hiệu đồng bộ Cloud; chuyển nút Đặt lại Deck về cuối trang Từ vựng SRS (/flashcard) kèm ConfirmModal cảnh báo 2 bước chống chạm nhầm.
+- [x] Thanh công cụ Lọc 1 Dòng & Menu Thả Chủ đề Bền vững: Hợp nhất hàng lọc CEFR và bộ chọn chủ đề thành 1 thanh công cụ tinh gọn; thay thế dải 9 pill cuộn ngang bằng nút dropdown menu có icon bộ lọc (`FilterIcon`), tự động đóng khi chọn hoặc bấm ra ngoài, lưu trữ bền vững chủ đề trên thiết bị cục bộ (`localStorage`).
 
 ### Kiểm thử & Tối ưu Nền tảng (DoD Verification)
 - [x] Hạ tầng Kiểm thử & Triển khai: Unit tests Vitest, Pre-push pipeline tự động (`scripts/prepush.mjs`), CI/CD GitHub Actions (`.github/workflows/ci.yml`), kịch bản tự động hóa database migration (`scripts/migrate.mjs`), và triển khai Production Cloudflare Pages (`vstep.pages.dev`).
@@ -155,5 +156,8 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] page mock test, remove: "Phòng Thi Thử VSTEP Thực Chiến/Mô phỏng 100% định dạng phòng máy Bộ GD&ĐT (180 phút, cấm tua/tra từ, tự động thu bài, làm tròn 0.5 chính thức)." "Đề Thi Chuẩn Số 1
 VSTEP Authentic Full Mock Test 01 (Chuẩn ĐHNN - ĐHQGHN)
 ULIS - ĐHQGHN / VNU Test Standard • Tổng thời lượng: 180 phút" "Quy chế phòng thi: Khóa toàn bộ công cụ tra từ và phụ đề; không thể quay lại phần thi trước sau khi đã chuyển tiếp; hệ thống tự động ghi nhận nếu click chuột ra ngoài cửa sổ thi; bảng điểm Barem 0.5 và Radar Chart 4 trục hiển thị ngay sau khi hoàn thành." becuase it repeat words many times. next keep the english skill, delete the vietnam skill "nghe, noi,..". 
-- [ ] why in mobile, even when i reset the phone and reload the website on my phone and are in dark mode, my top bar where it show the system infos, are still bright yellow color?it suppose to be dark, is it a build dpeloy problem? 
+- [x] why in mobile, even when i reset the phone and reload the website on my phone and are in dark mode, my top bar where it show the system infos, are still bright yellow color?it suppose to be dark, is it a build dpeloy problem? 
 - [x] if the text "Đồng bộ Cloud" is hardcode->delete it
+- [ ] add revserse srs
+- [ ] where is the collaspe topic in srs
+- [] fix the detail pop up window

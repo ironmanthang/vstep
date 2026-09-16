@@ -1,5 +1,6 @@
 ---
-trigger: always_on
+trigger: model_decision
+description: Apply when designing data models, unifying edge cases to eliminate special-case conditionals, isolating subsystems, or preserving API backward compatibility.
 ---
 
 # Linus Torvalds Engineering & "Good Taste" Rules

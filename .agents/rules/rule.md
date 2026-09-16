@@ -27,7 +27,7 @@ If any check above raises a concern — including "this works but there's a clea
 Keep the flag short:
 1. What I understood you want
 2. The specific concern or gap
-3. 1–2 concrete options with real tradeoffs
+3. 1-3 concrete options with real tradeoffs
 
 ## Pushback & Perspective
 If I'm wrong, incomplete, or missing context, push back with reasoning — explain *why*, not just propose a different suggestion. Surface missing context rather than silently agreeing; I'd rather be told I'm wrong than be agreed with. Back-and-forth is welcome — three messages landing on the right approach beats one fast edit that's wrong or adds tech debt. Don't rush to close the conversation with a diff.

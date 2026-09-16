@@ -206,47 +206,107 @@
   box-shadow: var(--shadow-sm);
 }
 
-.topic-pills-wrapper {
-  display: flex;
-  gap: var(--space-2);
-  overflow-x: auto;
-  padding-bottom: 4px;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  -webkit-overflow-scrolling: touch;
-  min-width: 0;
-  max-width: 100%;
-  width: 100%;
-  mask-image: linear-gradient(to right, black 86%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, black 86%, transparent 100%);
+/* Topic Dropdown Filter */
+.topic-dropdown-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
-.topic-pills-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.topic-pill {
-  padding: 4px 12px;
-  border-radius: var(--radius-full);
-  background-color: var(--bg-surface);
+.topic-dropdown-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--radius-md);
   border: 1px solid var(--border);
+  background-color: var(--bg-subtle);
+  color: var(--text-secondary);
   font-size: var(--fs-xs);
   font-weight: 600;
-  color: var(--text-secondary);
-  white-space: nowrap;
+  cursor: pointer;
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 
-.topic-pill:hover {
+.topic-dropdown-btn:hover {
+  border-color: var(--primary);
+  color: var(--text-primary);
+}
+
+.topic-dropdown-btn.has-filter {
+  background-color: var(--primary-subtle, rgba(234, 154, 38, 0.12));
   border-color: var(--primary);
   color: var(--primary);
+  font-weight: 700;
 }
 
-.topic-pill.active {
-  background-color: var(--primary);
-  border-color: var(--primary);
-  color: var(--primary-contrast);
+.filter-btn-icon {
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.chevron-icon {
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+  color: var(--text-muted);
+}
+
+.chevron-icon.open {
+  transform: rotate(180deg);
+}
+
+.topic-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 200px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  z-index: 50;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.topic-dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.topic-dropdown-item:hover {
+  background-color: var(--bg-subtle);
+  color: var(--text-primary);
+}
+
+.topic-dropdown-item.selected {
+  background-color: var(--primary-subtle, rgba(234, 154, 38, 0.15));
+  color: var(--primary);
   font-weight: 700;
+}
+
+.topic-item-check {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--primary);
 }
 
 /* Review Workspace */
