@@ -159,5 +159,5 @@ ULIS - ĐHQGHN / VNU Test Standard • Tổng thời lượng: 180 phút" "Quy c
 - [x] why in mobile, even when i reset the phone and reload the website on my phone and are in dark mode, my top bar where it show the system infos, are still bright yellow color?it suppose to be dark, is it a build dpeloy problem? 
 - [x] if the text "Đồng bộ Cloud" is hardcode->delete it
 - [ ] add revserse srs
-- [ ] where is the collaspe topic in srs
-- [x] fix the detail pop up window (WordInspectorModal): Thêm flex-shrink: 0 và overflow-y: hidden cho header, tabs, search bar, và min-height: 0 cho word list để triệt tiêu lỗi flexbox đè bẹp thanh tab lọc trạng thái từ.
+- [x] where is the collaspe topic in srs: Hợp nhất bộ chọn chủ đề thành 1 nút dropdown gọn nhẹ có icon bộ lọc nằm cùng hàng với Bậc CEFR, hỗ trợ lưu trữ chủ đề đã chọn bền vững trên thiết bị cục bộ (localStorage).
+- [x] fix the detail pop up window (WordInspectorModal): Thêm flex-shrink: 0 và overflow-y: hidden cho header, tabs, search bar, và min-height: 0 cho word list để triệt tiêu lỗi flexbox đè bẹp thanh tab lọc; sắp xếp danh sách từ theo thời gian ôn gần nhất lên đầu.
