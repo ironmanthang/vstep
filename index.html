@@ -6,10 +6,26 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content" />
     <meta name="theme-color" content="#141210" id="meta-theme-color" />
+    <meta name="color-scheme" content="dark light" id="meta-color-scheme" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" id="meta-status-bar-style" />
     <meta name="apple-mobile-web-app-title" content="VSTEP Master" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('vstep_theme');
+          var theme = saved || 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+          document.documentElement.style.colorScheme = theme;
+          var themeColor = theme === 'dark' ? '#141210' : '#F0ECE3';
+          var metaColor = document.getElementById('meta-theme-color');
+          if (metaColor) metaColor.setAttribute('content', themeColor);
+          var metaStyle = document.getElementById('meta-status-bar-style');
+          if (metaStyle) metaStyle.setAttribute('content', theme === 'dark' ? 'black-translucent' : 'default');
+        } catch (e) {}
+      })();
+    </script>
     <meta name="description" content="Nền tảng luyện thi VSTEP thế hệ mới — Học từ vựng Flashcard SRS, luyện thi B1/B2 cá nhân hóa." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

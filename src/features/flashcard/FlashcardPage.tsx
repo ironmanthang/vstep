@@ -197,6 +197,15 @@ export const FlashcardPage: React.FC = () => {
               <path d="M13.73 21a2 2 0 0 1-3.46 0" />
             </svg>
           </button>
+          <button
+            className="mobile-icon-btn mobile-reset-btn"
+            onClick={() => setIsResetModalOpen(true)}
+            disabled={isResetting}
+            title="Đặt lại toàn bộ Deck từ vựng"
+            aria-label="Đặt lại toàn bộ Deck từ vựng"
+          >
+            <RefreshIcon size={16} />
+          </button>
         </div>
       </div>
 
@@ -281,6 +290,16 @@ export const FlashcardPage: React.FC = () => {
               </svg>
               <span>Nhắc nhở SRS</span>
             </button>
+            <button
+              type="button"
+              className="secondary-btn flashcard-reset-btn"
+              onClick={() => setIsResetModalOpen(true)}
+              disabled={isResetting}
+              title="Đặt lại toàn bộ Deck từ vựng"
+            >
+              <RefreshIcon size={14} />
+              <span>Đặt lại Deck</span>
+            </button>
           </div>
         </div>
       </div>
@@ -350,24 +369,7 @@ export const FlashcardPage: React.FC = () => {
         onNotify={showNotification}
       />
 
-      {/* SRS Deck Data Management Card (Reset Deck) */}
-      <div className="card-surface flashcard-settings-card">
-        <div className="flashcard-settings-row">
-          <div className="flashcard-settings-text">
-            <span className="flashcard-settings-label">Dữ liệu flashcard SRS</span>
-            <span className="flashcard-settings-desc">Khởi tạo lại toàn bộ tiến độ 3.000 từ về trạng thái ban đầu</span>
-          </div>
-          <button
-            type="button"
-            className="secondary-btn flashcard-reset-btn"
-            onClick={() => setIsResetModalOpen(true)}
-            disabled={isResetting}
-          >
-            <RefreshIcon size={14} />
-            <span>Đặt lại toàn bộ Deck từ vựng</span>
-          </button>
-        </div>
-      </div>
+
 
       {/* Confirmation Modal for Deck Reset */}
       <ConfirmModal

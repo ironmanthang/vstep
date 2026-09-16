@@ -401,41 +401,7 @@
   color: var(--text-primary);
 }
 
-/* Deck Danger Zone (High Friction Bottom Area) */
-.deck-danger-zone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: var(--space-8);
-  padding-top: var(--space-4);
-  border-top: 1px dashed var(--border);
-}
 
-.reset-deck-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2) var(--space-3);
-  background: transparent;
-  color: var(--text-muted);
-  border: 1px solid transparent;
-  border-radius: var(--radius-md);
-  font-size: var(--fs-xs);
-  font-weight: 500;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-}
-
-.reset-deck-btn:hover:not(:disabled) {
-  color: var(--coral-text);
-  background-color: rgba(220, 38, 38, 0.08);
-  border-color: rgba(220, 38, 38, 0.2);
-}
-
-.reset-deck-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
 
 /* (Browse Vocabulary Grid removed in favor of WordInspectorModal) */
 
@@ -512,8 +478,14 @@
     cursor: not-allowed;
   }
 
-  .filter-actions-group .reminder-btn {
+  .filter-actions-group .reminder-btn,
+  .filter-actions-group .flashcard-reset-btn {
     display: none;
+  }
+
+  .mobile-icon-btn.mobile-reset-btn:hover:not(:disabled) {
+    color: var(--coral);
+    border-color: var(--coral);
   }
 
   .mobile-sync-badge {
@@ -581,56 +553,16 @@
   }
 }
 
-/* SRS Deck Data Management Card (Reset Deck) at Bottom */
-.flashcard-settings-card {
-  margin-top: var(--space-2);
-  padding: var(--space-3) var(--space-4);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  background-color: var(--bg-surface);
-}
-
-.flashcard-settings-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: var(--space-3);
-}
-
-.flashcard-settings-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.flashcard-settings-label {
-  font-size: var(--fs-xs);
-  font-weight: 600;
-  color: var(--text-muted);
-}
-
-.flashcard-settings-desc {
-  font-size: 11px;
-  color: var(--text-secondary);
-}
-
+/* Reset Deck Button in Toolbar */
 .flashcard-reset-btn {
   color: var(--coral);
-  border-color: var(--coral);
-  font-size: var(--fs-xs);
-  padding: 6px 12px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: transparent;
-  cursor: pointer;
-  border-radius: var(--radius-md);
-  transition: all var(--transition-fast);
+  border-color: rgba(220, 38, 38, 0.35);
 }
 
 .flashcard-reset-btn:hover:not(:disabled) {
-  background: var(--coral-subtle);
+  background-color: var(--coral-subtle);
+  border-color: var(--coral);
+  color: var(--coral-text, var(--coral));
 }
 
 .flashcard-reset-btn:disabled {

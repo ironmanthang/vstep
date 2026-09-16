@@ -24,15 +24,32 @@ export const Layout: React.FC = () => {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.style.colorScheme = theme;
     localStorage.setItem('vstep_theme', theme);
-    const themeColor = theme === 'dark' ? '#141210' : '#FAF8F5';
-    const metaThemeColor = document.getElementById('meta-theme-color');
-    if (metaThemeColor) {
-      metaThemeColor.setAttribute('content', themeColor);
+
+    const themeColor = theme === 'dark' ? '#141210' : '#F0ECE3';
+    const statusBarStyle = theme === 'dark' ? 'black-translucent' : 'default';
+
+    const existingThemeMetas = document.querySelectorAll('meta[name="theme-color"]');
+    if (existingThemeMetas.length > 0) {
+      existingThemeMetas.forEach(meta => meta.setAttribute('content', themeColor));
+    } else {
+      const meta = document.createElement('meta');
+      meta.id = 'meta-theme-color';
+      meta.name = 'theme-color';
+      meta.content = themeColor;
+      document.head.appendChild(meta);
     }
-    document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => {
-      meta.setAttribute('content', themeColor);
-    });
+
+    const statusBarMeta = document.getElementById('meta-status-bar-style') || document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');
+    if (statusBarMeta) {
+      statusBarMeta.setAttribute('content', statusBarStyle);
+    }
+
+    const colorSchemeMeta = document.getElementById('meta-color-scheme') || document.querySelector('meta[name="color-scheme"]');
+    if (colorSchemeMeta) {
+      colorSchemeMeta.setAttribute('content', theme === 'dark' ? 'dark' : 'light');
+    }
   }, [theme]);
 
   const toggleTheme = () => {
