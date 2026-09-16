@@ -38,6 +38,7 @@
   padding: var(--space-5) var(--space-6) var(--space-3) var(--space-6);
   border-bottom: 1px solid var(--border-subtle);
   gap: var(--space-3);
+  flex-shrink: 0;
 }
 
 .word-inspector-title {
@@ -84,7 +85,9 @@
   background-color: var(--bg-subtle);
   border-bottom: 1px solid var(--border);
   overflow-x: auto;
+  overflow-y: hidden;
   scrollbar-width: none;
+  flex-shrink: 0;
 }
 
 .word-inspector-tabs::-webkit-scrollbar {
@@ -102,6 +105,10 @@
   cursor: pointer;
   transition: all var(--transition-fast);
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
 }
 
 .inspector-tab-btn:hover {
@@ -138,6 +145,7 @@
   padding: var(--space-3) var(--space-6);
   border-bottom: 1px solid var(--border-subtle);
   background-color: var(--bg-surface);
+  flex-shrink: 0;
 }
 
 .inspector-search-input-wrap {
@@ -196,13 +204,13 @@
 
 /* Word List */
 .word-inspector-list {
-  flex: 1;
+  flex: 1 1 auto;
   overflow-y: auto;
   padding: var(--space-4) var(--space-6);
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
-  min-height: 240px;
+  min-height: 0;
 }
 
 .inspector-word-row {

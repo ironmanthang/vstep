@@ -160,4 +160,4 @@ ULIS - ĐHQGHN / VNU Test Standard • Tổng thời lượng: 180 phút" "Quy c
 - [x] if the text "Đồng bộ Cloud" is hardcode->delete it
 - [ ] add revserse srs
 - [ ] where is the collaspe topic in srs
-- [] fix the detail pop up window
+- [x] fix the detail pop up window (WordInspectorModal): Thêm flex-shrink: 0 và overflow-y: hidden cho header, tabs, search bar, và min-height: 0 cho word list để triệt tiêu lỗi flexbox đè bẹp thanh tab lọc trạng thái từ.
