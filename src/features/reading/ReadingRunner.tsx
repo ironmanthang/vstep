@@ -287,8 +287,6 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
     <div className="reading-runner">
       <ReadingHeader
         title={test.title}
-        difficulty={test.difficulty}
-        passageCount={test.passages.length}
         isExam={isExam}
         examSecondsRemaining={examSecondsRemaining}
         syncWarning={syncWarning}
@@ -320,8 +318,6 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
           {currentPassage && (
             <PassagePanel
               passage={currentPassage}
-              passageIndex={activePassageIndex}
-              totalPassages={test.passages.length}
               activeClueSentence={activeClueSentence}
               readerSettings={readerSettings}
               onChangeReaderSettings={updateReaderSettings}

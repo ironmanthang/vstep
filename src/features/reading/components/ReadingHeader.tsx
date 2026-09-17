@@ -3,8 +3,6 @@ import type { ReadingScoreResult } from '../types';
 
 interface ReadingHeaderProps {
   title: string;
-  difficulty: string | number;
-  passageCount: number;
   isExam: boolean;
   examSecondsRemaining: number;
   syncWarning: string | null;
@@ -21,8 +19,6 @@ function formatSeconds(secs: number): string {
 
 export const ReadingHeader: React.FC<ReadingHeaderProps> = ({
   title,
-  difficulty,
-  passageCount,
   isExam,
   examSecondsRemaining,
   syncWarning,
@@ -32,18 +28,13 @@ export const ReadingHeader: React.FC<ReadingHeaderProps> = ({
 }) => {
   return (
     <>
-      {/* Runner Top Header */}
-      <div className="reading-runner-header">
-        <div className="reading-title-group">
-          <div className="reading-meta-row">
-            <span className="badge badge-emerald">Bậc {difficulty}</span>
-            <span className="badge badge-purple">{passageCount} Bài Đọc</span>
+      {/* Runner Top Header - Rendered in Exam mode only */}
+      {isExam && (
+        <div className="reading-runner-header">
+          <div className="reading-title-group">
+            <h2 className="reading-main-title">{title}</h2>
           </div>
-          <h2 className="reading-main-title">{title}</h2>
-        </div>
 
-        {/* Timer Widget - Exam mode only */}
-        {isExam && (
           <div
             className={`reading-timer-widget ${
               examSecondsRemaining < 300 ? 'exam-urgent' : ''
@@ -54,8 +45,8 @@ export const ReadingHeader: React.FC<ReadingHeaderProps> = ({
               {formatSeconds(examSecondsRemaining)}
             </span>
           </div>
-        )}
-      </div>
+        </div>
+      )}
 
       {/* Sync Warning */}
       {syncWarning && (

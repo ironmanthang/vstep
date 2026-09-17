@@ -1,22 +1,14 @@
 import { useRef, useEffect } from 'react';
-import type { ReadingPassage, ReaderSettings, ReaderTheme } from '../types';
+import type { ReadingPassage, ReaderSettings } from '../types';
 import './PassagePanel.css';
 
 interface PassagePanelProps {
   passage: ReadingPassage;
-  passageIndex: number;
-  totalPassages: number;
   activeClueSentence?: string;
   readerSettings: ReaderSettings;
   onChangeReaderSettings: (settings: Partial<ReaderSettings>) => void;
   onWordSelect: (word: string, position: { x: number; y: number }) => void;
 }
-
-const THEME_LABELS: Record<ReaderTheme, { label: string; icon: string }> = {
-  'warm-sepia': { label: 'Sepia Ấm', icon: '📜' },
-  'obsidian-dark': { label: 'Obsidian Tối', icon: '🌑' },
-  'cream-light': { label: 'Giấy Sáng', icon: '☀️' },
-};
 
 /**
  * Resolves the English word and its bounding rectangle at a specific client coordinate.
@@ -91,8 +83,6 @@ function getWordAtCoordinates(x: number, y: number): { word: string; rect: DOMRe
 
 export const PassagePanel: React.FC<PassagePanelProps> = ({
   passage,
-  passageIndex,
-  totalPassages,
   activeClueSentence,
   readerSettings,
   onChangeReaderSettings,
@@ -220,14 +210,10 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
   };
 
   return (
-    <div className={`passage-panel-wrapper theme-${readerSettings.theme}`}>
-      {/* Reader Customization Bar */}
+    <div className="passage-panel-wrapper">
+      {/* Reader Toolbar */}
       <div className="reader-toolbar">
         <div className="reader-meta-tag">
-          <span className="badge badge-primary">
-            Bài {passageIndex + 1}/{totalPassages}
-          </span>
-          <span className="badge badge-emerald">Bậc {passage.difficulty}</span>
           <span className="reader-word-count">~{passage.word_count} từ</span>
         </div>
 
@@ -262,43 +248,7 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
               A+
             </button>
           </div>
-
-          {/* Line Height Selector */}
-          <div className="reader-btn-group" title="Khoảng cách dòng">
-            {([1.5, 1.8, 2.0] as const).map((lh) => (
-              <button
-                key={lh}
-                type="button"
-                className={`reader-tool-btn ${readerSettings.lineHeight === lh ? 'active' : ''}`}
-                onClick={() => onChangeReaderSettings({ lineHeight: lh })}
-                aria-label={`Dãn dòng ${lh}`}
-              >
-                {lh}x
-              </button>
-            ))}
-          </div>
-
-          {/* Theme Selector */}
-          <div className="reader-btn-group" title="Chủ đề màu nền">
-            {(Object.keys(THEME_LABELS) as ReaderTheme[]).map((thm) => (
-              <button
-                key={thm}
-                type="button"
-                className={`reader-tool-btn ${readerSettings.theme === thm ? 'active' : ''}`}
-                onClick={() => onChangeReaderSettings({ theme: thm })}
-                title={THEME_LABELS[thm].label}
-                aria-label={THEME_LABELS[thm].label}
-              >
-                {THEME_LABELS[thm].icon}
-              </button>
-            ))}
-          </div>
         </div>
-      </div>
-
-      {/* Tra từ nhanh hint */}
-      <div className="reader-dictionary-hint">
-        💡 <em>Chạm vào từ bất kỳ trong bài để tra từ điển tiếng Việt tức thì</em>
       </div>
 
       {/* Main Passage Content Body */}
@@ -307,7 +257,6 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
         className="passage-content-container"
         style={{
           fontSize: `${readerSettings.fontSize}px`,
-          lineHeight: readerSettings.lineHeight,
         }}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}

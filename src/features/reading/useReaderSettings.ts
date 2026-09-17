@@ -4,8 +4,6 @@ import { loadUserItem, saveUserItem } from '../../services/storage/userStorage';
 
 export const DEFAULT_READER_SETTINGS: ReaderSettings = {
   fontSize: 16,
-  lineHeight: 1.8,
-  theme: 'warm-sepia',
 };
 
 export function useReaderSettings(userId?: string) {
