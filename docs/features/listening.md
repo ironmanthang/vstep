@@ -6,7 +6,7 @@
 - **Part 3 (15 câu)**: 3 bài giảng / thuyết trình học thuật (mỗi bài 5 câu). Rèn luyện kỹ năng ghi chú nhanh (Note-taking) và nắm bắt cấu trúc triển khai bài giảng.
 
 ## Kiến trúc Unified Listening Runner
-Mô-đun được triển khai tập trung tại [`src/features/listening/`](file:///d:/program/vstep/src/features/listening) với component cốt lõi [`ListeningRunner.tsx`](file:///d:/program/vstep/src/features/listening/ListeningRunner.tsx) (phân rã dưới 400 dòng mã) cùng các sub-components:
+Mô-đun được triển khai tập trung tại [`src/features/listening/`](file:///d:/program/vstep/src/features/listening) với component cốt lõi [`ListeningRunner.tsx`](file:///d:/program/vstep/src/features/listening/ListeningRunner.tsx) (phân rã dưới 400 dòng mã) cùng các sub-components. Trang `ListeningStudioPage` được thiết kế thuần túy cho chế độ luyện tập chuyên sâu (`mode: 'practice'`), trong khi Exam Mode được điều phối trực tiếp trong `FullMockTestRunner`:
 - **Hệ thống Sub-Components Chuyên biệt**:
   - `ListeningHeader.tsx`: Tiêu đề bài thi, huy hiệu phân loại chế độ (Exam/Practice) và độ khó Bậc B1-C1, banner cảnh báo đồng bộ không chặn và thẻ điểm tổng kết kèm nút làm lại bài.
   - `ListeningResetModal.tsx`: Hộp thoại xác nhận làm lại bài thi nghe.

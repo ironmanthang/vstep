@@ -62,32 +62,3 @@
   gap: var(--space-3, 12px);
 }
 
-.listening-studio-mode-toggle {
-  display: flex;
-  background: var(--bg-subtle, rgba(255, 255, 255, 0.04));
-  padding: 3px;
-  border-radius: var(--radius-md, 8px);
-  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
-}
-
-.listening-mode-btn {
-  padding: 6px 14px;
-  font-size: var(--fs-xs, 12px);
-  font-weight: 700;
-  border: none;
-  background: transparent;
-  color: var(--text-secondary, #c2b8ae);
-  border-radius: var(--radius-sm, 6px);
-  cursor: pointer;
-  transition: all 120ms ease;
-}
-
-.listening-mode-btn.active.practice {
-  background: var(--primary, #e05a2b);
-  color: #141210;
-}
-
-.listening-mode-btn.active.exam {
-  background: var(--gold, #f59e0b);
-  color: #141210;
-}

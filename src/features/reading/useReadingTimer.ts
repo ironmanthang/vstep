@@ -14,7 +14,6 @@ export function useReadingTimer({
   onAutoSubmit,
 }: UseReadingTimerOptions) {
   const initialExamSeconds = durationMinutes ? durationMinutes * 60 : 3600;
-  const [elapsedSeconds, setElapsedSeconds] = useState<number>(0);
   const [examSecondsRemaining, setExamSecondsRemaining] = useState<number>(initialExamSeconds);
 
   const autoSubmitRef = useRef(onAutoSubmit);
@@ -22,16 +21,12 @@ export function useReadingTimer({
     autoSubmitRef.current = onAutoSubmit;
   }, [onAutoSubmit]);
 
-  // Timer Tick
+  // Timer Tick - Active only during Exam mode
   useEffect(() => {
-    if (isSubmitted) return;
+    if (isSubmitted || !isExam) return;
 
     const timerId = setInterval(() => {
-      if (isExam) {
-        setExamSecondsRemaining((prev) => Math.max(0, prev - 1));
-      } else {
-        setElapsedSeconds((prev) => prev + 1);
-      }
+      setExamSecondsRemaining((prev) => Math.max(0, prev - 1));
     }, 1000);
 
     return () => clearInterval(timerId);
@@ -47,12 +42,10 @@ export function useReadingTimer({
   }, [isExam, isSubmitted, examSecondsRemaining]);
 
   const resetTimer = () => {
-    setElapsedSeconds(0);
     setExamSecondsRemaining(initialExamSeconds);
   };
 
   return {
-    elapsedSeconds,
     examSecondsRemaining,
     resetTimer,
   };

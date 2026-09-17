@@ -18,17 +18,17 @@ Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mo
   - Cho phép tra từ nhanh qua Tooltip 2 tầng (offline + MyMemory API), 3 chế độ đọc (Warm Sepia, Obsidian Dark, Cream Light), điều chỉnh cỡ chữ (14px–22px) và giãn dòng (1.5x–2.0x).
   - Tự động bôi màu dẫn chứng (Highlight Clues) với hiệu ứng pulse và tự cuộn mượt đến đoạn văn chứa dẫn chứng khi chọn câu hỏi.
   - Tích hợp ô ghi chú nháp (Scratchpad) tự động lưu theo từng câu hỏi.
-  - Đồng hồ đếm ngược 15 phút/bài đọc (thông tin hỗ trợ, không tự động khóa).
+  - Không chạy đồng hồ đếm giờ (loại bỏ hoàn toàn UI stopwatch và interval ticking nhằm triệt tiêu chu kỳ re-render thừa và giải tỏa áp lực tâm lý khi đọc hiểu).
 - **Exam Mode (`mode: 'exam'`)**:
   - Khóa toàn bộ công cụ tra từ (chống gian lận chuẩn phòng thi).
   - Tích hợp Question Palette 40 câu kèm cờ Flag để đánh dấu câu cần xem lại.
   - Đồng hồ tổng 60 phút đếm ngược toàn bài thi Đọc và tự động thu bài khi hết giờ.
 - **Hệ thống Sub-Components & Hooks**:
-  - `ReadingHeader.tsx`: Tiêu đề bài thi, huy hiệu phân loại (Exam/Practice, Bậc B1-C1, số bài đọc), widget đồng hồ (cảnh báo khẩn cấp dưới 5 phút), banner cảnh báo đồng bộ không chặn và thẻ điểm tổng kết kèm nút làm lại bài.
+  - `ReadingHeader.tsx`: Tiêu đề bài thi, huy hiệu phân loại (Exam/Practice, Bậc B1-C1, số bài đọc), widget đồng hồ đếm ngược (chỉ hiển thị trong Exam Mode, cảnh báo khẩn cấp dưới 5 phút), banner cảnh báo đồng bộ không chặn và thẻ điểm tổng kết kèm nút làm lại bài.
   - `ReadingPassageNavBar.tsx`: Thanh điều hướng bài đọc (Bài Đọc 1..N kèm badge số câu đã làm) và thanh chuyển tab trên di động (<768px).
   - `ReadingQuestionsStream.tsx`: Luồng câu hỏi bài đọc hiện tại, quản lý danh sách `ReadingQuestionCard` và chuyển tiếp ref cuộn mượt.
   - `ReadingResetModal.tsx`: Hộp thoại xác nhận làm lại bài thi đọc.
-  - `useReadingTimer.ts`: Quản lý đồng hồ bấm giờ (Practice) và đếm ngược tự động nộp bài (Exam).
+  - `useReadingTimer.ts`: Quản lý đồng hồ đếm ngược tự động nộp bài trong Exam Mode (không khởi tạo `setInterval` trong Practice Mode).
   - `useReaderSettings.ts`: Quản lý và lưu trữ cài đặt cỡ chữ, giãn dòng, theme đọc theo tài khoản.
   - `useReadingSessionSync.ts`: Tự động lưu phiên làm bài vào LocalStorage và hòa giải trạng thái nộp bài từ Supabase.
 
@@ -55,8 +55,8 @@ Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mo
 - **Ngân hàng Đề Luyện Tập HCMUE (HCMUE_READING_TESTS)**:
   - 5 Đề thi thực hành đọc hiểu trích từ tuyển tập "20 Mock Tests" (NXB ĐH Sư Phạm TP.HCM, 2017) với 20 bài đọc, 200 câu hỏi kèm dẫn chứng verbatim và phân tích đáp án chi tiết (`src/features/reading/data/drills/hcmue/`).
 - **Bộ Chuyển Đổi Bộ Đề (Collection Switcher)**:
-  - `ReadingStudioPage` tích hợp 2 thẻ chọn bộ đề tương tác: "Bộ Đề Thi Thử ULIS (ĐHQGHN)" (7 đề, 280 câu) và "Bộ Đề Luyện Tập HCMUE" (5 đề, 200 câu).
-  - Thanh chọn đề (`reading-edition-selector-bar`) tự động chuyển đổi danh sách nút chọn đề `Đề 1` - `Đề 7` (ULIS) hoặc `Đề 1` - `Đề 5` (HCMUE) và làm mới runner qua `key={`${currentTest.id}_${mode}`}`.
+  - `ReadingStudioPage` mặc định chọn "Bộ Đề Luyện Tập HCMUE" (5 đề, 200 câu) làm bộ đề thực hành ban đầu, đồng thời hỗ trợ chuyển đổi linh hoạt sang "Bộ Đề Thi Thử ULIS (ĐHQGHN)" (7 đề, 280 câu).
+  - Thanh chọn đề (`reading-edition-selector-bar`) tự động chuyển đổi danh sách nút chọn đề `Đề 1` - `Đề 5` (HCMUE) hoặc `Đề 1` - `Đề 7` (ULIS) và làm mới runner qua `key={`${currentTest.id}_practice`}`.
 - **Tích hợp Thi Thử 4 Kỹ Năng (Full Mock Tests)**:
   - `VSTEP_MOCK_TEST_01`: Kết hợp Nghe Đề 1, Đọc Đề 1, Viết Task 1/2, Nói May 30 (`mockTest01.ts`).
   - `VSTEP_MOCK_TEST_02`: Kết hợp Nghe Đề 2, Đọc Đề 2, Viết Task 1/2, Nói May 05 (`mockTest02.ts`).

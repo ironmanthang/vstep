@@ -127,7 +127,7 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
   const handleSubmitRef = useRef<() => void>(() => {});
 
   // Timer Hook
-  const { elapsedSeconds, examSecondsRemaining, resetTimer } = useReadingTimer({
+  const { examSecondsRemaining, resetTimer } = useReadingTimer({
     isExam,
     durationMinutes: test.duration_minutes,
     isSubmitted,
@@ -140,14 +140,14 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
     const scoreOutOf10 = total > 0 ? Number(((correct / total) * 10).toFixed(1)) : 0;
     const timeSpent = isExam
       ? (test.duration_minutes ? test.duration_minutes * 60 : 3600) - examSecondsRemaining
-      : elapsedSeconds;
+      : 0;
 
     const completedTimestamp = Date.now();
     const result: ReadingScoreResult = {
       totalQuestions: total,
       correctCount: correct,
       scoreOutOf10,
-      timeSpentSeconds: Math.max(1, timeSpent),
+      timeSpentSeconds: isExam ? Math.max(1, timeSpent) : 0,
       completedAt: completedTimestamp,
     };
 
@@ -184,7 +184,6 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
   }, [
     allQuestions,
     answers,
-    elapsedSeconds,
     examSecondsRemaining,
     flaggedQuestions,
     incrementExercisesCompleted,
@@ -291,7 +290,6 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
         difficulty={test.difficulty}
         passageCount={test.passages.length}
         isExam={isExam}
-        elapsedSeconds={elapsedSeconds}
         examSecondsRemaining={examSecondsRemaining}
         syncWarning={syncWarning}
         isSubmitted={isSubmitted}

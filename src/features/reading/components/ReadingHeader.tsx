@@ -6,7 +6,6 @@ interface ReadingHeaderProps {
   difficulty: string | number;
   passageCount: number;
   isExam: boolean;
-  elapsedSeconds: number;
   examSecondsRemaining: number;
   syncWarning: string | null;
   isSubmitted: boolean;
@@ -25,7 +24,6 @@ export const ReadingHeader: React.FC<ReadingHeaderProps> = ({
   difficulty,
   passageCount,
   isExam,
-  elapsedSeconds,
   examSecondsRemaining,
   syncWarning,
   isSubmitted,
@@ -47,22 +45,19 @@ export const ReadingHeader: React.FC<ReadingHeaderProps> = ({
           <h2 className="reading-main-title">{title}</h2>
         </div>
 
-        {/* Timer Widget */}
-        <div
-          className={`reading-timer-widget ${
-            isExam && examSecondsRemaining < 300 ? 'exam-urgent' : ''
-          }`}
-        >
-          <span>{isExam ? '⏳ Còn lại:' : '⏱️ Thời gian:'}</span>
-          <span className="timer-digits">
-            {isExam ? formatSeconds(examSecondsRemaining) : formatSeconds(elapsedSeconds)}
-          </span>
-          {!isExam && (
-            <span style={{ fontSize: '10px', color: 'var(--text-muted)' }}>
-              (Khuyến nghị: 15:00 / bài)
+        {/* Timer Widget - Exam mode only */}
+        {isExam && (
+          <div
+            className={`reading-timer-widget ${
+              examSecondsRemaining < 300 ? 'exam-urgent' : ''
+            }`}
+          >
+            <span>⏳ Còn lại:</span>
+            <span className="timer-digits">
+              {formatSeconds(examSecondsRemaining)}
             </span>
-          )}
-        </div>
+          </div>
+        )}
       </div>
 
       {/* Sync Warning */}
@@ -90,8 +85,13 @@ export const ReadingHeader: React.FC<ReadingHeaderProps> = ({
           <div className="score-number-display">{scoreResult.scoreOutOf10} / 10</div>
           <p style={{ margin: 0, fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)' }}>
             Đúng <strong>{scoreResult.correctCount}</strong> trên tổng số{' '}
-            <strong>{scoreResult.totalQuestions}</strong> câu hỏi. Thời gian làm bài:{' '}
-            <strong>{formatSeconds(scoreResult.timeSpentSeconds)}</strong>.
+            <strong>{scoreResult.totalQuestions}</strong> câu hỏi.
+            {isExam && scoreResult.timeSpentSeconds > 0 && (
+              <>
+                {' '}Thời gian làm bài:{' '}
+                <strong>{formatSeconds(scoreResult.timeSpentSeconds)}</strong>.
+              </>
+            )}
           </p>
           <div className="score-actions-inline">
             <button

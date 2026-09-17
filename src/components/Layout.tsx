@@ -102,65 +102,6 @@ export const Layout: React.FC = () => {
           </div>
         </div>
 
-        {/* User Target Card in Sidebar */}
-        <div className="user-target-card">
-          <NavLink
-            to="/"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 'var(--space-2)',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            title="Trang chủ & Tài khoản"
-          >
-            {avatarUrl ? (
-              <img
-                src={avatarUrl}
-                alt={userDisplayName}
-                style={{ width: 28, height: 28, borderRadius: '50%', objectFit: 'cover' }}
-              />
-            ) : (
-              <div
-                style={{
-                  width: 28,
-                  height: 28,
-                  borderRadius: '50%',
-                  background: 'var(--primary-subtle)',
-                  color: 'var(--primary)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: 'var(--fs-xs)',
-                  fontWeight: 700,
-                }}
-              >
-                {avatarInitial}
-              </div>
-            )}
-            <span className="user-name" style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-              {userDisplayName}
-            </span>
-          </NavLink>
-
-          <div style={{ marginTop: '8px', display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-            <button
-              onClick={handleSignOut}
-              style={{
-                background: 'none',
-                border: 'none',
-                color: 'var(--text-muted)',
-                fontSize: '0.75rem',
-                cursor: 'pointer',
-                textDecoration: 'underline'
-              }}
-            >
-              Đăng xuất
-            </button>
-          </div>
-        </div>
-
         {/* Navigation Links */}
         <nav className="sidebar-nav">
           {navItems.map((item) => (
@@ -177,6 +118,37 @@ export const Layout: React.FC = () => {
 
         {/* Sidebar Footer */}
         <div className="sidebar-footer">
+          <div className="sidebar-user-card">
+            <NavLink
+              to="/"
+              className="sidebar-user-profile"
+              title="Trang chủ & Tài khoản"
+            >
+              {avatarUrl ? (
+                <img
+                  src={avatarUrl}
+                  alt={userDisplayName}
+                  className="sidebar-user-avatar"
+                />
+              ) : (
+                <div className="sidebar-user-avatar-initial">
+                  {avatarInitial}
+                </div>
+              )}
+              <div className="sidebar-user-info">
+                <span className="sidebar-user-name">{userDisplayName}</span>
+              </div>
+            </NavLink>
+            <button
+              onClick={handleSignOut}
+              className="sidebar-logout-btn"
+              title="Đăng xuất"
+              aria-label="Đăng xuất"
+            >
+              <LogoutIcon size={18} />
+            </button>
+          </div>
+
           <button
             onClick={toggleTheme}
             className="theme-toggle-btn"

@@ -6,13 +6,11 @@ import {
   ALL_VSTEP_LISTENING_MOCK_TESTS,
 } from './data';
 import { ListeningRunner } from './ListeningRunner';
-import type { ListeningMode } from './types';
 import './ListeningStudioPage.css';
 
 export const ListeningStudioPage: React.FC = () => {
   const [selectedPart, setSelectedPart] = useState<number>(0);
   const [testIndex, setTestIndex] = useState<number>(0);
-  const [mode, setMode] = useState<ListeningMode>('practice');
 
   const getAvailableTestsForPart = (part: number) => {
     switch (part) {
@@ -77,24 +75,6 @@ export const ListeningStudioPage: React.FC = () => {
           <p style={{ fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)', marginTop: 4 }}>
             Audio player thông minh tua ±5s, chỉnh tốc độ, ghi chú nháp và xem lời thoại manh mối theo từng câu.
           </p>
-        </div>
-
-        {/* Mode Switcher */}
-        <div className="listening-studio-mode-toggle">
-          <button
-            type="button"
-            className={`listening-mode-btn practice ${mode === 'practice' ? 'active' : ''}`}
-            onClick={() => setMode('practice')}
-          >
-            🛠️ Chế Độ Luyện Tập
-          </button>
-          <button
-            type="button"
-            className={`listening-mode-btn exam ${mode === 'exam' ? 'active' : ''}`}
-            onClick={() => setMode('exam')}
-          >
-            ⏱️ Thi Thử (Exam)
-          </button>
         </div>
       </div>
 
@@ -168,9 +148,9 @@ export const ListeningStudioPage: React.FC = () => {
       {/* Unified Listening Runner for Selected Part */}
       {currentTest ? (
         <ListeningRunner
-          key={`${currentTest.id}_${mode}`}
+          key={`${currentTest.id}_practice`}
           test={currentTest}
-          mode={mode}
+          mode="practice"
         />
       ) : (
         <div

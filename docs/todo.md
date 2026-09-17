@@ -15,6 +15,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 - [x] Xác thực & Đồng bộ Đám mây: Login-First Gate (`<ProtectedRoute>`), trang `/login` chuyên biệt Google OAuth, migration Supabase normalized tables (`user_profiles`, `user_study_logs`, `user_mock_test_results`, `user_flashcard_reviews`, `user_daily_stats`), trigger PostgreSQL `on_auth_user_created`, `profileSync.ts` đồng bộ hồ sơ/streak/điểm thi, tầng cô lập dữ liệu đa tài khoản theo User ID (`userStorage.ts`), dọn dẹp sạch sẽ `localStorage` khi đăng xuất, và Client optimistic UI buffer.
 - [x] Master AI Gateway: Tích hợp OpenRouter, Ollama Cloud và Google AI Studio với Key Pool rotation, bảng chẩn đoán Dev Console chuyên biệt (`/dev`) kiểm tra độ trễ Ping (ms) & Dev override, tính năng Test Connection health check, cô lập hạn mức 5 lượt/ngày theo từng tài khoản (`vstep_${userId}_ai_daily_quota_v1`), và `AIServiceAdapter` xử lý fallback.
 - [x] Tinh giản Hồ sơ Người học (`/profile`): Rút gọn hồ sơ tài khoản hiển thị email Google, đổi tên trực tiếp, loại bỏ QuotaUsageCard & Dev Console link, tích hợp nút Đặt lại tiến độ Deck (Reset Deck) gọn gàng trong thẻ thông tin duy nhất.
+- [x] Tinh giản Sidebar & Thẻ Người dùng Desktop: Chuyển thẻ người dùng xuống chân sidebar (Sidebar Footer) cạnh nút chuyển theme, tích hợp nút Đăng xuất dạng icon ghost gọn gàng, loại bỏ thẻ thừa trên đầu sidebar giúp logo và danh sách điều hướng thoáng đãng.
 - [x] Cấu hình PWA & Điều phối Cập nhật: Web App Manifest (Standalone Mode), Workbox autoUpdate với `injectRegister: null`, điều hướng Network-Direct không cache `index.html` (`navigateFallback: null`, `globIgnores: ['**/index.html']`, `updateViaCache: 'none'`) loại bỏ hoàn toàn hiện tượng kẹt cache build cũ, bộ điều phối `registerServiceWorker.ts` đảm bảo 1-refresh updates trên Desktop/Mobile, bảo vệ phiên thi đang diễn ra (In-Session Safety), first-visit guard, tự chữa lỗi dynamic chunk 404 (`vite:preloadError` + `lazyWithRetry`), đồng bộ header Cloudflare Pages `_headers`, và chuẩn hóa thứ tự kỹ năng toàn app (Listening → Reading → Writing → Speaking).
 
 ### Module Flashcard SRS Cốt lõi (Curated VSTEP SRS)
@@ -54,7 +55,8 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 ## SPRINT: LUYỆN ĐỌC CÓ HỖ TRỢ (ASSISTED READING STUDIO)
 
 ### Kiến trúc Unified Reading Runner & Giao diện Split-Pane
-- [x] Xây dựng `ReadingRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (bật tra từ/dẫn chứng/ghi chú nháp/15p passage timer) và `mode: 'exam'` (60 phút countdown tự nộp, giao diện chuẩn phòng thi)
+- [x] Xây dựng `ReadingRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (bật tra từ/dẫn chứng/ghi chú nháp, triệt tiêu hoàn toàn đồng hồ đếm ngược và interval ticking để loại bỏ áp lực và chu kỳ re-render thừa) và `mode: 'exam'` (60 phút countdown tự nộp, giao diện chuẩn phòng thi)
+- [x] Tinh giản Studio Luyện Đọc & Luyện Nghe: Loại bỏ bộ chuyển đổi chế độ Luyện tập / Thi thử trong Studio trang con (tập trung 100% vào chế độ Practice, nhường toàn bộ Exam Mode cho Mock Test Runner 180 phút), mặc định chọn Bộ đề HCMUE khi tải trang Reading Studio.
 - [x] Bố cục Split-Pane chia đôi màn hình: Bài đọc bên trái cuộn độc lập, bảng 40 câu hỏi ở giữa, bảng Question Palette sticky bên phải; trên mobile (<768px) hỗ trợ tab toggle ghi nhớ vị trí cuộn
 - [x] Tùy chỉnh hiển thị: Chỉnh cỡ chữ (14px–22px), giãn dòng (1.5x, 1.8x, 2.0x), và 3 chế độ nền (Warm Sepia, Obsidian Dark, Cream Light) lưu trữ theo tài khoản
 

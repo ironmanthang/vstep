@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { ALL_VSTEP_READING_MOCK_TESTS, HCMUE_READING_TESTS } from './data';
 import { ReadingRunner } from './ReadingRunner';
-import type { ReadingMode } from './types';
 import './ReadingStudioPage.css';
 
 export const ReadingStudioPage: React.FC = () => {
-  const [selectedCollection, setSelectedCollection] = useState<'ulis' | 'hcmue'>('ulis');
+  const [selectedCollection, setSelectedCollection] = useState<'ulis' | 'hcmue'>('hcmue');
   const [testIndex, setTestIndex] = useState<number>(0);
-  const [mode, setMode] = useState<ReadingMode>('practice');
 
   const availableTests = selectedCollection === 'ulis' ? ALL_VSTEP_READING_MOCK_TESTS : HCMUE_READING_TESTS;
   const currentTest = availableTests[testIndex] || availableTests[0];
@@ -42,24 +40,6 @@ export const ReadingStudioPage: React.FC = () => {
           <p style={{ fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)', marginTop: 4 }}>
             Giao diện Split-Pane chia đôi màn hình, tra từ điển tiếng Việt 1 chạm, và phân tích dẫn chứng theo từng câu.
           </p>
-        </div>
-
-        {/* Mode Switcher */}
-        <div className="reading-studio-mode-toggle">
-          <button
-            type="button"
-            className={`reading-mode-btn practice ${mode === 'practice' ? 'active' : ''}`}
-            onClick={() => setMode('practice')}
-          >
-            🛠️ Chế Độ Luyện Tập
-          </button>
-          <button
-            type="button"
-            className={`reading-mode-btn exam ${mode === 'exam' ? 'active' : ''}`}
-            onClick={() => setMode('exam')}
-          >
-            ⏱️ Thi Thử (Exam)
-          </button>
         </div>
       </div>
 
@@ -127,9 +107,9 @@ export const ReadingStudioPage: React.FC = () => {
       {/* Unified Reading Runner */}
       {currentTest ? (
         <ReadingRunner
-          key={`${currentTest.id}_${mode}`}
+          key={`${currentTest.id}_practice`}
           test={currentTest}
-          mode={mode}
+          mode="practice"
         />
       ) : (
         <div
