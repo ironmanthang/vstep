@@ -7,6 +7,7 @@ import { QuestionCard } from './components/QuestionCard';
 import { QuestionPalette } from './components/QuestionPalette';
 import { ListeningHeader } from './components/ListeningHeader';
 import { ListeningResetModal } from './components/ListeningResetModal';
+import { useDictionaryExamLock } from '../dictionary';
 import { useUserStore } from '../../services/user/userStore';
 import { useAuth } from '../../services/supabase/authStore';
 import { fetchTestSubmission, upsertTestSubmission, deleteTestSubmission } from '../../services/supabase/testSubmissionSync';
@@ -38,6 +39,7 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
   onComplete,
 }) => {
   const isExam = mode === 'exam';
+  useDictionaryExamLock(isExam);
   const { user } = useAuth();
   const userId = user?.id;
   const { recordStudyActivity, incrementExercisesCompleted } = useUserStore();

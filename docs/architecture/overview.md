@@ -43,6 +43,15 @@
   - **Foreground & Network Re-check**: Lắng nghe `visibilitychange`, `pageshow` và `online` gọi `registration.update()` ngay khi người dùng mở lại tab hoặc khởi động PWA từ màn hình chính iOS.
   - **Tự Chữa Lỗi Chunk (Chunk Self-Healing)**: Lắng nghe sự kiện native `vite:preloadError` kết hợp `lazyWithRetry.ts` và `ChunkErrorBoundary.tsx` tự động reload 1 lần an toàn qua `sessionStorage` khi mã băm tài nguyên thay đổi sau đợt deploy mới, tránh màn hình trắng (white screen).
 
+## Kiến trúc Từ điển Tra từ Toàn cục (Ubiquitous Dictionary Provider)
+- **Vị trí & Phạm vi Tiếp cận**: Triển khai tại `src/features/dictionary/`, bao bọc toàn bộ ứng dụng tại root `App.tsx` qua `<DictionaryProvider>`. Cung cấp khả năng tra cứu 1-tap/double-click xuyên suốt cả 4 kỹ năng (bài đọc, câu hỏi trắc nghiệm, phương án lựa chọn, transcript bài nghe, đề bài viết, cue card bài nói, giải thích sau khi nộp).
+- **Phân tách Chunk & Tải Động (Dynamic Lazy Split)**: Component hiển thị `DictionaryTooltip` và kho từ điển 9.098 mục (`dictionaryVi.ts` ~1.8MB) được nạp động qua `React.lazy` và `createPortal(..., document.body)`. Không tải dữ liệu từ điển ở trang chủ hoặc trang đăng nhập, duy trì chunk riêng `reading-dictionary` trong cấu hình `vite.config.ts`.
+- **Giải quyết Xung đột Tương tác trên Phương án Trắc nghiệm**:
+  - Trên Desktop: Click chuột đơn chọn phương án thi bình thường; nhấn đúp chuột hoặc bôi đen văn bản phương án kích hoạt tra từ và ngăn chặn sự kiện chọn phương án (`e.stopPropagation()`).
+  - Trên Mobile: Chạm ngắn (<400ms) chọn phương án; nhấn giữ (long-press >=400ms) hoặc chạm đúp trên từ vựng kích hoạt tra từ kèm rung nhẹ (haptic), không làm đổi đáp án đã chọn.
+  - Khi đã nộp bài (`isSubmitted === true`): Các phương án bị vô hiệu hóa (`disabled`), người học chạm 1 chạm vào bất kỳ từ nào để tra nghĩa tức thì phục vụ chữa đề.
+- **Hàng rào Khóa Phòng thi (Exam Mode Guard)**: Sử dụng custom hook đếm tham chiếu `useDictionaryExamLock(isLocked)`. Khi người dùng ở trong `FullMockTestRunner` hoặc bất kỳ runner nào chạy với `mode === 'exam'`, toàn bộ tương tác tra từ bị khóa triệt để 100%, tự động đóng mọi tooltip đang mở và bỏ qua việc lắng nghe sự kiện để bảo đảm tính trung thực của kỳ thi chuẩn CBT.
+
 ## Quản lý Dữ liệu
 
 | Loại Dữ liệu | Vị trí / Cơ chế Lưu trữ | Đặc điểm & Chu kỳ Cập nhật |

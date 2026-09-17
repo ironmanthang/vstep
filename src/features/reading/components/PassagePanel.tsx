@@ -1,5 +1,7 @@
 import { useRef, useEffect } from 'react';
 import type { ReadingPassage, ReaderSettings } from '../types';
+import { useDictionary } from '../../dictionary';
+import { getWordAtCoordinates } from '../../dictionary/utils/wordCoordinates';
 import './PassagePanel.css';
 
 interface PassagePanelProps {
@@ -7,78 +9,7 @@ interface PassagePanelProps {
   activeClueSentence?: string;
   readerSettings: ReaderSettings;
   onChangeReaderSettings: (settings: Partial<ReaderSettings>) => void;
-  onWordSelect: (word: string, position: { x: number; y: number; bottom?: number }) => void;
-}
-
-/**
- * Resolves the English word and its bounding rectangle at a specific client coordinate.
- * Works natively on touch and click without requiring OS text selection.
- */
-function getWordAtCoordinates(x: number, y: number): { word: string; rect: DOMRect } | null {
-  let textNode: Node | null = null;
-  let offset = 0;
-
-  type DocWithCaret = Document & {
-    caretPositionFromPoint?: (x: number, y: number) => { offsetNode: Node; offset: number } | null;
-    caretRangeFromPoint?: (x: number, y: number) => Range | null;
-  };
-  const doc = document as DocWithCaret;
-
-  if (doc.caretPositionFromPoint) {
-    const pos = doc.caretPositionFromPoint(x, y);
-    if (pos) {
-      textNode = pos.offsetNode;
-      offset = pos.offset;
-    }
-  } else if (doc.caretRangeFromPoint) {
-    const range = doc.caretRangeFromPoint(x, y);
-    if (range) {
-      textNode = range.startContainer;
-      offset = range.startOffset;
-    }
-  }
-
-  if (!textNode || textNode.nodeType !== Node.TEXT_NODE || !textNode.textContent) {
-    return null;
-  }
-
-  const text = textNode.textContent;
-  if (offset < 0 || offset > text.length) return null;
-
-  const isWordChar = (char: string) => /[a-zA-Z0-9'-]/.test(char);
-
-  let start = offset;
-  let end = offset;
-
-  // If tapped right at the trailing boundary of a word
-  if (start > 0 && !isWordChar(text[start]) && isWordChar(text[start - 1])) {
-    start--;
-    end--;
-  }
-
-  if (!isWordChar(text[start])) {
-    return null;
-  }
-
-  while (start > 0 && isWordChar(text[start - 1])) {
-    start--;
-  }
-  while (end < text.length && isWordChar(text[end])) {
-    end++;
-  }
-
-  const word = text.slice(start, end).trim();
-  if (!word || word.length > 32) return null;
-
-  try {
-    const wordRange = document.createRange();
-    wordRange.setStart(textNode, start);
-    wordRange.setEnd(textNode, end);
-    const rect = wordRange.getBoundingClientRect();
-    return { word, rect };
-  } catch {
-    return null;
-  }
+  onWordSelect?: (word: string, position: { x: number; y: number; bottom?: number }) => void;
 }
 
 export const PassagePanel: React.FC<PassagePanelProps> = ({
@@ -88,6 +19,8 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
   onChangeReaderSettings,
   onWordSelect,
 }) => {
+  const { lookupWord } = useDictionary();
+  const handleWordSelect = onWordSelect ?? lookupWord;
   const containerRef = useRef<HTMLDivElement | null>(null);
   const evidenceRef = useRef<HTMLElement | null>(null);
   const touchStartPos = useRef<{ x: number; y: number; time: number } | null>(null);
@@ -125,7 +58,7 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
 
     const resolved = getWordAtCoordinates(touch.clientX, touch.clientY);
     if (resolved) {
-      onWordSelect(resolved.word, {
+      handleWordSelect(resolved.word, {
         x: resolved.rect.left + resolved.rect.width / 2,
         y: resolved.rect.top,
         bottom: resolved.rect.bottom,
@@ -142,7 +75,7 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
     if (selectedText && selectedText.length <= 32 && !selectedText.includes(' ') && !selectedText.includes('\n')) {
       const range = selection.getRangeAt(0);
       const rect = range.getBoundingClientRect();
-      onWordSelect(selectedText, {
+      handleWordSelect(selectedText, {
         x: rect.left + rect.width / 2,
         y: rect.top,
         bottom: rect.bottom,
@@ -157,7 +90,7 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
     if (selectedText && selectedText.length <= 32 && !selectedText.includes(' ')) {
       const range = selection && selection.rangeCount > 0 ? selection.getRangeAt(0) : null;
       const rect = range ? range.getBoundingClientRect() : null;
-      onWordSelect(selectedText, {
+      handleWordSelect(selectedText, {
         x: rect ? rect.left + rect.width / 2 : e.clientX,
         y: rect ? rect.top : e.clientY,
         bottom: rect ? rect.bottom : e.clientY + 22,

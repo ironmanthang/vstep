@@ -12,6 +12,7 @@ import { WritingScaffoldBox } from './components/WritingScaffoldBox';
 import { useAuth } from '../../services/supabase/authStore';
 import { useUserStore } from '../../services/user/userStore';
 import { upsertTestSubmission } from '../../services/supabase/testSubmissionSync';
+import { useDictionaryExamLock } from '../dictionary';
 import './WritingRunner.css';
 
 export type { WritingTestInput };
@@ -31,6 +32,7 @@ export const WritingRunner: React.FC<WritingRunnerProps> = ({
   onComplete,
   onExit,
 }) => {
+  useDictionaryExamLock(mode === 'exam');
   const { user } = useAuth();
   const userId = propUserId || user?.id;
   const { recordStudyActivity, incrementExercisesCompleted } = useUserStore();

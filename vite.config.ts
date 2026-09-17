@@ -53,7 +53,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: (id) => {
-          if (id.includes('features/reading/data/dictionaryVi')) {
+          if (id.includes('features/reading/data/dictionaryVi') || id.includes('features/dictionary/components/DictionaryTooltip')) {
             return 'reading-dictionary';
           }
           if (id.includes('features/flashcard/corpus')) {

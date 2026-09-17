@@ -29,6 +29,7 @@ import { SpeakingFooter } from './components/SpeakingFooter';
 import { useAuth } from '../../services/supabase/authStore';
 import { useUserStore } from '../../services/user/userStore';
 import { upsertTestSubmission } from '../../services/supabase/testSubmissionSync';
+import { useDictionaryExamLock } from '../dictionary';
 import './SpeakingRunner.css';
 
 interface SpeakingRunnerProps {
@@ -46,6 +47,7 @@ export const SpeakingRunner: React.FC<SpeakingRunnerProps> = ({
   onComplete,
   onExit,
 }) => {
+  useDictionaryExamLock(mode === 'exam');
   const { user } = useAuth();
   const userId = propUserId || user?.id;
   const { recordStudyActivity, incrementExercisesCompleted } = useUserStore();

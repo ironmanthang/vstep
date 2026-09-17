@@ -12,10 +12,11 @@ import { SpeakingStudioPage } from './features/speaking/SpeakingStudioPage';
 import { FlashcardPage } from './features/flashcard/FlashcardPage';
 import { MockTestPage } from './pages/MockTestPage';
 import { UpdateNotificationToast } from './components/pwa/UpdateNotificationToast';
+import { DictionaryProvider } from './features/dictionary';
 
 export const App: React.FC = () => {
   return (
-    <>
+    <DictionaryProvider>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route element={<ProtectedRoute />}>
@@ -35,7 +36,7 @@ export const App: React.FC = () => {
         </Route>
       </Routes>
       <UpdateNotificationToast />
-    </>
+    </DictionaryProvider>
   );
 };
 

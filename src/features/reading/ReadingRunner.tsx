@@ -2,7 +2,7 @@ import React, { useState, useRef, useCallback, useEffect } from 'react';
 import type { ReadingTest, ReadingMode, ReadingScoreResult } from './types';
 import { PassagePanel } from './components/PassagePanel';
 import { ReadingBottomBar } from './components/ReadingBottomBar';
-import { DictionaryTooltip } from './components/DictionaryTooltip';
+import { useDictionaryExamLock } from '../dictionary';
 import { ReadingHeader } from './components/ReadingHeader';
 import { ReadingPassageNavBar } from './components/ReadingPassageNavBar';
 import { ReadingQuestionsStream } from './components/ReadingQuestionsStream';
@@ -41,6 +41,7 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
   onComplete,
 }) => {
   const isExam = mode === 'exam';
+  useDictionaryExamLock(isExam);
   const { user } = useAuth();
   const userId = user?.id;
   const { recordStudyActivity, incrementExercisesCompleted } = useUserStore();
@@ -77,12 +78,6 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
 
   // Reader Settings
   const { readerSettings, updateReaderSettings } = useReaderSettings(userId);
-
-  // Dictionary Tooltip State
-  const [dictTooltip, setDictTooltip] = useState<{
-    word: string | null;
-    position: { x: number; y: number; bottom?: number } | null;
-  }>({ word: null, position: null });
 
   // Reset Modal State
   const [isResetModalOpen, setIsResetModalOpen] = useState<boolean>(false);
@@ -322,11 +317,6 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
               activeClueSentence={activeClueSentence}
               readerSettings={readerSettings}
               onChangeReaderSettings={updateReaderSettings}
-              onWordSelect={(word, pos) => {
-                if (!isExam) {
-                  setDictTooltip({ word, position: pos });
-                }
-              }}
             />
           )}
         </div>
@@ -368,13 +358,6 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
         onSelectQuestion={handleFocusQuestion}
         onSubmit={handleSubmit}
         onReset={() => setIsResetModalOpen(true)}
-      />
-
-      {/* Dictionary Tooltip Overlay */}
-      <DictionaryTooltip
-        word={dictTooltip.word}
-        position={dictTooltip.position}
-        onClose={() => setDictTooltip({ word: null, position: null })}
       />
 
       {/* Confirmation Modal for Resetting Test */}

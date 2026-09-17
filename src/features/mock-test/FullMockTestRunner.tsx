@@ -33,6 +33,7 @@ import { useAuth } from '../../services/supabase/authStore';
 import { useUserStore } from '../../services/user/userStore';
 import { upsertTestSubmission } from '../../services/supabase/testSubmissionSync';
 import { recordMockTestInCloud } from '../../services/supabase/profileSync';
+import { useDictionaryExamLock } from '../dictionary';
 import './FullMockTestRunner.css';
 
 interface FullMockTestRunnerProps {
@@ -82,6 +83,7 @@ export const FullMockTestRunner: React.FC<FullMockTestRunnerProps> = ({
 
   const [isConfirmEarlyModalOpen, setIsConfirmEarlyModalOpen] = useState(false);
   const isExamActive = !session.isSubmitted && session.activeSection !== 'result';
+  useDictionaryExamLock(isExamActive);
 
   // Periodic Auto-save
   useEffect(() => {
