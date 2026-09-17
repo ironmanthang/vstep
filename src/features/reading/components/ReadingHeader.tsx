@@ -36,9 +36,6 @@ export const ReadingHeader: React.FC<ReadingHeaderProps> = ({
       <div className="reading-runner-header">
         <div className="reading-title-group">
           <div className="reading-meta-row">
-            <span className={`badge ${isExam ? 'badge-gold' : 'badge-primary'}`}>
-              {isExam ? 'Chế Độ Thi Thử (Exam)' : 'Chế Độ Luyện Tập (Practice)'}
-            </span>
             <span className="badge badge-emerald">Bậc {difficulty}</span>
             <span className="badge badge-purple">{passageCount} Bài Đọc</span>
           </div>

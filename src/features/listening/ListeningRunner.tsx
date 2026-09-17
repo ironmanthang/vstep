@@ -249,7 +249,6 @@ export const ListeningRunner: React.FC<ListeningRunnerProps> = ({
       <ListeningHeader
         title={test.title}
         difficulty={test.difficulty}
-        isExam={isExam}
         syncWarning={syncWarning}
         isSubmitted={isSubmitted}
         scoreResult={scoreResult}
