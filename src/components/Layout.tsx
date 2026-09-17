@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router';
 import {
   HomeIcon,
@@ -7,13 +7,17 @@ import {
   MockTestIcon,
   SunIcon,
   MoonIcon,
-  LogoutIcon
+  LogoutIcon,
+  ChevronLeftIcon,
+  MenuIcon,
 } from './Icons';
+import { SidebarProvider } from '../contexts/SidebarProvider';
+import { useSidebar } from '../contexts/SidebarContext';
 import { useAuth } from '../services/supabase/authStore';
 import { useUserStore } from '../services/user/userStore';
 import './Layout.css';
 
-export const Layout: React.FC = () => {
+const LayoutContent: React.FC = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     return (localStorage.getItem('vstep_theme') as 'light' | 'dark') || 'light';
   });
@@ -21,6 +25,9 @@ export const Layout: React.FC = () => {
   const { userDisplayName, avatarInitial, avatarUrl, resetProfile } = useUserStore();
   const location = useLocation();
   const navigate = useNavigate();
+
+  const { isCollapsed, isHoverPeek, toggleSidebar, setHoverPeek } = useSidebar();
+  const hideTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -51,6 +58,66 @@ export const Layout: React.FC = () => {
       colorSchemeMeta.setAttribute('content', theme === 'dark' ? 'dark' : 'light');
     }
   }, [theme]);
+
+  // Clear timeouts on unmount
+  useEffect(() => {
+    return () => {
+      if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
+    };
+  }, []);
+
+  // Dismiss hover peek overlay when route changes
+  useEffect(() => {
+    setHoverPeek(false);
+    if (hideTimeoutRef.current) {
+      clearTimeout(hideTimeoutRef.current);
+      hideTimeoutRef.current = null;
+    }
+  }, [location.pathname, setHoverPeek]);
+
+  // Sync state if permanently expanded
+  useEffect(() => {
+    if (!isCollapsed) {
+      setHoverPeek(false);
+      if (hideTimeoutRef.current) {
+        clearTimeout(hideTimeoutRef.current);
+        hideTimeoutRef.current = null;
+      }
+    }
+  }, [isCollapsed, setHoverPeek]);
+
+  const handleMouseEnterTrigger = () => {
+    if (hideTimeoutRef.current) {
+      clearTimeout(hideTimeoutRef.current);
+      hideTimeoutRef.current = null;
+    }
+    setHoverPeek(true);
+  };
+
+  const handleMouseLeaveTrigger = () => {
+    if (!hideTimeoutRef.current && isHoverPeek) {
+      hideTimeoutRef.current = setTimeout(() => {
+        setHoverPeek(false);
+        hideTimeoutRef.current = null;
+      }, 100);
+    }
+  };
+
+  const handleMouseEnterSidebar = () => {
+    if (hideTimeoutRef.current) {
+      clearTimeout(hideTimeoutRef.current);
+      hideTimeoutRef.current = null;
+    }
+  };
+
+  const handleMouseLeaveSidebar = () => {
+    if (!hideTimeoutRef.current && isHoverPeek) {
+      hideTimeoutRef.current = setTimeout(() => {
+        setHoverPeek(false);
+        hideTimeoutRef.current = null;
+      }, 100);
+    }
+  };
 
   const toggleTheme = () => {
     setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
@@ -87,19 +154,60 @@ export const Layout: React.FC = () => {
   };
 
   return (
-    <div className="app-shell">
+    <div className={`app-shell ${isCollapsed ? 'sidebar-collapsed' : ''}`}>
+      {/* Spacer div to reserve space in flex layout when sidebar is permanently expanded */}
+      <div className="sidebar-spacer" aria-hidden="true" />
+
+      {/* Floating Toggle Button (Appears on desktop when collapsed) */}
+      {isCollapsed && (
+        <button
+          type="button"
+          onClick={toggleSidebar}
+          className="sidebar-floating-toggle"
+          title="Mở rộng thanh điều hướng (Ctrl+B)"
+          aria-label="Mở rộng thanh điều hướng"
+        >
+          <MenuIcon size={20} />
+        </button>
+      )}
+
+      {/* Invisible Hover-Peek Edge Trigger (Appears when collapsed) */}
+      {isCollapsed && (
+        <div
+          onMouseEnter={handleMouseEnterTrigger}
+          onMouseLeave={handleMouseLeaveTrigger}
+          className="sidebar-peek-trigger"
+          aria-hidden="true"
+        />
+      )}
+
       {/* Desktop Sidebar Navigation */}
-      <aside className="sidebar">
+      <aside
+        onMouseEnter={isCollapsed ? handleMouseEnterSidebar : undefined}
+        onMouseLeave={isCollapsed ? handleMouseLeaveSidebar : undefined}
+        className={`sidebar ${isCollapsed ? 'collapsed' : ''} ${isHoverPeek ? 'hover-peek' : ''}`}
+      >
         <div className="sidebar-brand">
-          <div className="brand-logo">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <rect width="24" height="24" rx="6" fill="#D4A373" />
-              <path d="M6 8L12 17L18 8" stroke="#141210" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+          <div className="brand-main">
+            <div className="brand-logo">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect width="24" height="24" rx="6" fill="#D4A373" />
+                <path d="M6 8L12 17L18 8" stroke="#141210" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+            <div className="brand-text">
+              <span className="brand-title">VSTEP Master</span>
+            </div>
           </div>
-          <div className="brand-text">
-            <span className="brand-title">VSTEP Master</span>
-          </div>
+          <button
+            type="button"
+            onClick={toggleSidebar}
+            className="sidebar-collapse-btn"
+            title={isCollapsed ? 'Mở rộng thanh điều hướng (Ctrl+B)' : 'Thu gọn thanh điều hướng (Ctrl+B)'}
+            aria-label="Thu gọn thanh điều hướng"
+          >
+            <ChevronLeftIcon size={18} className={`sidebar-chevron ${isCollapsed ? 'rotated' : ''}`} />
+          </button>
         </div>
 
         {/* Navigation Links */}
@@ -108,6 +216,9 @@ export const Layout: React.FC = () => {
             <NavLink
               key={item.to}
               to={item.to}
+              onClick={() => {
+                if (isHoverPeek) setHoverPeek(false);
+              }}
               className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             >
               <span className="nav-icon">{item.icon}</span>
@@ -231,3 +342,9 @@ export const Layout: React.FC = () => {
     </div>
   );
 };
+
+export const Layout: React.FC = () => (
+  <SidebarProvider>
+    <LayoutContent />
+  </SidebarProvider>
+);
