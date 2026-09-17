@@ -9,7 +9,6 @@ import {
   MoonIcon,
   LogoutIcon,
   ChevronLeftIcon,
-  MenuIcon,
 } from './Icons';
 import { SidebarProvider } from '../contexts/SidebarProvider';
 import { useSidebar } from '../contexts/SidebarContext';
@@ -157,19 +156,6 @@ const LayoutContent: React.FC = () => {
     <div className={`app-shell ${isCollapsed ? 'sidebar-collapsed' : ''}`}>
       {/* Spacer div to reserve space in flex layout when sidebar is permanently expanded */}
       <div className="sidebar-spacer" aria-hidden="true" />
-
-      {/* Floating Toggle Button (Appears on desktop when collapsed) */}
-      {isCollapsed && (
-        <button
-          type="button"
-          onClick={toggleSidebar}
-          className="sidebar-floating-toggle"
-          title="Mở rộng thanh điều hướng (Ctrl+B)"
-          aria-label="Mở rộng thanh điều hướng"
-        >
-          <MenuIcon size={20} />
-        </button>
-      )}
 
       {/* Invisible Hover-Peek Edge Trigger (Appears when collapsed) */}
       {isCollapsed && (
