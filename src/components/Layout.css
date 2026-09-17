@@ -159,7 +159,7 @@
   min-height: 100vh;
   min-width: 0;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* Mobile Header (Hidden on Desktop) */
