@@ -56,6 +56,7 @@ scripts/.hcmue_cache_*.json
 scripts/.test_*_passages_cache.json
 scripts/.cefr_audit_cache.json
 scripts/cefr_audit_report.json
+scripts/data/anhviet109K.txt
 
 # Large binary archives
 *.zip

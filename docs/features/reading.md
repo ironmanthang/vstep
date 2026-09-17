@@ -36,9 +36,9 @@ Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mo
 
 ## Bộ Công cụ Hỗ trợ Đọc Hiểu (Scaffolding Tools)
 - **1-Tap / Double-Click Dictionary Tooltip**:
-  - Trên Desktop: Nhấn đúp hoặc bôi đen từ tiếng Anh trong bài đọc hiển thị tooltip tra nghĩa tiếng Việt tức thì trong 0ms.
+  - Trên Desktop: Nhấn đúp hoặc bôi đen từ tiếng Anh trong bài đọc hiển thị tooltip tra nghĩa tiếng Việt tức thì trong 0ms với hiệu ứng bôi sáng màu caramel ấm thay thế viền xanh desktop.
   - Trên Mobile: Chạm 1 chạm tức thì qua cơ chế phân giải tọa độ điểm sang text node (`caretPositionFromPoint` / `caretRangeFromPoint`) trong ngưỡng tap (<8px, <400ms), kết hợp `touch-action: manipulation` triệt tiêu xung đột với menu bôi đen hệ điều hành.
-  - Kiến trúc 2 tầng: Tầng 1 tra offline 3.000 từ VSTEP Core (`dictionaryVi.ts`), Tầng 2 fallback qua MyMemory API (`en|vi`). Tuyệt đối không ghi rác vào hàng đợi SRS.
+  - Kiến trúc 2 tầng nâng cấp: Tầng 1 tra offline 9.000+ từ vựng học thuật & đời sống chuẩn từ điển Anh-Việt (`dictionaryVi.ts`) kèm phiên âm IPA, từ loại (POS), danh sách nghĩa đánh số, phát âm Web Speech API (TTS), giải thuật Lemmatizer O(1) nhận diện từ gốc (-ed, -ing, -s, -ly, irregulars) và định vị lật thông minh (smart flip) tránh che khuất dòng đầu/tiêu đề; Tầng 2 fallback qua MyMemory API (`en|vi`) được làm sạch tiền tố và gắn nhãn "Dịch máy". Tuyệt đối không ghi rác vào hàng đợi SRS và khóa công cụ trong Exam Mode.
 - **Bố cục Linh hoạt (Desktop Split-Pane & Mobile Tabs)**:
   - Trên Desktop (>=768px): Khung bài đọc bên trái cuộn độc lập với thanh công cụ Reader Controls, khung câu hỏi bên phải trong bố cục 2 cột thoáng rộng (1.15fr / 1fr), thanh điều hướng câu hỏi đáy chuẩn CBT hỗ trợ thu gọn thành floating pill góc màn hình (`bottom-collapsed` tự động tăng +70px chiều cao vùng đọc).
   - Trên Mobile (<768px): Bộ chuyển tab "Bài Đọc" và "Câu Hỏi" toàn màn hình, lưu vị trí cuộn độc lập khi chuyển qua lại.

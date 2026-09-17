@@ -47,5 +47,20 @@ export default defineConfig({
         ]
       }
     })
-  ]
+  ],
+  build: {
+    chunkSizeWarningLimit: 2100,
+    rollupOptions: {
+      output: {
+        manualChunks: (id) => {
+          if (id.includes('features/reading/data/dictionaryVi')) {
+            return 'reading-dictionary';
+          }
+          if (id.includes('features/flashcard/corpus')) {
+            return 'flashcard-corpus';
+          }
+        }
+      }
+    }
+  }
 })

@@ -190,3 +190,15 @@
     padding: 8px 12px;
   }
 }
+
+/* Scoped Reading Text Selection (Warm Amber Glow) */
+.passage-content-container ::selection {
+  background: rgba(198, 139, 89, 0.3);
+  color: inherit;
+}
+
+[data-theme="dark"] .passage-content-container ::selection {
+  background: rgba(212, 163, 115, 0.35);
+  color: inherit;
+}
+

@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { DICTIONARY_VI } from '../data/dictionaryVi';
+import React, { useEffect, useState, useRef, useMemo, useCallback } from 'react';
+import { lookupDictionary, type DictEntry } from '../data/dictionaryVi';
 import './DictionaryTooltip.css';
 
 interface DictionaryTooltipProps {
   word: string | null;
-  position: { x: number; y: number } | null;
+  position: { x: number; y: number; bottom?: number } | null;
   onClose: () => void;
 }
 
@@ -19,15 +19,23 @@ export const DictionaryTooltip: React.FC<DictionaryTooltipProps> = ({
     ? word.trim().toLowerCase().replace(/^[^a-zA-Z]+|[^a-zA-Z]+$/g, '')
     : '';
 
-  // Tier 1: Derive local definition directly during render (0ms, no cascading render)
-  const localDef = cleanWord ? DICTIONARY_VI[cleanWord] || null : null;
+  // Tier 1: 0ms instant local dictionary lookup with automatic lemmatization fallback
+  const localResult = useMemo(() => {
+    return cleanWord ? lookupDictionary(cleanWord) : null;
+  }, [cleanWord]);
+
+  const localDef: DictEntry | null = localResult?.entry ?? null;
+  const lemma = localResult?.lemma;
+  const phonetic = localDef?.p;
 
   // Tier 2: State for asynchronous remote fallback lookup
-  const [remoteDef, setRemoteDef] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [remoteLookup, setRemoteLookup] = useState<{
+    word: string;
+    text: string | null;
+  }>({ word: '', text: null });
 
   useEffect(() => {
-    // Only run network fetch if cleanWord is valid and not found in local dictionary
+    // Only fetch remote if word is valid and not found in local dictionary
     if (!cleanWord || localDef) {
       return;
     }
@@ -50,18 +58,25 @@ export const DictionaryTooltip: React.FC<DictionaryTooltipProps> = ({
           translatedText.toLowerCase() !== cleanWord &&
           !translatedText.includes('MYMEMORY WARNING')
         ) {
-          setRemoteDef(translatedText);
+          // Clean possible noise prefixes like "F1:" or quotes
+          const cleanedText = translatedText
+            .replace(/^[A-Z0-9]+:/, '')
+            .trim();
+          setRemoteLookup({ word: cleanWord, text: cleanedText });
         } else {
-          setRemoteDef('Không tìm thấy định nghĩa tiếng Việt phù hợp.');
+          setRemoteLookup({
+            word: cleanWord,
+            text: 'Không tìm thấy định nghĩa tiếng Việt phù hợp.',
+          });
         }
       })
       .catch(() => {
         if (!isCancelled) {
-          setRemoteDef('Không thể kết nối đến từ điển trực tuyến.');
+          setRemoteLookup({
+            word: cleanWord,
+            text: 'Không thể kết nối đến từ điển trực tuyến.',
+          });
         }
-      })
-      .finally(() => {
-        if (!isCancelled) setIsLoading(false);
       });
 
     return () => {
@@ -70,6 +85,24 @@ export const DictionaryTooltip: React.FC<DictionaryTooltipProps> = ({
       clearTimeout(timeoutId);
     };
   }, [cleanWord, localDef]);
+
+  // Derived state during render (0 cascading renders)
+  const isLoading = Boolean(cleanWord && !localDef && remoteLookup.word !== cleanWord);
+  const remoteDef = remoteLookup.word === cleanWord ? remoteLookup.text : null;
+
+  // Audio pronunciation via native Web Speech API
+  const playPronunciation = useCallback(() => {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window) || !cleanWord) return;
+    try {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(cleanWord);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.88;
+      window.speechSynthesis.speak(utterance);
+    } catch (err) {
+      console.warn('SpeechSynthesis error:', err);
+    }
+  }, [cleanWord]);
 
   // Click outside and Escape key listener
   useEffect(() => {
@@ -95,21 +128,28 @@ export const DictionaryTooltip: React.FC<DictionaryTooltipProps> = ({
 
   if (!word || !position || !cleanWord) return null;
 
-  const definition = localDef || remoteDef;
   const source = localDef ? 'vstep' : remoteDef ? 'mymemory' : null;
 
-  // Viewport bounds calculation
-  const cardWidth = 260;
-  const clampedX = Math.max(12, Math.min(window.innerWidth - cardWidth - 12, position.x - cardWidth / 2));
-  const clampedY = Math.max(48, position.y);
+  // Viewport bounds calculation and Smart Flip Positioning
+  const cardWidth = 290;
+  const clampedX = Math.max(
+    12,
+    Math.min(window.innerWidth - cardWidth - 12, position.x - cardWidth / 2)
+  );
+
+  // Flip below word if tapped in upper 210px of viewport to avoid blocking titles or clipping top
+  const isFlippedBelow = position.y < 210;
+  const targetY = isFlippedBelow
+    ? (position.bottom ? position.bottom + 8 : position.y + 26)
+    : position.y;
 
   return (
     <div className="dictionary-tooltip-overlay">
       <div
         ref={cardRef}
-        className="dictionary-tooltip-card"
+        className={`dictionary-tooltip-card ${isFlippedBelow ? 'flip-below' : 'flip-above'}`}
         style={{
-          top: `${clampedY}px`,
+          top: `${targetY}px`,
           left: `${clampedX}px`,
           width: `${cardWidth}px`,
         }}
@@ -117,13 +157,39 @@ export const DictionaryTooltip: React.FC<DictionaryTooltipProps> = ({
         aria-label={`Từ điển: ${cleanWord}`}
       >
         <div className="dict-header">
-          <span className="dict-word-title">{cleanWord}</span>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+          <div className="dict-title-cluster">
+            <span className="dict-word-title">{cleanWord}</span>
+            {lemma && (
+              <span className="dict-lemma-tag" title={`Từ gốc: ${lemma}`}>
+                ← {lemma}
+              </span>
+            )}
+            {phonetic && <span className="dict-phonetic">{phonetic}</span>}
+            <button
+              type="button"
+              className="dict-audio-btn"
+              onClick={playPronunciation}
+              aria-label="Phát âm tiếng Anh"
+              title="Nghe phát âm"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
+              </svg>
+            </button>
+          </div>
+
+          <div className="dict-header-actions">
             {source === 'vstep' && (
               <span className="dict-source-badge vstep">VSTEP Core</span>
             )}
             {source === 'mymemory' && (
-              <span className="dict-source-badge">Dịch tự động</span>
+              <span className="dict-source-badge remote">Dịch máy</span>
             )}
             <button
               type="button"
@@ -138,12 +204,31 @@ export const DictionaryTooltip: React.FC<DictionaryTooltipProps> = ({
 
         {isLoading && !localDef && (
           <div className="dict-loading-state">
-            <span>⏳ Đang tra cứu nghĩa tiếng Việt...</span>
+            <span>⏳ Đang tra cứu trực tuyến...</span>
           </div>
         )}
 
-        {!isLoading && definition && (
-          <div className="dict-definition-body">{definition}</div>
+        {!isLoading && localDef && (
+          <div className="dict-senses-body">
+            {localDef.m.map((sense, sIdx) => (
+              <div key={sIdx} className="dict-pos-section">
+                <span className="dict-pos-pill">{sense.pos}</span>
+                <ol className="dict-def-list">
+                  {sense.def.map((d, dIdx) => (
+                    <li key={dIdx} className="dict-def-item">
+                      {d}
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {!isLoading && !localDef && remoteDef && (
+          <div className="dict-machine-body">
+            <div className="dict-machine-text">{remoteDef}</div>
+          </div>
         )}
       </div>
     </div>

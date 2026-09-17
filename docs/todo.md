@@ -63,7 +63,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 
 ### Tra từ Nhanh (1-Tap Dictionary Tooltip)
 - [x] Nhấn/chạm vào từ tiếng Anh trong bài đọc hiển thị tooltip tra nghĩa tiếng Việt tức thì; trên mobile hỗ trợ chạm 1 chạm tức thì (coordinate point resolution qua `caretPositionFromPoint` / `caretRangeFromPoint` kết hợp `touch-action: manipulation`) loại bỏ hoàn toàn xung đột menu hệ điều hành
-- [x] Hỗ trợ tra từ 2 tầng: Tầng 1 offline tra tức thì 3.000 từ VSTEP Core (`dictionaryVi.ts`) + Tầng 2 fallback qua MyMemory API hiển thị nghĩa tiếng Việt (không ghi rác vào hàng đợi SRS)
+- [x] Hỗ trợ tra từ 2 tầng nâng cấp: Tầng 1 offline tra tức thì 9.000+ từ vựng Anh-Việt chuẩn lexicographical (`dictionaryVi.ts`) kèm IPA, từ loại (POS), danh sách nghĩa đánh số, phát âm Web Speech API, giải thuật Lemmatizer O(1) và smart flip positioning; Tầng 2 fallback qua MyMemory API hiển thị nghĩa tiếng Việt (không ghi rác vào hàng đợi SRS, khóa trong Exam Mode)
 
 ### Phân loại Dạng Câu hỏi, Highlight Dẫn chứng & Cấu trúc Dữ liệu
 - [x] Phân loại các dạng câu hỏi đọc hiểu: Main Idea, Vocab in Context, Factual Details, Negative Fact, Inference, Author Attitude, Sentence Insertion (`[A]-[D]`)

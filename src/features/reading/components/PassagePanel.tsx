@@ -7,7 +7,7 @@ interface PassagePanelProps {
   activeClueSentence?: string;
   readerSettings: ReaderSettings;
   onChangeReaderSettings: (settings: Partial<ReaderSettings>) => void;
-  onWordSelect: (word: string, position: { x: number; y: number }) => void;
+  onWordSelect: (word: string, position: { x: number; y: number; bottom?: number }) => void;
 }
 
 /**
@@ -128,6 +128,7 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
       onWordSelect(resolved.word, {
         x: resolved.rect.left + resolved.rect.width / 2,
         y: resolved.rect.top,
+        bottom: resolved.rect.bottom,
       });
     }
   };
@@ -144,6 +145,7 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
       onWordSelect(selectedText, {
         x: rect.left + rect.width / 2,
         y: rect.top,
+        bottom: rect.bottom,
       });
     }
   };
@@ -153,7 +155,13 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
     const selection = window.getSelection();
     const selectedText = selection?.toString().trim();
     if (selectedText && selectedText.length <= 32 && !selectedText.includes(' ')) {
-      onWordSelect(selectedText, { x: e.clientX, y: e.clientY });
+      const range = selection && selection.rangeCount > 0 ? selection.getRangeAt(0) : null;
+      const rect = range ? range.getBoundingClientRect() : null;
+      onWordSelect(selectedText, {
+        x: rect ? rect.left + rect.width / 2 : e.clientX,
+        y: rect ? rect.top : e.clientY,
+        bottom: rect ? rect.bottom : e.clientY + 22,
+      });
     }
   };
 

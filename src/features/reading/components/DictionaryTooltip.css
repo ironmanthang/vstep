@@ -8,24 +8,37 @@
 .dictionary-tooltip-card {
   position: absolute;
   pointer-events: auto;
-  min-width: 200px;
-  max-width: 300px;
-  background: var(--bg-surface, #1e1b18);
-  border: 1px solid var(--border-strong, rgba(224, 90, 43, 0.4));
-  border-radius: var(--radius-md, 8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 12px rgba(224, 90, 43, 0.15);
-  padding: 10px 14px;
-  font-family: inherit;
+  min-width: 240px;
+  max-width: 320px;
+  max-height: 360px;
+  overflow-y: auto;
+  background: var(--bg-surface, #1C1917);
+  border: 1px solid var(--border-strong, #38332D);
+  border-radius: var(--radius-md, 10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45), 0 0 16px rgba(198, 139, 89, 0.12);
+  padding: 12px 14px;
+  font-family: var(--font-sans, system-ui, sans-serif);
   z-index: 1001;
-  animation: tooltip-fade-in 150ms cubic-bezier(0.16, 1, 0.3, 1);
-  transform: translateY(-100%);
-  margin-top: -8px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
 }
 
-@keyframes tooltip-fade-in {
+.dictionary-tooltip-card.flip-above {
+  transform: translateY(-100%);
+  margin-top: -8px;
+  animation: tooltip-fade-above 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dictionary-tooltip-card.flip-below {
+  transform: translateY(0);
+  margin-top: 8px;
+  animation: tooltip-fade-below 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes tooltip-fade-above {
   from {
     opacity: 0;
-    transform: translateY(-90%) scale(0.96);
+    transform: translateY(-92%) scale(0.96);
   }
   to {
     opacity: 1;
@@ -33,65 +46,184 @@
   }
 }
 
+@keyframes tooltip-fade-below {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .dict-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   gap: 8px;
+  border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  padding-bottom: 8px;
+}
+
+.dict-title-cluster {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .dict-word-title {
-  font-size: var(--fs-sm, 13px);
+  font-size: var(--fs-md, 16px);
   font-weight: 700;
-  color: var(--primary, #e05a2b);
-  letter-spacing: 0.3px;
-  text-transform: lowercase;
+  color: var(--primary, #C68B59);
+  letter-spacing: 0.2px;
+  line-height: 1.2;
 }
 
-.dict-source-badge {
-  font-size: 10px;
+.dict-lemma-tag {
+  font-size: 11px;
   font-weight: 600;
+  color: var(--primary, #C68B59);
+  background: var(--primary-subtle, rgba(198, 139, 89, 0.15));
   padding: 1px 6px;
-  border-radius: var(--radius-full, 9999px);
-  background: var(--bg-subtle, rgba(255, 255, 255, 0.06));
-  color: var(--text-muted, #a8a095);
-  white-space: nowrap;
+  border-radius: var(--radius-sm, 4px);
+  line-height: 1.2;
 }
 
-.dict-source-badge.vstep {
-  background: rgba(224, 90, 43, 0.15);
-  color: var(--primary, #e05a2b);
-}
-
-.dict-definition-body {
-  font-size: var(--fs-xs, 12px);
-  line-height: 1.5;
-  color: var(--text-primary, #f5f0eb);
-  word-break: break-word;
-}
-
-.dict-loading-state {
-  font-size: var(--fs-xs, 12px);
-  color: var(--text-muted, #a8a095);
+.dict-phonetic {
+  font-size: 13px;
+  font-family: 'Times New Roman', serif;
+  color: var(--text-muted, #8E867B);
   font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.dict-audio-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  background: var(--bg-subtle, rgba(255, 255, 255, 0.05));
+  color: var(--primary, #C68B59);
+  cursor: pointer;
+  padding: 0;
+  transition: all 120ms ease;
+  vertical-align: middle;
+}
+
+.dict-audio-btn:hover {
+  background: var(--primary, #C68B59);
+  color: var(--primary-contrast, #FAF8F5);
+  transform: scale(1.08);
+}
+
+.dict-header-actions {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
+.dict-source-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: var(--radius-full, 9999px);
+  background: var(--bg-subtle, rgba(255, 255, 255, 0.06));
+  color: var(--text-muted, #8E867B);
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+.dict-source-badge.vstep {
+  background: var(--primary-subtle, rgba(198, 139, 89, 0.18));
+  color: var(--primary, #C68B59);
+  border: 1px solid rgba(198, 139, 89, 0.3);
+}
+
+.dict-source-badge.remote {
+  background: rgba(142, 134, 123, 0.15);
+  color: var(--text-muted, #8E867B);
+}
+
 .dict-close-btn {
   background: transparent;
   border: none;
-  color: var(--text-muted, #a8a095);
+  color: var(--text-muted, #8E867B);
   cursor: pointer;
-  padding: 2px 4px;
+  padding: 2px 5px;
   font-size: 12px;
   line-height: 1;
   border-radius: 4px;
+  transition: all 120ms ease;
 }
 
 .dict-close-btn:hover {
-  color: var(--text-primary, #f5f0eb);
+  color: var(--text-primary, #E6E1DC);
   background: rgba(255, 255, 255, 0.1);
+}
+
+/* Senses Body */
+.dict-senses-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dict-pos-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.dict-pos-pill {
+  align-self: flex-start;
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: lowercase;
+  letter-spacing: 0.3px;
+  color: var(--primary, #C68B59);
+  background: var(--primary-subtle, rgba(198, 139, 89, 0.12));
+  padding: 1px 7px;
+  border-radius: 4px;
+}
+
+.dict-def-list {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.dict-def-item {
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--text-primary, #E6E1DC);
+  word-break: break-word;
+}
+
+.dict-machine-body {
+  padding: 4px 0;
+}
+
+.dict-machine-text {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-primary, #E6E1DC);
+  word-break: break-word;
+}
+
+.dict-loading-state {
+  font-size: 12px;
+  color: var(--text-muted, #8E867B);
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 0;
 }

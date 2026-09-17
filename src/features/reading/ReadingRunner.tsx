@@ -81,7 +81,7 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
   // Dictionary Tooltip State
   const [dictTooltip, setDictTooltip] = useState<{
     word: string | null;
-    position: { x: number; y: number } | null;
+    position: { x: number; y: number; bottom?: number } | null;
   }>({ word: null, position: null });
 
   // Reset Modal State
@@ -322,7 +322,11 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
               activeClueSentence={activeClueSentence}
               readerSettings={readerSettings}
               onChangeReaderSettings={updateReaderSettings}
-              onWordSelect={(word, pos) => setDictTooltip({ word, position: pos })}
+              onWordSelect={(word, pos) => {
+                if (!isExam) {
+                  setDictTooltip({ word, position: pos });
+                }
+              }}
             />
           )}
         </div>

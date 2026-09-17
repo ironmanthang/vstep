@@ -348,3 +348,9 @@ h1, h2, h3, h4, h5, h6 {
   animation: spin 1s linear infinite;
 }
 
+/* Cozy Campfire Theme Text Selection */
+::selection {
+  background: var(--primary-subtle, rgba(198, 139, 89, 0.25));
+  color: inherit;
+}
+
