@@ -58,7 +58,7 @@ Tài liệu này là **Task Checklist / Backlog** chi tiết phục vụ cho vi�
 ### Kiến trúc Unified Reading Runner & Giao diện Split-Pane
 - [x] Xây dựng `ReadingRunner` hỗ trợ 2 chế độ: `mode: 'practice'` (bật tra từ/dẫn chứng/ghi chú nháp, triệt tiêu hoàn toàn đồng hồ đếm ngược và interval ticking để loại bỏ áp lực và chu kỳ re-render thừa) và `mode: 'exam'` (60 phút countdown tự nộp, giao diện chuẩn phòng thi)
 - [x] Tinh giản Studio Luyện Đọc & Luyện Nghe: Loại bỏ bộ chuyển đổi chế độ Luyện tập / Thi thử trong Studio trang con (tập trung 100% vào chế độ Practice, nhường toàn bộ Exam Mode cho Mock Test Runner 180 phút), mặc định chọn Bộ đề HCMUE khi tải trang Reading Studio.
-- [x] Bố cục Split-Pane chia đôi màn hình: Bài đọc bên trái cuộn độc lập, bảng 40 câu hỏi ở giữa, bảng Question Palette sticky bên phải; trên mobile (<768px) hỗ trợ tab toggle ghi nhớ vị trí cuộn
+- [x] Bố cục Split-Pane chia đôi màn hình tối ưu thị giác: Khung bài đọc bên trái (~50%) và luồng câu hỏi bên phải (~50%) cuộn độc lập, chuyển bảng điều khiển câu hỏi thành thanh đáy chuẩn CBT (ReadingBottomBar) kèm cơ chế thu gọn thành floating pill góc màn hình không che văn bản; trên mobile (<768px) hỗ trợ tab toggle ghi nhớ vị trí cuộn
 - [x] Tùy chỉnh hiển thị: Chỉnh cỡ chữ (14px–22px), giãn dòng (1.5x, 1.8x, 2.0x), và 3 chế độ nền (Warm Sepia, Obsidian Dark, Cream Light) lưu trữ theo tài khoản
 
 ### Tra từ Nhanh (1-Tap Dictionary Tooltip)

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import type { ReadingTest, ReadingMode, ReadingScoreResult } from './types';
 import { PassagePanel } from './components/PassagePanel';
-import { ReadingQuestionPalette } from './components/ReadingQuestionPalette';
+import { ReadingBottomBar } from './components/ReadingBottomBar';
 import { DictionaryTooltip } from './components/DictionaryTooltip';
 import { ReadingHeader } from './components/ReadingHeader';
 import { ReadingPassageNavBar } from './components/ReadingPassageNavBar';
@@ -66,6 +66,7 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
   // Active Passage & Active Question
   const [activePassageIndex, setActivePassageIndex] = useState<number>(0);
   const [activeQuestionId, setActiveQuestionId] = useState<string | null>(null);
+  const [isBottomBarCollapsed, setIsBottomBarCollapsed] = useState<boolean>(false);
 
   // Mobile Tab Toggle State ('passage' vs 'questions')
   const [mobileTab, setMobileTab] = useState<'passage' | 'questions'>('passage');
@@ -307,7 +308,7 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
       />
 
       {/* Main Split-Pane Workspace Grid */}
-      <div className="reading-workspace-grid">
+      <div className={`reading-workspace-grid ${isBottomBarCollapsed ? 'bottom-collapsed' : ''}`}>
         {/* Left Column: Passage Panel */}
         <div
           ref={passagePaneRef}
@@ -346,24 +347,24 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
             setNotes((prev) => ({ ...prev, [qId]: val }))
           }
         />
-
-        {/* Right Column: Question Palette Sidebar */}
-        <div className="reading-palette-pane">
-          <ReadingQuestionPalette
-            passages={test.passages}
-            answers={answers}
-            flaggedQuestions={flaggedQuestions}
-            isSubmitted={isSubmitted}
-            isExam={isExam}
-            activeQuestionId={activeQuestionId}
-            activePassageIndex={activePassageIndex}
-            onSelectPassage={(idx) => setActivePassageIndex(idx)}
-            onSelectQuestion={(qId) => handleFocusQuestion(qId)}
-            onSubmit={handleSubmit}
-            onReset={() => setIsResetModalOpen(true)}
-          />
-        </div>
       </div>
+
+      {/* Modern Bottom Navigation Bar with Passage Switcher & Question Track */}
+      <ReadingBottomBar
+        passages={test.passages}
+        activePassageIndex={activePassageIndex}
+        answers={answers}
+        flaggedQuestions={flaggedQuestions}
+        activeQuestionId={activeQuestionId}
+        isSubmitted={isSubmitted}
+        isExam={isExam}
+        isCollapsed={isBottomBarCollapsed}
+        onToggleCollapse={setIsBottomBarCollapsed}
+        onSelectPassage={handleSelectPassage}
+        onSelectQuestion={handleFocusQuestion}
+        onSubmit={handleSubmit}
+        onReset={() => setIsResetModalOpen(true)}
+      />
 
       {/* Dictionary Tooltip Overlay */}
       <DictionaryTooltip

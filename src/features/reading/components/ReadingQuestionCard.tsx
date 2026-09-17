@@ -103,7 +103,7 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
                 title={isFlagged ? 'Bỏ cắm cờ xem lại' : 'Cắm cờ xem lại'}
                 aria-label="Cắm cờ xem lại"
               >
-                🚩
+                {isFlagged ? '🚩 Đã gắn cờ' : '🏳 Cắm cờ'}
               </button>
             )}
           </div>

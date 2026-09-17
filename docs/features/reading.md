@@ -25,8 +25,10 @@ Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mo
   - Đồng hồ tổng 60 phút đếm ngược toàn bài thi Đọc và tự động thu bài khi hết giờ.
 - **Hệ thống Sub-Components & Hooks**:
   - `ReadingHeader.tsx`: Tiêu đề bài thi, huy hiệu phân loại (Exam/Practice, Bậc B1-C1, số bài đọc), widget đồng hồ đếm ngược (chỉ hiển thị trong Exam Mode, cảnh báo khẩn cấp dưới 5 phút), banner cảnh báo đồng bộ không chặn và thẻ điểm tổng kết kèm nút làm lại bài.
-  - `ReadingPassageNavBar.tsx`: Thanh điều hướng bài đọc (Bài Đọc 1..N kèm badge số câu đã làm) và thanh chuyển tab trên di động (<768px).
+  - `ReadingPassageNavBar.tsx`: Thanh điều hướng bài đọc và thanh chuyển tab trên di động (<768px).
+  - `ReadingBottomBar.tsx`: Thanh điều hướng đáy chuẩn CBT tích hợp bộ chọn bài đọc (Bài 1..4), dải 10 câu hỏi của bài đọc hiện tại kèm cờ nổi và chỉ báo đáp án, nút mở modal tổng quan 40 câu (ReadingQuestionPalette), nút nộp bài/làm lại, và nút thu gọn thành floating pill góc phải giải phóng 100% không gian dọc.
   - `ReadingQuestionsStream.tsx`: Luồng câu hỏi bài đọc hiện tại, quản lý danh sách `ReadingQuestionCard` và chuyển tiếp ref cuộn mượt.
+  - `ReadingQuestionPalette.tsx`: Bảng câu hỏi toàn bộ 40 câu hỗ trợ chuyển nhanh bài đọc/câu hỏi và hiển thị trong modal drawer.
   - `ReadingResetModal.tsx`: Hộp thoại xác nhận làm lại bài thi đọc.
   - `useReadingTimer.ts`: Quản lý đồng hồ đếm ngược tự động nộp bài trong Exam Mode (không khởi tạo `setInterval` trong Practice Mode).
   - `useReaderSettings.ts`: Quản lý và lưu trữ cài đặt cỡ chữ, giãn dòng, theme đọc theo tài khoản.
@@ -38,7 +40,7 @@ Mô-đun được đóng gói thành `ReadingRunner` tiếp nhận tham số `mo
   - Trên Mobile: Chạm 1 chạm tức thì qua cơ chế phân giải tọa độ điểm sang text node (`caretPositionFromPoint` / `caretRangeFromPoint`) trong ngưỡng tap (<8px, <400ms), kết hợp `touch-action: manipulation` triệt tiêu xung đột với menu bôi đen hệ điều hành.
   - Kiến trúc 2 tầng: Tầng 1 tra offline 3.000 từ VSTEP Core (`dictionaryVi.ts`), Tầng 2 fallback qua MyMemory API (`en|vi`). Tuyệt đối không ghi rác vào hàng đợi SRS.
 - **Bố cục Linh hoạt (Desktop Split-Pane & Mobile Tabs)**:
-  - Trên Desktop (>=768px): Khung bài đọc bên trái cuộn độc lập với thanh công cụ Reader Controls, khung câu hỏi và sticky palette bên phải.
+  - Trên Desktop (>=768px): Khung bài đọc bên trái cuộn độc lập với thanh công cụ Reader Controls, khung câu hỏi bên phải trong bố cục 2 cột thoáng rộng (1.15fr / 1fr), thanh điều hướng câu hỏi đáy chuẩn CBT hỗ trợ thu gọn thành floating pill góc màn hình (`bottom-collapsed` tự động tăng +70px chiều cao vùng đọc).
   - Trên Mobile (<768px): Bộ chuyển tab "Bài Đọc" và "Câu Hỏi" toàn màn hình, lưu vị trí cuộn độc lập khi chuyển qua lại.
 - **Phân tích Dẫn chứng & Paraphrase**:
   - Tự động đối chiếu verbatim substring giữa `clue_sentence` và nội dung bài đọc, hỗ trợ người học soi chiếu căn cứ chọn đáp án.

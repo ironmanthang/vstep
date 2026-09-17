@@ -114,9 +114,10 @@
 }
 
 .r-palette-btn.answered {
-  background: var(--primary, #e05a2b);
-  color: #141210;
+  background: var(--primary-subtle, rgba(212, 163, 115, 0.18));
+  color: var(--primary-text, #f5f0eb);
   border-color: var(--primary, #e05a2b);
+  font-weight: 800;
 }
 
 .r-palette-btn.flagged {
@@ -125,14 +126,29 @@
 }
 
 .r-palette-btn.flagged::after {
-  content: '';
+  content: '🚩';
   position: absolute;
-  top: 2px;
-  right: 2px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--gold, #f59e0b);
+  top: -6px;
+  right: -5px;
+  font-size: 12px;
+  line-height: 1;
+  z-index: 3;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
+}
+
+.r-palette-btn.answered.flagged {
+  border-color: var(--gold, #f59e0b);
+}
+
+.r-palette-btn.answered.flagged::after {
+  content: '🚩';
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  font-size: 12px;
+  line-height: 1;
+  z-index: 3;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
 }
 
 /* Scored buttons */
