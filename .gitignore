@@ -55,8 +55,12 @@ scripts/.hcmue_productive_cache/
 scripts/.hcmue_cache_*.json
 scripts/.test_*_passages_cache.json
 scripts/.cefr_audit_cache.json
+scripts/.enrichment_cache/
+scripts/.enrichment_log.json
 scripts/cefr_audit_report.json
 scripts/data/anhviet109K.txt
+__pycache__/
+*.pyc
 
 # Large binary archives
 *.zip

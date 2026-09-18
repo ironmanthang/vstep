@@ -2,6 +2,7 @@ import { useRef, useEffect } from 'react';
 import type { ReadingPassage, ReaderSettings } from '../types';
 import { useDictionary } from '../../dictionary';
 import { getWordAtCoordinates } from '../../dictionary/utils/wordCoordinates';
+import { renderInlineMarkdown } from '../utils/inlineMarkdown';
 import './PassagePanel.css';
 
 interface PassagePanelProps {
@@ -111,43 +112,20 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
 
       return (
         <>
-          {renderInsertionMarkers(before)}
+          {renderInlineMarkdown(before, true)}
           <mark
             ref={evidenceRef}
             className="clue-evidence-highlight"
             title="Dẫn chứng cho câu hỏi đang chọn"
           >
-            {renderInsertionMarkers(clue)}
+            {renderInlineMarkdown(clue, true)}
           </mark>
-          {renderInsertionMarkers(after)}
+          {renderInlineMarkdown(after, true)}
         </>
       );
     }
 
-    return renderInsertionMarkers(text);
-  };
-
-  // Convert [A], [B], [C], [D] into interactive styled insertion markers
-  const renderInsertionMarkers = (text: string) => {
-    const markerRegex = /(\[[A-D]\])/g;
-    const parts = text.split(markerRegex);
-
-    return parts.map((part, i) => {
-      if (/^\[[A-D]\]$/.test(part)) {
-        const letter = part.replace(/[[\]]/g, '');
-        return (
-          <span
-            key={i}
-            className="insertion-point-marker"
-            data-marker={letter}
-            title={`Vị trí chèn câu [${letter}]`}
-          >
-            {part}
-          </span>
-        );
-      }
-      return part;
-    });
+    return renderInlineMarkdown(text, true);
   };
 
   return (
@@ -211,14 +189,9 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
 
         <article className="passage-paragraphs-flow">
           {passage.content_paragraphs.map((pText, pIdx) => (
-            <div key={pIdx} className="passage-paragraph-row">
-              <span className="paragraph-order-pill" aria-hidden="true">
-                [{pIdx + 1}]
-              </span>
-              <p className="passage-paragraph-text">
-                {renderParagraphContent(pText)}
-              </p>
-            </div>
+            <p key={pIdx} className="passage-paragraph-text">
+              {renderParagraphContent(pText)}
+            </p>
           ))}
         </article>
       </div>

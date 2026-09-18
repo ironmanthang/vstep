@@ -16,8 +16,8 @@ export const ULIS_READING_TEST_04: ReadingTest = {
       "topic": "Architecture & Housing",
       "difficulty": "B1",
       "content_paragraphs": [
-        "In the last third of the nineteenth century a new housing form was quietly being developed. In 1869 the Stuyvesant, considered New York's first apartment house was built on East Eighteenth Street. The building was financed by the developer Rutherfurd Stuyvesant and designed by Richard Morris Hunt, the first American architect to graduate from the Ecole des Beaux Arts in Paris. Each man had lived in Paris, and each understood the economics and social potential of this Parisian housing form. But the Stuyvesant was at best a limited success. In spite of Hunt's inviting façade, the living space was awkwardly arranged. Those who could afford them were quite content to remain in the more sumptuous, single-family homes, leaving the Stuyvesant to young married couples and bachelors.",
-        "The fundamental problem with the Stuyvesant and the other early apartment buildings that quickly followed, in the 1870's and early 1880's was that they were confined to the typical New York building lot. That lot was a rectangular area 25 feet wide by 100 feet deep - a shape perfectly suited for a row house. The lot could also accommodate a rectangular tenement, though it could not yield the square, well-lighted, and logically arranged rooms that great apartment buildings require. But even with the awkward interior configurations of the early apartment buildings, the idea caught on. It met the needs of a large and growing population that wanted something better than tenements but could not afford or did not want row houses.",
+        "In the last third of the nineteenth century a new housing form was quietly being developed. In 1869 the Stuyvesant, considered New York's first apartment house was built on East Eighteenth Street. The building was financed by the developer Rutherfurd Stuyvesant and designed by Richard Morris Hunt, the first American architect to graduate from the Ecole des Beaux Arts in Paris. Each man had lived in Paris, and each understood the economics and social potential of this Parisian housing form. But the Stuyvesant was at best a limited success. In spite of Hunt's **inviting** façade, the living space was awkwardly arranged. Those who could afford them were quite content to remain in the more **sumptuous**, single-family homes, leaving the Stuyvesant to young married couples and bachelors.",
+        "The fundamental problem with the Stuyvesant and the other early apartment buildings that quickly followed, in the 1870's and early 1880's was that they were confined to the typical New York building lot. That lot was a rectangular area 25 feet wide by 100 feet deep - a shape perfectly suited for a row house. The lot could also accommodate a rectangular tenement, though it could not **yield** the square, well-lighted, and logically arranged rooms that great apartment buildings require. But even with the awkward interior configurations of the early apartment buildings, the idea caught on. It met the needs of a large and growing population that wanted something better than tenements but could not afford or did not want row houses.",
         "So while the city's newly emerging social leadership commissioned their mansions, apartment houses and hotels began to sprout in multiple lots, thus breaking the initial space constraints. In the closing decades of the nineteenth century, large apartment houses began dotting the developed portions of New York City, and by the opening decades of the twentieth century, spacious buildings, such as the Dakota and the Ansonia finally transcended the tight confinement of row house building lots. From there it was only a small step to building luxury apartment houses on the newly created Park Avenue, right next to the fashionable Fifth Avenue shopping area."
       ],
       "word_count": 332,
@@ -52,7 +52,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
         {
           "id": "ulis_r04_q02",
           "type": "vocab_in_context",
-          "question_text": "The word 'inviting' in line 6 is closest in meaning to",
+          "question_text": "The word '**inviting**' in line 6 is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -73,7 +73,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 0,
-          "clue_sentence": "In spite of Hunt's inviting façade, the living space was awkwardly arranged.",
+          "clue_sentence": "In spite of Hunt's **inviting** façade, the living space was awkwardly arranged.",
           "explanation_vi": "Từ 'inviting' trong ngữ cảnh miêu tả mặt tiền của tòa nhà (façade) mang ý nghĩa thu hút, lôi cuốn, đồng nghĩa với 'attractive'. Các lựa chọn khác không phù hợp về nghĩa.",
           "paraphrase_analysis": {
             "question_phrase": "inviting",
@@ -105,13 +105,13 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "In spite of Hunt's inviting façade, the living space was awkwardly arranged.",
+          "clue_sentence": "In spite of Hunt's **inviting** façade, the living space was awkwardly arranged.",
           "explanation_vi": "Đoạn 1 nêu rõ lý do Stuyvesant chỉ đạt thành công hạn chế là do không gian sống được bố trí bất tiện, vụng về ('the living space was awkwardly arranged'), tương ứng với đáp án A."
         },
         {
           "id": "ulis_r04_q04",
           "type": "vocab_in_context",
-          "question_text": "The word 'sumptuous' in line 8 is closest in meaning to",
+          "question_text": "The word '**sumptuous**' in line 8 is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -132,7 +132,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Those who could afford them were quite content to remain in the more sumptuous, single-family homes, leaving the Stuyvesant to young married couples and bachelors.",
+          "clue_sentence": "Those who could afford them were quite content to remain in the more **sumptuous**, single-family homes, leaving the Stuyvesant to young married couples and bachelors.",
           "explanation_vi": "Từ 'sumptuous' dùng để chỉ những ngôi nhà đơn gia đình đắt tiền, sang trọng, tương đương với nghĩa của 'luxurious'.",
           "paraphrase_analysis": {
             "question_phrase": "sumptuous",
@@ -164,7 +164,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Those who could afford them were quite content to remain in the more sumptuous, single-family homes, leaving the Stuyvesant to young married couples and bachelors.",
+          "clue_sentence": "Those who could afford them were quite content to remain in the more **sumptuous**, single-family homes, leaving the Stuyvesant to young married couples and bachelors.",
           "explanation_vi": "Vì những người có điều kiện vẫn ở nhà riêng sang trọng, tòa nhà Stuyvesant đành phải nhường lại cho các cặp vợ chồng trẻ và những người độc thân ('young married couples and bachelors'), suy ra đa số người sống ở đây là người trẻ."
         },
         {
@@ -223,13 +223,13 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "The lot could also accommodate a rectangular tenement, though it could not yield the square, well-lighted, and logically arranged rooms that great apartment buildings require.",
+          "clue_sentence": "The lot could also accommodate a rectangular tenement, though it could not **yield** the square, well-lighted, and logically arranged rooms that great apartment buildings require.",
           "explanation_vi": "Đoạn 2 chỉ ra rằng các tòa nhà chung cư thời kỳ đầu không thể tạo ra các phòng vuông vức, đủ ánh sáng và bố trí hợp lý do bị giới hạn bởi lô đất hẹp. Chúng không hề rộng rãi bên trong ('spacious'). Do đó C là đáp án đúng cho dạng câu hỏi ngoại trừ (EXCEPT)."
         },
         {
           "id": "ulis_r04_q08",
           "type": "vocab_in_context",
-          "question_text": "The word 'yield' in line 13 is closest in meaning to",
+          "question_text": "The word '**yield**' in line 13 is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -250,7 +250,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 1,
-          "clue_sentence": "The lot could also accommodate a rectangular tenement, though it could not yield the square, well-lighted, and logically arranged rooms that great apartment buildings require.",
+          "clue_sentence": "The lot could also accommodate a rectangular tenement, though it could not **yield** the square, well-lighted, and logically arranged rooms that great apartment buildings require.",
           "explanation_vi": "Trong ngữ cảnh này, 'yield' mang nghĩa tạo ra, cung cấp ra được những căn phòng vuông vức và đủ ánh sáng, tương đương với từ 'provide'."
         },
         {
@@ -315,8 +315,8 @@ export const ULIS_READING_TEST_04: ReadingTest = {
       "topic": "Meteorology & Science",
       "difficulty": "B2",
       "content_paragraphs": [
-        "A snowfall consists of myriads of minute ice crystals that fall to the ground in the form of frozen precipitation. The formation of snow begins with these ice crystals in the subfreezing strata of the middle and upper atmosphere when there is an adequate supply of moisture present. At the core of every ice crystal is a minuscule nucleus, a solid particle of matter around which moisture condenses and freezes. Liquid water droplets floating in the supercooled atmosphere and free ice crystals cannot coexist within the same cloud, since the vapor pressure of ice is less than that of water. This enables the ice crystals to rob the liquid droplets of their moisture and grow continuously. The process can be very rapid, quickly creating sizable ice crystals, some of which adhere to each other to create a cluster of ice crystals or a snowflake. Simple flakes possess a variety of beautiful forms, usually hexagonal, though the symmetrical shapes reproduced in most microscope photography of snowflakes are not usually found in actual snowfalls. Typically, snowflakes in actual snowfall consists of broken fragments and clusters of adhering ice crystals.",
-        "For a snowfall to continue once it starts, there must be a constant inflow of moisture to supply the nuclei. This moisture is supplied by the passage of an airstream over a water surface and its subsequent lifting to higher regions of the atmosphere. The Pacific Ocean is the source of moisture for most snowfalls west of the Rocky Mountains, while the Gulf of Mexico and the Atlantic Ocean feed water vapor into the air currents over the central and eastern sections of the United States. Other geographical features also can be the source of moisture for some snowstorms. For example, areas adjacent to the Great Lakes experience their own unique lake-effect storms, employing a variation of the process on a local scale. In addition, mountainous section or rising terrain can initiate snowfalls by the geographical lifting of a moist airstream."
+        "A snowfall consists of myriads of **minute** ice crystals that fall to the ground in the form of frozen precipitation. The formation of snow begins with these ice crystals in the subfreezing strata of the middle and upper atmosphere when there is an adequate supply of moisture present. At the core of every ice crystal is a minuscule nucleus, a solid particle of matter around which moisture condenses and freezes. Liquid water droplets floating in the supercooled atmosphere and free ice crystals cannot coexist within the same cloud, since the vapor pressure of ice is less than that of water. This enables the ice crystals to rob the liquid droplets of their moisture and grow continuously. The process can be very rapid, quickly creating sizable ice crystals, some of which **adhere** to each other to create a cluster of ice crystals or a snowflake. Simple flakes possess a variety of beautiful forms, usually hexagonal, though the symmetrical shapes reproduced in most microscope photography of snowflakes are not usually found in actual snowfalls. Typically, snowflakes in actual snowfall consists of broken fragments and clusters of adhering ice crystals.",
+        "For a snowfall to continue once **it** starts, there must be a constant inflow of moisture to supply the nuclei. This moisture is supplied by the passage of an airstream over a water surface and its subsequent lifting to higher regions of the atmosphere. The Pacific Ocean is the source of moisture for most snowfalls west of the Rocky Mountains, while the Gulf of Mexico and the Atlantic Ocean feed water vapor into the air currents over the central and eastern sections of the United States. Other geographical features also can be the source of moisture for some snowstorms. For example, areas adjacent to the Great Lakes experience their own unique lake-effect storms, employing a variation of the process on a local scale. In addition, mountainous section or rising terrain can **initiate** snowfalls by the geographical lifting of a moist airstream."
       ],
       "word_count": 277,
       "questions": [
@@ -350,7 +350,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
         {
           "id": "ulis_r04_q12",
           "type": "vocab_in_context",
-          "question_text": "The word \"minute\" in line 1 is closest in meaning to ...........",
+          "question_text": "The word \"**minute**\" in line 1 is closest in meaning to ...........",
           "options": [
             {
               "key": "A",
@@ -371,7 +371,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "A snowfall consists of myriads of minute ice crystals that fall to the ground in the form of frozen precipitation.",
+          "clue_sentence": "A snowfall consists of myriads of **minute** ice crystals that fall to the ground in the form of frozen precipitation.",
           "explanation_vi": "Từ \"minute\" (nhấn trọng âm ở âm tiết thứ hai /maɪˈnuːt/) trong ngữ cảnh này có nghĩa là rất nhỏ, li ti, đồng nghĩa với \"tiny\". Các từ còn lại không phù hợp về nghĩa."
         },
         {
@@ -404,7 +404,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
         {
           "id": "ulis_r04_q14",
           "type": "vocab_in_context",
-          "question_text": "The word \"adhere\" in line 8 is closest in meaning to .................",
+          "question_text": "The word \"**adhere**\" in line 8 is closest in meaning to .................",
           "options": [
             {
               "key": "A",
@@ -425,7 +425,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 0,
-          "clue_sentence": "The process can be very rapid, quickly creating sizable ice crystals, some of which adhere to each other to create a cluster of ice crystals or a snowflake.",
+          "clue_sentence": "The process can be very rapid, quickly creating sizable ice crystals, some of which **adhere** to each other to create a cluster of ice crystals or a snowflake.",
           "explanation_vi": "Từ \"adhere\" có nghĩa là dính vào, bám chặt vào nhau, đồng nghĩa với từ \"stick\". Các lựa chọn khác không tương đương về nghĩa."
         },
         {
@@ -452,13 +452,13 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 1,
-          "clue_sentence": "For a snowfall to continue once it starts, there must be a constant inflow of moisture to supply the nuclei.",
+          "clue_sentence": "For a snowfall to continue once **it** starts, there must be a constant inflow of moisture to supply the nuclei.",
           "explanation_vi": "Đoạn 2 tập trung thảo luận về việc độ ẩm đến từ đâu để duy trì tuyết rơi (từ các đại dương, hồ lớn, hoặc địa hình núi non nâng dòng không khí ẩm). Do đó, đáp án D là chủ đề chính xác nhất của đoạn 2."
         },
         {
           "id": "ulis_r04_q16",
           "type": "factual_detail",
-          "question_text": "The word \"it\" in line 13 refers to ...............",
+          "question_text": "The word \"**it**\" in line 13 refers to ...............",
           "options": [
             {
               "key": "A",
@@ -479,7 +479,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "For a snowfall to continue once it starts, there must be a constant inflow of moisture to supply the nuclei.",
+          "clue_sentence": "For a snowfall to continue once **it** starts, there must be a constant inflow of moisture to supply the nuclei.",
           "explanation_vi": "Đại từ \"it\" ở đây thay thế cho chủ ngữ \"snowfall\" (trận tuyết rơi) trong mệnh đề \"For a snowfall to continue once it starts\" (Để một trận tuyết rơi tiếp tục một khi nó bắt đầu...). Do đó, đáp án A là đúng."
         },
         {
@@ -506,7 +506,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "For a snowfall to continue once it starts, there must be a constant inflow of moisture to supply the nuclei.",
+          "clue_sentence": "For a snowfall to continue once **it** starts, there must be a constant inflow of moisture to supply the nuclei.",
           "explanation_vi": "Bài đọc nêu rõ: \"For a snowfall to continue once it starts, there must be a constant inflow of moisture to supply the nuclei.\" (Để tuyết tiếp tục rơi, phải có nguồn cung cấp độ ẩm liên tục). Điều này tương đương với \"A continuous infusion of moisture\" (sự bổ sung độ ẩm liên tục). Do đó, C là đáp án đúng."
         },
         {
@@ -539,7 +539,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
         {
           "id": "ulis_r04_q19",
           "type": "vocab_in_context",
-          "question_text": "The word \"initiate\" in line 20 is closest in meaning to .................",
+          "question_text": "The word \"**initiate**\" in line 20 is closest in meaning to .................",
           "options": [
             {
               "key": "A",
@@ -560,7 +560,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 1,
-          "clue_sentence": "In addition, mountainous section or rising terrain can initiate snowfalls by the geographical lifting of a moist airstream.",
+          "clue_sentence": "In addition, mountainous section or rising terrain can **initiate** snowfalls by the geographical lifting of a moist airstream.",
           "explanation_vi": "Từ \"initiate\" có nghĩa là khởi xướng, bắt đầu, đồng nghĩa với từ \"begin\". Các phương án enhance (tăng cường), alter (thay đổi), increase (tăng lên) không tương đương nghĩa."
         },
         {
@@ -598,10 +598,10 @@ export const ULIS_READING_TEST_04: ReadingTest = {
       "topic": "Animal Behavior & Science",
       "difficulty": "B2",
       "content_paragraphs": [
-        "Social parasitism involves one species relying on another to raise its young. Among vertebrates, the best known social parasites are such birds as cuckoos and cowbirds; the female lays an egg in a nest belonging to another species and leaves it for the host to rear.",
+        "Social parasitism involves one species relying on another to **raise** its young. Among vertebrates, the best known social parasites are such birds as cuckoos and cowbirds; the female lays an egg in a nest belonging to another species and leaves **it** for the host to rear.",
         "The dulotic species of ants, however, are the supreme social parasites. Consider, for example, the unusual behavior of ants belonging to the genus Polyergus. All species of this ant have lost the ability to care for themselves. The workers do not forage for food. feed their brood or queen, or even clean their own nest. To compensate for these deficits, Polyergus has become specialized at obtaining workers from the related genus Formica to do these chores.",
-        "In a raid, several thousand Polyergus workers will travel up to 500 feet in search of a Formica nest, penetrate it, drive off the queen and their workers, capture the pupal brood, and transport it back to their nest. The captured brood is then reared by the resident Formica workers until the developing pupae emerge to add to the Formica population, which maintains the mixed-species nest The Formica workers forage for food and give it to colony members of both species. They also remove wastes and excavate new chambers as the population increases.",
-        "The true extent of the Polyergus ants' dependence on the Formica becomes apparent when the worker population grows too large for the existing nest. Formica scouts locate a new nesting site, return to the mixed-species colony, and recruit additional Formica nest mates. During a period that may last seven days, the Formica workers carry to the new nest all the Polyergus eggs, larvae, and pupae, every Polyergus adult, and even the Polyergus queen.",
+        "In a raid, several thousand Polyergus workers will travel up to 500 feet in search of a Formica nest, penetrate it, drive off the queen and their workers, capture the pupal brood, and transport it back to their nest. The captured brood is then reared by the resident Formica workers until the developing pupae emerge to add to the Formica population, which maintains the mixed-species nest The Formica workers forage for food and give it to colony members of both species. They also remove wastes and **excavate** new chambers as the population increases.",
+        "The true extent of the Polyergus ants' dependence on the Formica becomes apparent when the worker population grows too large for the existing nest. Formica scouts locate a new nesting site, return to the mixed-species colony, and **recruit** additional Formica nest mates. During a period that may last seven days, the Formica workers carry to the new nest all the Polyergus eggs, larvae, and pupae, every Polyergus adult, and even the Polyergus queen.",
         "Of the approximately 8,000 species of ants in the world, all 5 species of Polyergus and some 200 species in other genera have evolved some degree of parasitic relationship with other ants."
       ],
       "word_count": 331,
@@ -641,7 +641,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
         {
           "id": "ulis_r04_q22",
           "type": "vocab_in_context",
-          "question_text": "The word \"raise\" in line 1 is closest in meaning to",
+          "question_text": "The word \"**raise**\" in line 1 is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -662,7 +662,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Social parasitism involves one species relying on another to raise its young.",
+          "clue_sentence": "Social parasitism involves one species relying on another to **raise** its young.",
           "explanation_vi": "Từ \"raise\" ở đây có nghĩa là nuôi dưỡng con non, đồng nghĩa với từ \"rear\" xuất hiện ở câu tiếp theo (\"leaves it for the host to rear\"). Các lựa chọn khác (lift, collect, increase) không phù hợp về ngữ cảnh nuôi nấng con vật."
         },
         {
@@ -689,13 +689,13 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Among vertebrates, the best known social parasites are such birds as cuckoos and cowbirds; the female lays an egg in a nest belonging to another species and leaves it for the host to rear.",
+          "clue_sentence": "Among vertebrates, the best known social parasites are such birds as cuckoos and cowbirds; the female lays an egg in a nest belonging to another species and leaves **it** for the host to rear.",
           "explanation_vi": "Tác giả nhắc đến chim cu gáy (cuckoos) và chim sáo bò (cowbirds) để minh họa cho nhóm động vật có xương sống là những loài ký sinh xã hội nổi tiếng nhất (social parasites)."
         },
         {
           "id": "ulis_r04_q24",
           "type": "factual_detail",
-          "question_text": "The word \"it\" in line 3 refers to",
+          "question_text": "The word \"**it**\" in line 3 refers to",
           "options": [
             {
               "key": "A",
@@ -716,7 +716,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 0,
-          "clue_sentence": "the female lays an egg in a nest belonging to another species and leaves it for the host to rear.",
+          "clue_sentence": "the female lays an egg in a nest belonging to another species and leaves **it** for the host to rear.",
           "explanation_vi": "Đại từ \"it\" thay thế cho danh từ số ít đứng trước nó trong mệnh đề là \"an egg\" (quả trứng mà con cái đẻ vào tổ của loài khác và để cho chủ nhà nuôi hộ)."
         },
         {
@@ -776,7 +776,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
         {
           "id": "ulis_r04_q27",
           "type": "vocab_in_context",
-          "question_text": "The word \"excavate\" in line 14 is closest in meaning to",
+          "question_text": "The word \"**excavate**\" in line 14 is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -797,13 +797,13 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 2,
-          "clue_sentence": "They also remove wastes and excavate new chambers as the population increases.",
+          "clue_sentence": "They also remove wastes and **excavate** new chambers as the population increases.",
           "explanation_vi": "Từ \"excavate\" có nghĩa là đào bới, khoét (để tạo ra các căn phòng mới trong tổ), đồng nghĩa với từ \"dig\"."
         },
         {
           "id": "ulis_r04_q28",
           "type": "vocab_in_context",
-          "question_text": "The word \"recruit\" in line 18 is closest in meaning to",
+          "question_text": "The word \"**recruit**\" in line 18 is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -824,7 +824,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 3,
-          "clue_sentence": "Formica scouts locate a new nesting site, return to the mixed-species colony, and recruit additional Formica nest mates.",
+          "clue_sentence": "Formica scouts locate a new nesting site, return to the mixed-species colony, and **recruit** additional Formica nest mates.",
           "explanation_vi": "Từ \"recruit\" trong ngữ cảnh này mang nghĩa huy động, chiêu mộ thêm các thành viên khác cùng loài đi cùng, đồng nghĩa với từ \"enlist\"."
         },
         {
@@ -889,7 +889,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
       "topic": "Art & Museums",
       "difficulty": "C1",
       "content_paragraphs": [
-        "The Winterthur Museum is a collection and a house. There are many museums devoted to the decorative arts and many house museums, but rarely in the United States is a great collection displayed in a great country house. Passing through successive generations of a single family, Winterthur has been a private estate for more than a century. Even after the extensive renovations made to it between 1929 and 1931, the house remained a family residence. This fact is of importance to the atmosphere and effect of the museum. The impression of a lived-in house is apparent to the visitor; the rooms look as if they were vacated only a short while ago whether by the original owners of the furniture or the most recent residents of the house can be a matter of personal interpretation. Winterthur remains, then, a house in which a collection of furniture and architectural elements has been assembled. Like an English country house, it is an organic structure; the house, as well as the collection and manner of displaying it to the visitor, has changed over the years. The changes have coincided with developing concepts of the American arts, increased knowledge on the part of collectors and students, and a progression toward the achievement of a historical effect in period-room displays. The rooms at Winterthur have followed this current, yet still retained the character of a private house.",
+        "The Winterthur Museum is a collection and a house. There are many museums **devoted to** the decorative arts and many house museums, but rarely in the United States is a great collection displayed in a great country house. Passing through successive generations of a single family, Winterthur has been a private estate for more than a century. Even after the extensive renovations made to it between 1929 and 1931, the house remained a family residence. This fact is of importance to the atmosphere and effect of the museum. The impression of a lived-in house is apparent to the visitor; the rooms look as if they were vacated only a short while ago whether by the original owners of the furniture or the most recent residents of the house can be a matter of personal interpretation. Winterthur remains, then, a house in which a collection of furniture and architectural elements has been **assembled**. Like an English country house, **it** is an organic structure; the house, as well as the collection and manner of displaying it to the visitor, has changed over the years. The changes have coincided with **developing** concepts of the American arts, increased knowledge on the part of collectors and students, and a progression toward the achievement of a historical effect in period-room displays. The rooms at Winterthur have followed this current, yet still retained the character of a private house.",
         "The concept of a period room as a display technique has developed gradually over the years in an effort to present works of art in a context that would show them to greater effect and would give them more meaning for the viewer. Comparable to the habitat group in a natural history museum, the period room represents the decorative arts in a lively and interesting manner and provides an opportunity to assemble objects related by style, date, or place of manufacture."
       ],
       "word_count": 277,
@@ -918,7 +918,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "There are many museums devoted to the decorative arts and many house museums, but rarely in the United States is a great collection displayed in a great country house.",
+          "clue_sentence": "There are many museums **devoted to** the decorative arts and many house museums, but rarely in the United States is a great collection displayed in a great country house.",
           "explanation_vi": "Đoạn văn thảo luận về Bảo tàng Winterthur, một bảo tàng kết hợp giữa bộ sưu tập nghệ thuật trang trí và một ngôi nhà lớn từng là dinh thự tư gia, tạo nên nét đặc biệt hiếm có ở Mỹ. Do đó, ý chính của bài là những yếu tố làm cho Winterthur trở thành một bảo tàng bất thường/đặc biệt.",
           "paraphrase_analysis": {
             "question_phrase": "Elements that make Winterthur an unusual museum",
@@ -929,7 +929,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
         {
           "id": "ulis_r04_q32",
           "type": "vocab_in_context",
-          "question_text": "The phrase \"devoted to\" in line 1 is closest in meaning to ..........",
+          "question_text": "The phrase \"**devoted to**\" in line 1 is closest in meaning to ..........",
           "options": [
             {
               "key": "A",
@@ -950,7 +950,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "There are many museums devoted to the decorative arts and many house museums, but rarely in the United States is a great collection displayed in a great country house.",
+          "clue_sentence": "There are many museums **devoted to** the decorative arts and many house museums, but rarely in the United States is a great collection displayed in a great country house.",
           "explanation_vi": "Cụm từ \"devoted to\" trong ngữ cảnh này mang nghĩa là chuyên về, hướng toàn bộ sự chú ý hoặc chuyên môn vào một lĩnh vực nào đó, đồng nghĩa với \"specializing in\"."
         },
         {
@@ -1010,7 +1010,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
         {
           "id": "ulis_r04_q35",
           "type": "vocab_in_context",
-          "question_text": "The word \"assembled\" in line 9 is closest in meaning to ............",
+          "question_text": "The word \"**assembled**\" in line 9 is closest in meaning to ............",
           "options": [
             {
               "key": "A",
@@ -1031,13 +1031,13 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Winterthur remains, then, a house in which a collection of furniture and architectural elements has been assembled.",
+          "clue_sentence": "Winterthur remains, then, a house in which a collection of furniture and architectural elements has been **assembled**.",
           "explanation_vi": "Từ \"assembled\" trong ngữ cảnh tập hợp đồ đạc và các yếu tố kiến trúc lại với nhau có nghĩa là được thu thập, tập hợp lại, tương đương với \"brought together\"."
         },
         {
           "id": "ulis_r04_q36",
           "type": "inference",
-          "question_text": "The word \"it\" in line 10 refers to ............",
+          "question_text": "The word \"**it**\" in line 10 refers to ............",
           "options": [
             {
               "key": "A",
@@ -1058,13 +1058,13 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Like an English country house, it is an organic structure; the house, as well as the collection and manner of displaying it to the visitor, has changed over the years.",
+          "clue_sentence": "Like an English country house, **it** is an organic structure; the house, as well as the collection and manner of displaying it to the visitor, has changed over the years.",
           "explanation_vi": "Đại từ \"it\" trong câu \"Like an English country house, it is an organic structure; the house...\" quy chiếu về chủ thể đang được miêu tả chính là dinh thự Winterthur."
         },
         {
           "id": "ulis_r04_q37",
           "type": "vocab_in_context",
-          "question_text": "The word \"developing\" in line 11 is closest in meaning to ............",
+          "question_text": "The word \"**developing**\" in line 11 is closest in meaning to ............",
           "options": [
             {
               "key": "A",
@@ -1085,7 +1085,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "The changes have coincided with developing concepts of the American arts, increased knowledge on the part of collectors and students, and a progression toward the achievement of a historical effect in period-room displays.",
+          "clue_sentence": "The changes have coincided with **developing** concepts of the American arts, increased knowledge on the part of collectors and students, and a progression toward the achievement of a historical effect in period-room displays.",
           "explanation_vi": "Từ \"developing\" trong cụm \"developing concepts\" chỉ các khái niệm đang phát triển, tiến triển theo thời gian, đồng nghĩa với \"evolving\"."
         },
         {
@@ -1166,7 +1166,7 @@ export const ULIS_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "The changes have coincided with developing concepts of the American arts, increased knowledge on the part of collectors and students, and a progression toward the achievement of a historical effect in period-room displays.",
+          "clue_sentence": "The changes have coincided with **developing** concepts of the American arts, increased knowledge on the part of collectors and students, and a progression toward the achievement of a historical effect in period-room displays.",
           "explanation_vi": "Tác giả giải thích lý do các trưng bày thay đổi (The changes have coincided with...) ở phần câu bắt đầu từ giữa đoạn 1 (tương ứng với phạm vi dòng 9-12 trong văn bản gốc)."
         }
       ],

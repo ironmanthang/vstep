@@ -17,7 +17,7 @@ export const ULIS_READING_TEST_06: ReadingTest = {
       "word_count": 482,
       "difficulty": "B1",
       "content_paragraphs": [
-        "I always look forward to this time of year, and I'm always disappointed! It's the time of year when the TV channels tell us their plans for the summer and every year I tell myself that it might be different. It never is. Take SuperTV, for example. This channel, on our screens for five years now, broadcasts a depressing mix of game shows and music videos. So what do we find in the new schedule? I'm The One, a game show with holidays as prizes, and VJ-TV, yet another music video programme with brainless presenters. They're also planning to repeat the dreadful chat show Star Quality, which is about as entertaining as watching grass grow. Why can't they come up with new ideas?",
+        "I always look forward to this time of year, and I'm always disappointed! It's the time of year when the TV channels tell us their plans for the summer and every year I tell myself that it might be different. It never is. Take SuperTV, for example. This channel, on our screens for five years now, broadcasts a depressing mix of game shows and music videos. So what do we find in the new schedule? I'm The One, a game show with holidays as prizes, and VJ-TV, yet another music video programme with brainless presenters. They're also planning to repeat the dreadful chat show Star Quality, which is about as entertaining as watching grass grow. Why can't **they** come up with new ideas?",
         "Channel 9 does a little better. Now that Train Driver has finished, they've decided to replace it with Staff Room, a reality show that follows teachers around all day. It should be the hit of the summer, giving us an idea of what really goes on when the lesson is over. Who doesn't want to see and hear what teachers say about their students at the end of the school day? Great stuff! Together with Life in Aylesford Street, the soap opera that everyone's talking about, it looks like Channel 9 could be the channel to watch this summer.",
         "Over on BTV1, Max Read is back with Joke-a-Cola, the comedy show. The first series was slightly amusing, the second hilarious. Let's wait and see what the third series is like. Comedy is difficult to get right, but it ought to be great. I wish I could say the same about the sitcom, Oh! Those Kids! It's enough to look at the expressions on the faces of the cast! It's obvious they know it's rubbish and the script is just so badly written! Oh! Those writers!",
         "The programme makers must think we'll watch anything. That's just not true. People might have hundreds of channels on their TV or might live near a cinema with a dozen screens. There is so much choice of entertainment these days - TV, the cinema, the theatre, even the internet that they have to work hard to keep their audience. What they should be doing is making new, exciting programmes. Where are the programmes that make people think they must stay in to watch them?",
@@ -81,7 +81,7 @@ export const ULIS_READING_TEST_06: ReadingTest = {
         {
           "id": "ulis_r06_q03",
           "type": "vocab_in_context",
-          "question_text": "What does 'They' in paragraph 1 refer to?",
+          "question_text": "What does '**They**' in paragraph 1 refer to?",
           "options": [
             {
               "key": "A",
@@ -590,7 +590,7 @@ export const ULIS_READING_TEST_06: ReadingTest = {
       "word_count": 561,
       "difficulty": "B2",
       "content_paragraphs": [
-        "How many adverts do you think you'll see today? 10? 30? According to the market research firm Yankelovich, some of us see as many as 2,000-5,000 adverts a day! There are adverts all around us. Most of the time we're not even consciously aware of them. But think about your town or city. How many billboards, shop signs and posters does it have?",
+        "How many adverts do you think you'll see today? 10? 30? According to the market research firm **Yankelovich**, some of us see as many as 2,000-5,000 adverts a day! There are adverts all around us. Most of the time we're not even consciously aware of them. But think about your town or city. How many billboards, shop signs and posters does it have?",
         "Tokyo, in Japan, takes urban advertising to the extreme. Although the city temples may still lay claim to being more impressive, the explosion of sound and colour in the commercial centre can take your breath away. Whether you find the overall effect stunning or nightmarish is a question of personal taste. However, it would be hard not to admire the advertisers' ingenuity. Recent innovations include interactive games projected onto walls for people to play. 'Smellvertising' is also catching on - that's the idea of using pleasant smells like chocolate to attract consumers' attention!",
         "Innovations in Tokyo are of huge significance in the world of advertising because where Tokyo leads, other cities soon follow. Big cities from New York to London already have outdoor television screens. Although Tokyo is far from being universally admired, many urban authorities find its approach to advertising exciting and dynamic. So what's the problem?",
         "If every city copied Tokyo, it would be absolutely terrible!' exclaims Roberta Calvino of the advertising watchdog group, Ad Alert. 'At the moment, Tokyo's futuristic style sets it apart. It invites our attention because there's simply nothing like it. But we don't need 100 poor imitations. In many cities, advertising is as bad as litter or vandalism - it spoils our environment. Go beyond the city outskirts and you'll find that advertising is taking over the countryside, too. The world's biggest advert was actually in a field in Austria, below the flight path to Vienna airport. It was the size of 50 football pitches!'",
@@ -633,7 +633,7 @@ export const ULIS_READING_TEST_06: ReadingTest = {
         {
           "id": "ulis_r06_q22",
           "type": "factual_detail",
-          "question_text": "Yankelovich is ..............",
+          "question_text": "**Yankelovich** is ..............",
           "options": [
             {
               "key": "A",
@@ -654,7 +654,7 @@ export const ULIS_READING_TEST_06: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 0,
-          "clue_sentence": "According to the market research firm Yankelovich, some of us see as many as 2,000-5,000 adverts a day!",
+          "clue_sentence": "According to the market research firm **Yankelovich**, some of us see as many as 2,000-5,000 adverts a day!",
           "explanation_vi": "Đoạn 1 ghi rõ Yankelovich là 'the market research firm' (công ty nghiên cứu thị trường). Do đó phương án C là chính xác.",
           "paraphrase_analysis": {
             "question_phrase": "Yankelovich is",
@@ -932,7 +932,7 @@ export const ULIS_READING_TEST_06: ReadingTest = {
         "In order to put *Homo sapiens* in Australia you must accept that at a point in time so remote that it precedes the known rise of behaviourally modern humans, there lived in southern Asia a people so advanced that they were fishing inshore waters from boats of some sort. Never mind that the archaeological record shows no one else on earth doing this for another 30,000 years.",
         "Next we have to explain what led them to cross at least sixty miles of open sea to reach a land they could hardly have known was there. The scenario that is usually described is of a simple fishing craft - probably little more than a floating platform - accidentally earned out to sea probably in one of the sudden storms that are characteristic of this area. This craft then drifted helplessly for some days before washing up on a beach in northern Australia. So far, so good. **[C]**",
         "The question that naturally arises - but is seldom asked - is how you get a new population out of this. If it's a lone fisherman who is carried off to Australia, then clearly he must find his way back to his homeland to report his discovery and persuade enough people to come with him to start a colony. This suggests, of course, the possession of considerable sailing skills.",
-        "By any measure this is a staggeringly momentous achievement. And how much notice is paid to it? Well, ask yourself when was the last time you read anything about it. When was the last time in any context concerning human movements and the rise of civilizations that you saw even a passing mention of the role of Aborigines? They are the planet's invisible people. A big part of the problem is that for most of us it is nearly impossible to grasp what an extraordinary span of time we are considering here. Assume for the sake of argument that the Aborigines arrived 60.000 years ago (that is the figure used by Roger Lewin of Harvard in *Principles of Evolution*, a standard text). On that scale, the total period of European occupation of Australia represents about 0.3 per cent of the total. **[D]**"
+        "By any measure this is a **staggeringly** momentous achievement. And how much notice is paid to it? Well, ask yourself when was the last time you read anything about it. When was the last time in any context concerning human movements and the rise of civilizations that you saw even a passing mention of the role of Aborigines? They are the planet's invisible people. A big part of the problem is that for most of us it is nearly impossible to grasp what an extraordinary span of time we are considering here. Assume for the sake of argument that the Aborigines arrived 60.000 years ago (that is the figure used by Roger Lewin of Harvard in *Principles of Evolution*, a standard text). On that scale, the total period of European occupation of Australia represents about 0.3 per cent of the total. **[D]**"
       ],
       "questions": [
         {
@@ -1100,7 +1100,7 @@ export const ULIS_READING_TEST_06: ReadingTest = {
         {
           "id": "ulis_r06_q37",
           "type": "vocab_in_context",
-          "question_text": "Which word could replace 'staggeringly' in line 33 without changing the meaning?",
+          "question_text": "Which word could replace '**staggeringly**' in line 33 without changing the meaning?",
           "options": [
             {
               "key": "A",
@@ -1121,7 +1121,7 @@ export const ULIS_READING_TEST_06: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 5,
-          "clue_sentence": "By any measure this is a staggeringly momentous achievement.",
+          "clue_sentence": "By any measure this is a **staggeringly** momentous achievement.",
           "explanation_vi": "Từ 'staggeringly' mang nghĩa là đáng kinh ngạc, phi thường, cực kỳ. Trong ngữ cảnh này, nó đồng nghĩa với 'extraordinarily' (phi thường, đặc biệt)."
         },
         {

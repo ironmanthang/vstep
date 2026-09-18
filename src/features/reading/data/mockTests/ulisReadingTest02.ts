@@ -17,9 +17,9 @@ export const ULIS_READING_TEST_02: ReadingTest = {
       "word_count": 367,
       "difficulty": "B1",
       "content_paragraphs": [
-        "For 20 years, Dang Thi Nhan, 67, has been waking up about 30 minutes earlier each day to bake cakes or prepare tea for two retired doctors in a clinic near her house in Ha Noi's Giap Bat Ward. That is all Nhan can offer as thanks to doctors who provide free health checks for herself, her paralysed husband and their 43-year-old disabled son. \"If one day they cannot take care of themselves and need some one to look after, I will do it voluntarily till the day they are gone,\" Nhan said.",
-        "The small clinic, situated on Kim Dong Street, has become familiar to many people in Ha Noi. It was established in 1992 by Dr Truong Thi Hoi To, 84, a former principal of Nam Dinh Medical College, Le Thi Soc, 87, a retired nurse from Saint Paul Municipal Hospital, and Le Thanh Thuoc, the late deputy director of the Viet Nam National Cancer Hospital, who died last year. The clinic used to open every Monday and Thursday. However, after doctor Thuoc died and due to the deteriorating health of the two other medics, the clinic now only opens on Monday mornings at 8 am. Patients not only receive health checks, but they also receive free medicine. [A]",
-        "Since 2014, the clinic has treated about 8,500 patients, according to Giap Bat ward's Red Cross Association. On its first days, the clinic faced numerous difficulties due to lack of money. Mrs. To, founder of the clinic, had to spend her own pension and encourage her children and relatives to donate money to purchase medical equipment and medicine. The clinic also had to relocate seven times as To and her co-workers could not afford high rents. Despite these difficulties, they never thought of giving up. \"Being able to help my patients brings me unspeakable joy. This is also my life target. It warms my heart to see the happy faces of the patients,\" To said. [B]",
+        "For 20 years, Dang Thi Nhan, 67, has been waking up about 30 minutes earlier each day to bake cakes or prepare tea for two retired doctors in a clinic near her house in Ha Noi's Giap Bat Ward. That is all Nhan can offer as thanks to doctors who provide free health checks for herself, her paralysed husband and their 43-year-old disabled son. \"If one day **they** cannot take care of themselves and need some one to look after, I will do it voluntarily till the day they are gone,\" Nhan said.",
+        "The small clinic, situated on Kim Dong Street, has become familiar to many people in Ha Noi. It was established in 1992 by Dr Truong Thi Hoi To, 84, a former principal of Nam Dinh Medical College, Le Thi Soc, 87, a retired nurse from Saint Paul Municipal Hospital, and Le Thanh Thuoc, the **late** deputy director of the Viet Nam National Cancer Hospital, who died last year. The clinic used to open every Monday and Thursday. However, after doctor Thuoc died and due to the deteriorating health of the two other medics, the clinic now only opens on Monday mornings at 8 am. Patients not only receive health checks, but they also receive free medicine. [A]",
+        "Since 2014, the clinic has treated about 8,500 patients, according to Giap Bat ward's Red Cross Association. On **its** first days, the clinic faced numerous difficulties due to lack of money. Mrs. To, founder of the clinic, had to spend her own pension and encourage her children and relatives to **donate** money to purchase medical equipment and medicine. The clinic also had to relocate seven times as To and her co-workers could not afford high rents. Despite these difficulties, they never thought of giving up. \"Being able to help my patients brings me unspeakable joy. This is also my life target. It warms my heart to see the happy faces of the patients,\" To said. [B]",
         "Tran Thi Toan, 64, a patient from Nam Dinh Province, now works as a servant in Ha Noi. She is grateful to doctor To and nurse Soc not just for the free treatment, but for their caring manner. Toan said: \"They give me meticulous treatment and clear, detailed instruction as well as advise me on a healthy and happy lifestyle\". Toan feels shy about her job, so the doctors' care and compassionate attitude have become her inspiration in life. [C]",
         "To the doctors, the most precious thing they receive from their patients is confidence in their skills, which can only be achieved through ethics and medical excellence. \"The success of a doctor does not lies in how much money they earn, but how many people they help\", Soc said. Sharing Soc's opinion, To said that \"Medical practitioners should not consider their profession as a tool to get rich. They should not benefit from their patients' pain. Patients come first, not money.\" [D]"
       ],
@@ -54,7 +54,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
         {
           "id": "ulis_r02_q02",
           "type": "vocab_in_context",
-          "question_text": "The word \"they\" in paragraph 1 refers to ................",
+          "question_text": "The word \"**they**\" in paragraph 1 refers to ................",
           "options": [
             {
               "key": "A",
@@ -75,13 +75,13 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "\"If one day they cannot take care of themselves and need some one to look after, I will do it voluntarily till the day they are gone,\" Nhan said.",
+          "clue_sentence": "\"If one day **they** cannot take care of themselves and need some one to look after, I will do it voluntarily till the day they are gone,\" Nhan said.",
           "explanation_vi": "Từ \"they\" trong câu nói của bà Nhàn dùng để chỉ hai bác sĩ đã nghỉ hưu (two retired doctors) mà bà chăm sóc để trả ơn."
         },
         {
           "id": "ulis_r02_q03",
           "type": "vocab_in_context",
-          "question_text": "The word \"late\" in paragraph 2 is closest in meaning to ....................",
+          "question_text": "The word \"**late**\" in paragraph 2 is closest in meaning to ....................",
           "options": [
             {
               "key": "A",
@@ -102,13 +102,13 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 1,
-          "clue_sentence": "It was established in 1992 by Dr Truong Thi Hoi To, 84, a former principal of Nam Dinh Medical College, Le Thi Soc, 87, a retired nurse from Saint Paul Municipal Hospital, and Le Thanh Thuoc, the late deputy director of the Viet Nam National Cancer Hospital, who died last year.",
+          "clue_sentence": "It was established in 1992 by Dr Truong Thi Hoi To, 84, a former principal of Nam Dinh Medical College, Le Thi Soc, 87, a retired nurse from Saint Paul Municipal Hospital, and Le Thanh Thuoc, the **late** deputy director of the Viet Nam National Cancer Hospital, who died last year.",
           "explanation_vi": "Từ \"late\" khi đứng trước chức danh/tên người có nghĩa là \"cố/đã qua đời\" (deceased), phù hợp với mệnh đề giải thích \"who died last year\" ngay sau đó."
         },
         {
           "id": "ulis_r02_q04",
           "type": "vocab_in_context",
-          "question_text": "The word \"its\" in paragraph 3 refers to ..................",
+          "question_text": "The word \"**its**\" in paragraph 3 refers to ..................",
           "options": [
             {
               "key": "A",
@@ -129,7 +129,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 2,
-          "clue_sentence": "On its first days, the clinic faced numerous difficulties due to lack of money.",
+          "clue_sentence": "On **its** first days, the clinic faced numerous difficulties due to lack of money.",
           "explanation_vi": "\"its first days\" chỉ những ngày đầu hoạt động của phòng khám (the clinic)."
         },
         {
@@ -156,7 +156,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "It was established in 1992 by Dr Truong Thi Hoi To, 84, a former principal of Nam Dinh Medical College, Le Thi Soc, 87, a retired nurse from Saint Paul Municipal Hospital, and Le Thanh Thuoc, the late deputy director of the Viet Nam National Cancer Hospital, who died last year.",
+          "clue_sentence": "It was established in 1992 by Dr Truong Thi Hoi To, 84, a former principal of Nam Dinh Medical College, Le Thi Soc, 87, a retired nurse from Saint Paul Municipal Hospital, and Le Thanh Thuoc, the **late** deputy director of the Viet Nam National Cancer Hospital, who died last year.",
           "explanation_vi": "Bà Trương Thị Hội Tố là cựu hiệu trưởng Trường Cao đẳng Y tế Nam Định (Nam Dinh Medical College - một trường học), trong khi bà Sóc làm ở Bệnh viện Saint Paul và ông Thước làm ở Bệnh viện K."
         },
         {
@@ -189,7 +189,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
         {
           "id": "ulis_r02_q07",
           "type": "vocab_in_context",
-          "question_text": "The word \"donate\" in paragraph 3 could be best replaced by ................",
+          "question_text": "The word \"**donate**\" in paragraph 3 could be best replaced by ................",
           "options": [
             {
               "key": "A",
@@ -210,7 +210,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 2,
-          "clue_sentence": "Mrs. To, founder of the clinic, had to spend her own pension and encourage her children and relatives to donate money to purchase medical equipment and medicine.",
+          "clue_sentence": "Mrs. To, founder of the clinic, had to spend her own pension and encourage her children and relatives to **donate** money to purchase medical equipment and medicine.",
           "explanation_vi": "Từ \"donate\" nghĩa là quyên góp, đóng góp/cho tặng tiền bạc, đồng nghĩa với \"give\"."
         },
         {
@@ -303,12 +303,12 @@ export const ULIS_READING_TEST_02: ReadingTest = {
       "word_count": 406,
       "difficulty": "B2",
       "content_paragraphs": [
-        "We hear it all the time: People who are over 50 take longer to find jobs than younger people. Connie Wanberg, a professor at the Carlson School of Management at the University of Minnesota, had long heard gloom-and-doom stories to that effect, but she wondered how strong the data was to support them.",
+        "We hear it all the time: People who are over 50 take longer to find jobs than younger people. Connie Wanberg, a professor at the Carlson School of Management at the University of Minnesota, had long heard **gloom-and-doom** stories to that effect, but she wondered how strong the data was to support them.",
         "Very, as it turned out. According to a study by Professor Wanberg and others, job seekers over 50 were unemployed 5.8 weeks longer than those from the ages of 30 to 49. That number rose to 10.6 weeks when the comparison group was from 20 to 29. Professor Wanberg and three other researchers — Darla J. Hamann, Ruth Kanfer and Zhen Zhang — arrived at those numbers by analyzing and synthesizing hundreds of studies by economists, sociologists and psychologists.",
         "But it is important not to jump to conclusions about the cause, Professor Wanberg said. “It’s not very unusual for everybody to think that the reason for the difficulty in finding jobs at 50s is discrimination,” she said. That can sometimes be the case, but the reality is that the behavior required to find work does not play to many older people’s strengths. Once they become aware of this, they can act to compensate.",
-        "In their study, the researchers found that older people on average had smaller social networks than younger people, Professor Wanberg said. This is not necessarily bad — as we age, many of us find that the quality of our relationships is more important than the quantity. But in the job search process, the number of connections we maintain in our professional and personal networks is often critical.",
+        "In **their** study, the researchers found that older people on average had smaller social networks than younger people, Professor Wanberg said. This is not necessarily bad — as we age, many of us find that the quality of our relationships is more important than the quantity. But in the job search process, the number of connections we maintain in our professional and personal networks is often **critical**.",
         "As people age, they also tend to stay in the same job longer, consistent with a pattern of wanting to put down roots. During that time, the skills people have learned and the job search strategies they once used may become outdated — especially as technology evolves ever more quickly.",
-        "The cure for these drawbacks is fairly straightforward. Once you hit your early 40s, even if you are not looking for a job, work to learn new skills and stretch yourself, Professor Wanberg said. Also, keep your networks strong by staying in touch with former colleagues and classmates, along with current co-workers and clients whom you don’t see regularly, she said.",
+        "The cure for **these drawbacks** is fairly straightforward. Once you hit your early 40s, even if you are not looking for a job, work to learn new skills and stretch yourself, Professor Wanberg said. Also, keep your networks strong by staying in touch with former colleagues and classmates, along with current co-workers and clients whom you don’t see regularly, she said.",
         "Finding a job after 50 doesn’t have to be as discouraging as it is often portrayed to be, Professor Wanberg said. Just recognize that some of the obstacles you face are inherent to the aging process, she said. She stressed that her findings reflected only averages and that individual behavior varies greatly. Certainly, many older people maintain wide social circles and often learn skills. But in general, older job seekers must take more steps to find employment than younger ones, she said.",
         "Once older workers do find a new employer, they can use their knowledge, wisdom and emotional intelligence — qualities that older people often possess in abundance — to thrive in their new positions."
       ],
@@ -316,7 +316,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
         {
           "id": "ulis_r02_q11",
           "type": "vocab_in_context",
-          "question_text": "The word \"gloom-and-doom\" in the first paragraph could be best replaced by ...............",
+          "question_text": "The word \"**gloom-and-doom**\" in the first paragraph could be best replaced by ...............",
           "options": [
             {
               "key": "A",
@@ -337,7 +337,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Connie Wanberg, a professor at the Carlson School of Management at the University of Minnesota, had long heard gloom-and-doom stories to that effect, but she wondered how strong the data was to support them.",
+          "clue_sentence": "Connie Wanberg, a professor at the Carlson School of Management at the University of Minnesota, had long heard **gloom-and-doom** stories to that effect, but she wondered how strong the data was to support them.",
           "explanation_vi": "Cụm từ \"gloom-and-doom\" mang nghĩa bi quan, u ám hoặc tuyệt vọng. Do đó, nó đồng nghĩa nhất với \"hopeless\" (tuyệt vọng, không có hy vọng)."
         },
         {
@@ -402,7 +402,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
         {
           "id": "ulis_r02_q14",
           "type": "vocab_in_context",
-          "question_text": "The word \"their\" in paragraph 4 refers to ...............",
+          "question_text": "The word \"**their**\" in paragraph 4 refers to ...............",
           "options": [
             {
               "key": "A",
@@ -423,13 +423,13 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 3,
-          "clue_sentence": "In their study, the researchers found that older people on average had smaller social networks than younger people, Professor Wanberg said.",
+          "clue_sentence": "In **their** study, the researchers found that older people on average had smaller social networks than younger people, Professor Wanberg said.",
           "explanation_vi": "Trong câu \"In their study, the researchers found...\", tính từ sở hữu \"their\" quy chiếu đến \"the researchers\" (các nhà nghiên cứu)."
         },
         {
           "id": "ulis_r02_q15",
           "type": "vocab_in_context",
-          "question_text": "The word \"critical\" in paragraph 4 could be best replaced by .............",
+          "question_text": "The word \"**critical**\" in paragraph 4 could be best replaced by .............",
           "options": [
             {
               "key": "A",
@@ -450,7 +450,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 3,
-          "clue_sentence": "But in the job search process, the number of connections we maintain in our professional and personal networks is often critical.",
+          "clue_sentence": "But in the job search process, the number of connections we maintain in our professional and personal networks is often **critical**.",
           "explanation_vi": "Từ \"critical\" trong ngữ cảnh này mang nghĩa cực kỳ quan trọng, quyết định, đồng nghĩa với \"important\"."
         },
         {
@@ -483,7 +483,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
         {
           "id": "ulis_r02_q17",
           "type": "vocab_in_context",
-          "question_text": "The word \"these drawbacks\" in paragraph 6 refers to .............",
+          "question_text": "The word \"**these drawbacks**\" in paragraph 6 refers to .............",
           "options": [
             {
               "key": "A",
@@ -597,7 +597,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
       "word_count": 443,
       "difficulty": "B2",
       "content_paragraphs": [
-        "When I was just fifteen, my father purchased an old hostel in the country where we lived and decided to turn it into a luxury hotel. At the early stages of the hotel, he experimented with everything. None of us had ever worked in a hotel before, but my dad had a vision of what guests wanted. His standards were extremely high and he believed that to reach those standards the most important thing was work.",
+        "When I was just fifteen, my father purchased an old hostel in the country where we lived and decided to turn **it** into a luxury hotel. At the early stages of the hotel, he experimented with everything. None of us had ever worked in a hotel before, but my dad had a vision of what guests wanted. His standards were extremely high and he believed that to reach those standards the most important thing was work.",
         "For a month that summer I worked as a waitress at breakfast and dinner. As part of the job I had to lay the tables in the dining room beforehand and clean up afterwards. This gave me the middle of the day free for studying because my school report predictably had not lived up to my father's high expectations.",
         "Like all the other waitresses, I was equipped with a neat uniform and told to treat the guests as though they were special visitors in my own home. Although I felt more like a stranger in theirs, I did not express my feelings. Instead I concentrated on doing the job as well as, if not better than, the older girls.",
         "In the kitchen I learned how to deal with Gordon, the chef, who I found rather daunting. He had an impressive chef's hat and a terrifying ability to lose his temper and get violent for no clear reason. I avoided close contact with him and always grabbed the dishes he gave me with a cold look on my face. Then, as I walked from the kitchen to the dining room, my cold expression used to change into a charming smile.",
@@ -609,7 +609,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
         {
           "id": "ulis_r02_q21",
           "type": "factual_detail",
-          "question_text": "The word \"it\" in line 2 refers to ..................",
+          "question_text": "The word \"**it**\" in line 2 refers to ..................",
           "options": [
             {
               "key": "A",
@@ -630,7 +630,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "When I was just fifteen, my father purchased an old hostel in the country where we lived and decided to turn it into a luxury hotel.",
+          "clue_sentence": "When I was just fifteen, my father purchased an old hostel in the country where we lived and decided to turn **it** into a luxury hotel.",
           "explanation_vi": "Từ \"it\" thay thế cho danh từ \"an old hostel\" được nhắc đến ngay trước đó, diễn tả việc cha của Mary đã mua một nhà trọ cũ và biến nó thành một khách sạn sang trọng."
         },
         {
@@ -878,7 +878,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "When I was just fifteen, my father purchased an old hostel in the country where we lived and decided to turn it into a luxury hotel.",
+          "clue_sentence": "When I was just fifteen, my father purchased an old hostel in the country where we lived and decided to turn **it** into a luxury hotel.",
           "explanation_vi": "Toàn bộ bài đọc kể lại trải nghiệm đầu đời của tác giả Mary khi làm việc tại khách sạn do cha cô sở hữu."
         }
       ],
@@ -890,11 +890,11 @@ export const ULIS_READING_TEST_02: ReadingTest = {
       "word_count": 321,
       "difficulty": "C1",
       "content_paragraphs": [
-        "Potash (the old name for potassium carbonate) is one of the two alkalis (the other being soda, sodium carbonate) that were used from remote antiquity in the making of glass, and from the early Middle Ages in the making of soap: the former being the product of heating a mixture of alkali and sand, the latter a product of alkali and vegetable oil. Their importance in the communities of colonial North America need hardly be stressed.",
-        "Potash and soda are not interchangeable for all purposes, but for glass-or soap-making either would do. Soda was obtained largely from the ashes of certain Mediterranean sea plants, potash from those of inland vegetation. Hence potash was more familiar to the early European settlers of the North American continent.",
+        "Potash (the old name for potassium carbonate) is one of the two alkalis (the other being soda, sodium carbonate) that were used from remote antiquity in the making of glass, and from the early Middle Ages in the making of soap: the former being the product of heating a mixture of alkali and sand, **the latter** a product of alkali and vegetable oil. Their importance in the communities of colonial North America need hardly be **stressed**.",
+        "Potash and soda are not **interchangeable** for all purposes, but for glass-or soap-making either would do. Soda was obtained largely from the ashes of certain Mediterranean sea plants, potash from those of inland vegetation. Hence potash was more familiar to the early European settlers of the North American continent.",
         "The settlement at Jamestown in Virginia was in many ways a microcosm of the economy of colonial North America, and potash was one of its first concerns. It was required for the glassworks, the first factory in the British colonies, and was produced in sufficient quantity to permit the inclusion of potash in the first cargo shipped out of Jamestown. The second ship to arrive in the settlement from England included among its passengers experts in potash making.",
         "The method of making potash was simple enough. Logs was piled up and burned in the open, and the ashes collected. The ashes were placed in a barrel with holes in the bottom, and water was poured over them. The solution draining from the barrel was boiled down in iron kettles. The resulting mass was further heated to fuse the mass into what was called potash.",
-        "In North America, potash making quickly became an adjunct to the clearing of land for agriculture, for it was estimated that as much as half the cost of clearing land could be recovered by the sale of potash. Some potash was exported from Maine and New Hampshire in the seventeenth century, but the market turned out to be mainly domestic, consisting mostly of shipments from the northern to the southern colonies. For despite the beginning of the trade at Jamestown and such encouragements as a series of acts to encourage the making of potash, beginning in 1707 in South Carolina, the softwoods in the South proved to be poor sources of the substance."
+        "In North America, potash making quickly became an **adjunct** to the clearing of land for agriculture, for it was estimated that as much as half the cost of clearing land could be recovered by the sale of potash. Some potash was exported from Maine and New Hampshire in the seventeenth century, but the market turned out to be mainly domestic, consisting mostly of shipments from the northern to the southern colonies. For despite the beginning of the trade at Jamestown and such encouragements as a series of acts to encourage the making of potash, beginning in 1707 in South Carolina, the softwoods in the South proved to be poor sources of the substance."
       ],
       "questions": [
         {
@@ -921,7 +921,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Their importance in the communities of colonial North America need hardly be stressed.",
+          "clue_sentence": "Their importance in the communities of colonial North America need hardly be **stressed**.",
           "explanation_vi": "Bài đọc xoay quanh vai trò, ứng dụng và tầm quan trọng của tro bồ đề (potash) trong nền kinh tế và đời sống của các thuộc địa Bắc Mỹ thời kỳ thuộc địa. Do đó đáp án D là chính xác."
         },
         {
@@ -954,7 +954,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
         {
           "id": "ulis_r02_q33",
           "type": "vocab_in_context",
-          "question_text": "They phrase \"the latter\" in paragraph 1 refers to ....................",
+          "question_text": "They phrase \"**the latter**\" in paragraph 1 refers to ....................",
           "options": [
             {
               "key": "A",
@@ -975,13 +975,13 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Potash (the old name for potassium carbonate) is one of the two alkalis (the other being soda, sodium carbonate) that were used from remote antiquity in the making of glass, and from the early Middle Ages in the making of soap: the former being the product of heating a mixture of alkali and sand, the latter a product of alkali and vegetable oil.",
+          "clue_sentence": "Potash (the old name for potassium carbonate) is one of the two alkalis (the other being soda, sodium carbonate) that were used from remote antiquity in the making of glass, and from the early Middle Ages in the making of soap: the former being the product of heating a mixture of alkali and sand, **the latter** a product of alkali and vegetable oil.",
           "explanation_vi": "Trong đoạn 1, \"making of glass\" và \"making of soap\" được nhắc tới theo thứ tự. \"the former\" quy chiếu tới việc làm thủy tinh (glass), còn \"the latter\" quy chiếu tới việc làm xà phòng (soap)."
         },
         {
           "id": "ulis_r02_q34",
           "type": "vocab_in_context",
-          "question_text": "The word \"stressed\" in paragraph 1 could be best replaced by .....................",
+          "question_text": "The word \"**stressed**\" in paragraph 1 could be best replaced by .....................",
           "options": [
             {
               "key": "A",
@@ -1002,13 +1002,13 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Their importance in the communities of colonial North America need hardly be stressed.",
+          "clue_sentence": "Their importance in the communities of colonial North America need hardly be **stressed**.",
           "explanation_vi": "Từ \"stressed\" trong ngữ cảnh này có nghĩa là nhấn mạnh (emphasized), hàm ý tầm quan trọng của chúng là điều không cần phải nhấn mạnh thêm nữa."
         },
         {
           "id": "ulis_r02_q35",
           "type": "vocab_in_context",
-          "question_text": "The word \"interchangeable\" in paragraph 2 is closest in meaning to .....",
+          "question_text": "The word \"**interchangeable**\" in paragraph 2 is closest in meaning to .....",
           "options": [
             {
               "key": "A",
@@ -1029,7 +1029,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "Potash and soda are not interchangeable for all purposes, but for glass-or soap-making either would do.",
+          "clue_sentence": "Potash and soda are not **interchangeable** for all purposes, but for glass-or soap-making either would do.",
           "explanation_vi": "\"Interchangeable\" có nghĩa là có thể thay thế cho nhau, tương đương nhau (equivalent)."
         },
         {
@@ -1089,7 +1089,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
         {
           "id": "ulis_r02_q38",
           "type": "vocab_in_context",
-          "question_text": "The word \"adjunct\" in paragraph 5 is closest in meaning to ......",
+          "question_text": "The word \"**adjunct**\" in paragraph 5 is closest in meaning to ......",
           "options": [
             {
               "key": "A",
@@ -1110,7 +1110,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 4,
-          "clue_sentence": "In North America, potash making quickly became an adjunct to the clearing of land for agriculture, for it was estimated that as much as half the cost of clearing land could be recovered by the sale of potash.",
+          "clue_sentence": "In North America, potash making quickly became an **adjunct** to the clearing of land for agriculture, for it was estimated that as much as half the cost of clearing land could be recovered by the sale of potash.",
           "explanation_vi": "Từ \"adjunct\" có nghĩa là phần bổ sung, phần đính kèm thêm vào (addition)."
         },
         {
@@ -1137,7 +1137,7 @@ export const ULIS_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 4,
-          "clue_sentence": "In North America, potash making quickly became an adjunct to the clearing of land for agriculture, for it was estimated that as much as half the cost of clearing land could be recovered by the sale of potash.",
+          "clue_sentence": "In North America, potash making quickly became an **adjunct** to the clearing of land for agriculture, for it was estimated that as much as half the cost of clearing land could be recovered by the sale of potash.",
           "explanation_vi": "Đoạn 5 nêu rõ tiền bán potash giúp thu hồi tới một nửa chi phí khai hoang đất làm nông nghiệp (creation of farms), tức hỗ trợ tài chính cho việc tạo dựng trang trại."
         },
         {

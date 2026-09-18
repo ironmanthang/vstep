@@ -108,6 +108,11 @@
   color: var(--text-primary, #f5f0eb);
 }
 
+.rq-prompt strong {
+  font-weight: 800;
+  color: inherit;
+}
+
 .rq-options-list {
   display: flex;
   flex-direction: column;

@@ -18,9 +18,9 @@ export const ULIS_READING_TEST_05: ReadingTest = {
       "difficulty": "B1",
       "content_paragraphs": [
         "The Association of Southeast Asian Nations (ASEAN) is the main political and economic organization for that area. The leaders summit is their last meeting before the launch of the ASEAN Economic Community, or AEC, on December 31.",
-        "The AEC will be equivalent to the world's seventh largest economy. It was set up to create a highly competitive single market and production area. Organizers hope it will ease the movement of capital, goods, investment, services and skilled labor across ASEAN countries. The goal is to make the whole area more competitive and economically successful. But, some business leaders have low expectations for the ASEAN summit. Anthony Nelson is a director at the US – ASEAN Business Council in Washington. He believes that security will be an important issue at the meetings, especially after the terrorist attacks in Paris last week.",
+        "The AEC will be equivalent to the world's seventh largest economy. **It** was set up to create a highly competitive single market and production area. Organizers hope it will ease the movement of capital, goods, investment, services and skilled labor across ASEAN countries. The goal is to make the whole area more competitive and economically successful. But, some business leaders have low expectations for the ASEAN summit. Anthony Nelson is a director at the US – ASEAN Business Council in Washington. He believes that security will be an important issue at the meetings, especially after the terrorist attacks in Paris last week.",
         "\"The November summit includes the East Asia Summit, which primarily focuses on political and security issues. So that's going to be a big part of what is actually going on around the summit. A lot of the work that business gets really involved in tends to happen around the ASEAN economic ministers' meeting in August.\" But, the AEC may have only limited influence on business activity when it comes into being next year. Experts expect little to change at first because there is still much to be done.",
-        "\"The ASEAN single window, which is a customs project, is still very much a work in progress. But beginning next year they will start limited trials with five of the 10 ASEAN countries. And there have been past mutual recognition agreements for credentials of skilled professionals. But there's still a lot of work to be done in terms of actually implementing those agreements.\" Some critics say the AEC will mainly help businesses, not the majority of people in Southeast Asia. Earlier this year, the ASEAN Civil Society Conference and ASEAN Peoples' Forum expressed concern about regional economic integration. In a statement, the group said such a move would mean unequal and unsustainable economic growth. This, it said, would result \"in worsening poverty and inequalities of wealth.\" Jerald Joseph is co – chair of the ASEAN People's Forum. He says people crossing borders to find employment need more protections. He said: \"Cross – border migrant workers don't have the same level of protection or interest in the whole negotiation. So that's a little bit of a pity, a wasted chance, if it's not reflected in the coming document.\" The 27th ASEAN Summit includes the organization's partners. Nations including China, India, Japan and the United States are to attend."
+        "\"The ASEAN single window, which is a customs project, is still very much a work in progress. But beginning next year they will start limited trials with five of the 10 ASEAN countries. And there have been past mutual recognition agreements for **credentials** of skilled professionals. But there's still a lot of work to be done in terms of actually **implementing** those agreements.\" Some critics say the AEC will mainly help businesses, not the majority of people in Southeast Asia. Earlier this year, the ASEAN Civil Society Conference and ASEAN Peoples' Forum expressed concern about regional economic **integration**. In a statement, the group said such a move would mean unequal and unsustainable economic growth. This, it said, would result \"in worsening poverty and inequalities of wealth.\" Jerald Joseph is co – chair of the ASEAN People's Forum. He says people crossing borders to find employment need more protections. He said: \"Cross – border migrant workers don't have the same level of protection or interest in the whole negotiation. So that's a little bit of a pity, a wasted chance, if it's not reflected in the coming document.\" The 27th ASEAN Summit includes the organization's partners. Nations including China, India, Japan and the United States are to attend."
       ],
       "questions": [
         {
@@ -53,7 +53,7 @@ export const ULIS_READING_TEST_05: ReadingTest = {
         {
           "id": "ulis_r05_q02",
           "type": "vocab_in_context",
-          "question_text": "What does the word \"It\" in paragraph 2 refer to?",
+          "question_text": "What does the word \"**It**\" in paragraph 2 refer to?",
           "options": [
             {
               "key": "A",
@@ -74,7 +74,7 @@ export const ULIS_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "The AEC will be equivalent to the world's seventh largest economy. It was set up to create a highly competitive single market and production area.",
+          "clue_sentence": "The AEC will be equivalent to the world's seventh largest economy. **It** was set up to create a highly competitive single market and production area.",
           "explanation_vi": "Từ 'It' ở câu thứ hai đại diện cho chủ ngữ 'The AEC' được đề cập ở câu ngay trước đó."
         },
         {
@@ -161,7 +161,7 @@ export const ULIS_READING_TEST_05: ReadingTest = {
         {
           "id": "ulis_r05_q06",
           "type": "vocab_in_context",
-          "question_text": "The word \"credentials\" in line 19 can be replaced by",
+          "question_text": "The word \"**credentials**\" in line 19 can be replaced by",
           "options": [
             {
               "key": "A",
@@ -182,13 +182,13 @@ export const ULIS_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 3,
-          "clue_sentence": "And there have been past mutual recognition agreements for credentials of skilled professionals.",
+          "clue_sentence": "And there have been past mutual recognition agreements for **credentials** of skilled professionals.",
           "explanation_vi": "Từ 'credentials' (bằng cấp, chứng chỉ hành nghề) đồng nghĩa với 'certificates'."
         },
         {
           "id": "ulis_r05_q07",
           "type": "vocab_in_context",
-          "question_text": "The word \"implementing\" in line 20 is closest in meaning to",
+          "question_text": "The word \"**implementing**\" in line 20 is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -209,13 +209,13 @@ export const ULIS_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 3,
-          "clue_sentence": "But there's still a lot of work to be done in terms of actually implementing those agreements.",
+          "clue_sentence": "But there's still a lot of work to be done in terms of actually **implementing** those agreements.",
           "explanation_vi": "Từ 'implementing' (thực thi, thực hiện) đồng nghĩa với cụm động từ 'carrying out'."
         },
         {
           "id": "ulis_r05_q08",
           "type": "vocab_in_context",
-          "question_text": "The word \"integration\" in line 23 can be replaced by",
+          "question_text": "The word \"**integration**\" in line 23 can be replaced by",
           "options": [
             {
               "key": "A",
@@ -236,7 +236,7 @@ export const ULIS_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 3,
-          "clue_sentence": "Earlier this year, the ASEAN Civil Society Conference and ASEAN Peoples' Forum expressed concern about regional economic integration.",
+          "clue_sentence": "Earlier this year, the ASEAN Civil Society Conference and ASEAN Peoples' Forum expressed concern about regional economic **integration**.",
           "explanation_vi": "Từ 'integration' (hội nhập, hợp nhất) trong ngữ cảnh này gần nghĩa nhất với 'combination' (sự kết hợp/hợp nhất)."
         },
         {
@@ -627,7 +627,7 @@ export const ULIS_READING_TEST_05: ReadingTest = {
       "word_count": 412,
       "difficulty": "B2",
       "content_paragraphs": [
-        "During the heyday of the railroads, when America's rail system provided the bulk of the country's passenger and freight transportation, various types of railroad cars were in service to accomplish the varied tasks handled by the railroads. One type of car that was not available for public use prior to the Civil War, however, was a sleeping car; ideas for sleeping cars abounded at the time, but these ideas were unworkable. It unfortunately took the death of a president to make the sleeping car a viable reality.",
+        "During the **heyday** of the railroads, when America's rail system provided the bulk of the country's passenger and freight transportation, various types of railroad cars were in service to accomplish the varied tasks handled by the railroads. One type of car that was not available for public use prior to the Civil War, however, was a sleeping car; ideas for sleeping cars abounded at the time, but these ideas were unworkable. It unfortunately took the death of a president to make the sleeping car a viable reality.",
         "Cabinet – maker George M. Pullman had recognized the demand for sleeping cars and had worked on developing experimental models of sleeping cars in the decade leading up to the Civil War. However, in spite of the fact that he had made successful test runs on the Chicago and Alton Railroads with his models, he was unable to sell his idea because his models were too wide and too high for existing train station and bridges. In 1863, after spending time working as a storekeeper in a Colorado mining town, he invested his savings of twenty thousand dollars, a huge fortune at that time and all the money that he had in the world, in a luxurious sleeping car that he named the Pioneer. Pullman and friend Ben Field built the Pioneer on the site of the present – day Chicago Union Station. For two years, however; the Pioneer sat on a railroad siding, useless because it could not fit through train stations and over bridges.",
         "Following President Lincoln's assassination in 1865, the state of Illinois, Lincoln's birthplace, wanted to transport the presidential casket in the finest fashion possible. The Pullman Pioneer was the most elegant car around; in order to make the Pullman part of the presidential funeral train in its run from Springfield to Chicago, the state cut down station platforms and raised bridges in order to accommodate the luxurious railway car. The Pullman car greatly impressed the funeral party, which included Lincoln's successor as president, General Ulysses S. Grant, and Grant later requested the Pioneer for a trip from Detroit to Chicago. To satisfy Grant's request for the Pioneer, the Michigan Central Railroad made improvements on its line to accommodate the wide car, and soon other railroads followed. George Pullman founded the Pullman Palace Car Company in partnership with financier Andrew Carnegie and eventually became a millionaire.",
         "Pullman cars were normally a dark \"Pullman green\", although some were painted in the host railroad's colors. The cars carried individual names, but usually did not carry visible numbers. In the 1920s, the Pullman Company went through a series of restructuring steps, which in the end resulted in a parent company, Pullman Incorporated, controlling the Pullman Company (which owned and operated sleeping cars) and the Pullman – Standard Car Manufacturing Company."
@@ -668,7 +668,7 @@ export const ULIS_READING_TEST_05: ReadingTest = {
         {
           "id": "ulis_r05_q22",
           "type": "vocab_in_context",
-          "question_text": "A \"heyday\" in line 1 is most probably a ..............",
+          "question_text": "A \"**heyday**\" in line 1 is most probably a ..............",
           "options": [
             {
               "key": "A",
@@ -689,7 +689,7 @@ export const ULIS_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 0,
-          "clue_sentence": "During the heyday of the railroads, when America's rail system provided the bulk of the country's passenger and freight transportation, various types of railroad cars were in service to accomplish the varied tasks handled by the railroads.",
+          "clue_sentence": "During the **heyday** of the railroads, when America's rail system provided the bulk of the country's passenger and freight transportation, various types of railroad cars were in service to accomplish the varied tasks handled by the railroads.",
           "explanation_vi": "Từ 'heyday' nghĩa là thời kỳ hoàng kim, thời kỳ thịnh vượng/thành công rực rỡ nhất ('a period of great success').",
           "paraphrase_analysis": {
             "question_phrase": "heyday",
@@ -945,7 +945,7 @@ export const ULIS_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "During the heyday of the railroads, when America's rail system provided the bulk of the country's passenger and freight transportation, various types of railroad cars were in service to accomplish the varied tasks handled by the railroads.",
+          "clue_sentence": "During the **heyday** of the railroads, when America's rail system provided the bulk of the country's passenger and freight transportation, various types of railroad cars were in service to accomplish the varied tasks handled by the railroads.",
           "explanation_vi": "Toàn bài nói về quá trình phát triển lịch sử của ngành đường sắt và sự ra đời của toa xe giường nằm gắn liền với các sự kiện lịch sử (Nội chiến, vụ ám sát Lincoln). Do đó bài đọc phù hợp nhất với môn Lịch sử (History)."
         }
       ],
@@ -959,9 +959,9 @@ export const ULIS_READING_TEST_05: ReadingTest = {
       "content_paragraphs": [
         "Garbage cans are not magical portals. Trash does not disappear when you toss it in a can. Yet, the average American throws away an estimated 1,600 pounds of waste each year. If there are no magic garbage fairies, where does all that trash go? There are four methods to managing waste: recycling, land-filling, composting, and incinerating. Each method has its strengths and weakness. Let’s take a quick look at each.",
         "Recycling is the process of turning waste into new materials. For example, used paper can be turned into paperboard, which can be used to make book covers. Recycling can reduce pollution, save materials, and lower energy use. Yet, some argue that recycling wastes energy. They believe that collecting, processing, and converting waste uses more energy than it saves. Still, most people agree that recycling is better for the planet than land-filling.",
-        "Land-filling is the oldest method of managing waste. In its simplest form, land-filling is when people bury garbage in a hole. Over time the practice of land-filling has advanced. Garbage is compacted before it is thrown into the hole. In this way, more garbage can fit in each landfill. Large liners are placed in the bottom of landfills so that toxic garbage juice doesn't get into the ground water. Sadly, these liners don't always work. Landfills may pollute the local water supply. Not to mention that all of that garbage stinks. Nobody wants to live next to a landfill. This makes it hard to find new locations for landfills.",
+        "Land-filling is the oldest method of managing waste. In its simplest form, land-filling is when people bury garbage in a hole. Over time the practice of land-filling has advanced. Garbage is **compacted** before it is thrown into the hole. In this way, more garbage can fit in each landfill. Large liners are placed in the bottom of landfills so that toxic garbage juice doesn't get into the ground water. Sadly, these liners don't always work. Landfills may pollute the local water supply. Not to mention that all of that garbage stinks. Nobody wants to live next to a landfill. This makes it hard to find new locations for landfills.",
         "As landfill space increases, interest in composting grows. Composting is when people pile up organic matter, such as food waste, and allows it to decompose. The product of this decomposition is compost. Compost can be added to the soil to make the soil richer and better for growing crops. While composting is easy to do onsite somewhere, like home or school, it's hard to do after the garbage gets all mixed up. This is because plastic and other inorganic materials must be removed from the compost pile or they will pollute the soil. There's a lot of plastic in garbage, which makes it hard to compost on a large scale.",
-        "One thing that is easier to do is burning garbage. There are two main ways to incinerate waste. The first is to create or harvest a fuel from the waste, such as methane gas, and burn the fuel. The second is to burn the waste directly. The heat from the incineration process can boil water, which can power steam generators. Unfortunately, burning garbage pollutes the air. Also, some critics worry that incinerators destroy valuable resources that could be recycled.",
+        "One thing that is easier to do is burning garbage. There are two main ways to incinerate waste. The first is to create or harvest a fuel from the waste, such as methane gas, and burn the fuel. The second is to burn the waste directly. The heat from the **incineration** process can boil water, which can power steam generators. Unfortunately, burning garbage pollutes the air. Also, some critics worry that incinerators destroy valuable resources that could be recycled.",
         "Usually, the community which you live manages waste. Once you put your garbage in that can, what happens to it is beyond your control. But you can make choices while it is still in your possession. You can choose to recycle, you can choose to compost, or you can choose to let someone else deal with it. The choice is yours."
       ],
       "questions": [
@@ -1000,7 +1000,7 @@ export const ULIS_READING_TEST_05: ReadingTest = {
         {
           "id": "ulis_r05_q32",
           "type": "vocab_in_context",
-          "question_text": "Which best expresses the meaning of the word \"compacted\" as it is used in the third paragraph?",
+          "question_text": "Which best expresses the meaning of the word \"**compacted**\" as it is used in the third paragraph?",
           "options": [
             {
               "key": "A",
@@ -1021,7 +1021,7 @@ export const ULIS_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 2,
-          "clue_sentence": "Garbage is compacted before it is thrown into the hole. In this way, more garbage can fit in each landfill.",
+          "clue_sentence": "Garbage is **compacted** before it is thrown into the hole. In this way, more garbage can fit in each landfill.",
           "explanation_vi": "Từ 'compacted' có nghĩa là nén lại, làm nhỏ lại để chứa được nhiều rác hơn. Do đó, lựa chọn C (Garbage is crushed smaller before it is thrown in a hole) giải thích đúng nghĩa nhất.",
           "paraphrase_analysis": {
             "question_phrase": "compacted",
@@ -1086,7 +1086,7 @@ export const ULIS_READING_TEST_05: ReadingTest = {
         {
           "id": "ulis_r05_q35",
           "type": "vocab_in_context",
-          "question_text": "Which best defines the meaning of incineration as it is used in the text?",
+          "question_text": "Which best defines the meaning of **incineration** as it is used in the text?",
           "options": [
             {
               "key": "A",

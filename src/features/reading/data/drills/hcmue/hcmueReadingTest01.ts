@@ -17,9 +17,9 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
       "word_count": 343,
       "difficulty": "B1",
       "content_paragraphs": [
-        "It takes a long time to raise a family of owlets, so the great horned owl begins early in the year. In January and February, or as late as March in the North, the male calls to the female with a resonant hoot. The female is larger than the male. She sometimes reaches a body length of twenty-two to twenty-four inches, with a wingspread up to fifty inches. To impress her, the male does a strange courtship dance. He bobs. He bows. He ruffles his feathers and hops around with an important air. He flutters from limb to limb and makes flying sorties into the air. Sometimes he returns with an offering of food. They share the repast, after which she joins the dance, hopping and bobbing about as though keeping time to the beat of an inner drum.",
+        "It takes a long time to raise a family of owlets, so the great horned owl begins early in the year. In January and February, or as late as March in the North, the male calls to the female with **a resonant hoot**. The female is larger than the male. She sometimes reaches a body length of twenty-two to twenty-four inches, with a wingspread up to fifty inches. To impress her, the male does a strange courtship dance. He bobs. He bows. He ruffles his feathers and hops around with an important air. He flutters from limb to limb and makes flying sorties into the air. Sometimes he returns with an offering of food. They share the repast, after which she joins the dance, hopping and bobbing about as though keeping time to the beat of an inner drum.",
         "Owls are poor home builders. They prefer to nest in a large hollow in a tree or even to occupy the deserted nest of a hawk or crow. These structures are large and rough, built of sticks and bark and lined with leaves and feathers. Sometimes owls nest on a rocky ledge, or even on the bare ground.",
-        "The mother lays two or three round, dull white eggs. Then she stoically settles herself on the nest and spreads her feather skirts about her to protect her precious charges from snow and cold. It is five weeks before the first downy white owlet pecks its way out of the shell. As the young birds feather out, they look like wise old men with their wide eyes and quizzical expressions. They clamor for food and keep the parents busy supplying mice, squirrels, rabbits, crayfish, and beetles. Later in the season baby crows are taken. Migrating songsters, waterfowl, and game birds all fall prey to the hungry family. It is nearly ten weeks before fledglings leave the nest to search for their own food. The parent birds weary of family life by November and drive the young owls away to establish hunting ranges of their own."
+        "The mother lays two or three round, dull white eggs. Then she stoically settles herself on the nest and spreads her feather skirts about her to protect her **precious charges** from snow and cold. It is five weeks before the first downy white owlet pecks its way out of the shell. As the young birds feather out, **they** look like wise old men with their wide eyes and quizzical expressions. They clamor for food and keep the parents busy supplying mice, squirrels, rabbits, crayfish, and beetles. Later in the season baby crows are taken. Migrating songsters, waterfowl, and game birds all fall prey to the hungry family. It is nearly ten weeks before fledglings leave the nest to search for their own food. The parent birds **weary of** family life by November and drive the young owls away to establish hunting ranges of their own."
       ],
       "questions": [
         {
@@ -52,7 +52,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         {
           "id": "hcmue_r01_q02",
           "type": "vocab_in_context",
-          "question_text": "The phrase \"a resonant hoot\" in the passage is closest in meaning to _____.",
+          "question_text": "The phrase \"**a resonant hoot**\" in the passage is closest in meaning to _____.",
           "options": [
             {
               "key": "A",
@@ -73,7 +73,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "In January and February, or as late as March in the North, the male calls to the female with a resonant hoot.",
+          "clue_sentence": "In January and February, or as late as March in the North, the male calls to the female with **a resonant hoot**.",
           "explanation_vi": "Từ \"hoot\" chỉ tiếng kêu của con cú, do đó \"a resonant hoot\" là một âm thanh (a sound).",
           "paraphrase_analysis": {
             "question_phrase": "a resonant hoot",
@@ -159,13 +159,13 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 2,
-          "clue_sentence": "Then she stoically settles herself on the nest and spreads her feather skirts about her to protect her precious charges from snow and cold.",
+          "clue_sentence": "Then she stoically settles herself on the nest and spreads her feather skirts about her to protect her **precious charges** from snow and cold.",
           "explanation_vi": "Đoạn 3 ghi rõ sau khi đẻ trứng, chim mẹ ngồi lên tổ (settles herself on the nest) để bảo vệ trứng khỏi tuyết và lạnh. Do đó nhiệm vụ của chim mẹ là ngồi trên tổ (To sit on the nest)."
         },
         {
           "id": "hcmue_r01_q06",
           "type": "vocab_in_context",
-          "question_text": "The phrase \"precious charges\" in paragraph 3 refers to ________.",
+          "question_text": "The phrase \"**precious charges**\" in paragraph 3 refers to ________.",
           "options": [
             {
               "key": "A",
@@ -186,7 +186,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 2,
-          "clue_sentence": "The mother lays two or three round, dull white eggs. Then she stoically settles herself on the nest and spreads her feather skirts about her to protect her precious charges from snow and cold.",
+          "clue_sentence": "The mother lays two or three round, dull white eggs. Then she stoically settles herself on the nest and spreads her feather skirts about her to protect her **precious charges** from snow and cold.",
           "explanation_vi": "Cụm \"precious charges\" ngay sau câu đẻ trứng dùng để chỉ những quả trứng mà chim mẹ đang bảo vệ khỏi cái lạnh."
         },
         {
@@ -219,7 +219,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         {
           "id": "hcmue_r01_q08",
           "type": "vocab_in_context",
-          "question_text": "The word \"they\" in the passage refers to ________.",
+          "question_text": "The word \"**they**\" in the passage refers to ________.",
           "options": [
             {
               "key": "A",
@@ -240,7 +240,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 2,
-          "clue_sentence": "As the young birds feather out, they look like wise old men with their wide eyes and quizzical expressions.",
+          "clue_sentence": "As the young birds feather out, **they** look like wise old men with their wide eyes and quizzical expressions.",
           "explanation_vi": "Từ \"they\" thay thế cho chủ ngữ \"the young birds\" ở vế trước."
         },
         {
@@ -267,13 +267,13 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 2,
-          "clue_sentence": "The parent birds weary of family life by November and drive the young owls away to establish hunting ranges of their own.",
+          "clue_sentence": "The parent birds **weary of** family life by November and drive the young owls away to establish hunting ranges of their own.",
           "explanation_vi": "Đoạn cuối viết đến tháng 11, chim bố mẹ mệt mỏi với cuộc sống gia đình và đuổi chim con đi tự lập. Có thể suy luận rằng sau tháng 11 chim bố mẹ nhiều khả năng không gặp lại chim con nữa."
         },
         {
           "id": "hcmue_r01_q10",
           "type": "vocab_in_context",
-          "question_text": "The phrase \"weary of\" in the passage is closest in meaning to ________.",
+          "question_text": "The phrase \"**weary of**\" in the passage is closest in meaning to ________.",
           "options": [
             {
               "key": "A",
@@ -294,7 +294,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 2,
-          "clue_sentence": "The parent birds weary of family life by November and drive the young owls away to establish hunting ranges of their own.",
+          "clue_sentence": "The parent birds **weary of** family life by November and drive the young owls away to establish hunting ranges of their own.",
           "explanation_vi": "Cụm \"weary of\" có nghĩa là mệt mỏi, chán nản với cái gì, đồng nghĩa với \"tire of\"."
         }
       ],
@@ -306,8 +306,8 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
       "word_count": 315,
       "difficulty": "B2",
       "content_paragraphs": [
-        "In the early 1800s, to reach the jump-off point for the West, a family from the East of the United States could either buy steamboat passage to Missouri for themselves, their wagons, and their livestock or - as happened more often- simply pile everything into a wagon, hitch up a team, and begin their overland trek right in their front yard.",
-        "Along the macadamized roads and turnpikes east of the Missouri River, travel was comparatively fast, camping easy, and supplies plentiful. Then, in one river town or another, the neophyte emigrants would pause to lay in provisions. For outfitting purposes, the town of Independence had been preeminent ever since 1827, but the rising momentum of pioneer emigration had produced some rival jump-off points. Westport and Fort Leavenworth flourished a few miles upriver. St. Joseph had sprung up 55 miles to the northwest; in fact, emigrants who went to Missouri by riverboat could save four days on the trail by staying on the paddle-wheelers to St. Joe before striking overland.",
+        "In the early 1800s, to reach the **jump-off point** for the West, a family from the East of the United States could either buy steamboat passage to Missouri for themselves, their wagons, and their livestock or - as happened more often- simply pile everything into a wagon, hitch up a team, and begin their overland trek right in their front yard.",
+        "Along the macadamized roads and turnpikes east of the Missouri River, travel was comparatively fast, camping easy, and supplies plentiful. Then, in one river town or another, the **neophyte** emigrants would pause to lay in provisions. For outfitting purposes, the town of Independence had been **preeminent** ever since 1827, but the rising momentum of pioneer emigration had produced some rival jump-off points. Westport and Fort Leavenworth flourished a few miles upriver. St. Joseph had sprung up 55 miles to the northwest; in fact, emigrants who went to Missouri by riverboat could save four days on the trail by staying on the paddle-wheelers to St. Joe before **striking** overland.",
         "At whatever jump-off point they chose, the emigrants studied guidebooks and directions, asked questions of others as green as themselves, and made their final decisions about outfitting. They had various, sometimes conflicting, options. For example, either pack animals or two-wheel carts or wagons could be used for the overland crossing. A family man usually chose the wagon. It was the costliest and slowest of the three, but it provided space and shelter for children and for a wife who likely as not was pregnant. Everybody knew that a top-heavy covered wagon might blow over in a prairie wind or be overturned by mountain rocks, that it might mire in river mud or sink to its hubs in desert sand - but maybe if those things happened on this trip, they would happen to someone else. Anyway, most pioneers, with their farm background, were used to wagons."
       ],
       "questions": [
@@ -335,7 +335,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "In the early 1800s, to reach the jump-off point for the West, a family from the East of the United States could either buy steamboat passage to Missouri for themselves, their wagons, and their livestock or - as happened more often- simply pile everything into a wagon, hitch up a team, and begin their overland trek right in their front yard.",
+          "clue_sentence": "In the early 1800s, to reach the **jump-off point** for the West, a family from the East of the United States could either buy steamboat passage to Missouri for themselves, their wagons, and their livestock or - as happened more often- simply pile everything into a wagon, hitch up a team, and begin their overland trek right in their front yard.",
           "explanation_vi": "Đoạn văn mô tả quá trình chuẩn bị và bắt đầu cuộc hành trình về phía Tây của các gia đình người Mỹ ở thế kỷ 19, bao gồm việc lựa chọn điểm xuất phát, chuẩn bị nhu yếu phẩm và lựa chọn phương tiện di chuyển. Do đó, chủ đề phù hợp nhất là việc bắt đầu chuyến đi về phía Tây."
         },
         {
@@ -368,7 +368,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         {
           "id": "hcmue_r01_q13",
           "type": "vocab_in_context",
-          "question_text": "The phrase \"jump-off point\" in the passage is closest in meaning to ______.",
+          "question_text": "The phrase \"**jump-off point**\" in the passage is closest in meaning to ______.",
           "options": [
             {
               "key": "A",
@@ -389,7 +389,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "In the early 1800s, to reach the jump-off point for the West, a family from the East of the United States could either buy steamboat passage to Missouri for themselves, their wagons, and their livestock or - as happened more often- simply pile everything into a wagon, hitch up a team, and begin their overland trek right in their front yard.",
+          "clue_sentence": "In the early 1800s, to reach the **jump-off point** for the West, a family from the East of the United States could either buy steamboat passage to Missouri for themselves, their wagons, and their livestock or - as happened more often- simply pile everything into a wagon, hitch up a team, and begin their overland trek right in their front yard.",
           "explanation_vi": "Cụm từ \"jump-off point\" chỉ địa điểm xuất phát hoặc điểm khởi hành của một cuộc hành trình dài, tương đương với \"a point of departure\"."
         },
         {
@@ -416,13 +416,13 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 1,
-          "clue_sentence": "St. Joseph had sprung up 55 miles to the northwest; in fact, emigrants who went to Missouri by riverboat could save four days on the trail by staying on the paddle-wheelers to St. Joe before striking overland.",
+          "clue_sentence": "St. Joseph had sprung up 55 miles to the northwest; in fact, emigrants who went to Missouri by riverboat could save four days on the trail by staying on the paddle-wheelers to St. Joe before **striking** overland.",
           "explanation_vi": "Đoạn văn cho biết St. Joseph nằm cách 55 dặm về phía tây bắc (northwest) và việc đi tàu thủy đến đây giúp người di cư tiết kiệm được 4 ngày đi đường bộ. Điều này chứng tỏ St. Joseph nằm xa hơn về phía Tây so với các điểm xuất phát khác."
         },
         {
           "id": "hcmue_r01_q15",
           "type": "vocab_in_context",
-          "question_text": "The word \"preeminent\" in the passage is closest in meaning to",
+          "question_text": "The word \"**preeminent**\" in the passage is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -443,7 +443,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 1,
-          "clue_sentence": "For outfitting purposes, the town of Independence had been preeminent ever since 1827, but the rising momentum of pioneer emigration had produced some rival jump-off points.",
+          "clue_sentence": "For outfitting purposes, the town of Independence had been **preeminent** ever since 1827, but the rising momentum of pioneer emigration had produced some rival jump-off points.",
           "explanation_vi": "Từ \"preeminent\" có nghĩa là ưu thế vượt trội, nổi bật nhất, xuất sắc nhất, gần nghĩa nhất với \"superior\" (vượt trội, ưu việt)."
         },
         {
@@ -476,7 +476,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         {
           "id": "hcmue_r01_q17",
           "type": "vocab_in_context",
-          "question_text": "The word \"neophyte\" in the passage is closest in meaning to",
+          "question_text": "The word \"**neophyte**\" in the passage is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -497,7 +497,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 1,
-          "clue_sentence": "Then, in one river town or another, the neophyte emigrants would pause to lay in provisions.",
+          "clue_sentence": "Then, in one river town or another, the **neophyte** emigrants would pause to lay in provisions.",
           "explanation_vi": "Từ \"neophyte\" chỉ những người mới bắt đầu, chưa có kinh nghiệm. Ở đoạn sau, tác giả cũng mô tả họ là \"as green as themselves\" (non nớt, chưa có kinh nghiệm). Do đó, từ này gần nghĩa nhất với \"inexperienced\"."
         },
         {
@@ -530,7 +530,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         {
           "id": "hcmue_r01_q19",
           "type": "vocab_in_context",
-          "question_text": "The word \"striking\" in the passage is closest in meaning to",
+          "question_text": "The word \"**striking**\" in the passage is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -551,7 +551,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "St. Joseph had sprung up 55 miles to the northwest; in fact, emigrants who went to Missouri by riverboat could save four days on the trail by staying on the paddle-wheelers to St. Joe before striking overland.",
+          "clue_sentence": "St. Joseph had sprung up 55 miles to the northwest; in fact, emigrants who went to Missouri by riverboat could save four days on the trail by staying on the paddle-wheelers to St. Joe before **striking** overland.",
           "explanation_vi": "Cụm từ \"striking overland\" có nghĩa là bắt đầu lên đường đi bằng đường bộ, di chuyển sâu vào đất liền. Do đó, \"striking\" ở đây gần nghĩa nhất với \"departing\" (khởi hành, lên đường)."
         },
         {
@@ -589,12 +589,12 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
       "topic": "History & Culture",
       "difficulty": "B2",
       "content_paragraphs": [
-        "Alexander the Great commissioned the city of Alexandria to create a Mediterranean stronghold in Egypt to rival Rome and cities in Greece. He died before his idea came to fruition, but his successors built it into one of the greatest cities of the Hellenistic world. The Royal Library of Alexandria has achieved an almost mythical status among scholars of classical studies. As with many ancient topics, scholarship on the matter often conflicts and relies heavily on hearsay and supposition. We will examine the importance of the library during its heyday and how it operated.",
-        "As with many ancient landmarks, there is much debate and controversy over Alexandria's library, especially regarding its destruction. The tale has been retold by countless historians and attributed to just as many different factions and rulers, not to profile this landmark of education, but as a tool for political slander. It is estimated that there are over 4000 writings regarding its destruction, yet very little data exists regarding the structure, layout, organization, administration, or whereabouts of the complex. The accuracy of the available information is suspect. However, 20th century scholars have reached some general consensus from the remaining sources.",
+        "Alexander the Great commissioned the city of Alexandria to create a Mediterranean stronghold in Egypt to rival Rome and cities in Greece. He died before his idea came to fruition, but his successors built it into one of the greatest cities of the Hellenistic world. The Royal Library of Alexandria has achieved an almost mythical status among scholars of classical studies. As with many ancient topics, scholarship on the matter often conflicts and relies heavily on hearsay and supposition. We will examine the importance of the library during **its** heyday and how it operated.",
+        "As with many ancient landmarks, there is much debate and controversy over Alexandria's library, especially regarding its **destruction**. The tale has been retold by countless historians and attributed to just as many different **factions** and rulers, not to profile this landmark of education, but as a tool for political slander. It is estimated that there are over 4000 writings regarding its **destruction**, yet very little data exists regarding the structure, layout, organization, administration, or whereabouts of the complex. The accuracy of the available information is suspect. However, 20th century scholars have reached some general consensus from the remaining sources.",
         "Most historians have come to the conclusion that the original library (also known as the Temple of the Muses) was commissioned by Ptolemy I, Alexander's key general. More accurately, it was commissioned by the Athenian exile Demetrius of Phaleron under Ptolemy I's patronage. Traditionally it was attributed to his son Ptolemy II. However, it was later shown that Demetrius was antagonistic toward Ptolemy II and did not survive for much of his reign. Ptolemy II can be seen as responsible for the fruition and completion of the library and museum complex. H.G. Wells asserts that Ptolemy and his son encouraged 'a blaze of knowledge and discovery at Alexandria' through their funding of the library and other endowments.",
-        "The library itself was not a 'library' in the modern etymology. In fact, the library was essentially a collection of scholars and scribes encouraged to expand scientific and philosophical wisdom and musings brought about because of the ambition and drive of Ptolemy I. It was not the first institution of its type, developing about a half-century after Plato's Academy and Aristotle's Lyceum. About 30-50 scholars were probably permanently housed there, fed, and funded, first by the royal family, and later, according to an early Roman scroll, by public money. It served a religious, as well as an intellectual, function and it was the centerpiece of a so-called cult of the muses, governed by a priest.",
+        "The library itself was not a 'library' in the modern etymology. **In fact, the library was essentially a collection of scholars and scribes encouraged to expand scientific and philosophical wisdom and musings brought about because of the ambition and drive of Ptolemy I.** It was not the first institution of its type, developing about a half-century after Plato's Academy and Aristotle's Lyceum. About 30-50 scholars were probably permanently housed there, fed, and funded, first by the royal family, and later, according to an early Roman scroll, by public money. It served a religious, as well as an intellectual, function and it was the centerpiece of a so-called cult of the muses, governed by a priest.",
         "[A] The library's output was created through observation and deduction in math, medicine, astronomy, and geometry, the editing of texts and manuscripts, and debating various advances in Western knowledge. [B] For two or three generations, the scientific output at Alexandria was considerably good. Its achievements included the introduction of the first steam engine, the first star map, and an astoundingly accurate estimate of the Earth's diameter. [C] Famous scholars employed there included Euclid, Eratosthenes, Apollonius, and Hero. [D]",
-        "The library may have consisted of a group of buildings, including lecture halls, study rooms, dining rooms, gardens, and an astronomical observatory. In organization of the library, it is believed that, in the time of Ptolemy II, the scrolls were haphazardly stored and grouped by general category. From the time of Callimachus onwards, they used an early iteration of a subject catalog. Subject divisions outlined by Callimachus included mathematics, medicine, astronomy, and geometry, as well as philology. At its peak, it is estimated about 600,000 scrolls were held within its walls, although that is likely an overstatement.",
+        "The library may have consisted of a group of buildings, including lecture halls, study rooms, dining rooms, gardens, and an astronomical observatory. In organization of the library, it is believed that, in the time of Ptolemy II, the scrolls were haphazardly stored and grouped by general category. From the time of Callimachus onwards, they used an early iteration of a subject catalog. Subject divisions outlined by Callimachus included mathematics, medicine, astronomy, and geometry, as well as philology. At its peak, it is estimated about 600,000 scrolls were held within its walls, although that is likely an **overstatement**.",
         "The Ptolemys achieved their goal of creating the largest collection of its kind by varied and often forceful means. At the time of its founding, Greek libraries were usually collections of manuscripts by private individuals. Ptolemy had a vision to collect all accepted literature on all matters scientific, philosophical and spiritual. The library tried to get copies of all known books and would send agents far and wide to acquire them. Ptolemy `I wrote a letter \"to all the world's sovereigns\" asking to borrow their books. On more than a few occasions, scribes made copies and kept the originals. Supposedly, all ships entering Alexandria's harbor were searched for books to copy.",
         "The Royal Library of Alexandria was created at an ideal time and place in world history. It was able to combine the deductive techniques of Greek thought toward the learning of other world cultures. As such, it holds a legendary position among historians as an important center of classical knowledge. Although much of the story has been buried with time and conflict, the importance and significance of its contributions are clear."
       ],
@@ -630,7 +630,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         {
           "id": "hcmue_r01_q22",
           "type": "vocab_in_context",
-          "question_text": "The word \"factions\" in the passage is closest in meaning to ________.",
+          "question_text": "The word \"**factions**\" in the passage is closest in meaning to ________.",
           "options": [
             {
               "key": "A",
@@ -651,13 +651,13 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "The tale has been retold by countless historians and attributed to just as many different factions and rulers, not to profile this landmark of education, but as a tool for political slander.",
+          "clue_sentence": "The tale has been retold by countless historians and attributed to just as many different **factions** and rulers, not to profile this landmark of education, but as a tool for political slander.",
           "explanation_vi": "Từ \"factions\" trong ngữ cảnh này chỉ các phe phái, nhóm lợi ích hoặc bè phái chính trị đổ lỗi cho nhau. Từ đồng nghĩa gần nhất trong các lựa chọn là \"cliques\" (các bè phái/nhóm người)."
         },
         {
           "id": "hcmue_r01_q23",
           "type": "factual_detail",
-          "question_text": "The word \"its\" in the passage refers to ________.",
+          "question_text": "The word \"**its**\" in the passage refers to ________.",
           "options": [
             {
               "key": "A",
@@ -678,13 +678,13 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 0,
-          "clue_sentence": "We will examine the importance of the library during its heyday and how it operated.",
+          "clue_sentence": "We will examine the importance of the library during **its** heyday and how it operated.",
           "explanation_vi": "Đại từ \"its\" ở đây thay thế cho \"the library\" (Thư viện Hoàng gia Alexandria), ám chỉ thời kỳ hoàng kim của thư viện này."
         },
         {
           "id": "hcmue_r01_q24",
           "type": "main_idea",
-          "question_text": "The author mentions \"its destruction\" in the passage in order to ________.",
+          "question_text": "The author mentions \"its **destruction**\" in the passage in order to ________.",
           "options": [
             {
               "key": "A",
@@ -705,7 +705,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 1,
-          "clue_sentence": "As with many ancient landmarks, there is much debate and controversy over Alexandria's library, especially regarding its destruction.",
+          "clue_sentence": "As with many ancient landmarks, there is much debate and controversy over Alexandria's library, especially regarding its **destruction**.",
           "explanation_vi": "Tác giả nhắc đến việc phá hủy thư viện nhằm minh họa rằng có rất nhiều tranh cãi, ý kiến trái chiều và sự quy trách nhiệm xung quanh sự sụp đổ và biến mất của nó."
         },
         {
@@ -732,7 +732,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 3,
-          "clue_sentence": "The library itself was not a 'library' in the modern etymology. In fact, the library was essentially a collection of scholars and scribes encouraged to expand scientific and philosophical wisdom and musings brought about because of the ambition and drive of Ptolemy I.",
+          "clue_sentence": "The library itself was not a 'library' in the modern etymology. **In fact, the library was essentially a collection of scholars and scribes encouraged to expand scientific and philosophical wisdom and musings brought about because of the ambition and drive of Ptolemy I.**",
           "explanation_vi": "Câu tóm tắt tốt nhất thông tin cốt lõi (rằng thư viện thực chất là tập hợp các học giả, nhà chép sử do Ptolemy I thúc đẩy để mở rộng tri thức khoa học và triết học) chính là phương án A."
         },
         {
@@ -765,7 +765,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         {
           "id": "hcmue_r01_q27",
           "type": "vocab_in_context",
-          "question_text": "The word \"overstatement\" in the passage is closest in meaning to ____________.",
+          "question_text": "The word \"**overstatement**\" in the passage is closest in meaning to ____________.",
           "options": [
             {
               "key": "A",
@@ -786,7 +786,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 5,
-          "clue_sentence": "At its peak, it is estimated about 600,000 scrolls were held within its walls, although that is likely an overstatement.",
+          "clue_sentence": "At its peak, it is estimated about 600,000 scrolls were held within its walls, although that is likely an **overstatement**.",
           "explanation_vi": "Từ \"overstatement\" có nghĩa là sự phóng đại, nói quá lên. Do đó, từ đồng nghĩa chính xác nhất trong các phương án là \"exaggeration\"."
         },
         {
@@ -879,10 +879,10 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
       "difficulty": "C1",
       "content_paragraphs": [
         "The Pacific Ocean contains approximately 20,000 to 30,000 islands. Islands, excluding Australia, that are south of the Tropic of Cancer are grouped into three divisions: Melanesia, Micronesia, and Polynesia.",
-        "Melanesia includes the nation of Papua New Guinea, provinces of Indonesia, and the Solomon Islands. Micronesia means 'small islands,' most of which are north of the equator. Finally, Polynesia, which means 'many islands,' includes the Hawaiian Islands, Tonga, Tuvalu, and Easter Island, among others. Migrants from South East Asian cities were the first settlers. The next wave of migrants populated New Guinea, gradually spreading to Fiji. The last of the Pacific islands to be settled was Polynesia. Hawaii was discovered sometime between the 7th and 13th centuries.",
-        "Bats were the only mammals on these islands until the arrival of the first humans. Birds adapted to environmental niches, like grazers and insectivores. Due to the cool and humid location, New Zealand lost plants and animals, like the giant flightless bird, that were intolerant of its climate. However, the extinction coincided with the arrival of the Melanesians, so it was probably caused by hunting and fires. Adding to that, mining and a natural drought destroyed a majority of the natural habitat. This was repeated on Easter Island, where early settlers wiped out 22 species of sea birds and land birds. By the time the Europeans had arrived, most of the plant life was extinct and nearly 30% of the forests were cleared.",
-        "The invasion of New Zealand by the Europeans resulted in a complete transformation of the island, importing over 3,198 species of plants and animals and filling most of the wetlands. Australia also imported animals and plants from many Pacific island countries. Sheep, pigs, goats and foxes were brought to Australia, which further disrupted the native ecosystems. Many plants and animals are presently endangered.",
-        "The plants and animals that inhabit Pacific islands are found nowhere else on earth. They are often adapted to specific habitats and live on a small part of a few islands. New Caledonia is an island that has been isolated from other lands for over 80 million years. 66 percent of the plant life there evolved on the island. Numerous plant species, unique in the world, are on a small area of one mountain and are represented by only a few specimens.",
+        "Melanesia includes the nation of Papua New Guinea, provinces of Indonesia, and the Solomon Islands. Micronesia means 'small islands,' most of which are north of the equator. Finally, Polynesia, which means 'many islands,' includes the Hawaiian Islands, Tonga, Tuvalu, and Easter Island, among others. Migrants from South East Asian cities were the first settlers. The next wave of migrants **populated** New Guinea, gradually spreading to Fiji. The last of the Pacific islands to be settled was Polynesia. Hawaii was discovered sometime between the 7th and 13th centuries.",
+        "Bats were the only mammals on these islands until the arrival of the first humans. Birds adapted to environmental niches, like grazers and insectivores. Due to the cool and humid location, New Zealand lost plants and animals, like the giant flightless bird, that were intolerant of its climate. However, the extinction coincided with the arrival of the Melanesians, so **it** was probably caused by hunting and fires. Adding to that, mining and a natural drought destroyed a majority of the natural habitat. This was repeated on Easter Island, where early settlers wiped out 22 species of sea birds and land birds. By the time the Europeans had arrived, most of the plant life was extinct and nearly 30% of the forests were cleared.",
+        "**The invasion of New Zealand by the Europeans** resulted in a complete transformation of the island, importing over 3,198 species of plants and animals and filling most of the wetlands. Australia also imported animals and plants from many Pacific island countries. Sheep, pigs, goats and foxes were brought to Australia, which further disrupted the native ecosystems. Many plants and animals are presently endangered.",
+        "The plants and animals that inhabit Pacific islands are found nowhere else on earth. They are often adapted to specific habitats and live on a small part of a few islands. New Caledonia is an island that has been isolated from other lands for over 80 million years. 66 percent of the plant life there evolved on the island. Numerous plant species, unique in the world, are on a small area of one mountain and are represented by only a few **specimens**.",
         "This varied genetic heritage is of such scientific importance that New Caledonia has been listed as one of the ten hot spots where the primary forest is in danger of extinction. It also boasts 68 species of bird; the most diverse bird life in the Southwest Pacific.",
         "During the first Ice Age, ocean levels were much lower than they are at present. Levels in the shallow seas, now separating Asia from North America near the present-day Bering strait, dropped approximately 300 feet, creating 1,000 miles of grassland plain. Called the ‘Bering Land Bridge,’ this linked Asia and North America together. The Bering Sea has a long history of stable animal populations, despite the harsh environments, which sustain human life. Lemmings, ox, and mammoths all made the journey across the land bridge. Although mammoths have been extinct for quite a while now, the other two have remained.",
         "Pacific walruses inhabit shallow waters of the Bering Sea during winter. They congregate to feed on clams, their principal food. [A] This type of feeding releases nutrients into the water, providing food for starfish and increasing the roughness of the sea floor. [B] Actual impact of the ecology of bottom communities is unknown, but walruses, along with other animals like beavers and sea otters, have huge effects on the biological communities they occupy. [C] Animals such as seals, bowhead whales, and walruses are important for the subsistence of their community. [D]",
@@ -893,7 +893,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         {
           "id": "hcmue_r01_q31",
           "type": "vocab_in_context",
-          "question_text": "The word \"populated\" in the passage is closest in meaning to",
+          "question_text": "The word \"**populated**\" in the passage is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -914,7 +914,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "The next wave of migrants populated New Guinea, gradually spreading to Fiji.",
+          "clue_sentence": "The next wave of migrants **populated** New Guinea, gradually spreading to Fiji.",
           "explanation_vi": "Từ \"populated\" trong ngữ cảnh này mang nghĩa là có người đến sinh sống, định cư. Do đó, \"inhabited\" (có người ở, sinh sống) là từ đồng nghĩa chính xác nhất.",
           "paraphrase_analysis": {
             "question_phrase": "populated",
@@ -925,7 +925,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         {
           "id": "hcmue_r01_q32",
           "type": "inference",
-          "question_text": "The word \"it\" in the passage refers to",
+          "question_text": "The word \"**it**\" in the passage refers to",
           "options": [
             {
               "key": "A",
@@ -946,7 +946,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 2,
-          "clue_sentence": "However, the extinction coincided with the arrival of the Melanesians, so it was probably caused by hunting and",
+          "clue_sentence": "However, the extinction coincided with the arrival of the Melanesians, so **it** was probably caused by hunting and",
           "explanation_vi": "Đại từ \"it\" ở đây quy chiếu về sự tuyệt chủng của các loài động thực vật (extinction) được nhắc đến ở ngay vế trước trong câu.",
           "paraphrase_analysis": {
             "question_phrase": "it",
@@ -957,7 +957,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         {
           "id": "hcmue_r01_q33",
           "type": "factual_detail",
-          "question_text": "Why does the author mention \"The invasion of New Zealand by the Europeans\" in the passage?",
+          "question_text": "Why does the author mention \"**The invasion of New Zealand by the Europeans**\" in the passage?",
           "options": [
             {
               "key": "A",
@@ -978,7 +978,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 3,
-          "clue_sentence": "The invasion of New Zealand by the Europeans resulted in a complete transformation of the island, importing over 3,198 species of plants and animals and filling most of the wetlands.",
+          "clue_sentence": "**The invasion of New Zealand by the Europeans** resulted in a complete transformation of the island, importing over 3,198 species of plants and animals and filling most of the wetlands.",
           "explanation_vi": "Tác giả đề cập đến sự xâm chiếm New Zealand của người châu Âu nhằm minh họa cho tác động phá hủy và biến đổi hoàn toàn hệ sinh thái bản địa (nhập khẩu hàng nghìn loài, làm đầy các vùng đất ngập nước).",
           "paraphrase_analysis": {
             "question_phrase": "destructive effect on local ecosystems",
@@ -1021,7 +1021,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         {
           "id": "hcmue_r01_q35",
           "type": "vocab_in_context",
-          "question_text": "The word \"specimens\" in the passage is closest in meaning to ____.",
+          "question_text": "The word \"**specimens**\" in the passage is closest in meaning to ____.",
           "options": [
             {
               "key": "A",
@@ -1042,7 +1042,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 4,
-          "clue_sentence": "Numerous plant species, unique in the world, are on a small area of one mountain and are represented by only a few specimens.",
+          "clue_sentence": "Numerous plant species, unique in the world, are on a small area of one mountain and are represented by only a few **specimens**.",
           "explanation_vi": "Từ \"specimens\" (mẫu vật, cá thể đại diện) trong ngữ cảnh này đồng nghĩa với \"examples\" (ví dụ, cá thể tiêu biểu).",
           "paraphrase_analysis": {
             "question_phrase": "specimens",

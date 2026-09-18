@@ -18,7 +18,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
       "difficulty": "B1",
       "content_paragraphs": [
         "As new industrialism swept over the land in the wake of the Civil War, people flocked to the nation's cities in unprecedented numbers from rural regions, villages, and foreign countries. Housing for the new city-dwellers took many forms as new architectural styles were developed.",
-        "During this period of urban expansion, speculative builders discovered a bonanza in the form of the row house. Designed for single-family occupancy, these dwellings cost relatively little to construct because they shared common walls with their neighbors and because many could be erected side by side on a narrow street frontage. Along New York's gridiron of streets and avenues rose block after block of row houses, which, by the 1880s, were almost invariably faced with brownstone. In contrast, wooden row houses on the West Coast appeared light and airy with their coats of bright paint. San Francisco developed a particularly successful row vernacular, suitable for rich and poor alike, as typified by clusters of homes like the Rountree group, which featured Queen Anne elements in their pitched roofs and heavily decorated exteriors. Although critics likened the facades of such structures to the \"puffing, paint, and powder of our female friends\", the houses were efficiently planned, sanitary, and well-lighted. Virtually every dwelling boasted one or more bay windows, which were important to sun-loving San Franciscans as brownstone fronts were to New Yorkers. As an English traveler observed, California architecture, \"with all the windows gracefully leaping out at themselves\", should rightly be called the \"bay-window order\"."
+        "During this period of urban expansion, speculative builders discovered **a bonanza** in the form of the row house. Designed for single-family occupancy, these dwellings cost relatively little to construct because they shared common walls with their neighbors and because many could be erected side by side on a narrow street frontage. Along New York's gridiron of streets and avenues rose block after block of row houses, which, by the 1880s, were **almost invariably** faced with brownstone. In contrast, wooden row houses on the West Coast appeared light and airy with their coats of bright paint. San Francisco developed a particularly successful row vernacular, suitable for rich and poor alike, as typified by clusters of homes like the Rountree group, which featured Queen Anne elements in their pitched roofs and heavily decorated exteriors. Although critics likened the facades of such structures to the \"puffing, paint, and powder of our female friends\", the houses were efficiently planned, sanitary, and well-lighted. Virtually every dwelling boasted one or more bay windows, which were important to sun-loving San Franciscans as brownstone fronts were to New Yorkers. As an English traveler observed, California architecture, \"with all the windows gracefully leaping out at themselves\", should rightly be called the \"bay-window order\"."
       ],
       "questions": [
         {
@@ -45,7 +45,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "Along New York's gridiron of streets and avenues rose block after block of row houses, which, by the 1880s, were almost invariably faced with brownstone. In contrast, wooden row houses on the West Coast appeared light and airy with their coats of bright paint.",
+          "clue_sentence": "Along New York's gridiron of streets and avenues rose block after block of row houses, which, by the 1880s, were **almost invariably** faced with brownstone. In contrast, wooden row houses on the West Coast appeared light and airy with their coats of bright paint.",
           "explanation_vi": "Bài đọc thảo luận và so sánh hai dạng nhà liền kề (row houses) tiêu biểu: nhà ốp đá brownstone ở New York và nhà gỗ nhẹ nhàng, nhiều màu sắc ở Bờ Tây (San Francisco). Do đó, mục đích chính là đối chiếu hai phiên bản của một dạng kiến trúc tương tự. Các lựa chọn khác không phản ánh đúng tổng thể bài đọc.",
           "paraphrase_analysis": {
             "question_phrase": "contrast two versions of a similar architectural form",
@@ -56,7 +56,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
         {
           "id": "hcmue_r04_q02",
           "type": "vocab_in_context",
-          "question_text": "The phrase \"a bonanza\" in the passage is closest in meaning to",
+          "question_text": "The phrase \"**a bonanza**\" in the passage is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -77,7 +77,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 1,
-          "clue_sentence": "During this period of urban expansion, speculative builders discovered a bonanza in the form of the row house.",
+          "clue_sentence": "During this period of urban expansion, speculative builders discovered **a bonanza** in the form of the row house.",
           "explanation_vi": "Từ \"a bonanza\" có nghĩa là một mỏ vàng, một nguồn lợi lớn hoặc một khoản đầu tư sinh lời tốt. Trong ngữ cảnh này, các nhà xây dựng đầu cơ phát hiện ra nhà liền kề mang lại lợi nhuận kinh tế cao (\"a good investment\").",
           "paraphrase_analysis": {
             "question_phrase": "a good investment",
@@ -88,7 +88,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
         {
           "id": "hcmue_r04_q03",
           "type": "vocab_in_context",
-          "question_text": "The phrase \"almost invariably\" in the passage is closest in meaning to",
+          "question_text": "The phrase \"**almost invariably**\" in the passage is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -109,7 +109,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "Along New York's gridiron of streets and avenues rose block after block of row houses, which, by the 1880s, were almost invariably faced with brownstone.",
+          "clue_sentence": "Along New York's gridiron of streets and avenues rose block after block of row houses, which, by the 1880s, were **almost invariably** faced with brownstone.",
           "explanation_vi": "Cụm từ \"almost invariably\" có nghĩa là hầu như luôn luôn, tương đương với \"usually\". Các phương án khác (seldom: hiếm khi, sometimes: thỉnh thoảng, never: không bao giờ) trái nghĩa hoặc không chính xác.",
           "paraphrase_analysis": {
             "question_phrase": "usually",
@@ -237,7 +237,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "Along New York's gridiron of streets and avenues rose block after block of row houses, which, by the 1880s, were almost invariably faced with brownstone. In contrast, wooden row houses on the West Coast appeared light and airy with their coats of bright paint.",
+          "clue_sentence": "Along New York's gridiron of streets and avenues rose block after block of row houses, which, by the 1880s, were **almost invariably** faced with brownstone. In contrast, wooden row houses on the West Coast appeared light and airy with their coats of bright paint.",
           "explanation_vi": "Nhà liền kề ở New York được ốp bằng đá brownstone (màu nâu sẫm trầm), trong khi nhà ở Bờ Tây có lớp sơn sáng màu (\"bright paint\"). Do đó, có thể suy luận nhà ở New York ít sặc sỡ hơn nhà ở Bờ Tây.",
           "paraphrase_analysis": {
             "question_phrase": "less colorful than row houses on the West Coast",
@@ -350,9 +350,9 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
       "word_count": 339,
       "difficulty": "B2",
       "content_paragraphs": [
-        "Since water is the basis of life, composing the greater part of the tissues of all living things, the crucial problem of desert animals is to survive in a world where sources of flowing water are rare. And since man's inexorable necessity is to absorb large quantities of water at frequent intervals, he can scarcely comprehend that many creatures of the desert pass their entire lives without a single drop. Uncompromising as it is, the desert has not eliminated life but only those forms unable to withstand its desiccating effects. No moist-skinned, water-loving animals can exist there. Few large animals are found: the giants of the North American desert are the deer, the coyote, and the bobcat. Since desert country is open, it holds more swift-footed, running, and leaping creatures than the tangled forest. Its population are largely nocturnal, silent, filled with reticence, and ruled by stealth. Yet they are not emaciated. Having adapted to their austere environment, they are as healthy as animals anywhere in the world.",
+        "Since water is the basis of life, composing the **greater** part of the tissues of all living things, the crucial problem of desert animals is to survive in a world where sources of flowing water are rare. And since man's inexorable necessity is to absorb large quantities of water at frequent intervals, he can scarcely comprehend that many creatures of the desert pass their entire lives without a single drop. Uncompromising as it is, the desert has not eliminated life but only **those forms** unable to withstand its **desiccating** effects. No moist-skinned, water-loving animals can exist there. Few large animals are found: the giants of the North American desert are the deer, the coyote, and the bobcat. Since desert country is open, it holds more swift-footed, running, and leaping creatures than the tangled forest. Its population are largely nocturnal, silent, filled with reticence, and ruled by stealth. Yet they are not **emaciated**. Having adapted to their austere environment, they are as healthy as animals anywhere in the world.",
         "The secret of their adjustment lies in a combination of behavior and physiology. None could survive if, like mad dogs and Englishmen, they went out in the midday sun; many would die in a matter of minutes. So most of them pass the burning hours asleep in cool, humid burrows underneath the ground, emerging to hunt only by night. The surface of the sun-baked desert averages around 150 degrees, but 18 inches down the temperature is only 60 degrees.",
-        "An example of a desert animal that has adapted to subterranean living and lack of water is the kangaroo rat. Like many desert animals, kangaroo rats stay underground during the day. At night, they go outside to look for food. As evening temperatures drop, moisture from the air forms on plants and seeds. They absorb some of this moisture and kangaroo rats take in the life-giving water as they eat."
+        "An example of a desert animal that has adapted to **subterranean** living and lack of water is the kangaroo rat. Like many desert animals, kangaroo rats stay underground during the day. At night, they go outside to look for food. As evening temperatures drop, moisture from the air forms on plants and seeds. **They** absorb some of this moisture and kangaroo rats take in the life-giving water as they eat."
       ],
       "questions": [
         {
@@ -379,13 +379,13 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Since water is the basis of life, composing the greater part of the tissues of all living things, the crucial problem of desert animals is to survive in a world where sources of flowing water are rare.",
+          "clue_sentence": "Since water is the basis of life, composing the **greater** part of the tissues of all living things, the crucial problem of desert animals is to survive in a world where sources of flowing water are rare.",
           "explanation_vi": "Đoạn văn tập trung thảo luận về cách các loài động vật sa mạc sinh tồn và thích nghi với môi trường thiếu nước khắc nghiệt. Do đó, đáp án chính xác là C (Đời sống động vật trong môi trường sa mạc)."
         },
         {
           "id": "hcmue_r04_q12",
           "type": "vocab_in_context",
-          "question_text": "The word \"greater\" in the passage is closest in meaning to_____.",
+          "question_text": "The word \"**greater**\" in the passage is closest in meaning to_____.",
           "options": [
             {
               "key": "A",
@@ -406,13 +406,13 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Since water is the basis of life, composing the greater part of the tissues of all living things, the crucial problem of desert animals is to survive in a world where sources of flowing water are rare.",
+          "clue_sentence": "Since water is the basis of life, composing the **greater** part of the tissues of all living things, the crucial problem of desert animals is to survive in a world where sources of flowing water are rare.",
           "explanation_vi": "Từ \"greater\" trong ngữ cảnh này chỉ phần lớn hoặc phần lớn hơn của các mô sinh vật (greater part = phần lớn), đồng nghĩa với \"larger\" (lớn hơn)."
         },
         {
           "id": "hcmue_r04_q13",
           "type": "negative_fact",
-          "question_text": "The phrase \"those forms\" in the passage refers to all of the following EXCEPT_____.",
+          "question_text": "The phrase \"**those forms**\" in the passage refers to all of the following EXCEPT_____.",
           "options": [
             {
               "key": "A",
@@ -433,13 +433,13 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Uncompromising as it is, the desert has not eliminated life but only those forms unable to withstand its desiccating effects.",
+          "clue_sentence": "Uncompromising as it is, the desert has not eliminated life but only **those forms** unable to withstand its **desiccating** effects.",
           "explanation_vi": "\"Those forms\" ám chỉ những hình thức sự sống không thể chịu đựng được tác động làm khô cạn của sa mạc, bao gồm động vật ưa nước (water-loving animals), động vật da ẩm (moist-skinned animals) và các loài lớn không thích nghi được (ngoại trừ một số ít động vật lớn như linh cẩu, mèo đuôi cộc vẫn sống được). Bobcat là loài động vật vẫn sống được ở sa mạc Bắc Mỹ nên không thuộc nhóm bị loại bỏ bởi sa mạc."
         },
         {
           "id": "hcmue_r04_q14",
           "type": "vocab_in_context",
-          "question_text": "The word \"desiccating\" in the passage means_____.",
+          "question_text": "The word \"**desiccating**\" in the passage means_____.",
           "options": [
             {
               "key": "A",
@@ -460,7 +460,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Uncompromising as it is, the desert has not eliminated life but only those forms unable to withstand its desiccating effects.",
+          "clue_sentence": "Uncompromising as it is, the desert has not eliminated life but only **those forms** unable to withstand its **desiccating** effects.",
           "explanation_vi": "Từ \"desiccating\" có nghĩa là làm khô kiệt, làm mất nước. Do đó, nó đồng nghĩa với \"drying\" (làm khô)."
         },
         {
@@ -493,7 +493,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
         {
           "id": "hcmue_r04_q16",
           "type": "vocab_in_context",
-          "question_text": "The word \"emaciated\" in the passage is closest in meaning to_____.",
+          "question_text": "The word \"**emaciated**\" in the passage is closest in meaning to_____.",
           "options": [
             {
               "key": "A",
@@ -514,7 +514,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Yet they are not emaciated. Having adapted to their austere environment, they are as healthy as animals anywhere in the world.",
+          "clue_sentence": "Yet they are not **emaciated**. Having adapted to their austere environment, they are as healthy as animals anywhere in the world.",
           "explanation_vi": "Từ \"emaciated\" nghĩa là gầy gò, ốm yếu do thiếu ăn/thiếu nước. Câu tiếp theo đối lập \"they are as healthy as animals\" cho thấy từ này đồng nghĩa với \"unhealthy\" (không khỏe mạnh, gầy mòn)."
         },
         {
@@ -547,7 +547,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
         {
           "id": "hcmue_r04_q18",
           "type": "vocab_in_context",
-          "question_text": "The word \"subterranean\" in the passage is closest in meaning to ____________.",
+          "question_text": "The word \"**subterranean**\" in the passage is closest in meaning to ____________.",
           "options": [
             {
               "key": "A",
@@ -568,13 +568,13 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 2,
-          "clue_sentence": "An example of a desert animal that has adapted to subterranean living and lack of water is the kangaroo rat.",
+          "clue_sentence": "An example of a desert animal that has adapted to **subterranean** living and lack of water is the kangaroo rat.",
           "explanation_vi": "Từ \"subterranean\" có nghĩa là ở dưới lòng đất, đồng nghĩa với từ \"underground\" được dùng ở câu tiếp theo \"stay underground during the day\"."
         },
         {
           "id": "hcmue_r04_q19",
           "type": "factual_detail",
-          "question_text": "The word \"they\" in the passage refers to ____________.",
+          "question_text": "The word \"**they**\" in the passage refers to ____________.",
           "options": [
             {
               "key": "A",
@@ -595,7 +595,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 2,
-          "clue_sentence": "As evening temperatures drop, moisture from the air forms on plants and seeds. They absorb some of this moisture and kangaroo rats take in the life-giving water as they eat.",
+          "clue_sentence": "As evening temperatures drop, moisture from the air forms on plants and seeds. **They** absorb some of this moisture and kangaroo rats take in the life-giving water as they eat.",
           "explanation_vi": "Trong câu \"They absorb some of this moisture\", từ \"They\" thay thế cho chủ ngữ đứng ngay trước đó là \"plants and seeds\" (thực vật và hạt) hút hơi ẩm từ không khí."
         },
         {
@@ -634,10 +634,10 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
       "difficulty": "B2",
       "content_paragraphs": [
         "Animals and higher-order plants depend on nitrogen that is present in soil as they cannot utilize free nitrogen from the atmosphere. To enter living systems, nitrogen must be combined with oxygen or hydrogen to form compounds such as ammonia or nitrates that plants are able to use. Nitrogen gas is converted to ammonia fertilizer by a chemical process involving high pressure and high temperature. This process is called nitrogen fixation. Martinus Willem Beijerinck discovered nitrogen fixation.",
-        "The nitrogen molecule is quite inert and breaking it apart requires a considerable amount of energy. There are three processes that are responsible for most of the nitrogen fixation in the biosphere. They are atmospheric fixation, biological fixation, and industrial fixation. Atmospheric fixation occurs through lightning, forest fires, or even hot lava flows where energy breaks down nitrogen molecules and enables their atoms to combine with oxygen in the air, thus forming nitrogen oxides. These liquefy in rain, forming nitrates, that are then carried to earth.",
-        "In biological nitrogen fixation, the nitrogen is available to some species of microorganisms. Atmospheric nitrogen is converted to ammonia by bacterial enzymes called nitrogenase. More than 90% of all nitrogen fixation is affected by them. There are two kinds of nitrogen-fixing microorganisms: free-living (non-symbiotic) bacteria and symbiotic bacteria. Microorganisms that fix nitrogen are called diazotrophs. These need a chemical energy source if they are non-photosynthetic. However, if they are photosynthetic, they can utilize light energy. The free-living diazotrophs supply little fixed nitrogen to agricultural crops, whereas the symbiotic, nitrogen-fixing bacterias live close to plant roots and can obtain energy materials from the plants.",
-        "The symbiotic, nitrogen-fixing bacteria invade the root hairs of plants. Here they multiply the formation of root nodules, and enlargements of plant cells and bacteria in close proximity. Within the nodules, the bacteria convert the free nitrogen to nitrates, which the plant makes use of for its development.",
-        "To make certain of sufficient nodule formation and the best possible growth of legumes (beans, clover, peas, soybeans), seeds are usually inoculated, particularly in poor soils where bacteria is lacking. This system is the most important for agriculture as many legumes are then able to grow vigorously under nitrogen deficient conditions, contributing nitrogen to the farming system or as green manure included in the soil. Legumes are also a significant source of protein primarily for the developing world.",
+        "The nitrogen molecule is quite inert and breaking it apart requires a considerable amount of energy. There are three processes that are responsible for most of the nitrogen fixation in the biosphere. They are atmospheric fixation, biological fixation, and industrial fixation. Atmospheric fixation occurs through lightning, forest fires, or even hot lava flows where energy **breaks down** nitrogen molecules and enables their atoms to combine with oxygen in the air, thus forming nitrogen oxides. These liquefy in rain, forming nitrates, that are then carried to earth.",
+        "In biological nitrogen fixation, the nitrogen is available to some species of microorganisms. Atmospheric nitrogen is converted to ammonia by bacterial enzymes called nitrogenase. More than 90% of all nitrogen fixation is **affected** by them. There are two kinds of nitrogen-fixing microorganisms: free-living (non-symbiotic) bacteria and symbiotic bacteria. Microorganisms that fix nitrogen are called diazotrophs. These need a chemical energy source if they are non-photosynthetic. However, if they are photosynthetic, they can utilize light energy. The free-living diazotrophs supply little fixed nitrogen to agricultural crops, whereas the symbiotic, nitrogen-fixing bacterias live close to plant roots and can obtain energy materials from the plants.",
+        "The symbiotic, nitrogen-fixing bacteria **invade** the root hairs of plants. Here they multiply the formation of root nodules, and enlargements of plant cells and bacteria in close proximity. Within the nodules, the bacteria convert the free nitrogen to nitrates, which the plant makes use of for its development.",
+        "To make certain of sufficient nodule formation and the best possible growth of legumes (beans, clover, peas, soybeans), seeds are usually inoculated, particularly in poor soils where bacteria is lacking. **This system is the most important for agriculture as many legumes are then able to grow vigorously under nitrogen deficient conditions, contributing nitrogen to the farming system or as green manure included in the soil.** Legumes are also a significant source of protein primarily for the developing world.",
         "Industrial fixation takes place at a temperature of 600 degrees Celsius. In this method, atmospheric nitrogen and hydrogen can be combined to form ammonia, which in turn can be used directly as a fertilizer. It was during the early 19th century that the importance of fixed nitrogen to growing plants was understood. Where people practiced intensive agriculture, demand arose for nitrogen compounds to augment the natural supply present in the soil.",
         "Around the same time, Chilean saltpeter was increasingly used to make gunpowder. This led to a global search for natural deposits of this nitrogen compound. Toward the end of the 19th century, it was realized that Chilean imports would not meet future demands, and, in the event of a major war, without the Chilean supply, manufacturing sufficient weapons would not be possible.",
         "[A] Several processes were then developed: directly combining oxygen with nitrogen, the reaction of nitrogen with calcium carbide, and the direct combination of nitrogen with hydrogen. [B] Combining oxygen and nitrogen was inefficient in its use of energy. Both were costly and the process was abandoned. [C] It is named after Fritz Haber and Carl Bosch, who determined that nitrogen from the air could be combined with nitrogen under enormously high pressures and fairly high temperatures in the presence of an active mechanism to produce an extremely high quantity of ammonia. [D]",
@@ -680,7 +680,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
         {
           "id": "hcmue_r04_q22",
           "type": "vocab_in_context",
-          "question_text": "The phrase \"breaks down\" in the passage is closest in meaning to _________.",
+          "question_text": "The phrase \"**breaks down**\" in the passage is closest in meaning to _________.",
           "options": [
             {
               "key": "A",
@@ -701,7 +701,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 1,
-          "clue_sentence": "Atmospheric fixation occurs through lightning, forest fires, or even hot lava flows where energy breaks down nitrogen molecules and enables their atoms to combine with oxygen in the air, thus forming nitrogen oxides.",
+          "clue_sentence": "Atmospheric fixation occurs through lightning, forest fires, or even hot lava flows where energy **breaks down** nitrogen molecules and enables their atoms to combine with oxygen in the air, thus forming nitrogen oxides.",
           "explanation_vi": "Cụm từ \"breaks down\" trong ngữ cảnh phân hủy các phân tử nitơ thành các nguyên tử mang nghĩa tương đương với \"decomposes\" (phân hủy). Do đó, D là đáp án đúng.",
           "paraphrase_analysis": {
             "question_phrase": "breaks down",
@@ -776,7 +776,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
         {
           "id": "hcmue_r04_q25",
           "type": "vocab_in_context",
-          "question_text": "The word \"affected\" in the passage is closest in meaning to ___.",
+          "question_text": "The word \"**affected**\" in the passage is closest in meaning to ___.",
           "options": [
             {
               "key": "A",
@@ -797,7 +797,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 2,
-          "clue_sentence": "More than 90% of all nitrogen fixation is affected by them.",
+          "clue_sentence": "More than 90% of all nitrogen fixation is **affected** by them.",
           "explanation_vi": "Trong ngữ cảnh này, từ \"affected\" mang nghĩa được thực hiện, chịu ảnh hưởng hoặc tác động bởi các enzyme vi khuẩn, đồng nghĩa gần nhất với \"influenced\" (mặc dù mang nghĩa thực hiện/chiếm phần lớn trong tiếng Anh cổ hoặc chuyên ngành, ở đây xét về lựa chọn trắc nghiệm chuẩn).",
           "paraphrase_analysis": {
             "question_phrase": "affected",
@@ -840,7 +840,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
         {
           "id": "hcmue_r04_q27",
           "type": "vocab_in_context",
-          "question_text": "The word \"invade\" in the passage is closest in meaning to ___.",
+          "question_text": "The word \"**invade**\" in the passage is closest in meaning to ___.",
           "options": [
             {
               "key": "A",
@@ -861,7 +861,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 3,
-          "clue_sentence": "The symbiotic, nitrogen-fixing bacteria invade the root hairs of plants.",
+          "clue_sentence": "The symbiotic, nitrogen-fixing bacteria **invade** the root hairs of plants.",
           "explanation_vi": "Từ \"invade\" chỉ việc vi khuẩn xâm nhập và chiếm lấy các tế bào lông rễ cây, có nghĩa gần nhất với \"occupy\" (chiếm đóng, thâm nhập vào không gian).",
           "paraphrase_analysis": {
             "question_phrase": "invade",
@@ -974,11 +974,11 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
       "word_count": 685,
       "difficulty": "C1",
       "content_paragraphs": [
-        "Throughout Western civilization, women's suffrage and the progression of these rights have played a pivotal role in its history. The best example of how these rights have progressed is in two nations that share a common history, Great Britain and the United States of America. **[A]** In England, the suffrage movement began in 1866 when prominent women's rights reformers gathered over 1,500 signatures on a petition to Parliament appealing for the right to vote. **[B]** However, significant headway had not been made yet. Women's rights activists soon grew combative and thus made certain that suffrage was a central issue. **[C]** In America, due to the Civil War, women's suffrage was temporarily halted. However, from 1876, campaigns, referendums, and gatherings were organized and carried out. **[D]**",
+        "Throughout Western civilization, women's suffrage and the progression of these rights have played a pivotal role in its history. The best example of how these rights have **progressed** is in two nations that share a common history, Great Britain and the United States of America. **[A]** In England, the suffrage movement began in 1866 when prominent women's rights reformers gathered over 1,500 signatures on a petition to Parliament appealing for the right to vote. **[B]** However, significant headway had not been made yet. Women's rights activists soon grew combative and thus made certain that suffrage was a central issue. **[C]** In America, due to the Civil War, women's suffrage was temporarily halted. However, from 1876, campaigns, referendums, and gatherings were organized and carried out. **[D]**",
         "The influence of Great Britain on the United States cannot be understated, yet there are both significant differences and similarities in how suffrage rights have progressed and evolved within each of these nations. In both countries, suffrage was based on class, race, nation, and gender. The suffragists were outside of the political establishment, campaigning alone and without support. They were predominately white and middle class in both countries, and their arguments reflected their class. In the first phase of the two countries, the arguments for suffrage focused on equality, and then turned to women's contribution to nation building after World War I.",
         "Feudalism and hereditary rule predated the establishment of limited suffrage in Great Britain. Aspects of this system remained for a significant period of time with only the wealthy and land-owning males allowed to vote. This system was based on the principles that the wealthy would vote in the interests of the nation, just as the monarchy of Britain would rule in the interest of all its subjects. This distributive system of power played an important role in the history of the United States.",
-        "English landowners asserted their right to vote based on their personal wealth. Aspects of this trend are clearly evident in America. In 1776, a clause that guaranteed voting rights for white, male landowners was included in the United States Declaration of Independence. This was identical to the suffrage rights in Great Britain at that time in history. Voting was generally perceived not as a right, but as a privilege that only those who owned land could exercise.",
-        "By 1786, the United States Constitution had been amended to give individual states the power to establish their own suffrage rights. As a result of this, in 1791, Vermont passed a law declaring that all white males, regardless of whether they possessed property or not, could vote. In contrast, it was not until the Chartist movement in Great Britain in the 1840s that a popular movement had demanded wider suffrage rights. The eventual failure of the Chartist movement in 1850 ensured that only one in every five adult males in England was entitled to vote. While popular suffrage reform stalled in Great Britain, it accelerated in America during this period. In the wake of the American Civil War, the Fifteenth Amendment to the Constitution granted African-American men the right to vote throughout the country. However, just as in England, women remained excluded by law from voting.",
+        "English landowners asserted **their** right to vote based on their personal wealth. **Aspects of this trend are clearly evident in America**. In 1776, a clause that guaranteed voting rights for white, male landowners was included in the United States Declaration of Independence. This was identical to the suffrage rights in Great Britain at that time in history. Voting was generally perceived not as a right, but as a privilege that only those who owned land could exercise.",
+        "By 1786, the United States Constitution had been amended to give individual states the power to establish their own suffrage rights. As a result of this, in 1791, Vermont passed a law declaring that all white males, regardless of whether they possessed property or not, could vote. In contrast, it was not until the Chartist movement in Great Britain in the 1840s that a popular movement had demanded wider suffrage rights. The eventual failure of the Chartist movement in 1850 ensured that only one in every five adult males in England was entitled to vote. While popular suffrage reform **stalled** in Great Britain, it accelerated in America during this period. In the wake of the American Civil War, the Fifteenth Amendment to the Constitution granted African-American men the right to vote throughout the country. However, just as in England, women remained excluded by law from voting.",
         "In the aftermath of the first World War, suffrage rights were extended to include women. This change took place first in America in 1920 with the 1991 amendment to the Constitution. It was not until 1928 that voting rights between men and women in Great Britain were equalized. As suffrage rights have extended to include groups formerly excluded, this trend continues in the West. In 1971, a further amendment lowered the age of voting from 20 to 18 in America. Today, in Great Britain and the majority of Western nations, the voting age is 18.",
         "Initially, the progression of suffrage rights in America mirrored Great Britain's. The wealthy male landowners dominated voting and, therefore, political power, and voted only in their interests. In the wake of the American Civil War and the first World War, suffrage rights were extended to African-Americans, women, and individuals possessing no property, which boosted their status from lower class citizens to a higher level. Today, suffrage, in its universal form, plays a key role in democracies worldwide."
       ],
@@ -1018,7 +1018,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
         {
           "id": "hcmue_r04_q32",
           "type": "vocab_in_context",
-          "question_text": "The word \"progressed\" in the passage is closest in meaning to __________.",
+          "question_text": "The word \"**progressed**\" in the passage is closest in meaning to __________.",
           "options": [
             {
               "key": "A",
@@ -1109,7 +1109,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
         {
           "id": "hcmue_r04_q35",
           "type": "inference",
-          "question_text": "The word \"their\" in the passage refers to____.",
+          "question_text": "The word \"**their**\" in the passage refers to____.",
           "options": [
             {
               "key": "A",
@@ -1130,7 +1130,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 3,
-          "clue_sentence": "English landowners asserted their right to vote based on their personal wealth.",
+          "clue_sentence": "English landowners asserted **their** right to vote based on their personal wealth.",
           "explanation_vi": "Xét câu: 'English landowners asserted their right to vote based on their personal wealth.' Từ \"their\" ở đây quy chiếu về chủ ngữ của câu là \"English landowners\" (những chủ đất người Anh). Do đó, đáp án C là đúng.",
           "paraphrase_analysis": {
             "question_phrase": "their",
@@ -1141,7 +1141,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
         {
           "id": "hcmue_r04_q36",
           "type": "inference",
-          "question_text": "Why does the author mention that \"Aspects of this trend are clearly evident in America\"?",
+          "question_text": "Why does the author mention that \"**Aspects of this trend are clearly evident in America**\"?",
           "options": [
             {
               "key": "A",
@@ -1162,13 +1162,13 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 3,
-          "clue_sentence": "English landowners asserted their right to vote based on their personal wealth. Aspects of this trend are clearly evident in America.",
+          "clue_sentence": "English landowners asserted **their** right to vote based on their personal wealth. **Aspects of this trend are clearly evident in America**.",
           "explanation_vi": "Tác giả nhắc đến xu hướng này ở Mỹ (chủ đất da trắng nam giới mới được bầu cử theo Tuyên ngôn Độc lập) nhằm minh họa rằng quyền bầu cử ban đầu chỉ được trao cho những người nam giới giàu có sở hữu tài sản, tương tự như ở Anh. Do đó, đáp án C là chính xác."
         },
         {
           "id": "hcmue_r04_q37",
           "type": "vocab_in_context",
-          "question_text": "The word \"stalled\" in the passage is closest in meaning to____.",
+          "question_text": "The word \"**stalled**\" in the passage is closest in meaning to____.",
           "options": [
             {
               "key": "A",
@@ -1189,7 +1189,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 4,
-          "clue_sentence": "While popular suffrage reform stalled in Great Britain, it accelerated in America during this period.",
+          "clue_sentence": "While popular suffrage reform **stalled** in Great Britain, it accelerated in America during this period.",
           "explanation_vi": "Từ \"stalled\" có nghĩa là bị đình trệ, chậm lại, dừng lại. Từ đồng nghĩa với nó trong các lựa chọn là \"halted\" (tạm dừng, đình chỉ). Các từ như prevented (ngăn chặn), profited (thu lợi), contributed (đóng góp) không đồng nghĩa.",
           "paraphrase_analysis": {
             "question_phrase": "stalled",
@@ -1221,7 +1221,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 4,
-          "clue_sentence": "The eventual failure of the Chartist movement in 1850 ensured that only one in every five adult males in England was entitled to vote. While popular suffrage reform stalled in Great Britain, it accelerated in America during this period.",
+          "clue_sentence": "The eventual failure of the Chartist movement in 1850 ensured that only one in every five adult males in England was entitled to vote. While popular suffrage reform **stalled** in Great Britain, it accelerated in America during this period.",
           "explanation_vi": "Đoạn 4 nêu việc phong trào Chartist thất bại năm 1850 dẫn đến việc cải cách quyền bầu cử phổ thông ở Anh bị đình trệ (stalled), chỉ có 1/5 nam giới trưởng thành được bỏ phiếu. Điều này suy ra sự tiến triển của quyền bầu cử ở Anh đã chậm lại/bị đình trệ sau thất bại đó. Đáp án D chính xác."
         },
         {

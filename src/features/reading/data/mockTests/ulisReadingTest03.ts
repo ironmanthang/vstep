@@ -350,15 +350,15 @@ export const ULIS_READING_TEST_03: ReadingTest = {
       "word_count": 354,
       "difficulty": "B2",
       "content_paragraphs": [
-        "The conservatism of the early English colonists in North America, their strong attachment to the English way of doing things, would play a major part in the furniture that was made in New England. The very tools that the first New England furniture makers used were, after all, not much different from those used for centuries- even millennia: basic hammers, saws, chisels, planes, augers, compasses, and measures. These were the tools used more or less by all people who worked with wood: carpenters, barrel makers, and shipwrights. At most the furniture makers might have had planes with special edges or more delicate chisels, but there could not have been much specialization in the early years of the colonies.",
-        "The furniture makers in those early decades of the 1600' s were known as \"joiners,\" for the primary method of constructing furniture, at least among the English of this time, was that of mortise-and-tenon joinery. The mortise is the hole chiseled and cut into one piece of wood, while the tenon is the tongue or protruding element shaped from another piece of wood so that it fits into the mortise; and another small hole is then drilled (with the auger) through the mortised end and the tenon so that a whittled peg can secure the joint- thus the term \"joiner.\" Panels were fitted into slots on the basic frames. This kind of construction was used for making everything from houses to chests.",
-        "Relatively little hardware was used during this period. Some nails- forged by hand- were used, but no screws or glue. Hinges were often made of leather, but metal hinges were also used. The cruder varieties were made by blacksmiths in the colonies, but the finer metal elements were imported. Locks and escutcheon plates - the latter to shield the wood from the metal key- would often be imported. Above all, what the early English colonists imported was their knowledge of, familiarity with, and dedication to the traditional types and designs of furniture they knew in England."
+        "The conservatism of the early English colonists in North America, their strong **attachment to** the English way of doing things, would play a major part in the furniture that was made in New England. The very tools that the first New England furniture makers used were, after all, not much different from those used for centuries- even millennia: basic hammers, saws, chisels, planes, augers, compasses, and measures. These were the tools used more or less by all people who worked with wood: carpenters, barrel makers, and shipwrights. At most the furniture makers might have had planes with special edges or more delicate chisels, but there could not have been much specialization in the early years of the colonies.",
+        "The furniture makers in those early decades of the 1600' s were known as \"joiners,\" for the primary method of constructing furniture, at least among the English of this time, was that of mortise-and-tenon joinery. The mortise is the hole chiseled and cut into one piece of wood, while the tenon is the tongue or **protruding** element shaped from another piece of wood so that it fits into the mortise; and another small hole is then drilled (with the auger) through the mortised end and the tenon so that a whittled peg can secure the joint- thus the term \"joiner.\" Panels were fitted into slots on the basic frames. This kind of construction was used for making everything from houses to chests.",
+        "Relatively little hardware was used during this period. Some nails- forged by hand- were used, but no screws or glue. Hinges were often made of leather, but metal hinges were also used. The cruder varieties were made by blacksmiths in the colonies, but the finer metal elements were imported. Locks and escutcheon plates - the latter to **shield** the wood from the metal key- would often be imported. Above all, what the early English colonists imported was their knowledge of, familiarity with, and dedication to the traditional types and designs of furniture **they** knew in England."
       ],
       "questions": [
         {
           "id": "ulis_r03_q11",
           "type": "vocab_in_context",
-          "question_text": "The phrase \"attachment to\" in line 1 is closest in meaning to ________.",
+          "question_text": "The phrase \"**attachment to**\" in line 1 is closest in meaning to ________.",
           "options": [
             {
               "key": "A",
@@ -379,7 +379,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "The conservatism of the early English colonists in North America, their strong attachment to the English way of doing things, would play a major part in the furniture that was made in New England.",
+          "clue_sentence": "The conservatism of the early English colonists in North America, their strong **attachment to** the English way of doing things, would play a major part in the furniture that was made in New England.",
           "explanation_vi": "Cụm từ \"attachment to\" có nghĩa là sự gắn bó, yêu thích hoặc ưu ái đối với cái gì. Trong ngữ cảnh bài đọc nói về sự bảo thủ và chuộng cách làm truyền thống của người Anh, \"preference for\" (sự ưu tiên/yêu thích) là từ gần nghĩa nhất.",
           "paraphrase_analysis": {
             "question_phrase": "attachment to",
@@ -390,7 +390,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
         {
           "id": "ulis_r03_q12",
           "type": "vocab_in_context",
-          "question_text": "The word \"protruding\" in line 12 is closest in meaning to ________.",
+          "question_text": "The word \"**protruding**\" in line 12 is closest in meaning to ________.",
           "options": [
             {
               "key": "A",
@@ -411,7 +411,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "The mortise is the hole chiseled and cut into one piece of wood, while the tenon is the tongue or protruding element shaped from another piece of wood so that it fits into the mortise; and another small hole is then drilled (with the auger) through the mortised end and the tenon so that a whittled peg can secure the joint- thus the term \"joiner.\"",
+          "clue_sentence": "The mortise is the hole chiseled and cut into one piece of wood, while the tenon is the tongue or **protruding** element shaped from another piece of wood so that it fits into the mortise; and another small hole is then drilled (with the auger) through the mortised end and the tenon so that a whittled peg can secure the joint- thus the term \"joiner.\"",
           "explanation_vi": "Từ \"protruding\" mang nghĩa nhô ra, thò ra ngoài. Từ \"projecting\" có nghĩa tương đương (nhô ra).",
           "paraphrase_analysis": {
             "question_phrase": "protruding",
@@ -443,7 +443,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "The mortise is the hole chiseled and cut into one piece of wood, while the tenon is the tongue or protruding element shaped from another piece of wood so that it fits into the mortise; and another small hole is then drilled (with the auger) through the mortised end and the tenon so that a whittled peg can secure the joint- thus the term \"joiner.\"",
+          "clue_sentence": "The mortise is the hole chiseled and cut into one piece of wood, while the tenon is the tongue or **protruding** element shaped from another piece of wood so that it fits into the mortise; and another small hole is then drilled (with the auger) through the mortised end and the tenon so that a whittled peg can secure the joint- thus the term \"joiner.\"",
           "explanation_vi": "Mortise là một cái lỗ/rãnh được đục vào gỗ, còn tenon là phần đầu gỗ nhô ra khớp vừa vặn vào lỗ đó. Mối quan hệ giữa một vật có rãnh/ổ và một vật nhô ra khớp vào tương tự như ổ khóa và chìa khóa (a lock and a key).",
           "paraphrase_analysis": {
             "question_phrase": "a mortise and a tenon",
@@ -475,7 +475,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 1,
-          "clue_sentence": "The mortise is the hole chiseled and cut into one piece of wood, while the tenon is the tongue or protruding element shaped from another piece of wood so that it fits into the mortise; and another small hole is then drilled (with the auger) through the mortised end and the tenon so that a whittled peg can secure the joint- thus the term \"joiner.\"",
+          "clue_sentence": "The mortise is the hole chiseled and cut into one piece of wood, while the tenon is the tongue or **protruding** element shaped from another piece of wood so that it fits into the mortise; and another small hole is then drilled (with the auger) through the mortised end and the tenon so that a whittled peg can secure the joint- thus the term \"joiner.\"",
           "explanation_vi": "Đáp án được chọn theo đáp án chính thức của đề thi (Key: D).",
           "paraphrase_analysis": {
             "question_phrase": "use an auger",
@@ -550,7 +550,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
         {
           "id": "ulis_r03_q17",
           "type": "vocab_in_context",
-          "question_text": "The word \"shield\" in line 20 is closest in meaning to ________.",
+          "question_text": "The word \"**shield**\" in line 20 is closest in meaning to ________.",
           "options": [
             {
               "key": "A",
@@ -571,7 +571,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 2,
-          "clue_sentence": "Locks and escutcheon plates - the latter to shield the wood from the metal key- would often be imported.",
+          "clue_sentence": "Locks and escutcheon plates - the latter to **shield** the wood from the metal key- would often be imported.",
           "explanation_vi": "Từ \"shield\" có nghĩa là bảo vệ, che chắn khỏi tác hại. \"Protect\" có nghĩa là bảo vệ.",
           "paraphrase_analysis": {
             "question_phrase": "shield",
@@ -582,7 +582,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
         {
           "id": "ulis_r03_q18",
           "type": "factual_detail",
-          "question_text": "The word \"they\" in line 25 refers to ________.",
+          "question_text": "The word \"**they**\" in line 25 refers to ________.",
           "options": [
             {
               "key": "A",
@@ -603,7 +603,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 2,
-          "clue_sentence": "Above all, what the early English colonists imported was their knowledge of, familiarity with, and dedication to the traditional types and designs of furniture they knew in England.",
+          "clue_sentence": "Above all, what the early English colonists imported was their knowledge of, familiarity with, and dedication to the traditional types and designs of furniture **they** knew in England.",
           "explanation_vi": "Trong câu \"what the early English colonists imported was their knowledge... of furniture they knew in England\", đại từ \"they\" thay thế cho danh từ chủ ngữ \"the early English colonists\".",
           "paraphrase_analysis": {
             "question_phrase": "they",
@@ -635,7 +635,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "The conservatism of the early English colonists in North America, their strong attachment to the English way of doing things, would play a major part in the furniture that was made in New England.",
+          "clue_sentence": "The conservatism of the early English colonists in North America, their strong **attachment to** the English way of doing things, would play a major part in the furniture that was made in New England.",
           "explanation_vi": "Đoạn 1 nêu rõ tư tưởng bảo thủ và sự gắn bó với phong cách làm việc của người Anh đã đóng vai trò lớn trong việc làm đồ nội thất ở New England. Cả bài đọc cũng nhấn mạnh họ duy trì thiết kế và loại hình truyền thống ở Anh (dedication to traditional types and designs of furniture they knew in England), suy ra thợ làm đồ nội thất làm đồ dựa trên kiểu mẫu của Anh (based their furniture on English models).",
           "paraphrase_analysis": {
             "question_phrase": "based their furniture on English models",
@@ -684,9 +684,9 @@ export const ULIS_READING_TEST_03: ReadingTest = {
       "word_count": 357,
       "difficulty": "B2",
       "content_paragraphs": [
-        "In addition to their military role, the forts of the nineteenth century provided numerous other benefits for the American West. The establishment of these posts opened new roads and provided for the protection of daring adventurers and expeditions as well as established settlers. Forts also served as bases where enterprising entrepreneurs could bring commerce to the West, providing supplies and refreshments to soldiers as well as to pioneers. Posts like Fort Laramie provided supplies for wagon trains traveling the natural highways toward new frontiers. Some posts became stations for the pony express; still others, such as Fort Davis, were stagecoach stops for weary travelers. All of these functions, of course, suggest that the contributions of the forts to the civilization and development of the West extended beyond patrol duty.",
-        "Through the establishment of military posts, yet other contributions were made to the development of western culture. Many posts maintained libraries or reading rooms, and some - for example, Fort Davis- had schools. Post chapels provided a setting for religious services and weddings. Throughout the wilderness, post bands provided entertainment and boosted morale. During the last part of the nineteenth century, to reduce expenses, gardening was encouraged at the forts, thus making experimental agriculture another activity of the military. The military stationed at the various forts also played a role in civilian life by assisting in maintaining order, and civilian officials often called on the army for protection.",
-        "Certainly, among other significant contributions the army made to the improvement of the conditions of life was the investigation of the relationships among health, climate, and architecture. From the earliest colonial times throughout the nineteenth century, disease ranked as the foremost problem in defense. It slowed construction of forts and inhibited their military functions. Official documents from many regions contained innumerable reports of sickness that virtually incapacitated entire garrisons. In response to the problems, detailed observations of architecture and climate and their relationships to the frequency of the occurrence of various diseases were recorded at various posts across the nation by military surgeons."
+        "In addition to their military role, the forts of the nineteenth century provided numerous other benefits for the American West. The establishment of these posts opened new roads and provided for the protection of **daring** adventurers and expeditions as well as established settlers. Forts also served as bases where enterprising entrepreneurs could bring commerce to the West, providing supplies and refreshments to soldiers as well as to pioneers. Posts like Fort Laramie provided supplies for wagon trains traveling the natural highways toward new frontiers. Some posts became stations for the pony express; still **others**, such as Fort Davis, were stagecoach stops for weary travelers. All of these functions, of course, suggest that the contributions of the forts to the civilization and development of the West extended beyond patrol duty.",
+        "Through the establishment of military posts, yet other contributions were made to the development of western culture. Many posts maintained libraries or reading rooms, and some - for example, Fort Davis- had schools. Post chapels provided a setting for religious services and weddings. Throughout the wilderness, post bands provided entertainment and **boosted** morale. During the last part of the nineteenth century, to reduce expenses, gardening was encouraged at the forts, thus making experimental agriculture another activity of the military. The military stationed at the various forts also played a role in civilian life by assisting in maintaining order, and civilian officials often called on the army for protection.",
+        "Certainly, among other significant contributions the army made to the improvement of the conditions of life was the investigation of the relationships among health, climate, and architecture. From the earliest colonial times throughout the nineteenth century, disease ranked as the foremost problem in defense. It slowed construction of forts and **inhibited** their military functions. Official documents from many regions contained innumerable reports of sickness that virtually incapacitated entire garrisons. In response to the problems, detailed observations of architecture and climate and their relationships to the frequency of the occurrence of various diseases were recorded at various posts across the nation by military surgeons."
       ],
       "questions": [
         {
@@ -719,7 +719,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
         {
           "id": "ulis_r03_q22",
           "type": "vocab_in_context",
-          "question_text": "The word \"daring\" in line 3 is closest in meaning to ......",
+          "question_text": "The word \"**daring**\" in line 3 is closest in meaning to ......",
           "options": [
             {
               "key": "A",
@@ -740,7 +740,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "The establishment of these posts opened new roads and provided for the protection of daring adventurers and expeditions as well as established settlers.",
+          "clue_sentence": "The establishment of these posts opened new roads and provided for the protection of **daring** adventurers and expeditions as well as established settlers.",
           "explanation_vi": "Từ \"daring\" nghĩa là dũng cảm, táo bạo, đồng nghĩa với \"bold\". Các lựa chọn khác: lost (lạc đường), lively (sống động), foolish (dại dột)."
         },
         {
@@ -773,7 +773,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
         {
           "id": "ulis_r03_q24",
           "type": "vocab_in_context",
-          "question_text": "The word \"others\" in line 7 refers to ......",
+          "question_text": "The word \"**others**\" in line 7 refers to ......",
           "options": [
             {
               "key": "A",
@@ -794,13 +794,13 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Some posts became stations for the pony express; still others, such as Fort Davis, were stagecoach stops for weary travelers.",
+          "clue_sentence": "Some posts became stations for the pony express; still **others**, such as Fort Davis, were stagecoach stops for weary travelers.",
           "explanation_vi": "Trong câu \"Some posts became...; still others, such as Fort Davis...\", đại từ \"others\" thay thế cho \"other posts\" (các đồn lũy khác)."
         },
         {
           "id": "ulis_r03_q25",
           "type": "vocab_in_context",
-          "question_text": "The word \"boosted\" in line 13 is closest in meaning to ......",
+          "question_text": "The word \"**boosted**\" in line 13 is closest in meaning to ......",
           "options": [
             {
               "key": "A",
@@ -821,7 +821,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "Throughout the wilderness, post bands provided entertainment and boosted morale.",
+          "clue_sentence": "Throughout the wilderness, post bands provided entertainment and **boosted** morale.",
           "explanation_vi": "Từ \"boosted\" nghĩa là nâng cao, tăng cường, đồng nghĩa với \"raised\". Nâng cao tinh thần = raised morale."
         },
         {
@@ -881,7 +881,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
         {
           "id": "ulis_r03_q28",
           "type": "vocab_in_context",
-          "question_text": "The word “inhibited” in line 22 is closest in meaning to ..........",
+          "question_text": "The word “**inhibited**” in line 22 is closest in meaning to ..........",
           "options": [
             {
               "key": "A",
@@ -902,7 +902,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 2,
-          "clue_sentence": "It slowed construction of forts and inhibited their military functions.",
+          "clue_sentence": "It slowed construction of forts and **inhibited** their military functions.",
           "explanation_vi": "Từ \"inhibited\" có nghĩa là cản trở, làm chậm lại, đồng nghĩa với \"hindered\". Các từ còn lại: involved (liên quan), exploited (khai thác), united (đoàn kết)."
         },
         {
@@ -968,8 +968,8 @@ export const ULIS_READING_TEST_03: ReadingTest = {
       "word_count": 351,
       "difficulty": "C1",
       "content_paragraphs": [
-        "Anyone who has handled a fossilized bone knows that it is usually not exactly like its modern counterpart, the most obvious difference being that it is often much heavier. Fossils often have the quality of stone rather than of organic materials, and this has led to the use of the term “petrifaction” (to bring about rock). The implication is that bone, and other tissues, have somehow been turned into stone, and this is certainly the explanation given in some texts. But it is wrong interpretation; fossils are frequently so dense because the pores and other spaces in the bone have become filled with minerals taken up from the surrounding sediments. Some fossil bones have all the interstitial spaces filled with foreign minerals, including the marrow cavity, if there is one, while others have taken up but little from their surroundings. Probably all of the minerals deposited within the bone have been recrystallized from solution by the action of water percolating thru them. The degree of mineralization appears to be determined by the nature of the environment in which the bone was deposited and not by the antiquity of the bone. For example, the black fossil bones that are so common in many parts of Florida are heavily mineralized, but they are only about 20,000 years old, whereas many of the dinosaur bones from western Canada, which are about 75 million years old, are only partially filled in. Under optimum conditions the process of mineralization probably takes thousands rather than millions of years, perhaps considerably less.",
-        "The amount of change that has occurred in fossil bone, even in bone as old as that of dinosaurs, is often remarkably small. We are therefore usually able to see the microscopic structures of the bone, including such fine details as the lacunae where the living bone cells once resided. The natural bone mineral, the hydroxyapatite, is virtually unaltered too - it has the same crystal structure as that of modern bone. Although nothing remains of the original collagen, some of its component amino acids are usually still detectable, together with amino acids of the noncollagen proteins of bone."
+        "Anyone who has handled a fossilized bone knows that it is usually not exactly like its modern **counterpart**, the most obvious difference being that it is often much heavier. Fossils often have the quality of stone rather than of organic materials, and this has led to the use of the term “petrifaction” (to bring about rock). The implication is that bone, and other tissues, have somehow been turned into stone, and this is certainly the explanation given in some texts. But it is wrong interpretation; fossils are frequently so dense because the **pores** and other spaces in the bone have become filled with minerals taken up from the surrounding sediments. Some fossil bones have all the interstitial spaces filled with foreign minerals, including the marrow cavity, if there is one, while others have taken up but little from their surroundings. Probably all of the minerals deposited within the bone have been recrystallized from solution by the action of water percolating thru them. The degree of mineralization appears to be determined by the nature of the environment in which the bone was deposited and not by the antiquity of the bone. For example, the black fossil bones that are so common in many parts of Florida are heavily mineralized, but they are only about 20,000 years old, whereas many of the dinosaur bones from western Canada, which are about 75 million years old, are only partially filled in. Under optimum conditions the process of mineralization probably takes thousands rather than millions of years, perhaps considerably less.",
+        "The amount of change that has occurred in fossil bone, even in bone as old as that of dinosaurs, is often remarkably small. We are therefore usually able to see the microscopic structures of the bone, including such fine details as the lacunae where the living bone cells once resided. The natural bone mineral, the hydroxyapatite, is virtually unaltered too - **it** has the same crystal structure as that of modern bone. Although nothing remains of the original collagen, some of its component amino acids are usually still **detectable**, together with amino acids of the noncollagen proteins of bone."
       ],
       "questions": [
         {
@@ -1002,7 +1002,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
         {
           "id": "ulis_r03_q32",
           "type": "vocab_in_context",
-          "question_text": "The word \"counterpart\" in line 2 is closest in meaning to ........",
+          "question_text": "The word \"**counterpart**\" in line 2 is closest in meaning to ........",
           "options": [
             {
               "key": "A",
@@ -1023,7 +1023,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Anyone who has handled a fossilized bone knows that it is usually not exactly like its modern counterpart, the most obvious difference being that it is often much heavier.",
+          "clue_sentence": "Anyone who has handled a fossilized bone knows that it is usually not exactly like its modern **counterpart**, the most obvious difference being that it is often much heavier.",
           "explanation_vi": "Từ \"counterpart\" chỉ đối tượng tương ứng hoặc phiên bản tương đương. Ở đây so sánh xương hóa thạch với xương hiện đại tương ứng (\"modern version\")."
         },
         {
@@ -1050,13 +1050,13 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "But it is wrong interpretation; fossils are frequently so dense because the pores and other spaces in the bone have become filled with minerals taken up from the surrounding sediments.",
+          "clue_sentence": "But it is wrong interpretation; fossils are frequently so dense because the **pores** and other spaces in the bone have become filled with minerals taken up from the surrounding sediments.",
           "explanation_vi": "Tác giả giải thích xương hóa thạch nặng và đặc hơn vì các lỗ nhỏ và khoảng trống trong xương đã được lấp đầy bởi khoáng chất lấy từ trầm tích xung quanh. Vì vậy đáp án đúng là D."
         },
         {
           "id": "ulis_r03_q34",
           "type": "vocab_in_context",
-          "question_text": "The word \"pores\" in line 6 is closest in meaning to............",
+          "question_text": "The word \"**pores**\" in line 6 is closest in meaning to............",
           "options": [
             {
               "key": "A",
@@ -1077,7 +1077,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "But it is wrong interpretation; fossils are frequently so dense because the pores and other spaces in the bone have become filled with minerals taken up from the surrounding sediments.",
+          "clue_sentence": "But it is wrong interpretation; fossils are frequently so dense because the **pores** and other spaces in the bone have become filled with minerals taken up from the surrounding sediments.",
           "explanation_vi": "Từ \"pores\" trong ngữ cảnh chỉ các lỗ nhỏ, khe hở nhỏ (\"holes\")."
         },
         {
@@ -1164,7 +1164,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
         {
           "id": "ulis_r03_q38",
           "type": "vocab_in_context",
-          "question_text": "The word \"it\" in line 20 refers to .........",
+          "question_text": "The word \"**it**\" in line 20 refers to .........",
           "options": [
             {
               "key": "A",
@@ -1185,13 +1185,13 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "The natural bone mineral, the hydroxyapatite, is virtually unaltered too - it has the same crystal structure as that of modern bone.",
+          "clue_sentence": "The natural bone mineral, the hydroxyapatite, is virtually unaltered too - **it** has the same crystal structure as that of modern bone.",
           "explanation_vi": "Trong câu \"The natural bone mineral, the hydroxyapatite, is virtually unaltered too - it has...\", đại từ \"it\" thay thế cho danh từ đứng trước nó là \"hydroxyapatite\"."
         },
         {
           "id": "ulis_r03_q39",
           "type": "vocab_in_context",
-          "question_text": "The word \"detectable\" in line 22 is closest in meaning to .............",
+          "question_text": "The word \"**detectable**\" in line 22 is closest in meaning to .............",
           "options": [
             {
               "key": "A",
@@ -1212,7 +1212,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 1,
-          "clue_sentence": "Although nothing remains of the original collagen, some of its component amino acids are usually still detectable, together with amino acids of the noncollagen proteins of bone.",
+          "clue_sentence": "Although nothing remains of the original collagen, some of its component amino acids are usually still **detectable**, together with amino acids of the noncollagen proteins of bone.",
           "explanation_vi": "Từ \"detectable\" nghĩa là có thể phát hiện được, có thể nhận thấy rõ ràng tương đương với \"apparent\" (rõ ràng, có thể nhận thấy)."
         },
         {
@@ -1239,7 +1239,7 @@ export const ULIS_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "Although nothing remains of the original collagen, some of its component amino acids are usually still detectable, together with amino acids of the noncollagen proteins of bone.",
+          "clue_sentence": "Although nothing remains of the original collagen, some of its component amino acids are usually still **detectable**, together with amino acids of the noncollagen proteins of bone.",
           "explanation_vi": "Bài đọc ghi rõ: \"nothing remains of the original collagen\" (không còn gì tồn tại từ collagen nguyên bản), do đó Collagen là thành phần KHÔNG tồn tại trong hóa thạch."
         }
       ],

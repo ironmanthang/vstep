@@ -17,10 +17,10 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
       "word_count": 353,
       "difficulty": "B1",
       "content_paragraphs": [
-        "The influx of Americans into Oregon in the 1840s ignited a dispute between Britain and the United States that, in its more intemperate phases, was accompanied by shrill demands in both countries for war. The argument originated in the fact that the boundaries of Oregon had never been clearly fixed.",
+        "The influx of Americans into Oregon in the 1840s ignited a dispute between Britain and the United States that, in its more **intemperate** phases, was accompanied by shrill demands in both countries for war. The argument originated in the fact that the boundaries of Oregon had never been clearly **fixed**.",
         "The name vaguely embraced the territory west of the Rockies between the northern boundary of Mexican-held California and the southern edge of Russian-held Alaska, which at the time extended south to parallel 54° 40'. In 1818, when America proposed a boundary at the 49th parallel an extension of the border with Canada that already existed east of the Rockies and the British suggested a line farther south, statesmen of both nations avoided the resulting impasse by agreeing to accept temporary \"joint occupancy\".",
-        "But by the early 1840s, the issue could no longer be avoided: Oregon fever and Manifest Destiny had become potent political forces. Though many eastern Americans considered Oregon country too remote to become excited about, demands for its occupation were shouted with almost religious fervor. Senator Thomas Hart Benton, for one, urged Congress to muster \"thirty or forty thousand American rifles beyond the Rocky Mountains that will be our effective negotiators.\"",
-        "The Democratic Party made \"54°40' or fight\", an issue of the 1844 Presidential election and just managed to install James K. Polk, an ardent expansionist, in the White House. But despite their seeming intransigence, neither Polk nor the British government wanted to fight. And just about the time that Polk learned that the land lying north of the 49th parallel was useless for agriculture, the British decided the American market for goods was worth far more than Oregon's fast-dying fur trade. So they quietly settled for the 49th parallel, the boundary that the United States had proposed in the first place."
+        "But by the early 1840s, the issue could no longer be avoided: Oregon fever and Manifest Destiny had become potent political forces. Though many eastern Americans considered Oregon country too **remote** to become excited about, demands for its occupation were shouted with almost religious fervor. Senator Thomas Hart Benton, for one, urged Congress to muster \"thirty or forty thousand American rifles beyond the Rocky Mountains that will be our effective negotiators.\"",
+        "The Democratic Party made \"54°40' or fight\", an issue of the 1844 Presidential election and just managed to install James K. Polk, an **ardent** expansionist, in the White House. But despite their seeming intransigence, neither Polk nor the British government wanted to fight. And just about the time that Polk learned that the land lying north of the 49th parallel was useless for agriculture, the British decided the American market for goods was worth far more than Oregon's fast-dying fur trade. So **they** quietly settled for the 49th parallel, the boundary that the United States had proposed in the first place."
       ],
       "questions": [
         {
@@ -47,13 +47,13 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 0,
-          "clue_sentence": "The influx of Americans into Oregon in the 1840s ignited a dispute between Britain and the United States that, in its more intemperate phases, was accompanied by shrill demands in both countries for war.",
+          "clue_sentence": "The influx of Americans into Oregon in the 1840s ignited a dispute between Britain and the United States that, in its more **intemperate** phases, was accompanied by shrill demands in both countries for war.",
           "explanation_vi": "Đoạn văn mô tả tranh chấp ranh giới Oregon những năm 1840 và các chính trị gia cũng như người dân hai nước đòi chiến tranh (\"shrill demands in both countries for war\"), sau đó được giải quyết hòa bình. Tuy nhiên, đáp án chính thức theo key là C (hoặc A tùy key, nhưng theo key chuẩn đề bài cung cấp cho Q1 là C)."
         },
         {
           "id": "hcmue_r05_q02",
           "type": "vocab_in_context",
-          "question_text": "The word \"intemperate\" in the passage is closest in meaning to __________.",
+          "question_text": "The word \"**intemperate**\" in the passage is closest in meaning to __________.",
           "options": [
             {
               "key": "A",
@@ -74,13 +74,13 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "The influx of Americans into Oregon in the 1840s ignited a dispute between Britain and the United States that, in its more intemperate phases, was accompanied by shrill demands in both countries for war.",
+          "clue_sentence": "The influx of Americans into Oregon in the 1840s ignited a dispute between Britain and the United States that, in its more **intemperate** phases, was accompanied by shrill demands in both countries for war.",
           "explanation_vi": "Từ \"intemperate\" (quá khích, thiếu kiềm chế) đồng nghĩa với \"uninformed\" hoặc \"immoderate\" tùy theo ngữ cảnh từ điển (ở đây key chính thức là D)."
         },
         {
           "id": "hcmue_r05_q03",
           "type": "vocab_in_context",
-          "question_text": "As used in the passage, the word \"fixed\" is closest in meaning to __________.",
+          "question_text": "As used in the passage, the word \"**fixed**\" is closest in meaning to __________.",
           "options": [
             {
               "key": "A",
@@ -101,13 +101,13 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "The argument originated in the fact that the boundaries of Oregon had never been clearly fixed.",
+          "clue_sentence": "The argument originated in the fact that the boundaries of Oregon had never been clearly **fixed**.",
           "explanation_vi": "Từ \"fixed\" trong ngữ cảnh này mang nghĩa là được xác định, định rõ (established). Tuy nhiên theo key chính thức của đề là A."
         },
         {
           "id": "hcmue_r05_q04",
           "type": "vocab_in_context",
-          "question_text": "The word \"remote\" in the passage is closest in meaning to __________.",
+          "question_text": "The word \"**remote**\" in the passage is closest in meaning to __________.",
           "options": [
             {
               "key": "A",
@@ -128,7 +128,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 2,
-          "clue_sentence": "Though many eastern Americans considered Oregon country too remote to become excited about, demands for its occupation were shouted with almost religious fervor.",
+          "clue_sentence": "Though many eastern Americans considered Oregon country too **remote** to become excited about, demands for its occupation were shouted with almost religious fervor.",
           "explanation_vi": "Từ \"remote\" có nghĩa là xa xôi (far away). Key chính thức của đề là C."
         },
         {
@@ -155,13 +155,13 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 2,
-          "clue_sentence": "Though many eastern Americans considered Oregon country too remote to become excited about, demands for its occupation were shouted with almost religious fervor.",
+          "clue_sentence": "Though many eastern Americans considered Oregon country too **remote** to become excited about, demands for its occupation were shouted with almost religious fervor.",
           "explanation_vi": "Đoạn văn nêu rõ không phải tất cả mọi người đều đồng lòng ủng hộ việc mở rộng (vì có người ở miền đông cho rằng nó quá xa xôi), do đó ý C là ngoại lệ (EXCEPT)."
         },
         {
           "id": "hcmue_r05_q06",
           "type": "vocab_in_context",
-          "question_text": "The word \"ardent\" in the passage is closest in meaning to_____.",
+          "question_text": "The word \"**ardent**\" in the passage is closest in meaning to_____.",
           "options": [
             {
               "key": "A",
@@ -182,13 +182,13 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 3,
-          "clue_sentence": "The Democratic Party made \"54°40' or fight\", an issue of the 1844 Presidential election and just managed to install James K. Polk, an ardent expansionist, in the White House.",
+          "clue_sentence": "The Democratic Party made \"54°40' or fight\", an issue of the 1844 Presidential election and just managed to install James K. Polk, an **ardent** expansionist, in the White House.",
           "explanation_vi": "Từ \"ardent\" có nghĩa là nhiệt huyết, nhiệt tình, đồng nghĩa với \"enthusiastic\"."
         },
         {
           "id": "hcmue_r05_q07",
           "type": "inference",
-          "question_text": "The word \"they\" in the passage refers to_____.",
+          "question_text": "The word \"**they**\" in the passage refers to_____.",
           "options": [
             {
               "key": "A",
@@ -209,7 +209,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 3,
-          "clue_sentence": "So they quietly settled for the 49th parallel, the boundary that the United States had proposed in the first place.",
+          "clue_sentence": "So **they** quietly settled for the 49th parallel, the boundary that the United States had proposed in the first place.",
           "explanation_vi": "Đại từ \"they\" ở cuối bài chỉ cả hai bên (the British and the Americans) đã đồng ý dàn xếp ổn thỏa biên giới."
         },
         {
@@ -290,7 +290,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 3,
-          "clue_sentence": "So they quietly settled for the 49th parallel, the boundary that the United States had proposed in the first place.",
+          "clue_sentence": "So **they** quietly settled for the 49th parallel, the boundary that the United States had proposed in the first place.",
           "explanation_vi": "Mỹ cuối cùng nhận được đường biên giới vĩ tuyến 49, chính là ranh giới mà nước Mỹ đã đề xuất ban đầu."
         }
       ],
@@ -301,9 +301,9 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
       "topic": "Environmental Science",
       "difficulty": "B2",
       "content_paragraphs": [
-        "For all their great diversity of shapes and sizes, glaciers can be divided into two essential types: valley glaciers, which flow downhill from mountains and are shaped by the constraints of topography, and ice sheets, which flow outward in all directions from domelike centers of accumulated ice to cover vast expanses of terrain. Whatever their type, most glaciers are remnants of great shrouds of ice that covered the earth eons ago. In a few of these glaciers the oldest ice is very ancient indeed; the age of parts of the Antarctic sheet may exceed 500,000 years.",
-        "Glaciers are born in rocky wombs above the snow line, where there is sufficient winter snowfall and summer cold for snow to survive the annual melting. The long gestation period of a glacier begins with the accumulation and gradual transformation of snowflakes. Soon after they reach the ground, complex snowflakes are reduced to compact, roughly spherical ice crystals, the basic components of a glacier. As new layers of snow and ice, snow that survives the melting of the previous summer, accumulate, they squeeze out most of the air bubbles trapped within and between the crystals below. This process of recrystallization continues throughout the life of the glacier.",
-        "The length of time required for the creation of glacier ice depends mainly upon the temperature and the rate of snowfall. In Iceland, where snowfall is heavy and summer temperatures are high enough to produce plenty of meltwater, glacier ice may come into being in a relatively short time say, ten years. In parts of Antarctica, where snowfall is scant and the ice remains well below its melting temperature year-round, the process may require hundreds of years. The ice does not become a glacier until it moves under its own weight, and it cannot move significantly until it reaches a critical thickness the point at which the weight of the piled-up layers overcomes the internal strength of the ice and the friction between the ice and the ground. This critical thickness is about 60 feet. The fastest moving glaciers have been gauged at not much more than two and a half miles per year, and some cover less than 1/100 inch in that same amount of time. But no matter how infinitesimal the flow, movement is what distinguishes a glacier from a mere mass of ice."
+        "For all their great diversity of shapes and sizes, glaciers can be divided into two essential types: valley glaciers, which flow downhill from mountains and are shaped by the **constraints** of topography, and ice sheets, which flow outward in all directions from domelike centers of accumulated ice to cover vast expanses of terrain. Whatever their type, most glaciers are remnants of great shrouds of ice that covered the earth eons ago. In a few of these glaciers the oldest ice is very ancient indeed; the age of parts of the Antarctic sheet may exceed 500,000 years.",
+        "Glaciers are born in rocky wombs above the snow line, where there is sufficient winter snowfall and summer cold for snow to survive the annual melting. The long gestation period of a glacier begins with the accumulation and gradual transformation of snowflakes. Soon after they reach the ground, complex snowflakes are reduced to compact, roughly spherical ice crystals, the basic components of a glacier. As new layers of snow and ice, snow that survives the melting of the previous summer, accumulate, they squeeze out most of the air bubbles **trapped** within and between the crystals below. **This process** of recrystallization continues throughout the life of the glacier.",
+        "The length of time required for the creation of glacier ice depends mainly upon the temperature and the rate of snowfall. In Iceland, where snowfall is heavy and summer temperatures are high enough to produce plenty of meltwater, glacier ice may come into being in a relatively short time say, ten years. In parts of Antarctica, where snowfall is scant and the ice remains well below its melting temperature year-round, the process may require hundreds of years. The ice does not become a glacier until **it** moves under its own weight, and it cannot move **significantly** until it reaches a critical thickness the point at which the weight of the piled-up layers overcomes the internal strength of the ice and the friction between the ice and the ground. This critical thickness is about 60 feet. The fastest moving glaciers have been gauged at not much more than two and a half miles per year, and some cover less than 1/100 inch in that same amount of time. But no matter how infinitesimal the flow, movement is what distinguishes a glacier from a mere mass of ice."
       ],
       "questions": [
         {
@@ -341,7 +341,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
         {
           "id": "hcmue_r05_q12",
           "type": "vocab_in_context",
-          "question_text": "The word \"constraints\" in the passage is closest in meaning to_____.",
+          "question_text": "The word \"**constraints**\" in the passage is closest in meaning to_____.",
           "options": [
             {
               "key": "A",
@@ -362,7 +362,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "valley glaciers, which flow downhill from mountains and are shaped by the constraints of topography",
+          "clue_sentence": "valley glaciers, which flow downhill from mountains and are shaped by the **constraints** of topography",
           "explanation_vi": "Từ \"constraints\" có nghĩa là sự hạn chế, giới hạn, tương đồng với \"restrictions\". Địa hình đồi núi định hình và giới hạn hướng chảy của sông băng thung lũng."
         },
         {
@@ -422,7 +422,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
         {
           "id": "hcmue_r05_q15",
           "type": "factual_detail",
-          "question_text": "The phrase \"this process\" in the passage refers to_____.",
+          "question_text": "The phrase \"**this process**\" in the passage refers to_____.",
           "options": [
             {
               "key": "A",
@@ -443,13 +443,13 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 1,
-          "clue_sentence": "As new layers of snow and ice, snow that survives the melting of the previous summer, accumulate, they squeeze out most of the air bubbles trapped within and between the crystals below. This process of recrystallization continues throughout the life of the glacier.",
+          "clue_sentence": "As new layers of snow and ice, snow that survives the melting of the previous summer, accumulate, they squeeze out most of the air bubbles **trapped** within and between the crystals below. **This process** of recrystallization continues throughout the life of the glacier.",
           "explanation_vi": "Cụm từ \"this process\" chỉ quá trình lớp tuyết và băng mới tích tụ đè nén, vắt kiệt các bọt khí bên trong và giữa các tinh thể bên dưới (quá trình tái kết tinh)."
         },
         {
           "id": "hcmue_r05_q16",
           "type": "vocab_in_context",
-          "question_text": "The word \"trapped\" in the passage is closest in meaning to_____.",
+          "question_text": "The word \"**trapped**\" in the passage is closest in meaning to_____.",
           "options": [
             {
               "key": "A",
@@ -470,7 +470,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "As new layers of snow and ice, snow that survives the melting of the previous summer, accumulate, they squeeze out most of the air bubbles trapped within and between the crystals below.",
+          "clue_sentence": "As new layers of snow and ice, snow that survives the melting of the previous summer, accumulate, they squeeze out most of the air bubbles **trapped** within and between the crystals below.",
           "explanation_vi": "Từ \"trapped\" ở đây mang nghĩa bị kẹt lại, bị bao bọc bên trong, tương đồng với \"enclosed\" (bị bao bọc/đóng kín)."
         },
         {
@@ -497,13 +497,13 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "valley glaciers, which flow downhill from mountains and are shaped by the constraints of topography, and ice sheets, which flow outward in all directions from domelike centers of accumulated ice to cover vast expanses of terrain.",
+          "clue_sentence": "valley glaciers, which flow downhill from mountains and are shaped by the **constraints** of topography, and ice sheets, which flow outward in all directions from domelike centers of accumulated ice to cover vast expanses of terrain.",
           "explanation_vi": "Đoạn văn nêu rõ sông băng thung lũng chảy xuôi xuống từ các ngọn núi, trong khi các dải băng (ice sheets) chảy ra ngoài theo mọi hướng."
         },
         {
           "id": "hcmue_r05_q18",
           "type": "factual_detail",
-          "question_text": "What does \"it\" in the passage refer to_____.",
+          "question_text": "What does \"**it**\" in the passage refer to_____.",
           "options": [
             {
               "key": "A",
@@ -524,13 +524,13 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 2,
-          "clue_sentence": "The ice does not become a glacier until it moves under its own weight, and it cannot move significantly until it reaches a critical thickness the point at which the weight of the piled-up layers overcomes the internal strength of the ice and the friction between the ice and the ground.",
+          "clue_sentence": "The ice does not become a glacier until **it** moves under its own weight, and it cannot move **significantly** until it reaches a critical thickness the point at which the weight of the piled-up layers overcomes the internal strength of the ice and the friction between the ice and the ground.",
           "explanation_vi": "Đại từ \"it\" trong câu dùng để chỉ \"The ice\" (khối băng), tức là băng không trở thành sông băng cho đến khi nó di chuyển dưới trọng lượng của chính nó."
         },
         {
           "id": "hcmue_r05_q19",
           "type": "vocab_in_context",
-          "question_text": "The word \"significantly\" in the passage is closest in meaning to_____.",
+          "question_text": "The word \"**significantly**\" in the passage is closest in meaning to_____.",
           "options": [
             {
               "key": "A",
@@ -551,7 +551,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 2,
-          "clue_sentence": "The ice does not become a glacier until it moves under its own weight, and it cannot move significantly until it reaches a critical thickness the point at which the weight of the piled-up layers overcomes the internal strength of the ice and the friction between the ice and the ground.",
+          "clue_sentence": "The ice does not become a glacier until **it** moves under its own weight, and it cannot move **significantly** until it reaches a critical thickness the point at which the weight of the piled-up layers overcomes the internal strength of the ice and the friction between the ice and the ground.",
           "explanation_vi": "Từ \"significantly\" trong ngữ cảnh này có nghĩa là một cách đáng kể, rõ rệt, tương đồng với \"notably\"."
         },
         {
@@ -592,13 +592,13 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
       "difficulty": "B2",
       "content_paragraphs": [
         "Pottery refers to dishes, plates, cups and cooking pots made out of clay. Chinese pottery was invented during the Neolithic period (5,000-2,200 BC) and it was molded by hand. Before this time, people had been nomadic, making it difficult to carry heavy, breakable pieces of pottery. At first, pottery was made by pushing a hole into a ball of clay or by taking a piece of clay and coiling it up into a pot shape. Many early pots were simple lumps of clay. However, people later discovered that clay, when placed in an open fire, hardened. This technique, known as firing, soon became common practice in pottery production.",
-        "People used pottery as a way of forming their social identity or showing who they were and how they were different from other people. Many of the designs that were used on pottery were usually borrowed from those already found on clothing and garments. The decoration of pottery began with simple incisions, which were later painted on. Gradually, plants, animals, and human figures were included on the vases. Mythological scenes were common as were dancers, musicians, and images from everyday life.",
-        "[A] Pottery also has roots in ancient China where, for centuries, people produced black, carved, and painted pieces from rough clay. It was in the Sui dynasty, however, that the aesthetics of pottery took a major leap forward. [B] Potters began experimenting with porcelain and the effect was a stunning, shiny new look and feel for Chinese ceramics. [C] This gleaming pottery became popular not only in China, but in West Asia as well. [D] Inevitably, this led to a new market for cheap imitations.",
+        "People used pottery as a way of forming their social identity or showing who they were and how they were different from other people. Many of the designs that were used on pottery were usually borrowed from those already found on clothing and garments. The decoration of pottery began with simple **incisions**, which were later painted on. Gradually, plants, animals, and human figures were included on the vases. Mythological scenes were common as were dancers, musicians, and images from everyday life.",
+        "[A] Pottery also has roots in ancient China where, for centuries, people produced black, carved, and painted pieces from rough clay. It was in the Sui dynasty, however, that the aesthetics of pottery took a major leap forward. [B] Potters began experimenting with porcelain and the effect was a stunning, shiny new look and feel for Chinese ceramics. [C] This **gleaming** pottery became popular not only in China, but in West Asia as well. [D] Inevitably, this led to a new market for cheap imitations.",
         "After 1,200 AD, Chinese potters began using different colored glazes to create designs on their pots. Chinese pottery was still the best and most expensive. After thousands of years of advancements in technique and materials, painted porcelain such as blue and white, tri-color, and under-glazed became successfully produced.",
-        "The Chinese often used pottery as part of the burial ritual; bronze vessels were decorated with elaborate designs of plants and animals. In Chinese culture, jade symbolizes nobility, perfection, and immortality. Jade utensils were laid over the deceased and some were placed In the mouth or enclosed In the hand. Liquids were placed In the vessels to help the dead in their afterlife and also to aid In funerary ceremonies in which the living communicated with deceased ancestors and gods in an altered state of consciousness after drinking fermented beverages.",
+        "The Chinese often used pottery as part of the burial ritual; bronze vessels were decorated with elaborate designs of plants and animals. In Chinese culture, **jade** symbolizes nobility, perfection, and immortality. Jade utensils were laid over the **deceased** and some were placed In the mouth or enclosed In the hand. Liquids were placed In the vessels to help the dead in their afterlife and also to aid In funerary ceremonies in which the living communicated with deceased ancestors and gods in an altered state of consciousness after drinking fermented beverages.",
         "Such vessels containing liquids have been excavated at centers near the Yellow River, especially from burials of elite, eminent individuals. Many pottery fragments and figurines have also been discovered in the Chang Jiang drainage area.",
         "Pottery can be divided into three groups: those designed for storage, those for preserving or holding liquids, and those for special uses. The Greeks made pottery for many purposes. The custom of burning their dead involved using vases to collect the ashes. Some pottery served as decorative pieces, while others were used for ceremonies or during religious festivals. Amphoras were larger vessels used to store liquids such as water or wine. Amphoras have occasionally been found in ancient shipwrecks; some held wine and others were shipped empty after selling their contents off to other countries. The Alabastron had special uses such as holding perfume or oil. The Skyphes, a flat-bottomed bowl, was used as a drinking cup.",
-        "Grecian soil had many deposits of clay near rivers. This abundance of raw material was not available to others, giving the Greeks a strategic advantage in manufacturing material. They made full use of clay. After its discovery, vessels were made in a wide range of sizes and shapes. Jugs, vases, fruit bowls, and feeding bottles were widely used in homes. Although some larger vessels were made of stone, glass, or metal, clay was by far the most prominent.",
+        "Grecian soil had many deposits of clay near rivers. **This abundance of raw material was not available to others, giving the Greeks a strategic advantage in manufacturing material**. They made full use of clay. After its discovery, vessels were made in a wide range of sizes and shapes. Jugs, vases, fruit bowls, and feeding bottles were widely used in homes. Although some larger vessels were made of stone, glass, or metal, clay was by far the most prominent.",
         "The ancient Egyptians used pottery and ceramic art for burial purpose. Four vases were sometimes deposited with the mummified body, A large number of vases which have been recovered had been buried with the dead in tombs. Some vases are found hanging or standing upright in the tomb. They appear to have been valued by the deceased, hence leaving them for burial in the tomb."
       ],
       "questions": [
@@ -637,7 +637,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
         {
           "id": "hcmue_r05_q22",
           "type": "vocab_in_context",
-          "question_text": "The word \"incisions\" in the passage is closest in meaning to ____________.",
+          "question_text": "The word \"**incisions**\" in the passage is closest in meaning to ____________.",
           "options": [
             {
               "key": "A",
@@ -658,7 +658,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 1,
-          "clue_sentence": "The decoration of pottery began with simple incisions, which were later painted on.",
+          "clue_sentence": "The decoration of pottery began with simple **incisions**, which were later painted on.",
           "explanation_vi": "Từ \"incisions\" có nghĩa là vết khắc, vết cắt trên bề mặt. Trong các lựa chọn, từ \"cuts\" đồng nghĩa gần nhất với \"incisions\" (những đường khắc/cắt)."
         },
         {
@@ -696,7 +696,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
         {
           "id": "hcmue_r05_q24",
           "type": "vocab_in_context",
-          "question_text": "The word \"gleaming\" in the passage is closest in meaning to____.",
+          "question_text": "The word \"**gleaming**\" in the passage is closest in meaning to____.",
           "options": [
             {
               "key": "A",
@@ -717,7 +717,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 2,
-          "clue_sentence": "Potters began experimenting with porcelain and the effect was a stunning, shiny new look and feel for Chinese ceramics. [C] This gleaming pottery became popular not only in China, but in West Asia as well.",
+          "clue_sentence": "Potters began experimenting with porcelain and the effect was a stunning, shiny new look and feel for Chinese ceramics. [C] This **gleaming** pottery became popular not only in China, but in West Asia as well.",
           "explanation_vi": "Từ \"gleaming\" có nghĩa là sáng bóng, lấp lánh, tương đồng trực tiếp với từ \"shiny\" được nhắc đến ngay trong câu trước đó khi mô tả đồ gốm sứ mới."
         },
         {
@@ -750,7 +750,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
         {
           "id": "hcmue_r05_q26",
           "type": "inference",
-          "question_text": "The author mentions \"jade\" in the passage in order to____.",
+          "question_text": "The author mentions \"**jade**\" in the passage in order to____.",
           "options": [
             {
               "key": "A",
@@ -771,13 +771,13 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 4,
-          "clue_sentence": "In Chinese culture, jade symbolizes nobility, perfection, and immortality. Jade utensils were laid over the deceased and some were placed In the mouth or enclosed In the hand.",
+          "clue_sentence": "In Chinese culture, **jade** symbolizes nobility, perfection, and immortality. Jade utensils were laid over the **deceased** and some were placed In the mouth or enclosed In the hand.",
           "explanation_vi": "Tác giả nhắc đến ngọc (jade) trong bối cảnh các nghi lễ chôn cất của người Trung Quốc để làm ví dụ về việc sử dụng vật liệu quý giá trong các đám tang (được đặt lên người người quá cố)."
         },
         {
           "id": "hcmue_r05_q27",
           "type": "vocab_in_context",
-          "question_text": "The word \"deceased\" in the passage is closest in meaning to____.",
+          "question_text": "The word \"**deceased**\" in the passage is closest in meaning to____.",
           "options": [
             {
               "key": "A",
@@ -798,7 +798,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 4,
-          "clue_sentence": "Jade utensils were laid over the deceased and some were placed In the mouth or enclosed In the hand.",
+          "clue_sentence": "Jade utensils were laid over the **deceased** and some were placed In the mouth or enclosed In the hand.",
           "explanation_vi": "Từ \"deceased\" dùng như một danh từ chỉ người đã khuất, người đã chết, đồng nghĩa với \"dead\"."
         },
         {
@@ -825,7 +825,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 7,
-          "clue_sentence": "Grecian soil had many deposits of clay near rivers. This abundance of raw material was not available to others, giving the Greeks a strategic advantage in manufacturing material. They made full use of clay.",
+          "clue_sentence": "Grecian soil had many deposits of clay near rivers. **This abundance of raw material was not available to others, giving the Greeks a strategic advantage in manufacturing material**. They made full use of clay.",
           "explanation_vi": "Câu hỏi đề cập đến ý nghĩa cốt lõi của việc người Hy Lạp tận dụng lượng đất sét phong phú gần các con sông để tạo ra lợi thế chiến lược và phát triển ngành sản xuất đồ gốm. Lựa chọn A tóm tắt đúng nhất ý này (việc sử dụng lượng lớn đất sét ở Hy Lạp đã tạo ra một nền văn hóa phong phú về đồ gốm)."
         },
         {
@@ -879,7 +879,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 2,
-          "clue_sentence": "[A] Pottery also has roots in ancient China where, for centuries, people produced black, carved, and painted pieces from rough clay. It was in the Sui dynasty, however, that the aesthetics of pottery took a major leap forward. [B] Potters began experimenting with porcelain and the effect was a stunning, shiny new look and feel for Chinese ceramics. [C] This gleaming pottery became popular not only in China, but in West Asia as well. [D] Inevitably, this led to a new market for cheap imitations.",
+          "clue_sentence": "[A] Pottery also has roots in ancient China where, for centuries, people produced black, carved, and painted pieces from rough clay. It was in the Sui dynasty, however, that the aesthetics of pottery took a major leap forward. [B] Potters began experimenting with porcelain and the effect was a stunning, shiny new look and feel for Chinese ceramics. [C] This **gleaming** pottery became popular not only in China, but in West Asia as well. [D] Inevitably, this led to a new market for cheap imitations.",
           "explanation_vi": "Câu chèn chứa từ \"there\" chỉ địa điểm (West Asia được nhắc đến ở câu trước vị trí [D]) và giải thích lý do tại sao đồ gốm lấp lánh đó lại đắt đỏ ở Tây Á (phải vận chuyển bằng lạc đà và lừa từ Trung Quốc), điều này dẫn đến kết cục ở câu sau vị trí [D]: \"Inevitably, this led to a new market for cheap imitations\" (Điều này tất yếu dẫn đến thị trường mới cho hàng giả giá rẻ)."
         }
       ],
@@ -890,18 +890,18 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
       "topic": "History & Science",
       "difficulty": "C1",
       "content_paragraphs": [
-        "Louis Pasteur was arguably the greatest biologist of the 19th century. His immense contributions were among the most varied and beneficial in the field of science and industry. Pasteur's methods of conducting experiments illustrated brilliance, which started when he studied the crystal structure. He observed that tartrate, when created in a laboratory, was optically inactive. This is different from the tartrate from grapes because the artificial tartrate is composed of two optically asymmetric crystals. Pasteur succeeded in unraveling the asymmetric crystals from each other and showed that each regained optical activity.",
+        "Louis Pasteur was arguably the greatest biologist of the 19th century. His immense contributions were among the most varied and beneficial in the field of science and industry. Pasteur's methods of conducting experiments illustrated brilliance, which started when he studied the crystal structure. He observed that tartrate, when created in a laboratory, was optically **inactive**. This is different from the tartrate from grapes because the artificial tartrate is composed of two optically asymmetric crystals. Pasteur succeeded in unraveling the asymmetric crystals from each other and showed that each regained optical activity.",
         "He then theorized that living organisms only produce molecules that are of one specific objective and that these molecules are active at all times. This experiment contradicted 'Mitserlich' who had observed only a single type of crystal. Later in his career, Pasteur was approached by the parent of one of his students, regarding a contamination problem in alcoholic fermentation. At the time, fermentation leading to the making of wine, or beer was thought to be a simple breakdown of sugar to the favored molecules. Yeast cells were believed to be either a useful ingredient in maintaining or simply a product of fermentation.",
-        "The manufacturers of alcohol were having economic problems related to fermentation. Wine would suddenly turn sour or into vinegar, or the quality and taste of beer would suddenly change. Therefore, the producers would have to start anew. Pasteur proved that yeast was an organism which did not necessitate oxygen for fermentation to occur. This proved to Justin Von Liebig, who had upheld that fermentation was purely chemical, that he was incorrect.",
+        "The manufacturers of alcohol were having economic problems related to fermentation. Wine would suddenly turn sour or into vinegar, or the quality and taste of beer would suddenly change. Therefore, the producers would have to start anew. Pasteur proved that yeast was an organism which did not **necessitate** oxygen for fermentation to occur. This proved to Justin Von Liebig, who had upheld that fermentation was purely chemical, that he was incorrect.",
         "Pasteur was able to prove that the yeast was responsible for forming alcohol from sugar and that contaminating microorganisms turned the fermentations sour. Over the years, he segregated the organisms that were responsible for normal and abnormal fermentations when producing wine or beer. He demonstrated that if he heated them to mild temperatures, this would kill the microorganisms and prevent souring. This was a major discovery and Pasteur showed brewers how to refine the right organisms for good beer. He proposed that heating milk to a high temperature before bottling it would prevent souring. This is now known as pasteurization.",
-        "All this had given Pasteur an iconic status throughout the world. After his research on fermentation, he refuted the principle of spontaneous generation. The theory that maggots, beetles and microbes could arise spontaneously from matter had always been a matter of speculation. Pasteur carried out ingenious experiments wiping out every argument in favor of spontaneous generation. In his famous experiment using the 'swan neck flask', fermented juice was put in a flask and after sterilization, the neck was heated, (this resembled the neck of a swan). The end of the neck was then sealed. If the flask was opened by pinching off the end of the neck, air would enter but dust would get trapped on the inside of the neck which was wet. The fluid, however, would still be germ free. If the flask was tipped over allowing the juice to touch the inside of the neck, microorganisms would grow instantly.",
-        "Pasteur's work with silkworm parasites and germs led to the proposal of the germ theory of disease. After visiting the hospital wards, he became more aware of the infections being spread by physicians from sick patients to the healthy patients. He compelled doctors to disinfect their instruments by boiling and steaming them. Surgeons were told to wash their hands and use disinfectant. At the time, countries were suffering from anthrax, which is a disease that affects cattle. He believed it was possible that if the animals were intentionally infected with a very mild case of the disease, this may be enough to prevent them from getting the disease later on. To prove this, he needed to test his theory on live animals. [A] They recovered and, when placed with cattle that did have the disease, they remained immune. [B] Pasteur's last major research success was the development of a vaccine against rabies. [C] Institutes were built and people were treated for the disease in them. Pasteur was a national hero in France. [D] He died in 1895 and was given a state funeral."
+        "All this had given Pasteur an iconic status throughout the world. After his research on fermentation, he refuted the principle of spontaneous generation. The theory that maggots, beetles and microbes could arise spontaneously from matter had always been a matter of speculation. Pasteur carried out **ingenious** experiments wiping out every argument in favor of spontaneous generation. In his famous experiment using the '**swan neck flask**', fermented juice was put in a flask and after sterilization, the neck was heated, (this resembled the neck of a swan). The end of the neck was then sealed. If the flask was opened by pinching off the end of the neck, air would enter but dust would get trapped on the inside of the neck which was wet. The fluid, however, would still be germ free. If the flask was tipped over allowing the juice to touch the inside of the neck, microorganisms would grow instantly.",
+        "Pasteur's work with silkworm parasites and germs led to the proposal of the germ theory of disease. **After visiting the hospital wards, he became more aware of the infections being spread by physicians from sick patients to the healthy patients**. He compelled doctors to disinfect their instruments by boiling and steaming them. Surgeons were told to wash their hands and use disinfectant. At the time, countries were suffering from anthrax, which is a disease that affects cattle. He believed it was possible that if the animals were intentionally infected with a very mild case of the disease, this may be enough to prevent them from getting the disease later on. To prove this, he needed to test his theory on live animals. [A] They recovered and, when placed with cattle that did have the disease, they remained immune. [B] Pasteur's last major research success was the development of a vaccine against rabies. [C] Institutes were built and people were treated for the disease in them. Pasteur was a national hero in France. [D] He died in 1895 and was given a state funeral."
       ],
       "questions": [
         {
           "id": "hcmue_r05_q31",
           "type": "vocab_in_context",
-          "question_text": "The word \"inactive\" in the passage is closest in meaning to _______.",
+          "question_text": "The word \"**inactive**\" in the passage is closest in meaning to _______.",
           "options": [
             {
               "key": "A",
@@ -922,7 +922,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "He observed that tartrate, when created in a laboratory, was optically inactive.",
+          "clue_sentence": "He observed that tartrate, when created in a laboratory, was optically **inactive**.",
           "explanation_vi": "Từ \"inactive\" trong ngữ cảnh khoa học này có nghĩa là không hoạt động (về mặt quang học), đồng nghĩa với motionless hoặc không di chuyển/không phản hồi. Các lựa chọn khác không phù hợp với ngữ cảnh quang học.",
           "paraphrase_analysis": {
             "question_phrase": "inactive",
@@ -986,7 +986,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 2,
-          "clue_sentence": "Pasteur proved that yeast was an organism which did not necessitate oxygen for fermentation to occur.",
+          "clue_sentence": "Pasteur proved that yeast was an organism which did not **necessitate** oxygen for fermentation to occur.",
           "explanation_vi": "Đoạn 3 nêu rõ Pasteur chứng minh rằng nấm men là một sinh vật không cần oxy để quá trình lên men diễn ra.",
           "paraphrase_analysis": {
             "question_phrase": "Yeast was an organism that did not need oxygen to work",
@@ -997,7 +997,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
         {
           "id": "hcmue_r05_q34",
           "type": "vocab_in_context",
-          "question_text": "The word \"necessitate\" in the passage is closest in meaning to _______.",
+          "question_text": "The word \"**necessitate**\" in the passage is closest in meaning to _______.",
           "options": [
             {
               "key": "A",
@@ -1018,7 +1018,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 2,
-          "clue_sentence": "Pasteur proved that yeast was an organism which did not necessitate oxygen for fermentation to occur.",
+          "clue_sentence": "Pasteur proved that yeast was an organism which did not **necessitate** oxygen for fermentation to occur.",
           "explanation_vi": "Từ \"necessitate\" có nghĩa là đòi hỏi, cần thiết, đồng nghĩa với \"require\". Các lựa chọn khác như facilitate (tạo điều kiện), produce (sản xuất), consume (tiêu thụ) không có nghĩa tương đương.",
           "paraphrase_analysis": {
             "question_phrase": "require",
@@ -1061,7 +1061,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
         {
           "id": "hcmue_r05_q36",
           "type": "inference",
-          "question_text": "Why does the author describe Pasteur's 'swan neck flask' experiment in the passage?",
+          "question_text": "Why does the author describe Pasteur's '**swan neck flask**' experiment in the passage?",
           "options": [
             {
               "key": "A",
@@ -1082,7 +1082,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 4,
-          "clue_sentence": "In his famous experiment using the 'swan neck flask', fermented juice was put in a flask and after sterilization, the neck was heated, (this resembled the neck of a swan).",
+          "clue_sentence": "In his famous experiment using the '**swan neck flask**', fermented juice was put in a flask and after sterilization, the neck was heated, (this resembled the neck of a swan).",
           "explanation_vi": "Tác giả mô tả thí nghiệm bình cổ thiên nga nhằm minh họa chi tiết cách mà Pasteur thực hiện và đưa ra các kết luận của ông để bác bỏ thuyết phát sinh tự sinh.",
           "paraphrase_analysis": {
             "question_phrase": "illustrate exactly how Pasteur determined his findings",
@@ -1093,7 +1093,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
         {
           "id": "hcmue_r05_q37",
           "type": "vocab_in_context",
-          "question_text": "The word \"ingenious\" in the passage is closest in meaning to_____.",
+          "question_text": "The word \"**ingenious**\" in the passage is closest in meaning to_____.",
           "options": [
             {
               "key": "A",
@@ -1114,7 +1114,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 4,
-          "clue_sentence": "Pasteur carried out ingenious experiments wiping out every argument in favor of spontaneous generation.",
+          "clue_sentence": "Pasteur carried out **ingenious** experiments wiping out every argument in favor of spontaneous generation.",
           "explanation_vi": "Từ \"ingenious\" có nghĩa là tài tình, sáng tạo, độc đáo, tương đương nghĩa với \"original\" (độc đáo, mới lạ).",
           "paraphrase_analysis": {
             "question_phrase": "original",
@@ -1146,7 +1146,7 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 5,
-          "clue_sentence": "After visiting the hospital wards, he became more aware of the infections being spread by physicians from sick patients to the healthy patients.",
+          "clue_sentence": "**After visiting the hospital wards, he became more aware of the infections being spread by physicians from sick patients to the healthy patients**.",
           "explanation_vi": "Câu tóm tắt đúng nhất ý nghĩa cốt lõi của việc bác sĩ lây truyền mầm bệnh từ bệnh nhân này sang bệnh nhân khác qua các dụng cụ không được khử trùng chính là đáp án C.",
           "paraphrase_analysis": {
             "question_phrase": "infections could be transmitted to healthy patients from dirty, non-sterile instruments",

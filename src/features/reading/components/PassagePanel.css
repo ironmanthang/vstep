@@ -119,31 +119,20 @@
 .passage-paragraphs-flow {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-}
-
-.passage-paragraph-row {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
-
-.paragraph-order-pill {
-  font-size: 11px;
-  font-weight: 700;
-  font-family: monospace;
-  color: var(--text-muted, #888);
-  user-select: none;
-  padding-top: 4px;
-  min-width: 22px;
+  gap: 16px;
 }
 
 .passage-paragraph-text {
   margin: 0;
-  flex: 1;
+  text-indent: 2em;
   line-height: 1.8;
   text-align: justify;
   text-justify: inter-word;
+}
+
+.passage-paragraph-text strong {
+  font-weight: 700;
+  color: inherit;
 }
 
 /* Evidence Highlighting */

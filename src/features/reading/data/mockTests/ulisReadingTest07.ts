@@ -306,7 +306,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
       "difficulty": "B2",
       "content_paragraphs": [
         "The Olympic Games have changed a lot since their origins in Ancient Greece. Today, athletes from countries all over the world take part and the Olympics are big business, watched by millions on television. Some things, though, have stayed the same. The athletes then could make a lot of money from winning, just like today's competitors. In the ancient Games, a great champion might have received as much as a year's pay for winning a race.",
-        "Another thing that hasn't changed is the search for an all-round champion, somebody who can defeat their opponents at a number of different sporting events. In the ancient Olympics, athletes competed in the pentathlon. This consisted of the long jump, the discus, the javelin, a running race and wrestling. The first winner, in 708 BC, was Lampis of Sparta, who must have been a great athlete to beat so many others from all over the Hellenic world. The pentathlon was an important part of the Olympics until Emperor Theodosius of Rome banned the Games in 393 AD.",
+        "Another thing that hasn't changed is the search for an all-round champion, somebody who can defeat their opponents at a number of different sporting events. In the ancient Olympics, athletes competed in the pentathlon. **This** consisted of the long jump, the discus, the javelin, a running race and wrestling. The first winner, in 708 BC, was Lampis of Sparta, who must have been a great athlete to beat so many others from all over the Hellenic world. The pentathlon was an important part of the Olympics until Emperor Theodosius of Rome banned the Games in 393 AD.",
         "The Stockholm Olympics of 1912 brought back this tradition of the search for all round greatness. The modern pentathlon was included (shooting, swimming, fencing, riding and running) and so was the modern decathlon (ten events), with the heptathlon (seven events) for women being introduced later. So what drives someone to take on this running, throwing, jumping challenge and push their body to its limits? I met American decathlete Bruce Thorpe in New York and told him he must have been crazy to take up the decathlon. He laughed.",
         "'Yes, I think I probably was. I could have done lots of different sports, but I chose the decathlon. It's very tough and it demands a lot of different skills. You have to train just as hard as other athletes, only you have to do it in ten different events! I think we're probably all a little crazy, but it's very satisfying in the end,' he said. I asked him to explain what happens in the decathlon.",
         "'The way it works is you complete each event and you get points, depending on how well you do in that event. At the end of two days, the person with the most points is the champion and takes the gold medal, the second person gets the silver and the third the bronze medal. We start with the 100 metres, the long jump, the shot put, the high jump and the 400 metres. The second day, it's the 110 metre hurdles, the discus, the javelin, the pole vault and the one that we all dread, the 1500 metres.' I asked him what made the 1500 metres such a struggle. 'All the other events demand speed or strength. With the long race, it's stamina. Really, decathletes aren't built for that event.'",
@@ -349,7 +349,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
         {
           "id": "ulis_r07_q12",
           "type": "vocab_in_context",
-          "question_text": "What does the word \" This \" in line 8 refer to?",
+          "question_text": "What does the word \"** This **\" in line 8 refer to?",
           "options": [
             {
               "key": "A",
@@ -370,7 +370,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 1,
-          "clue_sentence": "In the ancient Olympics, athletes competed in the pentathlon. This consisted of the long jump, the discus, the javelin, a running race and wrestling.",
+          "clue_sentence": "In the ancient Olympics, athletes competed in the pentathlon. **This** consisted of the long jump, the discus, the javelin, a running race and wrestling.",
           "explanation_vi": "Từ \"This\" ở đầu câu thứ ba thay thế cho danh từ \"the pentathlon\" (môn phối hợp 5 môn) được nhắc đến ở câu ngay trước đó."
         },
         {
@@ -397,7 +397,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 1,
-          "clue_sentence": "This consisted of the long jump, the discus, the javelin, a running race and wrestling.",
+          "clue_sentence": "**This** consisted of the long jump, the discus, the javelin, a running race and wrestling.",
           "explanation_vi": "Môn pentathlon cổ đại bao gồm nhảy xa (long jump - tương ứng với jump far), ném đĩa và ném lao (discus, javelin - tương ứng với throw things), chạy (running race - tương ứng với run fast) và đấu vật. Không có môn nhảy cao (jump high)."
         },
         {
@@ -598,7 +598,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
       "word_count": 560,
       "difficulty": "B2",
       "content_paragraphs": [
-        "A 27-year-old graphic designer from Oxfordshire in England completed a record-breaking journey across Australia yesterday. It was a 5,800 kilometre odyssey - and he travelled the whole distance on a skateboard. David Cornthwaite, who started skateboarding less than two years ago, decided on his epic journey after waking up one morning and realising he hated his job. 'I thought, the only thing keeping me going is the skate to and from work. I was a bit disillusioned and I was looking for something new,' he said. 'I saw a Lonely Planet guide to Australia. There was a map on the back. Perth was on one side and Brisbane on the other and I thought, \"that'll do\".'",
+        "A 27-year-old graphic designer from Oxfordshire in England completed a record-breaking journey across Australia yesterday. It was a 5,800 kilometre odyssey - and he travelled the whole distance on a skateboard. David Cornthwaite, who started skateboarding less than two years ago, decided on his epic journey after waking up one morning and realising he hated his job. 'I thought, the only thing keeping me going is the skate to and from work. I was a bit **disillusioned** and I was looking for something new,' he said. 'I saw a Lonely Planet guide to Australia. There was a map on the back. Perth was on one side and Brisbane on the other and I thought, \"that'll do\".'",
         "He decided to prepare by skateboarding from John O'Groats to Lands End: the two points furthest apart on the British mainland. That 1.442 kilometre trek, which he finished in June, took just over a month, during which an infected blister swelled to the 'size of a tennis ball'.",
         "Crossing Australia on a skateboard brought unique challenges. The wind caused by huge road trains, the articulated lorries that thunder across the Outback, was so powerful that he was sometimes blown off his board. Multiple blisters and aching ankles, toes and feet, have kept him in almost constant pain for the last six weeks. 'I feel like an old man. I'm not sure that anyone has ever had this many blisters,' he said. Temperatures of 40°C and above mean that he has used more than a dozen tubes of factor 30 sunscreen. 'There have been moments where I thought \"this is ridiculous, I have to rest\", but I never contemplated giving up.' He has worn through 13 pair of shoes and has an over-developed right calf muscle which he compares to 'a giant chicken fillet'.",
         "Skating an average of 50 kilometres a day and hitting speeds of up to 50kph on downhill runs, he left Perth, Western Australia, and skated across the fearsome Nullarbor Plain into South Australia. After reaching Adelaide he made his way to Melbourne and from there to Sydney. A support team of seven people trailed him all the way in a four-wheel drive vehicle, which included camping equipment for night stops. The journey has smashed the previous record for a long-distance skateboard, set by an American, Jack Smith, who covered 4,800 kilometres across the US in 2003.",
@@ -636,7 +636,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
         {
           "id": "ulis_r07_q22",
           "type": "vocab_in_context",
-          "question_text": "The word \"disillusioned\" in line 5 can be best replaced by ...............",
+          "question_text": "The word \"**disillusioned**\" in line 5 can be best replaced by ...............",
           "options": [
             {
               "key": "A",
@@ -657,7 +657,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "I was a bit disillusioned and I was looking for something new,' he said.",
+          "clue_sentence": "I was a bit **disillusioned** and I was looking for something new,' he said.",
           "explanation_vi": "Từ 'disillusioned' có nghĩa là vỡ mộng, thất vọng về một thực tế nào đó (ở đây là công việc của anh ấy). Từ có nghĩa gần nhất là 'disappointed' (thất vọng)."
         },
         {
@@ -885,10 +885,10 @@ export const ULIS_READING_TEST_07: ReadingTest = {
       "word_count": 389,
       "difficulty": "C1",
       "content_paragraphs": [
-        "'Footballers and musicians are in the same business. They both do stressful jobs in front of critical audiences. The only difference is that football crowds are noisier.' So says Rod Franks. And he should know. Franks started his working life with Leeds United Football Club, neatly changed direction, started playing the trumpet instead of football, and is now principal trumpeter with the LSO (London Symphony Orchestra). Franks might have made a further observation about the similarities between orchestras and football clubs: it is playing away that presents the real challenges.",
+        "'Footballers and musicians are in the same business. They both do stressful jobs in front of critical audiences. The only difference is that football crowds are noisier.' So says Rod Franks. And he should know. Franks started his working life with Leeds United Football Club, neatly changed direction, started playing the trumpet instead of football, and is now **principal** trumpeter with the LSO (London Symphony Orchestra). Franks might have made a further observation about the similarities between orchestras and football clubs: it is playing away that presents the real challenges.",
         "London's oldest orchestra has been playing away since it was formed almost a century ago. Nowadays, the orchestra's trips abroad are kept to tours of a maximum of two and a half weeks. But since touring is clearly expensive and presents major organisational and technical problems, why bother to tour at all? Clive Gillinson, the managing director, says: 'A great international orchestra needs to work with the greatest conductors and soloists. No recording company will record a conductor or soloist if he or she is only known in one territory - they need an international reputation. So for the recording side to work, you have to visit the key markets; you need to tour.'",
-        "By touring with projects or festivals, Gillinson is able to create an event, not just provide a series of concerts. It is more expensive to do, but when you leave town you are not so easily forgotten.",
-        "For Sue Mallet, the orchestra's administrator, the difficulties of her job lie in getting a symphony orchestra and its instruments on stage, on time and in one piece. However well she plans each tour, and she does her planning with scientific accuracy, events sometimes take an upper hand. On one occasion a concert had been advertised for the wrong night, and on another the lorry carrying the instruments from the airport to the concert hall broke down and got stuck in snow.",
+        "By touring with projects or festivals, Gillinson is able to create an event, not just provide a series of concerts. **It** is more expensive to do, but when you leave town you are not so easily forgotten.",
+        "For Sue Mallet, the orchestra's administrator, the difficulties of her job lie in getting a symphony orchestra and its instruments on stage, on time and in one piece. However well she plans each tour, and she does her planning **with scientific accuracy**, events sometimes take an upper hand. On one occasion a concert had been advertised for the wrong night, and on another the lorry carrying the instruments from the airport to the concert hall broke down and got stuck in snow.",
         "It is a tiring and stressful business flying around the world, and yet on balance it is one of the rewards of the job. Certain moments are unforgettable. At the end of a concert in Moscow an enthusiastic audience had brought the orchestra to its feet. As one of the musicians was about to sit down, an elderly lady in the front row pressed a piece of paper into his hand. It said, in words of simple English, what lovely music the orchestra had made."
       ],
       "questions": [
@@ -948,7 +948,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Franks started his working life with Leeds United Football Club, neatly changed direction, started playing the trumpet instead of football, and is now principal trumpeter with the LSO (London Symphony Orchestra).",
+          "clue_sentence": "Franks started his working life with Leeds United Football Club, neatly changed direction, started playing the trumpet instead of football, and is now **principal** trumpeter with the LSO (London Symphony Orchestra).",
           "explanation_vi": "Đoạn 1 cho biết Rod Franks bắt đầu sự nghiệp với câu lạc bộ bóng đá Leeds United, sau đó đổi hướng ('neatly changed direction') sang chơi kèn trumpet thay vì bóng đá. Điều này có nghĩa là ông đã chuyển từ nghề này sang nghề khác ('switched from one career to another').",
           "paraphrase_analysis": {
             "question_phrase": "switched from one career to another",
@@ -980,13 +980,13 @@ export const ULIS_READING_TEST_07: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Franks started his working life with Leeds United Football Club, neatly changed direction, started playing the trumpet instead of football, and is now principal trumpeter with the LSO (London Symphony Orchestra).",
+          "clue_sentence": "Franks started his working life with Leeds United Football Club, neatly changed direction, started playing the trumpet instead of football, and is now **principal** trumpeter with the LSO (London Symphony Orchestra).",
           "explanation_vi": "Theo đoạn 1, trước khi gia nhập LSO, Rod Franks bắt đầu cuộc đời làm việc của mình với Câu lạc bộ bóng đá Leeds United ('Leeds United Football Club')."
         },
         {
           "id": "ulis_r07_q34",
           "type": "vocab_in_context",
-          "question_text": "The word \"principal\" in line 4 can be best replaced by ....................",
+          "question_text": "The word \"**principal**\" in line 4 can be best replaced by ....................",
           "options": [
             {
               "key": "A",
@@ -1007,7 +1007,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "Franks started his working life with Leeds United Football Club, neatly changed direction, started playing the trumpet instead of football, and is now principal trumpeter with the LSO (London Symphony Orchestra).",
+          "clue_sentence": "Franks started his working life with Leeds United Football Club, neatly changed direction, started playing the trumpet instead of football, and is now **principal** trumpeter with the LSO (London Symphony Orchestra).",
           "explanation_vi": "Trong ngữ cảnh này, 'principal trumpeter' nghĩa là người chơi kèn trumpet chính/chủ chốt của dàn nhạc. Do đó, từ 'principal' đồng nghĩa với 'main' (chính)."
         },
         {
@@ -1077,7 +1077,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
         {
           "id": "ulis_r07_q37",
           "type": "inference",
-          "question_text": "What does 'It' in line 15 refer to?",
+          "question_text": "What does '**It**' in line 15 refer to?",
           "options": [
             {
               "key": "A",
@@ -1130,7 +1130,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 3,
-          "clue_sentence": "However well she plans each tour, and she does her planning with scientific accuracy, events sometimes take an upper hand.",
+          "clue_sentence": "However well she plans each tour, and she does her planning **with scientific accuracy**, events sometimes take an upper hand.",
           "explanation_vi": "Đoạn 4 cho biết dù cô ấy lên kế hoạch tốt đến đâu, các sự kiện khách quan đôi khi vẫn chiếm ưu thế ('events sometimes take an upper hand'), ví dụ như quảng cáo sai ngày hay xe chở nhạc cụ bị hỏng trong tuyết. Điều này có nghĩa là sự sắp xếp của cô ấy có thể bị ảnh hưởng bởi các hoàn cảnh bên ngoài ('affected by external circumstances').",
           "paraphrase_analysis": {
             "question_phrase": "affected by external circumstances",
@@ -1141,7 +1141,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
         {
           "id": "ulis_r07_q39",
           "type": "vocab_in_context",
-          "question_text": "What does the phrase 'with scientific accuracy' (line 18) suggest about Sue Mallet's planning?",
+          "question_text": "What does the phrase '**with scientific accuracy**' (line 18) suggest about Sue Mallet's planning?",
           "options": [
             {
               "key": "A",
@@ -1162,7 +1162,7 @@ export const ULIS_READING_TEST_07: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 3,
-          "clue_sentence": "However well she plans each tour, and she does her planning with scientific accuracy, events sometimes take an upper hand.",
+          "clue_sentence": "However well she plans each tour, and she does her planning **with scientific accuracy**, events sometimes take an upper hand.",
           "explanation_vi": "Cụm từ 'with scientific accuracy' (với độ chính xác khoa học) ám chỉ việc lập kế hoạch cực kỳ chi tiết, tỉ mỉ và hoàn hảo đến từng chi tiết nhỏ nhất ('The details are excellent')."
         },
         {

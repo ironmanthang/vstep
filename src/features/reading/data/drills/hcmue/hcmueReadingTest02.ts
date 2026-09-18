@@ -17,9 +17,9 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
       "difficulty": "B1",
       "content_paragraphs": [
         "Scientists do not yet thoroughly understand just how the body of an individual becomes sensitive to a substance that is harmless or even wholesome for the average person. Milk, wheat, and egg, for example, rank among the most healthful and widely used foods. Yet these foods can cause persons sensitive to them to suffer greatly. At first, the body of the individual is not harmed by coming into contact with the substance. After a varying interval of time, usually longer than a few weeks, the body becomes sensitive to it, and an allergy has begun to develop.",
-        "Sometimes it's hard to figure out if you have a food allergy, since it can show up so many different ways. Your symptoms could be caused by many other problems. You may have rashes, hives, joint pains mimicking arthritis, headaches, irritability, or depression. The most common food allergies are to milk, eggs, seafood, wheat, nuts, seeds, chocolate, oranges, and tomatoes. Many of these allergies will not develop if these foods are not fed to an infant until her or his intestines mature at around seven months. Breast milk also tends to be protective.",
-        "Migraines can be set off by foods containing tyramine, phenethylamine, monosodium glutamate, or sodium nitrate. Common foods which contain these are chocolate, aged cheeses, sour cream, red wine, pickled herring, chicken livers, avocados, ripe bananas, cured meats, many Oriental and prepared foods (read the labels!). Some people have been successful in treating their migraines with supplements of B-vitamins, particularly B6 and niacin.",
-        "Children who are hyperactive may benefit from eliminating food additives, especially colorings, and foods high in salicylates from their diets. A few of these are almonds, green peppers, peaches, tea, grapes. This is the diet made popular by Benjamin Feingold, who has written the book Why Child is Hyperactive. Other researchers have had mixed results when testing whether the diet is effective."
+        "Sometimes it's hard to figure out if you have a food allergy, since it can show up so many different ways. Your **symptoms** could be caused by many other problems. You may have rashes, hives, joint pains mimicking arthritis, headaches, irritability, or depression. The most common food allergies are to milk, eggs, seafood, wheat, nuts, seeds, chocolate, oranges, and tomatoes. Many of these allergies will not develop if these foods are not fed to an infant until her or his intestines mature at around seven months. Breast milk also tends to be protective.",
+        "Migraines can be **set off** by foods containing tyramine, phenethylamine, monosodium glutamate, or sodium nitrate. Common foods which contain these are chocolate, aged cheeses, sour cream, red wine, pickled herring, chicken livers, avocados, ripe bananas, cured meats, many Oriental and prepared foods (read the labels!). Some people have been successful in treating their migraines with supplements of B-vitamins, particularly B6 and niacin.",
+        "Children who are **hyperactive** may benefit from eliminating food additives, especially colorings, and foods high in salicylates from their diets. A few of **these** are almonds, green peppers, peaches, tea, grapes. This is the diet made popular by Benjamin Feingold, who has written the book Why Child is Hyperactive. Other researchers have had mixed results when testing whether the diet is effective."
       ],
       "word_count": 328,
       "questions": [
@@ -79,7 +79,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "Your symptoms could be caused by many other problems.",
+          "clue_sentence": "Your **symptoms** could be caused by many other problems.",
           "explanation_vi": "Bài đọc chỉ rõ rằng việc chẩn đoán dị ứng thực phẩm rất khó vì các triệu chứng của nó có thể do nhiều vấn đề khác gây ra (giống với các vấn đề khác). Do đó, đáp án C là chính xác.",
           "paraphrase_analysis": {
             "question_phrase": "the similarity of symptoms of the allergy to other problems",
@@ -90,7 +90,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q03",
           "type": "vocab_in_context",
-          "question_text": "The word \"symptoms\" in the passage is closest in meaning to",
+          "question_text": "The word \"**symptoms**\" in the passage is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -122,7 +122,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q04",
           "type": "vocab_in_context",
-          "question_text": "The phrase \"set off\" in the passage is closest in meaning to",
+          "question_text": "The phrase \"**set off**\" in the passage is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -143,7 +143,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 2,
-          "clue_sentence": "Migraines can be set off by foods containing tyramine, phenethylamine, monosodium glutamate, or sodium nitrate.",
+          "clue_sentence": "Migraines can be **set off** by foods containing tyramine, phenethylamine, monosodium glutamate, or sodium nitrate.",
           "explanation_vi": "Cụm từ 'set off' trong ngữ cảnh này mang nghĩa kích hoạt, gây ra bệnh đau nửa đầu, đồng nghĩa với 'triggered'. Các từ khác nghĩa là làm giảm (relieved), nhận diện (identified), tránh (avoided).",
           "paraphrase_analysis": {
             "question_phrase": "set off",
@@ -186,7 +186,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q06",
           "type": "vocab_in_context",
-          "question_text": "The word \"hyperactive\" in the passage is closest in meaning to",
+          "question_text": "The word \"**hyperactive**\" in the passage is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -207,7 +207,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 3,
-          "clue_sentence": "Children who are hyperactive may benefit from eliminating food additives, especially colorings, and foods high in salicylates from their diets.",
+          "clue_sentence": "Children who are **hyperactive** may benefit from eliminating food additives, especially colorings, and foods high in salicylates from their diets.",
           "explanation_vi": "Từ 'hyperactive' có tiền tố 'hyper-' chỉ mức độ quá mức, nghĩa là quá hiếu động, hoạt động thái quá ('overly active').",
           "paraphrase_analysis": {
             "question_phrase": "hyperactive",
@@ -250,7 +250,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q08",
           "type": "factual_detail",
-          "question_text": "The word \"these\" in the passage refers to",
+          "question_text": "The word \"**these**\" in the passage refers to",
           "options": [
             {
               "key": "A",
@@ -271,7 +271,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 3,
-          "clue_sentence": "Children who are hyperactive may benefit from eliminating food additives, especially colorings, and foods high in salicylates from their diets. A few of these are almonds, green peppers, peaches, tea, grapes.",
+          "clue_sentence": "Children who are **hyperactive** may benefit from eliminating food additives, especially colorings, and foods high in salicylates from their diets. A few of **these** are almonds, green peppers, peaches, tea, grapes.",
           "explanation_vi": "Cụm 'A few of these are almonds, green peppers, peaches, tea, grapes' dùng để chỉ các loại thực phẩm giàu salicylates vừa được nhắc đến ngay trước đó.",
           "paraphrase_analysis": {
             "question_phrase": "these",
@@ -352,8 +352,8 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
       "difficulty": "B2",
       "content_paragraphs": [
         "Until recently, most American entrepreneurs were men. Discrimination against women in business, the demands of caring for families, and lack of business training had kept the number of women entrepreneurs small. Now, however, businesses owned by women account for more than $40 billion in annual revenues, and this figure is likely to continue rising throughout the 1990s. As Carolyn Doppelt Gray, an official of the Small Business Administration, has noted, \"The 1970s was the decade of women entering management, and the 1980s turned out to be the decade of the woman entrepreneur.\"",
-        "What are some of the factors behind this trend? For one thing, as more women earn advanced degrees in business and enter the corporate world, they are finding obstacles. Women are still excluded from most executive suites. Charlotte Taylor, a management consultant, had noted, \"In the 1970s women believed if they got an MBA and worked hard they could become chairman of the board. Now they've found out that isn't going to happen, so they go out on their own.\"",
-        "In the past, most women entrepreneurs worked in \"women's\" fields cosmetics and clothing, for example. But this is changing. Consider ASK Computer Systems, a $22-million-a-year computer software business. It was founded in 1973 by Sandra Kurtzig, who was then a housewife with degrees in math and engineering. When Kurtzig founded the business, her first product was software that let weekly newspapers keep tabs on their newspaper carriers and her office was a bedroom at home, with a shoebox under the bed to hold the company's cash. After she succeeded with the newspaper system, she hired several bright computer-science graduates to develop additional programs. When these were marketed and sold, ASK began to grow. It now has 200 employees, and Sandra Kurtzig owns $66.9 million of stock.",
+        "What are some of the factors behind this trend? For one thing, as more women earn advanced degrees in business and enter the corporate world, they are finding obstacles. Women are still **excluded** from most executive suites. Charlotte Taylor, a management consultant, had noted, \"In the 1970s women believed if they got an MBA and worked hard they could become chairman of the board. Now they've found out **that** isn't going to happen, so they go out on their own.\"",
+        "In the past, most women entrepreneurs worked in \"women's\" fields cosmetics and clothing, for example. But **this** is changing. Consider ASK Computer Systems, a $22-million-a-year computer software business. It was founded in 1973 by Sandra Kurtzig, who was then a housewife with degrees in math and engineering. When Kurtzig founded the business, her first product was software that let weekly newspapers **keep tabs on** their newspaper carriers and her office was a bedroom at home, with a **shoebox under the bed** to hold the company's cash. After she succeeded with the newspaper system, she hired several bright computer-science graduates to develop additional programs. When these were marketed and sold, ASK began to grow. It now has 200 employees, and Sandra Kurtzig owns $66.9 million of stock.",
         "Of course, many women who start their own businesses fail, just as men often do. They still face hurdles in the business world, especially problems in raising money; the banking and finance world is still dominated by men, and old attitudes die hard. Most businesses owned by women are still quite small. But the situation is changing; there are likely to be many more Sandra Kurtzigs in the years ahead."
       ],
       "questions": [
@@ -387,7 +387,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q12",
           "type": "vocab_in_context",
-          "question_text": "The word \"excluded\" in the passage is closest in meaning to _________.",
+          "question_text": "The word \"**excluded**\" in the passage is closest in meaning to _________.",
           "options": [
             {
               "key": "A",
@@ -408,7 +408,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "Women are still excluded from most executive suites.",
+          "clue_sentence": "Women are still **excluded** from most executive suites.",
           "explanation_vi": "Từ \"excluded\" có nghĩa là bị loại trừ, không được phép vào. Trong các lựa chọn, \"not permitted in\" (không được phép vào) đồng nghĩa với từ này. Các lựa chọn còn lại không phù hợp."
         },
         {
@@ -441,7 +441,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q14",
           "type": "factual_detail",
-          "question_text": "The word \"that\" in the passage refers to_____.",
+          "question_text": "The word \"**that**\" in the passage refers to_____.",
           "options": [
             {
               "key": "A",
@@ -462,7 +462,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "In the 1970s women believed if they got an MBA and worked hard they could become chairman of the board. Now they've found out that isn't going to happen, so they go out on their own.",
+          "clue_sentence": "In the 1970s women believed if they got an MBA and worked hard they could become chairman of the board. Now they've found out **that** isn't going to happen, so they go out on their own.",
           "explanation_vi": "Từ \"that\" trong câu \"Now they've found out that isn't going to happen\" dùng để thay thế cho mệnh đề đứng trước: việc phụ nữ trở thành chủ tịch hội đồng quản trị (become chairman of the board) là điều không xảy ra như họ từng kỳ vọng. Do đó, A là đáp án chính xác."
         },
         {
@@ -489,13 +489,13 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "In the 1970s women believed if they got an MBA and worked hard they could become chairman of the board. Now they've found out that isn't going to happen, so they go out on their own.",
+          "clue_sentence": "In the 1970s women believed if they got an MBA and worked hard they could become chairman of the board. Now they've found out **that** isn't going to happen, so they go out on their own.",
           "explanation_vi": "Charlotte Taylor chỉ ra rằng phụ nữ những năm 1970 từng tin rằng chỉ cần có bằng MBA và làm việc chăm chỉ là có thể lên làm chủ tịch, nhưng thực tế không phải vậy. Điều này cho thấy họ đã không thực tế về cơ hội thăng tiến của mình trong quản lý kinh doanh (unrealistic about their opportunities in business management)."
         },
         {
           "id": "hcmue_r02_q16",
           "type": "factual_detail",
-          "question_text": "The author mentions the \"shoebox under the bed\" in the third paragraph in order to_____.",
+          "question_text": "The author mentions the \"**shoebox under the bed**\" in the third paragraph in order to_____.",
           "options": [
             {
               "key": "A",
@@ -516,13 +516,13 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 2,
-          "clue_sentence": "When Kurtzig founded the business, her first product was software that let weekly newspapers keep tabs on their newspaper carriers and her office was a bedroom at home, with a shoebox under the bed to hold the company's cash.",
+          "clue_sentence": "When Kurtzig founded the business, her first product was software that let weekly newspapers **keep tabs on** their newspaper carriers and her office was a bedroom at home, with a **shoebox under the bed** to hold the company's cash.",
           "explanation_vi": "Việc dùng hộp giày để đựng tiền mặt của công ty (shoebox under the bed) được tác giả nêu ra để nhấn mạnh rằng giai đoạn đầu, nguồn lực tài chính của doanh nghiệp Sandra Kurtzig rất hạn hẹp (initially the financial resources were limited)."
         },
         {
           "id": "hcmue_r02_q17",
           "type": "factual_detail",
-          "question_text": "The word \"this\" in the passage refers to_____.",
+          "question_text": "The word \"**this**\" in the passage refers to_____.",
           "options": [
             {
               "key": "A",
@@ -543,13 +543,13 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 2,
-          "clue_sentence": "In the past, most women entrepreneurs worked in \"women's\" fields cosmetics and clothing, for example. But this is changing.",
+          "clue_sentence": "In the past, most women entrepreneurs worked in \"women's\" fields cosmetics and clothing, for example. But **this** is changing.",
           "explanation_vi": "Từ \"this\" trong \"But this is changing\" ám chỉ việc trước đây hầu hết nữ doanh nhân chỉ làm việc trong các lĩnh vực truyền thống của phụ nữ (như mỹ phẩm và quần áo), và thực trạng đó đang thay đổi."
         },
         {
           "id": "hcmue_r02_q18",
           "type": "vocab_in_context",
-          "question_text": "The expression \"keep tabs on\" in the passage is closest in meaning to ____.",
+          "question_text": "The expression \"**keep tabs on**\" in the passage is closest in meaning to ____.",
           "options": [
             {
               "key": "A",
@@ -570,7 +570,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 2,
-          "clue_sentence": "When Kurtzig founded the business, her first product was software that let weekly newspapers keep tabs on their newspaper carriers and her office was a bedroom at home, with a shoebox under the bed to hold the company's cash.",
+          "clue_sentence": "When Kurtzig founded the business, her first product was software that let weekly newspapers **keep tabs on** their newspaper carriers and her office was a bedroom at home, with a **shoebox under the bed** to hold the company's cash.",
           "explanation_vi": "Cụm từ \"keep tabs on\" có nghĩa là theo dõi, kiểm soát hoặc ghi chép thông tin về ai đó/cái gì đó. Do đó, \"keep records of\" (lưu giữ hồ sơ/ghi chép về) là nghĩa gần nhất."
         },
         {
@@ -637,13 +637,13 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
       "difficulty": "B2",
       "content_paragraphs": [
         "Symbiosis is a close ecological relationship between two dissimilar organisms. They assist each other with feeding, defending, and reproducing. In symbiosis, at least one of the pair benefits from the relationship. The other may be injured (parasitism), unaltered (commensalism), or may also benefit (mutualism).",
-        "An interesting mutually dependent relationship exists between the pine and the pinon jay. Blue pinon jays settle on the tops of pine trees and pick at the dark round seeds from the sticky cones. They store the seeds in their throats, fly off and hide them somewhere, and then return to repeat the process again. It seems the reproductive cycle of a pine jay corresponds with the ripening of the pine's seed. Similarly, the pine is dependent on the pinon jays for distribution of the seeds.",
+        "An interesting mutually dependent relationship exists between the pine and the pinon jay. Blue pinon jays settle on the tops of pine trees and pick at the dark round seeds from the sticky cones. They store the seeds in their throats, fly off and hide them somewhere, and then return to repeat the process again. It seems the reproductive cycle of a pine jay **corresponds** with the ripening of the pine's seed. Similarly, the pine is dependent on the pinon jays for distribution of the seeds.",
         "Seeds are stored in the bark of a tree or in the ground. Using their long bills, pinon jays plant and store them for later consumption. Their throats can expand to hold a large number of seeds; one pinon jay has been reported carrying 50 seeds in one trip. After they have planted the seeds, they return to eat them. Using their bills like a woodpecker, they hammer the seed until the shell breaks. Any unrecovered nuts are then grown into new trees. This fascinating relationship has been ongoing for thousands of years.",
-        "When both species benefit each other, this is called mutualism. An example of mutualism is a plant and fungi. The fungus occupies the cortex cells of the secondary roots of the plant. This relationship is called a 'mycorrhiza.' It helps the plant absorb inorganic nitrogen and phosphorus from the soil. Some fungi also produce antibiotics which may prevent the invasion of parasitic fungi and bacteria. Another example of mutualism is pollination. Bees carry pollen from one plant to the next when they seek out plants for nectar. They feed themselves on the nectar, and the plants reproduce after fertilization by the pollen from other plants.",
+        "When both species benefit each other, this is called mutualism. An example of mutualism is a plant and fungi. The fungus occupies the cortex cells of the secondary roots of the plant. This relationship is called a 'mycorrhiza.' **It** helps the plant absorb inorganic nitrogen and phosphorus from the soil. Some fungi also produce antibiotics which may prevent the invasion of parasitic fungi and bacteria. Another example of mutualism is pollination. Bees carry pollen from one plant to the next when they seek out plants for nectar. They feed themselves on the nectar, and the plants reproduce after fertilization by the pollen from other plants.",
         "Mutualism can also bring together two very different organisms, for example, a buffalo and an ox bird. These birds journey on the backs of African buffalo eating their parasites. The bird receives food, and the buffalo is rid of irritating insects. There are also a number of fish that provide an excellent example of mutualism. Known as 'cleaner fish,' these fish get rid of parasites and dead skin found on other fish. The best-known example is the 'cleaner wrasse,' which dwells in the Pacific and Indian oceans. They clean large predatory fish by eating tissue and parasites off their skin. This relationship provides food and protection for the wrasse and several health benefits for the other fish.",
-        "The other two types of symbiosis, besides mutualism, are commensalism and parasitism. [A] Commensalism refers to a symbiotic relationship where one organism eats the unused food of another. [B] One benefits, but the other is not affected. Examples include the remora and the shark. The remora attaches itself to the shark, when the shark feeds itself, the remora picks up scraps. [C] One example of commensalism in humans is bacteria living in our intestines that feed on food in our gut. [D]",
-        "In parasitism, one organism benefits and the other is harmed. Parasites live off the body of other organisms and receive nourishment from their tissues, while also inflicting damage on their hosts. Plants are parasitized by bacteria, fungi, and a handful of other plants. Parasites cause harm by entering the tissue of the host for their own nutritional benefit.",
-        "None of these relationships are fixed, and it is likely that what starts as a parasitic relationship may gradually evolve into a mutualistic one. For example, in 1966, amebas were discovered that had become infected with bacteria. However, after five years, it was found that the core of the amebas had become dependent on the bacteria; thus, parasitism had evolved into mutualism. Unfortunately, the inverse is also possible; mutualistic associations may evolve into parasitic ones."
+        "The other two types of symbiosis, besides mutualism, are commensalism and parasitism. [A] Commensalism refers to a symbiotic relationship where one organism eats the unused food of another. [B] One benefits, but the other is not affected. Examples include **the remora and the shark**. The remora attaches itself to the shark, when the shark feeds itself, the remora picks up scraps. [C] One example of commensalism in humans is bacteria living in our intestines that feed on food in our gut. [D]",
+        "In parasitism, one organism benefits and the other is harmed. **Parasites live off the body of other organisms and receive nourishment from their tissues, while also inflicting damage on their hosts.** Plants are parasitized by bacteria, fungi, and a handful of other plants. Parasites cause harm by entering the tissue of the host for their own nutritional benefit.",
+        "None of these relationships are fixed, and it is likely that what starts as a parasitic relationship may **gradually** evolve into a mutualistic one. For example, in 1966, amebas were discovered that had become infected with bacteria. However, after five years, it was found that the core of the amebas had become dependent on the bacteria; thus, parasitism had evolved into mutualism. Unfortunately, the inverse is also possible; mutualistic associations may evolve into parasitic ones."
       ],
       "questions": [
         {
@@ -681,7 +681,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q22",
           "type": "vocab_in_context",
-          "question_text": "The word \"corresponds\" in the passage is closest in meaning to __________.",
+          "question_text": "The word \"**corresponds**\" in the passage is closest in meaning to __________.",
           "options": [
             {
               "key": "A",
@@ -702,7 +702,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "It seems the reproductive cycle of a pine jay corresponds with the ripening of the pine's seed.",
+          "clue_sentence": "It seems the reproductive cycle of a pine jay **corresponds** with the ripening of the pine's seed.",
           "explanation_vi": "Từ \"corresponds\" trong ngữ cảnh này mang nghĩa tương ứng, phù hợp hoặc trùng khớp với chu kỳ sinh sản của loài chim và thời điểm chín của hạt thông. Do đó, từ đồng nghĩa gần nhất là \"matches\" (đáp án A). Các lựa chọn khác không phù hợp về nghĩa."
         },
         {
@@ -740,7 +740,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q24",
           "type": "factual_detail",
-          "question_text": "The word \"It\" in the passage refers to __________.",
+          "question_text": "The word \"**It**\" in the passage refers to __________.",
           "options": [
             {
               "key": "A",
@@ -761,7 +761,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 3,
-          "clue_sentence": "This relationship is called a 'mycorrhiza.' It helps the plant absorb inorganic nitrogen and phosphorus from the soil.",
+          "clue_sentence": "This relationship is called a 'mycorrhiza.' **It** helps the plant absorb inorganic nitrogen and phosphorus from the soil.",
           "explanation_vi": "Trong đoạn 4, câu ngay trước đó giới thiệu mối quan hệ này được gọi là 'mycorrhiza' (nấm rễ). Đại từ 'It' đại chủ ngữ thay thế cho 'mycorrhiza' để chỉ mối quan hệ giúp thực vật hấp thụ nitơ và phốt pho vô cơ từ đất. Do đó, đáp án C là chính xác."
         },
         {
@@ -799,7 +799,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q26",
           "type": "author_attitude",
-          "question_text": "The author mentions \"the remora and the shark\" in the passage in order to________.",
+          "question_text": "The author mentions \"**the remora and the shark**\" in the passage in order to________.",
           "options": [
             {
               "key": "A",
@@ -820,7 +820,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 5,
-          "clue_sentence": "Examples include the remora and the shark. The remora attaches itself to the shark, when the shark feeds itself, the remora picks up scraps.",
+          "clue_sentence": "Examples include **the remora and the shark**. The remora attaches itself to the shark, when the shark feeds itself, the remora picks up scraps.",
           "explanation_vi": "Tác giả nhắc đến cá ép (remora) và cá mập trong đoạn 6 nhằm làm ví dụ minh họa cho mối quan hệ hội sinh (commensalism), nơi một bên được lợi (cá ép ăn thức ăn thừa của cá mập) còn bên kia không bị ảnh hưởng. Tuy nhiên, theo đáp án chính thức từ đề thi, lựa chọn B được định chuẩn là đáp án đúng cho câu hỏi này.",
           "paraphrase_analysis": {
             "question_phrase": "demonstrate a connection between an active parasite picker and host",
@@ -863,7 +863,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q28",
           "type": "vocab_in_context",
-          "question_text": "The word \"gradually\" in the passage is closest in meaning to________.",
+          "question_text": "The word \"**gradually**\" in the passage is closest in meaning to________.",
           "options": [
             {
               "key": "A",
@@ -884,7 +884,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 7,
-          "clue_sentence": "None of these relationships are fixed, and it is likely that what starts as a parasitic relationship may gradually evolve into a mutualistic one.",
+          "clue_sentence": "None of these relationships are fixed, and it is likely that what starts as a parasitic relationship may **gradually** evolve into a mutualistic one.",
           "explanation_vi": "Từ \"gradually\" có nghĩa là từ từ, từng bước một. Từ đồng nghĩa gần nhất với nó trong các lựa chọn là \"slowly\" (chậm rãi, từ từ). Do đó, đáp án A là chính xác."
         },
         {
@@ -911,7 +911,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 5,
-          "clue_sentence": "Examples include the remora and the shark. The remora attaches itself to the shark, when the shark feeds itself, the remora picks up scraps.",
+          "clue_sentence": "Examples include **the remora and the shark**. The remora attaches itself to the shark, when the shark feeds itself, the remora picks up scraps.",
           "explanation_vi": "Đoạn 6 nêu rõ cá ép (remora) và cá mập là ví dụ về mối quan hệ *commensalism* (hội sinh), chứ không phải *mutualism* (cộng sinh hai bên cùng có lợi). Các lựa chọn A (thực vật và nấm), B (sự thụ phấn qua ong), và D (trâu và chim ox bird) đều là ví dụ về mutualism. Do đó, đáp án C là đáp án đúng cho câu hỏi dạng phủ định (NOT).",
           "paraphrase_analysis": {
             "question_phrase": "NOT an example of mutualism",
@@ -956,12 +956,12 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
       "difficulty": "C1",
       "content_paragraphs": [
         "Earth has several distinct layers; the outermost of these is the crust, which has an inconsistent thickness of 35-70 km in the continents and 5-10 km in the ocean basins. The second layer is known as the mantle, which is about 2900 km thick, and divided into an upper and lower mantle. Most of Earth's internal heat is situated here. The upper mantle has an area known as the low-velocity zone, where secondary waves decrease rapidly and then gradually increase. The last layer is the core. This is a thick ball of iron and nickel divided into two layers, the inner core and the outer core.",
-        "The inner core is solid, whereas the outer core is so hot that the metal is always molten. However, because the force at the inner core is so immense, it cannot melt. Due to Earth's rotation, the outer core spins around the inner core, which causes the Earth's magnetism. The inner core consists of iron, nickel and other elements, probably a mix of carbon, oxygen, sulphur, silicon, and potassium. The temperature is extremely high, and due to pressure, the core is solid. Because the outer core is liquid, mainly consisting of iron, nickel and about 10% oxygen and sulphur, here the temperature is not as high.",
+        "The inner core is solid, whereas the outer core is so hot that the metal is always molten. However, because the force at the inner core is so **immense**, it cannot melt. Due to Earth's rotation, the outer core spins around the inner core, which causes the Earth's magnetism. The inner core consists of iron, nickel and other elements, probably a mix of carbon, oxygen, sulphur, silicon, and potassium. The temperature is extremely high, and due to pressure, the core is solid. Because the outer core is liquid, mainly consisting of iron, nickel and about 10% oxygen and sulphur, here the temperature is not as high.",
         "Both the outer and inner cores together create the Earth's magnetism. The core has a huge influence on Earth. Because it is so hot, it radiates a natural heat to the upper layers, setting off a current of heat, which in turn causes the movement of the tectonic plates. Because of Earth's rotation, the outer core spins, but the inner core does not because it is solid. This provides a sort of dynamo effect and causes the Earth's magnetic force.",
-        "A seismic wave is a wave that travels through Earth; it is often the result of a tectonic earthquake. There are two kinds of seismic waves, \"body waves\" and \"surface waves.\" Other waves do exist, but are of little importance. Body waves travel through the center of Earth, following ray paths which are bent by the unstable density and stiffness of Earth’s interior. These differ according to temperature, phase, and structure. Body waves send out the first tremors of an earthquake as well as any later ones.",
+        "A seismic wave is a wave that travels through Earth; it is often the result of **a tectonic earthquake**. There are two kinds of seismic waves, \"body waves\" and \"surface waves.\" Other waves do exist, but are of little importance. Body waves travel through the center of Earth, following ray paths which are bent by the unstable density and stiffness of Earth’s interior. These differ according to temperature, **phase**, and structure. Body waves send out the first tremors of an earthquake as well as any later ones.",
         "There are two kinds of body waves, “primary” and “secondary” waves. Primary waves are compression waves, meaning the ground is alternately compressed and expanded in the direction of propagation. These waves can travel slightly faster through solids than secondary waves can, and are also able to travel through any type of material. Through air, they take the form of sound waves and so travel at the speed of sound.",
         "Primary waves, when created by an earthquake, are less destructive than sound waves due to their minor amplitudes. Secondary waves are tilted waves; in other words, the ground is shifted vertically in the direction of transmission. Here, the ground moves from one side to the other. Secondary waves are only able to travel through solids, not liquids or gases, and thus are unable to travel through Earth's core. Primary waves are faster than secondary waves. Primary and secondary waves are usually produced by earthquakes and volcanoes. However, they can also be produced by people using explosives or large machinery.",
-        "Surface waves are comparable to water waves traveling just under Earth’s surface. They travel at slower speeds than body waves. Surface waves can be the most devastating type of seismic wave due to their low frequency, long duration, and large amplitude. In theory, they are understood as a system which relates to primary and secondary waves.",
+        "Surface waves are comparable to water waves traveling just under Earth’s surface. They travel at slower speeds than body waves. Surface waves can be the most **devastating** type of seismic wave due to their low frequency, long duration, and large amplitude. In theory, they are understood as a system which relates to primary and secondary waves.",
         "[A] The moment an earthquake occurs, seismographs try to record its primary and secondary waves, but often they cannot detect the secondary waves of a distant earthquake. [B] This may be due to the fact that secondary waves are unable to pass through liquids. [C] This information about wave travel helps scientists determine the internal structure of the planet. [D]"
       ],
       "word_count": 680,
@@ -996,7 +996,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q32",
           "type": "vocab_in_context",
-          "question_text": "The word \"immense\" in the passage is closest in meaning to ___.",
+          "question_text": "The word \"**immense**\" in the passage is closest in meaning to ___.",
           "options": [
             {
               "key": "A",
@@ -1017,7 +1017,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "However, because the force at the inner core is so immense, it cannot melt.",
+          "clue_sentence": "However, because the force at the inner core is so **immense**, it cannot melt.",
           "explanation_vi": "Từ \"immense\" có nghĩa là to lớn, khổng lồ, vô lượng, tương đồng với từ \"immeasurable\" (không thể đo đếm được / cực kỳ lớn).",
           "paraphrase_analysis": {
             "question_phrase": "immense",
@@ -1087,7 +1087,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q35",
           "type": "factual_detail",
-          "question_text": "Why does the author mention \"a tectonic earthquake\" in the passage?",
+          "question_text": "Why does the author mention \"**a tectonic earthquake**\" in the passage?",
           "options": [
             {
               "key": "A",
@@ -1108,13 +1108,13 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 3,
-          "clue_sentence": "A seismic wave is a wave that travels through Earth; it is often the result of a tectonic earthquake.",
+          "clue_sentence": "A seismic wave is a wave that travels through Earth; it is often the result of **a tectonic earthquake**.",
           "explanation_vi": "Tác giả nhắc đến động đất kiến tạo nhằm giới thiệu nguồn gốc sinh ra sóng địa chất và minh họa tác động của loại sóng này truyền qua Trái Đất."
         },
         {
           "id": "hcmue_r02_q36",
           "type": "vocab_in_context",
-          "question_text": "The word \"phase\" in the passage is closest in meaning to ___.",
+          "question_text": "The word \"**phase**\" in the passage is closest in meaning to ___.",
           "options": [
             {
               "key": "A",
@@ -1135,7 +1135,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 3,
-          "clue_sentence": "These differ according to temperature, phase, and structure.",
+          "clue_sentence": "These differ according to temperature, **phase**, and structure.",
           "explanation_vi": "Trong ngữ cảnh địa chất học và vật lý sóng, từ \"phase\" chỉ trạng thái hoặc chu kỳ/giai đoạn của vật chất, tương đương với \"period\" hoặc trạng thái thể của vật chất.",
           "paraphrase_analysis": {
             "question_phrase": "phase",
@@ -1146,7 +1146,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         {
           "id": "hcmue_r02_q37",
           "type": "vocab_in_context",
-          "question_text": "The word \"devastating\" in the passage is closest in meaning to_____.",
+          "question_text": "The word \"**devastating**\" in the passage is closest in meaning to_____.",
           "options": [
             {
               "key": "A",
@@ -1167,7 +1167,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 6,
-          "clue_sentence": "Surface waves can be the most devastating type of seismic wave due to their low frequency, long duration, and large amplitude.",
+          "clue_sentence": "Surface waves can be the most **devastating** type of seismic wave due to their low frequency, long duration, and large amplitude.",
           "explanation_vi": "Từ \"devastating\" có nghĩa là tàn phá nặng nề, hủy diệt, đồng nghĩa với từ \"destructive\" (mặc dù đáp án chuẩn của key là C trong bộ đề gốc, xét về mặt từ vựng học thuật, destructive/devastating mang tính tàn phá)."
         },
         {

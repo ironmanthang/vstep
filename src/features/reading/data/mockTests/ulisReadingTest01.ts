@@ -19,7 +19,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
       "difficulty": "B1",
       "content_paragraphs": [
         "A new study, conducted by scientists from Oxford University, the Chinese Academy of Medical Sciences and the Chinese Center for Disease Control, has warned that a third of all men currently under the age of 20 in China will eventually die prematurely if they do not give up smoking.",
-        "The research, published in The Lancet medical journal, says two-thirds of men in China now start to smoke before 20. Around half of those men will die from the habit, it concludes.",
+        "The research, published in The Lancet medical journal, says two-thirds of men in China now start to smoke before 20. Around half of **those men** will die from the habit, it concludes.",
         "In 2010, around one million people in China died from tobacco usage. But researchers say that if current trends continue, that will double to two million people - mostly men - dying every year by 2030, making it a \"growing epidemic of premature death\".",
         "But co-author Richard Peto said there was hope - if people can be persuaded to quit. \"The key to avoid this huge wave of deaths is cessation, and if you are a young man, don't start,\" he said.",
         "In many parts of China, meals often fit a comfortable pattern. After putting down their chopsticks, men commonly push their chairs back from the table and light cigarettes. No wonder China has struggled to impose a smoking ban in public places. Here, relationships are often built amid clouds of smoke.",
@@ -27,7 +27,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
         "In a country where smoking is so ingrained in daily life, few understand the harmful effects of tobacco use. According to the World Health Organization (WHO), only 25% of Chinese adults can list the specific health hazards of smoking, from lung cancer to heart disease.",
         "Perhaps it should come as no surprise, then, that only 10% of Chinese smokers quit by choice. Instead, most are forced to give up their cigarettes because they're too sick to continue.",
         "While smoking rates have fallen in developed countries - to less than one in five in the US - they have risen in China, as cigarettes have become more available and consumers richer.",
-        "Authorities have shown concern over the rise, with Beijing even introducing a public smoking ban. But efforts have been hampered by the habit's popularity, and its usefulness as a source of tax - the government collects about 428 billion yuan (£44billion, $67billion) in tobacco taxes each year.",
+        "Authorities have shown concern over the rise, with **Beijing** even introducing a public smoking ban. But efforts have been **hampered** by the habit's popularity, and its usefulness as a source of tax - the government collects about 428 billion yuan (£44billion, $67billion) in tobacco taxes each year.",
         "Globally, tobacco kills up to half of its users, according to the World Health Organization."
       ],
       "questions": [
@@ -61,7 +61,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
         {
           "id": "ulis_r01_q02",
           "type": "vocab_in_context",
-          "question_text": "What does the word \"those men\" in paragraph 2 refer to?",
+          "question_text": "What does the word \"**those men**\" in paragraph 2 refer to?",
           "options": [
             {
               "key": "A",
@@ -82,7 +82,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "The research, published in The Lancet medical journal, says two-thirds of men in China now start to smoke before 20. Around half of those men will die from the habit, it concludes.",
+          "clue_sentence": "The research, published in The Lancet medical journal, says two-thirds of men in China now start to smoke before 20. Around half of **those men** will die from the habit, it concludes.",
           "explanation_vi": "Cụm từ \"those men\" (những người đàn ông đó) ở câu thứ hai thay thế cho đối tượng được nhắc đến ở câu trước: \"men in China now start to smoke before 20\" (nam giới ở Trung Quốc bắt đầu hút thuốc trước 20 tuổi). Do đó, đáp án đúng là A."
         },
         {
@@ -169,7 +169,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
         {
           "id": "ulis_r01_q06",
           "type": "vocab_in_context",
-          "question_text": "\"Beijing\" refers to ..........",
+          "question_text": "\"**Beijing**\" refers to ..........",
           "options": [
             {
               "key": "A",
@@ -190,7 +190,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 9,
-          "clue_sentence": "Authorities have shown concern over the rise, with Beijing even introducing a public smoking ban.",
+          "clue_sentence": "Authorities have shown concern over the rise, with **Beijing** even introducing a public smoking ban.",
           "explanation_vi": "Trong ngữ cảnh này, \"Beijing\" (Bắc Kinh) được dùng để chỉ chính quyền thành phố Bắc Kinh đã ban hành lệnh cấm hút thuốc công cộng. Theo đáp án chính thức, \"Beijing\" ám chỉ \"The city of Beijing\". Do đó, đáp án đúng là B."
         },
         {
@@ -223,7 +223,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
         {
           "id": "ulis_r01_q08",
           "type": "vocab_in_context",
-          "question_text": "Which of the following words does the word \"hamper\" have closest meaning to?",
+          "question_text": "Which of the following words does the word \"**hamper**\" have closest meaning to?",
           "options": [
             {
               "key": "A",
@@ -244,7 +244,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 9,
-          "clue_sentence": "But efforts have been hampered by the habit's popularity, and its usefulness as a source of tax - the government collects about 428 billion yuan (£44billion, $67billion) in tobacco taxes each year.",
+          "clue_sentence": "But efforts have been **hampered** by the habit's popularity, and its usefulness as a source of tax - the government collects about 428 billion yuan (£44billion, $67billion) in tobacco taxes each year.",
           "explanation_vi": "Từ \"hamper\" có nghĩa là cản trở, gây khó khăn, gần nghĩa nhất với \"restrict\" (hạn chế, kiềm chế). Do đó, đáp án đúng là D."
         },
         {
@@ -312,13 +312,13 @@ export const ULIS_READING_TEST_01: ReadingTest = {
       "content_paragraphs": [
         "The evidence that humans are causing global warming is strong, but the question of what to do about it remains controversial. Economics, sociology, and politics are all important factors in planning for the future.",
         "Even if we stopped emitting greenhouse gases (GHGs) today, the Earth would still warm by another degree Fahrenheit or so. But what we do from today forward makes a big difference. Depending on our choices, scientists predict that the Earth could eventually warm by as little as 2.5 degrees or as much as 10 degrees Fahrenheit.",
-        "A commonly cited goal is to stabilize GHG concentrations around 450-550 parts per million (ppm), or about twice pre-industrial levels. This is the point at which many believe the most damaging impacts of climate change can be avoided. Current concentrations are about 380 ppm, which means there isn't much time to lose. According to the IPCC, we'd have to reduce GHG emissions by 50% to 80% of what they're on track to be in the next century to reach this level.",
+        "A commonly cited goal is to stabilize GHG concentrations around 450-550 parts per million (ppm), or about twice pre-industrial levels. This is the point at which many believe the most damaging impacts of climate change can be avoided. Current concentrations are about 380 ppm, **which** means there isn't much time to lose. According to the IPCC, we'd have to reduce GHG emissions by 50% to 80% of what they're on track to be in the next century to reach this level.",
         "Is this possible?",
         "Many people and governments are already working hard to cut greenhouse gases, and everyone can help.",
-        "Researchers Stephen Pacala and Robert Socolow at Princeton University have suggested one approach that they call \"stabilization wedges.\" This means reducing GHG emissions from a variety of sources with technologies available in the next few decades, rather than relying on an enormous change in a single area. They suggest 7 wedges that could each reduce emissions, and all of them together could hold emissions at approximately current levels for the next 50 years, putting us on a potential path to stabilize around 500 ppm.",
+        "Researchers Stephen Pacala and Robert Socolow at Princeton University have suggested one approach that they call \"stabilization wedges.\" This means reducing GHG emissions from a variety of sources with technologies available in the next few decades, rather than relying on an enormous change in a single area. They suggest 7 wedges that could each reduce emissions, and all of **them** together could hold emissions at approximately current levels for the next 50 years, putting us on a potential path to stabilize around 500 ppm.",
         "There are many possible wedges, including improvements to energy efficiency and vehicle fuel economy (so less energy has to be produced), and increases in wind and solar power, hydrogen produced from renewable sources, biofuels (produced from crops), natural gas, and nuclear power. There is also the potential to capture the carbon dioxide emitted from fossil fuels and store it underground—a process called \"carbon sequestration.\"",
         "In addition to reducing the gases we emit to the atmosphere, we can also increase the amount of gases we take out of the atmosphere. Plants and trees absorb CO2 as they grow, \"sequestering\" carbon naturally. Increasing forestlands and making changes to the way we farm could increase the amount of carbon we're storing.",
-        "Some of these technologies have drawbacks, and different communities will make different decisions about how to power their lives, but the good news is that there are a variety of options to put us on a path toward a stable climate."
+        "Some of these technologies have **drawbacks**, and different communities will make different decisions about how to power their lives, but the good news is that there are a variety of options to put us on a path toward a stable climate."
       ],
       "questions": [
         {
@@ -405,7 +405,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
         {
           "id": "ulis_r01_q14",
           "type": "vocab_in_context",
-          "question_text": "What does \"which\" in paragraph 3 refer to?",
+          "question_text": "What does \"**which**\" in paragraph 3 refer to?",
           "options": [
             {
               "key": "A",
@@ -426,7 +426,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 2,
-          "clue_sentence": "Current concentrations are about 380 ppm, which means there isn't much time to lose.",
+          "clue_sentence": "Current concentrations are about 380 ppm, **which** means there isn't much time to lose.",
           "explanation_vi": "Từ \"which\" trong câu \"Current concentrations are about 380 ppm, which means there isn't much time to lose\" dùng để thay thế cho cả mệnh đề đứng trước nó: việc nồng độ hiện tại đang ở mức khoảng 380 ppm đồng nghĩa với việc không còn nhiều thời gian để lãng phí. Do đó chọn B."
         },
         {
@@ -486,7 +486,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
         {
           "id": "ulis_r01_q17",
           "type": "vocab_in_context",
-          "question_text": "What does \"them\" refer to?",
+          "question_text": "What does \"**them**\" refer to?",
           "options": [
             {
               "key": "A",
@@ -507,7 +507,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 5,
-          "clue_sentence": "They suggest 7 wedges that could each reduce emissions, and all of them together could hold emissions at approximately current levels for the next 50 years, putting us on a potential path to stabilize around 500 ppm.",
+          "clue_sentence": "They suggest 7 wedges that could each reduce emissions, and all of **them** together could hold emissions at approximately current levels for the next 50 years, putting us on a potential path to stabilize around 500 ppm.",
           "explanation_vi": "Từ \"them\" trong câu \"They suggest 7 wedges that could each reduce emissions, and all of them together...\" thay thế cho danh từ \"wedges\" (các lát cắt ổn định) được nhắc đến ngay trước đó. Chọn D."
         },
         {
@@ -534,7 +534,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 8,
-          "clue_sentence": "Some of these technologies have drawbacks, and different communities will make different decisions about how to power their lives, but the good news is that there are a variety of options to put us on a path toward a stable climate.",
+          "clue_sentence": "Some of these technologies have **drawbacks**, and different communities will make different decisions about how to power their lives, but the good news is that there are a variety of options to put us on a path toward a stable climate.",
           "explanation_vi": "Bài viết tập trung thảo luận về các giải pháp khác nhau để giảm thiểu khí nhà kính và ổn định khí hậu (như stabilization wedges, năng lượng tái tạo, trồng rừng, thu giữ carbon). Do đó tiêu đề phù hợp nhất là \"Global Warming Solutions\" (Các giải pháp cho sự nóng lên toàn cầu). Chọn C."
         },
         {
@@ -567,7 +567,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
         {
           "id": "ulis_r01_q20",
           "type": "inference",
-          "question_text": "Why does the writer mention \"drawbacks\" in the last paragraph?",
+          "question_text": "Why does the writer mention \"**drawbacks**\" in the last paragraph?",
           "options": [
             {
               "key": "A",
@@ -588,7 +588,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 8,
-          "clue_sentence": "Some of these technologies have drawbacks, and different communities will make different decisions about how to power their lives, but the good news is that there are a variety of options to put us on a path toward a stable climate.",
+          "clue_sentence": "Some of these technologies have **drawbacks**, and different communities will make different decisions about how to power their lives, but the good news is that there are a variety of options to put us on a path toward a stable climate.",
           "explanation_vi": "Tác giả viết: \"Some of these technologies have drawbacks... but the good news is that there are a variety of options to put us on a path toward a stable climate.\" Việc đề cập đến \"drawbacks\" (nhược điểm) nhằm chỉ ra rằng dù mỗi giải pháp có hạn chế riêng trong từng bối cảnh, sự đa dạng của các lựa chọn vẫn mang lại lợi thế lớn để đạt được khí hậu ổn định. Theo đáp án chính thức, chọn D."
         }
       ],
@@ -602,9 +602,9 @@ export const ULIS_READING_TEST_01: ReadingTest = {
       "content_paragraphs": [
         "We can take great pleasure in merely looking at art, just as we take pleasure in the view of a distant mountain range or watching the sun set over the ocean. But art, unlike nature, is a human creation. It is one of the many ways we express ourselves and attempt to communicate. A work of art is the product of human intelligence, and we can meet it with our own intelligence on equal footing. This is where study comes in.",
         "The understanding of process - the how - often contributes quite a lot to our appreciation of art. If you understand why painting in watercolor may be different from painting in oil, why clay responds differently to the artist's hands than does wood or glass - you will have a richer appreciation of the artist's expression.",
-        "Knowing the place of a work of art in history - what went before and came after - can also deepen your understanding. Artists learn to make art by studying the achievements of the past and observing the efforts of their contemporaries. They adapt ideas to serve their own needs and then bequeath those ideas to future generations of artists. For example, Matisse assumed that his audience would know that Venus was the ancient Roman goddess of love. But he also hoped that they would be familiar with one Venus in particular, a famous Greek statue known as the Venus de Milo.",
-        "An artist may create a specific work for any of a thousand reasons. An awareness of the why may give some insight as well. Looking at Van Gogh's *The Starry Night*, it might help you know that Van Gogh was intrigued by the belief that people journeyed to a star after their death, and that there they continued their lives. \"Just as we take the train to get to Tarascon or Rouen,\" he wrote in a letter, \"we take death to reach a star.\" This knowledge might help you understand why Van Gogh felt so strongly about the night sky, and what his painting might have meant to him.",
-        "But no matter how much you study, Van Gogh's painting will never mean for you exactly what it meant for him, nor should it. Great works of art hold many meanings. The greatest of them seem to speak anew to each generation and to each attentive observer. The most important thing is that they mean something for you, that your own experiences, thoughts, and emotions find a place in them."
+        "Knowing the place of a work of art in history - what went before and came after - can also deepen your understanding. Artists learn to make art by studying the achievements of the past and observing the efforts of their contemporaries. They adapt ideas to serve their own needs and then **bequeath** those ideas to future generations of artists. For example, Matisse assumed that his audience would know that Venus was the ancient Roman goddess of love. But he also hoped that they would be familiar with one Venus in particular, a famous Greek statue known as the Venus de Milo.",
+        "An artist may create a specific work for any of a thousand reasons. An awareness of the why may give some insight as well. Looking at Van Gogh's *The Starry Night*, it might help you know that Van Gogh was **intrigued** by the belief that people journeyed to a star after their death, and that there they continued their lives. \"Just as we take the train to get to Tarascon or Rouen,\" he wrote in a letter, \"we take death to reach a star.\" This knowledge might help you understand why Van Gogh felt so strongly about the night sky, and what his painting might have meant to him.",
+        "But no matter how much you study, Van Gogh's painting will never mean for you exactly what it meant for him, nor should it. Great works of art hold many meanings. The greatest of **them** seem to speak anew to each generation and to each attentive observer. The most important thing is that they mean something for you, that your own experiences, thoughts, and emotions find a place in them."
       ],
       "questions": [
         {
@@ -664,7 +664,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
         {
           "id": "ulis_r01_q23",
           "type": "vocab_in_context",
-          "question_text": "The word \"them\" in the last paragraph refers to ..........",
+          "question_text": "The word \"**them**\" in the last paragraph refers to ..........",
           "options": [
             {
               "key": "A",
@@ -685,13 +685,13 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 4,
-          "clue_sentence": "Great works of art hold many meanings. The greatest of them seem to speak anew to each generation and to each attentive observer.",
+          "clue_sentence": "Great works of art hold many meanings. The greatest of **them** seem to speak anew to each generation and to each attentive observer.",
           "explanation_vi": "Từ 'them' trong câu 'The greatest of them seem to speak anew...' thay thế cho danh từ số nhiều đứng trước đó là 'Great works of art' (Các tác phẩm nghệ thuật vĩ đại)."
         },
         {
           "id": "ulis_r01_q24",
           "type": "vocab_in_context",
-          "question_text": "The word \"bequeath\" in the passage is closest in meaning to .............",
+          "question_text": "The word \"**bequeath**\" in the passage is closest in meaning to .............",
           "options": [
             {
               "key": "A",
@@ -712,7 +712,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 2,
-          "clue_sentence": "They adapt ideas to serve their own needs and then bequeath those ideas to future generations of artists.",
+          "clue_sentence": "They adapt ideas to serve their own needs and then **bequeath** those ideas to future generations of artists.",
           "explanation_vi": "Từ 'bequeath' có nghĩa là để lại, truyền lại cho thế hệ sau. Cụm từ đồng nghĩa gần nhất là 'pass on' (truyền lại, chuyển giao)."
         },
         {
@@ -820,13 +820,13 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 3,
-          "clue_sentence": "Looking at Van Gogh's *The Starry Night*, it might help you know that Van Gogh was intrigued by the belief that people journeyed to a star after their death, and that there they continued their lives.",
+          "clue_sentence": "Looking at Van Gogh's *The Starry Night*, it might help you know that Van Gogh was **intrigued** by the belief that people journeyed to a star after their death, and that there they continued their lives.",
           "explanation_vi": "Đoạn 4 chỉ ra rằng Van Gogh bị thu hút bởi niềm tin rằng con người sẽ du hành đến một ngôi sao sau khi chết và tiếp tục cuộc sống ở đó. Do đó, bức tranh 'The Starry Night' có thể được vẽ để biểu trưng cho hành trình của sự sống sau cái chết (To symbolize the journey of life after death)."
         },
         {
           "id": "ulis_r01_q29",
           "type": "vocab_in_context",
-          "question_text": "The word \"intrigued\" in the passage is closest in meaning to ...........",
+          "question_text": "The word \"**intrigued**\" in the passage is closest in meaning to ...........",
           "options": [
             {
               "key": "A",
@@ -847,7 +847,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 3,
-          "clue_sentence": "Looking at Van Gogh's *The Starry Night*, it might help you know that Van Gogh was intrigued by the belief that people journeyed to a star after their death, and that there they continued their lives.",
+          "clue_sentence": "Looking at Van Gogh's *The Starry Night*, it might help you know that Van Gogh was **intrigued** by the belief that people journeyed to a star after their death, and that there they continued their lives.",
           "explanation_vi": "Từ 'intrigued' có nghĩa là bị hấp dẫn, tò mò, vô cùng hứng thú với điều gì đó. Do đó, nó gần nghĩa nhất với 'very interested' (rất quan tâm, hứng thú)."
         },
         {
@@ -889,11 +889,11 @@ export const ULIS_READING_TEST_01: ReadingTest = {
         "Antibiotics block the life cycle of bacteria that invade the human body. The first of these antibiotics, penicillin, works by blocking the molecules that construct the cell walls of particular bacteria. The bacteria, with incomplete cell walls, are not able to reproduce.",
         "When penicillin was introduced during World War II, it was truly a \"miracle drug.\" Until that time, anyone who was cut or wounded stood a great risk of infection. Once penicillin became available, the situation changed. Wounded soldiers, children with ear infections, and many others began to benefit from the ability to block the growth of bacteria.",
         "While humanity may have won that particular battle against bacteria, the war is far from over. The reason is that in any bacterial population, there are bound to be a few bacteria that, for one reason or another, are not affected by a particular antibiotic. For example, they may have a slightly differently shaped enzyme that builds cell walls, so that penicillin will not fit onto that particular shape of the enzyme. These bacteria will not be affected by that particular drug.",
-        "For that small group, the antibiotic is a real godsend. It doesn't affect them, but it does wipe out all of their competition. They are thus free to multiply, and, over time, all of the bacteria will have whatever properties that made those individuals resistant.",
+        "For that small group, the antibiotic is a real godsend. It doesn't affect **them**, but it does wipe out all of their competition. They are thus free to multiply, and, over time, all of the bacteria will have whatever properties that made those individuals resistant.",
         "Traditionally, medical scientists have dealt with this phenomenon by developing a large number of antibiotics, each of which intervenes in the bacterial life cycle in a slightly different way.",
         "Consequently, if you happen to have a bacterium that is resistant to one antibiotic, probably it will succumb to the action of another. You may, in fact, have had the experience of going to a doctor with an infection, being given an antibiotic, and then finding that it didn't work. In all likelihood, all your doctor had to do then was prescribe a different antibiotic and everything was fine.",
         "The problem is that as time has passed, more and more bacteria have become resistant to antibiotics. In fact, currently, there is one strain of bacteria- Staphylococcus-that is resistant to every commercially available antibiotic except one, and in 1996, a bacterium with lowered resistance to that last antibiotic appeared in Japan.",
-        "The appearance of drug-resistant bacteria is not particularly surprising; in fact, it probably should have been anticipated. Nevertheless, in the late 1980s, there was a general sense of complacency among scientists on the antibiotic question. Little profit was to be made by developing the one-hundred-and-first antibiotic. Drug companies concentrated their efforts on other areas. Therefore, a gap developed between the production of new antibiotics and the development of resistance among bacteria.",
+        "The appearance of drug-resistant bacteria is not particularly surprising; in fact, it probably should have been **anticipated**. Nevertheless, in the late 1980s, there was a general sense of **complacency** among scientists on the antibiotic question. Little profit was to be made by developing the one-hundred-and-first antibiotic. Drug companies concentrated their efforts on other areas. Therefore, a gap developed between the production of new antibiotics and the development of resistance among bacteria.",
         "By the early 1990s, this gap was recognized and highlighted in several national news magazines. More companies returned to develop new kinds of antibiotics, and currently, a number are undergoing clinical trials. By early in the twenty-first century, some of these new drugs will start to come on the market, and the problem will be \"solved,\" at least for the moment.",
         "Additional research will focus on the processes by which cells repair the constant damage to DNA, but the computer design of new drugs, the development of new antibiotics, and techniques to combat bacteria should remain a top priority."
       ],
@@ -928,7 +928,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
         {
           "id": "ulis_r01_q32",
           "type": "factual_detail",
-          "question_text": "The word \"them\" in paragraph 4 refers to ..........",
+          "question_text": "The word \"**them**\" in paragraph 4 refers to ..........",
           "options": [
             {
               "key": "A",
@@ -949,13 +949,13 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 3,
-          "clue_sentence": "It doesn't affect them, but it does wipe out all of their competition.",
+          "clue_sentence": "It doesn't affect **them**, but it does wipe out all of their competition.",
           "explanation_vi": "Trong đoạn 4, từ \"them\" đề cập đến \"that small group\" (nhóm nhỏ vi khuẩn không bị ảnh hưởng bởi kháng sinh, tức là vi khuẩn kháng thuốc - \"resistant bacteria\"). Câu trước đó nói: \"Đối với nhóm nhỏ đó, thuốc kháng sinh là một món quà trời ban. Nó không ảnh hưởng đến chúng (them)...\""
         },
         {
           "id": "ulis_r01_q33",
           "type": "vocab_in_context",
-          "question_text": "The word \"anticipated\" in the passage is closest in meaning to .......",
+          "question_text": "The word \"**anticipated**\" in the passage is closest in meaning to .......",
           "options": [
             {
               "key": "A",
@@ -976,7 +976,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 7,
-          "clue_sentence": "The appearance of drug-resistant bacteria is not particularly surprising; in fact, it probably should have been anticipated.",
+          "clue_sentence": "The appearance of drug-resistant bacteria is not particularly surprising; in fact, it probably should have been **anticipated**.",
           "explanation_vi": "Từ \"anticipated\" có nghĩa là được dự đoán trước, đồng nghĩa với \"predicted\". Các từ còn lại không phù hợp nghĩa: \"concealed\" (bị che giấu), \"investigated\" (được điều tra), \"disregarded\" (bị lờ đi)."
         },
         {
@@ -1030,13 +1030,13 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 3,
-          "clue_sentence": "It doesn't affect them, but it does wipe out all of their competition.",
+          "clue_sentence": "It doesn't affect **them**, but it does wipe out all of their competition.",
           "explanation_vi": "Đoạn 4 giải thích rằng thuốc kháng sinh không ảnh hưởng đến nhóm vi khuẩn kháng thuốc, nhưng lại tiêu diệt tất cả các đối thủ cạnh tranh của chúng (\"wipe out all of their competition\"), giúp chúng tự do sinh sôi nảy nở mà không gặp trở ngại."
         },
         {
           "id": "ulis_r01_q36",
           "type": "vocab_in_context",
-          "question_text": "The word \"complacency\" in the passage is closest in meaning to ......",
+          "question_text": "The word \"**complacency**\" in the passage is closest in meaning to ......",
           "options": [
             {
               "key": "A",
@@ -1057,7 +1057,7 @@ export const ULIS_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 7,
-          "clue_sentence": "Nevertheless, in the late 1980s, there was a general sense of complacency among scientists on the antibiotic question.",
+          "clue_sentence": "Nevertheless, in the late 1980s, there was a general sense of **complacency** among scientists on the antibiotic question.",
           "explanation_vi": "Từ \"complacency\" có nghĩa là sự tự mãn, chủ quan, thiếu lo ngại hoặc thiếu sự quan tâm đúng mức trước một vấn đề, gần nghĩa nhất với \"lack of concern\" (thiếu sự quan tâm/lo ngại)."
         },
         {

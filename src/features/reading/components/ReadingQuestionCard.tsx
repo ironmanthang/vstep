@@ -1,5 +1,6 @@
 import { useRef, useLayoutEffect, useEffect, useCallback, forwardRef } from 'react';
 import type { ReadingPassage } from '../types';
+import { renderInlineMarkdown } from '../utils/inlineMarkdown';
 import './ReadingQuestionCard.css';
 
 type QuestionItem = ReadingPassage['questions'][0];
@@ -126,7 +127,7 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
         </div>
 
         {/* Question Prompt */}
-        <div className="rq-prompt">{question.question_text}</div>
+        <div className="rq-prompt">{renderInlineMarkdown(question.question_text, false)}</div>
 
         {/* 4 Multiple Choice Options */}
         <div className="rq-options-list">

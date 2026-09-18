@@ -17,7 +17,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
       "word_count": 328,
       "difficulty": "B1",
       "content_paragraphs": [
-        "This rapid transcontinental settlement and these new urban industrial circumstances of the last half of the 19th century were accompanied by the development of a national literature of great abundance and variety. New themes, new forms, new subjects, new regions, new authors, new audiences all emerged in the literature of this half century. As a result, at the onset of World War I, the spirit and substance of American literature had evolved remarkably, just as its center of production had shifted from Boston to New York in the late 1880s and the sources of its energy to Chicago and the Midwest. No longer was it produced, at least in its popular forms, in the main by solemn, typically moralistic men from New England and the Old South; no longer were polite, well-dressed, grammatically correct, middle-class young people the only central characters in its narratives; no longer were these narratives to be set in exotic places and remote times; no longer, indeed, were fiction, poetry, drama, and formal history the chief acceptable forms of literary expression; no longer, finally, was literature read primarily by young, middle class women. In sum, American literature in these years fulfilled in considerable measure the condition Walt Whitman called for in 1867 in describing Leaves of Grass: it treats, he said of his own major work, each state and region as peers \"and expands from them, and includes the world connecting an American citizen with the citizens of all nations\". At the same time, these years saw the emergence of what has been designated \"the literature of argument\", powerful works in sociology, philosophy, psychology, many of them impelled by the spirit of exposure and reform. Just as America learned to play a role in this half century as an autonomous international political, economic, and military power, so did its literature establish itself as a producer of major works."
+        "This rapid transcontinental settlement and these new urban industrial circumstances of the last half of the 19th century were accompanied by the development of a national literature of great abundance and variety. New themes, new forms, new subjects, new regions, new authors, new audiences all emerged in the literature of this half century. As a result, at the onset of World War I, the spirit and substance of American literature had **evolved** remarkably, just as its center of production had shifted from Boston to New York in the late 1880s and the sources of its energy to Chicago and the Midwest. No longer was **it** produced, at least in its popular forms, in the main by solemn, typically moralistic men from New England and the Old South; no longer were polite, well-dressed, grammatically correct, middle-class young people the only central characters in its narratives; no longer were these narratives to be set in **exotic** places and remote times; no longer, **indeed**, were fiction, poetry, drama, and formal history the chief acceptable forms of literary expression; no longer, finally, was literature read primarily by young, middle class women. In sum, American literature in these years fulfilled in considerable measure the condition Walt Whitman called for in 1867 in describing Leaves of Grass: it treats, he said of his own major work, each state and region as peers \"and expands from them, and includes the world connecting an American citizen with the citizens of all nations\". At the same time, these years saw the emergence of what has been designated \"the literature of argument\", powerful works in sociology, philosophy, psychology, many of them impelled by the spirit of exposure and reform. Just as America learned to play a role in this half century as an autonomous international political, economic, and military power, so did its literature establish itself as a producer of major works."
       ],
       "questions": [
         {
@@ -44,7 +44,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "As a result, at the onset of World War I, the spirit and substance of American literature had evolved remarkably, just as its center of production had shifted from Boston to New York in the late 1880s and the sources of its energy to Chicago and the Midwest.",
+          "clue_sentence": "As a result, at the onset of World War I, the spirit and substance of American literature had **evolved** remarkably, just as its center of production had shifted from Boston to New York in the late 1880s and the sources of its energy to Chicago and the Midwest.",
           "explanation_vi": "Ý chính của đoạn văn là văn học Mỹ đã phát triển vượt bậc, trở nên đa dạng hơn và thoát khỏi những giới hạn địa phương cũ (ít mang tính tỉnh lẻ hơn) bằng cách mở rộng chủ đề, nhân vật, bối cảnh và kết nối với toàn cầu theo tinh thần của Walt Whitman."
         },
         {
@@ -77,7 +77,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
         {
           "id": "hcmue_r03_q03",
           "type": "vocab_in_context",
-          "question_text": "The word \"evolved\" in the passage is closest in meaning to",
+          "question_text": "The word \"**evolved**\" in the passage is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -98,13 +98,13 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "As a result, at the onset of World War I, the spirit and substance of American literature had evolved remarkably, just as its center of production had shifted from Boston to New York in the late 1880s and the sources of its energy to Chicago and the Midwest.",
+          "clue_sentence": "As a result, at the onset of World War I, the spirit and substance of American literature had **evolved** remarkably, just as its center of production had shifted from Boston to New York in the late 1880s and the sources of its energy to Chicago and the Midwest.",
           "explanation_vi": "Từ 'evolved' có nghĩa là tiến hóa, phát triển, thay đổi theo thời gian. Do đó, nó đồng nghĩa với từ 'changed' (thay đổi). Các lựa chọn khác (trở nên nổi tiếng, quay lại, giảm đi) không phù hợp."
         },
         {
           "id": "hcmue_r03_q04",
           "type": "factual_detail",
-          "question_text": "The word \"it\" in the passage refers to",
+          "question_text": "The word \"**it**\" in the passage refers to",
           "options": [
             {
               "key": "A",
@@ -125,13 +125,13 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 0,
-          "clue_sentence": "No longer was it produced, at least in its popular forms, in the main by solemn, typically moralistic men from New England and the Old South; no longer were polite, well-dressed, grammatically correct, middle-class young people the only central characters in its narratives; no longer were these narratives to be set in exotic places and remote times; no longer, indeed, were fiction, poetry, drama, and formal history the chief acceptable forms of literary expression; no longer, finally, was literature read primarily by young, middle class women.",
+          "clue_sentence": "No longer was **it** produced, at least in its popular forms, in the main by solemn, typically moralistic men from New England and the Old South; no longer were polite, well-dressed, grammatically correct, middle-class young people the only central characters in its narratives; no longer were these narratives to be set in **exotic** places and remote times; no longer, **indeed**, were fiction, poetry, drama, and formal history the chief acceptable forms of literary expression; no longer, finally, was literature read primarily by young, middle class women.",
           "explanation_vi": "Đại từ 'it' trong câu 'No longer was it produced...' quy chiếu ngược lại chủ thể đang được bàn đến trong toàn bộ ngữ cảnh đoạn văn là nền văn học Mỹ ('American literature')."
         },
         {
           "id": "hcmue_r03_q05",
           "type": "vocab_in_context",
-          "question_text": "The word \"exotic\" in the passage is closest in meaning to",
+          "question_text": "The word \"**exotic**\" in the passage is closest in meaning to",
           "options": [
             {
               "key": "A",
@@ -152,13 +152,13 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 0,
-          "clue_sentence": "No longer was it produced, at least in its popular forms, in the main by solemn, typically moralistic men from New England and the Old South; no longer were polite, well-dressed, grammatically correct, middle-class young people the only central characters in its narratives; no longer were these narratives to be set in exotic places and remote times; no longer, indeed, were fiction, poetry, drama, and formal history the chief acceptable forms of literary expression; no longer, finally, was literature read primarily by young, middle class women.",
+          "clue_sentence": "No longer was **it** produced, at least in its popular forms, in the main by solemn, typically moralistic men from New England and the Old South; no longer were polite, well-dressed, grammatically correct, middle-class young people the only central characters in its narratives; no longer were these narratives to be set in **exotic** places and remote times; no longer, **indeed**, were fiction, poetry, drama, and formal history the chief acceptable forms of literary expression; no longer, finally, was literature read primarily by young, middle class women.",
           "explanation_vi": "Từ 'exotic' mang ý nghĩa kỳ lạ, ngoại lai, khác thường, đi kèm với 'remote times' (thời gian xa xôi). Do đó, từ đồng nghĩa gần nhất trong các lựa chọn là 'unusual' (bất thường/xa lạ)."
         },
         {
           "id": "hcmue_r03_q06",
           "type": "author_attitude",
-          "question_text": "The author uses the word \"indeed\" in the passage for what purpose?",
+          "question_text": "The author uses the word \"**indeed**\" in the passage for what purpose?",
           "options": [
             {
               "key": "A",
@@ -179,7 +179,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "no longer, indeed, were fiction, poetry, drama, and formal history the chief acceptable forms of literary expression; no longer, finally, was literature read primarily by young, middle class women.",
+          "clue_sentence": "no longer, **indeed**, were fiction, poetry, drama, and formal history the chief acceptable forms of literary expression; no longer, finally, was literature read primarily by young, middle class women.",
           "explanation_vi": "Tác giả sử dụng từ 'indeed' trong chuỗi cấu trúc liệt kê điệp khúc 'no longer' nhằm nhấn mạnh sự thay đổi mạnh mẽ và sự tương phản giữa văn học truyền thống và văn học thời kỳ mới."
         },
         {
@@ -300,7 +300,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
       "difficulty": "B2",
       "content_paragraphs": [
         "When Daniel Boone died peacefully in bed in his son Nathan's elegant stone Missouri farmhouse on September 26, 1820, the surge of emigrants along the Oregon Trail was still a generation away. But Boone already exemplified the pioneer at his best. He was neither the physical giant (five feet nine) nor the innocent child of nature that legend has made of him. He was an intelligent, soft spoken family man who cherished the same wife for 57 years. He befriended Indians, preferred company to solitude, and when he told his wife it was time to move because a newcomer had settled some 70 miles away, he was joking.",
-        "Pennsylvania- born, Boone was one of 11 children in a family of Quakers who migrated to North Carolina. There Boone was recruited at age 40 to undertake a scheme designed to open up Kentucky to settlers and establish it as a 14th colony. He arranged a deal by which the Cherokees sold 20 million acres for $20,000 worth of goods to Boone's employers, the Transylvania Company. It was all fair and square the Indians had an attorney, an interpreter, and the sound advice of their squaws. The deal completed, Boone led a party from Tennessee through the Cumberland Gap, hacked out the Wilderness Road, and set up a town Boonesboro and a government. Elected a legislator, he introduced on the first session's first day a bill to protect game against wanton slaughter and a second bill to \"improve the breed of horses.\" He got 2,000 acres for his work, but after the Revolution in which Boone won considerable fame as a militia commander the scheme of the Transylvania Company was declared illegal and Boone lost his land. Undaunted, he staked out more claims and lost them because he impatiently neglected to register his deeds. Ever hopeful, he accepted an invitation from Spanish-held Missouri to come and settle there and bring others with him. The Spanish gave him 8,500 acres and made him a judge. But the Louisiana Purchase, which embraced Missouri, again left him but not his children landless. Old and broke, Boone cheerfully continued hunting and trapping long after his hands shook. Shortly before he died, he was talking knowledgeably with young men about the joys to be experienced in settling California."
+        "Pennsylvania- born, Boone was one of 11 children in a family of Quakers who migrated to North Carolina. There Boone was recruited at age 40 to undertake a scheme designed to open up Kentucky to settlers and establish it as a 14th colony. He arranged a deal by which the Cherokees sold 20 million acres for $20,000 worth of goods to Boone's employers, the Transylvania Company. It was all **fair and square** the Indians had an attorney, an interpreter, and the sound advice of their squaws. The deal completed, Boone led a party from Tennessee through the Cumberland Gap, hacked out the Wilderness Road, and set up a town Boonesboro and a government. Elected a legislator, he introduced on the first session's first day a bill to protect game against wanton slaughter and a second bill to \"improve the breed of horses.\" He got 2,000 acres for his work, but after the Revolution in which Boone won considerable fame as a militia commander the scheme of the Transylvania Company was declared illegal and Boone lost his land. **Undaunted**, he staked out more claims and lost them because he impatiently neglected to register his deeds. Ever hopeful, he accepted an invitation from Spanish-held Missouri to come and settle there and bring others with him. The Spanish gave him 8,500 acres and made him a judge. But the Louisiana Purchase, which embraced Missouri, again left him but not his children landless. Old and broke, Boone cheerfully continued hunting and trapping long after his hands shook. Shortly before he died, he was talking knowledgeably with young men about the joys to be experienced in settling California."
       ],
       "questions": [
         {
@@ -370,7 +370,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
         {
           "id": "hcmue_r03_q13",
           "type": "vocab_in_context",
-          "question_text": "The phrase \"fair and square\" in the passage is closest in meaning to _______.",
+          "question_text": "The phrase \"**fair and square**\" in the passage is closest in meaning to _______.",
           "options": [
             {
               "key": "A",
@@ -391,7 +391,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "It was all fair and square the Indians had an attorney, an interpreter, and the sound advice of their squaws.",
+          "clue_sentence": "It was all **fair and square** the Indians had an attorney, an interpreter, and the sound advice of their squaws.",
           "explanation_vi": "Cụm từ \"fair and square\" có nghĩa là công bằng, minh bạch và trung thực. Ngữ cảnh câu cho thấy người da đỏ có luật sư, thông dịch viên và sự tư vấn kỹ càng, chứng tỏ giao dịch diễn ra hoàn toàn sòng phẳng và thành thật (honest - A).",
           "paraphrase_analysis": {
             "question_phrase": "honest",
@@ -498,7 +498,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
         {
           "id": "hcmue_r03_q17",
           "type": "vocab_in_context",
-          "question_text": "The word \"undaunted\" in the passage is closest in meaning to _______.",
+          "question_text": "The word \"**undaunted**\" in the passage is closest in meaning to _______.",
           "options": [
             {
               "key": "A",
@@ -519,7 +519,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "Undaunted, he staked out more claims and lost them because he impatiently neglected to register his deeds.",
+          "clue_sentence": "**Undaunted**, he staked out more claims and lost them because he impatiently neglected to register his deeds.",
           "explanation_vi": "Từ \"undaunted\" có nghĩa là không nản lòng, không nhụt chí trước khó khăn. Sau khi mất đất, ông vẫn tiếp tục vạch ra các yêu cầu đất đai khác, chứng tỏ ông không hề bị nản lòng (undiscouraged - C đúng).",
           "paraphrase_analysis": {
             "question_phrase": "undiscouraged",
@@ -631,11 +631,11 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
       "topic": "Astronomy & Science",
       "difficulty": "B2",
       "content_paragraphs": [
-        "The Solar System, as we know it, contains over 178 objects which revolve around our central star, or the Sun. Some of these objects can be seen from Earth with the unaided eye or an earth-based telescope, but the majority have only been detected through the development of instruments such as the Hubble Space Telescope, or unmanned probes like Voyager. These instruments operate outside Earth's atmosphere collecting information on the composition and behavior of objects in the Solar System, which has enabled researchers to hypothesize their origins.",
-        "It is generally thought that a cloud of interstellar gas and dust known as a 'nebula', was disturbed by some major event in space, possibly a supernova, about five billion years ago and began to collapse under its own gravity, forming a cloud. [A] The center of the cloud became so hot that it eventually exploded into a star with the cooler gases flowing around it. [B] In time, the gases condensed into dust, metals, and various kinds of ice in the cold outer reaches of space. [C] These solid particles collided with each other to form larger objects, or asteroids, as they continued to spin around our central star. [D]",
-        "As these asteroids increased in size, their gravity began to pull in all the material in their immediate surroundings, and the largest of these went on to become planets. The very different composition of the inner planets (Mercury, Venus, Earth and Mars) and the outer planets (Jupiter, Saturn, Neptune and Uranus) has led astronomers to hypothesize that their distances from the Sun caused them to develop at different rates and in different ways. According to the most widely-held opinions, the planets closest to the Sun, where all the ice particles were vaporized due to the incredible heat, were formed mostly of rock, silicates, and metals with high melting points. These particles collided and were pulled together by gravity. These inner planets have thin atmospheres or none at all, and few, if any, satellites, which would indicate that most of the available material was either pulled into their own gravity or burned away in the heat of the Sun.",
+        "The Solar System, as we know it, contains over 178 objects which revolve around our central star, or the Sun. Some of these objects can be seen from Earth with the unaided eye or an earth-based telescope, but the majority have only been detected through the development of instruments such as the Hubble Space Telescope, or unmanned probes like Voyager. These instruments operate outside Earth's atmosphere collecting information on the **composition** and behavior of objects in the Solar System, which has enabled researchers to hypothesize their origins.",
+        "It is generally thought that a cloud of interstellar gas and dust known as a 'nebula', was **disturbed** by some major event in space, possibly a supernova, about five billion years ago and began to collapse under its own gravity, forming a cloud. [A] The center of the cloud became so hot that it eventually exploded into a star with the cooler gases flowing around it. [B] In time, the gases condensed into dust, metals, and various kinds of ice in the cold outer reaches of space. [C] These solid particles collided with each other to form larger objects, or asteroids, as they continued to spin around our central star. [D]",
+        "As these asteroids increased in size, their gravity began to pull in all the material in their immediate surroundings, and the largest of these went on to become planets. **The very different composition of the inner planets (Mercury, Venus, Earth and Mars) and the outer planets (Jupiter, Saturn, Neptune and Uranus) has led astronomers to hypothesize that their distances from the Sun caused them to develop at different rates and in different ways.** According to the most widely-held opinions, the planets closest to the Sun, where all the ice particles were vaporized due to the incredible heat, were formed mostly of rock, silicates, and metals with high melting points. These particles collided and were pulled together by gravity. These inner planets have thin atmospheres or none at all, and few, if any, satellites, which would indicate that most of the available material was either pulled into their own gravity or burned away in the heat of the Sun.",
         "The inner and outer planets are separated by an asteroid belt, consisting of material that was not able to form into planets due to Jupiter's immense gravity. Beyond this area, as more dust and ice particles escaped destruction by the Sun, four larger planets formed over a longer period of time in a far colder environment as material was thrown out from the center by the spinning star's centrifugal force. About a million years after the cooling of the original nebula, the Sun began to emit a stream of charged protons and electrons known as solar wind which blew the remaining gases outwards, to be sucked in by the outer planets which became gas giants. These planets attracted many objects in their vast gravity fields, some of which are big enough to be termed 'satellites', and countless smaller fragments which formed rings around the planets.",
-        "The discovery of more objects in the Solar System in recent times has led to the need for further classification. Far beyond the outer planets lies Pluto, which was originally considered to be the ninth planet, but which has since been found to be a binary system of two dwarf planets, the other being Charon. Pluto's origins may be in the recently discovered Kuiper Belt, the source of many of the comets which travel through the Solar System. This theory is based on Pluto's rock/ice composition which is similar to that of a comet. At one time, also thought to be a moon of Neptune, Pluto/Charon was reclassified in 2006 as one of three dwarf planets discovered so far, the others being Eris and Ceres.",
+        "The discovery of more objects in the Solar System in recent times has led to the need for further classification. Far beyond the outer planets lies **Pluto**, which was originally considered to be the ninth planet, but which has since been found to be a binary system of two dwarf planets, the other being Charon. Pluto's origins may be in the recently discovered Kuiper Belt, the source of many of the comets which travel through the Solar System. This theory is based on Pluto's rock/ice composition which is similar to that of a comet. At one time, also thought to be a moon of Neptune, Pluto/Charon was reclassified in 2006 as one of three dwarf planets discovered so far, the others being Eris and Ceres.",
         "Scientific knowledge is only as good as the ability of scientists to collect evidence, so as new advances are made in astronomy, the present theories may be disproved, as in the case of Pluto. The above account represents the consensus of current opinions on the matter."
       ],
       "word_count": 593,
@@ -664,13 +664,13 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "These instruments operate outside Earth's atmosphere collecting information on the composition and behavior of objects in the Solar System, which has enabled researchers to hypothesize their origins.",
+          "clue_sentence": "These instruments operate outside Earth's atmosphere collecting information on the **composition** and behavior of objects in the Solar System, which has enabled researchers to hypothesize their origins.",
           "explanation_vi": "Đoạn 1 nêu rõ kính viễn vọng không gian Hubble và các thiết bị khác hoạt động ngoài khí quyển Trái Đất để thu thập thông tin về thành phần và hành vi của các vật thể, giúp các nhà nghiên cứu đưa ra giả thuyết về nguồn gốc của chúng (tương ứng với việc giải đáp các bí ẩn/thắc mắc về vũ trụ). Do đó, đáp án D là chính xác."
         },
         {
           "id": "hcmue_r03_q22",
           "type": "vocab_in_context",
-          "question_text": "The word \"composition\" in the passage is closest in meaning to _____.",
+          "question_text": "The word \"**composition**\" in the passage is closest in meaning to _____.",
           "options": [
             {
               "key": "A",
@@ -691,13 +691,13 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "These instruments operate outside Earth's atmosphere collecting information on the composition and behavior of objects in the Solar System, which has enabled researchers to hypothesize their origins.",
+          "clue_sentence": "These instruments operate outside Earth's atmosphere collecting information on the **composition** and behavior of objects in the Solar System, which has enabled researchers to hypothesize their origins.",
           "explanation_vi": "Từ \"composition\" trong ngữ cảnh này chỉ thành phần cấu tạo của các vật thể trong hệ Mặt Trời, đồng nghĩa với từ \"make-up\" (cấu tạo, thành phần). Các lựa chọn khác không phù hợp về ngữ nghĩa."
         },
         {
           "id": "hcmue_r03_q23",
           "type": "vocab_in_context",
-          "question_text": "The word \"disturbed\" in the passage is closest in meaning to _____.",
+          "question_text": "The word \"**disturbed**\" in the passage is closest in meaning to _____.",
           "options": [
             {
               "key": "A",
@@ -718,7 +718,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 1,
-          "clue_sentence": "It is generally thought that a cloud of interstellar gas and dust known as a 'nebula', was disturbed by some major event in space, possibly a supernova, about five billion years ago and began to collapse under its own gravity, forming a cloud.",
+          "clue_sentence": "It is generally thought that a cloud of interstellar gas and dust known as a 'nebula', was **disturbed** by some major event in space, possibly a supernova, about five billion years ago and began to collapse under its own gravity, forming a cloud.",
           "explanation_vi": "Từ \"disturbed\" ở đây mang nghĩa bị làm xáo trộn, tác động, quấy rầy bởi một sự kiện lớn (như siêu tân tinh), đồng nghĩa gần nhất với từ \"bothered\" (bị làm phiền, bị tác động xáo trộn). Các lựa chọn khác như broken (bị hỏng), attracted (bị thu hút), imported (nhập khẩu) không chính xác."
         },
         {
@@ -805,7 +805,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
         {
           "id": "hcmue_r03_q27",
           "type": "inference",
-          "question_text": "Why does the author mention \"Pluto\" in paragraph 5?",
+          "question_text": "Why does the author mention \"**Pluto**\" in paragraph 5?",
           "options": [
             {
               "key": "A",
@@ -826,7 +826,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 4,
-          "clue_sentence": "Far beyond the outer planets lies Pluto, which was originally considered to be the ninth planet, but which has since been found to be a binary system of two dwarf planets, the other being Charon.",
+          "clue_sentence": "Far beyond the outer planets lies **Pluto**, which was originally considered to be the ninth planet, but which has since been found to be a binary system of two dwarf planets, the other being Charon.",
           "explanation_vi": "Tác giả nhắc đến Sao Diêm Vương (Pluto) để minh họa cho việc các phát hiện mới trong thiên văn học dẫn đến việc thay đổi/phủ định các lý thuyết hiện tại, cho thấy các khám phá mới luôn diễn ra (được củng cố thêm ở đoạn cuối: \"as new advances are made in astronomy, the present theories may be disproved, as in the case of Pluto\"). Do đó, đáp án C là chính xác."
         },
         {
@@ -880,7 +880,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 1,
-          "clue_sentence": "It is generally thought that a cloud of interstellar gas and dust known as a 'nebula', was disturbed by some major event in space, possibly a supernova, about five billion years ago and began to collapse under its own gravity, forming a cloud.",
+          "clue_sentence": "It is generally thought that a cloud of interstellar gas and dust known as a 'nebula', was **disturbed** by some major event in space, possibly a supernova, about five billion years ago and began to collapse under its own gravity, forming a cloud.",
           "explanation_vi": "Đoạn 2 nêu giả thuyết về nguồn gốc: một đám mây khí và bụi gọi là tinh vân (nebula) đã sụp đổ dưới trọng lực của chính nó. Do đó, đáp án A là đúng."
         },
         {
@@ -918,13 +918,13 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
       "topic": "Environmental Science",
       "difficulty": "C1",
       "content_paragraphs": [
-        "Ocean Thermal Energy Conversion (OTEC) is a method of producing electricity developed from the temperature difference that subsists between deep and shallow waters. It converts solar radiation to electric power. The system uses the ocean's natural thermal gradient to direct a power-producing cycle. To produce a significant amount of power, the temperature between warm water on the surface and deep cold water should differ by about 20 degrees Celsius. On average, 23 million square miles of tropical seas absorb an amount of solar radiation equal in heat content to about 250 million barrels of oil. If less than one tenth of this could be converted into electric power, it would provide more than 20 times the total amount of electricity utilized in America on any given day.",
+        "Ocean Thermal Energy Conversion (OTEC) is a method of producing electricity developed from the temperature difference that subsists between deep and shallow waters. It converts solar radiation to electric power. The system uses the ocean's natural thermal gradient to direct a power-producing cycle. To produce a significant amount of power, the temperature between warm water on the surface and deep cold water should differ by about 20 degrees Celsius. On average, 23 million square miles of tropical seas **absorb** an amount of solar radiation equal in heat content to about 250 million barrels of oil. If less than one tenth of this could be **converted** into electric power, it would provide more than 20 times the total amount of electricity utilized in America on any given day.",
         "Oceans are a huge renewable resource with the possibility of producing millions of watts of electric power. Some experts think the cold, deep seawater that is used in the OTEC process is rich in nutrients and, therefore, can be used to culture marine and plant life on shore or on land.",
-        "There are certain conditions which have to be met to enable OTEC to work. First, commercial OTEC facilities must be located in an environment that is stable enough for efficient system operation. This means that they must be built on land or submerged on the continental shelf. In addition, the natural ocean thermal gradient necessary for OTEC operation is generally found between latitudes 20° N and 20° S. The temperature of the surface water must differ from that of deep water and allowances should be made for a wide-open space. Tropical islands meet the requirements for a wide space, so they are areas for OTEC development. Land-based facilities offer advantages. For example, plants do not require extensive maintenance, and they can be installed in sheltered areas, safe from storms and general bad weather. Land-based sites allow OTEC plants to function with related industries.",
+        "There are certain conditions which have to be met to enable OTEC to work. First, commercial OTEC facilities must be located in an environment that is stable enough for efficient system operation. This means that they must be built on land or submerged on the continental shelf. In addition, the natural ocean thermal gradient necessary for OTEC operation is generally found between latitudes 20° N and 20° S. **The temperature of the surface water** must differ from that of deep water and allowances should be made for a wide-open space. Tropical islands meet the requirements for a wide space, so they are areas for OTEC development. Land-based facilities offer advantages. For example, plants do not require extensive maintenance, and they can be installed in sheltered areas, safe from storms and general bad weather. Land-based sites allow OTEC plants to function with related industries.",
         "Thermal energy from the ocean was first proposed as far back as 1881. However, it wasn't until 1930 that a system was built, producing 22kw of electricity. Another was constructed sometime later, but it was destroyed by waves. In 1980, the U.S department of energy built a site for OTEC heat exchangers on board a navy ship. Tests revealed that OTEC systems are able to function on slow moving ships and are of little consequence to the surrounding marine environment.",
-        "In 1981, Japan established a closed-cycle plant in the Pacific Ocean, producing 40,000 watts of electricity. In May 1993, another 50,000 watts of electricity was produced. However, it was an impractical energy source as the materials used were expensive. Currently, scientists are continuing to develop more cost effective and open-cycle OTEC systems. An integrated OTEC system can help create harmonious, self-sustaining island communities, independent of imported fossil fuels and their associated costs.",
+        "In 1981, Japan established a closed-cycle plant in the Pacific Ocean, producing 40,000 watts of electricity. In May 1993, another 50,000 watts of electricity was produced. However, it was an impractical energy source as the materials used were expensive. Currently, scientists are continuing to develop more cost effective and open-cycle OTEC systems. **An integrated OTEC system can help create harmonious, self-sustaining island communities, independent of imported fossil fuels and their associated costs.**",
         "Tidal energy is another form of ocean energy caused by the gravitational pull of the moon and sun, and the rotation of the Earth. When tides come into shore, they can be trapped in reservoirs behind dams. Then when the tide lowers, the water behind the dam can be released, functioning similarly to a hydroelectric power plant. Tidal dams can change the tidal level. In the local basin, affecting the navigation. The prime disadvantage is the effect a tidal station has on plants and animals. However, tidal fences, which are also used to channel the energy of tides, have less environmental impact than traditional sources of power such as fossil fuels or nuclear power, and are cheaper to install.",
-        "Turbines are devices with blades attached to a central rod that spin when a force hits the blades. [A] This spinning motion is extremely practical. The first turbine used was the undershot waterwheel, probably the oldest type of waterwheel dating back over 2,000 years. [B] Waterwheels and windmills were the first turbines; their wooden blades captured the power of wind or rivers to lift water for irrigation or to rotate huge stones to grind grain. [C] It wasn't until the 1880s, when the generator was first invented, that people began using turbines to produce electricity. [D]"
+        "Turbines are devices with blades attached to a central rod that spin when a force hits the blades. [A] This spinning motion is extremely **practical**. The first turbine used was the undershot waterwheel, probably the oldest type of waterwheel dating back over 2,000 years. [B] Waterwheels and windmills were the first turbines; their wooden blades captured the power of wind or rivers to lift water for irrigation or to rotate huge stones to grind grain. [C] It wasn't until the 1880s, when the generator was first invented, that people began using turbines to produce electricity. [D]"
       ],
       "word_count": 685,
       "questions": [
@@ -963,7 +963,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
         {
           "id": "hcmue_r03_q32",
           "type": "vocab_in_context",
-          "question_text": "The word \"absorb\" in the passage is closest in meaning to _______.",
+          "question_text": "The word \"**absorb**\" in the passage is closest in meaning to _______.",
           "options": [
             {
               "key": "A",
@@ -984,13 +984,13 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 0,
-          "clue_sentence": "On average, 23 million square miles of tropical seas absorb an amount of solar radiation equal in heat content to about 250 million barrels of oil.",
+          "clue_sentence": "On average, 23 million square miles of tropical seas **absorb** an amount of solar radiation equal in heat content to about 250 million barrels of oil.",
           "explanation_vi": "Từ \"absorb\" có nghĩa là hấp thụ, đồng nghĩa với \"take in\" (thu nhận, hấp thụ). Các đáp án khác: work together with (lợp tác), reject (từ chối), make efficient (làm cho hiệu quả)."
         },
         {
           "id": "hcmue_r03_q33",
           "type": "vocab_in_context",
-          "question_text": "The word \"converted\" in the passage is closest in meaning to _______.",
+          "question_text": "The word \"**converted**\" in the passage is closest in meaning to _______.",
           "options": [
             {
               "key": "A",
@@ -1011,13 +1011,13 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "D",
           "clue_paragraph_index": 0,
-          "clue_sentence": "If less than one tenth of this could be converted into electric power, it would provide more than 20 times the total amount of electricity utilized in America on any given day.",
+          "clue_sentence": "If less than one tenth of this could be **converted** into electric power, it would provide more than 20 times the total amount of electricity utilized in America on any given day.",
           "explanation_vi": "Từ \"converted\" có nghĩa là chuyển đổi, biến đổi, đồng nghĩa với \"transformed\". Các lựa chọn khác: consumed (tiêu thụ), released (giải phóng), used (sử dụng)."
         },
         {
           "id": "hcmue_r03_q34",
           "type": "factual_detail",
-          "question_text": "In paragraph 3, the author mentions \"The temperature of the surface water\" as an example of _______.",
+          "question_text": "In paragraph 3, the author mentions \"**The temperature of the surface water**\" as an example of _______.",
           "options": [
             {
               "key": "A",
@@ -1038,7 +1038,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 2,
-          "clue_sentence": "The temperature of the surface water must differ from that of deep water and allowances should be made for a wide-open space.",
+          "clue_sentence": "**The temperature of the surface water** must differ from that of deep water and allowances should be made for a wide-open space.",
           "explanation_vi": "Tác giả nhắc đến nhiệt độ nước bề mặt như một phần của các điều kiện/yêu cầu cụ thể cần thiết để OTEC hoạt động được (the specific requirements needed for OTEC to work)."
         },
         {
@@ -1125,7 +1125,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
         {
           "id": "hcmue_r03_q38",
           "type": "vocab_in_context",
-          "question_text": "The word \"practical\" in the passage is closest in meaning to ____________.",
+          "question_text": "The word \"**practical**\" in the passage is closest in meaning to ____________.",
           "options": [
             {
               "key": "A",
@@ -1146,7 +1146,7 @@ export const HCMUE_READING_TEST_03: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 6,
-          "clue_sentence": "This spinning motion is extremely practical.",
+          "clue_sentence": "This spinning motion is extremely **practical**.",
           "explanation_vi": "Từ \"practical\" có nghĩa là thực tế, có ích, hữu dụng, đồng nghĩa với \"useful\". Các lựa chọn khác: unnecessary (không cần thiết), swift (nhanh chóng), sensitive (nhạy cảm)."
         },
         {
