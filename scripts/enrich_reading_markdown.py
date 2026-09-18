@@ -424,8 +424,11 @@ def apply_3point_patch(passage_data, detections):
         for q in questions:
             if q.get('clue_paragraph_index') == p_idx and q.get('clue_sentence'):
                 clue = q['clue_sentence']
-                # Check if old clue is no longer in updated paragraph
-                if clue not in paragraphs[p_idx]:
+                # Check if old clue is missing bold wrap present in updated paragraph
+                needs_sync = (clue not in paragraphs[p_idx]) or (
+                    f"**{target}**" in paragraphs[p_idx] and f"**{target}**" not in clue and target in clue
+                )
+                if needs_sync:
                     # Try wrapping target in clue
                     wrapped_clue = wrap_target_in_text(clue, target)
                     if wrapped_clue in paragraphs[p_idx]:

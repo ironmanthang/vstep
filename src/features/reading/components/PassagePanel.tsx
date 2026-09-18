@@ -106,9 +106,16 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
     // If clue sentence exists in this paragraph, highlight it
     if (hasClue && activeClueSentence) {
       const clueIndex = text.indexOf(activeClueSentence);
-      const before = text.slice(0, clueIndex);
-      const clue = text.slice(clueIndex, clueIndex + activeClueSentence.length);
-      const after = text.slice(clueIndex + activeClueSentence.length);
+      let before = text.slice(0, clueIndex);
+      let clue = text.slice(clueIndex, clueIndex + activeClueSentence.length);
+      let after = text.slice(clueIndex + activeClueSentence.length);
+
+      // If the clue sentence was wrapped by bold markdown in the paragraph, absorb the delimiters into the highlight
+      if (before.endsWith('**') && after.startsWith('**')) {
+        before = before.slice(0, -2);
+        clue = `**${clue}**`;
+        after = after.slice(2);
+      }
 
       return (
         <>

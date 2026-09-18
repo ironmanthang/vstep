@@ -63,4 +63,17 @@ describe('renderInlineMarkdown tokenizer', () => {
     const spanB = result[5] as ReactElement<{ 'data-marker': string }>;
     expect(spanB.props['data-marker']).toBe('B');
   });
+
+  it('renders full-sentence bold tokens cleanly', () => {
+    const sentence = '**The very different composition of the inner planets has led astronomers to hypothesize that their distances caused them to develop at different rates.**';
+    const result = renderInlineMarkdown(sentence);
+    expect(result).toHaveLength(3);
+    expect(result[0]).toBe('');
+    const strong = result[1] as ReactElement<{ children: string }>;
+    expect(strong.type).toBe('strong');
+    expect(strong.props.children).toBe(
+      'The very different composition of the inner planets has led astronomers to hypothesize that their distances caused them to develop at different rates.'
+    );
+    expect(result[2]).toBe('');
+  });
 });

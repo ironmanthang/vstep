@@ -893,7 +893,7 @@ export const HCMUE_READING_TEST_04: ReadingTest = {
           ],
           "correct_key": "A",
           "clue_paragraph_index": 4,
-          "clue_sentence": "This system is the most important for agriculture as many legumes are then able to grow vigorously under nitrogen deficient conditions, contributing nitrogen to the farming system or as green manure included in the soil.",
+          "clue_sentence": "**This system is the most important for agriculture as many legumes are then able to grow vigorously under nitrogen deficient conditions, contributing nitrogen to the farming system or as green manure included in the soil.**",
           "explanation_vi": "Câu gốc nêu bật tầm quan trọng của hệ thống này đối với nông nghiệp vì các loại đậu có thể phát triển mạnh trong điều kiện thiếu nitơ, đóng góp nitơ cho hệ thống canh tác. Đáp án A tóm tắt chính xác ý nghĩa này.",
           "paraphrase_analysis": {
             "question_phrase": "grow vigorously under nitrogen deficient conditions",

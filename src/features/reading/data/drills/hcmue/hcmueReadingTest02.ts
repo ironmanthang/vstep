@@ -852,7 +852,7 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
           ],
           "correct_key": "C",
           "clue_paragraph_index": 6,
-          "clue_sentence": "Parasites live off the body of other organisms and receive nourishment from their tissues, while also inflicting damage on their hosts.",
+          "clue_sentence": "**Parasites live off the body of other organisms and receive nourishment from their tissues, while also inflicting damage on their hosts.**",
           "explanation_vi": "Câu hỏi yêu cầu tìm ý tương đương với đoạn về ký sinh trùng (parasitism), nơi ký sinh trùng sống bám vào vật chủ, lấy dinh dưỡng từ mô của vật chủ và đồng thời gây tổn hại cho chúng. Đáp án C phản ánh đúng ý nghĩa các sinh vật gây tổn hại cho vật chủ.",
           "paraphrase_analysis": {
             "question_phrase": "Some animals are selfish and only cause damage to their hosts",
