@@ -1,4 +1,4 @@
-import { useState, forwardRef } from 'react';
+import { useRef, useLayoutEffect, useEffect, useCallback, forwardRef } from 'react';
 import type { ReadingPassage } from '../types';
 import './ReadingQuestionCard.css';
 
@@ -47,7 +47,23 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
     },
     ref
   ) => {
-    const [isNoteOpen, setIsNoteOpen] = useState<boolean>(Boolean(note));
+    const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+    const adjustHeight = useCallback(() => {
+      const textarea = textareaRef.current;
+      if (!textarea) return;
+      textarea.style.height = 'auto';
+      textarea.style.height = `${Math.min(textarea.scrollHeight, 220)}px`;
+    }, []);
+
+    useLayoutEffect(() => {
+      adjustHeight();
+    }, [note, adjustHeight]);
+
+    useEffect(() => {
+      window.addEventListener('resize', adjustHeight);
+      return () => window.removeEventListener('resize', adjustHeight);
+    }, [adjustHeight]);
 
     const typeMeta = QUESTION_TYPE_LABELS[question.type] || {
       label: 'Câu hỏi đọc hiểu',
@@ -175,32 +191,21 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
           </div>
         )}
 
-        {/* User Scratchpad Note */}
+        {/* Scratchpad Note-Taking (Practice Mode Only - Parity with Listening) */}
         {!isExam && (
           <div className="rq-notes-wrapper">
-            {!isNoteOpen && !note ? (
-              <button
-                type="button"
-                className="rq-open-note-btn"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setIsNoteOpen(true);
-                }}
-              >
-                ✏️ Thêm ghi chú nháp
-              </button>
-            ) : (
-              <div className="rq-note-input-wrap">
-                <textarea
-                  className="rq-note-textarea"
-                  placeholder="Ghi chú suy luận hoặc từ vựng cần lưu ý..."
-                  value={note}
-                  onChange={(e) => onChangeNote(e.target.value)}
-                  rows={2}
-                  onClick={(e) => e.stopPropagation()}
-                />
-              </div>
-            )}
+            <textarea
+              ref={textareaRef}
+              className="rq-note-textarea"
+              placeholder="📝 Ghi chú nháp từ khóa... (Enter để xuống dòng)"
+              rows={1}
+              value={note}
+              onChange={(e) => {
+                onChangeNote(e.target.value);
+                adjustHeight();
+              }}
+              aria-label={`Ghi chú cho câu ${questionIndex + 1}`}
+            />
           </div>
         )}
       </div>

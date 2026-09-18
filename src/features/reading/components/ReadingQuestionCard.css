@@ -283,40 +283,58 @@
   font-style: italic;
 }
 
-/* Scratchpad notes */
+/* Scratchpad Note-Taking Input (Exact Parity with Listening Studio) */
 .rq-notes-wrapper {
-  margin-top: 2px;
+  margin-top: 0;
+  background: var(--note-subtle);
+  border: 1px dashed var(--note-border);
+  border-left: 4px solid var(--note-accent);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  transition: all var(--transition-fast);
 }
 
-.rq-open-note-btn {
-  background: transparent;
-  border: none;
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text-muted, #888);
-  cursor: pointer;
-  padding: 0;
-  transition: color 120ms ease;
+.rq-notes-wrapper:hover {
+  background: var(--note-subtle-hover);
+  border-color: var(--note-border);
+  border-left-color: var(--note-accent-hover);
 }
 
-.rq-open-note-btn:hover {
-  color: var(--primary, #e05a2b);
+.rq-notes-wrapper:focus-within {
+  border-color: var(--note-border-focus);
+  border-left-color: var(--note-border-focus);
+  background: var(--note-subtle-hover);
+  box-shadow: 0 0 0 1px var(--note-border);
 }
 
 .rq-note-textarea {
+  display: block;
   width: 100%;
-  box-sizing: border-box;
-  background: var(--bg-subtle, rgba(255, 255, 255, 0.04));
-  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
-  border-radius: var(--radius-sm, 6px);
-  padding: 6px 10px;
-  font-size: 12px;
-  color: var(--text-primary, #f5f0eb);
+  height: 22px;
+  min-height: 22px;
+  max-height: 220px;
+  padding: 0;
+  margin: 0;
+  font-size: var(--fs-sm);
   font-family: inherit;
-  resize: vertical;
+  color: var(--text-primary);
+  background: transparent;
+  border: none;
+  resize: none;
+  overflow-y: auto;
+  line-height: 22px;
+  transition: all var(--transition-fast);
+  box-sizing: border-box;
 }
 
 .rq-note-textarea:focus {
   outline: none;
-  border-color: var(--primary, #e05a2b);
 }
+
+.rq-note-textarea::placeholder {
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  font-style: italic;
+  line-height: 22px;
+}
+
