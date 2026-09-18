@@ -367,6 +367,29 @@
   padding: var(--space-8) var(--space-8);
 }
 
+/* Reading Studio Page Viewport Lock (Zero Window Scroll) */
+.main-wrapper:has(.reading-studio-page) {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.content-container:has(.reading-studio-page) {
+  height: 100vh;
+  max-height: 100vh;
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-shell.sidebar-collapsed .content-container:has(.reading-studio-page) {
+  max-width: 100%;
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+}
+
 /* Mobile Bottom Navigation Bar (Hidden on Desktop) */
 .mobile-bottom-nav {
   display: none;

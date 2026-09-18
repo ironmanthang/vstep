@@ -7,6 +7,7 @@ import './PassagePanel.css';
 
 interface PassagePanelProps {
   passage: ReadingPassage;
+  passageIndex?: number;
   activeClueSentence?: string;
   readerSettings: ReaderSettings;
   onChangeReaderSettings: (settings: Partial<ReaderSettings>) => void;
@@ -15,6 +16,7 @@ interface PassagePanelProps {
 
 export const PassagePanel: React.FC<PassagePanelProps> = ({
   passage,
+  passageIndex = 0,
   activeClueSentence,
   readerSettings,
   onChangeReaderSettings,
@@ -140,7 +142,7 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
       {/* Reader Toolbar */}
       <div className="reader-toolbar">
         <div className="reader-meta-tag">
-          <span className="reader-word-count">~{passage.word_count} từ</span>
+          <span className="reader-passage-label">Passage {passageIndex + 1}</span>
         </div>
 
         <div className="reader-controls-cluster">
@@ -189,11 +191,6 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
         onMouseUp={handleTextInteraction}
         onDoubleClick={handleDoubleClick}
       >
-        <h2 className="passage-main-title">{passage.title}</h2>
-        {passage.topic && (
-          <div className="passage-topic-tag">Chủ đề: {passage.topic}</div>
-        )}
-
         <article className="passage-paragraphs-flow">
           {passage.content_paragraphs.map((pText, pIdx) => (
             <p key={pIdx} className="passage-paragraph-text">

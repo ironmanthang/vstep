@@ -31,10 +31,12 @@
   gap: 8px;
 }
 
-.reader-word-count {
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text-muted, #888);
+.reader-passage-label {
+  font-size: var(--fs-xs, 12px);
+  font-weight: 800;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .reader-controls-cluster {
@@ -93,27 +95,10 @@
 .passage-content-container {
   flex: 1;
   overflow-y: auto;
-  padding: 24px 28px;
+  padding: 24px 28px 76px 28px;
   font-family: Georgia, 'Times New Roman', serif;
   letter-spacing: 0.01em;
   touch-action: manipulation;
-}
-
-.passage-main-title {
-  font-size: 1.3em;
-  font-weight: 800;
-  margin: 0 0 6px 0;
-  color: var(--text-primary);
-  font-family: inherit;
-  line-height: 1.3;
-}
-
-.passage-topic-tag {
-  font-size: 0.8em;
-  font-weight: 600;
-  color: var(--primary, #e05a2b);
-  margin-bottom: 18px;
-  font-style: italic;
 }
 
 .passage-paragraphs-flow {

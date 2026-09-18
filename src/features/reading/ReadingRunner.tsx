@@ -314,6 +314,7 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
           {currentPassage && (
             <PassagePanel
               passage={currentPassage}
+              passageIndex={activePassageIndex}
               activeClueSentence={activeClueSentence}
               readerSettings={readerSettings}
               onChangeReaderSettings={updateReaderSettings}
