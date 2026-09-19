@@ -1,5 +1,6 @@
 import React from 'react';
 import type { ListeningTest } from '../types';
+import './QuestionPalette.css';
 
 export interface QuestionPaletteProps {
   questions: ListeningTest['questions'];

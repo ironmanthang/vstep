@@ -1,4 +1,5 @@
 import React from 'react';
+import './PassageGroupHeader.css';
 
 interface PassageGroupHeaderProps {
   title: string;

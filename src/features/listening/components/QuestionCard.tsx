@@ -1,5 +1,6 @@
 import React from 'react';
 import type { ListeningTest } from '../types';
+import './QuestionCard.css';
 
 export interface QuestionCardProps {
   question: ListeningTest['questions'][number];
