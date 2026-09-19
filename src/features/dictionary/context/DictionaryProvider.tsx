@@ -48,9 +48,15 @@ export const DictionaryProvider: React.FC<DictionaryProviderProps> = ({ children
     setExamLockCount((c) => Math.max(0, c - 1));
   }, []);
 
+  const lastClosedAtRef = useRef<number>(0);
+
   const closeDictionary = useCallback(() => {
+    lastClosedAtRef.current = Date.now();
     setActiveWord(null);
     setActivePosition(null);
+    if (typeof window !== 'undefined') {
+      window.getSelection()?.removeAllRanges();
+    }
   }, []);
 
   const effectiveWord = isExamLocked ? null : activeWord;
@@ -107,6 +113,7 @@ export const DictionaryProvider: React.FC<DictionaryProviderProps> = ({ children
   useEffect(() => {
     const handleMouseUp = (e: MouseEvent) => {
       if (isExamLocked || shouldIgnoreElement(e.target)) return;
+      if (Date.now() - lastClosedAtRef.current < 250) return;
 
       const selection = window.getSelection();
       if (!selection || selection.isCollapsed) return;

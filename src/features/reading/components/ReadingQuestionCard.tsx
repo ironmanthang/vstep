@@ -80,6 +80,48 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
     const isCorrect = isSubmitted && selectedKey === question.correct_key;
     const isWrong = isSubmitted && selectedKey && selectedKey !== question.correct_key;
 
+    const clickTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+    useEffect(() => {
+      return () => {
+        if (clickTimerRef.current) {
+          clearTimeout(clickTimerRef.current);
+        }
+      };
+    }, []);
+
+    const handleClick = (e: React.MouseEvent) => {
+      // If user is double-clicking, cancel pending collapse so double-click (e.g. dictionary lookup) proceeds
+      if (e.detail > 1) {
+        if (clickTimerRef.current) {
+          clearTimeout(clickTimerRef.current);
+          clickTimerRef.current = null;
+        }
+        return;
+      }
+
+      if (clickTimerRef.current) {
+        clearTimeout(clickTimerRef.current);
+      }
+
+      clickTimerRef.current = setTimeout(() => {
+        clickTimerRef.current = null;
+        // If user was highlighting/selecting text (e.g. for dictionary lookup), don't collapse
+        const sel = window.getSelection();
+        if (sel && !sel.isCollapsed && sel.toString().trim()) {
+          return;
+        }
+        onToggleCollapse();
+      }, 220);
+    };
+
+    const handleDoubleClick = () => {
+      if (clickTimerRef.current) {
+        clearTimeout(clickTimerRef.current);
+        clickTimerRef.current = null;
+      }
+    };
+
     return (
       <div
         ref={ref}
@@ -89,14 +131,8 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
         } ${
           isSubmitted ? (isCorrect ? 'result-correct' : isWrong ? 'result-wrong' : 'result-unanswered') : ''
         }`}
-        onClick={() => {
-          // If user was highlighting/selecting text (e.g. for dictionary lookup), don't collapse
-          const sel = window.getSelection();
-          if (sel && !sel.isCollapsed && sel.toString().trim()) {
-            return;
-          }
-          onToggleCollapse();
-        }}
+        onClick={handleClick}
+        onDoubleClick={handleDoubleClick}
         title={isCollapsed ? 'Nhấn để mở rộng câu hỏi' : 'Nhấn để thu gọn câu hỏi'}
       >
         {/* Card Header */}

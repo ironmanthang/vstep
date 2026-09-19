@@ -110,6 +110,9 @@ export const DictionaryTooltip: React.FC<DictionaryTooltipProps> = ({
     };
     const handlePointerDown = (e: MouseEvent | TouchEvent) => {
       if (cardRef.current && !cardRef.current.contains(e.target as Node)) {
+        if (typeof window !== 'undefined') {
+          window.getSelection()?.removeAllRanges();
+        }
         onClose();
       }
     };
@@ -148,6 +151,9 @@ export const DictionaryTooltip: React.FC<DictionaryTooltipProps> = ({
         className="dictionary-tooltip-backdrop"
         onPointerDown={(e) => {
           e.stopPropagation();
+          if (typeof window !== 'undefined') {
+            window.getSelection()?.removeAllRanges();
+          }
           onClose();
         }}
         onClick={(e) => {
@@ -203,7 +209,12 @@ export const DictionaryTooltip: React.FC<DictionaryTooltipProps> = ({
             <button
               type="button"
               className="dict-close-btn"
-              onClick={onClose}
+              onClick={() => {
+                if (typeof window !== 'undefined') {
+                  window.getSelection()?.removeAllRanges();
+                }
+                onClose();
+              }}
               aria-label="Đóng tra từ"
             >
               ✕

@@ -115,7 +115,7 @@ export const ReadingQuestionPalette: React.FC<ReadingQuestionPaletteProps> = ({
             <span>Đã trả lời</span>
           </div>
           <div className="r-legend-item">
-            <span className="r-legend-dot flagged" />
+            <span className="r-legend-flag" aria-hidden="true">🚩</span>
             <span>Đã cắm cờ</span>
           </div>
           {isSubmitted && (
