@@ -81,11 +81,18 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
     const isWrong = isSubmitted && selectedKey && selectedKey !== question.correct_key;
 
     const clickTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+    const optionClickTimerRef = useRef<{
+      timer: ReturnType<typeof setTimeout>;
+      key: 'A' | 'B' | 'C' | 'D';
+    } | null>(null);
 
     useEffect(() => {
       return () => {
         if (clickTimerRef.current) {
           clearTimeout(clickTimerRef.current);
+        }
+        if (optionClickTimerRef.current) {
+          clearTimeout(optionClickTimerRef.current.timer);
         }
       };
     }, []);
@@ -119,6 +126,56 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
       if (clickTimerRef.current) {
         clearTimeout(clickTimerRef.current);
         clickTimerRef.current = null;
+      }
+    };
+
+    const handleOptionClick = (
+      e: React.MouseEvent,
+      key: 'A' | 'B' | 'C' | 'D'
+    ) => {
+      e.stopPropagation();
+      if (isSubmitted) return;
+
+      const target = e.target as HTMLElement;
+      const isKeyBadge = Boolean(target.closest('.rq-option-key'));
+      const isText = Boolean(target.closest('.rq-option-text'));
+
+      // If clicking the letter badge or outside the text (instant selection with 0ms delay)
+      if (isKeyBadge || !isText) {
+        if (optionClickTimerRef.current) {
+          clearTimeout(optionClickTimerRef.current.timer);
+          optionClickTimerRef.current = null;
+        }
+        onSelectOption(key);
+        return;
+      }
+
+      // If clicking on the option text, debounce (220ms) so double-clicking to translate doesn't toggle answer
+      if (e.detail > 1) {
+        if (optionClickTimerRef.current) {
+          clearTimeout(optionClickTimerRef.current.timer);
+          optionClickTimerRef.current = null;
+        }
+        return;
+      }
+
+      if (optionClickTimerRef.current) {
+        clearTimeout(optionClickTimerRef.current.timer);
+      }
+
+      optionClickTimerRef.current = {
+        key,
+        timer: setTimeout(() => {
+          optionClickTimerRef.current = null;
+          onSelectOption(key);
+        }, 220),
+      };
+    };
+
+    const cancelOptionTimer = () => {
+      if (optionClickTimerRef.current) {
+        clearTimeout(optionClickTimerRef.current.timer);
+        optionClickTimerRef.current = null;
       }
     };
 
@@ -209,10 +266,11 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
                     key={opt.key}
                     type="button"
                     className={`rq-option-row ${optionClass}`}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      if (!isSubmitted) onSelectOption(opt.key);
+                    onClick={(e) => handleOptionClick(e, opt.key)}
+                    onMouseDown={(e) => {
+                      if (e.detail > 1) cancelOptionTimer();
                     }}
+                    onDoubleClick={cancelOptionTimer}
                     disabled={isSubmitted}
                   >
                     <span className="rq-option-key">{opt.key}</span>
