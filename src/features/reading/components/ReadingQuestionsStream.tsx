@@ -13,12 +13,15 @@ interface ReadingQuestionsStreamProps {
   isSubmitted: boolean;
   isExam: boolean;
   activeQuestionId: string | null;
+  revealedClueQuestionId: string | null;
+  collapsedQuestions: Set<string>;
   mobileHidden: boolean;
   questionRefs: React.MutableRefObject<Record<string, HTMLDivElement | null>>;
   paneRef: React.RefObject<HTMLDivElement | null>;
   onSelectOption: (questionId: string, optionKey: 'A' | 'B' | 'C' | 'D') => void;
   onToggleFlag: (questionId: string) => void;
-  onFocusQuestion: (questionId: string) => void;
+  onToggleClue: (questionId: string) => void;
+  onToggleCollapse: (questionId: string) => void;
   onChangeNote: (questionId: string, note: string) => void;
 }
 
@@ -31,12 +34,15 @@ export const ReadingQuestionsStream: React.FC<ReadingQuestionsStreamProps> = ({
   isSubmitted,
   isExam,
   activeQuestionId,
+  revealedClueQuestionId,
+  collapsedQuestions,
   mobileHidden,
   questionRefs,
   paneRef,
   onSelectOption,
   onToggleFlag,
-  onFocusQuestion,
+  onToggleClue,
+  onToggleCollapse,
   onChangeNote,
 }) => {
   return (
@@ -61,9 +67,12 @@ export const ReadingQuestionsStream: React.FC<ReadingQuestionsStreamProps> = ({
               isSubmitted={isSubmitted}
               isExam={isExam}
               isActive={activeQuestionId === q.id}
+              isClueRevealed={revealedClueQuestionId === q.id}
+              isCollapsed={collapsedQuestions.has(q.id)}
+              onToggleCollapse={() => onToggleCollapse(q.id)}
               onSelectOption={(key) => onSelectOption(q.id, key)}
               onToggleFlag={() => onToggleFlag(q.id)}
-              onFocusQuestion={() => onFocusQuestion(q.id)}
+              onToggleClue={() => onToggleClue(q.id)}
               note={notes[q.id] || ''}
               onChangeNote={(val) => onChangeNote(q.id, val)}
             />

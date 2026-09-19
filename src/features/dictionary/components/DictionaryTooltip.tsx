@@ -145,6 +145,16 @@ export const DictionaryTooltip: React.FC<DictionaryTooltipProps> = ({
   return (
     <div className="dictionary-tooltip-overlay">
       <div
+        className="dictionary-tooltip-backdrop"
+        onPointerDown={(e) => {
+          e.stopPropagation();
+          onClose();
+        }}
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+      />
+      <div
         ref={cardRef}
         className={`dictionary-tooltip-card ${isFlippedBelow ? 'flip-below' : 'flip-above'}`}
         style={{

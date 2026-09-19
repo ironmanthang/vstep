@@ -9,7 +9,7 @@ trigger: always_on
 - **Proactive Dead Code Pruning:** After any refactor, audit the full call surface (hook signatures, exported types, service layers, import statements) for functions, props, or types that are no longer called or have been superseded. Remove them immediately — never leave dead exports or stale interfaces lingering for the user to discover.
 
 ## File Boundaries & Structure
-- **File size & structure alerts:** After coding, if any source code logic file ends up above 400 lines (excluding special files such as i18n JSON locales, auto-generated/lock files, raw data/mock constants, build/config manifests, and central entry points), or a folder has more than 10 files, alert the user and suggest a way to split/refactor the structure. Name subfolders appropriately so AI agents understand file contents.
+- **File size & structure alerts:** After coding, if any source code file ends up above 500 lines (excluding special files such as i18n JSON locales, auto-generated/lock files, raw data/mock constants, build/config manifests, and central entry points), or a folder has more than 10 files, alert the user and suggest a way to split/refactor the structure. Name subfolders appropriately so AI agents understand file contents.
 
 ## Precise File Editing & Target Containment
 - **Zero Collateral Deletions**: When editing files with replacement tools (`replace_file_content` / `multi_replace_file_content`), strictly scope `TargetContent` and line boundaries to the exact lines being modified. Never sweep adjacent unrelated lines, comments, or bullet points into `TargetContent` unless they are intentionally being rewritten.

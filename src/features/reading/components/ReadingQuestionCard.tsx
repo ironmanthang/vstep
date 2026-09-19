@@ -13,9 +13,12 @@ interface ReadingQuestionCardProps {
   isSubmitted: boolean;
   isExam: boolean;
   isActive: boolean;
+  isClueRevealed: boolean;
+  isCollapsed: boolean;
+  onToggleCollapse: () => void;
   onSelectOption: (key: 'A' | 'B' | 'C' | 'D') => void;
   onToggleFlag: () => void;
-  onFocusQuestion: () => void;
+  onToggleClue: () => void;
   note: string;
   onChangeNote: (note: string) => void;
 }
@@ -40,9 +43,12 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
       isSubmitted,
       isExam,
       isActive,
+      isClueRevealed,
+      isCollapsed,
+      onToggleCollapse,
       onSelectOption,
       onToggleFlag,
-      onFocusQuestion,
+      onToggleClue,
       note,
       onChangeNote,
     },
@@ -79,30 +85,48 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
         ref={ref}
         id={`reading-question-${question.id}`}
         className={`reading-question-card ${isActive ? 'card-active' : ''} ${
+          isCollapsed ? 'card-collapsed' : ''
+        } ${
           isSubmitted ? (isCorrect ? 'result-correct' : isWrong ? 'result-wrong' : 'result-unanswered') : ''
         }`}
-        onClick={onFocusQuestion}
+        onClick={() => {
+          // If user was highlighting/selecting text (e.g. for dictionary lookup), don't collapse
+          const sel = window.getSelection();
+          if (sel && !sel.isCollapsed && sel.toString().trim()) {
+            return;
+          }
+          onToggleCollapse();
+        }}
+        title={isCollapsed ? 'Nhấn để mở rộng câu hỏi' : 'Nhấn để thu gọn câu hỏi'}
       >
         {/* Card Header */}
         <div className="rq-header">
           <div className="rq-header-left">
+            <span className="rq-collapse-icon" aria-hidden="true">
+              {isCollapsed ? '▶' : '▼'}
+            </span>
             <span className="rq-number">Câu {questionIndex + 1}</span>
             <span className={`badge ${typeMeta.badgeClass} rq-type-badge`}>
               {typeMeta.label}
             </span>
+            {isCollapsed && selectedKey && (
+              <span className="rq-collapsed-selected-badge">
+                Đã chọn: {selectedKey}
+              </span>
+            )}
           </div>
 
           <div className="rq-header-actions">
-            {/* Clue button: Jump to clue in passage */}
-            {question.clue_sentence && (
+            {/* Clue button: Jump to clue in passage (Hidden during timed exam) */}
+            {(!isExam || isSubmitted) && question.clue_sentence && (
               <button
                 type="button"
-                className={`rq-clue-btn ${isActive ? 'active' : ''}`}
+                className={`rq-clue-btn ${isClueRevealed ? 'active' : ''}`}
                 onClick={(e) => {
                   e.stopPropagation();
-                  onFocusQuestion();
+                  onToggleClue();
                 }}
-                title="Xem dẫn chứng tương ứng trong bài đọc"
+                title={isClueRevealed ? 'Ẩn dẫn chứng' : 'Xem dẫn chứng tương ứng trong bài đọc'}
               >
                 🔍 Xem dẫn chứng
               </button>
@@ -129,85 +153,97 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
         {/* Question Prompt */}
         <div className="rq-prompt">{renderInlineMarkdown(question.question_text, false)}</div>
 
-        {/* 4 Multiple Choice Options */}
-        <div className="rq-options-list">
-          {question.options.map((opt) => {
-            const isSelected = selectedKey === opt.key;
-            const isThisCorrect = isSubmitted && opt.key === question.correct_key;
-            const isThisWrongSelected = isSubmitted && isSelected && !isThisCorrect;
+        {/* Collapsible Content: Options, Explanations, Scratchpad Notes */}
+        {!isCollapsed && (
+          <>
+            {/* 4 Multiple Choice Options */}
+            <div className="rq-options-list">
+              {question.options.map((opt) => {
+                const isSelected = selectedKey === opt.key;
+                const isThisCorrect = isSubmitted && opt.key === question.correct_key;
+                const isThisWrongSelected = isSubmitted && isSelected && !isThisCorrect;
 
-            let optionClass = '';
-            if (isSelected) optionClass += ' selected';
-            if (isThisCorrect) optionClass += ' option-correct';
-            if (isThisWrongSelected) optionClass += ' option-wrong';
+                let optionClass = '';
+                if (isSelected) optionClass += ' selected';
+                if (isThisCorrect) optionClass += ' option-correct';
+                if (isThisWrongSelected) optionClass += ' option-wrong';
 
-            return (
-              <button
-                key={opt.key}
-                type="button"
-                className={`rq-option-row ${optionClass}`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  if (!isSubmitted) onSelectOption(opt.key);
-                }}
-                disabled={isSubmitted}
-              >
-                <span className="rq-option-key">{opt.key}</span>
-                <span className="rq-option-text">{opt.text}</span>
-                {isThisCorrect && <span className="rq-feedback-mark">✓</span>}
-                {isThisWrongSelected && <span className="rq-feedback-mark">✗</span>}
-              </button>
-            );
-          })}
-        </div>
-
-        {/* Submitted Explanations & Paraphrase Analysis */}
-        {isSubmitted && (
-          <div className="rq-explanation-box">
-            <div className="rq-explanation-title">
-              💡 Giải Thích Đáp Án: <strong>{question.correct_key}</strong>
+                return (
+                  <button
+                    key={opt.key}
+                    type="button"
+                    className={`rq-option-row ${optionClass}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (!isSubmitted) onSelectOption(opt.key);
+                    }}
+                    disabled={isSubmitted}
+                  >
+                    <span className="rq-option-key">{opt.key}</span>
+                    <span className="rq-option-text">{opt.text}</span>
+                    {isThisCorrect && <span className="rq-feedback-mark">✓</span>}
+                    {isThisWrongSelected && <span className="rq-feedback-mark">✗</span>}
+                  </button>
+                );
+              })}
             </div>
-            <div className="rq-explanation-content">{question.explanation_vi}</div>
 
-            {/* Paraphrase Mapping */}
-            {question.paraphrase_analysis && (
-              <div className="rq-paraphrase-card">
-                <div className="rq-paraphrase-header">Phân Tích Paraphrase (Đối chiếu từ vựng):</div>
-                <div className="rq-paraphrase-grid">
-                  <div className="rq-paraphrase-col">
-                    <span className="rq-col-label">Trong câu hỏi:</span>
-                    <span className="rq-col-val">{question.paraphrase_analysis.question_phrase}</span>
-                  </div>
-                  <div className="rq-paraphrase-arrow">⇄</div>
-                  <div className="rq-paraphrase-col">
-                    <span className="rq-col-label">Trong bài đọc:</span>
-                    <span className="rq-col-val">{question.paraphrase_analysis.passage_phrase}</span>
-                  </div>
+            {/* Submitted Explanations & Paraphrase Analysis */}
+            {isSubmitted && (
+              <div
+                className="rq-explanation-box"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="rq-explanation-title">
+                  💡 Giải Thích Đáp Án: <strong>{question.correct_key}</strong>
                 </div>
-                {question.paraphrase_analysis.explanation && (
-                  <p className="rq-paraphrase-note">{question.paraphrase_analysis.explanation}</p>
+                <div className="rq-explanation-content">{question.explanation_vi}</div>
+
+                {/* Paraphrase Mapping */}
+                {question.paraphrase_analysis && (
+                  <div className="rq-paraphrase-card">
+                    <div className="rq-paraphrase-header">Phân Tích Paraphrase (Đối chiếu từ vựng):</div>
+                    <div className="rq-paraphrase-grid">
+                      <div className="rq-paraphrase-col">
+                        <span className="rq-col-label">Trong câu hỏi:</span>
+                        <span className="rq-col-val">{question.paraphrase_analysis.question_phrase}</span>
+                      </div>
+                      <div className="rq-paraphrase-arrow">⇄</div>
+                      <div className="rq-paraphrase-col">
+                        <span className="rq-col-label">Trong bài đọc:</span>
+                        <span className="rq-col-val">{question.paraphrase_analysis.passage_phrase}</span>
+                      </div>
+                    </div>
+                    {question.paraphrase_analysis.explanation && (
+                      <p className="rq-paraphrase-note">{question.paraphrase_analysis.explanation}</p>
+                    )}
+                  </div>
                 )}
               </div>
             )}
-          </div>
-        )}
 
-        {/* Scratchpad Note-Taking (Practice Mode Only - Parity with Listening) */}
-        {!isExam && (
-          <div className="rq-notes-wrapper">
-            <textarea
-              ref={textareaRef}
-              className="rq-note-textarea"
-              placeholder="📝 Ghi chú nháp từ khóa... (Enter để xuống dòng)"
-              rows={1}
-              value={note}
-              onChange={(e) => {
-                onChangeNote(e.target.value);
-                adjustHeight();
-              }}
-              aria-label={`Ghi chú cho câu ${questionIndex + 1}`}
-            />
-          </div>
+            {/* Scratchpad Note-Taking (Practice Mode Only - Parity with Listening) */}
+            {!isExam && (
+              <div
+                className="rq-notes-wrapper"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <textarea
+                  ref={textareaRef}
+                  className="rq-note-textarea"
+                  placeholder="📝 Ghi chú nháp từ khóa... (Enter để xuống dòng)"
+                  rows={1}
+                  value={note}
+                  onClick={(e) => e.stopPropagation()}
+                  onChange={(e) => {
+                    onChangeNote(e.target.value);
+                    adjustHeight();
+                  }}
+                  aria-label={`Ghi chú cho câu ${questionIndex + 1}`}
+                />
+              </div>
+            )}
+          </>
         )}
       </div>
     );

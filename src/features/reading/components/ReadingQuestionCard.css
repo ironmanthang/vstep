@@ -23,6 +23,37 @@
   background: linear-gradient(180deg, rgba(224, 90, 43, 0.04) 0%, var(--bg-surface, #1b1815) 100%);
 }
 
+.reading-question-card.card-collapsed {
+  padding: 14px 20px;
+  gap: 8px;
+}
+
+.rq-collapse-icon {
+  font-size: 10px;
+  color: var(--text-muted, #888);
+  transition: color 120ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  user-select: none;
+}
+
+.reading-question-card:hover .rq-collapse-icon {
+  color: var(--primary, #e05a2b);
+}
+
+.rq-collapsed-selected-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary-text, #e05a2b);
+  background: var(--primary-subtle, rgba(224, 90, 43, 0.1));
+  border: 1px solid var(--primary, #e05a2b);
+  border-radius: var(--radius-full, 9999px);
+  padding: 1px 8px;
+  white-space: nowrap;
+}
+
 .rq-header {
   display: flex;
   justify-content: space-between;

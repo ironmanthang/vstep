@@ -67,6 +67,8 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
   // Active Passage & Active Question
   const [activePassageIndex, setActivePassageIndex] = useState<number>(0);
   const [activeQuestionId, setActiveQuestionId] = useState<string | null>(null);
+  const [revealedClueQuestionId, setRevealedClueQuestionId] = useState<string | null>(null);
+  const [collapsedQuestions, setCollapsedQuestions] = useState<Set<string>>(new Set());
   const [isBottomBarCollapsed, setIsBottomBarCollapsed] = useState<boolean>(false);
 
   // Mobile Tab Toggle State ('passage' vs 'questions')
@@ -89,9 +91,12 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
   const allQuestions = test.passages.flatMap((p) => p.questions);
   const currentPassage = test.passages[activePassageIndex] || test.passages[0];
 
-  // Active clue sentence for evidence highlighting
-  const activeQuestion = allQuestions.find((q) => q.id === activeQuestionId);
-  const activeClueSentence = activeQuestion?.clue_sentence;
+  // Active clue sentence for evidence highlighting (hidden during timed exam, revealed only on explicit click)
+  const clueQuestion =
+    (!isExam || isSubmitted) && revealedClueQuestionId
+      ? allQuestions.find((q) => q.id === revealedClueQuestionId)
+      : null;
+  const activeClueSentence = clueQuestion?.clue_sentence;
 
   // Session Persistence and Cloud Synchronization
   useReadingSessionSync({
@@ -219,7 +224,14 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
 
   const handleSelectOption = (questionId: string, optionKey: 'A' | 'B' | 'C' | 'D') => {
     if (!isSubmitted) {
-      setAnswers((prev) => ({ ...prev, [questionId]: optionKey }));
+      setAnswers((prev) => {
+        if (prev[questionId] === optionKey) {
+          const next = { ...prev };
+          delete next[questionId];
+          return next;
+        }
+        return { ...prev, [questionId]: optionKey };
+      });
     }
   };
 
@@ -227,8 +239,39 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
     if (!isSubmitted) setFlaggedQuestions((prev) => toggleInSet(prev, id));
   };
 
+  const handleToggleClue = (questionId: string) => {
+    setRevealedClueQuestionId((prev) => (prev === questionId ? null : questionId));
+    setActiveQuestionId(questionId);
+  };
+
+  const handleToggleQuestionCollapse = (id: string) => {
+    setCollapsedQuestions((prev) => toggleInSet(prev, id));
+  };
+
+  // Auto-dismiss revealed clue when clicking any other area
+  useEffect(() => {
+    if (!revealedClueQuestionId) return;
+
+    const handleOutsideClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (target?.closest('.rq-clue-btn')) return;
+      setRevealedClueQuestionId(null);
+    };
+
+    const timer = setTimeout(() => {
+      window.addEventListener('click', handleOutsideClick);
+    }, 0);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('click', handleOutsideClick);
+    };
+  }, [revealedClueQuestionId]);
+
   const handleFocusQuestion = (questionId: string) => {
     setActiveQuestionId(questionId);
+    setRevealedClueQuestionId(null);
+    setCollapsedQuestions((prev) => (prev.has(questionId) ? toggleInSet(prev, questionId) : prev));
 
     const passageIdx = test.passages.findIndex((p) =>
       p.questions.some((q) => q.id === questionId)
@@ -247,6 +290,7 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
 
   const handleSelectPassage = (pIdx: number) => {
     setActivePassageIndex(pIdx);
+    setRevealedClueQuestionId(null);
     const p = test.passages[pIdx];
     if (p?.questions[0]) {
       setActiveQuestionId(p.questions[0].id);
@@ -264,6 +308,8 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
       }
       setAnswers({});
       setFlaggedQuestions(new Set());
+      setRevealedClueQuestionId(null);
+      setCollapsedQuestions(new Set());
       setIsSubmitted(false);
       setScoreResult(null);
       setNotes({});
@@ -332,12 +378,15 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
           isSubmitted={isSubmitted}
           isExam={isExam}
           activeQuestionId={activeQuestionId}
+          revealedClueQuestionId={revealedClueQuestionId}
+          collapsedQuestions={collapsedQuestions}
           mobileHidden={mobileTab !== 'questions'}
           questionRefs={questionRefs}
           paneRef={questionsPaneRef}
           onSelectOption={handleSelectOption}
           onToggleFlag={handleToggleFlag}
-          onFocusQuestion={handleFocusQuestion}
+          onToggleClue={handleToggleClue}
+          onToggleCollapse={handleToggleQuestionCollapse}
           onChangeNote={(qId, val) =>
             setNotes((prev) => ({ ...prev, [qId]: val }))
           }
