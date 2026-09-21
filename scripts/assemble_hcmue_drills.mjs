@@ -310,7 +310,7 @@ INSTRUCTIONS:
 6. Extract each of the 10 questions (${startQ} to ${endQ}):
    - "id": "${idPrefix}_q" + two-digit question number (e.g. "${idPrefix}_q${String(startQ).padStart(2, '0')}")
    - "type": Choose one of: "main_idea", "vocab_in_context", "factual_detail", "negative_fact", "inference", "author_attitude", "sentence_insertion".
-     (If the question asks "Where would the following sentence best fit: ..." or options are [A], [B], [C], [D], use "sentence_insertion").
+     (Use "sentence_insertion" ONLY when the question asks "Where would the following sentence best fit: ..." or similar [A]-[D] placement. Questions asking "Which of the following best expresses the essential information..." should be classified as "inference", NOT "sentence_insertion").
    - "question_text": Clean question text without number prefix.
    - "options": Array of 4 objects: [{"key": "A", "text": "..."}, {"key": "B", "text": "..."}, {"key": "C", "text": "..."}, {"key": "D", "text": "..."}]. Clean options without "A.", "B." prefix.
    - "correct_key": MUST MATCH the official key provided above!
@@ -348,7 +348,8 @@ Return valid JSON with keys: "title", "topic", "word_count", "difficulty", "cont
       if (officialSlice[qIdx]) {
         q.correct_key = officialSlice[qIdx];
       }
-      if (q.type === 'sentence_insertion' || /in which space/i.test(q.question_text) || /where would the/i.test(q.question_text)) {
+      const isTrueSentenceInsertion = /where would|where the following sentence|in which space/i.test(q.question_text);
+      if (isTrueSentenceInsertion) {
         q.type = 'sentence_insertion';
         q.options = [
           { key: 'A', text: '[A]' },
@@ -356,6 +357,8 @@ Return valid JSON with keys: "title", "topic", "word_count", "difficulty", "cont
           { key: 'C', text: '[C]' },
           { key: 'D', text: '[D]' },
         ];
+      } else if (q.type === 'sentence_insertion') {
+        q.type = 'inference';
       }
 
       guaranteeVerbatimClue(q, structured.content_paragraphs);

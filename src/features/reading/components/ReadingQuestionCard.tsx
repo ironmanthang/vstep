@@ -23,15 +23,6 @@ interface ReadingQuestionCardProps {
   onChangeNote: (note: string) => void;
 }
 
-const QUESTION_TYPE_LABELS: Record<QuestionItem['type'], { label: string; badgeClass: string }> = {
-  main_idea: { label: 'Ý chính', badgeClass: 'badge-primary' },
-  vocab_in_context: { label: 'Từ vựng ngữ cảnh', badgeClass: 'badge-emerald' },
-  factual_detail: { label: 'Chi tiết bài đọc', badgeClass: 'badge-purple' },
-  negative_fact: { label: 'Thông tin không đúng (NOT/EXCEPT)', badgeClass: 'badge-gold' },
-  inference: { label: 'Suy luận', badgeClass: 'badge-primary' },
-  author_attitude: { label: 'Thái độ tác giả', badgeClass: 'badge-gold' },
-  sentence_insertion: { label: 'Chèn câu [A]-[D]', badgeClass: 'badge-emerald' },
-};
 
 export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCardProps>(
   (
@@ -71,11 +62,6 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
       window.addEventListener('resize', adjustHeight);
       return () => window.removeEventListener('resize', adjustHeight);
     }, [adjustHeight]);
-
-    const typeMeta = QUESTION_TYPE_LABELS[question.type] || {
-      label: 'Câu hỏi đọc hiểu',
-      badgeClass: 'badge-primary',
-    };
 
     const isCorrect = isSubmitted && selectedKey === question.correct_key;
     const isWrong = isSubmitted && selectedKey && selectedKey !== question.correct_key;
@@ -199,9 +185,6 @@ export const ReadingQuestionCard = forwardRef<HTMLDivElement, ReadingQuestionCar
               {isCollapsed ? '▶' : '▼'}
             </span>
             <span className="rq-number">Câu {questionIndex + 1}</span>
-            <span className={`badge ${typeMeta.badgeClass} rq-type-badge`}>
-              {typeMeta.label}
-            </span>
             {isCollapsed && selectedKey && (
               <span className="rq-collapsed-selected-badge">
                 Đã chọn: {selectedKey}

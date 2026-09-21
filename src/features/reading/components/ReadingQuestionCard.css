@@ -74,12 +74,6 @@
   color: var(--text-primary, #f5f0eb);
 }
 
-.rq-type-badge {
-  font-size: 10px;
-  font-weight: 700;
-  padding: 2px 8px;
-}
-
 .rq-header-actions {
   display: flex;
   align-items: center;

@@ -1172,24 +1172,24 @@ export const HCMUE_READING_TEST_02: ReadingTest = {
         },
         {
           "id": "hcmue_r02_q38",
-          "type": "sentence_insertion",
+          "type": "inference",
           "question_text": "Which of the following best expresses the essential information in the highlighted sentence? Incorrect answer choices change the meaning in important ways or leave out essential information.",
           "options": [
             {
               "key": "A",
-              "text": "[A]"
+              "text": "Although primary and secondary waves would be recorded, the secondary waves are not strong enough to be detected at a distance."
             },
             {
               "key": "B",
-              "text": "[B]"
+              "text": "Seismic waves are too small to be felt as a noticeable earthquake, but detectable by seismographs."
             },
             {
               "key": "C",
-              "text": "[C]"
+              "text": "Secondary waves can be generated as a result of nonlinear interaction, so seismographs cannot detect them."
             },
             {
               "key": "D",
-              "text": "[D]"
+              "text": "Because of extensive fault repetition, the primary wave is the most powerful force in an earthquake."
             }
           ],
           "correct_key": "A",

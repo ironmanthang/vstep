@@ -710,24 +710,24 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         },
         {
           "id": "hcmue_r01_q25",
-          "type": "sentence_insertion",
+          "type": "inference",
           "question_text": "Which of the following best expresses the essential information in the highlighted sentence in the passage? Incorrect answer choices change the meaning in important ways or leave out essential information.",
           "options": [
             {
               "key": "A",
-              "text": "[A]"
+              "text": "Commissioned by Ptolemy I, the Royal Library was a place where people who wanted to learn gathered to study and record their philosophies."
             },
             {
               "key": "B",
-              "text": "[B]"
+              "text": "The library was a large building where students gathered to research and study."
             },
             {
               "key": "C",
-              "text": "[C]"
+              "text": "Philosophers often visited the library to further their studies."
             },
             {
               "key": "D",
-              "text": "[D]"
+              "text": "Many people gathered at the Royal Library in Alexandria in order to socialize with their friends."
             }
           ],
           "correct_key": "A",

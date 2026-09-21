@@ -1124,24 +1124,24 @@ export const HCMUE_READING_TEST_05: ReadingTest = {
         },
         {
           "id": "hcmue_r05_q38",
-          "type": "sentence_insertion",
+          "type": "inference",
           "question_text": "Which of the following best expresses the essential information in the highlighted sentence? Incorrect answer choices change the meaning in important ways or leave out essential information.",
           "options": [
             {
               "key": "A",
-              "text": "[A]"
+              "text": "Most patients became sick from being infected by doctors in the emergency room."
             },
             {
               "key": "B",
-              "text": "[B]"
+              "text": "Hospital wards had become dirty and dangerous places due to the lack of proper training and space."
             },
             {
               "key": "C",
-              "text": "[C]"
+              "text": "Pasteur learned that infections could be transmitted to healthy patients from dirty, non-sterile instruments doctors had used on previous patients."
             },
             {
               "key": "D",
-              "text": "[D]"
+              "text": "Healthy patients could become infected by sick people, simply by the shake of a hand or sharing a drink."
             }
           ],
           "correct_key": "C",
