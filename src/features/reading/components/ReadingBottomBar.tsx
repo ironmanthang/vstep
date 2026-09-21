@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import type { ReadingPassage } from '../types';
+import type { ReadingPassage, ReadingScoreResult } from '../types';
 import { ReadingQuestionPalette } from './ReadingQuestionPalette';
 import './ReadingBottomBar.css';
 
@@ -10,6 +10,7 @@ export interface ReadingBottomBarProps {
   flaggedQuestions: Set<string>;
   activeQuestionId: string | null;
   isSubmitted: boolean;
+  scoreResult?: ReadingScoreResult | null;
   isExam?: boolean;
   isCollapsed?: boolean;
   onToggleCollapse?: (collapsed: boolean) => void;
@@ -26,6 +27,7 @@ export const ReadingBottomBar: React.FC<ReadingBottomBarProps> = ({
   flaggedQuestions,
   activeQuestionId,
   isSubmitted,
+  scoreResult,
   isExam = false,
   isCollapsed: controlledCollapsed,
   onToggleCollapse,
@@ -99,8 +101,10 @@ export const ReadingBottomBar: React.FC<ReadingBottomBarProps> = ({
           >
             <span className="r-bbar-float-arrow">▲</span>
             <span className="r-bbar-float-text">Bài {activePassageIndex + 1}</span>
-            <span className="r-bbar-float-badge">
-              {answeredCount}/{totalCount}
+            <span className={`r-bbar-float-badge ${isSubmitted && scoreResult ? 'score' : ''}`}>
+              {isSubmitted && scoreResult
+                ? `${scoreResult.scoreOutOf10}/10`
+                : `${answeredCount}/${totalCount}`}
             </span>
           </button>
         </div>
@@ -142,6 +146,19 @@ export const ReadingBottomBar: React.FC<ReadingBottomBarProps> = ({
 
             {/* 3. Right: All-Questions Overview & Submit Actions */}
             <div className="r-bbar-actions">
+              {isSubmitted && scoreResult && (
+                <div
+                  className="r-bbar-score-badge"
+                  title={`Điểm: ${scoreResult.scoreOutOf10}/10 • Đúng ${scoreResult.correctCount}/${scoreResult.totalQuestions} câu`}
+                >
+                  <span className="r-bbar-score-label">Điểm</span>
+                  <span className="r-bbar-score-val">{scoreResult.scoreOutOf10}/10</span>
+                  <span className="r-bbar-score-detail">
+                    ({scoreResult.correctCount}/{scoreResult.totalQuestions})
+                  </span>
+                </div>
+              )}
+
               <button
                 type="button"
                 className="r-bbar-overview-btn"

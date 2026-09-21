@@ -141,6 +141,40 @@
   border-left: 1px solid var(--border, rgba(255, 255, 255, 0.1));
 }
 
+/* Score Badge inside Bottom Bar */
+.r-bbar-score-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: var(--emerald-subtle, rgba(16, 185, 129, 0.15));
+  border: 1px solid var(--emerald, #10b981);
+  border-radius: var(--radius-full, 9999px);
+  font-size: var(--fs-xs, 12px);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.r-bbar-score-label {
+  color: var(--emerald-text, #6ee7b7);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.r-bbar-score-val {
+  color: var(--emerald, #10b981);
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.r-bbar-score-detail {
+  color: var(--text-secondary, #c2b8ae);
+  font-size: 11px;
+  font-weight: 600;
+}
+
 .r-bbar-overview-btn {
   display: flex;
   align-items: center;
@@ -273,6 +307,11 @@
   border-radius: var(--radius-full, 9999px);
   background: rgba(224, 90, 43, 0.2);
   color: var(--primary, #e05a2b);
+}
+
+.r-bbar-float-badge.score {
+  background: var(--emerald-subtle, rgba(16, 185, 129, 0.2));
+  color: var(--emerald, #10b981);
 }
 
 /* 4. Full 40-Question Modal Drawer */

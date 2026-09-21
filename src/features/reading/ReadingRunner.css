@@ -163,37 +163,6 @@
   gap: var(--space-4, 16px);
 }
 
-/* Score Card Banner */
-.score-result-card {
-  padding: var(--space-5, 20px);
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(20, 18, 16, 0.6) 100%);
-  border: 1px solid rgba(16, 185, 129, 0.4);
-  border-left: 5px solid var(--emerald, #10b981);
-  border-radius: var(--radius-lg, 12px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  text-align: center;
-}
-
-.score-number-display {
-  font-size: var(--fs-3xl, 36px);
-  font-weight: 900;
-  color: var(--emerald, #10b981);
-  letter-spacing: -0.02em;
-}
-
-.score-actions-inline {
-  margin-top: 6px;
-}
-
-.score-reset-btn {
-  font-weight: 700;
-  font-size: var(--fs-xs, 12px);
-  padding: 8px 18px;
-}
-
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
   .reading-workspace-grid {

@@ -67,9 +67,6 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
         isExam={isExam}
         examSecondsRemaining={examSecondsRemaining}
         syncWarning={syncWarning}
-        isSubmitted={isSubmitted}
-        scoreResult={scoreResult}
-        onReset={() => setIsResetModalOpen(true)}
       />
 
       <ReadingPassageNavBar
@@ -134,6 +131,7 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
         flaggedQuestions={flaggedQuestions}
         activeQuestionId={activeQuestionId}
         isSubmitted={isSubmitted}
+        scoreResult={scoreResult}
         isExam={isExam}
         isCollapsed={isBottomBarCollapsed}
         onToggleCollapse={setIsBottomBarCollapsed}

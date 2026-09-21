@@ -1,14 +1,10 @@
 import React from 'react';
-import type { ReadingScoreResult } from '../types';
 
 interface ReadingHeaderProps {
   title: string;
   isExam: boolean;
   examSecondsRemaining: number;
   syncWarning: string | null;
-  isSubmitted: boolean;
-  scoreResult: ReadingScoreResult | null;
-  onReset: () => void;
 }
 
 function formatSeconds(secs: number): string {
@@ -22,9 +18,6 @@ export const ReadingHeader: React.FC<ReadingHeaderProps> = ({
   isExam,
   examSecondsRemaining,
   syncWarning,
-  isSubmitted,
-  scoreResult,
-  onReset,
 }) => {
   return (
     <>
@@ -61,35 +54,6 @@ export const ReadingHeader: React.FC<ReadingHeaderProps> = ({
           }}
         >
           {syncWarning}
-        </div>
-      )}
-
-      {/* Score Result Card if submitted */}
-      {isSubmitted && scoreResult && (
-        <div className="score-result-card">
-          <span className="badge badge-emerald" style={{ fontSize: 'var(--fs-xs)' }}>
-            Kết Quả Chấm Điểm
-          </span>
-          <div className="score-number-display">{scoreResult.scoreOutOf10} / 10</div>
-          <p style={{ margin: 0, fontSize: 'var(--fs-sm)', color: 'var(--text-secondary)' }}>
-            Đúng <strong>{scoreResult.correctCount}</strong> trên tổng số{' '}
-            <strong>{scoreResult.totalQuestions}</strong> câu hỏi.
-            {isExam && scoreResult.timeSpentSeconds > 0 && (
-              <>
-                {' '}Thời gian làm bài:{' '}
-                <strong>{formatSeconds(scoreResult.timeSpentSeconds)}</strong>.
-              </>
-            )}
-          </p>
-          <div className="score-actions-inline">
-            <button
-              type="button"
-              className="secondary-btn score-reset-btn"
-              onClick={onReset}
-            >
-              🔄 Làm Lại Bài Này
-            </button>
-          </div>
         </div>
       )}
     </>
