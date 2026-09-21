@@ -589,13 +589,13 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
       "topic": "History & Culture",
       "difficulty": "B2",
       "content_paragraphs": [
-        "Alexander the Great commissioned the city of Alexandria to create a Mediterranean stronghold in Egypt to rival Rome and cities in Greece. He died before his idea came to fruition, but his successors built it into one of the greatest cities of the Hellenistic world. The Royal Library of Alexandria has achieved an almost mythical status among scholars of classical studies. As with many ancient topics, scholarship on the matter often conflicts and relies heavily on hearsay and supposition. We will examine the importance of the library during **its** heyday and how it operated.",
-        "As with many ancient landmarks, there is much debate and controversy over Alexandria's library, especially regarding its **destruction**. The tale has been retold by countless historians and attributed to just as many different **factions** and rulers, not to profile this landmark of education, but as a tool for political slander. It is estimated that there are over 4000 writings regarding its **destruction**, yet very little data exists regarding the structure, layout, organization, administration, or whereabouts of the complex. The accuracy of the available information is suspect. However, 20th century scholars have reached some general consensus from the remaining sources.",
+        "Alexander the Great commissioned the city of Alexandria to create a Mediterranean stronghold in Egypt to rival Rome and cities in Greece. He died before his idea came to fruition, but his successors built it into one of the greatest cities of the Hellenistic world. The Royal Library of Alexandria has achieved an almost mythical status among scholars of classical studies. As with many ancient topics, scholarship on the matter often conflicts and relies heavily on hearsay and supposition. We will examine the importance of the library during its heyday and how it operated.",
+        "As with many ancient landmarks, there is much debate and controversy over Alexandria's library, especially regarding **its destruction**. The tale has been retold by countless historians and attributed to just as many different **factions** and rulers, not to profile this landmark of education, but as a tool for political slander. It is estimated that there are over 4000 writings regarding **its** destruction, yet very little data exists regarding the structure, layout, organization, administration, or whereabouts of the complex. The accuracy of the available information is suspect. However, 20th century scholars have reached some general consensus from the remaining sources.",
         "Most historians have come to the conclusion that the original library (also known as the Temple of the Muses) was commissioned by Ptolemy I, Alexander's key general. More accurately, it was commissioned by the Athenian exile Demetrius of Phaleron under Ptolemy I's patronage. Traditionally it was attributed to his son Ptolemy II. However, it was later shown that Demetrius was antagonistic toward Ptolemy II and did not survive for much of his reign. Ptolemy II can be seen as responsible for the fruition and completion of the library and museum complex. H.G. Wells asserts that Ptolemy and his son encouraged 'a blaze of knowledge and discovery at Alexandria' through their funding of the library and other endowments.",
         "The library itself was not a 'library' in the modern etymology. **In fact, the library was essentially a collection of scholars and scribes encouraged to expand scientific and philosophical wisdom and musings brought about because of the ambition and drive of Ptolemy I.** It was not the first institution of its type, developing about a half-century after Plato's Academy and Aristotle's Lyceum. About 30-50 scholars were probably permanently housed there, fed, and funded, first by the royal family, and later, according to an early Roman scroll, by public money. It served a religious, as well as an intellectual, function and it was the centerpiece of a so-called cult of the muses, governed by a priest.",
         "[A] The library's output was created through observation and deduction in math, medicine, astronomy, and geometry, the editing of texts and manuscripts, and debating various advances in Western knowledge. [B] For two or three generations, the scientific output at Alexandria was considerably good. Its achievements included the introduction of the first steam engine, the first star map, and an astoundingly accurate estimate of the Earth's diameter. [C] Famous scholars employed there included Euclid, Eratosthenes, Apollonius, and Hero. [D]",
         "The library may have consisted of a group of buildings, including lecture halls, study rooms, dining rooms, gardens, and an astronomical observatory. In organization of the library, it is believed that, in the time of Ptolemy II, the scrolls were haphazardly stored and grouped by general category. From the time of Callimachus onwards, they used an early iteration of a subject catalog. Subject divisions outlined by Callimachus included mathematics, medicine, astronomy, and geometry, as well as philology. At its peak, it is estimated about 600,000 scrolls were held within its walls, although that is likely an **overstatement**.",
-        "The Ptolemys achieved their goal of creating the largest collection of its kind by varied and often forceful means. At the time of its founding, Greek libraries were usually collections of manuscripts by private individuals. Ptolemy had a vision to collect all accepted literature on all matters scientific, philosophical and spiritual. The library tried to get copies of all known books and would send agents far and wide to acquire them. Ptolemy `I wrote a letter \"to all the world's sovereigns\" asking to borrow their books. On more than a few occasions, scribes made copies and kept the originals. Supposedly, all ships entering Alexandria's harbor were searched for books to copy.",
+        "The Ptolemys achieved their goal of creating the largest collection of its kind by varied and often forceful means. At the time of its founding, Greek libraries were usually collections of manuscripts by private individuals. Ptolemy had a vision to collect all accepted literature on all matters scientific, philosophical and spiritual. The library tried to get copies of all known books and would send agents far and wide to acquire them. Ptolemy III wrote a letter \"to all the world's sovereigns\" asking to borrow their books. On more than a few occasions, scribes made copies and kept the originals. Supposedly, all ships entering Alexandria's harbor were searched for books to copy.",
         "The Royal Library of Alexandria was created at an ideal time and place in world history. It was able to combine the deductive techniques of Greek thought toward the learning of other world cultures. As such, it holds a legendary position among historians as an important center of classical knowledge. Although much of the story has been buried with time and conflict, the importance and significance of its contributions are clear."
       ],
       "word_count": 810,
@@ -677,14 +677,14 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
             }
           ],
           "correct_key": "C",
-          "clue_paragraph_index": 0,
-          "clue_sentence": "We will examine the importance of the library during **its** heyday and how it operated.",
-          "explanation_vi": "Đại từ \"its\" ở đây thay thế cho \"the library\" (Thư viện Hoàng gia Alexandria), ám chỉ thời kỳ hoàng kim của thư viện này."
+          "clue_paragraph_index": 1,
+          "clue_sentence": "It is estimated that there are over 4000 writings regarding **its** destruction, yet very little data exists regarding the structure, layout, organization, administration, or whereabouts of the complex.",
+          "explanation_vi": "Đại từ \"its\" trong cụm \"regarding its destruction\" ở đoạn 2 thay thế cho danh từ trung tâm của đoạn là Thư viện Hoàng gia Alexandria (the Royal Library of Alexandria). Các phương án khác (data, education, destruction) đều là các danh từ xung quanh trong ngữ cảnh."
         },
         {
           "id": "hcmue_r01_q24",
           "type": "main_idea",
-          "question_text": "The author mentions \"its **destruction**\" in the passage in order to ________.",
+          "question_text": "The author mentions \"**its destruction**\" in the passage in order to ________.",
           "options": [
             {
               "key": "A",
@@ -705,8 +705,8 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
           ],
           "correct_key": "B",
           "clue_paragraph_index": 1,
-          "clue_sentence": "As with many ancient landmarks, there is much debate and controversy over Alexandria's library, especially regarding its **destruction**.",
-          "explanation_vi": "Tác giả nhắc đến việc phá hủy thư viện nhằm minh họa rằng có rất nhiều tranh cãi, ý kiến trái chiều và sự quy trách nhiệm xung quanh sự sụp đổ và biến mất của nó."
+          "clue_sentence": "As with many ancient landmarks, there is much debate and controversy over Alexandria's library, especially regarding **its destruction**.",
+          "explanation_vi": "Tác giả nhắc đến \"its destruction\" nhằm minh họa rằng có rất nhiều tranh cãi, ý kiến trái chiều và sự quy trách nhiệm xung quanh sự sụp đổ và biến mất của nó."
         },
         {
           "id": "hcmue_r01_q25",
@@ -846,7 +846,7 @@ export const HCMUE_READING_TEST_01: ReadingTest = {
         {
           "id": "hcmue_r01_q30",
           "type": "sentence_insertion",
-          "question_text": "Look at the four squares [ ] that indicate where the following sentence can be added to the passage.\n*It remained an important intellectual center for over 500 years until numerous fires and other problems eroded its significance.*\nWhere would the sentence best fit?",
+          "question_text": "Look at the four squares [ ] that indicate where the following sentence can be added to the passage.\n\n*It remained an important intellectual center for over 500 years until numerous fires and other problems eroded its significance.*\n\n**Where would the sentence best fit?**",
           "options": [
             {
               "key": "A",

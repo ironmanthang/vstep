@@ -131,11 +131,17 @@
   font-weight: 600;
   line-height: 1.55;
   color: var(--text-primary, #f5f0eb);
+  white-space: pre-line;
 }
 
 .rq-prompt strong {
   font-weight: 800;
   color: inherit;
+}
+
+.rq-prompt em {
+  font-style: italic;
+  color: var(--text-primary, #f5f0eb);
 }
 
 .rq-options-list {
