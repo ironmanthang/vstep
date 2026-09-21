@@ -7,19 +7,25 @@ import './PassagePanel.css';
 
 interface PassagePanelProps {
   passage: ReadingPassage;
+  passages?: ReadingPassage[];
   passageIndex?: number;
+  answers?: Record<string, 'A' | 'B' | 'C' | 'D'>;
   activeClueSentence?: string;
   readerSettings: ReaderSettings;
   onChangeReaderSettings: (settings: Partial<ReaderSettings>) => void;
+  onSelectPassage?: (index: number) => void;
   onWordSelect?: (word: string, position: { x: number; y: number; bottom?: number }) => void;
 }
 
 export const PassagePanel: React.FC<PassagePanelProps> = ({
   passage,
+  passages,
   passageIndex = 0,
+  answers,
   activeClueSentence,
   readerSettings,
   onChangeReaderSettings,
+  onSelectPassage,
   onWordSelect,
 }) => {
   const { lookupWord } = useDictionary();
@@ -141,9 +147,35 @@ export const PassagePanel: React.FC<PassagePanelProps> = ({
     <div className="passage-panel-wrapper">
       {/* Reader Toolbar */}
       <div className="reader-toolbar">
-        <div className="reader-meta-tag">
-          <span className="reader-passage-label">Passage {passageIndex + 1}</span>
-        </div>
+        {passages && onSelectPassage ? (
+          <div className="reader-passage-tabs" role="tablist" aria-label="Danh sách bài đọc">
+            {passages.map((p, idx) => {
+              const pAnswered = answers ? p.questions.filter((q) => Boolean(answers[q.id])).length : 0;
+              const isCurrent = idx === passageIndex;
+
+              return (
+                <button
+                  key={p.id || idx}
+                  type="button"
+                  role="tab"
+                  aria-selected={isCurrent}
+                  className={`reader-passage-tab ${isCurrent ? 'active' : ''}`}
+                  onClick={() => onSelectPassage(idx)}
+                  title={p.title || `Bài đọc ${idx + 1}`}
+                >
+                  <span>Bài {idx + 1}</span>
+                  <span className="reader-passage-tab-badge">
+                    {pAnswered}/{p.questions.length}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="reader-meta-tag">
+            <span className="reader-passage-label">Passage {passageIndex + 1}</span>
+          </div>
+        )}
 
         <div className="reader-controls-cluster">
           {/* Font Size controls */}

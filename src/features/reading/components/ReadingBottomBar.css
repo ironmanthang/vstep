@@ -2,92 +2,37 @@
 .reading-bottom-bar-wrapper {
   position: absolute;
   bottom: 12px;
-  left: 16px;
   right: 16px;
+  left: auto;
+  max-width: calc(100% - 32px);
+  width: fit-content;
   z-index: 40;
   background: var(--bg-surface, #1b1815);
-  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
-  padding: 8px 16px;
-  border-radius: var(--radius-xl, 16px);
+  padding: 6px 10px 6px 14px;
+  border-radius: var(--radius-full, 9999px);
   margin-top: 0;
   animation: floatIn 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: bottom right;
 }
 
 .reading-bottom-bar-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  justify-content: flex-end;
+  gap: 10px;
   flex-wrap: nowrap;
-  max-width: 100%;
 }
 
-/* 1. Left: Passage Switcher Tabs */
-.r-bbar-passages {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
-}
-
-.r-bbar-ptab {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
-  border-radius: var(--radius-sm, 6px);
-  background: var(--bg-subtle, rgba(255, 255, 255, 0.04));
-  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
-  color: var(--text-secondary, #c2b8ae);
-  font-size: var(--fs-xs, 12px);
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 120ms ease;
-  white-space: nowrap;
-}
-
-.r-bbar-ptab:hover {
-  background: rgba(224, 90, 43, 0.12);
-  color: var(--primary, #e05a2b);
-  border-color: rgba(224, 90, 43, 0.3);
-}
-
-.r-bbar-ptab.active {
-  background: var(--primary, #e05a2b);
-  border-color: var(--primary, #e05a2b);
-  color: #141210;
-  box-shadow: 0 2px 8px rgba(224, 90, 43, 0.3);
-}
-
-.r-bbar-ptab-badge {
-  font-size: 10px;
-  font-weight: 700;
-  padding: 1px 5px;
-  border-radius: var(--radius-full, 9999px);
-  background: rgba(0, 0, 0, 0.18);
-  color: inherit;
-}
-
-/* 2. Center: Question Track for Active Passage */
+/* Question Track for Active Passage */
 .r-bbar-questions-section {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   overflow-x: auto;
-  padding: 4px 8px;
+  padding: 2px 4px;
   scrollbar-width: thin;
-  flex: 1;
-  justify-content: center;
-}
-
-.r-bbar-qtrack-label {
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--text-muted, #888);
-  white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 .r-bbar-questions-list {
@@ -192,16 +137,18 @@
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
+  padding-left: 8px;
+  border-left: 1px solid var(--border, rgba(255, 255, 255, 0.1));
 }
 
 .r-bbar-overview-btn {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 7px 12px;
+  padding: 6px 12px;
   background: var(--bg-subtle, rgba(255, 255, 255, 0.05));
   border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
-  border-radius: var(--radius-sm, 6px);
+  border-radius: var(--radius-full, 9999px);
   color: var(--text-primary, #f5f0eb);
   font-size: var(--fs-xs, 12px);
   font-weight: 700;
@@ -226,10 +173,10 @@
 }
 
 .r-bbar-submit-btn {
-  padding: 7px 16px;
+  padding: 6px 14px;
   font-size: var(--fs-xs, 12px);
   font-weight: 700;
-  border-radius: var(--radius-sm, 6px);
+  border-radius: var(--radius-full, 9999px);
   white-space: nowrap;
 }
 
@@ -238,10 +185,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  height: 32px;
-  padding: 0 10px;
-  border-radius: var(--radius-sm, 6px);
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: var(--radius-full, 9999px);
   background: var(--bg-subtle, rgba(255, 255, 255, 0.05));
   border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
   color: var(--text-secondary, #c2b8ae);
@@ -250,6 +197,7 @@
   cursor: pointer;
   transition: all 140ms ease;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .r-bbar-toggle-btn:hover {
@@ -415,38 +363,41 @@
 
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
+  .reading-bottom-bar-wrapper {
+    left: 12px;
+    right: 12px;
+    width: auto;
+    max-width: none;
+    border-radius: var(--radius-xl, 16px);
+  }
+
   .reading-bottom-bar-content {
     flex-wrap: wrap;
     gap: 8px;
   }
 
-  .r-bbar-passages {
-    order: 1;
-  }
-
   .r-bbar-actions {
-    order: 2;
+    order: 1;
+    width: 100%;
+    justify-content: flex-end;
+    border-left: none;
+    padding-left: 0;
   }
 
   .r-bbar-questions-section {
-    order: 3;
+    order: 2;
     width: 100%;
     justify-content: flex-start;
   }
 
-  .r-bbar-qtrack-label {
-    display: none;
+  .r-bbar-questions-list {
+    margin: 0;
   }
 }
 
 @media (max-width: 600px) {
   .reading-bottom-bar-wrapper {
     padding: 6px 10px;
-  }
-
-  .r-bbar-ptab {
-    padding: 5px 8px;
-    font-size: 11px;
   }
 
   .r-bbar-qbtn {

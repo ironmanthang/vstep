@@ -31,6 +31,52 @@
   gap: 8px;
 }
 
+/* Segmented Passage Switcher Tabs */
+.reader-passage-tabs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.reader-passage-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: var(--radius-sm, 6px);
+  background: var(--bg-surface, rgba(255, 255, 255, 0.04));
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  color: var(--text-secondary, #c2b8ae);
+  font-size: var(--fs-xs, 12px);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 140ms ease;
+  white-space: nowrap;
+}
+
+.reader-passage-tab:hover:not(.active) {
+  background: rgba(224, 90, 43, 0.12);
+  color: var(--primary, #e05a2b);
+  border-color: rgba(224, 90, 43, 0.3);
+}
+
+.reader-passage-tab.active {
+  background: var(--primary, #e05a2b);
+  border-color: var(--primary, #e05a2b);
+  color: #141210;
+  box-shadow: 0 2px 8px rgba(224, 90, 43, 0.3);
+}
+
+.reader-passage-tab-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: var(--radius-full, 9999px);
+  background: rgba(0, 0, 0, 0.16);
+  color: inherit;
+}
+
 .reader-passage-label {
   font-size: var(--fs-xs, 12px);
   font-weight: 800;

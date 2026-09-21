@@ -73,13 +73,10 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
       />
 
       <ReadingPassageNavBar
-        passages={test.passages}
         activePassageIndex={activePassageIndex}
-        answers={answers}
         totalAnsweredCount={answeredCount}
         totalQuestionsCount={allQuestions.length}
         mobileTab={mobileTab}
-        onSelectPassage={handleSelectPassage}
         onSwitchMobileTab={handleSwitchMobileTab}
       />
 
@@ -95,10 +92,13 @@ export const ReadingRunner: React.FC<ReadingRunnerProps> = ({
           {currentPassage && (
             <PassagePanel
               passage={currentPassage}
+              passages={test.passages}
               passageIndex={activePassageIndex}
+              answers={answers}
               activeClueSentence={activeClueSentence}
               readerSettings={readerSettings}
               onChangeReaderSettings={updateReaderSettings}
+              onSelectPassage={handleSelectPassage}
             />
           )}
         </div>

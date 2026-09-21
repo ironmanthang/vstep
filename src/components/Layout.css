@@ -367,27 +367,35 @@
   padding: var(--space-8) var(--space-8);
 }
 
-/* Reading Studio Page Viewport Lock (Zero Window Scroll) */
-.main-wrapper:has(.reading-studio-page) {
+/* Reading Studio & Full Mock Test Exam Runner Viewport Lock & Full Width */
+.main-wrapper:has(.reading-studio-page),
+.main-wrapper:has(.mock-test-runner-container) {
   height: 100vh;
   max-height: 100vh;
   overflow: hidden;
 }
 
-.content-container:has(.reading-studio-page) {
+.content-container:has(.reading-studio-page),
+.content-container:has(.mock-test-runner-container) {
+  max-width: 100%;
   height: 100vh;
   max-height: 100vh;
   padding-top: var(--space-3);
   padding-bottom: var(--space-3);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-.app-shell.sidebar-collapsed .content-container:has(.reading-studio-page) {
+.app-shell.sidebar-collapsed .content-container:has(.reading-studio-page),
+.app-shell.sidebar-collapsed .content-container:has(.mock-test-runner-container) {
   max-width: 100%;
   padding-top: var(--space-3);
   padding-bottom: var(--space-3);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
 }
 
 /* Mobile Bottom Navigation Bar (Hidden on Desktop) */

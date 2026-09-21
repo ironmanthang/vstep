@@ -326,7 +326,7 @@ export const FullMockTestRunner: React.FC<FullMockTestRunnerProps> = ({
       )}
 
       {/* Main Section Content */}
-      <main style={{ flex: 1 }}>
+      <main style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', overflowY: 'auto' }}>
         {session.activeSection === 'listening' && (
           <ListeningRunner
             test={test.listening}

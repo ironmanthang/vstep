@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import type { ReadingPassage } from '../types';
 import { ReadingQuestionPalette } from './ReadingQuestionPalette';
 import './ReadingBottomBar.css';
@@ -55,6 +55,24 @@ export const ReadingBottomBar: React.FC<ReadingBottomBarProps> = ({
     .slice(0, activePassageIndex)
     .reduce((acc, p) => acc + p.questions.length, 0);
 
+  const questionsSectionRef = useRef<HTMLDivElement>(null);
+
+  // Reset horizontal track scroll when changing passages
+  useEffect(() => {
+    if (questionsSectionRef.current) {
+      questionsSectionRef.current.scrollLeft = 0;
+    }
+  }, [activePassageIndex]);
+
+  // Ensure active question stays within visible viewport
+  useEffect(() => {
+    if (!questionsSectionRef.current || !activeQuestionId) return;
+    const activeBtn = questionsSectionRef.current.querySelector<HTMLButtonElement>('.r-bbar-qbtn.active');
+    if (activeBtn) {
+      activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+    }
+  }, [activeQuestionId, activePassageIndex]);
+
   // Close modal on Escape key
   useEffect(() => {
     if (!isOverviewOpen) return;
@@ -90,32 +108,8 @@ export const ReadingBottomBar: React.FC<ReadingBottomBarProps> = ({
         /* Expanded Full Bar */
         <nav className="reading-bottom-bar-wrapper" aria-label="Điều hướng đề thi đọc">
           <div className="reading-bottom-bar-content">
-            {/* 1. Left: Passage Selector Tabs */}
-            <div className="r-bbar-passages">
-              {passages.map((p, pIdx) => {
-                const pAnswered = p.questions.filter((q) => Boolean(answers[q.id])).length;
-                const isCurrent = pIdx === activePassageIndex;
-
-                return (
-                  <button
-                    key={p.id || pIdx}
-                    type="button"
-                    className={`r-bbar-ptab ${isCurrent ? 'active' : ''}`}
-                    onClick={() => onSelectPassage(pIdx)}
-                    title={p.title}
-                  >
-                    <span>Bài {pIdx + 1}</span>
-                    <span className="r-bbar-ptab-badge">
-                      {pAnswered}/{p.questions.length}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* 2. Center: Question Track for Current Passage */}
-            <div className="r-bbar-questions-section">
-              <span className="r-bbar-qtrack-label">Bài {activePassageIndex + 1}:</span>
+            {/* Question Track for Current Passage */}
+            <div className="r-bbar-questions-section" ref={questionsSectionRef}>
               <div className="r-bbar-questions-list">
                 {currentPassage?.questions.map((q, qIdx) => {
                   const globalNumber = passageStartOffset + qIdx + 1;

@@ -84,47 +84,6 @@
   color: #ef4444;
 }
 
-/* Passage Selection Bar - hidden on desktop as it is integrated into the bottom bar */
-.reading-passage-nav-bar {
-  display: none;
-}
-
-.reading-pnav-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  border-radius: var(--radius-md, 8px);
-  background: var(--bg-surface, #1b1815);
-  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
-  color: var(--text-secondary, #c2b8ae);
-  font-size: var(--fs-xs, 12px);
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 140ms ease;
-}
-
-.reading-pnav-btn:hover {
-  background: rgba(224, 90, 43, 0.08);
-  border-color: rgba(224, 90, 43, 0.3);
-  color: var(--text-primary, #f5f0eb);
-}
-
-.reading-pnav-btn.active {
-  background: var(--primary, #e05a2b);
-  border-color: var(--primary, #e05a2b);
-  color: #141210;
-  box-shadow: 0 2px 8px rgba(224, 90, 43, 0.3);
-}
-
-.reading-pnav-badge {
-  font-size: 10px;
-  font-weight: 600;
-  padding: 1px 6px;
-  border-radius: var(--radius-full, 9999px);
-  background: rgba(0, 0, 0, 0.15);
-}
-
 /* Mobile Tab Switcher (<768px) */
 .reading-mobile-tab-bar {
   display: none;
