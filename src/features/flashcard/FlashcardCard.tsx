@@ -12,7 +12,8 @@ interface FlashcardCardProps {
   disabled?: boolean;
 }
 
-const SWIPE_THRESHOLD = 90;
+// Strict commit threshold: ~83% of 240px clamped travel distance
+const SWIPE_THRESHOLD = 200;
 
 export const FlashcardCard: React.FC<FlashcardCardProps> = ({
   card,
@@ -48,6 +49,15 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
     }
   }, [displayCard.word]);
 
+  // Clean up any pending speech synthesis utterance on unmount
+  useEffect(() => {
+    return () => {
+      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    };
+  }, []);
+
   const handlePlayAudioClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     playAudio();
@@ -82,7 +92,7 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
         return;
       }
 
-      if (disabled) return;
+      if (disabled || isExiting) return;
 
       if (e.key === 'ArrowLeft') {
         e.preventDefault();
@@ -109,7 +119,7 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [disabled, handleRating, isFlipped, onFlip, playAudio]);
+  }, [disabled, handleRating, isExiting, isFlipped, onFlip, playAudio]);
 
   // Proportional Touch Swipe Handlers
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -127,7 +137,7 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
 
     // Detect if this gesture is vertical page scrolling or horizontal card swipe
     if (isScrollDirection.current === null) {
-      if (Math.abs(deltaX) > 7 || Math.abs(deltaY) > 7) {
+      if (Math.abs(deltaX) > 16 || Math.abs(deltaY) > 16) {
         if (Math.abs(deltaY) > Math.abs(deltaX)) {
           // Vertical scroll detected — let browser handle scrolling normally
           isScrollDirection.current = true;
@@ -170,6 +180,11 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
     const currentOffset = dragOffset;
     touchStartPos.current = null;
     setIsDragging(false);
+
+    // If gesture was within tap slop (< 16px), ensure it is treated as a clean tap
+    if (Math.abs(currentOffset) < 16) {
+      hasMovedFarEnough.current = false;
+    }
 
     if (Math.abs(currentOffset) >= SWIPE_THRESHOLD) {
       // Swiped all the way past threshold
@@ -228,7 +243,7 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
         <div
           className="swipe-stamp stamp-wrong"
           style={{
-            opacity: dragOffset < -12 ? Math.min(1, Math.abs(dragOffset) / 80) : 0,
+            opacity: dragOffset < -30 ? Math.min(1, Math.max(0, (Math.abs(dragOffset) - 40) / 150)) : 0,
           }}
         >
           ✗ SAI
@@ -236,7 +251,7 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
         <div
           className="swipe-stamp stamp-correct"
           style={{
-            opacity: dragOffset > 12 ? Math.min(1, dragOffset / 80) : 0,
+            opacity: dragOffset > 30 ? Math.min(1, Math.max(0, (dragOffset - 40) / 150)) : 0,
           }}
         >
           ✓ ĐÚNG

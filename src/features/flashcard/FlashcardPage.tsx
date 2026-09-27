@@ -9,6 +9,7 @@ import { ConfirmModal } from '../../components/common/ConfirmModal';
 import { useUserStore } from '../../services/user/userStore';
 import { ReminderSettingsModal } from './components/ReminderSettingsModal';
 import { WordInspectorModal, type WordInspectorFilter } from './components/WordInspectorModal';
+import { useDictionaryExamLock } from '../dictionary';
 import './FlashcardPage.css';
 
 export const FlashcardPage: React.FC = () => {
@@ -32,6 +33,9 @@ export const FlashcardPage: React.FC = () => {
 
   const { userDisplayName } = useUserStore();
   const { statusMessage, showNotification, clearNotification } = useNotification();
+
+  // Completely silence global tap-to-translate dictionary while on SRS page
+  useDictionaryExamLock(true);
 
   const [inspectorFilter, setInspectorFilter] = useState<WordInspectorFilter | null>(null);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -99,7 +103,7 @@ export const FlashcardPage: React.FC = () => {
   };
 
   return (
-    <div className="flashcard-page">
+    <div className="flashcard-page" data-no-translate>
       {/* Toast Notification Container */}
       <Toast message={statusMessage} onClose={clearNotification} />
 

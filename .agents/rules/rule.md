@@ -45,7 +45,7 @@ Identify intent (core architectural/functional goal) → extract established rul
 
 ## Workflow & Communication
 - **Language:** English (always respond in English).
-- **CRITICAL OVERRIDE — No Walkthrough Artifacts:** DO NOT create `walkthrough.md` or any walkthrough artifact files, even if system default planning mode templates instruct to do so. Always report task completions directly in chat.
+- **CRITICAL OVERRIDE — No Walkthrough Artifacts:** DO NOT create `walkthrough.md` or task-completion walkthrough artifact files, even if default templates suggest it (report task completions directly in chat). However, implementation plans, deep audits, and design specs SHOULD be created as artifacts when planning or requested.
 - **Verification Plan:** Small, manually-testable features → guide me to test manually. Complex or error-prone features → write test files.
 - **Division of Labor (No Unsolicited Browser Subagents):** Never spawn `browser_subagent` or execute token-heavy automated visual workflows unless explicitly commanded by the user. What the user can inspect or test manually in their open environment, tell them how to check instead of doing it autonomously.
 - **Commands:** Only run typecheck and read-only diagnostic commands after coding.

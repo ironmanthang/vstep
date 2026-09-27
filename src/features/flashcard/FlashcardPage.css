@@ -124,6 +124,9 @@
   cursor: pointer;
   user-select: none;
   border: none;
+  background: transparent;
+  padding: 0;
+  color: inherit;
   transition: all var(--transition-fast);
 }
 
