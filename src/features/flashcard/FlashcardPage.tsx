@@ -39,6 +39,7 @@ export const FlashcardPage: React.FC = () => {
 
   const [inspectorFilter, setInspectorFilter] = useState<WordInspectorFilter | null>(null);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [reviewNonce, setReviewNonce] = useState(0);
   const [isReminderModalOpen, setIsReminderModalOpen] = useState(false);
   const [isResetModalOpen, setIsResetModalOpen] = useState(false);
   const [isResetting, setIsResetting] = useState(false);
@@ -75,6 +76,8 @@ export const FlashcardPage: React.FC = () => {
     setIsResetModalOpen(false);
 
     if (res.success) {
+      setReviewNonce(prev => prev + 1);
+      setIsFlipped(false);
       showNotification('✓ Đã đặt lại toàn bộ thẻ và số thẻ đã ôn hôm nay về 0.', 'info');
     } else {
       showNotification(res.error || 'Không thể đặt lại tiến độ trên đám mây. Vui lòng thử lại.', 'error');
@@ -90,6 +93,7 @@ export const FlashcardPage: React.FC = () => {
 
     // Immediately unflip so incoming card enters from front face
     setIsFlipped(false);
+    setReviewNonce(prev => prev + 1);
 
     const res = await submitReview(cardId, rating);
     if (!res.success) {
@@ -314,6 +318,7 @@ export const FlashcardPage: React.FC = () => {
           <div className="review-workspace">
             {/* Card Component */}
             <FlashcardCard
+              key={`${currentCard.id}-${reviewNonce}`}
               card={currentCard}
               onReview={handleReview}
               isFlipped={isFlipped}

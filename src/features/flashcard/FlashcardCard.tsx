@@ -30,6 +30,18 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
   const touchStartPos = useRef<{ x: number; y: number } | null>(null);
   const isScrollDirection = useRef<boolean | null>(null);
   const hasMovedFarEnough = useRef<boolean>(false);
+  const prevCardIdRef = useRef(card.id);
+  const [suppressFlipTransition, setSuppressFlipTransition] = useState(false);
+
+  // Suppress 3D flip animation when card changes so incoming card never flashes reverse face
+  useEffect(() => {
+    if (prevCardIdRef.current !== card.id) {
+      prevCardIdRef.current = card.id;
+      setSuppressFlipTransition(true);
+      const timer = setTimeout(() => setSuppressFlipTransition(false), 50);
+      return () => clearTimeout(timer);
+    }
+  }, [card.id]);
 
   // Freeze card data during exit animation so new card content never flashes on exiting face
   const [frozenCard, setFrozenCard] = useState<FlashcardItem | null>(null);
@@ -239,26 +251,22 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
             : 'transform 0.28s cubic-bezier(0.175, 0.885, 0.32, 1.15)',
         }}
       >
-        {/* Real-time Proportional Swipe Stamps */}
+        {/* Swipe Confirmation Stamps — strictly visible upon committed release/acceptance */}
         <div
-          className="swipe-stamp stamp-wrong"
-          style={{
-            opacity: dragOffset < -30 ? Math.min(1, Math.max(0, (Math.abs(dragOffset) - 40) / 150)) : 0,
-          }}
+          className={`swipe-stamp stamp-wrong ${isExiting === 'wrong' ? 'visible' : ''}`}
         >
           ✗ SAI
         </div>
         <div
-          className="swipe-stamp stamp-correct"
-          style={{
-            opacity: dragOffset > 30 ? Math.min(1, Math.max(0, (dragOffset - 40) / 150)) : 0,
-          }}
+          className={`swipe-stamp stamp-correct ${isExiting === 'correct' ? 'visible' : ''}`}
         >
           ✓ ĐÚNG
         </div>
 
         <div
-          className={`flashcard-inner ${isFlipped ? 'flipped' : ''}`}
+          className={`flashcard-inner ${isFlipped ? 'flipped' : ''} ${
+            suppressFlipTransition ? 'no-flip-transition' : ''
+          }`}
           onClick={handleCardClick}
           role="button"
           tabIndex={0}
@@ -281,16 +289,16 @@ export const FlashcardCard: React.FC<FlashcardCardProps> = ({
               <h2 className="word-text">{displayCard.word}</h2>
               <div className="phonetic-row">
                 <span className="phonetic-text">{displayCard.phonetic}</span>
-                <button
-                  className={`audio-btn ${isPlayingAudio ? 'playing' : ''}`}
-                  onClick={handlePlayAudioClick}
-                  title="Phát âm chuẩn tiếng Anh (Phím A hoặc P)"
-                  aria-label="Nghe phát âm"
-                >
-                  <VolumeIcon size={18} />
-                </button>
               </div>
               <span className="pos-badge">{displayCard.part_of_speech}</span>
+              <button
+                className={`audio-btn ${isPlayingAudio ? 'playing' : ''}`}
+                onClick={handlePlayAudioClick}
+                title="Phát âm chuẩn tiếng Anh (Phím A hoặc P)"
+                aria-label="Nghe phát âm"
+              >
+                <VolumeIcon size={22} />
+              </button>
             </div>
 
             <div className="card-footer-hint">

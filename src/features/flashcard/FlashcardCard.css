@@ -11,6 +11,18 @@
   user-select: none;
   -webkit-user-select: none;
   position: relative;
+  animation: cardMount 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cardMount {
+  from {
+    opacity: 0.7;
+    transform: translateY(6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .flashcard-swipe-track {
@@ -20,7 +32,7 @@
   will-change: transform;
 }
 
-/* Proportional Swipe Stamps */
+/* Swipe Confirmation Stamps */
 .swipe-stamp {
   position: absolute;
   top: var(--space-4);
@@ -35,6 +47,8 @@
   box-shadow: var(--shadow-sm);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  transition: opacity 0.15s ease, transform 0.18s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .stamp-wrong {
@@ -42,7 +56,12 @@
   color: var(--coral);
   border: 2px solid var(--coral);
   background-color: rgba(239, 68, 68, 0.18);
-  transform: rotate(8deg);
+  transform: rotate(8deg) scale(0.9);
+}
+
+.stamp-wrong.visible {
+  opacity: 1;
+  transform: rotate(8deg) scale(1.08);
 }
 
 .stamp-correct {
@@ -50,7 +69,12 @@
   color: var(--emerald);
   border: 2px solid var(--emerald);
   background-color: rgba(16, 185, 129, 0.18);
-  transform: rotate(-8deg);
+  transform: rotate(-8deg) scale(0.9);
+}
+
+.stamp-correct.visible {
+  opacity: 1;
+  transform: rotate(-8deg) scale(1.08);
 }
 
 .flashcard-inner {
@@ -60,6 +84,10 @@
   transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
   cursor: pointer;
+}
+
+.flashcard-inner.no-flip-transition {
+  transition: none !important;
 }
 
 .flashcard-inner.flipped {
@@ -129,20 +157,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
   border-radius: var(--radius-full);
   background-color: var(--primary-subtle);
   color: var(--primary-text);
-  border: 1px solid rgba(212, 163, 115, 0.3);
+  border: 1px solid rgba(212, 163, 115, 0.35);
+  margin-top: var(--space-2);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
   transition: all var(--transition-fast);
+}
+
+.audio-btn:active {
+  transform: scale(0.92);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .audio-btn:hover {
     background-color: var(--primary);
     color: var(--primary-contrast);
-    transform: scale(1.05);
+    transform: scale(1.06);
   }
 }
 
